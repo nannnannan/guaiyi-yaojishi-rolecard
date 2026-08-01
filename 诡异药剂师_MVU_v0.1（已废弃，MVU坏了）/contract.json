@@ -1,0 +1,72 @@
+{
+  "id": "tavernweave.weird-apothecary.contract",
+  "version": "0.1.0",
+  "required": {
+    "card_type": "mvu_zod",
+    "core_character_count": 7,
+    "core_characters": [
+      "左左",
+      "血锯",
+      "血衣女士",
+      "小小",
+      "人偶夫人",
+      "爱丽丝",
+      "黑弦月"
+    ],
+    "opening_patient": "血娃娃",
+    "opening_marker": "<StatusPlaceHolderImpl/>",
+    "choice_menu": "three_suggestions_plus_free_action",
+    "ui_pages": [
+      "当前状态",
+      "人物与事件"
+    ],
+    "update_protocol": "UpdateVariable.JSONPatch",
+    "worldbook_stable_id": "weird-apothecary-worldbook",
+    "worldbook_version": "0.1.0",
+    "host_versions": {
+      "sillytavern": "1.17.0",
+      "tavern_helper": "4.8.19"
+    }
+  },
+  "forbidden": {
+    "systems": [
+      "combat",
+      "level",
+      "rank",
+      "combat_stats",
+      "skill_tree",
+      "inventory",
+      "currency",
+      "shop_economy"
+    ],
+    "player_control": [
+      "invent Lin En dialogue",
+      "invent Lin En voluntary actions",
+      "invent Lin En decisions",
+      "invent Lin En inner thoughts"
+    ],
+    "relationship_regressions": [
+      "sexualize Xiaoxiao",
+      "sexualize Alice",
+      "romanticize Blood Saw",
+      "adult content with age-ambiguous characters",
+      "non-consensual adult content"
+    ],
+    "runtime_claims": [
+      "player must install Zod",
+      "static validation proves real-host execution"
+    ]
+  },
+  "acceptance": [
+    "JSON parses as chara_card_v3",
+    "top-level and data-level core fields are mirrored",
+    "exactly seven maintained character profiles are packed",
+    "initial variables and schema expose no combat or economy roots",
+    "MVU loader and Zod schema are embedded and enabled",
+    "status UI renders from Mvu stat_data without creating a second source of truth",
+    "same-turn UpdateVariable output works without an extra updater preset",
+    "optional host-configured extra updater can consume mvu_update entries",
+    "opening does not assign memory, dialogue, action, choice, or thought to Lin En"
+  ]
+}
+

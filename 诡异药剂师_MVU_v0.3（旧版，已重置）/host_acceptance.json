@@ -1,0 +1,17 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.3.0",
+  "status": "accepted-release",
+  "accepted_at": "2026-07-30",
+  "accepted_by": "owner",
+  "evidence": "用户在真实酒馆测试后于当前任务明确确认：没问题，测试过了。",
+  "host": {
+    "sillytavern": "1.17.0",
+    "tavern_helper": "4.8.19"
+  },
+  "artifact": "dist/诡异药剂师_v0.3.json",
+  "bytes": 290730,
+  "sha256": "fb6c01d376e9cf4047ce1221b9f522049e8d5e0366ee53189f6ce360bdb9586c",
+  "offline_checks": 2677,
+  "notes": "按项目既定真实宿主验收清单由所有者确认可用；v1.0前仍为内部版本，不公开发布。"
+}

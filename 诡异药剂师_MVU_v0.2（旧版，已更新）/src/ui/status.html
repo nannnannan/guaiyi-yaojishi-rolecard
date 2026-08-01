@@ -1,0 +1,377 @@
+<section class="wa-panel" aria-label="诡异药剂师状态栏">
+  <style>
+    .wa-panel {
+      --wa-bg: #120f12;
+      --wa-bg-2: #1c171a;
+      --wa-card: #251d20;
+      --wa-line: #5a3b41;
+      --wa-text: #eee2dc;
+      --wa-muted: #bdaaa3;
+      --wa-red: #b95158;
+      --wa-gold: #c7a86a;
+      box-sizing: border-box;
+      width: 100%;
+      margin: .8rem 0;
+      color: var(--wa-text);
+      font: 14px/1.55 ui-sans-serif, system-ui, "Microsoft YaHei", sans-serif;
+    }
+    .wa-panel * { box-sizing: border-box; }
+    .wa-shell {
+      overflow: hidden;
+      border: 1px solid var(--wa-line);
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at 90% 0, rgba(185,81,88,.16), transparent 34%),
+        linear-gradient(155deg, var(--wa-bg-2), var(--wa-bg));
+      box-shadow: 0 10px 28px rgba(0,0,0,.28);
+    }
+    .wa-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .8rem;
+      padding: .8rem 1rem;
+      border-bottom: 1px solid rgba(199,168,106,.22);
+    }
+    .wa-title { margin: 0; font-size: 1rem; letter-spacing: .08em; }
+    .wa-version {
+      color: var(--wa-gold);
+      font-size: .75rem;
+      white-space: nowrap;
+    }
+    .wa-tabs {
+      display: flex;
+      gap: .45rem;
+      padding: .65rem .75rem 0;
+    }
+    .wa-tab {
+      appearance: none;
+      border: 1px solid var(--wa-line);
+      border-radius: 999px;
+      padding: .38rem .75rem;
+      color: var(--wa-muted);
+      background: rgba(255,255,255,.025);
+      cursor: pointer;
+      font: inherit;
+    }
+    .wa-tab:hover, .wa-tab:focus-visible { border-color: var(--wa-gold); outline: none; }
+    .wa-tab[aria-selected="true"] {
+      color: var(--wa-text);
+      border-color: var(--wa-red);
+      background: rgba(185,81,88,.18);
+    }
+    .wa-page { padding: .75rem; }
+    .wa-page[hidden] { display: none; }
+    .wa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .6rem;
+    }
+    .wa-card {
+      min-width: 0;
+      padding: .72rem;
+      border: 1px solid rgba(90,59,65,.72);
+      border-radius: 10px;
+      background: rgba(37,29,32,.78);
+    }
+    .wa-card--wide { grid-column: 1 / -1; }
+    .wa-label {
+      margin: 0 0 .35rem;
+      color: var(--wa-gold);
+      font-size: .72rem;
+      letter-spacing: .08em;
+    }
+    .wa-value { margin: 0; overflow-wrap: anywhere; }
+    .wa-muted { color: var(--wa-muted); }
+    .wa-list { margin: .3rem 0 0; padding-left: 1.15rem; }
+    .wa-list li + li { margin-top: .24rem; }
+    .wa-person {
+      display: grid;
+      grid-template-columns: minmax(5rem, .7fr) minmax(0, 1.8fr);
+      gap: .5rem;
+      padding: .58rem 0;
+      border-top: 1px dashed rgba(189,170,163,.18);
+    }
+    .wa-person:first-child { padding-top: 0; border-top: 0; }
+    .wa-name { color: var(--wa-text); font-weight: 650; }
+    .wa-stage { color: var(--wa-gold); }
+    .wa-foot {
+      padding: .55rem .9rem .75rem;
+      color: var(--wa-muted);
+      font-size: .75rem;
+    }
+    .wa-error {
+      margin: .75rem;
+      padding: .7rem;
+      border: 1px dashed var(--wa-red);
+      border-radius: 9px;
+      color: #e6bdba;
+    }
+    @media (max-width: 560px) {
+      .wa-grid { grid-template-columns: 1fr; }
+      .wa-card--wide { grid-column: auto; }
+      .wa-person { grid-template-columns: 1fr; gap: .15rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wa-panel * { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+
+  <div class="wa-shell">
+    <header class="wa-head">
+      <h3 class="wa-title">血锯药剂店 · 病历侧栏</h3>
+      <span class="wa-version">v0.2</span>
+    </header>
+
+    <nav class="wa-tabs" role="tablist" aria-label="状态页">
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-current" aria-controls="wa-current" aria-selected="true">当前状态</button>
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-people" aria-controls="wa-people" aria-selected="false" tabindex="-1">人物与事件</button>
+    </nav>
+
+    <div id="wa-error" class="wa-error" role="status" hidden></div>
+
+    <section class="wa-page" id="wa-current" role="tabpanel" aria-labelledby="wa-tab-current">
+      <div class="wa-grid">
+        <article class="wa-card">
+          <p class="wa-label">地点与时间</p>
+          <p class="wa-value" id="wa-location">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-time"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">当前任务</p>
+          <p class="wa-value" id="wa-task">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-task-note"></p>
+        </article>
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">当前病例</p>
+          <p class="wa-value" id="wa-case">读取中……</p>
+          <ul class="wa-list wa-muted" id="wa-clues"></ul>
+        </article>
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">最近进展</p>
+          <p class="wa-value" id="wa-progress">读取中……</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wa-page" id="wa-people" role="tabpanel" aria-labelledby="wa-tab-people" hidden>
+      <div class="wa-grid">
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">已登场人物</p>
+          <div id="wa-relations"><p class="wa-muted">读取中……</p></div>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">主事件</p>
+          <p class="wa-value" id="wa-main-event">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-main-summary"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">支线</p>
+          <ul class="wa-list" id="wa-side-events"></ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="wa-foot">仅显示可观察阶段与迹象；隐藏关系数值不会展示。</footer>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.currentScript?.closest('.wa-panel') ?? document.querySelector('.wa-panel');
+      if (!root) return;
+      const byId = id => root.querySelector(`#${id}`);
+      const text = (id, value) => { byId(id).textContent = value ?? '—'; };
+      const asArray = value => Array.isArray(value) ? value : [];
+
+      function renderList(node, items, emptyText = '暂无') {
+        node.replaceChildren();
+        const values = asArray(items);
+        if (!values.length) {
+          const li = document.createElement('li');
+          li.textContent = emptyText;
+          li.className = 'wa-muted';
+          node.append(li);
+          return;
+        }
+        for (const item of values) {
+          const li = document.createElement('li');
+          li.textContent = String(item);
+          node.append(li);
+        }
+      }
+
+      function renderRelations(relations) {
+        const container = byId('wa-relations');
+        container.replaceChildren();
+        const unlocked = Object.entries(relations ?? {}).filter(([, relation]) => relation?.解锁);
+        if (!unlocked.length) {
+          const empty = document.createElement('p');
+          empty.className = 'wa-muted';
+          empty.textContent = '尚无核心角色登场。';
+          container.append(empty);
+          return;
+        }
+        for (const [name, relation] of unlocked) {
+          const row = document.createElement('div');
+          row.className = 'wa-person';
+          const heading = document.createElement('div');
+          heading.className = 'wa-name';
+          heading.textContent = `${name}${relation.在场 ? ' · 在场' : ''}`;
+          const detail = document.createElement('div');
+          const stage = document.createElement('div');
+          stage.className = 'wa-stage';
+          stage.textContent = `${relation.关系类型 ?? '关系未明'}｜${relation.可见阶段 ?? '阶段未明'}`;
+          const cue = document.createElement('div');
+          cue.className = 'wa-muted';
+          cue.textContent = asArray(relation.可见迹象).slice(-2).join('；') || relation.最近互动 || '暂无可见迹象';
+          detail.append(stage, cue);
+          row.append(heading, detail);
+          container.append(row);
+        }
+      }
+
+      function render(data) {
+        const state = data?.stat_data;
+        if (!state) throw new Error('当前楼层还没有初始化变量');
+
+        text('wa-location', state.世界?.地点);
+        text('wa-time', `${state.世界?.日期 ?? '—'} · ${state.世界?.时间 ?? '—'} · ${state.世界?.氛围 ?? '—'}`);
+        text('wa-task', `${state.系统?.当前任务 ?? '—'}｜${state.系统?.任务状态 ?? '—'}`);
+        text('wa-task-note', state.系统?.任务说明);
+        text('wa-case', `${state.病例?.阶段 ?? '—'}｜${state.病例?.病患 ?? '—'}：${state.病例?.主诉 ?? '—'}`);
+        renderList(byId('wa-clues'), state.病例?.已知线索, '尚无线索');
+        text('wa-progress', state.病例?.最近进展);
+        renderRelations(state.关系);
+        text('wa-main-event', `${state.事件?.主事件?.标题 ?? '—'}｜${state.事件?.主事件?.状态 ?? '—'}`);
+        text('wa-main-summary', state.事件?.主事件?.摘要);
+        renderList(byId('wa-side-events'), asArray(state.事件?.支线).map(event => `${event.标题}｜${event.状态}`), '暂无活动支线');
+        byId('wa-error').hidden = true;
+      }
+
+      function showError(error) {
+        const node = byId('wa-error');
+        node.textContent = `MVU 未就绪，正文仍可使用。${error?.message ? `（${error.message}）` : ''}`;
+        node.hidden = false;
+      }
+
+      function getHostWindows() {
+        const hosts = [globalThis];
+        for (const candidate of [globalThis.parent, globalThis.top]) {
+          try {
+            if (candidate && !hosts.includes(candidate)) hosts.push(candidate);
+          } catch {
+            // 跨域父页面不可访问时继续使用当前窗口。
+          }
+        }
+        return hosts;
+      }
+
+      function findMvu() {
+        for (const host of getHostWindows()) {
+          try {
+            if (host.Mvu?.getMvuData) return host.Mvu;
+          } catch {
+            // 某一层窗口不可访问时继续向上查找。
+          }
+        }
+        return undefined;
+      }
+
+      function getMessageId() {
+        if (typeof getCurrentMessageId === 'function') return getCurrentMessageId();
+        const match = String(globalThis.name || '').match(/^TH-message--(\d+)--/);
+        return match ? Number(match[1]) : 'latest';
+      }
+
+      function unwrapMessageVariables(message) {
+        const variables = message?.variables;
+        if (!variables) return undefined;
+        if (Array.isArray(variables)) {
+          return variables[message?.swipe_id ?? 0] ?? variables.at(-1);
+        }
+        if (variables.stat_data) return variables;
+        return variables[message?.swipe_id ?? 0];
+      }
+
+      function readStoredVariables(messageId) {
+        for (const host of getHostWindows()) {
+          try {
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            const chat = context?.chat;
+            if (!Array.isArray(chat) || !chat.length) continue;
+            const message = Number.isInteger(messageId)
+              ? chat[messageId]
+              : [...chat].reverse().find(item => !item?.is_system);
+            let data = unwrapMessageVariables(message);
+            if (!data?.stat_data) {
+              for (let index = chat.length - 1; index >= 0; index -= 1) {
+                data = unwrapMessageVariables(chat[index]);
+                if (data?.stat_data) break;
+              }
+            }
+            if (data?.stat_data) return data;
+          } catch {
+            // 当前宿主入口不可用时尝试下一层窗口。
+          }
+        }
+        return undefined;
+      }
+
+      function readCurrent(mvu = findMvu()) {
+        try {
+          const messageId = getMessageId();
+          let data = mvu?.getMvuData({ type: 'message', message_id: messageId });
+          if (!data?.stat_data && mvu) {
+            data = mvu.getMvuData({ type: 'message', message_id: 'latest' });
+          }
+          if (!data?.stat_data) data = readStoredVariables(messageId);
+          if (!data?.stat_data) throw new Error('当前消息中未找到已保存的 MVU 变量');
+          render(data);
+        } catch (error) {
+          showError(error);
+        }
+      }
+
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      function activateTab(next) {
+        for (const tab of tabs) {
+          const selected = tab === next;
+          tab.setAttribute('aria-selected', String(selected));
+          tab.tabIndex = selected ? 0 : -1;
+          byId(tab.getAttribute('aria-controls')).hidden = !selected;
+        }
+      }
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(tab));
+        tab.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const offset = event.key === 'ArrowLeft' ? -1 : event.key === 'ArrowRight' ? 1 : 0;
+          const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + offset + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          activateTab(tabs[nextIndex]);
+        });
+      });
+
+      const subscriptions = [];
+      async function bootstrap() {
+        readCurrent();
+        let mvu = findMvu();
+        for (let attempt = 0; !mvu && attempt < 60; attempt += 1) {
+          await new Promise(resolve => setTimeout(resolve, 250));
+          mvu = findMvu();
+        }
+        if (!mvu) return;
+        readCurrent(mvu);
+        if (mvu.events && typeof eventOn === 'function') {
+          const refresh = () => { readCurrent(mvu); };
+          subscriptions.push(eventOn(mvu.events.VARIABLE_INITIALIZED, refresh));
+          subscriptions.push(eventOn(mvu.events.VARIABLE_UPDATE_ENDED, refresh));
+        }
+      }
+      window.addEventListener('pagehide', () => subscriptions.forEach(subscription => subscription?.stop?.()), { once: true });
+      void bootstrap();
+    })();
+  </script>
+</section>

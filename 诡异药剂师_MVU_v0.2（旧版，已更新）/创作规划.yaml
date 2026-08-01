@@ -1,0 +1,86 @@
+project:
+  name: 诡异药剂师_MVU_v0.2
+  display_name: 《诡异药剂师：血锯药剂店》v0.2
+  form: charactercard
+  card_type: mvu_zod
+  artifact: dist/诡异药剂师_血锯药剂店_v0.2.json
+  ui_mode: frontend
+  source_base: 诡异药剂师_MVU_v0.1（已废弃）
+  source_scope: 角色卡设定中的第1章至第21章结构化总结
+
+constraints:
+  player_role: <user>独占20岁林恩的对白、主动动作、选择、判断、记忆与内心
+  core_characters:
+    - 左左
+    - 血锯
+    - 血衣女士
+    - 小小
+    - 人偶夫人
+    - 爱丽丝
+    - 黑弦月
+  fixed_boundaries:
+    - 血锯固定为非恋爱师徒
+    - 小小固定为非性伙伴与家人
+    - 爱丽丝固定为非性家人
+    - 未登场角色保持MVU锁定
+    - 不建立战斗、等级、装备、库存、货币或经营系统
+  worldbook_maintenance:
+    - 后续新增或修改的世界书条目必须设置 extensions.exclude_recursion=true
+    - 后续新增或修改的世界书条目必须设置 extensions.prevent_recursion=true
+    - 不得把上述开关误写为 extensions.delay_until_recursion
+    - 当前已通过宿主验收的v0.2不因本维护约束单独重打包；在下一次世界书内容变更时应用
+
+entries:
+  - name: 基础世界观
+    type: 世界观
+    source_chapters: [第1章至第21章]
+  - name: v0.2主线与自然登场
+    type: 时间线
+    part: plot
+    source_chapters: [第1章至第21章]
+  - name: 角色速览
+    type: 角色
+    part: catalog
+  - name: 七名核心角色组件
+    type: 角色
+    components:
+      all: [基础信息, 性格调色盘, 二次解释]
+      tri_faceted: [左左, 血衣女士, 人偶夫人, 黑弦月]
+  - name: 白日病患与街坊
+    type: NPC
+    source_chapters: [第1章至第14章]
+  - name: 不眠夜异常群像
+    type: NPC
+    source_chapters: [第15章至第21章]
+
+mvu:
+  structure: 继承v0.1七人关系表、病例、事件、世界、林恩与系统字段
+  migration: 只升级元数据版本，不新增关系键
+
+validation:
+  - 七名核心角色组件矩阵完整
+  - 两条配角群像覆盖目标人物
+  - 世界书源码与打包内容一致
+  - 未残留面向用户的v0.1版本文本
+  - 角色文本通过写作规则与禁词扫描
+  - 离线构建与验证通过
+
+adapter:
+  package_json:
+    command: npm run build
+    cwd: 诡异药剂师_MVU_v0.2
+    inputs: [manifest.json, profile.json, contract.json, src]
+    outputs: [dist/诡异药剂师_血锯药剂店_v0.2.json]
+    read_only: false
+    dry_run: 不支持
+    collision_policy: 只替换v0.2声明产物，不触碰v0.1
+    partial_write_policy: 先写同目录临时文件，再原子重命名
+    success: 退出码0并输出status=built
+  validate_artifact:
+    command: npm run validate
+    cwd: 诡异药剂师_MVU_v0.2
+    inputs: [manifest.json, profile.json, contract.json, src, dist/诡异药剂师_血锯药剂店_v0.2.json]
+    outputs: []
+    read_only: true
+    dry_run: 不适用
+    success: 退出码0并输出status=offline-candidate

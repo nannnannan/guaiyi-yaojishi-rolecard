@@ -1,0 +1,307 @@
+{
+  "name": "诡异药剂师｜血锯药剂店世界书 v0.2",
+  "description": "七人轻量 MVU 角色卡的内嵌世界书，包含完整人物组件与第1至21章配角群像；稳定 ID：weird-apothecary-worldbook。",
+  "extensions": {
+    "tavernweave": {
+      "id": "weird-apothecary-worldbook",
+      "version": "0.2.0"
+    }
+  },
+  "entries": [
+    {
+      "id": 0,
+      "comment": "[核心]基础世界观",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 10,
+      "content_file": "src/prompts/world.md"
+    },
+    {
+      "id": 1,
+      "comment": "[核心]v0.2 主线",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 20,
+      "content_file": "src/prompts/mainline.md"
+    },
+    {
+      "id": 2,
+      "comment": "[核心]轻量病例",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 30,
+      "content_file": "src/prompts/medical.md"
+    },
+    {
+      "id": 3,
+      "comment": "[核心]文风协议",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 40,
+      "content_file": "src/prompts/style.md"
+    },
+    {
+      "id": 4,
+      "comment": "[角色速览]七人关系索引",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 50,
+      "content_file": "src/characters/角色速览.md"
+    },
+    {
+      "id": 100,
+      "comment": "[角色:基础]左左",
+      "keys": ["左左", "凑脑袋", "林恩左手"],
+      "constant": false,
+      "insertion_order": 100,
+      "content_file": "src/characters/左左/基础信息.md"
+    },
+    {
+      "id": 101,
+      "comment": "[角色:性格]左左",
+      "keys": ["左左", "凑脑袋", "林恩左手"],
+      "constant": false,
+      "insertion_order": 101,
+      "content_file": "src/characters/左左/性格调色盘.md"
+    },
+    {
+      "id": 102,
+      "comment": "[角色:三面性]左左",
+      "keys": ["左左", "凑脑袋", "林恩左手"],
+      "constant": false,
+      "insertion_order": 102,
+      "content_file": "src/characters/左左/三面性.md"
+    },
+    {
+      "id": 103,
+      "comment": "[角色:二次解释]左左",
+      "keys": ["左左", "凑脑袋", "林恩左手"],
+      "constant": false,
+      "insertion_order": 103,
+      "content_file": "src/characters/左左/二次解释.md"
+    },
+    {
+      "id": 110,
+      "comment": "[角色:基础]血锯",
+      "keys": ["血锯", "血锯狂人", "血锯师父"],
+      "constant": false,
+      "insertion_order": 110,
+      "content_file": "src/characters/血锯/基础信息.md"
+    },
+    {
+      "id": 111,
+      "comment": "[角色:性格]血锯",
+      "keys": ["血锯", "血锯狂人", "血锯师父"],
+      "constant": false,
+      "insertion_order": 111,
+      "content_file": "src/characters/血锯/性格调色盘.md"
+    },
+    {
+      "id": 112,
+      "comment": "[角色:二次解释]血锯",
+      "keys": ["血锯", "血锯狂人", "血锯师父"],
+      "constant": false,
+      "insertion_order": 112,
+      "content_file": "src/characters/血锯/二次解释.md"
+    },
+    {
+      "id": 120,
+      "comment": "[角色:基础]血衣女士",
+      "keys": ["血衣女士", "血衣恶灵", "红衣女人"],
+      "constant": false,
+      "insertion_order": 120,
+      "content_file": "src/characters/血衣女士/基础信息.md"
+    },
+    {
+      "id": 121,
+      "comment": "[角色:性格]血衣女士",
+      "keys": ["血衣女士", "血衣恶灵", "红衣女人"],
+      "constant": false,
+      "insertion_order": 121,
+      "content_file": "src/characters/血衣女士/性格调色盘.md"
+    },
+    {
+      "id": 122,
+      "comment": "[角色:三面性]血衣女士",
+      "keys": ["血衣女士", "血衣恶灵", "红衣女人"],
+      "constant": false,
+      "insertion_order": 122,
+      "content_file": "src/characters/血衣女士/三面性.md"
+    },
+    {
+      "id": 123,
+      "comment": "[角色:二次解释]血衣女士",
+      "keys": ["血衣女士", "血衣恶灵", "红衣女人"],
+      "constant": false,
+      "insertion_order": 123,
+      "content_file": "src/characters/血衣女士/二次解释.md"
+    },
+    {
+      "id": 130,
+      "comment": "[角色:基础]小小",
+      "keys": ["小小", "巨大病患", "夜间牙科"],
+      "constant": false,
+      "insertion_order": 130,
+      "content_file": "src/characters/小小/基础信息.md"
+    },
+    {
+      "id": 131,
+      "comment": "[角色:性格]小小",
+      "keys": ["小小", "巨大病患", "夜间牙科"],
+      "constant": false,
+      "insertion_order": 131,
+      "content_file": "src/characters/小小/性格调色盘.md"
+    },
+    {
+      "id": 132,
+      "comment": "[角色:二次解释]小小",
+      "keys": ["小小", "巨大病患", "夜间牙科"],
+      "constant": false,
+      "insertion_order": 132,
+      "content_file": "src/characters/小小/二次解释.md"
+    },
+    {
+      "id": 140,
+      "comment": "[角色:基础]人偶夫人",
+      "keys": ["人偶夫人", "人偶庄园女主人", "诅咒委托"],
+      "constant": false,
+      "insertion_order": 140,
+      "content_file": "src/characters/人偶夫人/基础信息.md"
+    },
+    {
+      "id": 141,
+      "comment": "[角色:性格]人偶夫人",
+      "keys": ["人偶夫人", "人偶庄园女主人", "诅咒委托"],
+      "constant": false,
+      "insertion_order": 141,
+      "content_file": "src/characters/人偶夫人/性格调色盘.md"
+    },
+    {
+      "id": 142,
+      "comment": "[角色:三面性]人偶夫人",
+      "keys": ["人偶夫人", "人偶庄园女主人", "诅咒委托"],
+      "constant": false,
+      "insertion_order": 142,
+      "content_file": "src/characters/人偶夫人/三面性.md"
+    },
+    {
+      "id": 143,
+      "comment": "[角色:二次解释]人偶夫人",
+      "keys": ["人偶夫人", "人偶庄园女主人", "诅咒委托"],
+      "constant": false,
+      "insertion_order": 143,
+      "content_file": "src/characters/人偶夫人/二次解释.md"
+    },
+    {
+      "id": 150,
+      "comment": "[角色:基础]爱丽丝",
+      "keys": ["爱丽丝", "幸福之家", "地缚灵少女"],
+      "constant": false,
+      "insertion_order": 150,
+      "content_file": "src/characters/爱丽丝/基础信息.md"
+    },
+    {
+      "id": 151,
+      "comment": "[角色:性格]爱丽丝",
+      "keys": ["爱丽丝", "幸福之家", "地缚灵少女"],
+      "constant": false,
+      "insertion_order": 151,
+      "content_file": "src/characters/爱丽丝/性格调色盘.md"
+    },
+    {
+      "id": 152,
+      "comment": "[角色:二次解释]爱丽丝",
+      "keys": ["爱丽丝", "幸福之家", "地缚灵少女"],
+      "constant": false,
+      "insertion_order": 152,
+      "content_file": "src/characters/爱丽丝/二次解释.md"
+    },
+    {
+      "id": 160,
+      "comment": "[角色:基础]黑弦月",
+      "keys": ["黑弦月", "第七人偶", "庄园观察员"],
+      "constant": false,
+      "insertion_order": 160,
+      "content_file": "src/characters/黑弦月/基础信息.md"
+    },
+    {
+      "id": 161,
+      "comment": "[角色:性格]黑弦月",
+      "keys": ["黑弦月", "第七人偶", "庄园观察员"],
+      "constant": false,
+      "insertion_order": 161,
+      "content_file": "src/characters/黑弦月/性格调色盘.md"
+    },
+    {
+      "id": 162,
+      "comment": "[角色:三面性]黑弦月",
+      "keys": ["黑弦月", "第七人偶", "庄园观察员"],
+      "constant": false,
+      "insertion_order": 162,
+      "content_file": "src/characters/黑弦月/三面性.md"
+    },
+    {
+      "id": 163,
+      "comment": "[角色:二次解释]黑弦月",
+      "keys": ["黑弦月", "第七人偶", "庄园观察员"],
+      "constant": false,
+      "insertion_order": 163,
+      "content_file": "src/characters/黑弦月/二次解释.md"
+    },
+    {
+      "id": 200,
+      "comment": "[NPC群像]白日病患与街坊",
+      "keys": ["人皮拾荒者", "小宝贝", "血娃娃", "猪头魔", "恶灵血婴", "烧死鬼", "猎魔人奥卡洛斯", "奥卡洛斯"],
+      "constant": false,
+      "insertion_order": 200,
+      "content_file": "src/npcs/白日病患与街坊.md"
+    },
+    {
+      "id": 210,
+      "comment": "[NPC群像]不眠夜异常群像",
+      "keys": ["血肉欺诈者", "钢性傀儡", "黑夜食腐者"],
+      "constant": false,
+      "insertion_order": 210,
+      "content_file": "src/npcs/不眠夜异常群像.md"
+    },
+    {
+      "id": 900,
+      "comment": "[initvar]初始变量（默认禁用）",
+      "keys": [],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 900,
+      "content_json_file": "src/initial_variables.json"
+    },
+    {
+      "id": 910,
+      "comment": "[mvu_update]变量更新规则",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 910,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_update_rules.md"
+    },
+    {
+      "id": 920,
+      "comment": "[mvu_update]当前变量",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 920,
+      "position_number": 4,
+      "depth": 0,
+      "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>"
+    },
+    {
+      "id": 930,
+      "comment": "[mvu_update]变量输出格式",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 930,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_output_format.md"
+    }
+  ]
+}

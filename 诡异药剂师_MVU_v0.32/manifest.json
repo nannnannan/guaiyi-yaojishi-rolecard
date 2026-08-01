@@ -1,0 +1,89 @@
+{
+  "id": "tavernweave.weird-apothecary.v0.32",
+  "version": "0.32.0",
+  "profile": "profile.json",
+  "contract": "contract.json",
+  "host_acceptance": "host_acceptance.json",
+  "source_root": "src",
+  "packed_json": "dist/诡异药剂师_v0.32.json",
+  "card": {
+    "stable_id": "weird-apothecary-blood-saw-shop",
+    "display_name": "《诡异药剂师》v0.32",
+    "metadata": "src/card.json",
+    "system_prompt": "src/prompts/system.md",
+    "post_history_instructions": "src/prompts/post_history.md",
+    "first_message": "src/prompts/first_message.md",
+    "example_dialogue": "src/prompts/examples.md",
+    "description": "src/prompts/card_description.md"
+  },
+  "worldbook": {
+    "stable_id": "weird-apothecary-worldbook",
+    "version": "0.32.0",
+    "source": "src/worldbook.json",
+    "attachment": "/data/character_book"
+  },
+  "tavern_helper_scripts": "src/tavern_helper_scripts.json",
+  "regex_scripts": "src/regex_scripts.json",
+  "initial_variables": "src/initial_variables.json",
+  "deliverables": [
+    "dist/诡异药剂师_v0.32.json"
+  ],
+  "collision_policy": "replace-generated-artifact-from-maintained-source",
+  "runtime_dependencies": [
+    {
+      "id": "sillytavern",
+      "role": "host",
+      "class": "host_required",
+      "version": "1.17.0",
+      "evidence": "用户已验证宿主版本",
+      "failure": "角色卡不能导入或运行"
+    },
+    {
+      "id": "tavern-helper",
+      "role": "脚本宿主、注入 Zod、MVU 桥接与 iframe API",
+      "class": "host_required",
+      "version": "4.8.19",
+      "evidence": "用户已验证插件版本",
+      "failure": "正文仍可阅读，MVU 与界面显示未就绪"
+    },
+    {
+      "id": "mvu-loader",
+      "role": "加载 MagVarUpdate",
+      "class": "embedded_required",
+      "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-loader-v0.32]",
+      "failure": "正文仍可阅读，持久状态不可用"
+    },
+    {
+      "id": "mvu-zod-schema",
+      "role": "验证 v0.32 状态结构",
+      "class": "embedded_required",
+      "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-schema-v0.32]",
+      "failure": "变量结构校验不可用"
+    },
+    {
+      "id": "magvarupdate",
+      "role": "MVU JSON Patch 运行时",
+      "class": "remote_runtime",
+      "ref": "b42817925d0391c15fa242a8238d2bbe28eb6319",
+      "primary": "https://cdn.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate@b42817925d0391c15fa242a8238d2bbe28eb6319/artifact/bundle.js",
+      "fallback": "https://testingcf.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate@b42817925d0391c15fa242a8238d2bbe28eb6319/artifact/bundle.js",
+      "runtime_check": "waitGlobalInitialized('Mvu')"
+    },
+    {
+      "id": "mvu-zod-bridge",
+      "role": "registerMvuSchema",
+      "class": "remote_runtime",
+      "ref": "7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f",
+      "primary": "https://cdn.jsdelivr.net/gh/StageDog/tavern_resource@7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f/dist/util/mvu_zod.js",
+      "fallback": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource@7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f/dist/util/mvu_zod.js",
+      "runtime_check": "typeof registerMvuSchema === 'function'"
+    },
+    {
+      "id": "node",
+      "role": "本地构建与验证",
+      "class": "development_only",
+      "version": "installed",
+      "failure": "源码仍可维护，但不能在本地重建 JSON"
+    }
+  ]
+}
