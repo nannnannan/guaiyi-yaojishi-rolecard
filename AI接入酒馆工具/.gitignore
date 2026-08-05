@@ -1,0 +1,5 @@
+node_modules/
+screenshots/
+*.log
+.env
+提示词监听/captures/
