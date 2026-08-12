@@ -1,0 +1,38 @@
+[
+  {
+    "type": "script",
+    "enabled": true,
+    "name": "诡异药剂师v0.5｜MVU 固定版本加载器",
+    "id": "tavernweave-mvu-loader-v0.5",
+    "content_file": "src/scripts/mvu_loader.js",
+    "info": "加载固定提交版本的 MagVarUpdate；主 CDN 失败时切换备用源。",
+    "button": {},
+    "data": {
+      "tavernweave": {
+        "role": "mvu_loader",
+        "version": "0.5.0"
+      }
+    },
+    "export_with": {
+      "character": true
+    }
+  },
+  {
+    "type": "script",
+    "enabled": true,
+    "name": "诡异药剂师v0.5｜MVU Zod Schema",
+    "id": "tavernweave-mvu-schema-v0.5",
+    "content_file": "src/scripts/schema.js",
+    "info": "注册 v0.5 八人关系、恶堕值、自主事件与四页状态栏状态结构；不包含战斗、经济或库存系统。",
+    "button": {},
+    "data": {
+      "tavernweave": {
+        "role": "mvu_zod_schema",
+        "version": "0.5.0"
+      }
+    },
+    "export_with": {
+      "character": true
+    }
+  }
+]
