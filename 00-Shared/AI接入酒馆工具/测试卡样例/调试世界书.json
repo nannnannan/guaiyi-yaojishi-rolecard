@@ -1,0 +1,20 @@
+{
+  "entries": {
+    "0": {
+      "uid": 0,
+      "key": ["测试"],
+      "comment": "调试世界书-自动测试用",
+      "content": "这是一条调试用世界书条目。",
+      "constant": true,
+      "selective": false,
+      "order": 100,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": true,
+      "preventRecursion": true,
+      "depth": 4,
+      "probability": 100,
+      "useProbability": false
+    }
+  }
+}

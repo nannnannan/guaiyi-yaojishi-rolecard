@@ -1,0 +1,24 @@
+{
+  "name": "st-ai-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 接入 SillyTavern 命令行桥（Playwright/Edge）：入口、大脑、手册三件套的整理与落地",
+  "type": "module",
+  "scripts": {
+    "start": "node 入口/st-bridge.mjs status",
+    "bridge": "node 入口/st-bridge.mjs",
+    "config": "node 入口/st-config.mjs",
+    "debug": "node 入口/st-debug.mjs",
+    "import-card": "node 角色卡导入器/import-card.mjs",
+    "replace-card": "node 角色卡替换器/replace-card.mjs",
+    "probe": "node tools/probe.mjs",
+    "verify": "node tools/verify.mjs",
+    "verify-replace": "node tools/verify-replace-card.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.62.0"
+  }
+}

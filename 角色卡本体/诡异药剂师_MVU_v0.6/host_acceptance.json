@@ -1,0 +1,21 @@
+{
+    "id": "tavernweave.weird-apothecary.host-acceptance",
+    "version": "0.6.0",
+    "status": "pending",
+    "accepted_at": null,
+    "accepted_by": null,
+    "tested_at": null,
+    "last_runtime_tested_at": null,
+    "last_runtime_sha256": null,
+    "tested_by": null,
+    "evidence": null,
+    "host": {
+        "sillytavern": null,
+        "tavern_helper": null
+    },
+    "artifact": "dist/诡异药剂师_v0.6.json",
+    "bytes": 1402925,
+    "sha256": "ead7308becad5a6ecc736e52030f0749242a0e602f5b478d39d8bd6657207815",
+    "offline_checks": 15407,
+    "notes": "v0.6由v0.5独立复制并扩写阶段二，随后将UID400–451共52条阶段一概念按阶段二详写格式补强，稳定注册与路由不变。当前候选按事件完整详情±1、事件摘要±3、状态衔接钩子，以及概念/人物的事件±1强启与原生关键词双路同UID去重设计；全部路由条目要求双防递归。本轮为32条状态渐进概念安装EJS状态变体：变体块按门控事件从新到旧排列、只认完成/变形、末块兜底，静态字段留在块外，两路激活仍复用同一UID；validate.mjs新增变体语法断言与逐场景渲染矩阵。随后以角色卡设定的小总结01-13与大总结1/2为据全量核对93条概念：修正汪涛事件地点错归（表世界第三国中）、血锯揭露送达者由E20移回E26（猪头屠夫放置之谜变体重构）、夜医转职阶段二内容下放变体、传说左轮/夜魔刀等7条阶段一概念事件数组按源文订正（contract与worldbook同步）、'小呀哒'阶段三昵称清除、幸福之家传闻去除玛丽夫人、E23变体补回爱丽丝复形等；黑弦月已到店、两袋垃圾等已核实项按用户口径或纪律措辞处理。旧版真机证据与accepted-release哈希不继承；离线构建通过后仍保持pending，等待所有者明确授权真实宿主导入与验收。"
+}
