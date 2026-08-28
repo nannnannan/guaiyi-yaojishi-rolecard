@@ -16324,7 +16324,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 700,
+      "insertion_order": 918,
       "content_file": "src/events/E266_魂灯入城圣城通讯与猫娘军团.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16339,7 +16339,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 701,
+      "insertion_order": 919,
       "content_file": "src/events/E267_圣女的天灯神的方程式.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16354,7 +16354,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 702,
+      "insertion_order": 920,
       "content_file": "src/events/E268_虔信者艾泽法拉与潮涌潮枯.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16369,7 +16369,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 703,
+      "insertion_order": 921,
       "content_file": "src/events/E269_嘴遁破防往日遗念揭真与海嗣诱拐.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16384,7 +16384,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 704,
+      "insertion_order": 922,
       "content_file": "src/events/E270_隐修会秘辛旧日的血契.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16399,7 +16399,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 705,
+      "insertion_order": 923,
       "content_file": "src/events/E271_深海隐修地唤潮者.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16414,7 +16414,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 706,
+      "insertion_order": 924,
       "content_file": "src/events/E272_破界血战叹息之潮.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16429,7 +16429,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 707,
+      "insertion_order": 925,
       "content_file": "src/events/E273_天使禁区渡鸦预言与旧日神明任务.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16444,7 +16444,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 708,
+      "insertion_order": 926,
       "content_file": "src/events/E274_旧日时代渡鸦的号角.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16459,7 +16459,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 709,
+      "insertion_order": 927,
       "content_file": "src/events/E275_垂暮克苏鲁边境是一个生灵.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16474,7 +16474,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 710,
+      "insertion_order": 928,
       "content_file": "src/events/E276_旧日陨落与最后的希望之谎.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16489,7 +16489,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 711,
+      "insertion_order": 929,
       "content_file": "src/events/E277_拖入地狱的仪式与预料之外的剧变.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16504,7 +16504,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 712,
+      "insertion_order": 930,
       "content_file": "src/events/E278_最后的命令与门之界门.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16519,7 +16519,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 713,
+      "insertion_order": 931,
       "content_file": "src/events/E279_锁链拖行与升华的家人们.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16534,7 +16534,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 714,
+      "insertion_order": 932,
       "content_file": "src/events/E280_胜利的收尾与谎言的代价.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16549,7 +16549,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 715,
+      "insertion_order": 933,
       "content_file": "src/events/E281_失落的眷者与星空之引.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16564,7 +16564,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 716,
+      "insertion_order": 934,
       "content_file": "src/events/E282_告别全世界的倒计时与左左的追逐.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16579,7 +16579,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 717,
+      "insertion_order": 935,
       "content_file": "src/events/E283_星海豪赌无瞳法阵与灾厄的凝视.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16594,7 +16594,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 718,
+      "insertion_order": 936,
       "content_file": "src/events/E284_苍蓝之梦与归乡的拖行.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16609,7 +16609,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 719,
+      "insertion_order": 937,
       "content_file": "src/events/E285_冰箱新生与灾厄的真相.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16624,7 +16624,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 720,
+      "insertion_order": 938,
       "content_file": "src/events/E286_泰坦暴走与欲望母树之战.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16639,7 +16639,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 721,
+      "insertion_order": 939,
       "content_file": "src/events/E287_深海权能与海嗣女王的抉择.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16654,7 +16654,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 722,
+      "insertion_order": 940,
       "content_file": "src/events/E288_冰箱惩罚夜与视界强拖.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16669,7 +16669,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 723,
+      "insertion_order": 941,
       "content_file": "src/events/E289_视界谈判三条件与狱卒之疑.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16684,7 +16684,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 724,
+      "insertion_order": 942,
       "content_file": "src/events/E290_无瞳之眼指向灾厄留在地狱宣言.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16699,7 +16699,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 725,
+      "insertion_order": 943,
       "content_file": "src/events/E291_命运女神的真容神不可直视.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16714,7 +16714,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 726,
+      "insertion_order": 944,
       "content_file": "src/events/E292_出兵介入魅魔外交沦陷.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16729,7 +16729,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 727,
+      "insertion_order": 945,
       "content_file": "src/events/E293_乐不思蜀机械神教饱和袭击.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16744,7 +16744,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 728,
+      "insertion_order": 946,
       "content_file": "src/events/E294_编造身世混入机械神教.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16759,7 +16759,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 729,
+      "insertion_order": 947,
       "content_file": "src/events/E295_录音破防全面空袭纸条蚀痕.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16774,7 +16774,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 730,
+      "insertion_order": 948,
       "content_file": "src/events/E296_逼入绝境幻象旧日黑星蜂巢.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16789,7 +16789,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 731,
+      "insertion_order": 949,
       "content_file": "src/events/E297_骗局收网神性蜕变瘟疫捕获与拖行剧本.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16804,7 +16804,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 732,
+      "insertion_order": 950,
       "content_file": "src/events/E298_病名为爱黑雾重逢.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16819,7 +16819,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 733,
+      "insertion_order": 951,
       "content_file": "src/events/E299_一家人之诺意识上传.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16834,7 +16834,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 734,
+      "insertion_order": 952,
       "content_file": "src/events/E300_文明的伊始血肉的苦弱.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16849,7 +16849,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 735,
+      "insertion_order": 953,
       "content_file": "src/events/E301_收不住的演技道德触底反弹.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16864,7 +16864,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 736,
+      "insertion_order": 954,
       "content_file": "src/events/E302_心灵分流肃正猎杀令.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16879,7 +16879,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 737,
+      "insertion_order": 955,
       "content_file": "src/events/E303_指挥官救命以命相护.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16894,7 +16894,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 738,
+      "insertion_order": 956,
       "content_file": "src/events/E304_肃正死光输了的代价.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16909,7 +16909,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 739,
+      "insertion_order": 957,
       "content_file": "src/events/E305_不醒的幻梦因为那会杀了她.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16924,7 +16924,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 740,
+      "insertion_order": 958,
       "content_file": "src/events/E306_总攻前夜智脑的路线交易.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16939,7 +16939,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 741,
+      "insertion_order": 959,
       "content_file": "src/events/E307_三分钟洗劫绝地逃亡.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16954,7 +16954,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 742,
+      "insertion_order": 960,
       "content_file": "src/events/E308_万机之神的阴谋七号诞所.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16969,7 +16969,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 743,
+      "insertion_order": 961,
       "content_file": "src/events/E309_卡bug横跳与根源机体入手.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16984,7 +16984,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 744,
+      "insertion_order": 962,
       "content_file": "src/events/E310_咒瞳自赌与小眼萝归来.md",
       "extensions": {
         "exclude_recursion": true,
@@ -16999,7 +16999,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 745,
+      "insertion_order": 963,
       "content_file": "src/events/E311_不死冲锋双重雷霆与金蝉脱壳.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17014,7 +17014,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 746,
+      "insertion_order": 964,
       "content_file": "src/events/E312_七神将军与智脑的交易.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17029,7 +17029,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 747,
+      "insertion_order": 965,
       "content_file": "src/events/E313_小冰箱的切割.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17044,7 +17044,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 748,
+      "insertion_order": 966,
       "content_file": "src/events/E314_你有爱过她吗士兵请回应我.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17059,7 +17059,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 749,
+      "insertion_order": 967,
       "content_file": "src/events/E315_对母树的史诗级攻略.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17074,7 +17074,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 750,
+      "insertion_order": 968,
       "content_file": "src/events/E316_母树的堕落与园丁任务.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17089,7 +17089,7 @@
       ],
       "enabled": false,
       "constant": false,
-      "insertion_order": 751,
+      "insertion_order": 969,
       "content_file": "src/events/E317_小树洞阶段九收束.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17103,7 +17103,7 @@
         "克苏鲁的注视"
       ],
       "constant": false,
-      "insertion_order": 400,
+      "insertion_order": 2274,
       "content_file": "src/concepts/C836_克苏鲁的注视.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17126,7 +17126,7 @@
         "蚀痕动乱"
       ],
       "constant": false,
-      "insertion_order": 401,
+      "insertion_order": 2275,
       "content_file": "src/concepts/C837_蚀痕动乱.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17147,7 +17147,7 @@
         "无序化进程"
       ],
       "constant": false,
-      "insertion_order": 402,
+      "insertion_order": 2276,
       "content_file": "src/concepts/C838_无序化进程.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17170,7 +17170,7 @@
         "精神动荡破诡秘"
       ],
       "constant": false,
-      "insertion_order": 403,
+      "insertion_order": 2277,
       "content_file": "src/concepts/C839_精神动荡破诡秘.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17191,7 +17191,7 @@
         "低语侵蚀"
       ],
       "constant": false,
-      "insertion_order": 404,
+      "insertion_order": 2278,
       "content_file": "src/concepts/C840_低语侵蚀.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17214,7 +17214,7 @@
         "折跃引擎·信标传送"
       ],
       "constant": false,
-      "insertion_order": 405,
+      "insertion_order": 2279,
       "content_file": "src/concepts/C841_折跃引擎_信标传送.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17236,7 +17236,7 @@
         "幽灵模式"
       ],
       "constant": false,
-      "insertion_order": 406,
+      "insertion_order": 2280,
       "content_file": "src/concepts/C842_幽灵模式.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17257,7 +17257,7 @@
         "永寂契约"
       ],
       "constant": false,
-      "insertion_order": 407,
+      "insertion_order": 2281,
       "content_file": "src/concepts/C843_永寂契约.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17278,7 +17278,7 @@
         "海嗣阵营声望"
       ],
       "constant": false,
-      "insertion_order": 408,
+      "insertion_order": 2282,
       "content_file": "src/concepts/C844_海嗣阵营声望.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17299,7 +17299,7 @@
         "神的方程式"
       ],
       "constant": false,
-      "insertion_order": 409,
+      "insertion_order": 2283,
       "content_file": "src/concepts/C845_神的方程式.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17320,7 +17320,7 @@
         "圣女的天灯"
       ],
       "constant": false,
-      "insertion_order": 410,
+      "insertion_order": 2284,
       "content_file": "src/concepts/C846_圣女的天灯.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17341,7 +17341,7 @@
         "猫娘药剂催化"
       ],
       "constant": false,
-      "insertion_order": 411,
+      "insertion_order": 2285,
       "content_file": "src/concepts/C847_猫娘药剂催化.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17363,7 +17363,7 @@
         "对海嗣的阶段性诱拐"
       ],
       "constant": false,
-      "insertion_order": 412,
+      "insertion_order": 2286,
       "content_file": "src/concepts/C848_对海嗣的阶段性诱拐.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17384,7 +17384,7 @@
         "灵能记忆掠夺"
       ],
       "constant": false,
-      "insertion_order": 413,
+      "insertion_order": 2287,
       "content_file": "src/concepts/C849_灵能记忆掠夺.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17405,7 +17405,7 @@
         "血肉灾变覆体"
       ],
       "constant": false,
-      "insertion_order": 414,
+      "insertion_order": 2288,
       "content_file": "src/concepts/C850_血肉灾变覆体.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17426,7 +17426,7 @@
         "天使圣血应激"
       ],
       "constant": false,
-      "insertion_order": 415,
+      "insertion_order": 2289,
       "content_file": "src/concepts/C851_天使圣血应激.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17448,7 +17448,7 @@
         "大天使翎羽拟化"
       ],
       "constant": false,
-      "insertion_order": 416,
+      "insertion_order": 2290,
       "content_file": "src/concepts/C852_大天使翎羽拟化.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17471,7 +17471,7 @@
         "往日遗念新应用"
       ],
       "constant": false,
-      "insertion_order": 417,
+      "insertion_order": 2291,
       "content_file": "src/concepts/C853_往日遗念新应用.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17493,7 +17493,7 @@
         "血衣附身精神叠加"
       ],
       "constant": false,
-      "insertion_order": 418,
+      "insertion_order": 2292,
       "content_file": "src/concepts/C854_血衣附身精神叠加.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17515,7 +17515,7 @@
         "第二能源接口"
       ],
       "constant": false,
-      "insertion_order": 419,
+      "insertion_order": 2293,
       "content_file": "src/concepts/C855_第二能源接口.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17536,7 +17536,7 @@
         "隐修会"
       ],
       "constant": false,
-      "insertion_order": 420,
+      "insertion_order": 2294,
       "content_file": "src/concepts/C856_隐修会.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17558,7 +17558,7 @@
         "海嗣（海洋的子嗣）"
       ],
       "constant": false,
-      "insertion_order": 421,
+      "insertion_order": 2295,
       "content_file": "src/concepts/C857_海嗣_海洋的子嗣.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17581,7 +17581,7 @@
         "血肉神教旧日计划"
       ],
       "constant": false,
-      "insertion_order": 422,
+      "insertion_order": 2296,
       "content_file": "src/concepts/C858_血肉神教旧日计划.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17603,7 +17603,7 @@
         "血肉神教恶灵计划补完"
       ],
       "constant": false,
-      "insertion_order": 423,
+      "insertion_order": 2297,
       "content_file": "src/concepts/C859_血肉神教恶灵计划补完.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17625,7 +17625,7 @@
         "历代使徒圣者薪火"
       ],
       "constant": false,
-      "insertion_order": 424,
+      "insertion_order": 2298,
       "content_file": "src/concepts/C860_历代使徒圣者薪火.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17647,7 +17647,7 @@
         "圣彼得中心广场"
       ],
       "constant": false,
-      "insertion_order": 425,
+      "insertion_order": 2299,
       "content_file": "src/concepts/C861_圣彼得中心广场.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17669,7 +17669,7 @@
         "地下大殿与炽天使雕像庇护所"
       ],
       "constant": false,
-      "insertion_order": 426,
+      "insertion_order": 2300,
       "content_file": "src/concepts/C862_地下大殿与炽天使雕像庇护所.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17692,7 +17692,7 @@
         "大图书馆地下通道"
       ],
       "constant": false,
-      "insertion_order": 427,
+      "insertion_order": 2301,
       "content_file": "src/concepts/C863_大图书馆地下通道.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17714,7 +17714,7 @@
         "隐修地传送门大殿"
       ],
       "constant": false,
-      "insertion_order": 428,
+      "insertion_order": 2302,
       "content_file": "src/concepts/C864_隐修地传送门大殿.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17735,7 +17735,7 @@
         "深海隐修地"
       ],
       "constant": false,
-      "insertion_order": 429,
+      "insertion_order": 2303,
       "content_file": "src/concepts/C865_深海隐修地.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17757,7 +17757,7 @@
         "天使禁区海底海沟"
       ],
       "constant": false,
-      "insertion_order": 430,
+      "insertion_order": 2304,
       "content_file": "src/concepts/C866_天使禁区海底海沟.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17779,7 +17779,7 @@
         "炽天使精神领域"
       ],
       "constant": false,
-      "insertion_order": 431,
+      "insertion_order": 2305,
       "content_file": "src/concepts/C867_炽天使精神领域.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17801,7 +17801,7 @@
         "旧日时代幻象"
       ],
       "constant": false,
-      "insertion_order": 432,
+      "insertion_order": 2306,
       "content_file": "src/concepts/C868_旧日时代幻象.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17822,7 +17822,7 @@
         "公海孤岛前线"
       ],
       "constant": false,
-      "insertion_order": 433,
+      "insertion_order": 2307,
       "content_file": "src/concepts/C869_公海孤岛前线.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17843,7 +17843,7 @@
         "炽天使魂灯(C870)"
       ],
       "constant": false,
-      "insertion_order": 434,
+      "insertion_order": 2308,
       "content_file": "src/concepts/C870_炽天使魂灯.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17865,7 +17865,7 @@
         "主母的红茶包(C871)"
       ],
       "constant": false,
-      "insertion_order": 435,
+      "insertion_order": 2309,
       "content_file": "src/concepts/C871_主母的红茶包.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17887,7 +17887,7 @@
         "灾厄魂灯系列"
       ],
       "constant": false,
-      "insertion_order": 436,
+      "insertion_order": 2310,
       "content_file": "src/concepts/C872_灾厄魂灯系列.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17909,7 +17909,7 @@
         "旧日的血契"
       ],
       "constant": false,
-      "insertion_order": 437,
+      "insertion_order": 2311,
       "content_file": "src/concepts/C873_旧日的血契.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17932,7 +17932,7 @@
         "理智之血"
       ],
       "constant": false,
-      "insertion_order": 438,
+      "insertion_order": 2312,
       "content_file": "src/concepts/C874_理智之血.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17953,7 +17953,7 @@
         "旧日遗念任务"
       ],
       "constant": false,
-      "insertion_order": 439,
+      "insertion_order": 2313,
       "content_file": "src/concepts/C875_旧日遗念任务.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17976,7 +17976,7 @@
         "门传奇技能"
       ],
       "constant": false,
-      "insertion_order": 440,
+      "insertion_order": 2314,
       "content_file": "src/concepts/C876_门传奇技能.md",
       "extensions": {
         "exclude_recursion": true,
@@ -17999,7 +17999,7 @@
         "界门与地狱锁链"
       ],
       "constant": false,
-      "insertion_order": 441,
+      "insertion_order": 2315,
       "content_file": "src/concepts/C877_界门与地狱锁链.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18022,7 +18022,7 @@
         "地狱标本库与大清洗"
       ],
       "constant": false,
-      "insertion_order": 442,
+      "insertion_order": 2316,
       "content_file": "src/concepts/C878_地狱标本库与大清洗.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18045,7 +18045,7 @@
         "神魂燃烧君王级升华"
       ],
       "constant": false,
-      "insertion_order": 443,
+      "insertion_order": 2317,
       "content_file": "src/concepts/C879_神魂燃烧君王级升华.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18067,7 +18067,7 @@
         "根源级拖行与新根源诞生"
       ],
       "constant": false,
-      "insertion_order": 444,
+      "insertion_order": 2318,
       "content_file": "src/concepts/C880_根源级拖行与新根源诞生.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18088,7 +18088,7 @@
         "无序增殖"
       ],
       "constant": false,
-      "insertion_order": 445,
+      "insertion_order": 2319,
       "content_file": "src/concepts/C881_无序增殖.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18109,7 +18109,7 @@
         "克苏鲁的呼唤"
       ],
       "constant": false,
-      "insertion_order": 446,
+      "insertion_order": 2320,
       "content_file": "src/concepts/C882_克苏鲁的呼唤.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18131,7 +18131,7 @@
         "根源级不死诅咒猎头者形态"
       ],
       "constant": false,
-      "insertion_order": 447,
+      "insertion_order": 2321,
       "content_file": "src/concepts/C883_根源级不死诅咒猎头者形态.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18153,7 +18153,7 @@
         "无瞳法阵紫罗兰印记"
       ],
       "constant": false,
-      "insertion_order": 448,
+      "insertion_order": 2322,
       "content_file": "src/concepts/C884_无瞳法阵紫罗兰印记.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18177,7 +18177,7 @@
         "克苏鲁权能领域"
       ],
       "constant": false,
-      "insertion_order": 449,
+      "insertion_order": 2323,
       "content_file": "src/concepts/C885_克苏鲁权能领域.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18199,7 +18199,7 @@
         "眷者谱系神权契约"
       ],
       "constant": false,
-      "insertion_order": 450,
+      "insertion_order": 2324,
       "content_file": "src/concepts/C886_眷者谱系神权契约.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18220,7 +18220,7 @@
         "假神谕操纵"
       ],
       "constant": false,
-      "insertion_order": 451,
+      "insertion_order": 2325,
       "content_file": "src/concepts/C887_假神谕操纵.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18241,7 +18241,7 @@
         "神魂交融"
       ],
       "constant": false,
-      "insertion_order": 452,
+      "insertion_order": 2326,
       "content_file": "src/concepts/C888_神魂交融.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18262,7 +18262,7 @@
         "第二职业解锁"
       ],
       "constant": false,
-      "insertion_order": 453,
+      "insertion_order": 2327,
       "content_file": "src/concepts/C889_第二职业解锁.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18284,7 +18284,7 @@
         "根源盟约无名义的家庭"
       ],
       "constant": false,
-      "insertion_order": 454,
+      "insertion_order": 2328,
       "content_file": "src/concepts/C890_根源盟约无名义的家庭.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18307,7 +18307,7 @@
         "肃正议会机械军团"
       ],
       "constant": false,
-      "insertion_order": 455,
+      "insertion_order": 2329,
       "content_file": "src/concepts/C891_肃正议会机械军团.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18329,7 +18329,7 @@
         "欲望母树盘踞地"
       ],
       "constant": false,
-      "insertion_order": 456,
+      "insertion_order": 2330,
       "content_file": "src/concepts/C892_欲望母树盘踞地.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18351,7 +18351,7 @@
         "极西深海镇压位"
       ],
       "constant": false,
-      "insertion_order": 457,
+      "insertion_order": 2331,
       "content_file": "src/concepts/C893_极西深海镇压位.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18372,7 +18372,7 @@
         "血色世界"
       ],
       "constant": false,
-      "insertion_order": 458,
+      "insertion_order": 2332,
       "content_file": "src/concepts/C894_血色世界.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18394,7 +18394,7 @@
         "星海界线"
       ],
       "constant": false,
-      "insertion_order": 459,
+      "insertion_order": 2333,
       "content_file": "src/concepts/C895_星海界线.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18415,7 +18415,7 @@
         "地狱蓝天事件"
       ],
       "constant": false,
-      "insertion_order": 460,
+      "insertion_order": 2334,
       "content_file": "src/concepts/C896_地狱蓝天事件.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18436,7 +18436,7 @@
         "系统空间监禁"
       ],
       "constant": false,
-      "insertion_order": 461,
+      "insertion_order": 2335,
       "content_file": "src/concepts/C897_系统空间监禁.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18458,7 +18458,7 @@
         "旧日火炬"
       ],
       "constant": false,
-      "insertion_order": 462,
+      "insertion_order": 2336,
       "content_file": "src/concepts/C898_旧日火炬.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18479,7 +18479,7 @@
         "克苏鲁之眼"
       ],
       "constant": false,
-      "insertion_order": 463,
+      "insertion_order": 2337,
       "content_file": "src/concepts/C899_克苏鲁之眼.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18501,7 +18501,7 @@
         "月儿兰"
       ],
       "constant": false,
-      "insertion_order": 464,
+      "insertion_order": 2338,
       "content_file": "src/concepts/C900_月儿兰.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18523,7 +18523,7 @@
         "视界之眼"
       ],
       "constant": false,
-      "insertion_order": 465,
+      "insertion_order": 2339,
       "content_file": "src/concepts/C901_视界之眼.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18545,7 +18545,7 @@
         "灾厄之眼·那片灾厄"
       ],
       "constant": false,
-      "insertion_order": 466,
+      "insertion_order": 2340,
       "content_file": "src/concepts/C902_灾厄之眼那片灾厄.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18569,7 +18569,7 @@
         "苍蓝女孩·奈奈子"
       ],
       "constant": false,
-      "insertion_order": 467,
+      "insertion_order": 2341,
       "content_file": "src/concepts/C903_苍蓝女孩奈奈子.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18592,7 +18592,7 @@
         "狱卒身份·被保护的真相"
       ],
       "constant": false,
-      "insertion_order": 468,
+      "insertion_order": 2342,
       "content_file": "src/concepts/C904_狱卒身份被保护的真相.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18614,7 +18614,7 @@
         "系统安排论"
       ],
       "constant": false,
-      "insertion_order": 469,
+      "insertion_order": 2343,
       "content_file": "src/concepts/C905_系统安排论.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18637,7 +18637,7 @@
         "不死眷者·艾泽法拉"
       ],
       "constant": false,
-      "insertion_order": 470,
+      "insertion_order": 2344,
       "content_file": "src/concepts/C906_不死眷者艾泽法拉.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18660,7 +18660,7 @@
         "告别广播·蓝星成神宣言"
       ],
       "constant": false,
-      "insertion_order": 471,
+      "insertion_order": 2345,
       "content_file": "src/concepts/C907_告别广播蓝星成神宣言.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18681,7 +18681,7 @@
         "倒计时仪式"
       ],
       "constant": false,
-      "insertion_order": 472,
+      "insertion_order": 2346,
       "content_file": "src/concepts/C908_倒计时仪式.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18703,7 +18703,7 @@
         "来自左手的肯定"
       ],
       "constant": false,
-      "insertion_order": 473,
+      "insertion_order": 2347,
       "content_file": "src/concepts/C909_来自左手的肯定.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18725,7 +18725,7 @@
         "冰箱躯体·林恩(3)"
       ],
       "constant": false,
-      "insertion_order": 474,
+      "insertion_order": 2348,
       "content_file": "src/concepts/C910_冰箱躯体林恩3.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18746,7 +18746,7 @@
         "视界(C911)"
       ],
       "constant": false,
-      "insertion_order": 475,
+      "insertion_order": 2349,
       "content_file": "src/concepts/C911_视界.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18767,7 +18767,7 @@
         "视界之主"
       ],
       "constant": false,
-      "insertion_order": 476,
+      "insertion_order": 2350,
       "content_file": "src/concepts/C912_视界之主.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18789,7 +18789,7 @@
         "血肉飞升之道·左手双修"
       ],
       "constant": false,
-      "insertion_order": 477,
+      "insertion_order": 2351,
       "content_file": "src/concepts/C913_血肉飞升之道左手双修.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18810,7 +18810,7 @@
         "狱卒"
       ],
       "constant": false,
-      "insertion_order": 478,
+      "insertion_order": 2352,
       "content_file": "src/concepts/C914_狱卒.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18832,7 +18832,7 @@
         "七大旧神·旧神世代"
       ],
       "constant": false,
-      "insertion_order": 479,
+      "insertion_order": 2353,
       "content_file": "src/concepts/C915_七大旧神旧神世代.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18854,7 +18854,7 @@
         "三位一体机重建计划"
       ],
       "constant": false,
-      "insertion_order": 480,
+      "insertion_order": 2354,
       "content_file": "src/concepts/C916_三位一体机重建计划.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18875,7 +18875,7 @@
         "破碎世界"
       ],
       "constant": false,
-      "insertion_order": 481,
+      "insertion_order": 2355,
       "content_file": "src/concepts/C917_破碎世界.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18896,7 +18896,7 @@
         "神不可直视"
       ],
       "constant": false,
-      "insertion_order": 482,
+      "insertion_order": 2356,
       "content_file": "src/concepts/C918_神不可直视.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18918,7 +18918,7 @@
         "命运神真容·神颜"
       ],
       "constant": false,
-      "insertion_order": 483,
+      "insertion_order": 2357,
       "content_file": "src/concepts/C919_命运神真容神颜.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18940,7 +18940,7 @@
         "血锯药剂店vip群"
       ],
       "constant": false,
-      "insertion_order": 484,
+      "insertion_order": 2358,
       "content_file": "src/concepts/C920_血锯药剂店vip群.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18961,7 +18961,7 @@
         "禁忌书籍五册"
       ],
       "constant": false,
-      "insertion_order": 485,
+      "insertion_order": 2359,
       "content_file": "src/concepts/C921_禁忌书籍五册.md",
       "extensions": {
         "exclude_recursion": true,
@@ -18982,7 +18982,7 @@
         "借刀杀人局"
       ],
       "constant": false,
-      "insertion_order": 486,
+      "insertion_order": 2360,
       "content_file": "src/concepts/C922_借刀杀人局.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19003,7 +19003,7 @@
         "魅魔外交团"
       ],
       "constant": false,
-      "insertion_order": 487,
+      "insertion_order": 2361,
       "content_file": "src/concepts/C923_魅魔外交团.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19025,7 +19025,7 @@
         "肉教收缩与疫医活跃"
       ],
       "constant": false,
-      "insertion_order": 488,
+      "insertion_order": 2362,
       "content_file": "src/concepts/C924_肉教收缩与疫医活跃.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19047,7 +19047,7 @@
         "银色幻想·精装版唯一机体"
       ],
       "constant": false,
-      "insertion_order": 489,
+      "insertion_order": 2363,
       "content_file": "src/concepts/C925_银色幻想精装版唯一机体.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19068,7 +19068,7 @@
         "纳米机械风暴"
       ],
       "constant": false,
-      "insertion_order": 490,
+      "insertion_order": 2364,
       "content_file": "src/concepts/C926_纳米机械风暴.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19089,7 +19089,7 @@
         "血肉肃正"
       ],
       "constant": false,
-      "insertion_order": 491,
+      "insertion_order": 2365,
       "content_file": "src/concepts/C927_血肉肃正.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19110,7 +19110,7 @@
         "魅魔战斗形态"
       ],
       "constant": false,
-      "insertion_order": 492,
+      "insertion_order": 2366,
       "content_file": "src/concepts/C928_魅魔战斗形态.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19132,7 +19132,7 @@
         "冰箱伪身份·021型试做型"
       ],
       "constant": false,
-      "insertion_order": 493,
+      "insertion_order": 2367,
       "content_file": "src/concepts/C929_冰箱伪身份021型试做型.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19154,7 +19154,7 @@
         "身份烙印·初级"
       ],
       "constant": false,
-      "insertion_order": 494,
+      "insertion_order": 2368,
       "content_file": "src/concepts/C930_身份烙印初级.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19175,7 +19175,7 @@
         "混入机械神教"
       ],
       "constant": false,
-      "insertion_order": 495,
+      "insertion_order": 2369,
       "content_file": "src/concepts/C931_成就混入机械神教.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19197,7 +19197,7 @@
         "重装机械y71·洗衣机哥哥"
       ],
       "constant": false,
-      "insertion_order": 496,
+      "insertion_order": 2370,
       "content_file": "src/concepts/C932_重装机械y71洗衣机哥哥.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19218,7 +19218,7 @@
         "蚀痕高位链接"
       ],
       "constant": false,
-      "insertion_order": 497,
+      "insertion_order": 2371,
       "content_file": "src/concepts/C933_蚀痕高位链接.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19239,7 +19239,7 @@
         "纸条传讯"
       ],
       "constant": false,
-      "insertion_order": 498,
+      "insertion_order": 2372,
       "content_file": "src/concepts/C934_纸条传讯.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19260,7 +19260,7 @@
         "秽语包"
       ],
       "constant": false,
-      "insertion_order": 499,
+      "insertion_order": 2373,
       "content_file": "src/concepts/C935_秽语包.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19282,7 +19282,7 @@
         "黑星蜂巢·03号"
       ],
       "constant": false,
-      "insertion_order": 500,
+      "insertion_order": 2374,
       "content_file": "src/concepts/C936_黑星蜂巢03号.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19304,7 +19304,7 @@
         "烬寂海·烬灭海"
       ],
       "constant": false,
-      "insertion_order": 501,
+      "insertion_order": 2375,
       "content_file": "src/concepts/C937_烬寂海烬灭海.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19325,7 +19325,7 @@
         "蚀痕入海权能"
       ],
       "constant": false,
-      "insertion_order": 502,
+      "insertion_order": 2376,
       "content_file": "src/concepts/C938_蚀痕入海权能.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19347,7 +19347,7 @@
         "夺舍·神经中枢控制"
       ],
       "constant": false,
-      "insertion_order": 503,
+      "insertion_order": 2377,
       "content_file": "src/concepts/C939_夺舍神经中枢控制.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19369,7 +19369,7 @@
         "旧日幻象·华而不实"
       ],
       "constant": false,
-      "insertion_order": 504,
+      "insertion_order": 2378,
       "content_file": "src/concepts/C940_旧日幻象华而不实.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19391,7 +19391,7 @@
         "欲望母树·神性蜕变·自然少女"
       ],
       "constant": false,
-      "insertion_order": 505,
+      "insertion_order": 2379,
       "content_file": "src/concepts/C941_欲望母树神性蜕变自然少女.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19412,7 +19412,7 @@
         "位格压制"
       ],
       "constant": false,
-      "insertion_order": 506,
+      "insertion_order": 2380,
       "content_file": "src/concepts/C942_位格压制.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19434,7 +19434,7 @@
         "血肉瘟疫·精改"
       ],
       "constant": false,
-      "insertion_order": 507,
+      "insertion_order": 2381,
       "content_file": "src/concepts/C943_血肉瘟疫精改.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19456,7 +19456,7 @@
         "诱捕陷阱·三点三线"
       ],
       "constant": false,
-      "insertion_order": 508,
+      "insertion_order": 2382,
       "content_file": "src/concepts/C944_诱捕陷阱三点三线.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19477,7 +19477,7 @@
         "血肉牢笼"
       ],
       "constant": false,
-      "insertion_order": 509,
+      "insertion_order": 2383,
       "content_file": "src/concepts/C945_血肉牢笼.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19498,7 +19498,7 @@
         "孤立个体化"
       ],
       "constant": false,
-      "insertion_order": 510,
+      "insertion_order": 2384,
       "content_file": "src/concepts/C946_孤立个体化.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19519,7 +19519,7 @@
         "关系评分表"
       ],
       "constant": false,
-      "insertion_order": 511,
+      "insertion_order": 2385,
       "content_file": "src/concepts/C947_关系评分表.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19540,7 +19540,7 @@
         "太阳能梦想"
       ],
       "constant": false,
-      "insertion_order": 512,
+      "insertion_order": 2386,
       "content_file": "src/concepts/C948_太阳能梦想.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19562,7 +19562,7 @@
         "人格评估报告·智械检测"
       ],
       "constant": false,
-      "insertion_order": 513,
+      "insertion_order": 2387,
       "content_file": "src/concepts/C949_人格评估报告智械检测.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19583,7 +19583,7 @@
         "小智脑"
       ],
       "constant": false,
-      "insertion_order": 514,
+      "insertion_order": 2388,
       "content_file": "src/concepts/C950_小智脑.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19605,7 +19605,7 @@
         "病名为爱·梦境异常"
       ],
       "constant": false,
-      "insertion_order": 515,
+      "insertion_order": 2389,
       "content_file": "src/concepts/C951_病名为爱梦境异常.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19627,7 +19627,7 @@
         "小冰箱伪装人格"
       ],
       "constant": false,
-      "insertion_order": 516,
+      "insertion_order": 2390,
       "content_file": "src/concepts/C952_小冰箱伪装人格.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19651,7 +19651,7 @@
         "意识上传(C953)"
       ],
       "constant": false,
-      "insertion_order": 517,
+      "insertion_order": 2391,
       "content_file": "src/concepts/C953_意识上传.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19673,7 +19673,7 @@
         "一级权限·王权通行"
       ],
       "constant": false,
-      "insertion_order": 518,
+      "insertion_order": 2392,
       "content_file": "src/concepts/C954_一级权限王权通行.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19695,7 +19695,7 @@
         "机械神教的一员"
       ],
       "constant": false,
-      "insertion_order": 519,
+      "insertion_order": 2393,
       "content_file": "src/concepts/C955_机械神教的一员成就.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19717,7 +19717,7 @@
         "机械神教的命运·系列任务"
       ],
       "constant": false,
-      "insertion_order": 520,
+      "insertion_order": 2394,
       "content_file": "src/concepts/C956_机械神教的命运系列任务.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19739,7 +19739,7 @@
         "火种实验与文明对赌"
       ],
       "constant": false,
-      "insertion_order": 521,
+      "insertion_order": 2395,
       "content_file": "src/concepts/C957_火种实验与文明对赌.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19760,7 +19760,7 @@
         "血肉的苦弱"
       ],
       "constant": false,
-      "insertion_order": 522,
+      "insertion_order": 2396,
       "content_file": "src/concepts/C958_血肉的苦弱.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19782,7 +19782,7 @@
         "知识果汁·知识即饮"
       ],
       "constant": false,
-      "insertion_order": 523,
+      "insertion_order": 2397,
       "content_file": "src/concepts/C959_知识果汁知识即饮.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19803,7 +19803,7 @@
         "少年画像"
       ],
       "constant": false,
-      "insertion_order": 524,
+      "insertion_order": 2398,
       "content_file": "src/concepts/C960_少年画像.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19825,7 +19825,7 @@
         "塑形意识体形象定制"
       ],
       "constant": false,
-      "insertion_order": 525,
+      "insertion_order": 2399,
       "content_file": "src/concepts/C961_塑形意识体形象定制.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19848,7 +19848,7 @@
         "智能战斗辅助系统芯片"
       ],
       "constant": false,
-      "insertion_order": 526,
+      "insertion_order": 2400,
       "content_file": "src/concepts/C962_智能战斗辅助系统芯片.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19871,7 +19871,7 @@
         "清理型智能ai战警"
       ],
       "constant": false,
-      "insertion_order": 527,
+      "insertion_order": 2401,
       "content_file": "src/concepts/C963_清理型智能ai战警.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19892,7 +19892,7 @@
         "初代智脑"
       ],
       "constant": false,
-      "insertion_order": 528,
+      "insertion_order": 2402,
       "content_file": "src/concepts/C964_初代智脑.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19914,7 +19914,7 @@
         "模块化数据隔离"
       ],
       "constant": false,
-      "insertion_order": 529,
+      "insertion_order": 2403,
       "content_file": "src/concepts/C965_模块化数据隔离.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19936,7 +19936,7 @@
         "灵能化形跨界显化"
       ],
       "constant": false,
-      "insertion_order": 530,
+      "insertion_order": 2404,
       "content_file": "src/concepts/C966_灵能化形跨界显化.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19958,7 +19958,7 @@
         "制裁之光肃正死光"
       ],
       "constant": false,
-      "insertion_order": 531,
+      "insertion_order": 2405,
       "content_file": "src/concepts/C967_制裁之光肃正死光.md",
       "extensions": {
         "exclude_recursion": true,
@@ -19980,7 +19980,7 @@
         "双林恩计不在场铁证"
       ],
       "constant": false,
-      "insertion_order": 532,
+      "insertion_order": 2406,
       "content_file": "src/concepts/C968_双林恩计不在场铁证.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20001,7 +20001,7 @@
         "戏中人成就"
       ],
       "constant": false,
-      "insertion_order": 533,
+      "insertion_order": 2407,
       "content_file": "src/concepts/C969_戏中人成就.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20022,7 +20022,7 @@
         "骸骨少年塑形"
       ],
       "constant": false,
-      "insertion_order": 534,
+      "insertion_order": 2408,
       "content_file": "src/concepts/C970_骸骨少年塑形.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20044,7 +20044,7 @@
         "蜂巢积分与算力晋升制"
       ],
       "constant": false,
-      "insertion_order": 535,
+      "insertion_order": 2409,
       "content_file": "src/concepts/C971_蜂巢积分与算力晋升制.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20065,7 +20065,7 @@
         "织梦之家"
       ],
       "constant": false,
-      "insertion_order": 536,
+      "insertion_order": 2410,
       "content_file": "src/concepts/C972_织梦之家.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20086,7 +20086,7 @@
         "银色幻想的梦"
       ],
       "constant": false,
-      "insertion_order": 537,
+      "insertion_order": 2411,
       "content_file": "src/concepts/C973_银色幻想的梦.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20108,7 +20108,7 @@
         "智脑的沉默协议"
       ],
       "constant": false,
-      "insertion_order": 538,
+      "insertion_order": 2412,
       "content_file": "src/concepts/C974_智脑的沉默协议.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20130,7 +20130,7 @@
         "战场经验模块传输"
       ],
       "constant": false,
-      "insertion_order": 539,
+      "insertion_order": 2413,
       "content_file": "src/concepts/C975_战场经验模块传输.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20152,7 +20152,7 @@
         "金字塔指挥体系"
       ],
       "constant": false,
-      "insertion_order": 540,
+      "insertion_order": 2414,
       "content_file": "src/concepts/C976_金字塔指挥体系.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20173,7 +20173,7 @@
         "欲望殖场"
       ],
       "constant": false,
-      "insertion_order": 541,
+      "insertion_order": 2415,
       "content_file": "src/concepts/C977_欲望殖场.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20195,7 +20195,7 @@
         "个体意识vs集体主义"
       ],
       "constant": false,
-      "insertion_order": 542,
+      "insertion_order": 2416,
       "content_file": "src/concepts/C978_个体意识vs集体主义.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20217,7 +20217,7 @@
         "三教内部矛盾对照"
       ],
       "constant": false,
-      "insertion_order": 543,
+      "insertion_order": 2417,
       "content_file": "src/concepts/C979_三教内部矛盾对照.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20239,7 +20239,7 @@
         "三分钟屏蔽病毒"
       ],
       "constant": false,
-      "insertion_order": 544,
+      "insertion_order": 2418,
       "content_file": "src/concepts/C980_三分钟屏蔽病毒.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20261,7 +20261,7 @@
         "奇异物质神之血"
       ],
       "constant": false,
-      "insertion_order": 545,
+      "insertion_order": 2419,
       "content_file": "src/concepts/C981_奇异物质神之血.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20282,7 +20282,7 @@
         "机械泰坦"
       ],
       "constant": false,
-      "insertion_order": 546,
+      "insertion_order": 2420,
       "content_file": "src/concepts/C982_机械泰坦.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20304,7 +20304,7 @@
         "万机之神座所大分裂计划"
       ],
       "constant": false,
-      "insertion_order": 547,
+      "insertion_order": 2421,
       "content_file": "src/concepts/C983_万机之神座所大分裂计划.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20326,7 +20326,7 @@
         "战争亲卫黑兜帽银色幻想机"
       ],
       "constant": false,
-      "insertion_order": 548,
+      "insertion_order": 2422,
       "content_file": "src/concepts/C984_战争亲卫黑兜帽银色幻想机.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20348,7 +20348,7 @@
         "纯程序机械精神免疫规则"
       ],
       "constant": false,
-      "insertion_order": 549,
+      "insertion_order": 2423,
       "content_file": "src/concepts/C985_纯程序机械精神免疫规则.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20369,7 +20369,7 @@
         "七号诞所"
       ],
       "constant": false,
-      "insertion_order": 550,
+      "insertion_order": 2424,
       "content_file": "src/concepts/C986_七号诞所.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20390,7 +20390,7 @@
         "七神光宴"
       ],
       "constant": false,
-      "insertion_order": 551,
+      "insertion_order": 2425,
       "content_file": "src/concepts/C987_七神光宴.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20412,7 +20412,7 @@
         "万机大分裂七神共治图谋"
       ],
       "constant": false,
-      "insertion_order": 552,
+      "insertion_order": 2426,
       "content_file": "src/concepts/C988_万机大分裂七神共治图谋.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20434,7 +20434,7 @@
         "空间稳固器空间凝滞器"
       ],
       "constant": false,
-      "insertion_order": 553,
+      "insertion_order": 2427,
       "content_file": "src/concepts/C989_空间稳固器空间凝滞器.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20456,7 +20456,7 @@
         "反复横跳之术"
       ],
       "constant": false,
-      "insertion_order": 554,
+      "insertion_order": 2428,
       "content_file": "src/concepts/C990_反复横跳之术.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20478,7 +20478,7 @@
         "生与死的对赌咒瞳魔化"
       ],
       "constant": false,
-      "insertion_order": 555,
+      "insertion_order": 2429,
       "content_file": "src/concepts/C991_生与死的对赌咒瞳魔化.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20499,7 +20499,7 @@
         "即死诅咒雷霆"
       ],
       "constant": false,
-      "insertion_order": 556,
+      "insertion_order": 2430,
       "content_file": "src/concepts/C992_即死诅咒雷霆.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20522,7 +20522,7 @@
         "小眼萝养分契约"
       ],
       "constant": false,
-      "insertion_order": 557,
+      "insertion_order": 2431,
       "content_file": "src/concepts/C993_小眼萝养分契约.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20543,7 +20543,7 @@
         "泰坦不死诅咒"
       ],
       "constant": false,
-      "insertion_order": 558,
+      "insertion_order": 2432,
       "content_file": "src/concepts/C994_泰坦不死诅咒.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20566,7 +20566,7 @@
         "数据网络虚拟化脱壳"
       ],
       "constant": false,
-      "insertion_order": 559,
+      "insertion_order": 2433,
       "content_file": "src/concepts/C995_数据网络虚拟化脱壳.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20588,7 +20588,7 @@
         "七座蜂巢/1号蜂巢"
       ],
       "constant": false,
-      "insertion_order": 560,
+      "insertion_order": 2434,
       "content_file": "src/concepts/C996_七座蜂巢1号蜂巢.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20610,7 +20610,7 @@
         "七神：将军"
       ],
       "constant": false,
-      "insertion_order": 561,
+      "insertion_order": 2435,
       "content_file": "src/concepts/C997_七神将军.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20632,7 +20632,7 @@
         "七神共治编年史"
       ],
       "constant": false,
-      "insertion_order": 562,
+      "insertion_order": 2436,
       "content_file": "src/concepts/C998_七神共治编年史.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20653,7 +20653,7 @@
         "智械意识重置"
       ],
       "constant": false,
-      "insertion_order": 563,
+      "insertion_order": 2437,
       "content_file": "src/concepts/C999_智械意识重置.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20675,7 +20675,7 @@
         "小冰箱切割线"
       ],
       "constant": false,
-      "insertion_order": 564,
+      "insertion_order": 2438,
       "content_file": "src/concepts/C1000_小冰箱切割线.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20697,7 +20697,7 @@
         "克苏鲁之眼·蚀痕海嗣躯"
       ],
       "constant": false,
-      "insertion_order": 565,
+      "insertion_order": 2439,
       "content_file": "src/concepts/C1001_克苏鲁之眼蚀痕海嗣躯.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20718,7 +20718,7 @@
         "智械单分子剑"
       ],
       "constant": false,
-      "insertion_order": 566,
+      "insertion_order": 2440,
       "content_file": "src/concepts/C1002_智械单分子剑.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20740,7 +20740,7 @@
         "欲望母树攻略线（假面恶鬼论）"
       ],
       "constant": false,
-      "insertion_order": 567,
+      "insertion_order": 2441,
       "content_file": "src/concepts/C1003_欲望母树攻略线假面恶鬼论.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20762,7 +20762,7 @@
         "欲望母树的堕落"
       ],
       "constant": false,
-      "insertion_order": 568,
+      "insertion_order": 2442,
       "content_file": "src/concepts/C1004_欲望母树的堕落成就.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20783,7 +20783,7 @@
         "园丁任务"
       ],
       "constant": false,
-      "insertion_order": 569,
+      "insertion_order": 2443,
       "content_file": "src/concepts/C1005_园丁任务.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20804,7 +20804,7 @@
         "母树契约"
       ],
       "constant": false,
-      "insertion_order": 570,
+      "insertion_order": 2444,
       "content_file": "src/concepts/C1006_母树契约.md",
       "extensions": {
         "exclude_recursion": true,
@@ -20827,7 +20827,7 @@
         "自然神性驾驭力"
       ],
       "constant": false,
-      "insertion_order": 571,
+      "insertion_order": 2445,
       "content_file": "src/concepts/C1007_自然神性驾驭力.md",
       "extensions": {
         "exclude_recursion": true,

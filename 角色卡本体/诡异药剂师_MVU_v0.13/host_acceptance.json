@@ -14,8 +14,8 @@
     "tavern_helper": null
   },
   "artifact": "dist/诡异药剂师_v0.13.json",
-  "bytes": 8538471,
-  "sha256": "6d8271161a047866f76bacb7ac7173fa3f5e92c1433f864b8a2f12c9a094a84a",
+  "bytes": 8538643,
+  "sha256": "e08b632bf14a806e77a938b3c43a194b2ed702c9bcc10a93bbb09cc38ef9054b",
   "offline_checks": {
     "status": "passed",
     "checks": 28872,
