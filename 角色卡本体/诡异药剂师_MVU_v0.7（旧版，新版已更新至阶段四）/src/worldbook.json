@@ -1,0 +1,5645 @@
+{
+  "name": "《诡异药剂师》v0.7",
+  "description": "《诡异药剂师》第1至431章世界书；二十四名核心人物、六十四事件与一百五十条概念按事件状态和关键词加载。",
+  "extensions": {
+    "tavernweave": {
+      "id": "weird-apothecary-worldbook",
+      "version": "0.7.0"
+    }
+  },
+  "entries": [
+    {
+      "id": 0,
+      "comment": "[核心]最高规则与玩家主权",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 10,
+      "content_file": "src/prompts/world.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 1,
+      "comment": "[核心]自主世界事件调度",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 20,
+      "content_file": "src/prompts/mainline.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 3,
+      "comment": "[角色索引]二十四人路由索引",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 40,
+      "content_file": "src/characters/角色速览.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 21,
+      "comment": "[机制]视界系统",
+      "keys": [
+        "视界",
+        "视界系统",
+        "系统观察镜头",
+        "情报员024"
+      ],
+      "constant": false,
+      "insertion_order": 60,
+      "content_file": "src/mechanisms/视界系统.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 22,
+      "comment": "[机制]诅咒与医疗",
+      "keys": [
+        "诅咒与医疗",
+        "异常诅咒",
+        "诅咒治疗",
+        "过往遗念"
+      ],
+      "constant": false,
+      "insertion_order": 61,
+      "content_file": "src/mechanisms/诅咒与医疗.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 23,
+      "comment": "[机制]巨像及血肉机械技术",
+      "keys": [
+        "巨像",
+        "血肉机械",
+        "血肉傀儡",
+        "钢性傀儡",
+        "械魔"
+      ],
+      "constant": false,
+      "insertion_order": 62,
+      "content_file": "src/mechanisms/巨像及血肉机械技术.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 40,
+      "comment": "[势力]魔人协会",
+      "keys": [
+        "魔人协会",
+        "情报员024",
+        "噬心魔",
+        "械魔",
+        "猎杀者"
+      ],
+      "constant": false,
+      "insertion_order": 80,
+      "content_file": "src/factions/魔人协会.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 41,
+      "comment": "[势力]猎头者家族",
+      "keys": [
+        "猎头者家族",
+        "猎头者",
+        "家庭记忆",
+        "头颅契约"
+      ],
+      "constant": false,
+      "insertion_order": 81,
+      "content_file": "src/factions/猎头者家族.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 42,
+      "comment": "[势力]人偶庄园",
+      "keys": [
+        "人偶庄园",
+        "庄园人偶",
+        "人偶家族"
+      ],
+      "constant": false,
+      "insertion_order": 82,
+      "content_file": "src/factions/人偶庄园.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 43,
+      "comment": "[势力]夜医",
+      "keys": [
+        "夜医",
+        "夜间出诊",
+        "异常医生"
+      ],
+      "constant": false,
+      "insertion_order": 83,
+      "content_file": "src/factions/夜医.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 44,
+      "comment": "[势力]独角恶鬼族",
+      "keys": [
+        "独角恶鬼族",
+        "独角恶鬼",
+        "独角鬼王"
+      ],
+      "constant": false,
+      "insertion_order": 84,
+      "content_file": "src/factions/独角恶鬼族.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 45,
+      "comment": "[势力]游魂巷居民",
+      "keys": [
+        "游魂巷居民",
+        "游魂巷邻居",
+        "游魂巷街坊",
+        "候诊室群像"
+      ],
+      "constant": false,
+      "insertion_order": 85,
+      "content_file": "src/factions/游魂巷居民.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 60,
+      "comment": "[地点]血锯药剂店",
+      "keys": [
+        "血锯药剂店",
+        "药剂店",
+        "后院地窖"
+      ],
+      "constant": false,
+      "insertion_order": 90,
+      "content_file": "src/locations/血锯药剂店.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 62,
+      "comment": "[地点]45号血衣住所",
+      "keys": [
+        "45号",
+        "血衣住所",
+        "血衣女士住所"
+      ],
+      "constant": false,
+      "insertion_order": 92,
+      "content_file": "src/locations/45号血衣住所.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 63,
+      "comment": "[地点]凄凉荒野与倒吊塔",
+      "keys": [
+        "凄凉荒野",
+        "倒吊塔"
+      ],
+      "constant": false,
+      "insertion_order": 93,
+      "content_file": "src/locations/凄凉荒野与倒吊塔.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 64,
+      "comment": "[地点]人偶庄园",
+      "keys": [
+        "人偶庄园",
+        "庄园工坊"
+      ],
+      "constant": false,
+      "insertion_order": 94,
+      "content_file": "src/locations/人偶庄园.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 65,
+      "comment": "[地点]独角鬼王神庙",
+      "keys": [
+        "独角鬼王神庙",
+        "鬼王神庙"
+      ],
+      "constant": false,
+      "insertion_order": 95,
+      "content_file": "src/locations/独角鬼王神庙.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 100,
+      "comment": "[角色]左左",
+      "keys": [
+        "左左",
+        "林恩左手",
+        "左手变异体"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 100,
+      "content_files": [
+        "src/characters/左左/角色速览.md",
+        "src/characters/左左/基础信息.md",
+        "src/characters/左左/性格调色盘.md",
+        "src/characters/左左/三面性.md",
+        "src/characters/左左/多阶段人设.md",
+        "src/characters/左左/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E11",
+            "E12",
+            "E18",
+            "E20",
+            "E22",
+            "E23",
+            "E24",
+            "E26",
+            "E33",
+            "E35",
+            "E36",
+            "E43",
+            "E45",
+            "E46",
+            "E48",
+            "E49",
+            "E50",
+            "E52",
+            "E55",
+            "E57",
+            "E60",
+            "E61",
+            "E62",
+            "E63",
+            "E64"
+          ]
+        }
+      }
+    },
+    {
+      "id": 110,
+      "comment": "[角色]血锯",
+      "keys": [
+        "血锯",
+        "血锯狂人",
+        "血锯师父"
+      ],
+      "constant": false,
+      "insertion_order": 110,
+      "content_files": [
+        "src/characters/血锯/角色速览.md",
+        "src/characters/血锯/基础信息.md",
+        "src/characters/血锯/性格调色盘.md",
+        "src/characters/血锯/三面性.md",
+        "src/characters/血锯/多阶段人设.md",
+        "src/characters/血锯/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E01",
+            "E18",
+            "E20",
+            "E21",
+            "E26",
+            "E29"
+          ]
+        }
+      }
+    },
+    {
+      "id": 120,
+      "comment": "[角色]血衣女士",
+      "keys": [
+        "血衣女士",
+        "血衣恶灵",
+        "红衣女人",
+        "45号住户"
+      ],
+      "constant": false,
+      "insertion_order": 120,
+      "content_files": [
+        "src/characters/血衣女士/角色速览.md",
+        "src/characters/血衣女士/基础信息.md",
+        "src/characters/血衣女士/性格调色盘.md",
+        "src/characters/血衣女士/三面性.md",
+        "src/characters/血衣女士/多阶段人设.md",
+        "src/characters/血衣女士/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E07",
+            "E09",
+            "E11",
+            "E12",
+            "E13",
+            "E64"
+          ]
+        }
+      }
+    },
+    {
+      "id": 130,
+      "comment": "[角色]小小",
+      "keys": [
+        "小小",
+        "巨大病患",
+        "夜间牙科"
+      ],
+      "constant": false,
+      "insertion_order": 130,
+      "content_files": [
+        "src/characters/小小/角色速览.md",
+        "src/characters/小小/基础信息.md",
+        "src/characters/小小/性格调色盘.md",
+        "src/characters/小小/三面性.md",
+        "src/characters/小小/多阶段人设.md",
+        "src/characters/小小/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E05",
+            "E15",
+            "E16",
+            "E17",
+            "E18",
+            "E19",
+            "E34",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 140,
+      "comment": "[角色]人偶夫人",
+      "keys": [
+        "人偶夫人",
+        "人偶庄园女主人"
+      ],
+      "constant": false,
+      "insertion_order": 140,
+      "content_files": [
+        "src/characters/人偶夫人/角色速览.md",
+        "src/characters/人偶夫人/基础信息.md",
+        "src/characters/人偶夫人/性格调色盘.md",
+        "src/characters/人偶夫人/三面性.md",
+        "src/characters/人偶夫人/多阶段人设.md",
+        "src/characters/人偶夫人/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E15",
+            "E18",
+            "E20",
+            "E51",
+            "E53"
+          ]
+        }
+      }
+    },
+    {
+      "id": 150,
+      "comment": "[角色]爱丽丝",
+      "keys": [
+        "爱丽丝",
+        "幸福之家爱丽丝",
+        "地缚灵爱丽丝"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 150,
+      "content_files": [
+        "src/characters/爱丽丝/角色速览.md",
+        "src/characters/爱丽丝/基础信息.md",
+        "src/characters/爱丽丝/性格调色盘.md",
+        "src/characters/爱丽丝/三面性.md",
+        "src/characters/爱丽丝/多阶段人设.md",
+        "src/characters/爱丽丝/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E22",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E28",
+            "E64"
+          ]
+        }
+      }
+    },
+    {
+      "id": 160,
+      "comment": "[角色]白逸",
+      "keys": [
+        "白逸",
+        "九州白逸",
+        "异域同乡"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 160,
+      "content_files": [
+        "src/characters/白逸/角色速览.md",
+        "src/characters/白逸/基础信息.md",
+        "src/characters/白逸/性格调色盘.md",
+        "src/characters/白逸/三面性.md",
+        "src/characters/白逸/多阶段人设.md",
+        "src/characters/白逸/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E22",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27",
+            "E35",
+            "E37",
+            "E38",
+            "E41",
+            "E42"
+          ]
+        }
+      }
+    },
+    {
+      "id": 170,
+      "comment": "[角色]泰坦头颅",
+      "keys": [
+        "泰坦头颅",
+        "泰坦之首"
+      ],
+      "constant": false,
+      "insertion_order": 170,
+      "content_files": [
+        "src/characters/泰坦头颅/角色速览.md",
+        "src/characters/泰坦头颅/基础信息.md",
+        "src/characters/泰坦头颅/性格调色盘.md",
+        "src/characters/泰坦头颅/三面性.md",
+        "src/characters/泰坦头颅/多阶段人设.md",
+        "src/characters/泰坦头颅/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E15",
+            "E16",
+            "E17",
+            "E18",
+            "E19",
+            "E34",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 180,
+      "comment": "[角色]巫神头颅",
+      "keys": [
+        "巫神头颅",
+        "巫神之首"
+      ],
+      "constant": false,
+      "insertion_order": 180,
+      "content_files": [
+        "src/characters/巫神头颅/角色速览.md",
+        "src/characters/巫神头颅/基础信息.md",
+        "src/characters/巫神头颅/性格调色盘.md",
+        "src/characters/巫神头颅/三面性.md",
+        "src/characters/巫神头颅/多阶段人设.md",
+        "src/characters/巫神头颅/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E15",
+            "E16",
+            "E17",
+            "E19",
+            "E34",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 190,
+      "comment": "[角色]小宝贝",
+      "keys": [
+        "小宝贝",
+        "地窖里的小宝贝",
+        "巨型舌头"
+      ],
+      "constant": false,
+      "insertion_order": 190,
+      "content_files": [
+        "src/characters/小宝贝/角色速览.md",
+        "src/characters/小宝贝/基础信息.md",
+        "src/characters/小宝贝/性格调色盘.md",
+        "src/characters/小宝贝/三面性.md",
+        "src/characters/小宝贝/多阶段人设.md",
+        "src/characters/小宝贝/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E01",
+            "E11",
+            "E57",
+            "E61"
+          ]
+        }
+      }
+    },
+    {
+      "id": 200,
+      "comment": "[角色]倒吊天使",
+      "keys": [
+        "倒吊天使",
+        "十二翼倒吊天使",
+        "夜医主母",
+        "夜医主脑"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 200,
+      "content_files": [
+        "src/characters/倒吊天使/角色速览.md",
+        "src/characters/倒吊天使/基础信息.md",
+        "src/characters/倒吊天使/性格调色盘.md",
+        "src/characters/倒吊天使/三面性.md",
+        "src/characters/倒吊天使/多阶段人设.md",
+        "src/characters/倒吊天使/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34",
+            "E43",
+            "E44",
+            "E45",
+            "E47",
+            "E49",
+            "E54",
+            "E57",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 210,
+      "comment": "[角色]白夜",
+      "keys": [
+        "白夜",
+        "八字元勋白夜",
+        "汪涛"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 210,
+      "content_files": [
+        "src/characters/白夜/角色速览.md",
+        "src/characters/白夜/基础信息.md",
+        "src/characters/白夜/性格调色盘.md",
+        "src/characters/白夜/三面性.md",
+        "src/characters/白夜/多阶段人设.md",
+        "src/characters/白夜/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E33",
+            "E34",
+            "E49",
+            "E57",
+            "E58",
+            "E59",
+            "E60",
+            "E61"
+          ]
+        }
+      }
+    },
+    {
+      "id": 220,
+      "comment": "[角色]渡鸦",
+      "keys": [
+        "渡鸦",
+        "夜医渡鸦",
+        "鸦人渡鸦"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 220,
+      "content_files": [
+        "src/characters/渡鸦/角色速览.md",
+        "src/characters/渡鸦/基础信息.md",
+        "src/characters/渡鸦/性格调色盘.md",
+        "src/characters/渡鸦/三面性.md",
+        "src/characters/渡鸦/多阶段人设.md",
+        "src/characters/渡鸦/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E31",
+            "E32",
+            "E33"
+          ]
+        }
+      }
+    },
+    {
+      "id": 230,
+      "comment": "[角色]黑颅",
+      "keys": [
+        "黑颅",
+        "夜医黑颅",
+        "黑颅前辈"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 230,
+      "content_files": [
+        "src/characters/黑颅/角色速览.md",
+        "src/characters/黑颅/基础信息.md",
+        "src/characters/黑颅/性格调色盘.md",
+        "src/characters/黑颅/三面性.md",
+        "src/characters/黑颅/多阶段人设.md",
+        "src/characters/黑颅/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E31",
+            "E32"
+          ]
+        }
+      }
+    },
+    {
+      "id": 240,
+      "comment": "[角色]猪头屠夫",
+      "keys": [
+        "猪头屠夫",
+        "古堡屠夫",
+        "屠夫厨房"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 240,
+      "content_files": [
+        "src/characters/猪头屠夫/角色速览.md",
+        "src/characters/猪头屠夫/基础信息.md",
+        "src/characters/猪头屠夫/性格调色盘.md",
+        "src/characters/猪头屠夫/三面性.md",
+        "src/characters/猪头屠夫/多阶段人设.md",
+        "src/characters/猪头屠夫/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25",
+            "E26",
+            "E32"
+          ]
+        }
+      }
+    },
+    {
+      "id": 250,
+      "comment": "[角色]哭泣小丑",
+      "keys": [
+        "哭泣小丑",
+        "小丑替代人格",
+        "哭泣小丑显化体"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 250,
+      "content_files": [
+        "src/characters/哭泣小丑/角色速览.md",
+        "src/characters/哭泣小丑/基础信息.md",
+        "src/characters/哭泣小丑/性格调色盘.md",
+        "src/characters/哭泣小丑/三面性.md",
+        "src/characters/哭泣小丑/多阶段人设.md",
+        "src/characters/哭泣小丑/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25",
+            "E28",
+            "E30",
+            "E31",
+            "E32",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 260,
+      "comment": "[角色]黑白小丑",
+      "keys": [
+        "黑白小丑",
+        "黑白小丑本体",
+        "弹簧小丑"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 260,
+      "content_files": [
+        "src/characters/黑白小丑/角色速览.md",
+        "src/characters/黑白小丑/基础信息.md",
+        "src/characters/黑白小丑/性格调色盘.md",
+        "src/characters/黑白小丑/三面性.md",
+        "src/characters/黑白小丑/多阶段人设.md",
+        "src/characters/黑白小丑/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E32"
+          ]
+        }
+      }
+    },
+    {
+      "id": 270,
+      "comment": "[角色]黑弦月",
+      "keys": [
+        "黑弦月",
+        "第七人偶",
+        "哥特萝莉人偶"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 270,
+      "content_files": [
+        "src/characters/黑弦月/角色速览.md",
+        "src/characters/黑弦月/基础信息.md",
+        "src/characters/黑弦月/性格调色盘.md",
+        "src/characters/黑弦月/三面性.md",
+        "src/characters/黑弦月/多阶段人设.md",
+        "src/characters/黑弦月/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E51",
+            "E52",
+            "E53",
+            "E57",
+            "E61",
+            "E62",
+            "E63",
+            "E64"
+          ]
+        }
+      }
+    },
+    {
+      "id": 280,
+      "comment": "[角色]喵喵",
+      "keys": [
+        "喵喵",
+        "狗耳娘",
+        "猫耳娘喵喵"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 280,
+      "content_files": [
+        "src/characters/喵喵/角色速览.md",
+        "src/characters/喵喵/基础信息.md",
+        "src/characters/喵喵/性格调色盘.md",
+        "src/characters/喵喵/三面性.md",
+        "src/characters/喵喵/多阶段人设.md",
+        "src/characters/喵喵/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48",
+            "E49",
+            "E50",
+            "E55",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 290,
+      "comment": "[角色]林樱",
+      "keys": [
+        "林樱"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 290,
+      "content_files": [
+        "src/characters/林樱/角色速览.md",
+        "src/characters/林樱/基础信息.md",
+        "src/characters/林樱/性格调色盘.md",
+        "src/characters/林樱/三面性.md",
+        "src/characters/林樱/多阶段人设.md",
+        "src/characters/林樱/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E42",
+            "E64"
+          ]
+        }
+      }
+    },
+    {
+      "id": 291,
+      "comment": "[角色]艾雯爵士",
+      "keys": [
+        "艾雯爵士",
+        "艾雯",
+        "至高之魂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 291,
+      "content_files": [
+        "src/characters/艾雯爵士/角色速览.md",
+        "src/characters/艾雯爵士/基础信息.md",
+        "src/characters/艾雯爵士/性格调色盘.md",
+        "src/characters/艾雯爵士/三面性.md",
+        "src/characters/艾雯爵士/多阶段人设.md",
+        "src/characters/艾雯爵士/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E45",
+            "E49",
+            "E54",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 292,
+      "comment": "[角色]羽毛笔",
+      "keys": [
+        "羽毛笔",
+        "必须写点东西的羽毛笔"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 292,
+      "content_files": [
+        "src/characters/羽毛笔/角色速览.md",
+        "src/characters/羽毛笔/基础信息.md",
+        "src/characters/羽毛笔/性格调色盘.md",
+        "src/characters/羽毛笔/三面性.md",
+        "src/characters/羽毛笔/多阶段人设.md",
+        "src/characters/羽毛笔/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48",
+            "E57"
+          ]
+        }
+      }
+    },
+    {
+      "id": 293,
+      "comment": "[角色]a01银色幻想",
+      "keys": [
+        "a01",
+        "银色幻想",
+        "a01银色幻想"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 293,
+      "content_files": [
+        "src/characters/a01银色幻想/角色速览.md",
+        "src/characters/a01银色幻想/基础信息.md",
+        "src/characters/a01银色幻想/性格调色盘.md",
+        "src/characters/a01银色幻想/三面性.md",
+        "src/characters/a01银色幻想/多阶段人设.md",
+        "src/characters/a01银色幻想/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 294,
+      "comment": "[角色]欲望母树",
+      "keys": [
+        "欲望母树"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 294,
+      "content_files": [
+        "src/characters/欲望母树/角色速览.md",
+        "src/characters/欲望母树/基础信息.md",
+        "src/characters/欲望母树/性格调色盘.md",
+        "src/characters/欲望母树/三面性.md",
+        "src/characters/欲望母树/多阶段人设.md",
+        "src/characters/欲望母树/二次解释.md"
+      ],
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 300,
+      "comment": "[事件]E01·系统觉醒与开店",
+      "keys": [
+        "E01",
+        "事件E01",
+        "系统觉醒",
+        "开店"
+      ],
+      "constant": false,
+      "insertion_order": 300,
+      "content_file": "src/events/E01_系统觉醒与开店.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 301,
+      "comment": "[事件]E02·血娃娃上门与找妈妈任务",
+      "keys": [
+        "E02",
+        "事件E02",
+        "血娃娃上门",
+        "找妈妈"
+      ],
+      "constant": false,
+      "insertion_order": 301,
+      "content_file": "src/events/E02_血娃娃上门与找妈妈任务.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 302,
+      "comment": "[事件]E03·猪头魔与恶灵血婴",
+      "keys": [
+        "E03",
+        "事件E03",
+        "猪头魔",
+        "恶灵血婴"
+      ],
+      "constant": false,
+      "insertion_order": 302,
+      "content_file": "src/events/E03_猪头魔与恶灵血婴.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 303,
+      "comment": "[事件]E04·猎魔人治疗与传说左轮",
+      "keys": [
+        "E04",
+        "事件E04",
+        "猎魔人",
+        "传说左轮"
+      ],
+      "constant": false,
+      "insertion_order": 303,
+      "content_file": "src/events/E04_猎魔人治疗与传说左轮.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 304,
+      "comment": "[事件]E05·不眠夜与小小牙科",
+      "keys": [
+        "E05",
+        "事件E05",
+        "小小",
+        "不眠夜"
+      ],
+      "constant": false,
+      "insertion_order": 304,
+      "content_file": "src/events/E05_不眠夜与小小牙科.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 305,
+      "comment": "[事件]E06·诅咒清除能力与鬼婴塑形",
+      "keys": [
+        "E06",
+        "事件E06",
+        "鬼婴塑形",
+        "诅咒清除"
+      ],
+      "constant": false,
+      "insertion_order": 305,
+      "content_file": "src/events/E06_诅咒清除能力与鬼婴塑形.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 306,
+      "comment": "[事件]E07·血衣寻子与鬼婴萌化化解",
+      "keys": [
+        "E07",
+        "事件E07",
+        "血衣寻子",
+        "红衣女人"
+      ],
+      "constant": false,
+      "insertion_order": 306,
+      "content_file": "src/events/E07_血衣寻子与鬼婴萌化化解.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 307,
+      "comment": "[事件]E08·暴击药剂与视界曝光",
+      "keys": [
+        "E08",
+        "事件E08",
+        "暴击药剂",
+        "秃头"
+      ],
+      "constant": false,
+      "insertion_order": 307,
+      "content_file": "src/events/E08_暴击药剂与视界曝光.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 308,
+      "comment": "[事件]E09·血衣鸿门宴与诅咒绑定",
+      "keys": [
+        "E09",
+        "事件E09",
+        "鸿门宴",
+        "血衣诅咒"
+      ],
+      "constant": false,
+      "insertion_order": 308,
+      "content_file": "src/events/E09_血衣鸿门宴与诅咒绑定.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 309,
+      "comment": "[事件]E10·视界经营与玥玥治疗",
+      "keys": [
+        "E10",
+        "事件E10",
+        "视界经营",
+        "玥玥"
+      ],
+      "constant": false,
+      "insertion_order": 309,
+      "content_file": "src/events/E10_视界经营与玥玥治疗.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 310,
+      "comment": "[事件]E11·血夜地狱行者与左左诞生",
+      "keys": [
+        "E11",
+        "事件E11",
+        "地狱行者",
+        "左左诞生"
+      ],
+      "constant": false,
+      "insertion_order": 310,
+      "content_file": "src/events/E11_血夜地狱行者与左左诞生.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 311,
+      "comment": "[事件]E12·血肉灾变与左手共存",
+      "keys": [
+        "E12",
+        "事件E12",
+        "血肉灾变",
+        "左手"
+      ],
+      "constant": false,
+      "insertion_order": 311,
+      "content_file": "src/events/E12_血肉灾变与左手共存.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 312,
+      "comment": "[事件]E13·猎杀者夜袭与信使线",
+      "keys": [
+        "E13",
+        "事件E13",
+        "猎杀者夜袭",
+        "情报024"
+      ],
+      "constant": false,
+      "insertion_order": 312,
+      "content_file": "src/events/E13_猎杀者夜袭与信使线.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 313,
+      "comment": "[事件]E14·瘦长鬼影手术与024诊断",
+      "keys": [
+        "E14",
+        "事件E14",
+        "瘦长鬼影",
+        "024诊断"
+      ],
+      "constant": false,
+      "insertion_order": 313,
+      "content_file": "src/events/E14_瘦长鬼影手术与024诊断.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 314,
+      "comment": "[事件]E15·求援信与小小赴约",
+      "keys": [
+        "E15",
+        "事件E15",
+        "求援信",
+        "小小赴约"
+      ],
+      "constant": false,
+      "insertion_order": 314,
+      "content_file": "src/events/E15_求援信与小小赴约.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 315,
+      "comment": "[事件]E16·械魔大军与猎神者",
+      "keys": [
+        "E16",
+        "事件E16",
+        "械魔大军",
+        "猎神者"
+      ],
+      "constant": false,
+      "insertion_order": 315,
+      "content_file": "src/events/E16_械魔大军与猎神者.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 316,
+      "comment": "[事件]E17·小小介绍棒医生",
+      "keys": [
+        "E17",
+        "事件E17",
+        "棒医生",
+        "根源牙医"
+      ],
+      "constant": false,
+      "insertion_order": 316,
+      "content_file": "src/events/E17_小小介绍棒医生.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 317,
+      "comment": "[事件]E18·倒吊塔决战与协会覆灭",
+      "keys": [
+        "E18",
+        "事件E18",
+        "倒吊塔决战",
+        "噬心魔",
+        "协会覆灭"
+      ],
+      "constant": false,
+      "insertion_order": 317,
+      "content_file": "src/events/E18_倒吊塔决战与协会覆灭.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 318,
+      "comment": "[事件]E19·猎头者家族绑定",
+      "keys": [
+        "E19",
+        "事件E19",
+        "心灵契约",
+        "猎头者家族"
+      ],
+      "constant": false,
+      "insertion_order": 318,
+      "content_file": "src/events/E19_猎头者家族绑定.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 319,
+      "comment": "[事件]E20·师徒归来与阶段收束",
+      "keys": [
+        "E20",
+        "事件E20",
+        "血锯归来",
+        "阶段收束"
+      ],
+      "constant": false,
+      "insertion_order": 319,
+      "content_file": "src/events/E20_师徒归来与阶段收束.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      },
+      "enabled": false
+    },
+    {
+      "id": 320,
+      "comment": "[事件]E21·魔鬼训练与首次独立出诊",
+      "keys": [
+        "E21",
+        "事件E21",
+        "魔鬼训练与首次独立出诊"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 320,
+      "content_file": "src/events/E21_魔鬼训练与首次独立出诊.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 321,
+      "comment": "[事件]E22·幸福之家的血肉晚宴",
+      "keys": [
+        "E22",
+        "事件E22",
+        "幸福之家的血肉晚宴"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 321,
+      "content_file": "src/events/E22_幸福之家的血肉晚宴.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 322,
+      "comment": "[事件]E23·异域同乡与爱丽丝初愈",
+      "keys": [
+        "E23",
+        "事件E23",
+        "异域同乡与爱丽丝初愈"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 322,
+      "content_file": "src/events/E23_异域同乡与爱丽丝初愈.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 323,
+      "comment": "[事件]E24·诅咒复燃与古堡围猎",
+      "keys": [
+        "E24",
+        "事件E24",
+        "诅咒复燃与古堡围猎"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 323,
+      "content_file": "src/events/E24_诅咒复燃与古堡围猎.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 324,
+      "comment": "[事件]E25·双面伯爵与心脑之汤",
+      "keys": [
+        "E25",
+        "事件E25",
+        "双面伯爵与心脑之汤"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 324,
+      "content_file": "src/events/E25_双面伯爵与心脑之汤.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 325,
+      "comment": "[事件]E26·爱丽丝重生与母女终局",
+      "keys": [
+        "E26",
+        "事件E26",
+        "爱丽丝重生与母女终局"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 325,
+      "content_file": "src/events/E26_爱丽丝重生与母女终局.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 326,
+      "comment": "[事件]E27·白逸遣返与九州异变",
+      "keys": [
+        "E27",
+        "事件E27",
+        "白逸遣返与九州异变"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 326,
+      "content_file": "src/events/E27_白逸遣返与九州异变.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 327,
+      "comment": "[事件]E28·爱丽丝日常与十四病战蜥",
+      "keys": [
+        "E28",
+        "事件E28",
+        "爱丽丝日常与十四病战蜥"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 327,
+      "content_file": "src/events/E28_爱丽丝日常与十四病战蜥.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 328,
+      "comment": "[事件]E29·传奇赠药与夜医启程",
+      "keys": [
+        "E29",
+        "事件E29",
+        "传奇赠药与夜医启程"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 328,
+      "content_file": "src/events/E29_传奇赠药与夜医启程.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 329,
+      "comment": "[事件]E30·血月狼群与寂静镇试诊",
+      "keys": [
+        "E30",
+        "事件E30",
+        "血月狼群与寂静镇试诊"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 329,
+      "content_file": "src/events/E30_血月狼群与寂静镇试诊.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 330,
+      "comment": "[事件]E31·哭泣小丑与血肉灾变",
+      "keys": [
+        "E31",
+        "事件E31",
+        "哭泣小丑与血肉灾变"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 330,
+      "content_file": "src/events/E31_哭泣小丑与血肉灾变.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 331,
+      "comment": "[事件]E32·小丑余波与夜医接纳",
+      "keys": [
+        "E32",
+        "事件E32",
+        "小丑余波与夜医接纳"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 331,
+      "content_file": "src/events/E32_小丑余波与夜医接纳.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 332,
+      "comment": "[事件]E33·夜医试炼与白夜旧梦",
+      "keys": [
+        "E33",
+        "事件E33",
+        "夜医试炼与白夜旧梦"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 332,
+      "content_file": "src/events/E33_夜医试炼与白夜旧梦.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 333,
+      "comment": "[事件]E34·倒吊天使与夜医授职",
+      "keys": [
+        "E34",
+        "事件E34",
+        "倒吊天使与夜医授职"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 333,
+      "content_file": "src/events/E34_倒吊天使与夜医授职.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 334,
+      "comment": "[事件]E35·左左拟化与蓝星鬼袭",
+      "keys": [
+        "E35",
+        "事件E35",
+        "左左拟化与蓝星鬼袭"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 334,
+      "content_file": "src/events/E35_左左拟化与蓝星鬼袭.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 335,
+      "comment": "[事件]E36·左左醉酒与酒店暧昧",
+      "keys": [
+        "E36",
+        "事件E36",
+        "左左醉酒与酒店暧昧"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 335,
+      "content_file": "src/events/E36_左左醉酒与酒店暧昧.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 336,
+      "comment": "[事件]E37·白逸召唤降临与总局清剿",
+      "keys": [
+        "E37",
+        "事件E37",
+        "白逸召唤降临与总局清剿"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 336,
+      "content_file": "src/events/E37_白逸召唤降临与总局清剿.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 337,
+      "comment": "[事件]E38·审问王蓓与根源关系网",
+      "keys": [
+        "E38",
+        "事件E38",
+        "审问王蓓与根源关系网"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 337,
+      "content_file": "src/events/E38_审问王蓓与根源关系网.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 338,
+      "comment": "[事件]E39·暴食血祭与血娃娃回收",
+      "keys": [
+        "E39",
+        "事件E39",
+        "暴食血祭与血娃娃回收"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 338,
+      "content_file": "src/events/E39_暴食血祭与血娃娃回收.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 339,
+      "comment": "[事件]E40·户籍锁定与血娃娃共情",
+      "keys": [
+        "E40",
+        "事件E40",
+        "户籍锁定与血娃娃共情"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 339,
+      "content_file": "src/events/E40_户籍锁定与血娃娃共情.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 340,
+      "comment": "[事件]E41·白家休整与机械造物",
+      "keys": [
+        "E41",
+        "事件E41",
+        "白家休整与机械造物"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 340,
+      "content_file": "src/events/E41_白家休整与机械造物.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 341,
+      "comment": "[事件]E42·跳车寻母与林樱初遇",
+      "keys": [
+        "E42",
+        "事件E42",
+        "跳车寻母与林樱初遇"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 341,
+      "content_file": "src/events/E42_跳车寻母与林樱初遇.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 342,
+      "comment": "[事件]E43·回归汇报与被收教子",
+      "keys": [
+        "E43",
+        "事件E43",
+        "回归汇报与被收教子"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 342,
+      "content_file": "src/events/E43_回归汇报与被收教子.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 343,
+      "comment": "[事件]E44·盗版史诗药剂与巨像脑情报",
+      "keys": [
+        "E44",
+        "事件E44",
+        "盗版史诗药剂与巨像脑情报"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 343,
+      "content_file": "src/events/E44_盗版史诗药剂与巨像脑情报.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 344,
+      "comment": "[事件]E45·召唤四阶段与无瞳法阵",
+      "keys": [
+        "E45",
+        "事件E45",
+        "召唤四阶段与无瞳法阵"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 344,
+      "content_file": "src/events/E45_召唤四阶段与无瞳法阵.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 345,
+      "comment": "[事件]E46·拟化惩罚与踢裆反杀",
+      "keys": [
+        "E46",
+        "事件E46",
+        "拟化惩罚与踢裆反杀"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 345,
+      "content_file": "src/events/E46_拟化惩罚与踢裆反杀.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 346,
+      "comment": "[事件]E47·群星圣堂实习与误麻院长",
+      "keys": [
+        "E47",
+        "事件E47",
+        "群星圣堂实习与误麻院长"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 346,
+      "content_file": "src/events/E47_群星圣堂实习与误麻院长.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 347,
+      "comment": "[事件]E48·接诊喵喵与002盗书",
+      "keys": [
+        "E48",
+        "事件E48",
+        "接诊喵喵与002盗书"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 347,
+      "content_file": "src/events/E48_接诊喵喵与002盗书.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 348,
+      "comment": "[事件]E49·犬皮改造真相与千人寻亲",
+      "keys": [
+        "E49",
+        "事件E49",
+        "犬皮改造真相与千人寻亲"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 348,
+      "content_file": "src/events/E49_犬皮改造真相与千人寻亲.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 349,
+      "comment": "[事件]E50·猫娘药剂与喵喵破茧",
+      "keys": [
+        "E50",
+        "事件E50",
+        "猫娘药剂与喵喵破茧"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 349,
+      "content_file": "src/events/E50_猫娘药剂与喵喵破茧.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 350,
+      "comment": "[事件]E51·黑弦月到货与保护契约",
+      "keys": [
+        "E51",
+        "事件E51",
+        "黑弦月到货与保护契约"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 350,
+      "content_file": "src/events/E51_黑弦月到货与保护契约.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 351,
+      "comment": "[事件]E52·森一夜袭与四次重生",
+      "keys": [
+        "E52",
+        "事件E52",
+        "森一夜袭与四次重生"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 351,
+      "content_file": "src/events/E52_森一夜袭与四次重生.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 352,
+      "comment": "[事件]E53·三重算计与平等契约",
+      "keys": [
+        "E53",
+        "事件E53",
+        "三重算计与平等契约"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 352,
+      "content_file": "src/events/E53_三重算计与平等契约.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 353,
+      "comment": "[事件]E54·疫医暗面与最高级保护",
+      "keys": [
+        "E54",
+        "事件E54",
+        "疫医暗面与最高级保护"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 353,
+      "content_file": "src/events/E54_疫医暗面与最高级保护.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 354,
+      "comment": "[事件]E55·喵喵宠物与家人复仇",
+      "keys": [
+        "E55",
+        "事件E55",
+        "喵喵宠物与家人复仇"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 354,
+      "content_file": "src/events/E55_喵喵宠物与家人复仇.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 355,
+      "comment": "[事件]E56·史莱姆整形与游荡者情报",
+      "keys": [
+        "E56",
+        "事件E56",
+        "史莱姆整形与游荡者情报"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 355,
+      "content_file": "src/events/E56_史莱姆整形与游荡者情报.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 356,
+      "comment": "[事件]E57·整备出征与收编小宝贝",
+      "keys": [
+        "E57",
+        "事件E57",
+        "整备出征与收编小宝贝"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 356,
+      "content_file": "src/events/E57_整备出征与收编小宝贝.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 357,
+      "comment": "[事件]E58·前线观战与银色幻想降临",
+      "keys": [
+        "E58",
+        "事件E58",
+        "前线观战与银色幻想降临"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 357,
+      "content_file": "src/events/E58_前线观战与银色幻想降临.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 358,
+      "comment": "[事件]E59·斩臂反击与三根源驰援",
+      "keys": [
+        "E59",
+        "事件E59",
+        "斩臂反击与三根源驰援"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 358,
+      "content_file": "src/events/E59_斩臂反击与三根源驰援.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 359,
+      "comment": "[事件]E60·圣子推定与圣徒叛变",
+      "keys": [
+        "E60",
+        "事件E60",
+        "圣子推定与圣徒叛变"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 359,
+      "content_file": "src/events/E60_圣子推定与圣徒叛变.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 360,
+      "comment": "[事件]E61·突围反杀与夺萃之镰",
+      "keys": [
+        "E61",
+        "事件E61",
+        "突围反杀与夺萃之镰"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 360,
+      "content_file": "src/events/E61_突围反杀与夺萃之镰.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 361,
+      "comment": "[事件]E62·折跃入城与疫医伪装",
+      "keys": [
+        "E62",
+        "事件E62",
+        "折跃入城与疫医伪装"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 361,
+      "content_file": "src/events/E62_折跃入城与疫医伪装.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 362,
+      "comment": "[事件]E63·堡垒解围与欲望教派",
+      "keys": [
+        "E63",
+        "事件E63",
+        "堡垒解围与欲望教派"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 362,
+      "content_file": "src/events/E63_堡垒解围与欲望教派.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 363,
+      "comment": "[事件]E64·诅咒之城余韵",
+      "keys": [
+        "E64",
+        "事件E64",
+        "诅咒之城余韵"
+      ],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 363,
+      "content_file": "src/events/E64_诅咒之城余韵.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 399,
+      "comment": "[机制]事件内容激活路由",
+      "keys": [],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 399,
+      "content_file": "src/prompts/concept_event_router.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 400,
+      "comment": "[概念·势力]人皮拾荒者",
+      "keys": [
+        "人皮拾荒者",
+        "拾荒者"
+      ],
+      "constant": false,
+      "insertion_order": 400,
+      "content_file": "src/concepts/势力/人皮拾荒者.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E01"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 401,
+      "comment": "[概念·势力]噬心魔",
+      "keys": [
+        "噬心魔",
+        "魔人协会会长",
+        "脑魔会长"
+      ],
+      "constant": false,
+      "insertion_order": 401,
+      "content_file": "src/concepts/势力/噬心魔.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E18"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 402,
+      "comment": "[概念·势力]夜医转职",
+      "keys": [
+        "夜医转职",
+        "夜医转职任务",
+        "夜医任务图谱"
+      ],
+      "constant": false,
+      "insertion_order": 402,
+      "content_file": "src/concepts/势力/夜医转职.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E13",
+            "E20",
+            "E29",
+            "E30",
+            "E31",
+            "E32",
+            "E33",
+            "E34",
+            "E44",
+            "E45",
+            "E54",
+            "E57"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 403,
+      "comment": "[概念·势力]情报员024",
+      "keys": [
+        "情报员024",
+        "024",
+        "视界900号情报商"
+      ],
+      "constant": false,
+      "insertion_order": 403,
+      "content_file": "src/concepts/势力/情报员024.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E13"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 404,
+      "comment": "[概念·势力]械魔",
+      "keys": [
+        "械魔",
+        "魔人协会副会长"
+      ],
+      "constant": false,
+      "insertion_order": 404,
+      "content_file": "src/concepts/势力/械魔.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E16"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 405,
+      "comment": "[概念·势力]猎神者",
+      "keys": [
+        "猎神者",
+        "最强血肉造物",
+        "猎神者傀儡"
+      ],
+      "constant": false,
+      "insertion_order": 405,
+      "content_file": "src/concepts/势力/猎神者.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E16"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 406,
+      "comment": "[概念·势力]猎魔人·奥卡洛斯",
+      "keys": [
+        "猎魔人·奥卡洛斯",
+        "奥卡洛斯",
+        "猎魔人"
+      ],
+      "constant": false,
+      "insertion_order": 406,
+      "content_file": "src/concepts/势力/猎魔人·奥卡洛斯.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E04"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 407,
+      "comment": "[概念·势力]玥玥",
+      "keys": [
+        "玥玥",
+        "黑蛾妖族骑士长",
+        "黑蛾先锋官"
+      ],
+      "constant": false,
+      "insertion_order": 407,
+      "content_file": "src/concepts/势力/玥玥.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E10"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 408,
+      "comment": "[概念·势力]虚空折跃龟信使",
+      "keys": [
+        "虚空折跃龟信使",
+        "虚空折跃龟",
+        "折跃龟"
+      ],
+      "constant": false,
+      "insertion_order": 408,
+      "content_file": "src/concepts/势力/虚空折跃龟信使.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E15"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 409,
+      "comment": "[概念·场景]45号闺房",
+      "keys": [
+        "45号闺房",
+        "血衣闺房",
+        "45号二楼闺房"
+      ],
+      "constant": false,
+      "insertion_order": 409,
+      "content_file": "src/concepts/场景/45号闺房.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E09"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 410,
+      "comment": "[概念·场景]人偶庄园庭院",
+      "keys": [
+        "人偶庄园庭院",
+        "人偶庭院",
+        "庄园庭院"
+      ],
+      "constant": false,
+      "insertion_order": 410,
+      "content_file": "src/concepts/场景/人偶庄园庭院.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E20"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 411,
+      "comment": "[概念·场景]倒吊塔地下基地",
+      "keys": [
+        "倒吊塔地下基地",
+        "倒吊塔基地",
+        "魔人协会地下基地"
+      ],
+      "constant": false,
+      "insertion_order": 411,
+      "content_file": "src/concepts/场景/倒吊塔地下基地.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E18"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 412,
+      "comment": "[概念·场景]独角鬼王神庙",
+      "keys": [
+        "独角鬼王神庙",
+        "鬼王神庙",
+        "独角神庙"
+      ],
+      "constant": false,
+      "insertion_order": 412,
+      "content_file": "src/concepts/场景/独角鬼王神庙.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E15"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 413,
+      "comment": "[概念·场景]系统商城",
+      "keys": [
+        "系统商城",
+        "日常商城"
+      ],
+      "constant": false,
+      "insertion_order": 413,
+      "content_file": "src/concepts/场景/系统商城.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E06"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 414,
+      "comment": "[概念·场景]魂灯营业",
+      "keys": [
+        "魂灯营业",
+        "魂灯",
+        "魂灯庇护"
+      ],
+      "constant": false,
+      "insertion_order": 414,
+      "content_file": "src/concepts/场景/魂灯营业.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E01"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 415,
+      "comment": "[概念·物品]传说左轮",
+      "keys": [
+        "传说左轮",
+        "苍白狩魔者",
+        "苍白狩魔者左轮"
+      ],
+      "constant": false,
+      "insertion_order": 415,
+      "content_file": "src/concepts/物品/传说左轮.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E04",
+            "E11",
+            "E12",
+            "E18",
+            "E31"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 416,
+      "comment": "[概念·物品]剔骨刀",
+      "keys": [
+        "剔骨刀",
+        "血锯剔骨刀"
+      ],
+      "constant": false,
+      "insertion_order": 416,
+      "content_file": "src/concepts/物品/剔骨刀.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E14",
+            "E21"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 417,
+      "comment": "[概念·物品]夜魔刀",
+      "keys": [
+        "夜魔刀",
+        "传说级手术刀"
+      ],
+      "constant": false,
+      "insertion_order": 417,
+      "content_file": "src/concepts/物品/夜魔刀.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E13",
+            "E18",
+            "E25"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 418,
+      "comment": "[概念·物品]无皮尸傀·幽灵仆从",
+      "keys": [
+        "无皮尸傀·幽灵仆从",
+        "无皮尸傀",
+        "幽灵仆从"
+      ],
+      "constant": false,
+      "insertion_order": 418,
+      "content_file": "src/concepts/物品/无皮尸傀·幽灵仆从.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E09"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 419,
+      "comment": "[概念·物品]无面魔心脏",
+      "keys": [
+        "无面魔心脏",
+        "无面魔的心脏"
+      ],
+      "constant": false,
+      "insertion_order": 419,
+      "content_file": "src/concepts/物品/无面魔心脏.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E06",
+            "E11"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 420,
+      "comment": "[概念·物品]暴击药剂",
+      "keys": [
+        "暴击药剂",
+        "闪光秃头药剂",
+        "秃头药剂"
+      ],
+      "constant": false,
+      "insertion_order": 420,
+      "content_file": "src/concepts/物品/暴击药剂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E08"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 421,
+      "comment": "[概念·物品]机械重神·71",
+      "keys": [
+        "机械重神·71",
+        "机械重神71",
+        "机械重神"
+      ],
+      "constant": false,
+      "insertion_order": 421,
+      "content_file": "src/concepts/物品/机械重神·71.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E18"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 422,
+      "comment": "[概念·物品]猎杀者120型",
+      "keys": [
+        "猎杀者120型",
+        "120型猎杀者",
+        "猎杀者120"
+      ],
+      "constant": false,
+      "insertion_order": 422,
+      "content_file": "src/concepts/物品/猎杀者120型.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E13"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 423,
+      "comment": "[概念·物品]神圣之矛碎片",
+      "keys": [
+        "神圣之矛碎片",
+        "神圣之矛残片"
+      ],
+      "constant": false,
+      "insertion_order": 423,
+      "content_file": "src/concepts/物品/神圣之矛碎片.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E05",
+            "E18",
+            "E26",
+            "E31"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 424,
+      "comment": "[概念·物品]秘银头骨碎片",
+      "keys": [
+        "秘银头骨碎片",
+        "秘银头骨残片"
+      ],
+      "constant": false,
+      "insertion_order": 424,
+      "content_file": "src/concepts/物品/秘银头骨碎片.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E12"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 425,
+      "comment": "[概念·物品]血肉增生药剂",
+      "keys": [
+        "血肉增生药剂",
+        "增生药剂"
+      ],
+      "constant": false,
+      "insertion_order": 425,
+      "content_file": "src/concepts/物品/血肉增生药剂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E06",
+            "E12",
+            "E23",
+            "E26",
+            "E31"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 426,
+      "comment": "[概念·物品]试做型巨像012号",
+      "keys": [
+        "试做型巨像012号",
+        "巨像012号",
+        "012号巨像"
+      ],
+      "constant": false,
+      "insertion_order": 426,
+      "content_file": "src/concepts/物品/试做型巨像012号.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E18"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 427,
+      "comment": "[概念·物品]钢牙",
+      "keys": [
+        "钢牙",
+        "小小的钢牙",
+        "机械钢牙"
+      ],
+      "constant": false,
+      "insertion_order": 427,
+      "content_file": "src/concepts/物品/钢牙.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E05"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 429,
+      "comment": "[概念·特殊设定]不眠夜规则",
+      "keys": [
+        "不眠夜规则",
+        "不眠夜",
+        "魂灯熄灭规则"
+      ],
+      "constant": false,
+      "insertion_order": 429,
+      "content_file": "src/concepts/特殊设定/不眠夜规则.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E05"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 430,
+      "comment": "[概念·特殊设定]化解怨结",
+      "keys": [
+        "化解怨结",
+        "怨结任务",
+        "血衣怨结"
+      ],
+      "constant": false,
+      "insertion_order": 430,
+      "content_file": "src/concepts/特殊设定/化解怨结.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E09"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 431,
+      "comment": "[概念·特殊设定]幸福之家传闻",
+      "keys": [
+        "幸福之家传闻",
+        "幸福之家",
+        "离魂街古堡"
+      ],
+      "constant": false,
+      "insertion_order": 431,
+      "content_file": "src/concepts/特殊设定/幸福之家传闻.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E20",
+            "E21",
+            "E22"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 432,
+      "comment": "[概念·特殊设定]找妈妈任务",
+      "keys": [
+        "找妈妈任务",
+        "血娃娃找妈妈",
+        "寻母任务"
+      ],
+      "constant": false,
+      "insertion_order": 432,
+      "content_file": "src/concepts/特殊设定/找妈妈任务.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E02",
+            "E21",
+            "E39",
+            "E40"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 433,
+      "comment": "[概念·特殊设定]棒医生称号",
+      "keys": [
+        "棒医生称号",
+        "棒医生",
+        "超级喜欢的棒医生"
+      ],
+      "constant": false,
+      "insertion_order": 433,
+      "content_file": "src/concepts/特殊设定/棒医生称号.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E17"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 434,
+      "comment": "[概念·特殊设定]狂猎榜",
+      "keys": [
+        "狂猎榜",
+        "狂猎排名"
+      ],
+      "constant": false,
+      "insertion_order": 434,
+      "content_file": "src/concepts/特殊设定/狂猎榜.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E08"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 435,
+      "comment": "[概念·特殊设定]猪头屠夫放置之谜",
+      "keys": [
+        "猪头屠夫放置之谜",
+        "猪头屠夫放置林恩",
+        "林恩穿越线索"
+      ],
+      "constant": false,
+      "insertion_order": 435,
+      "content_file": "src/concepts/特殊设定/猪头屠夫放置之谜.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E23",
+            "E25",
+            "E26",
+            "E32"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 436,
+      "comment": "[概念·特殊设定]相亲相爱一家人视界群",
+      "keys": [
+        "相亲相爱一家人视界群",
+        "相亲相爱一家人",
+        "血锯药剂店VIP群"
+      ],
+      "constant": false,
+      "insertion_order": 436,
+      "content_file": "src/concepts/特殊设定/相亲相爱一家人视界群.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E19",
+            "E34"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 437,
+      "comment": "[概念·特殊设定]鬼婴·小呀哒",
+      "keys": [
+        "鬼婴·小呀哒",
+        "小呀哒",
+        "血衣之女"
+      ],
+      "constant": false,
+      "insertion_order": 437,
+      "content_file": "src/concepts/特殊设定/鬼婴·小呀哒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E07"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 438,
+      "comment": "[概念·能力]心灵契约",
+      "keys": [
+        "心灵契约",
+        "泰坦族灵魂绑定",
+        "契约印记"
+      ],
+      "constant": false,
+      "insertion_order": 438,
+      "content_file": "src/concepts/能力/心灵契约.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E19",
+            "E34"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 439,
+      "comment": "[概念·能力]聚焦之瞳",
+      "keys": [
+        "聚焦之瞳",
+        "聚焦之瞳插件",
+        "凝视诅咒插件"
+      ],
+      "constant": false,
+      "insertion_order": 439,
+      "content_file": "src/concepts/能力/聚焦之瞳.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E12",
+            "E13",
+            "E18",
+            "E25"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 440,
+      "comment": "[概念·能力]血肉变异·脑蛇",
+      "keys": [
+        "血肉变异·脑蛇",
+        "脑蛇",
+        "三级血肉变异"
+      ],
+      "constant": false,
+      "insertion_order": 440,
+      "content_file": "src/concepts/能力/血肉变异·脑蛇.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E11"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 441,
+      "comment": "[概念·能力]血肉灾变",
+      "keys": [
+        "血肉灾变",
+        "9级血肉灾变",
+        "九级血肉灾变"
+      ],
+      "constant": false,
+      "insertion_order": 441,
+      "content_file": "src/concepts/能力/血肉灾变.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E12",
+            "E31",
+            "E33"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 442,
+      "comment": "[概念·能力]过往遗念",
+      "keys": [
+        "过往遗念",
+        "完整形态再现",
+        "再现过去形态"
+      ],
+      "constant": false,
+      "insertion_order": 442,
+      "content_file": "src/concepts/能力/过往遗念.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E17",
+            "E19",
+            "E23",
+            "E25",
+            "E26",
+            "E32",
+            "E33"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 443,
+      "comment": "[概念·能力]限时诅咒清除",
+      "keys": [
+        "限时诅咒清除",
+        "诅咒清除能力",
+        "24小时诅咒清除"
+      ],
+      "constant": false,
+      "insertion_order": 443,
+      "content_file": "src/concepts/能力/限时诅咒清除.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E06",
+            "E07",
+            "E09",
+            "E18",
+            "E19",
+            "E26",
+            "E31",
+            "E34"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 444,
+      "comment": "[概念·能力]随机诊断术",
+      "keys": [
+        "随机诊断术",
+        "随机诊断",
+        "赋予疾病"
+      ],
+      "constant": false,
+      "insertion_order": 444,
+      "content_file": "src/concepts/能力/随机诊断术.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E14",
+            "E28",
+            "E30",
+            "E31"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 445,
+      "comment": "[概念·能力]鬼婴塑形",
+      "keys": [
+        "鬼婴塑形",
+        "恶灵血婴塑形",
+        "第一次塑形"
+      ],
+      "constant": false,
+      "insertion_order": 445,
+      "content_file": "src/concepts/能力/鬼婴塑形.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E06"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 446,
+      "comment": "[概念·能力]龙息之臂",
+      "keys": [
+        "龙息之臂",
+        "龙息手臂",
+        "龙炎插件"
+      ],
+      "constant": false,
+      "insertion_order": 446,
+      "content_file": "src/concepts/能力/龙息之臂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E12",
+            "E13",
+            "E18",
+            "E24",
+            "E25"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 447,
+      "comment": "[概念·诅咒]恶灵血婴",
+      "keys": [
+        "恶灵血婴",
+        "未成型血婴",
+        "恶灵寄生"
+      ],
+      "constant": false,
+      "insertion_order": 447,
+      "content_file": "src/concepts/诅咒/恶灵血婴.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E03"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 448,
+      "comment": "[概念·诅咒]泰坦诅咒削弱15%",
+      "keys": [
+        "泰坦诅咒削弱15%",
+        "泰坦诅咒",
+        "诅咒削弱15%"
+      ],
+      "constant": false,
+      "insertion_order": 448,
+      "content_file": "src/concepts/诅咒/泰坦诅咒削弱15%.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E19"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 449,
+      "comment": "[概念·诅咒]目光诅咒",
+      "keys": [
+        "目光诅咒",
+        "地狱行者目光",
+        "溶解面容诅咒"
+      ],
+      "constant": false,
+      "insertion_order": 449,
+      "content_file": "src/concepts/诅咒/目光诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E11"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 450,
+      "comment": "[概念·诅咒]血衣诅咒续费绑定",
+      "keys": [
+        "血衣诅咒续费绑定",
+        "血衣诅咒",
+        "诅咒续费绑定"
+      ],
+      "constant": false,
+      "insertion_order": 450,
+      "content_file": "src/concepts/诅咒/血衣诅咒续费绑定.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E09"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 451,
+      "comment": "[概念·诅咒]黑蝴蝶剧毒",
+      "keys": [
+        "黑蝴蝶剧毒",
+        "黑蝴蝶毒",
+        "黑气蝶影"
+      ],
+      "constant": false,
+      "insertion_order": 451,
+      "content_file": "src/concepts/诅咒/黑蝴蝶剧毒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E04"
+          ]
+        }
+      },
+      "secondary_keys": []
+    },
+    {
+      "id": 452,
+      "comment": "[概念·势力]疫医",
+      "keys": [
+        "疫医",
+        "夜医叛徒",
+        "瘟疫医生"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 452,
+      "content_file": "src/concepts/势力/疫医.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E32",
+            "E48",
+            "E52",
+            "E54",
+            "E60"
+          ]
+        }
+      }
+    },
+    {
+      "id": 453,
+      "comment": "[概念·势力]九州超自然调查机构",
+      "keys": [
+        "九州超自然调查机构",
+        "超自然调查总局",
+        "专项调查组",
+        "九州调查局"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 453,
+      "content_file": "src/concepts/势力/九州超自然调查机构.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E27",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 454,
+      "comment": "[概念·场景]离魂街",
+      "keys": [
+        "离魂街",
+        "幸福之家所在街区",
+        "断头女鬼街口"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 454,
+      "content_file": "src/concepts/场景/离魂街.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E21",
+            "E22",
+            "E23",
+            "E24",
+            "E25",
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 455,
+      "comment": "[概念·场景]九州魔都与第九国立医院",
+      "keys": [
+        "九州魔都与第九国立医院",
+        "九州魔都",
+        "第九国立医院",
+        "蓝星魔都",
+        "白逸医院"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 455,
+      "content_file": "src/concepts/场景/九州魔都与第九国立医院.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E23",
+            "E27",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 456,
+      "comment": "[概念·场景]诅咒之领·寂静镇",
+      "keys": [
+        "诅咒之领·寂静镇",
+        "诅咒之领",
+        "寂静镇",
+        "神圣遗民镇"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 456,
+      "content_file": "src/concepts/场景/诅咒之领·寂静镇.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E31",
+            "E32"
+          ]
+        }
+      }
+    },
+    {
+      "id": 457,
+      "comment": "[概念·场景]黑夜之城",
+      "keys": [
+        "黑夜之城",
+        "夜医大本营",
+        "群星之下",
+        "视界87331"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 457,
+      "content_file": "src/concepts/场景/黑夜之城.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E32",
+            "E33",
+            "E34",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 458,
+      "comment": "[概念·场景]夜医试炼大厅与幻想间",
+      "keys": [
+        "夜医试炼大厅与幻想间",
+        "夜医试炼大厅",
+        "幻想间",
+        "痛觉机器",
+        "夜医考核室"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 458,
+      "content_file": "src/concepts/场景/夜医试炼大厅与幻想间.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E33"
+          ]
+        }
+      }
+    },
+    {
+      "id": 459,
+      "comment": "[概念·物品]猪头屠夫的食谱",
+      "keys": [
+        "猪头屠夫的食谱",
+        "血肉药膳",
+        "隐秘食谱"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 459,
+      "content_file": "src/concepts/物品/猪头屠夫的食谱.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 460,
+      "comment": "[概念·物品]未完成的心与脑之汤",
+      "keys": [
+        "未完成的心与脑之汤",
+        "心与脑之汤",
+        "爱丽丝心脏汤",
+        "屠夫浓汤"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 460,
+      "content_file": "src/concepts/物品/未完成的心与脑之汤.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25"
+          ]
+        }
+      }
+    },
+    {
+      "id": 461,
+      "comment": "[概念·物品]咒瞳",
+      "keys": [
+        "咒瞳",
+        "诅咒之眼",
+        "记录诅咒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 461,
+      "content_file": "src/concepts/物品/咒瞳.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 462,
+      "comment": "[概念·物品]幸福之家结算物与产权",
+      "keys": [
+        "幸福之家结算物与产权",
+        "魔女面巾",
+        "极恶之心",
+        "幸福之家产权",
+        "古堡传送锚点"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 462,
+      "content_file": "src/concepts/物品/幸福之家结算物与产权.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 463,
+      "comment": "[概念·物品]白逸的手机与跨界召唤凭证",
+      "keys": [
+        "白逸的手机与跨界召唤凭证",
+        "白逸的手机",
+        "跨界召唤凭证",
+        "血肉信标",
+        "召唤仪式笔记",
+        "白逸家书"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 463,
+      "content_file": "src/concepts/物品/白逸的手机与跨界召唤凭证.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E27",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 464,
+      "comment": "[概念·物品]传奇增幅药剂组",
+      "keys": [
+        "传奇增幅药剂组",
+        "精神增幅药剂",
+        "体质增幅药剂",
+        "血锯赠药"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 464,
+      "content_file": "src/concepts/物品/传奇增幅药剂组.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E29"
+          ]
+        }
+      }
+    },
+    {
+      "id": 465,
+      "comment": "[概念·物品]自缚天使的怜悯",
+      "keys": [
+        "自缚天使的怜悯",
+        "被缚天使的怜悯",
+        "夜医史诗药剂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 465,
+      "content_file": "src/concepts/物品/自缚天使的怜悯.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 466,
+      "comment": "[概念·物品]蛭病毒",
+      "keys": [
+        "蛭病毒",
+        "渡鸦病毒",
+        "血蛭毒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 466,
+      "content_file": "src/concepts/物品/蛭病毒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30"
+          ]
+        }
+      }
+    },
+    {
+      "id": 467,
+      "comment": "[概念·物品]破损圣杯与十二翼吊坠",
+      "keys": [
+        "破损圣杯与十二翼吊坠",
+        "破损圣杯",
+        "十二翼倒吊天使吊坠",
+        "寂静镇圣遗物",
+        "神圣镇压物组"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 467,
+      "content_file": "src/concepts/物品/破损圣杯与十二翼吊坠.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E31",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 468,
+      "comment": "[概念·物品]小丑的假面",
+      "keys": [
+        "小丑的假面",
+        "小丑假面",
+        "哭泣小丑面具"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 468,
+      "content_file": "src/concepts/物品/小丑的假面.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E31"
+          ]
+        }
+      }
+    },
+    {
+      "id": 469,
+      "comment": "[概念·物品]唯一品质夜医套装",
+      "keys": [
+        "唯一品质夜医套装",
+        "夜医鸟嘴面具",
+        "夜医长袍",
+        "夜医手套",
+        "夜医长靴"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 469,
+      "content_file": "src/concepts/物品/唯一品质夜医套装.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 470,
+      "comment": "[概念·物品]天使之血",
+      "keys": [
+        "天使之血",
+        "天使圣血",
+        "倒吊天使之血",
+        "金色血纹"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 470,
+      "content_file": "src/concepts/物品/天使之血.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 471,
+      "comment": "[概念·能力]血锯手术训练体系",
+      "keys": [
+        "血锯手术训练体系",
+        "电锯开膛术",
+        "剔骨手术刀法",
+        "两指换眼法",
+        "人锯合一"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 471,
+      "content_file": "src/concepts/能力/血锯手术训练体系.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E21",
+            "E33"
+          ]
+        }
+      }
+    },
+    {
+      "id": 472,
+      "comment": "[概念·能力]再造活人技术",
+      "keys": [
+        "再造活人技术",
+        "再造活人",
+        "内脏重装",
+        "恶灵切除",
+        "血肉重建"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 472,
+      "content_file": "src/concepts/能力/再造活人技术.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E23",
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 473,
+      "comment": "[概念·能力]地缚灵与恶灵填充",
+      "keys": [
+        "地缚灵与恶灵填充",
+        "地缚灵",
+        "恶灵填充",
+        "傀儡家人",
+        "地界束缚"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 473,
+      "content_file": "src/concepts/能力/地缚灵与恶灵填充.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E22",
+            "E23",
+            "E24",
+            "E25",
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 474,
+      "comment": "[概念·能力]机械改造知识",
+      "keys": [
+        "机械改造知识",
+        "中级机械改造",
+        "机械修复"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 474,
+      "content_file": "src/concepts/能力/机械改造知识.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25",
+            "E27"
+          ]
+        }
+      }
+    },
+    {
+      "id": 475,
+      "comment": "[概念·能力]特定生物跨界召唤",
+      "keys": [
+        "特定生物跨界召唤",
+        "特定生物召唤",
+        "反向召唤",
+        "邪神召唤契约"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 475,
+      "content_file": "src/concepts/能力/特定生物跨界召唤.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E27",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 476,
+      "comment": "[概念·能力]夜医切割缝合疗法",
+      "keys": [
+        "夜医切割缝合疗法",
+        "夜医疗法",
+        "切割缝合",
+        "强制治疗"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 476,
+      "content_file": "src/concepts/能力/夜医切割缝合疗法.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E32"
+          ]
+        }
+      }
+    },
+    {
+      "id": 477,
+      "comment": "[概念·能力]以M之名",
+      "keys": [
+        "以M之名",
+        "痛觉转快感",
+        "200级痛觉",
+        "抖M被动"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 477,
+      "content_file": "src/concepts/能力/以M之名.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E33"
+          ]
+        }
+      }
+    },
+    {
+      "id": 478,
+      "comment": "[概念·能力]现实灾变·拟化",
+      "keys": [
+        "现实灾变·拟化",
+        "现实灾变拟化",
+        "拟化",
+        "左左人形化"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 478,
+      "content_file": "src/concepts/能力/现实灾变·拟化.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 479,
+      "comment": "[概念·能力]天使之吻",
+      "keys": [
+        "天使之吻",
+        "天使祝福",
+        "24小时祝福"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 479,
+      "content_file": "src/concepts/能力/天使之吻.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 480,
+      "comment": "[概念·诅咒]哭泣小丑诅咒",
+      "keys": [
+        "哭泣小丑诅咒",
+        "小丑替代人格",
+        "诊断赋病",
+        "哭泣轮廓"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 480,
+      "content_file": "src/concepts/诅咒/哭泣小丑诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25",
+            "E28",
+            "E30",
+            "E31",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 481,
+      "comment": "[概念·诅咒]色欲诅咒",
+      "keys": [
+        "色欲诅咒",
+        "欲望失控",
+        "第二人格失控"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 481,
+      "content_file": "src/concepts/诅咒/色欲诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 482,
+      "comment": "[概念·诅咒]倒吊天使的锁链诅咒",
+      "keys": [
+        "倒吊天使的锁链诅咒",
+        "倒吊天使诅咒",
+        "主母锁链",
+        "十二翼天使诅咒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 482,
+      "content_file": "src/concepts/诅咒/倒吊天使的锁链诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 483,
+      "comment": "[概念·诅咒]血月狼人诅咒",
+      "keys": [
+        "血月狼人诅咒",
+        "狼人诅咒",
+        "血月狼人",
+        "血月狂暴"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 483,
+      "content_file": "src/concepts/诅咒/血月狼人诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30"
+          ]
+        }
+      }
+    },
+    {
+      "id": 484,
+      "comment": "[概念·特殊设定]视界出诊订单机制",
+      "keys": [
+        "视界出诊订单机制",
+        "视界出诊",
+        "出诊订单",
+        "订单地图"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 484,
+      "content_file": "src/concepts/特殊设定/视界出诊订单机制.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E21"
+          ]
+        }
+      }
+    },
+    {
+      "id": 485,
+      "comment": "[概念·特殊设定]平行世界与异域家乡",
+      "keys": [
+        "平行世界与异域家乡",
+        "异域的家乡",
+        "地球上海",
+        "九州蓝星"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 485,
+      "content_file": "src/concepts/特殊设定/平行世界与异域家乡.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E23",
+            "E27",
+            "E35",
+            "E37",
+            "E40",
+            "E42",
+            "E43"
+          ]
+        }
+      }
+    },
+    {
+      "id": 486,
+      "comment": "[概念·特殊设定]幸福之家真相",
+      "keys": [
+        "幸福之家真相",
+        "玛丽夫人诅咒",
+        "爱丽丝惨案",
+        "古堡肢解真相"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 486,
+      "content_file": "src/concepts/特殊设定/幸福之家真相.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E25",
+            "E26"
+          ]
+        }
+      }
+    },
+    {
+      "id": 487,
+      "comment": "[概念·特殊设定]心灵的洗涤",
+      "keys": [
+        "心灵的洗涤",
+        "爱丽丝恨意",
+        "爱丽丝家人承诺"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 487,
+      "content_file": "src/concepts/特殊设定/心灵的洗涤.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E26",
+            "E28"
+          ]
+        }
+      }
+    },
+    {
+      "id": 488,
+      "comment": "[概念·特殊设定]汪涛事件与心锚",
+      "keys": [
+        "汪涛事件与心锚",
+        "第三国中大火",
+        "王思玥",
+        "怨魔",
+        "心锚"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 488,
+      "content_file": "src/concepts/特殊设定/汪涛事件与心锚.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E33",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 489,
+      "comment": "[概念·特殊设定]灵媒与死界反向标记",
+      "keys": [
+        "灵媒与死界反向标记",
+        "灵媒",
+        "死界",
+        "反向标记"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 489,
+      "content_file": "src/concepts/特殊设定/灵媒与死界反向标记.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E33",
+            "E35"
+          ]
+        }
+      }
+    },
+    {
+      "id": 490,
+      "comment": "[概念·特殊设定]柏拉图三部走",
+      "keys": [
+        "柏拉图三部走",
+        "柏拉图之恋",
+        "倒吊天使攻略"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 490,
+      "content_file": "src/concepts/特殊设定/柏拉图三部走.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 491,
+      "comment": "[概念·特殊设定]复苏度与体内的“祂”",
+      "keys": [
+        "复苏度与体内的“祂”",
+        "复苏度与体内的祂",
+        "复苏度",
+        "体内意识",
+        "体内的祂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 491,
+      "content_file": "src/concepts/特殊设定/复苏度与体内的祂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E31",
+            "E32",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 492,
+      "comment": "[概念·特殊设定]神圣世界与十三圣遗物",
+      "keys": [
+        "神圣世界与十三圣遗物",
+        "神圣世界",
+        "十三圣遗物",
+        "神圣远征军"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 492,
+      "content_file": "src/concepts/特殊设定/神圣世界与十三圣遗物.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E30",
+            "E31",
+            "E34"
+          ]
+        }
+      }
+    },
+    {
+      "id": 493,
+      "comment": "[概念·机制]恶之花",
+      "keys": [
+        "恶之花"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 493,
+      "content_file": "src/concepts/机制/恶之花.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 494,
+      "comment": "[概念·机制]根源降临限制",
+      "keys": [
+        "根源降临限制"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 494,
+      "content_file": "src/concepts/机制/根源降临限制.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 495,
+      "comment": "[概念·机制]机械信息同调",
+      "keys": [
+        "机械信息同调"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 495,
+      "content_file": "src/concepts/机制/机械信息同调.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 496,
+      "comment": "[概念·机制]恐惧尖啸与深度恐惧",
+      "keys": [
+        "恐惧尖啸与深度恐惧",
+        "恐惧尖啸",
+        "深度恐惧"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 496,
+      "content_file": "src/concepts/机制/恐惧尖啸与深度恐惧.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E60"
+          ]
+        }
+      }
+    },
+    {
+      "id": 497,
+      "comment": "[概念·机制]跨世界召唤四阶段与靶向规则",
+      "keys": [
+        "跨世界召唤四阶段与靶向规则"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 497,
+      "content_file": "src/concepts/机制/跨世界召唤四阶段与靶向规则.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E37",
+            "E42",
+            "E45"
+          ]
+        }
+      }
+    },
+    {
+      "id": 498,
+      "comment": "[概念·机制]喵化诅咒",
+      "keys": [
+        "喵化诅咒",
+        "异常性猫化诅咒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 498,
+      "content_file": "src/concepts/机制/喵化诅咒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48",
+            "E49",
+            "E50",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 499,
+      "comment": "[概念·机制]人偶充能与情感开发度",
+      "keys": [
+        "人偶充能与情感开发度"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 499,
+      "content_file": "src/concepts/机制/人偶充能与情感开发度.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E51",
+            "E53",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 500,
+      "comment": "[概念·机制]死亡凋零",
+      "keys": [
+        "死亡凋零"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 500,
+      "content_file": "src/concepts/机制/死亡凋零.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E61",
+            "E62"
+          ]
+        }
+      }
+    },
+    {
+      "id": 501,
+      "comment": "[概念·机制]无瞳法阵",
+      "keys": [
+        "无瞳法阵",
+        "无瞳之眼"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 501,
+      "content_file": "src/concepts/机制/无瞳法阵.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E45"
+          ]
+        }
+      }
+    },
+    {
+      "id": 502,
+      "comment": "[概念·机制]心灵振荡器",
+      "keys": [
+        "心灵振荡器"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 502,
+      "content_file": "src/concepts/机制/心灵振荡器.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 503,
+      "comment": "[概念·机制]血肉暴动",
+      "keys": [
+        "血肉暴动"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 503,
+      "content_file": "src/concepts/机制/血肉暴动.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52"
+          ]
+        }
+      }
+    },
+    {
+      "id": 504,
+      "comment": "[概念·机制]血肉遁术",
+      "keys": [
+        "血肉遁术"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 504,
+      "content_file": "src/concepts/机制/血肉遁术.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52"
+          ]
+        }
+      }
+    },
+    {
+      "id": 505,
+      "comment": "[概念·机制]以M之拳与充能体系",
+      "keys": [
+        "以M之拳与充能体系",
+        "以M之拳",
+        "以M之力"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 505,
+      "content_file": "src/concepts/机制/以M之拳与充能体系.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52",
+            "E59",
+            "E60",
+            "E61",
+            "E62",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 506,
+      "comment": "[概念·机制]异虫孵化所",
+      "keys": [
+        "异虫孵化所"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 506,
+      "content_file": "src/concepts/机制/异虫孵化所.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52"
+          ]
+        }
+      }
+    },
+    {
+      "id": 507,
+      "comment": "[概念·势力]白家",
+      "keys": [
+        "白家"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 507,
+      "content_file": "src/concepts/势力/白家.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E41"
+          ]
+        }
+      }
+    },
+    {
+      "id": 508,
+      "comment": "[概念·势力]超自然总局",
+      "keys": [
+        "超自然总局"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 508,
+      "content_file": "src/concepts/势力/超自然总局.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E37",
+            "E38",
+            "E39"
+          ]
+        }
+      }
+    },
+    {
+      "id": 509,
+      "comment": "[概念·势力]机械神教",
+      "keys": [
+        "机械神教"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 509,
+      "content_file": "src/concepts/势力/机械神教.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E43",
+            "E56",
+            "E58"
+          ]
+        }
+      }
+    },
+    {
+      "id": 510,
+      "comment": "[概念·势力]龙虎山",
+      "keys": [
+        "龙虎山"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 510,
+      "content_file": "src/concepts/势力/龙虎山.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E38"
+          ]
+        }
+      }
+    },
+    {
+      "id": 511,
+      "comment": "[概念·势力]血肉神教",
+      "keys": [
+        "血肉神教"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 511,
+      "content_file": "src/concepts/势力/血肉神教.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E37",
+            "E38",
+            "E39",
+            "E43"
+          ]
+        }
+      }
+    },
+    {
+      "id": 512,
+      "comment": "[概念·势力]夜医架构",
+      "keys": [
+        "夜医架构"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 512,
+      "content_file": "src/concepts/势力/夜医架构.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E45",
+            "E47",
+            "E54"
+          ]
+        }
+      }
+    },
+    {
+      "id": 513,
+      "comment": "[概念·势力]欲望母树派系",
+      "keys": [
+        "欲望母树派系",
+        "欲望教派"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 513,
+      "content_file": "src/concepts/势力/欲望母树派系.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E62",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 514,
+      "comment": "[概念·场景]002病房",
+      "keys": [
+        "002病房"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 514,
+      "content_file": "src/concepts/场景/002病房.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48",
+            "E57"
+          ]
+        }
+      }
+    },
+    {
+      "id": 515,
+      "comment": "[概念·场景]白逸别墅",
+      "keys": [
+        "白逸别墅"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 515,
+      "content_file": "src/concepts/场景/白逸别墅.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E41"
+          ]
+        }
+      }
+    },
+    {
+      "id": 516,
+      "comment": "[概念·场景]不正常生物接诊中心",
+      "keys": [
+        "不正常生物接诊中心"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 516,
+      "content_file": "src/concepts/场景/不正常生物接诊中心.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E47",
+            "E48",
+            "E49",
+            "E55",
+            "E56"
+          ]
+        }
+      }
+    },
+    {
+      "id": 517,
+      "comment": "[概念·场景]畸变堡垒",
+      "keys": [
+        "畸变堡垒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 517,
+      "content_file": "src/concepts/场景/畸变堡垒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E62",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 518,
+      "comment": "[概念·场景]蓝星·魔都",
+      "keys": [
+        "蓝星·魔都"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 518,
+      "content_file": "src/concepts/场景/蓝星·魔都.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E37",
+            "E38",
+            "E39"
+          ]
+        }
+      }
+    },
+    {
+      "id": 519,
+      "comment": "[概念·场景]林恩故乡县城",
+      "keys": [
+        "林恩故乡县城"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 519,
+      "content_file": "src/concepts/场景/林恩故乡县城.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E40",
+            "E42"
+          ]
+        }
+      }
+    },
+    {
+      "id": 520,
+      "comment": "[概念·场景]朋克酒店",
+      "keys": [
+        "朋克酒店"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 520,
+      "content_file": "src/concepts/场景/朋克酒店.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E51",
+            "E52"
+          ]
+        }
+      }
+    },
+    {
+      "id": 521,
+      "comment": "[概念·场景]群星圣堂",
+      "keys": [
+        "群星圣堂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 521,
+      "content_file": "src/concepts/场景/群星圣堂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E46",
+            "E47"
+          ]
+        }
+      }
+    },
+    {
+      "id": 522,
+      "comment": "[概念·场景]山谷汇合点",
+      "keys": [
+        "山谷汇合点"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 522,
+      "content_file": "src/concepts/场景/山谷汇合点.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E60",
+            "E61"
+          ]
+        }
+      }
+    },
+    {
+      "id": 523,
+      "comment": "[概念·场景]夜医前线营地",
+      "keys": [
+        "夜医前线营地"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 523,
+      "content_file": "src/concepts/场景/夜医前线营地.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E57",
+            "E58",
+            "E59"
+          ]
+        }
+      }
+    },
+    {
+      "id": 524,
+      "comment": "[概念·场景]仪式塔",
+      "keys": [
+        "仪式塔"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 524,
+      "content_file": "src/concepts/场景/仪式塔.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E44",
+            "E45"
+          ]
+        }
+      }
+    },
+    {
+      "id": 525,
+      "comment": "[概念·场景]诅咒之城",
+      "keys": [
+        "诅咒之城"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 525,
+      "content_file": "src/concepts/场景/诅咒之城.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E58",
+            "E60",
+            "E62"
+          ]
+        }
+      }
+    },
+    {
+      "id": 526,
+      "comment": "[概念·物品]逗猫棒",
+      "keys": [
+        "逗猫棒"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 526,
+      "content_file": "src/concepts/物品/逗猫棒.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E49",
+            "E55"
+          ]
+        }
+      }
+    },
+    {
+      "id": 527,
+      "comment": "[概念·物品]夺萃之镰",
+      "keys": [
+        "夺萃之镰"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 527,
+      "content_file": "src/concepts/物品/夺萃之镰.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E61",
+            "E62"
+          ]
+        }
+      }
+    },
+    {
+      "id": 528,
+      "comment": "[概念·物品]反扫描殖装虫",
+      "keys": [
+        "反扫描殖装虫"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 528,
+      "content_file": "src/concepts/物品/反扫描殖装虫.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E56"
+          ]
+        }
+      }
+    },
+    {
+      "id": 529,
+      "comment": "[概念·物品]秽体史莱姆拟化形态药剂",
+      "keys": [
+        "秽体史莱姆拟化形态药剂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 529,
+      "content_file": "src/concepts/物品/秽体史莱姆拟化形态药剂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E56",
+            "E61"
+          ]
+        }
+      }
+    },
+    {
+      "id": 530,
+      "comment": "[概念·物品]恐怖书籍",
+      "keys": [
+        "恐怖书籍"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 530,
+      "content_file": "src/concepts/物品/恐怖书籍.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48",
+            "E57"
+          ]
+        }
+      }
+    },
+    {
+      "id": 531,
+      "comment": "[概念·物品]猫娘药剂",
+      "keys": [
+        "猫娘药剂"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 531,
+      "content_file": "src/concepts/物品/猫娘药剂.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E49",
+            "E50",
+            "E63"
+          ]
+        }
+      }
+    },
+    {
+      "id": 532,
+      "comment": "[概念·物品]赛博机械蓝图",
+      "keys": [
+        "赛博机械蓝图"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 532,
+      "content_file": "src/concepts/物品/赛博机械蓝图.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E62"
+          ]
+        }
+      }
+    },
+    {
+      "id": 533,
+      "comment": "[概念·物品]替死娃娃",
+      "keys": [
+        "替死娃娃"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 533,
+      "content_file": "src/concepts/物品/替死娃娃.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52"
+          ]
+        }
+      }
+    },
+    {
+      "id": 534,
+      "comment": "[概念·物品]镇魂铃",
+      "keys": [
+        "镇魂铃"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 534,
+      "content_file": "src/concepts/物品/镇魂铃.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E55"
+          ]
+        }
+      }
+    },
+    {
+      "id": 535,
+      "comment": "[概念·物品]重装生化手雷xp1",
+      "keys": [
+        "重装生化手雷xp1"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 535,
+      "content_file": "src/concepts/物品/重装生化手雷xp1.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E56"
+          ]
+        }
+      }
+    },
+    {
+      "id": 536,
+      "comment": "[概念·物品]主母的红茶包",
+      "keys": [
+        "主母的红茶包"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 536,
+      "content_file": "src/concepts/物品/主母的红茶包.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E50"
+          ]
+        }
+      }
+    },
+    {
+      "id": 537,
+      "comment": "[概念·物品]自缚天使的怜悯（盗版）",
+      "keys": [
+        "自缚天使的怜悯（盗版）"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 537,
+      "content_file": "src/concepts/物品/自缚天使的怜悯（盗版）.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E44",
+            "E49",
+            "E62"
+          ]
+        }
+      }
+    },
+    {
+      "id": 538,
+      "comment": "[概念·特殊设定]阶段三术语速查",
+      "keys": [
+        "阶段三术语速查"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 538,
+      "content_file": "src/concepts/特殊设定/阶段三术语速查.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": []
+        }
+      }
+    },
+    {
+      "id": 539,
+      "comment": "[概念·特殊设定]蓝星与平行世界",
+      "keys": [
+        "蓝星与平行世界"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 539,
+      "content_file": "src/concepts/特殊设定/蓝星与平行世界.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E37",
+            "E40",
+            "E42",
+            "E43"
+          ]
+        }
+      }
+    },
+    {
+      "id": 540,
+      "comment": "[概念·特殊设定]平行林恩加密户籍",
+      "keys": [
+        "平行林恩加密户籍"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 540,
+      "content_file": "src/concepts/特殊设定/平行林恩加密户籍.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E40"
+          ]
+        }
+      }
+    },
+    {
+      "id": 541,
+      "comment": "[概念·人物]艾尔",
+      "keys": [
+        "艾尔"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 541,
+      "content_file": "src/concepts/人物/艾尔.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E48"
+          ]
+        }
+      }
+    },
+    {
+      "id": 542,
+      "comment": "[概念·人物]白小凌",
+      "keys": [
+        "白小凌"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 542,
+      "content_file": "src/concepts/人物/白小凌.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E41"
+          ]
+        }
+      }
+    },
+    {
+      "id": 543,
+      "comment": "[概念·人物]科莱",
+      "keys": [
+        "科莱"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 543,
+      "content_file": "src/concepts/人物/科莱.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E47"
+          ]
+        }
+      }
+    },
+    {
+      "id": 544,
+      "comment": "[概念·人物]克勒斯",
+      "keys": [
+        "克勒斯"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 544,
+      "content_file": "src/concepts/人物/克勒斯.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E38",
+            "E39"
+          ]
+        }
+      }
+    },
+    {
+      "id": 545,
+      "comment": "[概念·人物]森一·940",
+      "keys": [
+        "森一·940"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 545,
+      "content_file": "src/concepts/人物/森一·940.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E52",
+            "E54"
+          ]
+        }
+      }
+    },
+    {
+      "id": 546,
+      "comment": "[概念·人物]圣徒·379号博士",
+      "keys": [
+        "圣徒·379号博士"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 546,
+      "content_file": "src/concepts/人物/圣徒·379号博士.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E60",
+            "E61"
+          ]
+        }
+      }
+    },
+    {
+      "id": 547,
+      "comment": "[概念·人物]王蓓",
+      "keys": [
+        "王蓓"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 547,
+      "content_file": "src/concepts/人物/王蓓.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E38"
+          ]
+        }
+      }
+    },
+    {
+      "id": 548,
+      "comment": "[概念·人物]王朝北",
+      "keys": [
+        "王朝北"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 548,
+      "content_file": "src/concepts/人物/王朝北.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E38"
+          ]
+        }
+      }
+    },
+    {
+      "id": 549,
+      "comment": "[概念·人物]尹琴",
+      "keys": [
+        "尹琴"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 549,
+      "content_file": "src/concepts/人物/尹琴.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E39",
+            "E41"
+          ]
+        }
+      }
+    },
+    {
+      "id": 550,
+      "comment": "[概念·人物]游荡者",
+      "keys": [
+        "游荡者"
+      ],
+      "secondary_keys": [],
+      "constant": false,
+      "insertion_order": 550,
+      "content_file": "src/concepts/人物/游荡者.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true,
+        "tavernweave": {
+          "event_ids": [
+            "E56"
+          ]
+        }
+      }
+    },
+    {
+      "id": 900,
+      "comment": "[initvar]初始变量",
+      "keys": [],
+      "constant": false,
+      "enabled": true,
+      "insertion_order": 900,
+      "content_json_file": "src/initial_variables.json",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 910,
+      "comment": "[mvu_update]变量更新规则",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 910,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_update_rules.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 920,
+      "comment": "[mvu_update]当前变量",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 920,
+      "position_number": 4,
+      "depth": 0,
+      "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>\n若上方为空：以聊天历史最近一轮<UpdateVariable>块推导当前状态并保持连续，不得重置。",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    },
+    {
+      "id": 930,
+      "comment": "[mvu_update]变量输出格式",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 930,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_output_format.md",
+      "extensions": {
+        "exclude_recursion": true,
+        "prevent_recursion": true
+      }
+    }
+  ]
+}

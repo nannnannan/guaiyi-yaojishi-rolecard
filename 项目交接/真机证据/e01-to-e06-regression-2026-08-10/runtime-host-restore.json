@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-08-10T15:50:09.905Z",
+  "temporary_test": {
+    "preset": "Default",
+    "max_completion_tokens": 12000,
+    "reasoning_effort": "auto",
+    "source": "custom",
+    "model": "gemini-3.1-pro-preview"
+  },
+  "restored": {
+    "preset": "梦鲸思客V4-0731",
+    "max_completion_tokens": 30000,
+    "reasoning_effort": "high",
+    "source": "custom",
+    "model": "gemini-3.1-pro-preview"
+  },
+  "cleanup": {
+    "temporary_card": "《诡异药剂师》v0.5-E06回归-20260810-M",
+    "card_matches_after_reload": 0,
+    "worldbook_matches_after_reload": 0,
+    "script_registry_entry_present": false,
+    "regex_allowlist_entry_present": false,
+    "local_temp_card_present": false,
+    "local_temp_worldbook_present": false,
+    "detail_evidence": "runtime-e06-cleanup.json"
+  },
+  "assertions": {
+    "original_preset_restored": true,
+    "original_completion_limit_restored": true,
+    "original_reasoning_effort_restored": true,
+    "original_connection_preserved": true,
+    "temporary_card_absent": true,
+    "temporary_worldbook_absent": true
+  }
+}

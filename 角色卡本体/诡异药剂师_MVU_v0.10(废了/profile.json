@@ -1,0 +1,32 @@
+{
+  "id": "tavernweave.weird-apothecary",
+  "family": "sillytavern-rolecard",
+  "version": "0.10.0",
+  "display_name": "《诡异药剂师》v0.10",
+  "primary_card_type": "mvu_zod",
+  "capabilities": [
+    "tavern_helper",
+    "mvu",
+    "zod_schema",
+    "embedded_ui",
+    "same_turn_update",
+    "optional_extra_update_model",
+    "autonomous_world_events",
+    "native_worldbook_keyword_activation",
+    "event_window_concept_activation",
+    "event_window_character_activation"
+  ],
+  "update_protocol": "UpdateVariable.JSONPatch",
+  "model_context": "64k_plus",
+  "variable_root": "stat_data",
+  "ui_variant": "death_realm_four_page",
+  "manifest": "manifest.json",
+  "contract": "contract.json",
+  "recipe": "tools/build.mjs",
+  "deprecated_features": [
+    "VWD_value_description_pairs",
+    "command_style_mvu_updates",
+    "combat_system",
+    "v0.2_chat_migration"
+  ]
+}

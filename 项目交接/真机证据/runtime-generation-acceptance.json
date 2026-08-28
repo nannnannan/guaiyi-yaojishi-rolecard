@@ -1,0 +1,785 @@
+{
+  "acceptedAt": "2026-08-09T07:59:44.890Z",
+  "target": {
+    "avatar": "《诡异药剂师》v0.5.png",
+    "characterId": 0
+  },
+  "prompt": "林恩留在柜台后，先观察门外的动静，不主动离店，也不要替他做额外决定。请继续场景，并按卡内协议更新变量。",
+  "before": {
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@15h40m36s064ms",
+    "messageCount": 3,
+    "event": {
+      "锚点状态": {
+        "E01": {
+          "标题": "系统觉醒与开店",
+          "状态": "完成",
+          "收尾": true
+        },
+        "E02": {
+          "标题": "血娃娃上门与找妈妈任务",
+          "状态": "活跃",
+          "收尾": true
+        },
+        "E03": {
+          "标题": "猪头魔与恶灵血婴",
+          "状态": "预兆",
+          "收尾": false
+        },
+        "E04": {
+          "标题": "猎魔人治疗与传说左轮",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E05": {
+          "标题": "不眠夜与小小牙科",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E06": {
+          "标题": "诅咒清除能力与鬼婴塑形",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E07": {
+          "标题": "血衣寻子与鬼婴萌化化解",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E08": {
+          "标题": "暴击药剂与视界曝光",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E09": {
+          "标题": "血衣鸿门宴与诅咒绑定",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E10": {
+          "标题": "视界经营与玥玥治疗",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E11": {
+          "标题": "血夜地狱行者与左左诞生",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E12": {
+          "标题": "血肉灾变与左手共存",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E13": {
+          "标题": "猎杀者夜袭与信使线",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E14": {
+          "标题": "瘦长鬼影手术与024诊断",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E15": {
+          "标题": "求援信与小小赴约",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E16": {
+          "标题": "械魔大军与猎神者",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E17": {
+          "标题": "小小介绍棒医生",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E18": {
+          "标题": "倒吊塔决战与协会覆灭",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E19": {
+          "标题": "猎头者家族绑定",
+          "状态": "未触发",
+          "收尾": false
+        },
+        "E20": {
+          "标题": "师徒归来与阶段收束",
+          "状态": "未触发",
+          "收尾": false
+        }
+      },
+      "唯一活跃事件": {
+        "事件ID": "E02",
+        "标题": "血娃娃上门与找妈妈任务",
+        "地点": "血锯药剂店门前",
+        "参与者": [
+          "血娃娃"
+        ],
+        "状态": "活跃",
+        "紧迫度": "中",
+        "模糊期限": "正在等待回应",
+        "进展": "血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子",
+        "幕后停止点": "等待林恩处置盘中线索或决定下一步"
+      },
+      "近期预兆": {
+        "事件ID": "E03",
+        "方向": "沉重的脚步声与猪类哼哼声，腹部有活物蠕动",
+        "地点": "血锯药剂店门口",
+        "参与者": [
+          "未知猪类怪物"
+        ],
+        "紧迫度": "中",
+        "模糊期限": "正在拍门求医"
+      },
+      "最近结果": [],
+      "阶段总结": [],
+      "原创重大事件待定队列": []
+    },
+    "rawLatestHasStatusPlaceholder": true
+  },
+  "send": {
+    "sent": "林恩留在柜台后，先观察门外的动静，不主动离店，也不要替他做额外决定。请继续场景，并按卡内协议更新变量。",
+    "before": 3,
+    "after": 5,
+    "newMessages": 2,
+    "generation": {
+      "ended": true,
+      "type": "normal",
+      "messageCount": 5,
+      "fallback": true,
+      "deletionEvents": 0,
+      "afterDeletion": null
+    }
+  },
+  "after": {
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@15h40m36s064ms",
+    "messageCount": 5,
+    "messages": [
+      {
+        "index": 0,
+        "role": "assistant",
+        "length": 23324,
+        "preview": "# 第1章 异世界的我开了挂\r\n【这是一个诡秘的异世界。】\r\n【吸血鬼，狼人，科技，魔药，鬼怪，生化人，占卜，傀儡，只要是你能想到的所有的可怖元素，这个世界都有。】\r\n【出门必须要掌灯。】\r\n【不能走远。】\r\n【离开大门十米之后，外面的黑暗会吞噬你。】\r\n【不管来就医的是人，是鬼，还是缝合怪，你都要保持镇静。】\r\n【你不镇静，它就会对你产生恶意。】\r\n破旧的桌子前，林恩拿着羽毛笔，就着灯火。\r\n在日记本上写着自己穿越到这个世界两年以来的准则。\r\n“林恩！时间到了，把灯挂出去，准备开门营业！”\r\n一个沙哑的就像是在咀",
+        "hasStatusPlaceholder": true,
+        "hasUpdateVariable": true,
+        "hasVariables": true
+      },
+      {
+        "index": 1,
+        "role": "user",
+        "length": 51,
+        "preview": "林恩留在柜台后，先观察门外的动静，不主动离店，也不要替他做额外决定。请继续场景，并按卡内协议更新变量。",
+        "hasStatusPlaceholder": false,
+        "hasUpdateVariable": false,
+        "hasVariables": true
+      },
+      {
+        "index": 2,
+        "role": "assistant",
+        "length": 2153,
+        "preview": "<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:30</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在柜台后，没有挪动半步。他深吸了一口气，将刚才那股从血娃娃胃里翻涌出来的腥臭味压下去。他的目光透过昏暗的光线，投向门外那片浓重的黑暗。\n\n外面起雾了。\n\n游魂巷的雾气永远带着一股腐败的湿冷味。门柱上悬挂的魂灯在雾中散发着猩红的光",
+        "hasStatusPlaceholder": true,
+        "hasUpdateVariable": true,
+        "hasVariables": true
+      },
+      {
+        "index": 3,
+        "role": "user",
+        "length": 51,
+        "preview": "林恩留在柜台后，先观察门外的动静，不主动离店，也不要替他做额外决定。请继续场景，并按卡内协议更新变量。",
+        "hasStatusPlaceholder": false,
+        "hasUpdateVariable": false,
+        "hasVariables": true
+      },
+      {
+        "index": 4,
+        "role": "assistant",
+        "length": 2824,
+        "preview": "<think>\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n</think>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在昏暗的柜台后，身形如同融入了周遭的阴影。他静立原地，目光越过那一盘带着血丝与腥臭的断发残耳，牢牢锁定在那扇摇摇欲",
+        "hasStatusPlaceholder": true,
+        "hasUpdateVariable": true,
+        "hasVariables": true
+      }
+    ],
+    "statusFrames": [
+      {
+        "frameName": "TH-message--0--0",
+        "messageId": 0,
+        "event": {
+          "e02": "活跃",
+          "e03": "未触发",
+          "activeId": "E02",
+          "omenId": ""
+        },
+        "button": {
+          "text": "历史楼层只读：E03",
+          "disabled": true,
+          "title": "只有聊天中的最新楼层可以推进事件。"
+        },
+        "error": null
+      },
+      {
+        "frameName": "TH-message--2--0",
+        "messageId": 2,
+        "event": {
+          "e02": "活跃",
+          "e03": "预兆",
+          "activeId": "E02",
+          "omenId": "E03"
+        },
+        "button": {
+          "text": "历史楼层只读",
+          "disabled": true,
+          "title": "只有聊天中的最新楼层可以推进事件。"
+        },
+        "error": null
+      },
+      {
+        "frameName": "TH-message--4--0",
+        "messageId": 4,
+        "event": {
+          "e02": "完成",
+          "e03": "活跃",
+          "activeId": "E03",
+          "omenId": "E03"
+        },
+        "button": {
+          "text": "已进入预兆：E03",
+          "disabled": true,
+          "title": ""
+        },
+        "error": null
+      }
+    ],
+    "oldFloorGuard": {
+      "oldButtonBefore": {
+        "text": "历史楼层只读：E03",
+        "disabled": true,
+        "title": "只有聊天中的最新楼层可以推进事件。"
+      },
+      "latestUnchangedAfterForcedOldClick": true
+    }
+  },
+  "assertions": {
+    "generationEnded": true,
+    "createdUserAndAssistant": true,
+    "latestAssistantHasStatusPlaceholder": true,
+    "latestAssistantHasVariables": true,
+    "openingBecameHistoricalReadOnly": true,
+    "forcedOldFloorClickDidNotChangeLatest": true,
+    "noFatalEjsRuntimeErrors": true
+  },
+  "fatalRuntimeErrors": [],
+  "listener": {
+    "count": 22,
+    "entries": [
+      {
+        "t": "2026-08-09T07:59:08.620Z",
+        "kind": "event",
+        "name": "GENERATION_STARTED",
+        "payload": [
+          "normal",
+          {}
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:08.655Z",
+        "kind": "event",
+        "name": "MESSAGE_SENT",
+        "payload": [
+          3
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:08.664Z",
+        "kind": "event",
+        "name": "USER_MESSAGE_RENDERED",
+        "payload": [
+          3
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:08.796Z",
+        "kind": "event",
+        "name": "WORLDINFO_ENTRIES_LOADED",
+        "payload": [
+          {
+            "globalLore": [],
+            "characterLore": [
+              {
+                "uid": 0,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]最高规则与玩家主权",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 1,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]自主世界事件调度",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 3,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色索引]八人路由索引",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 21,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]视界系统",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 22,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]诅咒与医疗",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 23,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]巨像及血肉机械技术",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 40,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]魔人协会",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 41,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]猎头者家族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 42,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 43,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]夜医",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 44,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]独角恶鬼族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 45,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]游魂巷居民",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 60,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]血锯药剂店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 62,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]45号血衣住所",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 63,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]凄凉荒野与倒吊塔",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 64,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 65,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]独角鬼王神庙",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 100,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]左左",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 110,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血锯",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 120,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血衣女士",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 130,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小小",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 140,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]人偶夫人",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 170,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]泰坦头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 180,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]巫神头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 190,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小宝贝",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 300,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E01·系统觉醒与开店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 301,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E02·血娃娃上门与找妈妈任务",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 302,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E03·猪头魔与恶灵血婴",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 303,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E04·猎魔人治疗与传说左轮",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 304,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E05·不眠夜与小小牙科",
+                "constant": false,
+                "selective": false
+              }
+            ],
+            "chatLore": [],
+            "personaLore": [],
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:08.784Z",
+        "kind": "console",
+        "level": "error",
+        "payload": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "t": "2026-08-09T07:59:08.785Z",
+        "kind": "console",
+        "level": "error",
+        "payload": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "t": "2026-08-09T07:59:10.048Z",
+        "kind": "event",
+        "name": "WORLDINFO_SCAN_DONE",
+        "payload": [
+          {
+            "globalLore": null,
+            "characterLore": null,
+            "chatLore": null,
+            "personaLore": null,
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:10.054Z",
+        "kind": "console",
+        "level": "error",
+        "payload": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "t": "2026-08-09T07:59:10.054Z",
+        "kind": "console",
+        "level": "error",
+        "payload": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "t": "2026-08-09T07:59:10.055Z",
+        "kind": "console",
+        "level": "error",
+        "payload": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "t": "2026-08-09T07:59:16.649Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          ""
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:17.115Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          ""
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:19.392Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          ""
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:22.612Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          ""
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:25.488Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:25.630Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:25.801Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - "
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:26.629Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:26.632Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在昏暗的柜台后，身形如同融入了周遭的阴影。他静立"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:26.841Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在昏暗的柜台后，身形如同融入了周遭的阴影。他静立原地，目光越过那一盘带着血丝与腥臭的断发残耳，牢牢锁定在那扇摇"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:26.908Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在昏暗的柜台后，身形如同融入了周遭的阴影。他静立原地，目光越过那一盘带着血丝与腥臭的断发残耳，牢牢锁定在那扇摇摇欲坠的木门之外。他没有迈出半步，也没有任何主动离店的意图，只是冷"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:59:27.119Z",
+        "kind": "event",
+        "name": "STREAM_TOKEN_RECEIVED",
+        "payload": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dream_plot>\n<dream_body>\n<dream_scene>\n<date>觉醒日 周一</date>\n<time>下午 5:32</time>\n<location>深渊世界 - 游魂巷 - 血锯药剂店 - 前台柜台</location>\n</dream_scene>\n林恩留在昏暗的柜台后，身形如同融入了周遭的阴影。他静立原地，目光越过那一盘带着血丝与腥臭的断发残耳，牢牢锁定在那扇摇摇欲坠的木门之外。他没有迈出半步，也没有任何主动离店的意图，只是冷冷地、专注地观察着那隐匿在红雾与魂灯交界处的庞然大物。在这"
+        ]
+      }
+    ]
+  },
+  "consoleEntries": [
+    {
+      "at": "2026-08-09T07:59:06.988Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:06.988Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:06.989Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:06.995Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:06.995Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:06.996Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:08.784Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:08.785Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:10.054Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:10.054Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:10.055Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:43.066Z",
+      "type": "warning",
+      "text": "Stream stats: 75 tokens, 26.14 seconds, rate: 2.87 TPS"
+    },
+    {
+      "at": "2026-08-09T07:59:43.275Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:43.276Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:43.586Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:43.587Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:43.587Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:44.208Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:44.209Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:44.240Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:44.240Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-09T07:59:44.241Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    }
+  ]
+}

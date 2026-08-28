@@ -1,0 +1,3179 @@
+{
+  "capturedAt": "2026-08-10T07:11:37.100Z",
+  "tempName": "《诡异药剂师》v0.5-E06玩家长测-20260810-A",
+  "state": {
+    "chatId": "《诡异药剂师》v0.5-E06玩家长测-20260810-A - 2026-08-10@15h07m01s484ms",
+    "character": "《诡异药剂师》v0.5-E06玩家长测-20260810-A",
+    "messageCount": 1,
+    "topGlobals": {
+      "Mvu": "undefined",
+      "z": "object",
+      "waitGlobalInitialized": "undefined",
+      "eventOn": "undefined"
+    },
+    "messages": [
+      {
+        "index": 0,
+        "role": "assistant",
+        "chars": 22596,
+        "hasInitvar": true,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [],
+        "hasStatData": false,
+        "preview": "\n\n             ],\n    \"系统\":  {\n               \"当前任务\":  \"血娃娃找妈妈（隐藏任务）\",\n               \"任务阶段\":  \"追查线索（完成度2%）\",\n               \"任务状态\":  \"进行中\",\n               \"任务说明\":  \"帮助血娃娃找到她的母亲。盘中不知名女人的头发、耳朵与梳子是当前线索。主线‘活过血夜’继续有效。\",\n               \"图鉴\":  [\n\n                      ],\n               \"成就\":  [\n\n                      ],\n               \"最近提示\":  \"系统可辅助诊断，但不替林恩决策。\",\n               \"事件通知\":  \"E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。\",\n               \"更新模式\":  \"同轮更新；可选独立预设\"\n           }\n}\n</initvar>\n</UpdateVariable>"
+      }
+    ],
+    "frames": [
+      {
+        "name": "TH-message--0--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": false,
+        "visibleError": "等待变量初始化：当前仅显示初始预览，不会据此执行推进。（当前楼层尚无已保存变量）"
+      },
+      {
+        "name": "TH-script--Kimi前缀预填充 1.0--1e116ea5-98d2-451c-8363-b64350991ae2",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--梦鲸思客消息处理 2.2 （原压缩相邻消息）--2f0723fb-cd98-4936-9543-a79afd11fade",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--预设仓库--641e39f3-7292-46ad-8383-3858a89df4a3",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--可视化前端-V16.3-Crino--7388f734-8ffd-4557-ac39-ed6d30b5a637",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--格式补全 1.2--75ade02a-d394-47c1-86b0-fc8272510d6a",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--思维链提取到正文 1.0--89b2fc66-0f60-4f6a-8d4b-1b6e5b3e7514",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--梦鲸思客预设助手 1.6--9efc19ef-f536-4f20-ac15-6d7b54412464",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      }
+    ],
+    "helperScripts": []
+  },
+  "consoleEntries": [
+    {
+      "at": "2026-08-10T07:11:13.431Z",
+      "type": "debug",
+      "text": "saw no avatars"
+    },
+    {
+      "at": "2026-08-10T07:11:13.442Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:13.453Z",
+      "type": "info",
+      "text": "Rendered 1 messages in 0.012 seconds."
+    },
+    {
+      "at": "2026-08-10T07:11:13.555Z",
+      "type": "debug",
+      "text": "Event emitted: character_editor_opened"
+    },
+    {
+      "at": "2026-08-10T07:11:13.555Z",
+      "type": "debug",
+      "text": "Event emitted: chat_id_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:13.592Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06玩家长测-20260810-A's lore has 102 world info entries [《诡异药剂师》v0.5-E06玩家长测-20260810-A]"
+    },
+    {
+      "at": "2026-08-10T07:11:13.592Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:13.592Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:13.592Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:13.593Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:13.866Z",
+      "type": "verbose",
+      "text": "[DOM] Password field is not contained in a form: (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o"
+    },
+    {
+      "at": "2026-08-10T07:11:13.929Z",
+      "type": "debug",
+      "text": "User Agent {browser: Object, os: Object, platform: Object, engine: Object}"
+    },
+    {
+      "at": "2026-08-10T07:11:14.585Z",
+      "type": "warning",
+      "text": "No input elements found for key: api_key_comfy_runpod"
+    },
+    {
+      "at": "2026-08-10T07:11:14.588Z",
+      "type": "log",
+      "text": "Loading locale data from ./locales/zh-cn.json"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: kobold"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: novel"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: openai"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: textgenerationwebui"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: context"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: instruct"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: sysprompt"
+    },
+    {
+      "at": "2026-08-10T07:11:14.618Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: reasoning"
+    },
+    {
+      "at": "2026-08-10T07:11:14.879Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded_before"
+    },
+    {
+      "at": "2026-08-10T07:11:14.880Z",
+      "type": "debug",
+      "text": "Preset samplers order: 6,0,1,2,3,4,5"
+    },
+    {
+      "at": "2026-08-10T07:11:14.880Z",
+      "type": "debug",
+      "text": "Preset samplers order: 1,5,0,2,3,4"
+    },
+    {
+      "at": "2026-08-10T07:11:14.882Z",
+      "type": "debug",
+      "text": "Text Completions: loading selected samplers"
+    },
+    {
+      "at": "2026-08-10T07:11:14.886Z",
+      "type": "debug",
+      "text": "Preset samplers order: 6,0,1,3,4,2,5"
+    },
+    {
+      "at": "2026-08-10T07:11:14.886Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [repetition_penalty, presence_penalty, frequency_penalty, dry, temperature, dynamic_temperature, quadratic_sampling, top_n_sigma, top_k, top_p, typical_p, epsilon_cutoff, eta_cutoff, tfs, top_a, min_p, mirostat, xtc, encoder_repetition_penalty, no_repeat_ngram]"
+    },
+    {
+      "at": "2026-08-10T07:11:14.886Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [penalties, dry, top_n_sigma, top_k, typ_p, tfs_z, typical_p, xtc, top_p, adaptive_p, min_p, temperature]"
+    },
+    {
+      "at": "2026-08-10T07:11:14.887Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [dry, penalties, no_repeat_ngram, temperature, top_nsigma, top_p_top_k, top_a, min_p, tfs, eta_cutoff, epsilon_cutoff, typical_p, quadratic, xtc]"
+    },
+    {
+      "at": "2026-08-10T07:11:14.916Z",
+      "type": "debug",
+      "text": "Event emitted: chatcompletion_model_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:14.921Z",
+      "type": "debug",
+      "text": "Event emitted: chatcompletion_source_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:14.926Z",
+      "type": "debug",
+      "text": "poweruser.chat_display 1"
+    },
+    {
+      "at": "2026-08-10T07:11:14.926Z",
+      "type": "debug",
+      "text": "applying bubblechat"
+    },
+    {
+      "at": "2026-08-10T07:11:14.936Z",
+      "type": "debug",
+      "text": "aborting MUI reset 0"
+    },
+    {
+      "at": "2026-08-10T07:11:14.939Z",
+      "type": "debug",
+      "text": "aborting MUI reset 0"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_story_string to {{#if anchorBefore}}{{anchorBefore}}\n{{/if}}{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}{{#if anchorAfter}}{{anchorAfter}}\n{{/if}}"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_example_separator to ***"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_chat_start to ***"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_use_stop_strings to true"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_names_as_stop_strings to true"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_story_string_position to 0"
+    },
+    {
+      "at": "2026-08-10T07:11:14.950Z",
+      "type": "debug",
+      "text": "Setting context_story_string_position to 0"
+    },
+    {
+      "at": "2026-08-10T07:11:14.952Z",
+      "type": "debug",
+      "text": "Setting context_story_string_depth to 1"
+    },
+    {
+      "at": "2026-08-10T07:11:14.952Z",
+      "type": "debug",
+      "text": "Setting context_story_string_role to 0"
+    },
+    {
+      "at": "2026-08-10T07:11:14.953Z",
+      "type": "debug",
+      "text": "skipping movingUI state load"
+    },
+    {
+      "at": "2026-08-10T07:11:14.958Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded_after"
+    },
+    {
+      "at": "2026-08-10T07:11:14.958Z",
+      "type": "debug",
+      "text": "value? openai"
+    },
+    {
+      "at": "2026-08-10T07:11:14.958Z",
+      "type": "debug",
+      "text": "hiding settings?"
+    },
+    {
+      "at": "2026-08-10T07:11:14.959Z",
+      "type": "debug",
+      "text": "returning full samplers array"
+    },
+    {
+      "at": "2026-08-10T07:11:14.963Z",
+      "type": "debug",
+      "text": "Event emitted: extensions_first_load"
+    },
+    {
+      "at": "2026-08-10T07:11:14.964Z",
+      "type": "error",
+      "text": "Refused to apply style from 'http://127.0.0.1:8000/%E5%AD%97%E4%BD%93%E9%93%BE%E6%8E%A5' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled."
+    },
+    {
+      "at": "2026-08-10T07:11:14.987Z",
+      "type": "debug",
+      "text": "Activating extension translate"
+    },
+    {
+      "at": "2026-08-10T07:11:14.990Z",
+      "type": "debug",
+      "text": "Activating extension connection-manager"
+    },
+    {
+      "at": "2026-08-10T07:11:14.994Z",
+      "type": "debug",
+      "text": "Activating extension third-party/ST-Prompt-Template"
+    },
+    {
+      "at": "2026-08-10T07:11:15.045Z",
+      "type": "debug",
+      "text": "Activating extension regex"
+    },
+    {
+      "at": "2026-08-10T07:11:15.123Z",
+      "type": "log",
+      "text": "monaco-editor loaded.  Module"
+    },
+    {
+      "at": "2026-08-10T07:11:15.123Z",
+      "type": "log",
+      "text": "ST-Prompt-Template initialized"
+    },
+    {
+      "at": "2026-08-10T07:11:15.140Z",
+      "type": "debug",
+      "text": "Activating extension attachments"
+    },
+    {
+      "at": "2026-08-10T07:11:15.174Z",
+      "type": "log",
+      "text": "[Prompt Template] Faker loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:15.174Z",
+      "type": "log",
+      "text": "[Aircraft, BitcoinAddressFamily, BitcoinNetwork, CssFunction, CssSpace, Faker, FakerError, IPv4Network, Sex, SimpleFaker, af_ZA, allFakers, allLocales, ar, az, base, bn_BD, cs_CZ, cy, da, de, de_AT, de_CH, dv, el, en, en_AU, en_AU_ocker, en_BORK, en_CA, en_GB, en_GH, en_HK, en_IE, en_IN, en_NG, en_US, en_ZA, eo, es, es_MX, fa, faker, fakerAF_ZA, fakerAR, fakerAZ, fakerBASE, fakerBN_BD, fakerCS_CZ, fakerCY, fakerDA, fakerDE, fakerDE_AT, fakerDE_CH, fakerDV, fakerEL, fakerEN, fakerEN_AU, fakerEN_AU_ocker, fakerEN_BORK, fakerEN_CA, fakerEN_GB, fakerEN_GH, fakerEN_HK, fakerEN_IE, fakerEN_IN, fakerEN_NG, fakerEN_US, fakerEN_ZA, fakerEO, fakerES, fakerES_MX, fakerFA, fakerFI, fakerFR, fakerFR_BE, fakerFR_CA, fakerFR_CH, fakerFR_LU, fakerFR_SN, fakerHE, fakerHR, fakerHU, fakerHY, fakerID_ID, fakerIT, fakerJA, fakerKA_GE, fakerKO, fakerLV, fakerMK, fakerNB_NO, fakerNE, fakerNL, fakerNL_BE, fakerPL, fakerPT_BR, fakerPT_PT, fakerRO, fakerRO_MD]"
+    },
+    {
+      "at": "2026-08-10T07:11:15.181Z",
+      "type": "log",
+      "text": "[Prompt Template] xxhash loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:15.183Z",
+      "type": "debug",
+      "text": "Activating extension caption"
+    },
+    {
+      "at": "2026-08-10T07:11:15.191Z",
+      "type": "debug",
+      "text": "Activating extension expressions"
+    },
+    {
+      "at": "2026-08-10T07:11:15.210Z",
+      "type": "debug",
+      "text": "skipping movingUI state load"
+    },
+    {
+      "at": "2026-08-10T07:11:15.211Z",
+      "type": "debug",
+      "text": "Activating extension gallery"
+    },
+    {
+      "at": "2026-08-10T07:11:15.224Z",
+      "type": "debug",
+      "text": "Activating extension memory"
+    },
+    {
+      "at": "2026-08-10T07:11:15.228Z",
+      "type": "debug",
+      "text": "Activating extension stable-diffusion"
+    },
+    {
+      "at": "2026-08-10T07:11:15.262Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T07:11:15.268Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T07:11:15.275Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T07:11:15.302Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T07:11:15.319Z",
+      "type": "debug",
+      "text": "Window resize: 1440x900 -> 1440x900"
+    },
+    {
+      "at": "2026-08-10T07:11:15.319Z",
+      "type": "debug",
+      "text": "Zoom: 1, X:1440, Y:900, original: 1440x900 "
+    },
+    {
+      "at": "2026-08-10T07:11:15.322Z",
+      "type": "debug",
+      "text": "Activating extension third-party/LittleWhiteBox"
+    },
+    {
+      "at": "2026-08-10T07:11:15.452Z",
+      "type": "debug",
+      "text": "callExtensionHook: Calling hook \"activate\" (function \"activate\") for extension \"third-party/LittleWhiteBox\""
+    },
+    {
+      "at": "2026-08-10T07:11:15.467Z",
+      "type": "debug",
+      "text": "callExtensionHook: Hook \"activate\" completed for extension \"third-party/LittleWhiteBox\""
+    },
+    {
+      "at": "2026-08-10T07:11:15.467Z",
+      "type": "debug",
+      "text": "Activating extension tts"
+    },
+    {
+      "at": "2026-08-10T07:11:15.490Z",
+      "type": "debug",
+      "text": "Activating extension quick-reply"
+    },
+    {
+      "at": "2026-08-10T07:11:15.495Z",
+      "type": "info",
+      "text": "Using default TTS Provider settings"
+    },
+    {
+      "at": "2026-08-10T07:11:15.495Z",
+      "type": "debug",
+      "text": "SystemTTS: Settings loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:15.509Z",
+      "type": "debug",
+      "text": "Activating extension assets"
+    },
+    {
+      "at": "2026-08-10T07:11:15.647Z",
+      "type": "debug",
+      "text": "Activating extension token-counter"
+    },
+    {
+      "at": "2026-08-10T07:11:15.658Z",
+      "type": "debug",
+      "text": "Activating extension third-party/JS-Slash-Runner"
+    },
+    {
+      "at": "2026-08-10T07:11:15.677Z",
+      "type": "debug",
+      "text": "callExtensionHook: Calling hook \"activate\" (function \"activateTauriTavernChatSurface\") for extension \"third-party/JS-Slash-Runner\""
+    },
+    {
+      "at": "2026-08-10T07:11:15.955Z",
+      "type": "log",
+      "text": "[QR2] sets:  [QuickReplySet]"
+    },
+    {
+      "at": "2026-08-10T07:11:15.955Z",
+      "type": "log",
+      "text": "[QR2] settings:  QuickReplySettings"
+    },
+    {
+      "at": "2026-08-10T07:11:16.326Z",
+      "type": "debug",
+      "text": "callExtensionHook: Hook \"activate\" completed for extension \"third-party/JS-Slash-Runner\""
+    },
+    {
+      "at": "2026-08-10T07:11:16.326Z",
+      "type": "debug",
+      "text": "Activating extension vectors"
+    },
+    {
+      "at": "2026-08-10T07:11:16.326Z",
+      "type": "warning",
+      "text": "[DEPRECATED] MacrosParser.registerMacro is deprecated and will be removed in a future version. Use macros.registry.registerMacro (from scripts/macros/macro-system.js) or substituteParams({ dynamicMacros }) instead."
+    },
+    {
+      "at": "2026-08-10T07:11:16.326Z",
+      "type": "warning",
+      "text": "[DEPRECATED] MacrosParser.registerMacro is deprecated and will be removed in a future version. Use macros.registry.registerMacro (from scripts/macros/macro-system.js) or substituteParams({ dynamicMacros }) instead."
+    },
+    {
+      "at": "2026-08-10T07:11:16.357Z",
+      "type": "debug",
+      "text": "Event emitted: extension_settings_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:16.357Z",
+      "type": "debug",
+      "text": "returning full samplers array"
+    },
+    {
+      "at": "2026-08-10T07:11:16.357Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:16.371Z",
+      "type": "warning",
+      "text": "Failed to insert focus rule: SyntaxError: Failed to execute 'insertRule' on 'CSSStyleSheet': Failed to parse the rule '::-webkit-scrollbar-track:focus-visible { background-color: rgba(126, 126, 126, 0.2); }'.\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:144:34\n    at Array.forEach (<anonymous>)\n    at applyDynamicFocusStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:117:16)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:192:13\n    at Array.forEach (<anonymous>)\n    at initDynamicStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:190:38)\n    at firstLoadInit (http://127.0.0.1:8000/script.js:751:5)\n    at async HTMLDocument.<anonymous> (http://127.0.0.1:8000/script.js:12473:5)"
+    },
+    {
+      "at": "2026-08-10T07:11:16.373Z",
+      "type": "warning",
+      "text": "Failed to process stylesheet on initial load: SecurityError: Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules\n    at processImportedStylesheet (http://127.0.0.1:8000/scripts/dynamic-styles.js:106:28)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:66:17\n    at Array.forEach (<anonymous>)\n    at processRules (http://127.0.0.1:8000/scripts/dynamic-styles.js:60:27)\n    at applyDynamicFocusStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:111:5)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:192:13\n    at Array.forEach (<anonymous>)\n    at initDynamicStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:190:38)\n    at firstLoadInit (http://127.0.0.1:8000/script.js:751:5)\n    at async HTMLDocument.<anonymous> (http://127.0.0.1:8000/script.js:12473:5)"
+    },
+    {
+      "at": "2026-08-10T07:11:16.484Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-10T07:11:16.887Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.Kimi 前缀填充"
+    },
+    {
+      "at": "2026-08-10T07:11:16.894Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.格式补全"
+    },
+    {
+      "at": "2026-08-10T07:11:16.898Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.压缩相邻消息"
+    },
+    {
+      "at": "2026-08-10T07:11:16.901Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.压缩相邻消息"
+    },
+    {
+      "at": "2026-08-10T07:11:16.925Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.空正文梦境提取"
+    },
+    {
+      "at": "2026-08-10T07:11:16.953Z",
+      "type": "debug",
+      "text": "Event emitted: character_page_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:16.980Z",
+      "type": "debug",
+      "text": "saw no avatars"
+    },
+    {
+      "at": "2026-08-10T07:11:17.048Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:17.064Z",
+      "type": "info",
+      "text": "Rendered 1 messages in 0.019 seconds."
+    },
+    {
+      "at": "2026-08-10T07:11:17.081Z",
+      "type": "debug",
+      "text": "Event emitted: character_editor_opened"
+    },
+    {
+      "at": "2026-08-10T07:11:17.081Z",
+      "type": "debug",
+      "text": "Event emitted: chat_id_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:17.111Z",
+      "type": "debug",
+      "text": "Chat Completions: loading token cache"
+    },
+    {
+      "at": "2026-08-10T07:11:17.117Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06玩家长测-20260810-A's lore has 102 world info entries [《诡异药剂师》v0.5-E06玩家长测-20260810-A]"
+    },
+    {
+      "at": "2026-08-10T07:11:17.118Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:17.118Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.118Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.119Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Preprocess characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[机制]概念事件激活路由/399"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:17.134Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:17.139Z",
+      "type": "debug",
+      "text": "[WI] Found 102 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-10T07:11:17.140Z",
+      "type": "log",
+      "text": "[Prompt Template] *** PRELOADING WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-10T07:11:17.142Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.142Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.142Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:17.143Z",
+      "type": "log",
+      "text": "[Prompt Template] *** EVALUATING 0 WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-10T07:11:17.143Z",
+      "type": "debug",
+      "text": "[]"
+    },
+    {
+      "at": "2026-08-10T07:11:17.143Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:BEFORE]/@@generate_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T07:11:17.143Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:AFTER]/@@generate_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T07:11:17.143Z",
+      "type": "log",
+      "text": "[Prompt Template] processing 0 world info in 3ms"
+    },
+    {
+      "at": "2026-08-10T07:11:17.164Z",
+      "type": "debug",
+      "text": "getting sprites list"
+    },
+    {
+      "at": "2026-08-10T07:11:17.165Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T07:11:17.167Z",
+      "type": "log",
+      "text": "[QR2] queueing {functionToCall: , args: Array(1)}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.167Z",
+      "type": "debug",
+      "text": "Event emitted: message_received"
+    },
+    {
+      "at": "2026-08-10T07:11:17.169Z",
+      "type": "debug",
+      "text": "Event emitted: character_message_rendered"
+    },
+    {
+      "at": "2026-08-10T07:11:17.169Z",
+      "type": "log",
+      "text": "[QR2] queueing {functionToCall: , args: Array(2)}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.170Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.170Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.170Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:17.172Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T07:11:17.175Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:17.196Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T07:11:17.197Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #0 messages in 28ms"
+    },
+    {
+      "at": "2026-08-10T07:11:17.210Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T07:11:17.210Z",
+      "type": "debug",
+      "text": "Event emitted: chatLoaded"
+    },
+    {
+      "at": "2026-08-10T07:11:17.214Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T07:11:17.240Z",
+      "type": "debug",
+      "text": "Event emitted: online_status_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:17.241Z",
+      "type": "debug",
+      "text": "setting pin class via checkbox state"
+    },
+    {
+      "at": "2026-08-10T07:11:17.241Z",
+      "type": "debug",
+      "text": "setting pin class via checkbox state"
+    },
+    {
+      "at": "2026-08-10T07:11:17.245Z",
+      "type": "debug",
+      "text": "Character context menu initialized CharacterContextMenu"
+    },
+    {
+      "at": "2026-08-10T07:11:17.262Z",
+      "type": "debug",
+      "text": "Event emitted: app_initialized"
+    },
+    {
+      "at": "2026-08-10T07:11:17.314Z",
+      "type": "debug",
+      "text": "Event emitted: app_ready"
+    },
+    {
+      "at": "2026-08-10T07:11:17.314Z",
+      "type": "debug",
+      "text": "[QR2] executing startup"
+    },
+    {
+      "at": "2026-08-10T07:11:17.314Z",
+      "type": "debug",
+      "text": "[QR2] /executing startup"
+    },
+    {
+      "at": "2026-08-10T07:11:17.314Z",
+      "type": "debug",
+      "text": "[QR2] executing queue (2 items)"
+    },
+    {
+      "at": "2026-08-10T07:11:17.314Z",
+      "type": "log",
+      "text": "[QR2] CHAT_CHANGED 《诡异药剂师》v0.5-E06玩家长测-20260810-A - 2026-08-10@15h07m01s484ms"
+    },
+    {
+      "at": "2026-08-10T07:11:17.317Z",
+      "type": "debug",
+      "text": "[QR2] /executing queue"
+    },
+    {
+      "at": "2026-08-10T07:11:17.318Z",
+      "type": "debug",
+      "text": "[QR2] READY"
+    },
+    {
+      "at": "2026-08-10T07:11:17.323Z",
+      "type": "log",
+      "text": "[Prompt Template] processing receive result: 21639 tokens and 59582 chars"
+    },
+    {
+      "at": "2026-08-10T07:11:17.401Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.401Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.402Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.416Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.417Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.417Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:17.436Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T07:11:17.615Z",
+      "type": "debug",
+      "text": "Event emitted: online_status_changed"
+    },
+    {
+      "at": "2026-08-10T07:11:17.962Z",
+      "type": "debug",
+      "text": "Preset 梦鲸思客V4-0731 saved, but not updating the list"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "log",
+      "text": "Generate entered"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Event emitted: generation_started"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Event emitted: GENERATION_AFTER_COMMANDS"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(3)}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "log",
+      "text": "[QR2] Before-generation hook skipped due to dryRun."
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Skipping extension interceptors for dry run"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "log",
+      "text": "Core/all messages: 1/1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 0\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[WI] --- START WI SCAN (on 1 messages, trigger = normal) (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[WI] Context size: 1970000; WI budget: 1970000 (max% = 100%, cap = 0)"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06玩家长测-20260810-A's lore has 102 world info entries [《诡异药剂师》v0.5-E06玩家长测-20260810-A]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] Preprocess characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[机制]概念事件激活路由/399"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Found 102 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] --- SEARCHING ENTRIES (on 102 entries) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 START ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Scan state [INITIAL, 1]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 930, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 920, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 910, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 900, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [initvar]初始变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒, content: # 概念·诅咒·黑蝴蝶剧毒（事件[\"E04\"]）\n- 类别：诅咒\n- 描述：黑蝴蝶剧毒是怨念与死灵气…者与交易对象）；血锯药剂店医疗；死界诅咒体系；传说左轮【苍白狩魔者】；E04猎魔人治疗与传说左轮。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴, content: # 概念·诅咒·恶灵血婴（事件[\"E03\"]）\n- 类别：诅咒\n- 描述：恶灵血婴是恶灵诅咒寄生宿主…头魔（E03宿主）；血衣女士（E07母女线）；E06鬼婴塑形；E09鸿门宴因果；林恩整容塑形处置。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务, content: # 概念·特殊设定·找妈妈任务（事件[\"E02\"]）\n- 类别：特殊设定\n- 描述：找妈妈任务是血娃…改变后续因果。\n- 关联：血娃娃、洋娃娃、隐藏任务系统、游魂巷\"黑店\"口碑、血衣女士寻子线、E02, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(2), keysecondary: Array(0), comment: [概念·物品]剔骨刀, content: # 概念·物品·剔骨刀（事件[\"E01\"]）\n- 类别：物品\n- 描述：血锯狂人的剔骨刀，精良级近战…至今的贴身旧物。\n- 关联：血锯狂人、林恩、血肉欺诈者、左手变异体（左左）、E01/E05/E12, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·物品]传说左轮, content: # 概念·物品·传说左轮（事件[\"E04\"]）\n- 类别：物品\n- 描述：受诅咒的传说级左轮【苍白狩…的关键武装。\n- 关联：猎魔人奥卡洛斯、林恩、限时诅咒清除、E04/E06/E11/E12/E18, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·场景]魂灯营业, content: # 概念·场景·魂灯营业（事件[\"E01\"]）\n- 类别：场景\n- 描述：魂灯是血锯药剂店的招牌灯具…统只报告店内状态与当日待办。\n- 关联：血锯药剂店、任务系统、血锯狂人、E02/E03/E04来客, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯, content: # 概念·势力·猎魔人·奥卡洛斯（事件[\"E04\"]）\n- 类别：势力\n- 描述：来自地上世界的人类…世界渊源。\n- 关联：E04猎魔人治疗与传说左轮、E08暴击药剂与视界曝光、苍白狩魔者左轮、黑骑士, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(2), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者, content: # 概念·势力·人皮拾荒者（事件[\"E01\"]）\n- 类别：势力\n- 描述：游魂巷最神秘的以物易物者…表态帮忙一次，不得提前揭开其底牌。\n- 关联：游魂巷居民、小宝贝、血锯药剂店、E01系统觉醒与开店, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 399, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [机制]概念事件激活路由}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 301, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activated by primary key match 找妈妈"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 190, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activated by primary key match 小宝贝"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 110, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activated by primary key match 血锯"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 60, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activated by primary key match 血锯药剂店"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 3, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 1, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.354Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 0, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] Search done. Found 18 possible entries."
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] --- INCLUSION GROUP CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] No inclusion groups found"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] --- PROBABILITY CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "WI entry 930 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activation successful, adding to prompt {uid: 930, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.355Z",
+      "type": "debug",
+      "text": "WI entry 920 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.356Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activation successful, adding to prompt {uid: 920, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.356Z",
+      "type": "debug",
+      "text": "WI entry 910 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activation successful, adding to prompt {uid: 910, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 451 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒, content: # 概念·诅咒·黑蝴蝶剧毒（事件[\"E04\"]）\n- 类别：诅咒\n- 描述：黑蝴蝶剧毒是怨念与死灵气…者与交易对象）；血锯药剂店医疗；死界诅咒体系；传说左轮【苍白狩魔者】；E04猎魔人治疗与传说左轮。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 447 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴, content: # 概念·诅咒·恶灵血婴（事件[\"E03\"]）\n- 类别：诅咒\n- 描述：恶灵血婴是恶灵诅咒寄生宿主…头魔（E03宿主）；血衣女士（E07母女线）；E06鬼婴塑形；E09鸿门宴因果；林恩整容塑形处置。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 432 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务, content: # 概念·特殊设定·找妈妈任务（事件[\"E02\"]）\n- 类别：特殊设定\n- 描述：找妈妈任务是血娃…改变后续因果。\n- 关联：血娃娃、洋娃娃、隐藏任务系统、游魂巷\"黑店\"口碑、血衣女士寻子线、E02, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 416 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activation successful, adding to prompt {key: Array(2), keysecondary: Array(0), comment: [概念·物品]剔骨刀, content: # 概念·物品·剔骨刀（事件[\"E01\"]）\n- 类别：物品\n- 描述：血锯狂人的剔骨刀，精良级近战…至今的贴身旧物。\n- 关联：血锯狂人、林恩、血肉欺诈者、左手变异体（左左）、E01/E05/E12, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 415 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·物品]传说左轮, content: # 概念·物品·传说左轮（事件[\"E04\"]）\n- 类别：物品\n- 描述：受诅咒的传说级左轮【苍白狩…的关键武装。\n- 关联：猎魔人奥卡洛斯、林恩、限时诅咒清除、E04/E06/E11/E12/E18, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 414 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·场景]魂灯营业, content: # 概念·场景·魂灯营业（事件[\"E01\"]）\n- 类别：场景\n- 描述：魂灯是血锯药剂店的招牌灯具…统只报告店内状态与当日待办。\n- 关联：血锯药剂店、任务系统、血锯狂人、E02/E03/E04来客, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 406 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯, content: # 概念·势力·猎魔人·奥卡洛斯（事件[\"E04\"]）\n- 类别：势力\n- 描述：来自地上世界的人类…世界渊源。\n- 关联：E04猎魔人治疗与传说左轮、E08暴击药剂与视界曝光、苍白狩魔者左轮、黑骑士, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 400 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activation successful, adding to prompt {key: Array(2), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者, content: # 概念·势力·人皮拾荒者（事件[\"E01\"]）\n- 类别：势力\n- 描述：游魂巷最神秘的以物易物者…表态帮忙一次，不得提前揭开其底牌。\n- 关联：游魂巷居民、小宝贝、血锯药剂店、E01系统觉醒与开店, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.363Z",
+      "type": "debug",
+      "text": "WI entry 301 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.371Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activation successful, adding to prompt {uid: 301, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.371Z",
+      "type": "debug",
+      "text": "WI entry 190 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.380Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activation successful, adding to prompt {uid: 190, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.380Z",
+      "type": "debug",
+      "text": "WI entry 110 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.393Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activation successful, adding to prompt {uid: 110, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.393Z",
+      "type": "debug",
+      "text": "WI entry 60 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.406Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activation successful, adding to prompt {uid: 60, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.406Z",
+      "type": "debug",
+      "text": "WI entry 3 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.419Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activation successful, adding to prompt {uid: 3, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.419Z",
+      "type": "debug",
+      "text": "WI entry 1 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activation successful, adding to prompt {uid: 1, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.447Z",
+      "type": "debug",
+      "text": "WI entry 0 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activation successful, adding to prompt {uid: 0, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 RESULT ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "[WI] Successfully activated 18 new entries to prompt. 18 total entries activated. [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "[WI] Scan done. No new entries to prompt. Stopping."
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "[WI] Setting scan state [NONE, 0]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.476Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_scan_done"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.477Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "[WI] --- BUILDING PROMPT ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.478Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.479Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:18.480Z",
+      "type": "log",
+      "text": "[WI] Hypothetically adding 18 entries to prompt [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.480Z",
+      "type": "debug",
+      "text": "[WI] --- DONE (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:18.480Z",
+      "type": "log",
+      "text": "skipWIAN not active, adding WIAN"
+    },
+    {
+      "at": "2026-08-10T07:11:18.482Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.482Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.483Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:18.487Z",
+      "type": "debug",
+      "text": "calling runGenerate"
+    },
+    {
+      "at": "2026-08-10T07:11:18.487Z",
+      "type": "debug",
+      "text": "generating prompt"
+    },
+    {
+      "at": "2026-08-10T07:11:18.487Z",
+      "type": "debug",
+      "text": "---calling setPromptString 0"
+    },
+    {
+      "at": "2026-08-10T07:11:18.487Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_combine_prompts"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.489Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.490Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.490Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.490Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.490Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.491Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.491Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.491Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.491Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.492Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:18.600Z",
+      "type": "debug",
+      "text": "Event emitted: chat_completion_prompt_ready"
+    },
+    {
+      "at": "2026-08-10T07:11:18.600Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_data"
+    },
+    {
+      "at": "2026-08-10T07:11:18.602Z",
+      "type": "startGroupCollapsed",
+      "text": "[压缩相邻消息] Debug: 总排序 17, 触发 0, 失败 0, 残留包裹 6/0"
+    },
+    {
+      "at": "2026-08-10T07:11:18.602Z",
+      "type": "startGroupCollapsed",
+      "text": "1. 总排序"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "table",
+      "text": "[Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "startGroupCollapsed",
+      "text": "2. 触发的蓝灯和绿灯"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "table",
+      "text": "[]"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:18.603Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:19.427Z",
+      "type": "log",
+      "text": "Generate entered"
+    },
+    {
+      "at": "2026-08-10T07:11:19.427Z",
+      "type": "debug",
+      "text": "Event emitted: generation_started"
+    },
+    {
+      "at": "2026-08-10T07:11:19.427Z",
+      "type": "debug",
+      "text": "Event emitted: GENERATION_AFTER_COMMANDS"
+    },
+    {
+      "at": "2026-08-10T07:11:19.428Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(3)}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.428Z",
+      "type": "log",
+      "text": "[QR2] Before-generation hook skipped due to dryRun."
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.429Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "Skipping extension interceptors for dry run"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "log",
+      "text": "Core/all messages: 1/1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 0\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "[WI] --- START WI SCAN (on 1 messages, trigger = normal) (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.430Z",
+      "type": "debug",
+      "text": "[WI] Context size: 1970000; WI budget: 1970000 (max% = 100%, cap = 0)"
+    },
+    {
+      "at": "2026-08-10T07:11:19.431Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06玩家长测-20260810-A's lore has 102 world info entries [《诡异药剂师》v0.5-E06玩家长测-20260810-A]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.431Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T07:11:19.432Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.432Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21639, LAST_RECEIVE_CHARS: 59582, LAST_SEND_TOKENS: 17224, LAST_SEND_CHARS: 26888, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.432Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Preprocess characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[机制]概念事件激活路由/399"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]人皮拾荒者/400 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·势力]猎魔人·奥卡洛斯/406 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·场景]魂灯营业/414 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.444Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]传说左轮/415 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·物品]剔骨刀/416 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·特殊设定]找妈妈任务/432 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]恶灵血婴/447 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Remove duplicate characterLore of 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 from context when FORCE ACTIVATE WI"
+    },
+    {
+      "at": "2026-08-10T07:11:19.445Z",
+      "type": "debug",
+      "text": "[Prompt Template] Inject 《诡异药剂师》v0.5-E06玩家长测-20260810-A/[概念·诅咒]黑蝴蝶剧毒/451 to context as characterLore"
+    },
+    {
+      "at": "2026-08-10T07:11:19.446Z",
+      "type": "debug",
+      "text": "[WI] Found 102 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] --- SEARCHING ENTRIES (on 102 entries) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 START ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Scan state [INITIAL, 1]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 930, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 920, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 910, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.447Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 900, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [initvar]初始变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.448Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T07:11:19.448Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒, content: # 概念·诅咒·黑蝴蝶剧毒（事件[\"E04\"]）\n- 类别：诅咒\n- 描述：黑蝴蝶剧毒是怨念与死灵气…者与交易对象）；血锯药剂店医疗；死界诅咒体系；传说左轮【苍白狩魔者】；E04猎魔人治疗与传说左轮。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.448Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.448Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴, content: # 概念·诅咒·恶灵血婴（事件[\"E03\"]）\n- 类别：诅咒\n- 描述：恶灵血婴是恶灵诅咒寄生宿主…头魔（E03宿主）；血衣女士（E07母女线）；E06鬼婴塑形；E09鸿门宴因果；林恩整容塑形处置。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.448Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.449Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务, content: # 概念·特殊设定·找妈妈任务（事件[\"E02\"]）\n- 类别：特殊设定\n- 描述：找妈妈任务是血娃…改变后续因果。\n- 关联：血娃娃、洋娃娃、隐藏任务系统、游魂巷\"黑店\"口碑、血衣女士寻子线、E02, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.449Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(2), keysecondary: Array(0), comment: [概念·物品]剔骨刀, content: # 概念·物品·剔骨刀（事件[\"E01\"]）\n- 类别：物品\n- 描述：血锯狂人的剔骨刀，精良级近战…至今的贴身旧物。\n- 关联：血锯狂人、林恩、血肉欺诈者、左手变异体（左左）、E01/E05/E12, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·物品]传说左轮, content: # 概念·物品·传说左轮（事件[\"E04\"]）\n- 类别：物品\n- 描述：受诅咒的传说级左轮【苍白狩…的关键武装。\n- 关联：猎魔人奥卡洛斯、林恩、限时诅咒清除、E04/E06/E11/E12/E18, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·场景]魂灯营业, content: # 概念·场景·魂灯营业（事件[\"E01\"]）\n- 类别：场景\n- 描述：魂灯是血锯药剂店的招牌灯具…统只报告店内状态与当日待办。\n- 关联：血锯药剂店、任务系统、血锯狂人、E02/E03/E04来客, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.450Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(3), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯, content: # 概念·势力·猎魔人·奥卡洛斯（事件[\"E04\"]）\n- 类别：势力\n- 描述：来自地上世界的人类…世界渊源。\n- 关联：E04猎魔人治疗与传说左轮、E08暴击药剂与视界曝光、苍白狩魔者左轮、黑骑士, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {key: Array(2), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者, content: # 概念·势力·人皮拾荒者（事件[\"E01\"]）\n- 类别：势力\n- 描述：游魂巷最神秘的以物易物者…表态帮忙一次，不得提前揭开其底牌。\n- 关联：游魂巷居民、小宝贝、血锯药剂店、E01系统觉醒与开店, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 399, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [机制]概念事件激活路由}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.452Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 301, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activated by primary key match 找妈妈"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 190, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activated by primary key match 小宝贝"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 110, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activated by primary key match 血锯"
+    },
+    {
+      "at": "2026-08-10T07:11:19.455Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 60, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.455Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activated by primary key match 血锯药剂店"
+    },
+    {
+      "at": "2026-08-10T07:11:19.455Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 3, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 1, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 from '《诡异药剂师》v0.5-E06玩家长测-20260810-A' processing {uid: 0, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Search done. Found 18 possible entries."
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] --- INCLUSION GROUP CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] No inclusion groups found"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] --- PROBABILITY CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 930 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activation successful, adding to prompt {uid: 930, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 920 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activation successful, adding to prompt {uid: 920, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 910 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activation successful, adding to prompt {uid: 910, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 451 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒, content: # 概念·诅咒·黑蝴蝶剧毒（事件[\"E04\"]）\n- 类别：诅咒\n- 描述：黑蝴蝶剧毒是怨念与死灵气…者与交易对象）；血锯药剂店医疗；死界诅咒体系；传说左轮【苍白狩魔者】；E04猎魔人治疗与传说左轮。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 447 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴, content: # 概念·诅咒·恶灵血婴（事件[\"E03\"]）\n- 类别：诅咒\n- 描述：恶灵血婴是恶灵诅咒寄生宿主…头魔（E03宿主）；血衣女士（E07母女线）；E06鬼婴塑形；E09鸿门宴因果；林恩整容塑形处置。, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 432 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务, content: # 概念·特殊设定·找妈妈任务（事件[\"E02\"]）\n- 类别：特殊设定\n- 描述：找妈妈任务是血娃…改变后续因果。\n- 关联：血娃娃、洋娃娃、隐藏任务系统、游魂巷\"黑店\"口碑、血衣女士寻子线、E02, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 416 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activation successful, adding to prompt {key: Array(2), keysecondary: Array(0), comment: [概念·物品]剔骨刀, content: # 概念·物品·剔骨刀（事件[\"E01\"]）\n- 类别：物品\n- 描述：血锯狂人的剔骨刀，精良级近战…至今的贴身旧物。\n- 关联：血锯狂人、林恩、血肉欺诈者、左手变异体（左左）、E01/E05/E12, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "WI entry 415 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.456Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·物品]传说左轮, content: # 概念·物品·传说左轮（事件[\"E04\"]）\n- 类别：物品\n- 描述：受诅咒的传说级左轮【苍白狩…的关键武装。\n- 关联：猎魔人奥卡洛斯、林恩、限时诅咒清除、E04/E06/E11/E12/E18, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 414 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·场景]魂灯营业, content: # 概念·场景·魂灯营业（事件[\"E01\"]）\n- 类别：场景\n- 描述：魂灯是血锯药剂店的招牌灯具…统只报告店内状态与当日待办。\n- 关联：血锯药剂店、任务系统、血锯狂人、E02/E03/E04来客, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 406 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activation successful, adding to prompt {key: Array(3), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯, content: # 概念·势力·猎魔人·奥卡洛斯（事件[\"E04\"]）\n- 类别：势力\n- 描述：来自地上世界的人类…世界渊源。\n- 关联：E04猎魔人治疗与传说左轮、E08暴击药剂与视界曝光、苍白狩魔者左轮、黑骑士, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 400 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activation successful, adding to prompt {key: Array(2), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者, content: # 概念·势力·人皮拾荒者（事件[\"E01\"]）\n- 类别：势力\n- 描述：游魂巷最神秘的以物易物者…表态帮忙一次，不得提前揭开其底牌。\n- 关联：游魂巷居民、小宝贝、血锯药剂店、E01系统觉醒与开店, constant: true}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 301 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activation successful, adding to prompt {uid: 301, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 190 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activation successful, adding to prompt {uid: 190, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 110 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activation successful, adding to prompt {uid: 110, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 60 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activation successful, adding to prompt {uid: 60, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 3 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activation successful, adding to prompt {uid: 3, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "WI entry 1 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.457Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activation successful, adding to prompt {uid: 1, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "WI entry 0 does not use probability"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activation successful, adding to prompt {uid: 0, world: 《诡异药剂师》v0.5-E06玩家长测-20260810-A, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 RESULT ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "[WI] Successfully activated 18 new entries to prompt. 18 total entries activated. [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "[WI] Scan done. No new entries to prompt. Stopping."
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "[WI] Setting scan state [NONE, 0]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_scan_done"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.458Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "[WI] --- BUILDING PROMPT ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.459Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "log",
+      "text": "[WI] Hypothetically adding 18 entries to prompt [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "debug",
+      "text": "[WI] --- DONE (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T07:11:19.460Z",
+      "type": "log",
+      "text": "skipWIAN not active, adding WIAN"
+    },
+    {
+      "at": "2026-08-10T07:11:19.462Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.462Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.462Z",
+      "type": "error",
+      "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "calling runGenerate"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "generating prompt"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "---calling setPromptString 0"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_combine_prompts"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.463Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.464Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.465Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.466Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.466Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.466Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-10T07:11:19.504Z",
+      "type": "debug",
+      "text": "Event emitted: chat_completion_prompt_ready"
+    },
+    {
+      "at": "2026-08-10T07:11:19.505Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_data"
+    },
+    {
+      "at": "2026-08-10T07:11:19.505Z",
+      "type": "startGroupCollapsed",
+      "text": "[压缩相邻消息] Debug: 总排序 17, 触发 0, 失败 0, 残留包裹 6/0"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "startGroupCollapsed",
+      "text": "1. 总排序"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "table",
+      "text": "[Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "startGroupCollapsed",
+      "text": "2. 触发的蓝灯和绿灯"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "table",
+      "text": "[]"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:19.506Z",
+      "type": "endGroup",
+      "text": "console.groupEnd"
+    },
+    {
+      "at": "2026-08-10T07:11:20.480Z",
+      "type": "debug",
+      "text": "Saving metadata..."
+    },
+    {
+      "at": "2026-08-10T07:11:20.593Z",
+      "type": "debug",
+      "text": "Chat Completions: saving token cache"
+    },
+    {
+      "at": "2026-08-10T07:11:20.593Z",
+      "type": "debug",
+      "text": "Saved metadata..."
+    }
+  ]
+}

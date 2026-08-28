@@ -1,0 +1,25 @@
+{
+  "name": "sillytavern-ai-bridge-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable SillyTavern inspection, operation, and rolecard debugging toolkit",
+  "type": "module",
+  "scripts": {
+    "start": "node 入口/st-bridge.mjs status",
+    "bridge": "node 入口/st-bridge.mjs",
+    "config": "node 入口/st-config.mjs",
+    "debug": "node 入口/st-debug.mjs",
+    "import-card": "node 角色卡导入器/import-card.mjs",
+    "replace-card": "node 角色卡替换器/replace-card.mjs",
+    "probe": "node tools/probe.mjs",
+    "verify": "node tools/verify-package.mjs",
+    "verify-live": "node tools/verify-live.mjs",
+    "verify-replace": "node tools/verify-replace-card.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.62.0"
+  }
+}

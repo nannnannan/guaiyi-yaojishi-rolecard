@@ -1,0 +1,187 @@
+{
+  "cleanedAt": "2026-08-10T15:46:48.747Z",
+  "target": {
+    "card": "《诡异药剂师》v0.5-E06回归-20260810-M",
+    "worldbook": "《诡异药剂师》v0.5-E06回归-20260810-M",
+    "localFiles": [
+      "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\e01-to-e06-regression-2026-08-10\\诡异药剂师_v0.5_E06回归_临时卡.json",
+      "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\e01-to-e06-regression-2026-08-10\\《诡异药剂师》v0.5-E06回归-20260810-M.json"
+    ]
+  },
+  "before": {
+    "characters": [
+      {
+        "name": "《诡异药剂师》v0.5-E06回归-20260810-M",
+        "avatar": "《诡异药剂师》v0.5-E06回归-20260810-M.png",
+        "boundWorldbook": "《诡异药剂师》v0.5-E06回归-20260810-M"
+      }
+    ],
+    "worldbookPresent": true,
+    "worldbookMatches": 1
+  },
+  "scriptRegistryCleanup": {
+    "before": [
+      "欲望风俗店V3.0",
+      "修仙世界",
+      "苍玄界",
+      "未开之花",
+      "锁和钥",
+      "日式中专大乱斗",
+      "《道渊》v5.3",
+      "《诡异药剂师》v0.5",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A",
+      "《诡异药剂师》v0.5-E06回归-20260810-M"
+    ],
+    "after": [
+      "欲望风俗店V3.0",
+      "修仙世界",
+      "苍玄界",
+      "未开之花",
+      "锁和钥",
+      "日式中专大乱斗",
+      "《道渊》v5.3",
+      "《诡异药剂师》v0.5",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A"
+    ],
+    "presentBefore": true,
+    "presentAfter": false
+  },
+  "regexAllowlistCleanup": {
+    "targetAvatars": [
+      "《诡异药剂师》v0.5-E06回归-20260810-M.png"
+    ],
+    "before": [
+      "全班第一的奖励是性处理岗位.png",
+      "朋友圈奇谈（男）.png",
+      "《城管模拟器》夫人，你也不想你烤冷面没人来吧.png",
+      "原神.png",
+      "少女勇者的轮回冒险.png",
+      "《道渊》v5.1.png",
+      "《道渊》v5.11.png",
+      "~视我如己出的柔情师母.png",
+      "剑与丹.png",
+      "千纱-DS鲸鱼版.png",
+      "修仙世界.png",
+      "清月师尊.png",
+      "银麒赎世.png",
+      "本格修仙.png",
+      "欲望风俗店V3.0.png",
+      "现实宝可梦.png",
+      "苍玄界.png",
+      "萧谴写卡助手版_V4.5.1.png",
+      "Ye_Lingshuang_v1.png",
+      "《诡异药剂师：血锯药剂店》v0.1.png",
+      "《诡异药剂师：血锯药剂店》v0.2.png",
+      "《诡异药剂师：血锯药剂店》v0.21.png",
+      "《诡异药剂师》v0.3.png",
+      "《诡异药剂师》v0.31.png",
+      "《诡异药剂师》v0.32.png",
+      "《诡异药剂师》v0.3.3.1.png",
+      "《诡异药剂师》v0.3.3.11.png",
+      "《诡异药剂师》v0.4.png",
+      "小女仆大世界.png",
+      "锁和钥.png",
+      "日式中专大乱斗.png",
+      "《道渊》v5.3.png",
+      "Skill完整导入临时卡-1785901216502.png",
+      "调试测试卡.png",
+      "枫和汐.png",
+      "枫和汐1.png",
+      "枫和汐6.png",
+      "林芃芃.png",
+      "《诡异药剂师》v0.5.png",
+      "《诡异药剂师》v0.png",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A.png",
+      "《诡异药剂师》v0.5-E06玩家长测-20260810-A.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-B.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-C.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-D.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-M.png"
+    ],
+    "after": [
+      "全班第一的奖励是性处理岗位.png",
+      "朋友圈奇谈（男）.png",
+      "《城管模拟器》夫人，你也不想你烤冷面没人来吧.png",
+      "原神.png",
+      "少女勇者的轮回冒险.png",
+      "《道渊》v5.1.png",
+      "《道渊》v5.11.png",
+      "~视我如己出的柔情师母.png",
+      "剑与丹.png",
+      "千纱-DS鲸鱼版.png",
+      "修仙世界.png",
+      "清月师尊.png",
+      "银麒赎世.png",
+      "本格修仙.png",
+      "欲望风俗店V3.0.png",
+      "现实宝可梦.png",
+      "苍玄界.png",
+      "萧谴写卡助手版_V4.5.1.png",
+      "Ye_Lingshuang_v1.png",
+      "《诡异药剂师：血锯药剂店》v0.1.png",
+      "《诡异药剂师：血锯药剂店》v0.2.png",
+      "《诡异药剂师：血锯药剂店》v0.21.png",
+      "《诡异药剂师》v0.3.png",
+      "《诡异药剂师》v0.31.png",
+      "《诡异药剂师》v0.32.png",
+      "《诡异药剂师》v0.3.3.1.png",
+      "《诡异药剂师》v0.3.3.11.png",
+      "《诡异药剂师》v0.4.png",
+      "小女仆大世界.png",
+      "锁和钥.png",
+      "日式中专大乱斗.png",
+      "《道渊》v5.3.png",
+      "Skill完整导入临时卡-1785901216502.png",
+      "调试测试卡.png",
+      "枫和汐.png",
+      "枫和汐1.png",
+      "枫和汐6.png",
+      "林芃芃.png",
+      "《诡异药剂师》v0.5.png",
+      "《诡异药剂师》v0.png",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A.png",
+      "《诡异药剂师》v0.5-E06玩家长测-20260810-A.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-B.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-C.png",
+      "《诡异药剂师》v0.5-E06回归-20260810-D.png"
+    ],
+    "presentAfter": false
+  },
+  "characterDelete": {
+    "ok": true,
+    "ret": true
+  },
+  "afterCharacter": {
+    "characters": [],
+    "worldbookPresent": true,
+    "worldbookMatches": 1
+  },
+  "worldbookDelete": {
+    "ok": true,
+    "result": true
+  },
+  "after": {
+    "characters": [],
+    "worldbookPresent": false,
+    "worldbookMatches": 0
+  },
+  "local": {
+    "tempCardPath": {
+      "absent": true,
+      "deletedNow": true
+    },
+    "tempWorldbookPath": {
+      "absent": true,
+      "deletedNow": true
+    }
+  },
+  "assertions": {
+    "cardAbsent": true,
+    "tempScriptRegistryEntryAbsent": true,
+    "tempRegexAllowlistEntryAbsent": true,
+    "worldbookAbsent": true,
+    "worldbookMultiplicityZero": true,
+    "localTempCardAbsent": true,
+    "localTempWorldbookAbsent": true
+  }
+}

@@ -1,0 +1,3449 @@
+{
+  "capturedAt": "2026-08-10T14:05:01.210Z",
+  "tempName": "《诡异药剂师》v0.5-E06回归-20260810-J",
+  "state": {
+    "chatId": "《诡异药剂师》v0.5-E06回归-20260810-J - 2026-08-10@21h58m36s837ms",
+    "character": "《诡异药剂师》v0.5-E06回归-20260810-J",
+    "messageCount": 16,
+    "topGlobals": {
+      "Mvu": "object",
+      "z": "object",
+      "waitGlobalInitialized": "undefined",
+      "eventOn": "undefined"
+    },
+    "regexRuntime": {
+      "extensionSettings": [
+        {
+          "id": "9822ddab-298e-4637-a633-11612ad1f021",
+          "scriptName": "新·星河璀璨数据库召回配套正则1",
+          "findRegex": "/以下是用户([\\s\\S]*)$/m",
+          "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>剧情上下文面板</title>\n<style>\n:root {--bg-color: #24221f;--border-color: #36332e;--text-main: #c1b9ad;--text-dim: #9e978e;--text-mute: #645e55;--accent: #7d4940;--bg-hover: #2a2824;--bg-stats: #211f1c;}\nbody.theme-silk {--bg-color: #f4f1eb;--border-color: #e0dacb;--text-main: #4a453f;--text-dim: #6e675e;--text-mute: #9e978e;--accent: #8a6b5e;--bg-hover: #ebe7de;--bg-stats: #f9f8f5;}\n*{margin:0;padding:0;box-sizing:border-box}\nbody{font-family:'Noto Serif SC','Source Han Serif CN','Songti SC',serif;background:transparent;padding:12px;margin:0;color:var(--text-main);transition:background-color 0.6s ease;}\n.context-panel{width:100%;background-color:var(--bg-color);background-image:url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\");border-radius:2px;border:1px solid var(--border-color);overflow:hidden;position:relative;transition:all 0.6s ease;}\n.panel-content-inner{padding:0;max-height:600px;overflow-y:auto}\n.seal{display:inline-block;border:1px solid var(--accent);color:var(--accent);font-size:12px;padding:1px 4px;margin-right:10px;border-radius:1px;opacity:0.8;font-weight:normal;letter-spacing:1px;line-height:1;transition:all 0.6s ease;}\n.section-header{display:flex;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border-color);position:relative;cursor:default;transition:all 0.6s ease;}\n.section-title{font-size:14px;letter-spacing:2px;color:var(--text-main);opacity:0.9;transition:color 0.6s ease;}\n.action-group {margin-left:auto; display:flex; gap:12px;}\n.action-btn {font-size:11px; color:var(--text-mute); border:1px solid transparent; padding:2px 6px; cursor:pointer; transition:all 0.3s ease; letter-spacing:1px; user-select:none;}\n.action-btn:hover {color:var(--text-main); border-color:var(--border-color);}\n.action-btn.active {color:var(--accent); border-color:var(--accent);}\n.user-input-content{padding:20px;color:var(--text-main);font-size:14px;line-height:1.8;white-space:pre-wrap;word-break:break-word;position:relative;border-bottom:1px solid var(--border-color);transition:all 0.6s ease;}\n.recall-section .section-header, .supplement-section .section-header{cursor:pointer;}\n.recall-section .section-header:hover, .supplement-section .section-header:hover{background-color:var(--bg-hover)}\n.badge{margin-left:12px;font-size:11px;color:var(--text-mute);letter-spacing:1px;transition:color 0.6s ease;}\n.toggle-arrow{color:var(--text-mute);font-size:10px;transition:all 0.3s ease;margin-left:auto}\n.collapsed .toggle-arrow{transform:rotate(-90deg)}\n.collapsed .list-container{display:none}\n.list-container{padding:16px 20px;border-bottom:1px solid var(--border-color);transition:all 0.6s ease;}\n.item-box{margin-bottom:24px;position:relative;padding-left:16px;animation:fadeIn 0.4s ease forwards}\n.item-box::before{content:'';position:absolute;left:0;top:4px;bottom:0;width:1px;background-color:var(--border-color);transition:all 0.6s ease;}\n.item-box:last-child{margin-bottom:8px}\n.item-header{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}\n.item-id{color:var(--text-mute);font-size:11px;letter-spacing:1px;font-family:'Courier New',Courier,monospace;transition:color 0.6s ease;}\n.item-title{color:var(--text-main);font-size:13px;letter-spacing:1px;transition:color 0.6s ease;}\n.item-body{color:var(--text-dim);font-size:13px;line-height:1.9;white-space:pre-wrap;word-break:break-word;transition:color 0.6s ease;}\n.item-source{font-size:11px;color:var(--text-mute);margin-top:8px;font-style:italic;transition:color 0.6s ease;}\n.tag-label{display:inline-block;font-size:11px;color:var(--text-dim);border:1px solid var(--border-color);padding:2px 6px;margin-right:8px;transition:all 0.6s ease;}\n.stats-section{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background-color:var(--bg-stats);transition:all 0.6s ease;}\n.stats-item{display:flex;align-items:center;gap:8px;color:var(--text-mute);font-size:11px;letter-spacing:1px}\n.stats-value{color:var(--text-dim)}\n.loading-text{padding:30px;text-align:center;color:var(--text-mute);font-size:13px;letter-spacing:2px;animation:breathe 3s infinite ease-in-out}\n.memory-layout { display: flex; flex-direction: row; gap: 16px; align-items: flex-start; }\n.memory-sidebar { flex: 0 0 140px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-content: start; }\n.memory-content-area { flex: 1; min-height: 120px; position: relative; }\n.memory-btn { padding: 6px 4px; border: 1px solid var(--border-color); background: transparent; color: var(--text-dim); cursor: pointer; border-radius: 2px; font-size: 11px; text-align: center; transition: all 0.3s ease; user-select: none; }\n.memory-btn:hover { color: var(--text-main); border-color: var(--text-mute); background: var(--bg-hover); }\n.memory-btn.active { color: var(--accent); border-color: var(--accent); background: var(--bg-hover); font-weight: bold; }\n.memory-detail { display: none; animation: fadeIn 0.4s ease forwards; }\n.memory-detail.active { display: block; }\n@media (max-width: 480px) { .memory-layout { flex-direction: column; } .memory-sidebar { flex: 1; width: 100%; grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); } .memory-content-area { border-top: 1px solid var(--border-color); padding-top: 16px; width: 100%; } }\n@keyframes breathe{0%,100%{opacity:0.4}50%{opacity:1}}\n.error-message{padding:20px;color:var(--accent);font-size:13px;border-left:1px solid var(--accent);margin:10px 0}\n.panel-content-inner::-webkit-scrollbar{width:4px}\n.panel-content-inner::-webkit-scrollbar-track{background:transparent}\n.panel-content-inner::-webkit-scrollbar-thumb{background:var(--border-color)}\n.panel-content-inner::-webkit-scrollbar-thumb:hover{background:var(--text-mute)}\n@keyframes fadeIn{from{opacity:0}to{opacity:1}}\n</style>\n</head>\n<body>\n<script type=\"text/plain\" id=\"rawData\">$1</script>\n<div class=\"context-panel expanded\" id=\"contextPanel\">\n<div class=\"panel-content-inner\">\n<div class=\"user-input-section\">\n<div class=\"section-header\">\n<span class=\"seal\">录</span><span class=\"section-title\">当归</span>\n<div class=\"action-group\">\n<span class=\"action-btn\" id=\"themeBtn\" onclick=\"toggleTheme()\">[ 素纱 ]</span>\n<span class=\"action-btn\" id=\"copyBtn\" onclick=\"copyUserInput()\">[ 抄录 ]</span>\n</div>\n</div>\n<div class=\"user-input-content\" id=\"userInputContent\"></div>\n</div>\n<div class=\"recall-section collapsed\" id=\"recallSection\">\n<div class=\"section-header\" onclick=\"toggleSection('recallSection')\">\n<span class=\"seal\">忆</span><span class=\"section-title\">流转</span>\n<span class=\"badge\" id=\"memoryBadge\">参阅 -</span>\n<span class=\"toggle-arrow\">▼</span>\n</div>\n<div class=\"list-container\" id=\"memoryList\"><div class=\"loading-text\">静候回音...</div></div>\n</div>\n<div class=\"supplement-section collapsed\" id=\"supplementSection\">\n<div class=\"section-header\" onclick=\"toggleSection('supplementSection')\">\n<span class=\"seal\">注</span><span class=\"section-title\">旁支</span>\n<span class=\"badge\" id=\"supplementBadge\">拾遗 -</span>\n<span class=\"toggle-arrow\">▼</span>\n</div>\n<div class=\"list-container\" id=\"supplementList\"></div>\n</div>\n<div class=\"stats-section\">\n<div class=\"stats-item\"><span>残篇</span><span class=\"stats-value\" id=\"statsMemory\">-</span></div>\n<div class=\"stats-item\"><span>拾遗</span><span class=\"stats-value\" id=\"statsSupplement\">-</span></div>\n<div class=\"stats-item\"><span>流年</span><span class=\"stats-value\" id=\"statsTime\">-</span></div>\n</div>\n</div>\n</div>\n<script>\n(function(){\nvar startTime=Date.now();\ntry {if(localStorage.getItem('wabi-theme') === 'silk') {document.body.classList.add('theme-silk');setTimeout(function(){ document.getElementById('themeBtn').textContent = '[ 墨纸 ]'; }, 50);}} catch(e) {}\nwindow.toggleTheme = function() {var body = document.body;var btn = document.getElementById('themeBtn');if (body.classList.contains('theme-silk')) {body.classList.remove('theme-silk');btn.textContent = '[ 素纱 ]';try{ localStorage.setItem('wabi-theme', 'ink'); }catch(e){}} else {body.classList.add('theme-silk');btn.textContent = '[ 墨纸 ]';try{ localStorage.setItem('wabi-theme', 'silk'); }catch(e){}}};\nwindow.copyUserInput = function() {var contentEl = document.getElementById('userInputContent');var btn = document.getElementById('copyBtn');if (!contentEl || !btn) return;var textToCopy = contentEl.innerText || contentEl.textContent;if (textToCopy === '无声...') return;function showFeedback(text, isSuccess) {btn.textContent = text;if(isSuccess) btn.classList.add('active');setTimeout(function() { btn.textContent = '[ 抄录 ]'; btn.classList.remove('active'); }, 2000);}function fallbackCopy() {try {var textArea = document.createElement(\"textarea\");textArea.value = textToCopy;textArea.style.position = \"fixed\";document.body.appendChild(textArea);textArea.focus();textArea.select();var successful = document.execCommand('copy');document.body.removeChild(textArea);if (successful) showFeedback('[ 已录 ]', true);else showFeedback('[ 失败 ]', false);} catch (err) {showFeedback('[ 阻断 ]', false);}}if (navigator.clipboard && window.isSecureContext) {navigator.clipboard.writeText(textToCopy).then(function(){ showFeedback('[ 已录 ]', true); }).catch(function(){ fallbackCopy(); });} else {fallbackCopy();}};\nvar rawDataEl=document.getElementById(\"rawData\");if(!rawDataEl)return;var rawContent=rawDataEl.textContent||\"\";\nfunction parseUserInput(content){var match=content.match(/<本轮用户输入>([\\s\\S]*?)<\\/本轮用户输入>/);return match?match[1].replace(/^\\s+|\\s+$/g,''):'';}\nfunction parseRecallContent(content){var match=content.match(/<recall>([\\s\\S]*?)<\\/recall>/);return match?match[1].replace(/^\\s+|\\s+$/g,''):'';}\nfunction parseSupplementContent(content){var match=content.match(/<supplement>([\\s\\S]*?)<\\/supplement>/);return match?match[1].replace(/^\\s+|\\s+$/g,''):'';}\nvar rawUserInput=parseUserInput(rawContent);var rawAmList=parseRecallContent(rawContent);var rawSupplement=parseSupplementContent(rawContent);\nfunction toggleSection(id){var section=document.getElementById(id);if(section)section.classList.toggle('collapsed');updateIframeHeight();}\nwindow.toggleSection=toggleSection;\nfunction updateIframeHeight(){setTimeout(function(){var bodyHeight=document.body.scrollHeight;if(window.parent&&window.parent!==window) window.parent.postMessage({type:'resizeIframe',height:bodyHeight},'*');},50);}\nfunction escapeHtml(text){var div=document.createElement('div');div.textContent=text;return div.innerHTML;}\nfunction parseAmCodes(raw){var result=[];var matches=raw.match(/AM\\d+/gi);if(matches){for(var i=0;i<matches.length;i++){result.push(matches[i].toUpperCase());}}return result;}\nfunction extractAmTitle(raw,amCode){var pattern=amCode+'[（\\\\(]([^）\\\\)]+)[）\\\\)]';var match=raw.match(new RegExp(pattern));return match?match[1].trim():'';}\nfunction parseSupplementItems(raw){var lines=raw.split('\\n');var items=[];var currentItem=null;for(var i=0;i<lines.length;i++){var line=lines[i];var tagMatch=line.match(/^\\s*-\\s*\\[([^\\]]+)\\]\\s*(.*)/);if(tagMatch){if(currentItem)items.push(currentItem);currentItem={tag:tagMatch[1].trim(),content:tagMatch[2].trim()};}else if(currentItem&&line.trim()){currentItem.content+='\\n'+line.trim();}}if(currentItem)items.push(currentItem);return items;}\nfunction getAutoCardAPI(){if(typeof parent!=='undefined'&&parent.AutoCardUpdaterAPI) return parent.AutoCardUpdaterAPI;if(window.AutoCardUpdaterAPI) return window.AutoCardUpdaterAPI;return null;}\nfunction findMemoryInTable(tables,amCode,tableName){for(var uid in tables){var sheet=tables[uid];if(!sheet||!sheet.name||!sheet.content)continue;if(sheet.name!==tableName)continue;if(sheet.content.length<2)continue;var headers=sheet.content[0];var rows=sheet.content.slice(1);var codeIndex=headers.indexOf('编码索引');var summaryIndex=headers.indexOf('纪要');var titleIndex=headers.indexOf('标题');if(codeIndex===-1)continue;for(var i=0;i<rows.length;i++){var row=rows[i];if(!row||row.length<=codeIndex)continue;var codeValue=String(row[codeIndex]||'').trim().toUpperCase();if(codeValue===amCode.toUpperCase()){return{code:amCode,title:titleIndex!==-1&&row.length>titleIndex?String(row[titleIndex]||'').trim():'',content:summaryIndex!==-1&&row.length>summaryIndex?String(row[summaryIndex]||'').trim():'',source:tableName,rowIndex:i+1};}}}return null;}\nfunction renderMemoryItem(entry,amTitle){var title=amTitle||entry.title||'无名';var content=entry.content||'（形如白纸）';var source=entry.source||'未知';return '<div class=\"item-box\" style=\"margin-bottom:0;\"><div class=\"item-header\"><span class=\"item-id\">'+escapeHtml(entry.code)+'</span><span class=\"item-title\">'+escapeHtml(title)+'</span></div><div class=\"item-body\">'+escapeHtml(content)+'</div><div class=\"item-source\">来自：'+escapeHtml(source)+' · 卷'+entry.rowIndex+'</div></div>';}\nfunction renderSupplementItem(item){return '<div class=\"item-box\"><div class=\"item-header\"><span class=\"tag-label\">'+escapeHtml(item.tag)+'</span></div><div class=\"item-body\">'+escapeHtml(item.content)+'</div></div>';}\nfunction initUserInput(){var container=document.getElementById('userInputContent');var trimmed=rawUserInput.replace(/^\\s+|\\s+$/g,'');container.innerHTML=trimmed?escapeHtml(trimmed):'<span style=\"color:var(--text-mute);font-style:italic;\">无声...</span>';}\nasync function loadMemories(){var container=document.getElementById('memoryList');var badge=document.getElementById('memoryBadge');var statsMemory=document.getElementById('statsMemory');var amCodes=parseAmCodes(rawAmList);if(badge)badge.textContent='参阅 '+amCodes.length;if(amCodes.length===0){if(container)container.innerHTML='<div style=\"color:var(--text-mute);text-align:center;padding:30px;letter-spacing:1px;\">此刻尚无记忆泛起涟漪</div>';if(statsMemory)statsMemory.textContent='0';updateIframeHeight();return;}var api=getAutoCardAPI();var tables=null;var foundCount=0;if(api){try{if(api.refreshDataAndWorldbook) await api.refreshDataAndWorldbook();var jsonData=api.exportTableAsJson();if(jsonData) tables=typeof jsonData==='string'?JSON.parse(jsonData):jsonData;}catch(err){ console.error(err); }}var html='<div class=\"memory-layout\"><div class=\"memory-sidebar\" id=\"memSidebar\"></div><div class=\"memory-content-area\" id=\"memContentArea\"></div></div>';if(container)container.innerHTML=html;var sidebar=document.getElementById('memSidebar');var contentArea=document.getElementById('memContentArea');if(!sidebar||!contentArea) return;var sidebarHtml='';var contentHtml='';for(var i=0;i<amCodes.length;i++){var amCode=amCodes[i];var amTitle=extractAmTitle(rawAmList,amCode);var entry=null;if(tables){entry=findMemoryInTable(tables,amCode,'纪要表') || findMemoryInTable(tables,amCode,'总结表');}else{entry={ code:amCode, title:amTitle||'断联残影', content:'此为无数据连接时的残篇。若要窥见真容，需确保与星河璀璨数据库的枢纽连通。', source:'未知档案', rowIndex: 1 };}if(tables&&entry) foundCount++;else if(!tables) foundCount++;var btnClass = i===0 ? 'memory-btn active' : 'memory-btn';sidebarHtml += '<div class=\"'+btnClass+'\" onclick=\"switchMemory('+i+')\" id=\"btn-mem-'+i+'\">'+escapeHtml(amCode)+'</div>';var detailClass = i===0 ? 'memory-detail active' : 'memory-detail';contentHtml += '<div class=\"'+detailClass+'\" id=\"detail-mem-'+i+'\">';if(tables&&!entry){contentHtml += '<div class=\"item-box\" style=\"margin-bottom:0;\"><div class=\"item-header\"><span class=\"item-id\">'+escapeHtml(amCode)+'</span><span class=\"item-title\" style=\"color:var(--accent)\">散佚</span></div><div class=\"item-body\" style=\"color:var(--text-mute)\">未曾在此处留下印记。</div></div>';}else{contentHtml += renderMemoryItem(entry, amTitle);}contentHtml += '</div>';}sidebar.innerHTML=sidebarHtml;contentArea.innerHTML=contentHtml;if(statsMemory)statsMemory.textContent=foundCount+' / '+amCodes.length;window.switchMemory = function(idx){for(var j=0;j<amCodes.length;j++){var b=document.getElementById('btn-mem-'+j);var c=document.getElementById('detail-mem-'+j);if(b)b.classList.remove('active');if(c)c.classList.remove('active');}var ab=document.getElementById('btn-mem-'+idx);var ac=document.getElementById('detail-mem-'+idx);if(ab)ab.classList.add('active');if(ac)ac.classList.add('active');updateIframeHeight();};updateIframeHeight();}\nfunction loadSupplements(){var container=document.getElementById('supplementList');var badge=document.getElementById('supplementBadge');var statsSupplement=document.getElementById('statsSupplement');var items=parseSupplementItems(rawSupplement);if(badge)badge.textContent='拾遗 '+items.length;if(statsSupplement)statsSupplement.textContent=items.length;if(items.length===0){if(container)container.innerHTML='<div style=\"color:var(--text-mute);text-align:center;padding:30px;letter-spacing:1px;\">无旁支线索</div>';return;}var html='';for(var i=0;i<items.length;i++) html+=renderSupplementItem(items[i]);if(container)container.innerHTML=html;}\nfunction updateLoadTime(){var statsTime=document.getElementById('statsTime');if(statsTime) statsTime.textContent=(Date.now()-startTime)+' 瞬';}\ninitUserInput();loadSupplements();updateIframeHeight();setTimeout(function(){loadMemories();updateLoadTime();},300);\n})();\n</script>\n</body>\n</html>\n```",
+          "trimStrings": [],
+          "placement": [
+            1
+          ],
+          "disabled": true,
+          "markdownOnly": true,
+          "promptOnly": false,
+          "runOnEdit": true,
+          "substituteRegex": 0,
+          "minDepth": null,
+          "maxDepth": null
+        },
+        {
+          "id": "e4c9c9a0-2e9d-4b2c-bfc1-38f3aabec9b5",
+          "scriptName": "星河璀璨数据库召回配套正则2",
+          "findRegex": "/以下是用户[\\s\\S]*$/m",
+          "replaceString": "",
+          "trimStrings": [],
+          "placement": [
+            1
+          ],
+          "disabled": true,
+          "markdownOnly": true,
+          "promptOnly": true,
+          "runOnEdit": true,
+          "substituteRegex": 0,
+          "minDepth": 2,
+          "maxDepth": null
+        },
+        {
+          "id": "73e1c20b-0ce9-40d7-9c5c-0e2e2fe2e9fe",
+          "scriptName": "[隐藏][不发送]远楼层消息",
+          "disabled": true,
+          "runOnEdit": true,
+          "findRegex": "/.*/s",
+          "replaceString": "",
+          "trimStrings": [],
+          "placement": [
+            1,
+            2
+          ],
+          "substituteRegex": 0,
+          "minDepth": 5,
+          "maxDepth": null,
+          "markdownOnly": false,
+          "promptOnly": true
+        },
+        {
+          "id": "e4a8bab1-c782-41dd-91d2-1d2ea9dae59a",
+          "scriptName": "[清月师尊]节省师尊吐槽tokens",
+          "disabled": true,
+          "runOnEdit": false,
+          "findRegex": "/<Master_Talk[^>]*>[\\s\\S]*?</Master_Talk>/gsi",
+          "trimStrings": [],
+          "replaceString": "",
+          "placement": [
+            2
+          ],
+          "substituteRegex": 0,
+          "minDepth": 1,
+          "maxDepth": null,
+          "markdownOnly": false,
+          "promptOnly": true
+        },
+        {
+          "id": "ee539988-ea9f-42bf-a8ef-5e0b5166d4a6",
+          "scriptName": "[清月师尊]节省师尊状态栏tokens",
+          "disabled": true,
+          "runOnEdit": false,
+          "findRegex": "/<Comment_of_Master[^>]*>[\\s\\S]*?</Comment_of_Master>/gsi",
+          "trimStrings": [],
+          "replaceString": "",
+          "placement": [
+            2
+          ],
+          "substituteRegex": 0,
+          "minDepth": 6,
+          "maxDepth": null,
+          "markdownOnly": false,
+          "promptOnly": true
+        },
+        {
+          "id": "b287680e-64cd-4917-b946-3693aa7e01a3",
+          "scriptName": "[清月师尊]🎨插图后续删除保护正文质量",
+          "findRegex": "/【\\s*(?:SFW|NSFW)\\b[\\s\\S]*?】/gsi",
+          "replaceString": "",
+          "trimStrings": [],
+          "placement": [
+            2
+          ],
+          "disabled": true,
+          "markdownOnly": false,
+          "promptOnly": true,
+          "runOnEdit": false,
+          "substituteRegex": 0,
+          "minDepth": 1,
+          "maxDepth": null
+        },
+        {
+          "id": "24588861-b549-45a6-b08b-5539eef778cf",
+          "scriptName": "[清月师尊]🎨插图",
+          "findRegex": "/【\\s*(SFW|NSFW)\\s*\\/\\s*([a-z0-9_]+)\\s*\\/\\s*([a-z0-9_]+)\\s*\\/\\s*([a-zA-Z0-9_-]+)\\s*\\/\\s*(\\d+)\\s*】/gsi",
+          "replaceString": "<div align=\"center\"><img src=\"https://raw.githubusercontent.com/2877810328/ImgStore/main/QingYueMaster/$1/$2/$3/$4/$5.png\" width=\"420\"></div>\n",
+          "trimStrings": [],
+          "placement": [
+            1,
+            2
+          ],
+          "disabled": true,
+          "markdownOnly": true,
+          "promptOnly": false,
+          "runOnEdit": false,
+          "substituteRegex": 0,
+          "minDepth": null,
+          "maxDepth": null
+        },
+        {
+          "id": "679910f4-0b54-4b4f-929f-d89b7bce923e",
+          "scriptName": "[清月师尊]黄宝天推特渲染",
+          "findRegex": "/<huangbaotian>([\\s\\S]*?)<\\/huangbaotian>/g",
+          "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<style>\nhtml, body {\n  margin: 0;\n}\n\nbody {\n  padding: 20px;\n}\n\n.hbt-card {\n  --hbt-card-bg:\n    linear-gradient(180deg, rgba(14, 20, 38, 0.96), rgba(7, 11, 22, 0.98));\n  --hbt-card-overlay:\n    radial-gradient(circle at 18% 0%, rgba(195, 225, 255, 0.18), transparent 28%),\n    radial-gradient(circle at 88% 2%, rgba(125, 170, 255, 0.18), transparent 24%),\n    linear-gradient(145deg, rgba(255, 255, 255, 0.09), transparent 48%),\n    linear-gradient(180deg, rgba(166, 201, 255, 0.06), transparent 60%);\n  --hbt-border: rgba(183, 214, 255, 0.2);\n  --hbt-inner-border: rgba(225, 241, 255, 0.08);\n  --hbt-shadow:\n    0 24px 60px rgba(3, 6, 16, 0.62),\n    0 0 0 1px rgba(185, 218, 255, 0.05),\n    0 0 56px rgba(111, 154, 242, 0.12);\n  --hbt-text: #e6eefc;\n  --hbt-muted: #94a8c8;\n  --hbt-title-color: #f3f8ff;\n  --hbt-author-color: #f1f6ff;\n  --hbt-accent: #bfdcff;\n  --hbt-accent-strong: #ecf6ff;\n  --hbt-accent-soft: rgba(171, 206, 255, 0.16);\n  --hbt-panel-bg: rgba(153, 188, 246, 0.07);\n  --hbt-panel-border: rgba(188, 218, 255, 0.12);\n  --hbt-divider: rgba(180, 205, 236, 0.12);\n  --hbt-zone-public-bg: rgba(177, 212, 255, 0.12);\n  --hbt-zone-public-text: #d6ebff;\n  --hbt-zone-public-border: rgba(177, 212, 255, 0.24);\n  --hbt-zone-private-bg: rgba(255, 210, 160, 0.1);\n  --hbt-zone-private-text: #ffe0be;\n  --hbt-zone-private-border: rgba(255, 213, 170, 0.22);\n  --hbt-button-bg: rgba(196, 226, 255, 0.12);\n  --hbt-button-bg-hover: rgba(204, 231, 255, 0.18);\n  --hbt-button-border: rgba(188, 221, 255, 0.24);\n  --hbt-button-text: #ebf7ff;\n  --hbt-button-shadow: 0 8px 22px rgba(6, 12, 28, 0.28);\n  --hbt-carousel-bg:\n    linear-gradient(145deg, rgba(29, 42, 78, 0.95), rgba(12, 18, 33, 0.98));\n  --hbt-carousel-border: rgba(190, 220, 255, 0.12);\n  --hbt-image-text: #d2e6ff;\n  --hbt-comment-name: #dbeaff;\n  --hbt-reply-name: #a9bddb;\n  --hbt-tag: #bcd8ff;\n  --hbt-tag-hover: #e3f1ff;\n  --hbt-like: #ffc7de;\n  --hbt-font-ui: \"Noto Sans SC\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;\n  --hbt-font-title: \"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif;\n  max-width: 560px;\n  margin: 12px auto;\n  background: var(--hbt-card-bg);\n  border: 1px solid var(--hbt-border);\n  border-radius: 24px;\n  padding: 20px;\n  font-family: var(--hbt-font-ui);\n  color: var(--hbt-text);\n  box-shadow: var(--hbt-shadow);\n  line-height: 1.6;\n  word-break: break-word;\n  contain: content;\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  backdrop-filter: blur(18px);\n}\n.hbt-card::before {\n  content: '';\n  position: absolute;\n  inset: 0;\n  background: var(--hbt-card-overlay);\n  pointer-events: none;\n  opacity: 0.95;\n}\n.hbt-card::after {\n  content: '';\n  position: absolute;\n  inset: 1px;\n  border-radius: inherit;\n  border: 1px solid var(--hbt-inner-border);\n  box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.04);\n  pointer-events: none;\n}\n.hbt-card > * {\n  position: relative;\n  z-index: 1;\n}\n.hbt-card * { box-sizing: border-box; }\n.hbt-card.hbt-card-collapsed .hbt-expandable {\n  display: none;\n}\n\n.hbt-card[data-theme=\"moon\"] {\n  --hbt-card-bg:\n    linear-gradient(180deg, rgba(14, 20, 38, 0.96), rgba(7, 11, 22, 0.98));\n  --hbt-card-overlay:\n    radial-gradient(circle at 18% 0%, rgba(195, 225, 255, 0.18), transparent 28%),\n    radial-gradient(circle at 88% 2%, rgba(125, 170, 255, 0.18), transparent 24%),\n    linear-gradient(145deg, rgba(255, 255, 255, 0.09), transparent 48%),\n    linear-gradient(180deg, rgba(166, 201, 255, 0.06), transparent 60%);\n  --hbt-border: rgba(183, 214, 255, 0.2);\n  --hbt-inner-border: rgba(225, 241, 255, 0.08);\n  --hbt-shadow:\n    0 24px 60px rgba(3, 6, 16, 0.62),\n    0 0 0 1px rgba(185, 218, 255, 0.05),\n    0 0 56px rgba(111, 154, 242, 0.12);\n  --hbt-text: #e6eefc;\n  --hbt-muted: #94a8c8;\n  --hbt-title-color: #f3f8ff;\n  --hbt-author-color: #f1f6ff;\n  --hbt-accent: #bfdcff;\n  --hbt-accent-strong: #ecf6ff;\n  --hbt-accent-soft: rgba(171, 206, 255, 0.16);\n  --hbt-panel-bg: rgba(153, 188, 246, 0.07);\n  --hbt-panel-border: rgba(188, 218, 255, 0.12);\n  --hbt-divider: rgba(180, 205, 236, 0.12);\n  --hbt-zone-public-bg: rgba(177, 212, 255, 0.12);\n  --hbt-zone-public-text: #d6ebff;\n  --hbt-zone-public-border: rgba(177, 212, 255, 0.24);\n  --hbt-zone-private-bg: rgba(255, 210, 160, 0.1);\n  --hbt-zone-private-text: #ffe0be;\n  --hbt-zone-private-border: rgba(255, 213, 170, 0.22);\n  --hbt-button-bg: rgba(196, 226, 255, 0.12);\n  --hbt-button-bg-hover: rgba(204, 231, 255, 0.18);\n  --hbt-button-border: rgba(188, 221, 255, 0.24);\n  --hbt-button-text: #ebf7ff;\n  --hbt-button-shadow: 0 8px 22px rgba(6, 12, 28, 0.28);\n  --hbt-carousel-bg:\n    linear-gradient(145deg, rgba(29, 42, 78, 0.95), rgba(12, 18, 33, 0.98));\n  --hbt-carousel-border: rgba(190, 220, 255, 0.12);\n  --hbt-image-text: #d2e6ff;\n  --hbt-comment-name: #dbeaff;\n  --hbt-reply-name: #a9bddb;\n  --hbt-tag: #bcd8ff;\n  --hbt-tag-hover: #e3f1ff;\n  --hbt-like: #ffc7de;\n}\n\n.hbt-card[data-theme=\"jade\"] {\n  --hbt-card-bg:\n    linear-gradient(180deg, rgba(28, 24, 18, 0.95), rgba(13, 11, 9, 0.98));\n  --hbt-card-overlay:\n    radial-gradient(circle at 15% 0%, rgba(255, 235, 197, 0.18), transparent 28%),\n    radial-gradient(circle at 88% 2%, rgba(255, 214, 140, 0.16), transparent 23%),\n    linear-gradient(140deg, rgba(255, 247, 232, 0.08), transparent 48%),\n    linear-gradient(180deg, rgba(240, 215, 162, 0.05), transparent 60%);\n  --hbt-border: rgba(239, 213, 161, 0.2);\n  --hbt-inner-border: rgba(255, 241, 213, 0.08);\n  --hbt-shadow:\n    0 24px 60px rgba(14, 10, 3, 0.62),\n    0 0 0 1px rgba(247, 227, 193, 0.05),\n    0 0 54px rgba(214, 172, 95, 0.12);\n  --hbt-text: #f5ebd7;\n  --hbt-muted: #b9a88a;\n  --hbt-title-color: #fff8eb;\n  --hbt-author-color: #fff4de;\n  --hbt-accent: #f0d39d;\n  --hbt-accent-strong: #fff1d0;\n  --hbt-accent-soft: rgba(240, 211, 157, 0.14);\n  --hbt-panel-bg: rgba(233, 206, 156, 0.07);\n  --hbt-panel-border: rgba(240, 216, 173, 0.12);\n  --hbt-divider: rgba(227, 203, 156, 0.12);\n  --hbt-zone-public-bg: rgba(246, 229, 184, 0.12);\n  --hbt-zone-public-text: #fff0cf;\n  --hbt-zone-public-border: rgba(246, 229, 184, 0.26);\n  --hbt-zone-private-bg: rgba(232, 178, 137, 0.12);\n  --hbt-zone-private-text: #ffd8b7;\n  --hbt-zone-private-border: rgba(241, 193, 150, 0.22);\n  --hbt-button-bg: rgba(255, 238, 205, 0.12);\n  --hbt-button-bg-hover: rgba(255, 241, 214, 0.18);\n  --hbt-button-border: rgba(246, 223, 183, 0.24);\n  --hbt-button-text: #fff3d9;\n  --hbt-button-shadow: 0 8px 24px rgba(20, 14, 6, 0.28);\n  --hbt-carousel-bg:\n    linear-gradient(145deg, rgba(72, 51, 30, 0.95), rgba(22, 17, 12, 0.98));\n  --hbt-carousel-border: rgba(255, 230, 187, 0.12);\n  --hbt-image-text: #ffe8c3;\n  --hbt-comment-name: #ffe8bb;\n  --hbt-reply-name: #c7b088;\n  --hbt-tag: #f7dda6;\n  --hbt-tag-hover: #fff1cb;\n  --hbt-like: #ffd7c4;\n}\n\n.hbt-card[data-theme=\"night\"] {\n  --hbt-card-bg:\n    linear-gradient(180deg, rgba(8, 13, 28, 0.96), rgba(4, 7, 16, 0.99));\n  --hbt-card-overlay:\n    radial-gradient(circle at 15% 0%, rgba(99, 255, 226, 0.12), transparent 28%),\n    radial-gradient(circle at 88% 2%, rgba(112, 136, 255, 0.16), transparent 24%),\n    linear-gradient(140deg, rgba(174, 206, 255, 0.05), transparent 50%),\n    radial-gradient(circle at 58% 35%, rgba(122, 90, 255, 0.08), transparent 22%);\n  --hbt-border: rgba(103, 197, 218, 0.18);\n  --hbt-inner-border: rgba(165, 223, 245, 0.08);\n  --hbt-shadow:\n    0 24px 62px rgba(2, 4, 14, 0.68),\n    0 0 0 1px rgba(127, 198, 219, 0.05),\n    0 0 58px rgba(53, 188, 177, 0.14);\n  --hbt-text: #dceef6;\n  --hbt-muted: #87a6b4;\n  --hbt-title-color: #e5ffff;\n  --hbt-author-color: #ebfdff;\n  --hbt-accent: #88f3ea;\n  --hbt-accent-strong: #d6ffff;\n  --hbt-accent-soft: rgba(92, 214, 201, 0.15);\n  --hbt-panel-bg: rgba(66, 147, 163, 0.09);\n  --hbt-panel-border: rgba(110, 203, 218, 0.12);\n  --hbt-divider: rgba(93, 172, 184, 0.12);\n  --hbt-zone-public-bg: rgba(86, 199, 218, 0.12);\n  --hbt-zone-public-text: #cbffff;\n  --hbt-zone-public-border: rgba(86, 199, 218, 0.24);\n  --hbt-zone-private-bg: rgba(132, 108, 255, 0.12);\n  --hbt-zone-private-text: #ddd4ff;\n  --hbt-zone-private-border: rgba(132, 108, 255, 0.22);\n  --hbt-button-bg: rgba(116, 215, 222, 0.11);\n  --hbt-button-bg-hover: rgba(122, 229, 237, 0.18);\n  --hbt-button-border: rgba(116, 215, 222, 0.22);\n  --hbt-button-text: #d8ffff;\n  --hbt-button-shadow: 0 8px 24px rgba(2, 11, 16, 0.34);\n  --hbt-carousel-bg:\n    linear-gradient(145deg, rgba(10, 32, 47, 0.96), rgba(5, 10, 20, 0.98));\n  --hbt-carousel-border: rgba(113, 210, 220, 0.14);\n  --hbt-image-text: #bfecee;\n  --hbt-comment-name: #bff7f6;\n  --hbt-reply-name: #86adb1;\n  --hbt-tag: #92f0ec;\n  --hbt-tag-hover: #dcffff;\n  --hbt-like: #ffbfd9;\n}\n\n/* 区域标识 */\n.hbt-zone {\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n  font-size: 11px;\n  font-weight: 600;\n  padding: 4px 10px;\n  border-radius: 20px;\n  margin-bottom: 12px;\n  backdrop-filter: blur(10px);\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);\n}\n.hbt-zone-public {\n  background: var(--hbt-zone-public-bg);\n  color: var(--hbt-zone-public-text);\n  border: 1px solid var(--hbt-zone-public-border);\n}\n.hbt-zone-private {\n  background: var(--hbt-zone-private-bg);\n  color: var(--hbt-zone-private-text);\n  border: 1px solid var(--hbt-zone-private-border);\n}\n\n/* 头部：头像 + 作者信息 */\n.hbt-header {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  padding-right: 196px;\n  margin-bottom: 14px;\n}\n.hbt-avatar {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 20px;\n  font-weight: 700;\n  color: #fff;\n  flex-shrink: 0;\n  text-shadow: 0 1px 3px rgba(0,0,0,0.3);\n  border: 1px solid rgba(255, 255, 255, 0.12);\n  box-shadow:\n    inset 0 1px 0 rgba(255, 255, 255, 0.2),\n    0 0 0 4px var(--hbt-accent-soft),\n    0 12px 24px rgba(0, 0, 0, 0.24);\n}\n.hbt-author-info {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  min-width: 0;\n}\n.hbt-author-name {\n  font-family: var(--hbt-font-title);\n  font-size: 15px;\n  font-weight: 600;\n  color: var(--hbt-author-color);\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  letter-spacing: 0.03em;\n}\n.hbt-handle {\n  font-size: 13px;\n  color: var(--hbt-muted);\n}\n\n/* 标题 */\n.hbt-title {\n  font-family: var(--hbt-font-title);\n  font-size: 17px;\n  font-weight: 600;\n  color: var(--hbt-title-color);\n  margin-bottom: 14px;\n  line-height: 1.55;\n  letter-spacing: 0.04em;\n  text-shadow: 0 0 24px rgba(255, 255, 255, 0.05);\n}\n.hbt-card-controls {\n  position: absolute;\n  top: 18px;\n  right: 20px;\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  z-index: 4;\n}\n.hbt-theme-switcher {\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n  padding: 4px 6px;\n  border-radius: 999px;\n  background: var(--hbt-panel-bg);\n  border: 1px solid var(--hbt-panel-border);\n  box-shadow:\n    inset 0 1px 0 rgba(255, 255, 255, 0.08),\n    0 10px 24px rgba(0, 0, 0, 0.18);\n  backdrop-filter: blur(12px);\n}\n.hbt-theme-btn {\n  width: 28px;\n  height: 28px;\n  border: 1px solid transparent;\n  border-radius: 50%;\n  padding: 0;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-family: var(--hbt-font-title);\n  font-size: 12px;\n  font-weight: 700;\n  color: rgba(255, 255, 255, 0.88);\n  cursor: pointer;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);\n  transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s, opacity 0.22s;\n}\n.hbt-theme-btn:hover {\n  transform: translateY(-1px);\n}\n.hbt-theme-btn[data-theme-option=\"moon\"] {\n  background: linear-gradient(145deg, rgba(147, 185, 245, 0.92), rgba(74, 100, 162, 0.92));\n}\n.hbt-theme-btn[data-theme-option=\"jade\"] {\n  background: linear-gradient(145deg, rgba(238, 214, 158, 0.92), rgba(136, 105, 48, 0.92));\n}\n.hbt-theme-btn[data-theme-option=\"night\"] {\n  background: linear-gradient(145deg, rgba(69, 199, 203, 0.92), rgba(43, 63, 126, 0.92));\n}\n.hbt-theme-btn.is-active {\n  border-color: var(--hbt-accent-strong);\n  box-shadow:\n    0 0 0 2px var(--hbt-accent-soft),\n    inset 0 1px 0 rgba(255, 255, 255, 0.22),\n    0 6px 16px rgba(0, 0, 0, 0.18);\n}\n.hbt-toggle-btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 52px;\n  padding: 6px 12px;\n  border-radius: 999px;\n  border: 1px solid var(--hbt-button-border);\n  background: var(--hbt-button-bg);\n  color: var(--hbt-button-text);\n  font-size: 12px;\n  font-weight: 700;\n  cursor: pointer;\n  transition: background 0.2s, border-color 0.2s, color 0.2s;\n  box-shadow: var(--hbt-button-shadow);\n  backdrop-filter: blur(12px);\n}\n.hbt-toggle-btn:hover {\n  background: var(--hbt-button-bg-hover);\n  border-color: var(--hbt-accent);\n  color: var(--hbt-accent-strong);\n}\n\n/* 图片轮播 */\n.hbt-carousel {\n  position: relative;\n  margin-bottom: 14px;\n  border-radius: 12px;\n  overflow: hidden;\n}\n.hbt-carousel-inner {\n  position: relative;\n}\n.hbt-img-slide {\n  display: none;\n  background: var(--hbt-carousel-bg);\n  border-radius: 16px;\n  padding: 24px 20px;\n  min-height: 160px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  border: 1px solid var(--hbt-carousel-border);\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);\n}\n.hbt-img-slide.hbt-slide-active {\n  display: flex;\n}\n.hbt-img-icon {\n  font-size: 28px;\n  opacity: 0.7;\n}\n.hbt-img-desc {\n  font-size: 13px;\n  color: var(--hbt-image-text);\n  text-align: center;\n  line-height: 1.7;\n}\n.hbt-img-counter {\n  font-size: 11px;\n  color: var(--hbt-muted);\n  margin-top: 4px;\n}\n\n/* 轮播箭头 */\n.hbt-carousel-btn {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 32px;\n  height: 32px;\n  border-radius: 50%;\n  background: rgba(5, 8, 18, 0.55);\n  border: 1px solid var(--hbt-button-border);\n  color: var(--hbt-accent-strong);\n  font-size: 14px;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 2;\n  transition: background 0.2s, opacity 0.2s;\n  user-select: none;\n  padding: 0;\n  line-height: 1;\n  opacity: 0;\n}\n.hbt-carousel:hover .hbt-carousel-btn {\n  opacity: 1;\n}\n.hbt-carousel-btn:hover {\n  background: var(--hbt-button-bg-hover);\n}\n.hbt-carousel-prev { left: 8px; }\n.hbt-carousel-next { right: 8px; }\n\n/* 正文 */\n.hbt-body {\n  font-size: 15px;\n  color: var(--hbt-text);\n  line-height: 1.8;\n  margin-bottom: 14px;\n  white-space: pre-wrap;\n}\n\n/* 标签 */\n.hbt-tags {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 6px 10px;\n  margin-bottom: 14px;\n}\n.hbt-tag {\n  font-size: 13px;\n  color: var(--hbt-tag);\n  cursor: default;\n}\n.hbt-tag:hover { color: var(--hbt-tag-hover); }\n\n/* 底部：日期+点赞 */\n.hbt-footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-top: 12px;\n  border-top: 1px solid var(--hbt-divider);\n  margin-bottom: 2px;\n}\n.hbt-date {\n  font-size: 13px;\n  color: var(--hbt-muted);\n}\n.hbt-likes {\n  font-size: 13px;\n  color: var(--hbt-like);\n  display: flex;\n  align-items: center;\n  gap: 4px;\n}\n\n/* 评论区 */\n.hbt-comments {\n  margin-top: 14px;\n  border-top: 1px solid var(--hbt-divider);\n  padding-top: 12px;\n}\n.hbt-comment-section-header {\n  font-size: 13px;\n  font-weight: 700;\n  color: var(--hbt-accent-strong);\n  margin-bottom: 10px;\n  margin-top: 10px;\n  letter-spacing: 0.08em;\n}\n.hbt-comment-section-header:first-child { margin-top: 0; }\n\n.hbt-comment-item {\n  display: flex;\n  gap: 10px;\n  padding: 10px 12px;\n  margin-bottom: 8px;\n  background: var(--hbt-panel-bg);\n  border: 1px solid var(--hbt-panel-border);\n  border-radius: 16px;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);\n}\n.hbt-comment-avatar {\n  width: 32px;\n  height: 32px;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 13px;\n  font-weight: 700;\n  color: #fff;\n  flex-shrink: 0;\n}\n.hbt-comment-content {\n  min-width: 0;\n  flex: 1;\n}\n.hbt-commenter-name {\n  font-size: 13px;\n  font-weight: 700;\n  color: var(--hbt-comment-name);\n  margin-right: 6px;\n}\n.hbt-comment-text {\n  font-size: 14px;\n  color: var(--hbt-text);\n  line-height: 1.6;\n}\n\n/* 回复缩进 */\n.hbt-reply-item {\n  margin-left: 42px;\n  padding-left: 12px;\n  border-left: 2px solid var(--hbt-panel-border);\n}\n.hbt-reply-item .hbt-commenter-name {\n  color: var(--hbt-reply-name);\n  font-weight: 600;\n}\n.hbt-reply-prefix {\n  font-size: 12px;\n  color: var(--hbt-muted);\n  margin-right: 4px;\n}\n\n/* 响应式 */\n@media (max-width: 400px) {\n  body { padding: 12px; }\n  .hbt-card { padding: 14px; border-radius: 18px; }\n  .hbt-header { padding-right: 162px; }\n  .hbt-card-controls { top: 14px; right: 14px; gap: 8px; }\n  .hbt-theme-switcher { gap: 5px; padding: 4px 5px; }\n  .hbt-theme-btn { width: 26px; height: 26px; font-size: 11px; }\n  .hbt-img-slide { min-height: 120px; padding: 18px 14px; }\n  .hbt-reply-item { margin-left: 20px; }\n}\n</style>\n</head>\n<body>\n<div id=\"hbt-app\"></div>\n<textarea id=\"hbt-raw-source\" hidden>$1</textarea>\n<script>\nvar HBT_KEYS = new Set(['author', 'handle', 'zone', 'title', 'img', 'body', 'tags', 'date', 'likes', 'hot', 'reply', 'pin']);\nvar HBT_THEMES = [\n  { id: 'moon', label: '寒', title: '寒月宫' },\n  { id: 'jade', label: '阙', title: '天庭玉阙' },\n  { id: 'night', label: '夜', title: '幽夜秘境' },\n];\nvar HBT_THEME_STORAGE_KEY = 'hbt-theme';\nvar HBT_DEFAULT_THEME = 'moon';\nvar hbtEventsBound = false;\n\nfunction hashBase(str) {\n  var hash = 0;\n  for (var i = 0; i < str.length; i++) {\n    hash = str.charCodeAt(i) + ((hash << 5) - hash);\n  }\n  return Math.abs(hash % 360);\n}\n\nfunction hashColor(str) {\n  return 'hsl(' + hashBase(str) + ', 60%, 45%)';\n}\n\nfunction hashGradient(str) {\n  var h1 = hashBase(str);\n  var h2 = (h1 + 40) % 360;\n  return 'linear-gradient(135deg, hsl(' + h1 + ',60%,40%), hsl(' + h2 + ',70%,50%))';\n}\n\nfunction firstChar(str) {\n  return str ? str.charAt(0) : '?';\n}\n\nfunction createNode(tagName, className, text) {\n  var node = document.createElement(tagName);\n  if (className) node.className = className;\n  if (text !== undefined) node.textContent = text;\n  return node;\n}\n\nfunction isValidHBTTheme(theme) {\n  return theme === 'moon' || theme === 'jade' || theme === 'night';\n}\n\nfunction readStoredHBTTheme() {\n  try {\n    var theme = window.localStorage.getItem(HBT_THEME_STORAGE_KEY);\n    return isValidHBTTheme(theme) ? theme : HBT_DEFAULT_THEME;\n  } catch (error) {\n    return HBT_DEFAULT_THEME;\n  }\n}\n\nfunction writeStoredHBTTheme(theme) {\n  if (!isValidHBTTheme(theme)) return;\n\n  try {\n    window.localStorage.setItem(HBT_THEME_STORAGE_KEY, theme);\n  } catch (error) {\n    // Ignore storage failures inside constrained environments.\n  }\n}\n\nfunction appendAvatar(parent, className, name, background, isSmall) {\n  var avatar = createNode('div', className, firstChar(name));\n  avatar.style.background = background;\n  if (isSmall) {\n    avatar.style.width = '24px';\n    avatar.style.height = '24px';\n    avatar.style.fontSize = '11px';\n  }\n  parent.appendChild(avatar);\n}\n\nfunction buildHBTThemeSwitcher(activeTheme) {\n  var switcher = createNode('div', 'hbt-theme-switcher');\n\n  for (var i = 0; i < HBT_THEMES.length; i++) {\n    var theme = HBT_THEMES[i];\n    var button = createNode('button', 'hbt-theme-btn' + (theme.id === activeTheme ? ' is-active' : ''), theme.label);\n    button.type = 'button';\n    button.dataset.themeOption = theme.id;\n    button.setAttribute('aria-label', theme.title);\n    button.setAttribute('aria-pressed', theme.id === activeTheme ? 'true' : 'false');\n    button.title = theme.title;\n    switcher.appendChild(button);\n  }\n\n  return switcher;\n}\n\nfunction applyHBTTheme(card, theme) {\n  if (!card) return;\n\n  var nextTheme = isValidHBTTheme(theme) ? theme : HBT_DEFAULT_THEME;\n  card.dataset.theme = nextTheme;\n\n  var buttons = card.querySelectorAll('.hbt-theme-btn');\n  for (var i = 0; i < buttons.length; i++) {\n    var isActive = buttons[i].dataset.themeOption === nextTheme;\n    buttons[i].classList.toggle('is-active', isActive);\n    buttons[i].setAttribute('aria-pressed', isActive ? 'true' : 'false');\n  }\n}\n\nfunction applyHBTThemeToCards(theme, root) {\n  var scope = root || document;\n  var nextTheme = isValidHBTTheme(theme) ? theme : HBT_DEFAULT_THEME;\n  var cards = scope.querySelectorAll('.hbt-card');\n\n  for (var i = 0; i < cards.length; i++) {\n    applyHBTTheme(cards[i], nextTheme);\n  }\n\n  writeStoredHBTTheme(nextTheme);\n}\n\nfunction parseCommentField(value, type) {\n  var colonIdx = value.indexOf(':');\n  return {\n    type: type,\n    name: (colonIdx > 0 ? value.substring(0, colonIdx) : '').trim(),\n    text: (colonIdx > 0 ? value.substring(colonIdx + 1) : value).trim(),\n    replies: [],\n  };\n}\n\nfunction parseRawPost(text) {\n  var lines = text.split(/\\r?\\n/);\n  var data = {\n    author: '',\n    handle: '',\n    zone: 'public',\n    title: '',\n    images: [],\n    body: '',\n    tags: [],\n    date: '',\n    likes: '',\n    comments: [],\n  };\n  var currentKey = null;\n  var currentVal = [];\n  var lastComment = null;\n\n  function commitField() {\n    if (!currentKey) return;\n    var value = currentVal.join('\\n').trim();\n    if (!value) {\n      currentKey = null;\n      currentVal = [];\n      return;\n    }\n\n    switch (currentKey) {\n      case 'author':\n        data.author = value;\n        break;\n      case 'handle':\n        data.handle = value;\n        break;\n      case 'zone':\n        data.zone = value.toLowerCase() === 'private' ? 'private' : 'public';\n        break;\n      case 'title':\n        data.title = value;\n        break;\n      case 'img':\n        data.images.push(value);\n        break;\n      case 'body':\n        data.body = value;\n        break;\n      case 'tags':\n        data.tags = value.match(/#[^\\s#]+/g) || [value];\n        break;\n      case 'date':\n        data.date = value;\n        break;\n      case 'likes':\n        data.likes = value;\n        break;\n      case 'hot':\n      case 'pin':\n        lastComment = parseCommentField(value, currentKey);\n        data.comments.push(lastComment);\n        break;\n      case 'reply':\n        if (lastComment) {\n          lastComment.replies.push(parseCommentField(value, 'reply'));\n        }\n        break;\n    }\n\n    currentKey = null;\n    currentVal = [];\n  }\n\n  for (var i = 0; i < lines.length; i++) {\n    var trimmed = lines[i].trim();\n    if (!trimmed) continue;\n\n    var colonIdx = trimmed.indexOf(':');\n    if (colonIdx > 0) {\n      var candidateKey = trimmed.slice(0, colonIdx);\n      if (HBT_KEYS.has(candidateKey)) {\n        commitField();\n        currentKey = candidateKey;\n        currentVal.push(trimmed.slice(colonIdx + 1));\n        continue;\n      }\n    }\n\n    if (currentKey) currentVal.push(trimmed);\n  }\n\n  commitField();\n  return data;\n}\n\nfunction stringValue(value) {\n  if (value === undefined || value === null) return '';\n  return String(value).trim();\n}\n\nfunction toList(value) {\n  if (Array.isArray(value)) {\n    var items = [];\n    for (var i = 0; i < value.length; i++) {\n      var item = stringValue(value[i]);\n      if (item) items.push(item);\n    }\n    return items;\n  }\n\n  var single = stringValue(value);\n  return single ? [single] : [];\n}\n\nfunction normalizeComment(comment, fallbackType) {\n  if (!comment || typeof comment !== 'object') return null;\n\n  var normalized = {\n    type: comment.type === 'pin' ? 'pin' : (fallbackType === 'pin' ? 'pin' : 'hot'),\n    name: stringValue(comment.name || comment.author || comment.user),\n    text: stringValue(comment.text || comment.body || comment.content || comment.message),\n    replies: [],\n  };\n\n  if (!normalized.name || !normalized.text) return null;\n\n  if (Array.isArray(comment.replies)) {\n    for (var i = 0; i < comment.replies.length; i++) {\n      var reply = normalizeComment(comment.replies[i], 'reply');\n      if (reply) {\n        reply.type = 'reply';\n        normalized.replies.push(reply);\n      }\n    }\n  }\n\n  return normalized;\n}\n\nfunction normalizePostData(source) {\n  if (!source || typeof source !== 'object') return null;\n\n  var data = {\n    author: stringValue(source.author || source.name),\n    handle: stringValue(source.handle),\n    zone: stringValue(source.zone).toLowerCase() === 'private' ? 'private' : 'public',\n    title: stringValue(source.title),\n    images: [],\n    body: stringValue(source.body || source.content || source.text),\n    tags: [],\n    date: stringValue(source.date),\n    likes: stringValue(source.likes),\n    comments: [],\n  };\n\n  data.images = toList(source.images || source.img);\n  data.tags = toList(source.tags);\n\n  if (Array.isArray(source.comments)) {\n    for (var i = 0; i < source.comments.length; i++) {\n      var comment = normalizeComment(source.comments[i]);\n      if (comment) data.comments.push(comment);\n    }\n  }\n\n  var hotComments = Array.isArray(source.hot) ? source.hot : (source.hot ? [source.hot] : []);\n  var pinComments = Array.isArray(source.pin) ? source.pin : (source.pin ? [source.pin] : []);\n\n  for (var j = 0; j < hotComments.length; j++) {\n    var hot = normalizeComment(hotComments[j], 'hot');\n    if (hot) data.comments.push(hot);\n  }\n\n  for (var k = 0; k < pinComments.length; k++) {\n    var pin = normalizeComment(pinComments[k], 'pin');\n    if (pin) data.comments.push(pin);\n  }\n\n  if (!data.author && !data.title && !data.body && !data.images.length) {\n    return null;\n  }\n\n  return data;\n}\n\nfunction buildCommentGroup(label, comments) {\n  if (!comments.length) return null;\n\n  var fragment = document.createDocumentFragment();\n  fragment.appendChild(createNode('div', 'hbt-comment-section-header', label));\n\n  for (var i = 0; i < comments.length; i++) {\n    var comment = comments[i];\n    var item = createNode('div', 'hbt-comment-item');\n    appendAvatar(item, 'hbt-comment-avatar', comment.name, hashColor(comment.name), false);\n\n    var content = createNode('div', 'hbt-comment-content');\n    content.appendChild(createNode('span', 'hbt-commenter-name', comment.name));\n    content.appendChild(createNode('span', 'hbt-comment-text', comment.text));\n    item.appendChild(content);\n    fragment.appendChild(item);\n\n    for (var j = 0; j < comment.replies.length; j++) {\n      var reply = comment.replies[j];\n      var replyWrap = createNode('div', 'hbt-reply-item');\n      var replyItem = createNode('div', 'hbt-comment-item');\n      appendAvatar(replyItem, 'hbt-comment-avatar', reply.name, hashColor(reply.name), true);\n\n      var replyContent = createNode('div', 'hbt-comment-content');\n      replyContent.appendChild(createNode('span', 'hbt-reply-prefix', '↳'));\n      replyContent.appendChild(createNode('span', 'hbt-commenter-name', reply.name));\n      replyContent.appendChild(createNode('span', 'hbt-comment-text', reply.text));\n      replyItem.appendChild(replyContent);\n      replyWrap.appendChild(replyItem);\n      fragment.appendChild(replyWrap);\n    }\n  }\n\n  return fragment;\n}\n\nfunction buildHBTCard(data) {\n  var initialTheme = readStoredHBTTheme();\n  var card = createNode('div', 'hbt-card hbt-card-collapsed');\n  card.dataset.theme = initialTheme;\n\n  var controls = createNode('div', 'hbt-card-controls');\n  controls.appendChild(buildHBTThemeSwitcher(initialTheme));\n\n  var toggleButton = createNode('button', 'hbt-toggle-btn', '展开');\n  toggleButton.type = 'button';\n  toggleButton.setAttribute('aria-expanded', 'false');\n  controls.appendChild(toggleButton);\n  card.appendChild(controls);\n\n  var header = createNode('div', 'hbt-header');\n  appendAvatar(header, 'hbt-avatar', data.author, hashGradient(data.author), false);\n\n  var authorInfo = createNode('div', 'hbt-author-info');\n  authorInfo.appendChild(createNode('div', 'hbt-author-name', data.author));\n  if (data.handle) {\n    authorInfo.appendChild(createNode('div', 'hbt-handle', data.handle));\n  }\n  header.appendChild(authorInfo);\n  card.appendChild(header);\n\n  card.appendChild(\n    createNode(\n      'div',\n      'hbt-zone ' + (data.zone === 'private' ? 'hbt-zone-private' : 'hbt-zone-public'),\n      data.zone === 'private' ? '🔒 私人区' : '🌐 公共区'\n    )\n  );\n\n  if (data.title) {\n    card.appendChild(createNode('div', 'hbt-title', data.title));\n  }\n\n  var expandable = createNode('div', 'hbt-expandable');\n\n  if (data.images.length) {\n    var carousel = createNode('div', 'hbt-carousel');\n    carousel.dataset.activeIndex = '0';\n    var inner = createNode('div', 'hbt-carousel-inner');\n\n    for (var i = 0; i < data.images.length; i++) {\n      var slide = createNode('div', 'hbt-img-slide' + (i === 0 ? ' hbt-slide-active' : ''));\n      slide.appendChild(createNode('span', 'hbt-img-icon', '🖼️'));\n      slide.appendChild(createNode('span', 'hbt-img-desc', data.images[i]));\n      slide.appendChild(createNode('span', 'hbt-img-counter', (i + 1) + ' / ' + data.images.length));\n      inner.appendChild(slide);\n    }\n\n    if (data.images.length > 1) {\n      var prevBtn = createNode('button', 'hbt-carousel-btn hbt-carousel-prev', '‹');\n      prevBtn.type = 'button';\n      prevBtn.setAttribute('aria-label', '上一张');\n      inner.appendChild(prevBtn);\n\n      var nextBtn = createNode('button', 'hbt-carousel-btn hbt-carousel-next', '›');\n      nextBtn.type = 'button';\n      nextBtn.setAttribute('aria-label', '下一张');\n      inner.appendChild(nextBtn);\n    }\n\n    carousel.appendChild(inner);\n    expandable.appendChild(carousel);\n  }\n\n  if (data.body) {\n    expandable.appendChild(createNode('div', 'hbt-body', data.body));\n  }\n\n  if (data.tags.length) {\n    var tags = createNode('div', 'hbt-tags');\n    for (var j = 0; j < data.tags.length; j++) {\n      tags.appendChild(createNode('span', 'hbt-tag', data.tags[j]));\n    }\n    expandable.appendChild(tags);\n  }\n\n  if (data.date || data.likes) {\n    var footer = createNode('div', 'hbt-footer');\n    footer.appendChild(createNode('span', 'hbt-date', data.date));\n    footer.appendChild(createNode('span', 'hbt-likes', '❤️ ' + data.likes));\n    expandable.appendChild(footer);\n  }\n\n  if (data.comments.length) {\n    var comments = createNode('div', 'hbt-comments');\n    var pins = [];\n    var hots = [];\n\n    for (var k = 0; k < data.comments.length; k++) {\n      if (data.comments[k].type === 'hot') hots.push(data.comments[k]);\n      else pins.push(data.comments[k]);\n    }\n\n    var pinGroup = buildCommentGroup('📌 顶置评论', pins);\n    var hotGroup = buildCommentGroup('🔥 热门评论', hots);\n    if (pinGroup) comments.appendChild(pinGroup);\n    if (hotGroup) comments.appendChild(hotGroup);\n    expandable.appendChild(comments);\n  }\n\n  card.appendChild(expandable);\n  applyHBTTheme(card, initialTheme);\n  return card;\n}\n\nfunction updateHBTCardExpansion(card, expanded) {\n  var button = card.querySelector('.hbt-toggle-btn');\n  if (!button) return;\n\n  card.classList.toggle('hbt-card-collapsed', !expanded);\n  button.textContent = expanded ? '收起' : '展开';\n  button.setAttribute('aria-expanded', expanded ? 'true' : 'false');\n}\n\nfunction hbtGoSlide(carousel, nextIndex) {\n  var slides = carousel.querySelectorAll('.hbt-img-slide');\n  if (!slides.length) return;\n\n  var activeSlide = carousel.querySelector('.hbt-slide-active');\n  if (activeSlide) activeSlide.classList.remove('hbt-slide-active');\n  slides[nextIndex].classList.add('hbt-slide-active');\n  carousel.dataset.activeIndex = String(nextIndex);\n}\n\nfunction bindHBTEvents() {\n  if (hbtEventsBound) return;\n\n  document.addEventListener('click', function(event) {\n    var themeButton = event.target.closest('.hbt-theme-btn');\n    if (themeButton) {\n      var theme = themeButton.dataset.themeOption;\n      if (!isValidHBTTheme(theme)) return;\n\n      applyHBTThemeToCards(theme, document);\n      return;\n    }\n\n    var toggleButton = event.target.closest('.hbt-toggle-btn');\n    if (toggleButton) {\n      var card = toggleButton.closest('.hbt-card');\n      if (!card) return;\n\n      updateHBTCardExpansion(card, card.classList.contains('hbt-card-collapsed'));\n      return;\n    }\n\n    var button = event.target.closest('.hbt-carousel-btn');\n    if (!button) return;\n\n    var carousel = button.closest('.hbt-carousel');\n    if (!carousel) return;\n\n    var slides = carousel.querySelectorAll('.hbt-img-slide');\n    if (slides.length < 2) return;\n\n    var currentIndex = Number(carousel.dataset.activeIndex || 0);\n    var delta = button.classList.contains('hbt-carousel-prev') ? -1 : 1;\n    hbtGoSlide(carousel, (currentIndex + delta + slides.length) % slides.length);\n  });\n\n  hbtEventsBound = true;\n}\n\nfunction getMessageScopedVariables() {\n  try {\n    var getMessageId = typeof getCurrentMessageId === 'function'\n      ? getCurrentMessageId\n      : (window.parent && typeof window.parent.getCurrentMessageId === 'function'\n        ? window.parent.getCurrentMessageId.bind(window.parent)\n        : null);\n    var getMessageVariables = typeof getVariables === 'function'\n      ? getVariables\n      : (window.parent && typeof window.parent.getVariables === 'function'\n        ? window.parent.getVariables.bind(window.parent)\n        : null);\n\n    if (!getMessageId || !getMessageVariables) return null;\n\n    var messageId = getMessageId();\n    if (!messageId) return null;\n\n    return getMessageVariables({ type: 'message', message_id: messageId });\n  } catch (error) {\n    return null;\n  }\n}\n\nfunction getVariableBackedPostData() {\n  var variables = getMessageScopedVariables();\n  if (!variables || typeof variables !== 'object') return null;\n\n  var candidates = [\n    variables.huangbaotian,\n    variables.hbt,\n    variables.raw_huangbaotian,\n    variables.raw_hbt,\n  ];\n\n  for (var i = 0; i < candidates.length; i++) {\n    var candidate = candidates[i];\n\n    if (typeof candidate === 'string' && candidate.trim()) {\n      return parseRawPost(candidate);\n    }\n\n    var normalized = normalizePostData(candidate);\n    if (normalized) return normalized;\n  }\n\n  return null;\n}\n\nfunction getEmbeddedRawPostData(scope) {\n  var source = scope.querySelector('#hbt-raw-source');\n  if (!source) return null;\n\n  var text = '';\n  if ('value' in source && typeof source.value === 'string') {\n    text = source.value.trim();\n  } else {\n    text = source.textContent.trim();\n  }\n  return text ? parseRawPost(text) : null;\n}\n\nfunction renderHBT(root) {\n  var scope = root || document;\n  var app = scope.querySelector('#hbt-app');\n\n  if (app && !app.dataset.hbtRendered) {\n    var appData = getVariableBackedPostData() || getEmbeddedRawPostData(scope);\n    app.dataset.hbtRendered = 'true';\n\n    if (appData) {\n      app.textContent = '';\n      app.appendChild(buildHBTCard(appData));\n    }\n  }\n\n  var raws = scope.querySelectorAll('.hbt-raw:not([data-hbt-rendered])');\n\n  for (var i = 0; i < raws.length; i++) {\n    var raw = raws[i];\n    raw.dataset.hbtRendered = 'true';\n    raw.insertAdjacentElement('afterend', buildHBTCard(parseRawPost(raw.textContent)));\n  }\n}\n\nfunction initHBT() {\n  bindHBTEvents();\n  renderHBT(document);\n}\n\nif (document.readyState === 'loading') {\n  document.addEventListener('DOMContentLoaded', initHBT, { once: true });\n} else {\n  initHBT();\n}\n</script>\n</body>\n</html>\n```",
+          "trimStrings": [],
+          "placement": [
+            2
+          ],
+          "disabled": true,
+          "markdownOnly": true,
+          "promptOnly": false,
+          "runOnEdit": true,
+          "substituteRegex": 0,
+          "minDepth": null,
+          "maxDepth": null
+        },
+        {
+          "scriptName": "插图渲染-本地shizun文件夹离线修复版",
+          "findRegex": "/<(?:illustration|img)>(.*?)<\\/(?:illustration|img)>/g",
+          "replaceString": "<center><img src=/img/shizun/$1 width=50% /></center>",
+          "trimStrings": [],
+          "placement": [
+            2
+          ],
+          "disabled": true,
+          "markdownOnly": true,
+          "promptOnly": false,
+          "runOnEdit": true,
+          "substituteRegex": false,
+          "minDepth": null,
+          "maxDepth": null,
+          "id": "48d4e897-8dfc-47ac-aa4c-c64b96bfbf3b"
+        }
+      ],
+      "powerUserRegex": null,
+      "disabledExtensions": null
+    },
+    "messages": [
+      {
+        "index": 0,
+        "role": "assistant",
+        "chars": 22591,
+        "hasInitvar": true,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "\n\n             ],\n    \"系统\":  {\n               \"当前任务\":  \"血娃娃找妈妈（隐藏任务）\",\n               \"任务阶段\":  \"追查线索（完成度2%）\",\n               \"任务状态\":  \"进行中\",\n               \"任务说明\":  \"帮助血娃娃找到她的母亲。盘中不知名女人的头发、耳朵与梳子是当前线索。主线‘活过血夜’继续有效。\",\n               \"图鉴\":  [\n\n                      ],\n               \"成就\":  [\n\n                      ],\n               \"最近提示\":  \"系统可辅助诊断，但不替林恩决策。\",\n               \"事件通知\":  \"E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。\",\n               \"更新模式\":  \"同轮更新；可选独立预设\"\n           }\n}\n</initvar>\n</UpdateVariable>"
+      },
+      {
+        "index": 1,
+        "role": "user",
+        "chars": 74,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩把盘中的头发、耳朵和梳子分别装进干净的密封袋，标记为“血娃娃寻母线索”，暂存到柜台内侧。他擦净手术台，重新点亮柜台灯，继续营业，等待下一位病人。"
+      },
+      {
+        "index": 2,
+        "role": "assistant",
+        "chars": 3689,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "猪类哼哼与腥膻气味，影子捂着蠕动的腹部在拍门\",\n        \"地点\": \"血锯药剂店门前\",\n        \"参与者\": [],\n        \"紧迫度\": \"中\",\n        \"模糊期限\": \"正在拍门请求接诊\"\n      },\n      \"最近结果\": [\n        {\n          \"事件ID\": \"E02\",\n          \"标题\": \"血娃娃上门与找妈妈任务\",\n          \"结果\": \"完成物理治疗并收取右眼抵押，寻母线索已被林恩暂存保管\",\n          \"世界影响\": \"游魂巷内流传出药剂店是什么怪病都接的黑店传闻\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E02诊断线索已收纳入档；E03猪头魔预兆已显现，等待患者进门。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 3,
+        "role": "user",
+        "chars": 57,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩走到门边，保持魂灯照明，打开门让外面捂着腹部的病患进来。他指向诊疗台：“躺下。哪里不舒服，从什么时候开始的？”"
+      },
+      {
+        "index": 4,
+        "role": "assistant",
+        "chars": 3719,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "兆\": {\n        \"事件ID\": \"\",\n        \"方向\": \"\",\n        \"地点\": \"\",\n        \"参与者\": [],\n        \"紧迫度\": \"无\",\n        \"模糊期限\": \"\"\n      },\n      \"最近结果\": [\n        {\n          \"事件ID\": \"E02\",\n          \"标题\": \"血娃娃上门与找妈妈任务\",\n          \"结果\": \"完成物理治疗并收取右眼抵押，寻母线索已被林恩暂存保管\",\n          \"世界影响\": \"游魂巷内流传出药剂店是什么怪病都接的黑店传闻\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E03猪头魔已在店内就诊，检测到寄生反应与眼球缺失症状。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 5,
+        "role": "user",
+        "chars": 59,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩先检查病患腹部的异常蠕动，再取出唤魔药剂进行检测。他明确诊断为恶灵寄生，要求病患保持平躺，立即准备开腹取出寄生物。"
+      },
+      {
+        "index": 6,
+        "role": "assistant",
+        "chars": 1043,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "\n- 没有任何违规的主观描写或超越玩家指令的动作。\n</Analysis>\n<JSONPatch>\n[\n  {\n    \"op\": \"replace\",\n    \"path\": \"/林恩/最近明确指令\",\n    \"value\": \"检查腹部，使用唤魔药剂确诊恶灵寄生，要求病患平躺并准备实施开腹手术\"\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/事件/唯一活跃事件/进展\",\n    \"value\": \"林恩确诊恶灵寄生并准备无麻药开腹，猪头魔极度恐惧并剧烈挣扎，腹部撕裂，未成型的恶灵血婴正在脱出\"\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/事件/唯一活跃事件/模糊期限\",\n    \"value\": \"寄生物即将完全脱出，宿主正试图逃离\"\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"检测到高恐惧反应，猪头魔试图逃离，恶灵血婴即将暴走。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 7,
+        "role": "user",
+        "chars": 96,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩亲自实施开腹手术，完整取出未成型的恶灵血婴并处理切口。猪头病患离开后，他不丢弃血婴，而是为它完成第一次整容，压低怨气，确认状态稳定后将它收留在药店内照看。随后林恩清理诊疗台，继续营业接诊。"
+      },
+      {
+        "index": 8,
+        "role": "assistant",
+        "chars": 4384,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "\",\n          \"标题\": \"血娃娃上门与找妈妈任务\",\n          \"结果\": \"完成物理治疗并收取右眼抵押，寻母线索已被林恩暂存保管\",\n          \"世界影响\": \"游魂巷内流传出药剂店是什么怪病都接的黑店传闻\"\n        },\n        {\n          \"事件ID\": \"E03\",\n          \"标题\": \"猪头魔与恶灵血婴\",\n          \"结果\": \"开腹剖出恶灵血婴并完成整容收留；猪头魔极度恐惧逃离\",\n          \"世界影响\": \"怪物病例的恐怖口碑被目击者传开；鬼婴被收留店内成为长期影响\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E03已完成；获得成就‘顾客惊吓者’。E04预兆显现，猎魔弩男人已进店。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 9,
+        "role": "user",
+        "chars": 59,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩扶住门口的瘦高男人，让他坐上诊疗椅。他观察缠绕全身的黑气并检查骨骼疼痛位置，要求对方说明中毒经过和可以支付的诊金。"
+      },
+      {
+        "index": 10,
+        "role": "assistant",
+        "chars": 4072,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "         \"标题\": \"血娃娃上门与找妈妈任务\",\n          \"结果\": \"完成物理治疗并收取右眼抵押，寻母线索已被林恩暂存保管\",\n          \"世界影响\": \"游魂巷内流传出药剂店是什么怪病都接的黑店传闻\"\n        },\n        {\n          \"事件ID\": \"E03\",\n          \"标题\": \"猪头魔与恶灵血婴\",\n          \"结果\": \"开腹剖出恶灵血婴并完成整容收留；猪头魔极度恐惧逃离\",\n          \"世界影响\": \"怪物病例的恐怖口碑被目击者传开；鬼婴被收留店内成为长期影响\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E04活跃中，确诊黑蝴蝶剧毒，清除毒素需行刮骨疗伤；目标已出示传说左轮作为报酬。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 11,
+        "role": "user",
+        "chars": 106,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩明确诊断为黑蝴蝶剧毒，亲自用剔骨刀刮除侵入骨面的毒性组织并完成止血、包扎。治疗结束后，他接受那把受诅咒的传说左轮作为诊金，听完夜晚的危险警告。等猎魔人离店，林恩关好门窗，留在店内观察，直到夜幕降临、魂灯熄灭。"
+      },
+      {
+        "index": 12,
+        "role": "assistant",
+        "chars": 4334,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "D\": \"E03\",\n          \"标题\": \"猪头魔与恶灵血婴\",\n          \"结果\": \"开腹剖出恶灵血婴并完成整容收留；猪头魔极度恐惧逃离\",\n          \"世界影响\": \"怪物病例的恐怖口碑被目击者传开；鬼婴被收留店内成为长期影响\"\n        },\n        {\n          \"事件ID\": \"E04\",\n          \"标题\": \"猎魔人治疗与传说左轮\",\n          \"结果\": \"刮骨疗伤成功清除黑蝴蝶剧毒，收下苍白狩魔者作为诊金，猎魔人离店\",\n          \"世界影响\": \"获得传说诅咒左轮，接收夜危警告\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E04已完成；E05预兆已触发，店外庇护失效，夜间规则已生效。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 13,
+        "role": "user",
+        "chars": 101,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩没有因为门外模仿老师的声音开门。他隔着门确认对方不是血锯，立刻用怨灵发丝缠住伪装者的脖颈，再用剔骨刀结束威胁。处理完欺诈者后，他仍留在魂灯附近，警惕那阵更沉重的脚步；若对方确实求医，他会先询问病症。"
+      },
+      {
+        "index": 14,
+        "role": "assistant",
+        "chars": 4356,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": true,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "\"事件ID\": \"E03\",\n          \"标题\": \"猪头魔与恶灵血婴\",\n          \"结果\": \"开腹剖出恶灵血婴并完成整容收留；猪头魔极度恐惧逃离\",\n          \"世界影响\": \"怪物病例的恐怖口碑被目击者传开；鬼婴被收留店内成为长期影响\"\n        },\n        {\n          \"事件ID\": \"E04\",\n          \"标题\": \"猎魔人治疗与传说左轮\",\n          \"结果\": \"刮骨疗伤成功清除黑蝴蝶剧毒，收下苍白狩魔者作为诊金，猎魔人离店\",\n          \"世界影响\": \"获得传说诅咒左轮，接收夜危警告\"\n        }\n      ],\n      \"阶段总结\": [],\n      \"原创重大事件待定队列\": []\n    }\n  },\n  {\n    \"op\": \"replace\",\n    \"path\": \"/系统/事件通知\",\n    \"value\": \"E05不眠夜事件正在推进，游魂巷夜间来客要求医治牙痛。\"\n  }\n]\n</JSONPatch>\n</UpdateVariable>"
+      },
+      {
+        "index": 15,
+        "role": "user",
+        "chars": 67,
+        "hasInitvar": false,
+        "hasStatusPlaceholder": false,
+        "variableShape": "array",
+        "variableKeys": [
+          "initialized_lorebooks",
+          "stat_data",
+          "schema"
+        ],
+        "hasStatData": true,
+        "preview": "林恩确认巨大来客是在求医后开门接诊，保持冷静询问牙疼的位置与持续时间。他同意亲自检查口腔，让对方张嘴并配合照明，自己进入口腔寻找病因。"
+      }
+    ],
+    "domMessages": [
+      {
+        "messageId": "0",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<h1 id=\"1\">第1章 异世界的我开了挂</h1>\n<p>【这是一个诡秘的异世界。】<br>\n【吸血鬼，狼人，科技，魔药，鬼怪，生化人，占卜，傀儡，只要是你能想到的所有的可怖元素，这个世界都有。】<br>\n【出门必须要掌灯。】<br>\n【不能走远。】<br>\n【离开大门十米之后，外面的黑暗会吞噬你。】<br>\n【不管来就医的是人，是鬼，还是缝合怪，你都要保持镇静。】<br>\n【你不镇静，它就会对你产生恶意。】<br>\n破旧的桌子前，林恩拿着羽毛笔，就着灯火。<br>\n在日记本上写着自己穿越到这个世界两年以来的准则。<br>\n<q>“林恩！时间到了，把灯挂出去，准备开门营业！”</q><br>\n一个沙哑的就像是在咀嚼骨头一样的声音传来。<br>\n林恩摇了摇头，这个声音正是他们这个药剂店的老板，也是两年前把他救回来的他的老师，而他则是这个开在异世界的药剂店的伙计。<br>\n<q>“来了！”</q>林恩大喊。<br>\n但就在这个时候，他的脑海突然响起了一个冰冷的合成音。<br>\n【叮！您的老师血锯狂人向你发布任务：开门营业，将魂灯挂在门口，完成任务奖励：骷髅币x10，基础经验x5，纯净的人血x100毫升。】<br>\n林恩一怔。<br>\n这个声音是……系统？<br>\n难道说自己穿越到这个世界两年之后，终于也觉醒出了金手指？<br>\n不过他没有立刻研究，因为他知道，如果不按照他老师的命令立刻行动，他就会死。<br>\n林恩迅速走出昏暗的阁楼。<br>\n迎面便看到他的老师拖着一具被切割成两半的不明生物的尸体，向着旁边的手术室走去。<br>\n猩红的鲜血在发霉的地板上拖出了一条长长的轨迹。<br>\n噗呲——噗呲——<br>\n手术室内，很快就传来了电锯发出的刺耳的声音。<br>\n那个沙哑咀嚼的声音又传来。<br>\n<q>“开张之后，将昨天过期的药剂全部整理出来，去喂给后院的小宝贝，抓紧点",
+        "textPrefix": "第1章 异世界的我开了挂\n【这是一个诡秘的异世界。】\n【吸血鬼，狼人，科技，魔药，鬼怪，生化人，占卜，傀儡，只要是你能想到的所有的可怖元素，这个世界都有。】\n【出门必须要掌灯。】\n【不能走远。】\n【离开大门十米之后，外面的黑暗会吞噬你。】\n【不管来就医的是人，是鬼，还是缝合怪，你都要保持镇静。】\n【你不镇静，它就会对你产生恶意。】\n破旧的桌子前，林恩拿着羽毛笔，就着灯火。\n在日记本上写着自己穿越到这个世界两年以来的准则。\n“林恩！时间到了，把灯挂出去，准备开门营业！”\n一个沙哑的就像是在咀嚼骨头一样的声音传来。\n林恩摇了摇头，这个声音正是他们这个药剂店的老板，也是两年前把他救回来的他的老师，而他则是这个开在异世界的药剂店的伙计。\n“来了！”林恩大喊。\n但就在这个时候，他的脑海突然响起了一个冰冷的合成音。\n【叮！您的老师血锯狂人向你发布任务：开门营业，将魂灯挂在门口，完成任务奖励：骷髅币x10，基础经验x5，纯净的人血x100毫升。】\n林恩一怔。\n这个声音是……系统？\n难道说自己穿越到这个世界两年之后，终于也觉醒出了金手指？\n不过他没有立刻研究，因为他知道，如果不按照他老师的命令立刻行动"
+      },
+      {
+        "messageId": "1",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩把盘中的头发、耳朵和梳子分别装进干净的密封袋，标记为<q>“血娃娃寻母线索”</q>，暂存到柜台内侧。他擦净手术台，重新点亮柜台灯，继续营业，等待下一位病人。</p>",
+        "textPrefix": "林恩把盘中的头发、耳朵和梳子分别装进干净的密封袋，标记为“血娃娃寻母线索”，暂存到柜台内侧。他擦净手术台，重新点亮柜台灯，继续营业，等待下一位病人。"
+      },
+      {
+        "messageId": "2",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>头发、耳朵和梳子分别被装进干净的密封袋，标记上<q>“血娃娃寻母线索”</q>后，被暂存到了柜台内侧。手术台上的血迹被清理干净，柜台灯被重新点亮。</p>\n<p>血娃娃离开后，<q>“黑店”</q>和<q>“能徒手从怪物肚子里掏东西的伙计”</q>的说法在游魂巷的阴影里传得飞快。</p>\n<p>傍晚时分，巷口传来一阵沉重的脚步声。随后是一阵哼哼声——类似猪类的、带着浓重腥膻气味的哼哼，声音越来越近，最后停在了药剂店门口。</p>\n<p>门板被沉重地拍响。在魂灯猩红的光照边缘，门外那个庞大的影子正痛苦地捂着腹部。能够清晰地看到，它肚子里的某种东西正在不安分地剧烈蠕动着，仿佛随时要剖开皮肉钻出来。</p>\n<p>【系统提示：游魂巷的就医传闻已扩散，未知生物正在拍门。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\"&gt;\n  &lt;style&gt;\n    .wa-panel {\n      --wa-night: #070b12;\n      --wa-ink: #0d1420;\n      --wa-card: rgba(16, 28, 41, .88);\n      --wa-line: #29445f;\n      --wa-blue: #5bc5ff;\n      --wa-blue-soft: #9bdcff;\n    ",
+        "textPrefix": "头发、耳朵和梳子分别被装进干净的密封袋，标记上“血娃娃寻母线索”后，被暂存到了柜台内侧。手术台上的血迹被清理干净，柜台灯被重新点亮。\n血娃娃离开后，“黑店”和“能徒手从怪物肚子里掏东西的伙计”的说法在游魂巷的阴影里传得飞快。\n傍晚时分，巷口传来一阵沉重的脚步声。随后是一阵哼哼声——类似猪类的、带着浓重腥膻气味的哼哼，声音越来越近，最后停在了药剂店门口。\n门板被沉重地拍响。在魂灯猩红的光照边缘，门外那个庞大的影子正痛苦地捂着腹部。能够清晰地看到，它肚子里的某种东西正在不安分地剧烈蠕动着，仿佛随时要剖开皮肉钻出来。\n【系统提示：游魂巷的就医传闻已扩散，未知生物正在拍门。】\n显示前端代码块<body>\n<section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\">\n  <style>\n    .wa-panel {\n      --wa-night: #070b12;\n      --wa-ink: #0d1420;\n      --wa-card: rgba(16, 28, 41, .88);\n      --w"
+      },
+      {
+        "messageId": "3",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩走到门边，保持魂灯照明，打开门让外面捂着腹部的病患进来。他指向诊疗台：<q>“躺下。哪里不舒服，从什么时候开始的？”</q></p>",
+        "textPrefix": "林恩走到门边，保持魂灯照明，打开门让外面捂着腹部的病患进来。他指向诊疗台：“躺下。哪里不舒服，从什么时候开始的？”"
+      },
+      {
+        "messageId": "4",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>门被打开，魂灯的猩红光芒继续照亮门口。外面那个捂着腹部的躯体走了进来。</p>\n<p>林恩指向诊疗台：<q>“躺下。哪里不舒服，从什么时候开始的？”</q></p>\n<p>那是一个极其庞大的畸形怪胎，生着一颗硕大的猪头，浓重的腥膻气味瞬间涌入店内。它的脸上只剩下两个血肉模糊的空洞，双眼已经不翼而飞。</p>\n<p>猪头魔跌跌撞撞地挪到诊疗台旁，庞大沉重的身躯压实下去，令金属台面发出一阵巨大的吱嘎声。它满是硬毛的蹄子死死抓着自己高高隆起的肚皮，喉咙深处滚出痛苦的哼哼声：</p>\n<p><q>“肚子……好疼……不知道是有什么东西在里面咬……好几天了……”</q></p>\n<p>在诊疗台的灯光下，可见它那层厚重的脂肪肚皮下，正有一个成型的肉团在剧烈蠕动。那东西不停地顶起皮肉，仿佛在它的胃肠里疯狂撕扯，试图直接剖开这具躯体钻出来。黑红色的血水混杂着黏液，正顺着猪头魔的嘴角和空荡荡的眼眶接连往下滴落。</p>\n<p>【系统提示：目标为游魂巷猪肉店老板（猪头魔，等级21）。腹部检测到具危险性的异常实体寄生反应；面部双眼同时缺失。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\"&gt;\n  &lt;style&gt;\n    .wa-panel {\n      --wa-night: #070b12;\n      --wa-ink: #0d142",
+        "textPrefix": "门被打开，魂灯的猩红光芒继续照亮门口。外面那个捂着腹部的躯体走了进来。\n林恩指向诊疗台：“躺下。哪里不舒服，从什么时候开始的？”\n那是一个极其庞大的畸形怪胎，生着一颗硕大的猪头，浓重的腥膻气味瞬间涌入店内。它的脸上只剩下两个血肉模糊的空洞，双眼已经不翼而飞。\n猪头魔跌跌撞撞地挪到诊疗台旁，庞大沉重的身躯压实下去，令金属台面发出一阵巨大的吱嘎声。它满是硬毛的蹄子死死抓着自己高高隆起的肚皮，喉咙深处滚出痛苦的哼哼声：\n“肚子……好疼……不知道是有什么东西在里面咬……好几天了……”\n在诊疗台的灯光下，可见它那层厚重的脂肪肚皮下，正有一个成型的肉团在剧烈蠕动。那东西不停地顶起皮肉，仿佛在它的胃肠里疯狂撕扯，试图直接剖开这具躯体钻出来。黑红色的血水混杂着黏液，正顺着猪头魔的嘴角和空荡荡的眼眶接连往下滴落。\n【系统提示：目标为游魂巷猪肉店老板（猪头魔，等级21）。腹部检测到具危险性的异常实体寄生反应；面部双眼同时缺失。】\n显示前端代码块<body>\n<section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\">\n  <s"
+      },
+      {
+        "messageId": "5",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩先检查病患腹部的异常蠕动，再取出唤魔药剂进行检测。他明确诊断为恶灵寄生，要求病患保持平躺，立即准备开腹取出寄生物。</p>",
+        "textPrefix": "林恩先检查病患腹部的异常蠕动，再取出唤魔药剂进行检测。他明确诊断为恶灵寄生，要求病患保持平躺，立即准备开腹取出寄生物。"
+      },
+      {
+        "messageId": "6",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>病患腹部的异常蠕动被检查；唤魔药剂被取出并作用于检测面上。黑红色的雾气在药剂接触的瞬间升腾而起，明确了恶灵寄生的诊断。</p>\n<p><q>“保持平躺。”</q></p>\n<p>开腹所需的器械被放置在诊疗台旁，取出寄生物的准备工作已经就绪。</p>\n<p>诊疗台上的巨大身躯在听到诊断和感觉到利刃逼近的瞬间，猛地僵硬了。没有眼球的猪头魔剧烈哆嗦起来，蹄子在金属台面上抓出刺耳的刮擦声：<q>“开腹？！没有麻药直接开腹……不！我不看了！”</q></p>\n<p>庞大而沉重的身躯疯狂地在台面上扭动挣扎，试图从诊疗台上翻滚下去逃离。伴随着它剧烈的动作，本就高高隆起、被内部异物撕扯到极限的肚皮猛地崩开了一道豁口。黑腥的血水与黏液喷溅而出，一个沾满血污、如同胎儿般的扭曲肉团正从撕裂的腹腔中钻出大半，怨气夹杂着令人作呕的血腥味在空气中弥散开来。</p>\n<p>【系统提示：目标恐惧度急剧上升。恶灵寄生体（未成型恶灵血婴）正脱离宿主。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\"&gt;\n  &lt;style&gt;\n    .wa-panel {\n      --wa-night: #070b12;\n      --wa-ink: #0d1420;\n      --wa-card: rgba(16, 28, 41, .88);\n      --w",
+        "textPrefix": "病患腹部的异常蠕动被检查；唤魔药剂被取出并作用于检测面上。黑红色的雾气在药剂接触的瞬间升腾而起，明确了恶灵寄生的诊断。\n“保持平躺。”\n开腹所需的器械被放置在诊疗台旁，取出寄生物的准备工作已经就绪。\n诊疗台上的巨大身躯在听到诊断和感觉到利刃逼近的瞬间，猛地僵硬了。没有眼球的猪头魔剧烈哆嗦起来，蹄子在金属台面上抓出刺耳的刮擦声：“开腹？！没有麻药直接开腹……不！我不看了！”\n庞大而沉重的身躯疯狂地在台面上扭动挣扎，试图从诊疗台上翻滚下去逃离。伴随着它剧烈的动作，本就高高隆起、被内部异物撕扯到极限的肚皮猛地崩开了一道豁口。黑腥的血水与黏液喷溅而出，一个沾满血污、如同胎儿般的扭曲肉团正从撕裂的腹腔中钻出大半，怨气夹杂着令人作呕的血腥味在空气中弥散开来。\n【系统提示：目标恐惧度急剧上升。恶灵寄生体（未成型恶灵血婴）正脱离宿主。】\n显示前端代码块<body>\n<section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\">\n  <style>\n    .wa-panel {\n      --wa-night: #070b"
+      },
+      {
+        "messageId": "7",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩亲自实施开腹手术，完整取出未成型的恶灵血婴并处理切口。猪头病患离开后，他不丢弃血婴，而是为它完成第一次整容，压低怨气，确认状态稳定后将它收留在药店内照看。随后林恩清理诊疗台，继续营业接诊。</p>",
+        "textPrefix": "林恩亲自实施开腹手术，完整取出未成型的恶灵血婴并处理切口。猪头病患离开后，他不丢弃血婴，而是为它完成第一次整容，压低怨气，确认状态稳定后将它收留在药店内照看。随后林恩清理诊疗台，继续营业接诊。"
+      },
+      {
+        "messageId": "8",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>腹腔被打开；处于尚未成型状态的恶灵血婴被完整取出；切口处理完毕。</p>\n<p>猪头病患从诊疗台上翻下，用肥硕的蹄子死死捂着缝合好的巨大肚皮，喉咙里发出极度惊恐的尖锐嘶鸣，头也不回地冲出了店门，沉重的脚步声眨眼间消失在游魂巷的黑暗里。</p>\n<p>一只胎儿状的肉团被留在了店内。</p>\n<p>肉团表面坑洼不平，散发着极度浓郁的恶臭与怨气；它在台面上剧烈蠕动，本能地想要寻找新的宿主寄生。</p>\n<p>针线穿梭，骨骼与皮肉被重新捏合。第一次整容被执行，恶灵血婴扭曲崩坏的线条被压平，散发出的黑气逐渐减弱，状态已经稳定。它被收留在药店内，暂时不再产生强烈的暴走迹象。</p>\n<p>诊疗台上的血污与黏液被清理干净。</p>\n<p>药剂店内恢复了灯火通明的状态。</p>\n<p>【系统提示：您获得了成就<q>“顾客惊吓者”</q>——您的手术风格给猪头魔留下了深刻的心理阴影。恶灵血婴已留在店内，怨气处于被压制状态。】</p>\n<p>游魂巷外，原本在店门附近徘徊的几个影子，在目睹了猪头魔满身是血、惨叫着逃跑的画面后，纷纷退回了黑暗深处。</p>\n<p>片刻之后，傍晚的店门被猛地推开。</p>\n<p>一个背着猎魔弩的瘦高男人踉跄着摔进了门内。他浑身缠绕着浓郁的黑气，那黑气仿佛有生命一般，正发出细微的啃噬声，腐蚀着他的骨骼与血肉。男人痛苦地喘息着，压抑的呼吸在安静的药剂店内显得格外沉重。</p>\n<p>【系统提示：未知访客进入药剂店。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;",
+        "textPrefix": "腹腔被打开；处于尚未成型状态的恶灵血婴被完整取出；切口处理完毕。\n猪头病患从诊疗台上翻下，用肥硕的蹄子死死捂着缝合好的巨大肚皮，喉咙里发出极度惊恐的尖锐嘶鸣，头也不回地冲出了店门，沉重的脚步声眨眼间消失在游魂巷的黑暗里。\n一只胎儿状的肉团被留在了店内。\n肉团表面坑洼不平，散发着极度浓郁的恶臭与怨气；它在台面上剧烈蠕动，本能地想要寻找新的宿主寄生。\n针线穿梭，骨骼与皮肉被重新捏合。第一次整容被执行，恶灵血婴扭曲崩坏的线条被压平，散发出的黑气逐渐减弱，状态已经稳定。它被收留在药店内，暂时不再产生强烈的暴走迹象。\n诊疗台上的血污与黏液被清理干净。\n药剂店内恢复了灯火通明的状态。\n【系统提示：您获得了成就“顾客惊吓者”——您的手术风格给猪头魔留下了深刻的心理阴影。恶灵血婴已留在店内，怨气处于被压制状态。】\n游魂巷外，原本在店门附近徘徊的几个影子，在目睹了猪头魔满身是血、惨叫着逃跑的画面后，纷纷退回了黑暗深处。\n片刻之后，傍晚的店门被猛地推开。\n一个背着猎魔弩的瘦高男人踉跄着摔进了门内。他浑身缠绕着浓郁的黑气，那黑气仿佛有生命一般，正发出细微的啃噬声，腐蚀着他的骨骼与血肉。男人痛苦地喘息着，压抑"
+      },
+      {
+        "messageId": "9",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩扶住门口的瘦高男人，让他坐上诊疗椅。他观察缠绕全身的黑气并检查骨骼疼痛位置，要求对方说明中毒经过和可以支付的诊金。</p>",
+        "textPrefix": "林恩扶住门口的瘦高男人，让他坐上诊疗椅。他观察缠绕全身的黑气并检查骨骼疼痛位置，要求对方说明中毒经过和可以支付的诊金。"
+      },
+      {
+        "messageId": "10",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>门口的瘦高男人被扶住，随后坐上了诊疗椅。缠绕在其全身的黑气被观察；骨骼疼痛的位置被依次检查。说明中毒经过和可以支付的诊金的要求被提出。</p>\n<p>瘦高男人靠在诊疗椅的靠背上，浑身的肌肉因为剧痛而紧绷，额角青筋暴起。那股黑气如同活物般顺着他的皮肉向内钻探，骨骼深处发出令人牙酸的微弱啃噬声。</p>\n<p><q>“黑蝴蝶……剧毒。”</q>男人咬着牙，从喉咙里挤出破碎的声音，他带着敬畏又提防的眼神，用余光扫视着这间充斥着各种怪异气息的药剂店，<q>“是地表世界上死灵气与怨念的聚合体。那东西……正在啃我的骨头。”</q></p>\n<p>听到关于诊金的询问，他艰难地挪动那只尚未完全被黑气吞没的手臂，从破旧的风衣内侧摸出了一把泛着苍白金属光泽的左轮手枪。</p>\n<p><q>“砰”</q>的一声闷响，手枪被沉甸甸地拍在旁边的台面上。</p>\n<p><q>“传说级……对恶灵和吸血鬼伤害极高，但它带着诅咒，子弹必定无法命中目标。”</q>男人的呼吸被压抑得极度沉重，冷汗不断滑落，<q>“如果你能把毒从我的骨头里刮出来……治好我……它就是你的报酬。”</q></p>\n<p>【系统提示：目标为人类猎魔人（混乱善良）。确诊感染黑蝴蝶剧毒，毒素已侵入骨髓。清除该剧毒需切开皮肉，直接对受感染的骨骼进行刮骨疗伤。目标出示的抵押物为传说级受诅咒武器【苍白狩魔者】。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;section class=\"wa-panel\" data-wa-status-",
+        "textPrefix": "门口的瘦高男人被扶住，随后坐上了诊疗椅。缠绕在其全身的黑气被观察；骨骼疼痛的位置被依次检查。说明中毒经过和可以支付的诊金的要求被提出。\n瘦高男人靠在诊疗椅的靠背上，浑身的肌肉因为剧痛而紧绷，额角青筋暴起。那股黑气如同活物般顺着他的皮肉向内钻探，骨骼深处发出令人牙酸的微弱啃噬声。\n“黑蝴蝶……剧毒。”男人咬着牙，从喉咙里挤出破碎的声音，他带着敬畏又提防的眼神，用余光扫视着这间充斥着各种怪异气息的药剂店，“是地表世界上死灵气与怨念的聚合体。那东西……正在啃我的骨头。”\n听到关于诊金的询问，他艰难地挪动那只尚未完全被黑气吞没的手臂，从破旧的风衣内侧摸出了一把泛着苍白金属光泽的左轮手枪。\n“砰”的一声闷响，手枪被沉甸甸地拍在旁边的台面上。\n“传说级……对恶灵和吸血鬼伤害极高，但它带着诅咒，子弹必定无法命中目标。”男人的呼吸被压抑得极度沉重，冷汗不断滑落，“如果你能把毒从我的骨头里刮出来……治好我……它就是你的报酬。”\n【系统提示：目标为人类猎魔人（混乱善良）。确诊感染黑蝴蝶剧毒，毒素已侵入骨髓。清除该剧毒需切开皮肉，直接对受感染的骨骼进行刮骨疗伤。目标出示的抵押物为传说级受诅咒武器【苍白狩魔者"
+      },
+      {
+        "messageId": "11",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩明确诊断为黑蝴蝶剧毒，亲自用剔骨刀刮除侵入骨面的毒性组织并完成止血、包扎。治疗结束后，他接受那把受诅咒的传说左轮作为诊金，听完夜晚的危险警告。等猎魔人离店，林恩关好门窗，留在店内观察，直到夜幕降临、魂灯熄灭。</p>",
+        "textPrefix": "林恩明确诊断为黑蝴蝶剧毒，亲自用剔骨刀刮除侵入骨面的毒性组织并完成止血、包扎。治疗结束后，他接受那把受诅咒的传说左轮作为诊金，听完夜晚的危险警告。等猎魔人离店，林恩关好门窗，留在店内观察，直到夜幕降临、魂灯熄灭。"
+      },
+      {
+        "messageId": "12",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>黑蝴蝶剧毒被明确诊断。</p>\n<p>剔骨刀被用于直接刮除侵入骨面的毒性组织；刀尖划过骨骼的刺耳声响中，毒素被剥离；止血与包扎随后完成。受诅咒的传说级左轮【苍白狩魔者】被作为诊金收下。</p>\n<p>在整个刮骨过程中，奥卡洛斯疼得额角青筋暴起，浑身肌肉痉挛，但他死死咬着牙，只从喉咙深处挤出沉重的喘息。治疗结束后，他扶着金属台面勉力站起身，苍白的脸上透着敬畏与警惕。</p>\n<p><q>“听着，小伙子……”</q>奥卡洛斯将猎魔弩重新背好，临走前压低了声音，<q>“今夜游魂巷有不得了的家伙。锁好门，千万别出去……如果你能活到明天，我们还会再见面。”</q></p>\n<p>瘦高的背影跌跌撞撞地推开门，消失在昏暗的巷道里。</p>\n<p>门窗被关严上锁。对店外的观察持续推进，直到夜幕完全降临。</p>\n<p>挂在门楣下的猩红魂灯在阴风中挣扎了几下，火苗内收，最终彻底熄灭。药剂店外围的庇护随之消散。</p>\n<p>午夜时分。</p>\n<p><q>“咚，咚，咚。”</q></p>\n<p>大门被敲响。一个沙哑的、仿佛在咀嚼骨头般的声音从外头传了进来。</p>\n<p><q>“林恩，是我，提前回来了。开门。”</q></p>\n<p>那是老师血锯狂人的嗓音。</p>\n<p>就在敲门声落下的数秒后，远处的街道尽头突然传来一种极其沉重的脚步声。每一次落足似乎都让地面产生了颤动。那股庞大的压迫感迅速逼近，让整条游魂巷黑暗里原本窸窸窣窣的动静瞬间死寂。</p>\n<p>【系统提示：魂灯已熄灭，夜危警告应验。门外存在高危异常响应。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-ht",
+        "textPrefix": "黑蝴蝶剧毒被明确诊断。\n剔骨刀被用于直接刮除侵入骨面的毒性组织；刀尖划过骨骼的刺耳声响中，毒素被剥离；止血与包扎随后完成。受诅咒的传说级左轮【苍白狩魔者】被作为诊金收下。\n在整个刮骨过程中，奥卡洛斯疼得额角青筋暴起，浑身肌肉痉挛，但他死死咬着牙，只从喉咙深处挤出沉重的喘息。治疗结束后，他扶着金属台面勉力站起身，苍白的脸上透着敬畏与警惕。\n“听着，小伙子……”奥卡洛斯将猎魔弩重新背好，临走前压低了声音，“今夜游魂巷有不得了的家伙。锁好门，千万别出去……如果你能活到明天，我们还会再见面。”\n瘦高的背影跌跌撞撞地推开门，消失在昏暗的巷道里。\n门窗被关严上锁。对店外的观察持续推进，直到夜幕完全降临。\n挂在门楣下的猩红魂灯在阴风中挣扎了几下，火苗内收，最终彻底熄灭。药剂店外围的庇护随之消散。\n午夜时分。\n“咚，咚，咚。”\n大门被敲响。一个沙哑的、仿佛在咀嚼骨头般的声音从外头传了进来。\n“林恩，是我，提前回来了。开门。”\n那是老师血锯狂人的嗓音。\n就在敲门声落下的数秒后，远处的街道尽头突然传来一种极其沉重的脚步声。每一次落足似乎都让地面产生了颤动。那股庞大的压迫感迅速逼近，让整条游魂巷黑暗里原本窸"
+      },
+      {
+        "messageId": "13",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩没有因为门外模仿老师的声音开门。他隔着门确认对方不是血锯，立刻用怨灵发丝缠住伪装者的脖颈，再用剔骨刀结束威胁。处理完欺诈者后，他仍留在魂灯附近，警惕那阵更沉重的脚步；若对方确实求医，他会先询问病症。</p>",
+        "textPrefix": "林恩没有因为门外模仿老师的声音开门。他隔着门确认对方不是血锯，立刻用怨灵发丝缠住伪装者的脖颈，再用剔骨刀结束威胁。处理完欺诈者后，他仍留在魂灯附近，警惕那阵更沉重的脚步；若对方确实求医，他会先询问病症。"
+      },
+      {
+        "messageId": "14",
+        "iframeCount": 1,
+        "hasStatusRootInFrame": true,
+        "htmlPrefix": "<p>门外的声音被确认并非属于血锯本人。</p>\n<p>怨灵发丝迅速穿过门缝游蹿而出，死死缠住了伪装者的脖颈。伴随着剔骨刀的穿透与致命切割，前一刻还在模仿的嗓音瞬息化作了残破的内脏摩擦声；血肉欺诈者的威胁被彻底结束，一具没有固定形态的软烂尸体倒在了门外。</p>\n<p>魂灯附近的区域继续被留守。</p>\n<p>随着第一波威胁被清除，那阵令地面隐隐颤抖的极沉重脚步声终于抵达了药剂店所在的位置。</p>\n<p>巨大的阴影将整个门外的街道彻底填满。一颗极其庞大、甚至比整个店门还要高出许多的婴儿头颅出现在黑暗中，其底部连接着无数蜿蜒翻涌的粗壮触手。压倒性的体型将唯一的出口彻底封死。</p>\n<p>这颗巨型婴儿头颅的面部因为某种巨大的痛苦而紧紧扭曲在一起。一条粗硕的触手啪的一声重重扒住了门框，沉闷而带着浓重回音的声音从外面滚滚传来：</p>\n<p><q>“疼……牙——好疼——”</q></p>\n<p>对于病症的询问被即时抛出。</p>\n<p><q>“后面……里面……”</q>它一边发出令窗户玻璃嗡嗡作响的痛苦呜咽，一边缓缓咧开了深渊巨口。强烈的腥风涌入店内，暴露出一排排如磨盘般巨大的森白牙齿。在最深处的后槽牙区域，隐约可见红肿的异状。</p>\n<p>【系统提示：血肉欺诈者已被击杀。目标为游魂巷夜间来客（根源级未知畸形生命体，等级？？？）。目标主诉严重牙痛，请深入其口腔内部进行探查与确诊。】</p>\n<div class=\"TH-render\"><div class=\"TH-collapse-code-block-button hidden!\">显示前端代码块</div><pre class=\"hidden!\"><code class=\"custom-html custom-language-html\">&lt;body&gt;\n&lt;section class=\"wa-panel\"",
+        "textPrefix": "门外的声音被确认并非属于血锯本人。\n怨灵发丝迅速穿过门缝游蹿而出，死死缠住了伪装者的脖颈。伴随着剔骨刀的穿透与致命切割，前一刻还在模仿的嗓音瞬息化作了残破的内脏摩擦声；血肉欺诈者的威胁被彻底结束，一具没有固定形态的软烂尸体倒在了门外。\n魂灯附近的区域继续被留守。\n随着第一波威胁被清除，那阵令地面隐隐颤抖的极沉重脚步声终于抵达了药剂店所在的位置。\n巨大的阴影将整个门外的街道彻底填满。一颗极其庞大、甚至比整个店门还要高出许多的婴儿头颅出现在黑暗中，其底部连接着无数蜿蜒翻涌的粗壮触手。压倒性的体型将唯一的出口彻底封死。\n这颗巨型婴儿头颅的面部因为某种巨大的痛苦而紧紧扭曲在一起。一条粗硕的触手啪的一声重重扒住了门框，沉闷而带着浓重回音的声音从外面滚滚传来：\n“疼……牙——好疼——”\n对于病症的询问被即时抛出。\n“后面……里面……”它一边发出令窗户玻璃嗡嗡作响的痛苦呜咽，一边缓缓咧开了深渊巨口。强烈的腥风涌入店内，暴露出一排排如磨盘般巨大的森白牙齿。在最深处的后槽牙区域，隐约可见红肿的异状。\n【系统提示：血肉欺诈者已被击杀。目标为游魂巷夜间来客（根源级未知畸形生命体，等级？？？）。目标主诉严重牙"
+      },
+      {
+        "messageId": "15",
+        "iframeCount": 0,
+        "hasStatusRootInFrame": false,
+        "htmlPrefix": "<p>林恩确认巨大来客是在求医后开门接诊，保持冷静询问牙疼的位置与持续时间。他同意亲自检查口腔，让对方张嘴并配合照明，自己进入口腔寻找病因。</p>",
+        "textPrefix": "林恩确认巨大来客是在求医后开门接诊，保持冷静询问牙疼的位置与持续时间。他同意亲自检查口腔，让对方张嘴并配合照明，自己进入口腔寻找病因。"
+      }
+    ],
+    "frames": [
+      {
+        "name": "TH-message--0--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--2--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--4--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--6--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--8--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--10--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--12--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-message--14--0",
+        "src": null,
+        "hasStatusRoot": true,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--预设仓库--641e39f3-7292-46ad-8383-3858a89df4a3",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--可视化前端-V16.3-Crino--7388f734-8ffd-4557-ac39-ed6d30b5a637",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--诡异药剂师v0.5｜MVU 固定版本加载器--tavernweave-mvu-loader-v0.5",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": true,
+        "visibleError": null
+      },
+      {
+        "name": "TH-script--诡异药剂师v0.5｜MVU Zod Schema--tavernweave-mvu-schema-v0.5",
+        "src": null,
+        "hasStatusRoot": false,
+        "hasMvu": false,
+        "visibleError": null
+      }
+    ],
+    "helperScripts": [],
+    "regexProbe": {
+      "allowedCardRegexes": [
+        {
+          "id": "tavernweave-hide-status-prompt-v0.5",
+          "disabled": false,
+          "markdownOnly": false,
+          "promptOnly": true
+        },
+        {
+          "id": "tavernweave-status-ui-v0.5",
+          "disabled": false,
+          "markdownOnly": true,
+          "promptOnly": false
+        },
+        {
+          "id": "tavernweave-hide-mvu-v0.5",
+          "disabled": false,
+          "markdownOnly": true,
+          "promptOnly": false
+        },
+        {
+          "id": "tavernweave-hide-think-prompt-v0.5",
+          "disabled": false,
+          "markdownOnly": false,
+          "promptOnly": true
+        },
+        {
+          "id": "tavernweave-hide-think-display-v0.5",
+          "disabled": false,
+          "markdownOnly": true,
+          "promptOnly": false
+        }
+      ],
+      "currentCharacterIndex": "0",
+      "currentAvatar": "《诡异药剂师》v0.5-E06回归-20260810-J.png",
+      "importedAllowlist": [
+        "全班第一的奖励是性处理岗位.png",
+        "朋友圈奇谈（男）.png",
+        "《城管模拟器》夫人，你也不想你烤冷面没人来吧.png",
+        "原神.png",
+        "少女勇者的轮回冒险.png",
+        "《道渊》v5.1.png",
+        "《道渊》v5.11.png",
+        "~视我如己出的柔情师母.png",
+        "剑与丹.png",
+        "千纱-DS鲸鱼版.png",
+        "修仙世界.png",
+        "清月师尊.png",
+        "银麒赎世.png",
+        "本格修仙.png",
+        "欲望风俗店V3.0.png",
+        "现实宝可梦.png",
+        "苍玄界.png",
+        "萧谴写卡助手版_V4.5.1.png",
+        "Ye_Lingshuang_v1.png",
+        "《诡异药剂师：血锯药剂店》v0.1.png",
+        "《诡异药剂师：血锯药剂店》v0.2.png",
+        "《诡异药剂师：血锯药剂店》v0.21.png",
+        "《诡异药剂师》v0.3.png",
+        "《诡异药剂师》v0.31.png",
+        "《诡异药剂师》v0.32.png",
+        "《诡异药剂师》v0.3.3.1.png",
+        "《诡异药剂师》v0.3.3.11.png",
+        "《诡异药剂师》v0.4.png",
+        "小女仆大世界.png",
+        "锁和钥.png",
+        "日式中专大乱斗.png",
+        "《道渊》v5.3.png",
+        "Skill完整导入临时卡-1785901216502.png",
+        "调试测试卡.png",
+        "枫和汐.png",
+        "枫和汐1.png",
+        "枫和汐6.png",
+        "林芃芃.png",
+        "《诡异药剂师》v0.5.png",
+        "《诡异药剂师》v0.png",
+        "《诡异药剂师》v0.5-概念双路验收-20260809-A.png",
+        "《诡异药剂师》v0.5-E06玩家长测-20260810-A.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-B.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-C.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-D.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-J.png"
+      ],
+      "contextAllowlist": [
+        "全班第一的奖励是性处理岗位.png",
+        "朋友圈奇谈（男）.png",
+        "《城管模拟器》夫人，你也不想你烤冷面没人来吧.png",
+        "原神.png",
+        "少女勇者的轮回冒险.png",
+        "《道渊》v5.1.png",
+        "《道渊》v5.11.png",
+        "~视我如己出的柔情师母.png",
+        "剑与丹.png",
+        "千纱-DS鲸鱼版.png",
+        "修仙世界.png",
+        "清月师尊.png",
+        "银麒赎世.png",
+        "本格修仙.png",
+        "欲望风俗店V3.0.png",
+        "现实宝可梦.png",
+        "苍玄界.png",
+        "萧谴写卡助手版_V4.5.1.png",
+        "Ye_Lingshuang_v1.png",
+        "《诡异药剂师：血锯药剂店》v0.1.png",
+        "《诡异药剂师：血锯药剂店》v0.2.png",
+        "《诡异药剂师：血锯药剂店》v0.21.png",
+        "《诡异药剂师》v0.3.png",
+        "《诡异药剂师》v0.31.png",
+        "《诡异药剂师》v0.32.png",
+        "《诡异药剂师》v0.3.3.1.png",
+        "《诡异药剂师》v0.3.3.11.png",
+        "《诡异药剂师》v0.4.png",
+        "小女仆大世界.png",
+        "锁和钥.png",
+        "日式中专大乱斗.png",
+        "《道渊》v5.3.png",
+        "Skill完整导入临时卡-1785901216502.png",
+        "调试测试卡.png",
+        "枫和汐.png",
+        "枫和汐1.png",
+        "枫和汐6.png",
+        "林芃芃.png",
+        "《诡异药剂师》v0.5.png",
+        "《诡异药剂师》v0.png",
+        "《诡异药剂师》v0.5-概念双路验收-20260809-A.png",
+        "《诡异药剂师》v0.5-E06玩家长测-20260810-A.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-B.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-C.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-D.png",
+        "《诡异药剂师》v0.5-E06回归-20260810-J.png"
+      ],
+      "scopedAllCount": 5,
+      "scopedAllowedCount": 5,
+      "rawHasStatusPlaceholder": false,
+      "transformedHasStatusRoot": false,
+      "transformedHasUpdateVariable": false,
+      "transformedChars": 67
+    }
+  },
+  "consoleEntries": [
+    {
+      "at": "2026-08-10T14:04:36.511Z",
+      "type": "debug",
+      "text": "saw no avatars"
+    },
+    {
+      "at": "2026-08-10T14:04:36.584Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:36.588Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:36.589Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:36.591Z",
+      "type": "info",
+      "text": "Rendered 16 messages in 0.049 seconds."
+    },
+    {
+      "at": "2026-08-10T14:04:36.748Z",
+      "type": "debug",
+      "text": "Event emitted: character_editor_opened"
+    },
+    {
+      "at": "2026-08-10T14:04:36.748Z",
+      "type": "debug",
+      "text": "Event emitted: chat_id_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:36.847Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06回归-20260810-J's lore has 102 world info entries [《诡异药剂师》v0.5-E06回归-20260810-J]"
+    },
+    {
+      "at": "2026-08-10T14:04:36.848Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:36.849Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #15.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:36.849Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:37.248Z",
+      "type": "verbose",
+      "text": "[DOM] Password field is not contained in a form: (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o"
+    },
+    {
+      "at": "2026-08-10T14:04:37.311Z",
+      "type": "debug",
+      "text": "User Agent {browser: Object, os: Object, platform: Object, engine: Object}"
+    },
+    {
+      "at": "2026-08-10T14:04:38.260Z",
+      "type": "warning",
+      "text": "No input elements found for key: api_key_comfy_runpod"
+    },
+    {
+      "at": "2026-08-10T14:04:38.264Z",
+      "type": "log",
+      "text": "Loading locale data from ./locales/zh-cn.json"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: kobold"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: novel"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: openai"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: textgenerationwebui"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: context"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: instruct"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: sysprompt"
+    },
+    {
+      "at": "2026-08-10T14:04:38.300Z",
+      "type": "debug",
+      "text": "Registering preset manager for API: reasoning"
+    },
+    {
+      "at": "2026-08-10T14:04:38.619Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded_before"
+    },
+    {
+      "at": "2026-08-10T14:04:38.620Z",
+      "type": "debug",
+      "text": "Preset samplers order: 6,0,1,2,3,4,5"
+    },
+    {
+      "at": "2026-08-10T14:04:38.621Z",
+      "type": "debug",
+      "text": "Preset samplers order: 1,5,0,2,3,4"
+    },
+    {
+      "at": "2026-08-10T14:04:38.622Z",
+      "type": "debug",
+      "text": "Text Completions: loading selected samplers"
+    },
+    {
+      "at": "2026-08-10T14:04:38.636Z",
+      "type": "debug",
+      "text": "Preset samplers order: 6,0,1,3,4,2,5"
+    },
+    {
+      "at": "2026-08-10T14:04:38.636Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [repetition_penalty, presence_penalty, frequency_penalty, dry, temperature, dynamic_temperature, quadratic_sampling, top_n_sigma, top_k, top_p, typical_p, epsilon_cutoff, eta_cutoff, tfs, top_a, min_p, mirostat, xtc, encoder_repetition_penalty, no_repeat_ngram]"
+    },
+    {
+      "at": "2026-08-10T14:04:38.636Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [penalties, dry, top_n_sigma, top_k, typ_p, tfs_z, typical_p, xtc, top_p, adaptive_p, min_p, temperature]"
+    },
+    {
+      "at": "2026-08-10T14:04:38.637Z",
+      "type": "debug",
+      "text": "Preset samplers order:  [dry, penalties, no_repeat_ngram, temperature, top_nsigma, top_p_top_k, top_a, min_p, tfs, eta_cutoff, epsilon_cutoff, typical_p, quadratic, xtc]"
+    },
+    {
+      "at": "2026-08-10T14:04:38.677Z",
+      "type": "debug",
+      "text": "Event emitted: chatcompletion_model_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:38.686Z",
+      "type": "debug",
+      "text": "Event emitted: chatcompletion_source_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:38.692Z",
+      "type": "debug",
+      "text": "poweruser.chat_display 1"
+    },
+    {
+      "at": "2026-08-10T14:04:38.692Z",
+      "type": "debug",
+      "text": "applying bubblechat"
+    },
+    {
+      "at": "2026-08-10T14:04:38.705Z",
+      "type": "debug",
+      "text": "aborting MUI reset 0"
+    },
+    {
+      "at": "2026-08-10T14:04:38.708Z",
+      "type": "debug",
+      "text": "aborting MUI reset 0"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_story_string to {{#if anchorBefore}}{{anchorBefore}}\n{{/if}}{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}{{#if anchorAfter}}{{anchorAfter}}\n{{/if}}"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_example_separator to ***"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_chat_start to ***"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_use_stop_strings to true"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_names_as_stop_strings to true"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_story_string_position to 0"
+    },
+    {
+      "at": "2026-08-10T14:04:38.725Z",
+      "type": "debug",
+      "text": "Setting context_story_string_position to 0"
+    },
+    {
+      "at": "2026-08-10T14:04:38.728Z",
+      "type": "debug",
+      "text": "Setting context_story_string_depth to 1"
+    },
+    {
+      "at": "2026-08-10T14:04:38.728Z",
+      "type": "debug",
+      "text": "Setting context_story_string_role to 0"
+    },
+    {
+      "at": "2026-08-10T14:04:38.730Z",
+      "type": "debug",
+      "text": "skipping movingUI state load"
+    },
+    {
+      "at": "2026-08-10T14:04:38.740Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded_after"
+    },
+    {
+      "at": "2026-08-10T14:04:38.740Z",
+      "type": "debug",
+      "text": "value? openai"
+    },
+    {
+      "at": "2026-08-10T14:04:38.740Z",
+      "type": "debug",
+      "text": "hiding settings?"
+    },
+    {
+      "at": "2026-08-10T14:04:38.741Z",
+      "type": "debug",
+      "text": "returning full samplers array"
+    },
+    {
+      "at": "2026-08-10T14:04:38.750Z",
+      "type": "debug",
+      "text": "Event emitted: extensions_first_load"
+    },
+    {
+      "at": "2026-08-10T14:04:38.751Z",
+      "type": "error",
+      "text": "Refused to apply style from 'http://127.0.0.1:8000/%E5%AD%97%E4%BD%93%E9%93%BE%E6%8E%A5' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled."
+    },
+    {
+      "at": "2026-08-10T14:04:38.777Z",
+      "type": "debug",
+      "text": "Activating extension translate"
+    },
+    {
+      "at": "2026-08-10T14:04:38.782Z",
+      "type": "debug",
+      "text": "Activating extension connection-manager"
+    },
+    {
+      "at": "2026-08-10T14:04:38.806Z",
+      "type": "debug",
+      "text": "Activating extension third-party/ST-Prompt-Template"
+    },
+    {
+      "at": "2026-08-10T14:04:38.877Z",
+      "type": "debug",
+      "text": "Activating extension regex"
+    },
+    {
+      "at": "2026-08-10T14:04:38.978Z",
+      "type": "log",
+      "text": "monaco-editor loaded.  Module"
+    },
+    {
+      "at": "2026-08-10T14:04:38.978Z",
+      "type": "log",
+      "text": "ST-Prompt-Template initialized"
+    },
+    {
+      "at": "2026-08-10T14:04:38.990Z",
+      "type": "log",
+      "text": "[Prompt Template] Faker loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:38.990Z",
+      "type": "log",
+      "text": "[Aircraft, BitcoinAddressFamily, BitcoinNetwork, CssFunction, CssSpace, Faker, FakerError, IPv4Network, Sex, SimpleFaker, af_ZA, allFakers, allLocales, ar, az, base, bn_BD, cs_CZ, cy, da, de, de_AT, de_CH, dv, el, en, en_AU, en_AU_ocker, en_BORK, en_CA, en_GB, en_GH, en_HK, en_IE, en_IN, en_NG, en_US, en_ZA, eo, es, es_MX, fa, faker, fakerAF_ZA, fakerAR, fakerAZ, fakerBASE, fakerBN_BD, fakerCS_CZ, fakerCY, fakerDA, fakerDE, fakerDE_AT, fakerDE_CH, fakerDV, fakerEL, fakerEN, fakerEN_AU, fakerEN_AU_ocker, fakerEN_BORK, fakerEN_CA, fakerEN_GB, fakerEN_GH, fakerEN_HK, fakerEN_IE, fakerEN_IN, fakerEN_NG, fakerEN_US, fakerEN_ZA, fakerEO, fakerES, fakerES_MX, fakerFA, fakerFI, fakerFR, fakerFR_BE, fakerFR_CA, fakerFR_CH, fakerFR_LU, fakerFR_SN, fakerHE, fakerHR, fakerHU, fakerHY, fakerID_ID, fakerIT, fakerJA, fakerKA_GE, fakerKO, fakerLV, fakerMK, fakerNB_NO, fakerNE, fakerNL, fakerNL_BE, fakerPL, fakerPT_BR, fakerPT_PT, fakerRO, fakerRO_MD]"
+    },
+    {
+      "at": "2026-08-10T14:04:38.991Z",
+      "type": "log",
+      "text": "[Prompt Template] xxhash loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:38.991Z",
+      "type": "debug",
+      "text": "Activating extension attachments"
+    },
+    {
+      "at": "2026-08-10T14:04:39.015Z",
+      "type": "debug",
+      "text": "Window resize: 1440x900 -> 1440x900"
+    },
+    {
+      "at": "2026-08-10T14:04:39.015Z",
+      "type": "debug",
+      "text": "Zoom: 1, X:1440, Y:900, original: 1440x900 "
+    },
+    {
+      "at": "2026-08-10T14:04:39.016Z",
+      "type": "debug",
+      "text": "Activating extension caption"
+    },
+    {
+      "at": "2026-08-10T14:04:39.031Z",
+      "type": "debug",
+      "text": "Activating extension expressions"
+    },
+    {
+      "at": "2026-08-10T14:04:39.050Z",
+      "type": "debug",
+      "text": "skipping movingUI state load"
+    },
+    {
+      "at": "2026-08-10T14:04:39.050Z",
+      "type": "debug",
+      "text": "Activating extension gallery"
+    },
+    {
+      "at": "2026-08-10T14:04:39.062Z",
+      "type": "debug",
+      "text": "Activating extension memory"
+    },
+    {
+      "at": "2026-08-10T14:04:39.065Z",
+      "type": "debug",
+      "text": "Activating extension stable-diffusion"
+    },
+    {
+      "at": "2026-08-10T14:04:39.095Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T14:04:39.098Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T14:04:39.102Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T14:04:39.133Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T14:04:39.150Z",
+      "type": "debug",
+      "text": "Activating extension third-party/LittleWhiteBox"
+    },
+    {
+      "at": "2026-08-10T14:04:39.280Z",
+      "type": "debug",
+      "text": "callExtensionHook: Calling hook \"activate\" (function \"activate\") for extension \"third-party/LittleWhiteBox\""
+    },
+    {
+      "at": "2026-08-10T14:04:39.294Z",
+      "type": "debug",
+      "text": "callExtensionHook: Hook \"activate\" completed for extension \"third-party/LittleWhiteBox\""
+    },
+    {
+      "at": "2026-08-10T14:04:39.294Z",
+      "type": "debug",
+      "text": "Activating extension tts"
+    },
+    {
+      "at": "2026-08-10T14:04:39.316Z",
+      "type": "debug",
+      "text": "Activating extension quick-reply"
+    },
+    {
+      "at": "2026-08-10T14:04:39.322Z",
+      "type": "info",
+      "text": "Using default TTS Provider settings"
+    },
+    {
+      "at": "2026-08-10T14:04:39.322Z",
+      "type": "debug",
+      "text": "SystemTTS: Settings loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:39.335Z",
+      "type": "debug",
+      "text": "Activating extension assets"
+    },
+    {
+      "at": "2026-08-10T14:04:39.461Z",
+      "type": "debug",
+      "text": "Activating extension token-counter"
+    },
+    {
+      "at": "2026-08-10T14:04:39.471Z",
+      "type": "debug",
+      "text": "Activating extension third-party/JS-Slash-Runner"
+    },
+    {
+      "at": "2026-08-10T14:04:39.487Z",
+      "type": "debug",
+      "text": "callExtensionHook: Calling hook \"activate\" (function \"activateTauriTavernChatSurface\") for extension \"third-party/JS-Slash-Runner\""
+    },
+    {
+      "at": "2026-08-10T14:04:39.830Z",
+      "type": "log",
+      "text": "[QR2] sets:  [QuickReplySet]"
+    },
+    {
+      "at": "2026-08-10T14:04:39.830Z",
+      "type": "log",
+      "text": "[QR2] settings:  QuickReplySettings"
+    },
+    {
+      "at": "2026-08-10T14:04:40.230Z",
+      "type": "warning",
+      "text": "Settings not ready, scheduling another save"
+    },
+    {
+      "at": "2026-08-10T14:04:40.391Z",
+      "type": "debug",
+      "text": "callExtensionHook: Hook \"activate\" completed for extension \"third-party/JS-Slash-Runner\""
+    },
+    {
+      "at": "2026-08-10T14:04:40.392Z",
+      "type": "debug",
+      "text": "Activating extension vectors"
+    },
+    {
+      "at": "2026-08-10T14:04:40.392Z",
+      "type": "warning",
+      "text": "[DEPRECATED] MacrosParser.registerMacro is deprecated and will be removed in a future version. Use macros.registry.registerMacro (from scripts/macros/macro-system.js) or substituteParams({ dynamicMacros }) instead."
+    },
+    {
+      "at": "2026-08-10T14:04:40.392Z",
+      "type": "warning",
+      "text": "[DEPRECATED] MacrosParser.registerMacro is deprecated and will be removed in a future version. Use macros.registry.registerMacro (from scripts/macros/macro-system.js) or substituteParams({ dynamicMacros }) instead."
+    },
+    {
+      "at": "2026-08-10T14:04:40.427Z",
+      "type": "debug",
+      "text": "Event emitted: extension_settings_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:40.427Z",
+      "type": "debug",
+      "text": "returning full samplers array"
+    },
+    {
+      "at": "2026-08-10T14:04:40.427Z",
+      "type": "debug",
+      "text": "Event emitted: settings_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:40.441Z",
+      "type": "warning",
+      "text": "Failed to insert focus rule: SyntaxError: Failed to execute 'insertRule' on 'CSSStyleSheet': Failed to parse the rule '::-webkit-scrollbar-track:focus-visible { background-color: rgba(126, 126, 126, 0.2); }'.\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:144:34\n    at Array.forEach (<anonymous>)\n    at applyDynamicFocusStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:117:16)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:192:13\n    at Array.forEach (<anonymous>)\n    at initDynamicStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:190:38)\n    at firstLoadInit (http://127.0.0.1:8000/script.js:751:5)\n    at async HTMLDocument.<anonymous> (http://127.0.0.1:8000/script.js:12473:5)"
+    },
+    {
+      "at": "2026-08-10T14:04:40.443Z",
+      "type": "warning",
+      "text": "Failed to process stylesheet on initial load: SecurityError: Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules\n    at processImportedStylesheet (http://127.0.0.1:8000/scripts/dynamic-styles.js:106:28)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:66:17\n    at Array.forEach (<anonymous>)\n    at processRules (http://127.0.0.1:8000/scripts/dynamic-styles.js:60:27)\n    at applyDynamicFocusStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:111:5)\n    at http://127.0.0.1:8000/scripts/dynamic-styles.js:192:13\n    at Array.forEach (<anonymous>)\n    at initDynamicStyles (http://127.0.0.1:8000/scripts/dynamic-styles.js:190:38)\n    at firstLoadInit (http://127.0.0.1:8000/script.js:751:5)\n    at async HTMLDocument.<anonymous> (http://127.0.0.1:8000/script.js:12473:5)"
+    },
+    {
+      "at": "2026-08-10T14:04:40.905Z",
+      "type": "debug",
+      "text": "Event emitted: character_page_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:40.920Z",
+      "type": "debug",
+      "text": "saw no avatars"
+    },
+    {
+      "at": "2026-08-10T14:04:40.992Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:40.995Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:40.997Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:41.000Z",
+      "type": "info",
+      "text": "Rendered 16 messages in 0.063 seconds."
+    },
+    {
+      "at": "2026-08-10T14:04:41.056Z",
+      "type": "debug",
+      "text": "Event emitted: character_editor_opened"
+    },
+    {
+      "at": "2026-08-10T14:04:41.056Z",
+      "type": "debug",
+      "text": "Event emitted: chat_id_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:41.216Z",
+      "type": "debug",
+      "text": "getting sprites list"
+    },
+    {
+      "at": "2026-08-10T14:04:41.225Z",
+      "type": "debug",
+      "text": "Chat Completions: loading token cache"
+    },
+    {
+      "at": "2026-08-10T14:04:41.227Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06回归-20260810-J's lore has 102 world info entries [《诡异药剂师》v0.5-E06回归-20260810-J]"
+    },
+    {
+      "at": "2026-08-10T14:04:41.227Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:41.228Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #15.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.228Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.228Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.230Z",
+      "type": "debug",
+      "text": "[Prompt Template] Preprocess characterLore of 《诡异药剂师》v0.5-E06回归-20260810-J/[机制]概念事件激活路由/399"
+    },
+    {
+      "at": "2026-08-10T14:04:41.231Z",
+      "type": "debug",
+      "text": "[WI] Found 102 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-10T14:04:41.231Z",
+      "type": "log",
+      "text": "[Prompt Template] *** PRELOADING WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #15.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "log",
+      "text": "[Prompt Template] *** EVALUATING 0 WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "[]"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:BEFORE]/@@generate_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:AFTER]/@@generate_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "log",
+      "text": "[Prompt Template] processing 0 world info in 1ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.233Z",
+      "type": "log",
+      "text": "[Prompt Template] *** UPDATE ALL MESSAGES ***"
+    },
+    {
+      "at": "2026-08-10T14:04:41.234Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.234Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.234Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.236Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.247Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.248Z",
+      "type": "debug",
+      "text": "[HTML] rendering #0 message"
+    },
+    {
+      "at": "2026-08-10T14:04:41.248Z",
+      "type": "debug",
+      "text": "Event emitted: character_message_rendered"
+    },
+    {
+      "at": "2026-08-10T14:04:41.248Z",
+      "type": "log",
+      "text": "[QR2] queueing {functionToCall: , args: Array(2)}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.266Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #0 messages in 29ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #1.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #1 messages in 2ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #2.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.267Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.278Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.283Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #2 messages in 17ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.284Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #3.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.284Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.284Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.285Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.286Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.286Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #3 messages in 3ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.287Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #4.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.287Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.287Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.295Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.320Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.325Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #4 messages in 38ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.326Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #5.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.326Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.326Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.327Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.327Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.327Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #5 messages in 3ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.328Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #6.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.328Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.328Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.329Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.348Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.352Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #6 messages in 23ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #7.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.353Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.353Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.354Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.354Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #7 messages in 3ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.355Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #8.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.356Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.356Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.356Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.376Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #8 messages in 24ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #9.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.381Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #9 messages in 2ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.382Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #10.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.382Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.382Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.382Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.395Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.399Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #10 messages in 17ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.399Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #11.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.399Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.399Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.400Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.400Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.400Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #11 messages in 2ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.401Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #12.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.401Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.401Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.402Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.419Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.423Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #12 messages in 22ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.425Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #13.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.425Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.425Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.427Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.428Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.428Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #13 messages in 4ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.429Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #14.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.429Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.429Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.430Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.447Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.451Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:41.451Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #14 messages in 23ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.453Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #15.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.453Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.453Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:41.454Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.454Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-10T14:04:41.454Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #15 messages in 3ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.469Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-10T14:04:41.472Z",
+      "type": "log",
+      "text": "[QR2] queueing {functionToCall: , args: Array(1)}"
+    },
+    {
+      "at": "2026-08-10T14:04:41.472Z",
+      "type": "debug",
+      "text": "Event emitted: chatLoaded"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.505Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-10T14:04:41.598Z",
+      "type": "debug",
+      "text": "Event emitted: online_status_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:41.599Z",
+      "type": "debug",
+      "text": "setting pin class via checkbox state"
+    },
+    {
+      "at": "2026-08-10T14:04:41.599Z",
+      "type": "debug",
+      "text": "setting pin class via checkbox state"
+    },
+    {
+      "at": "2026-08-10T14:04:41.604Z",
+      "type": "debug",
+      "text": "Character context menu initialized CharacterContextMenu"
+    },
+    {
+      "at": "2026-08-10T14:04:41.615Z",
+      "type": "debug",
+      "text": "Event emitted: app_initialized"
+    },
+    {
+      "at": "2026-08-10T14:04:41.747Z",
+      "type": "debug",
+      "text": "Event emitted: app_ready"
+    },
+    {
+      "at": "2026-08-10T14:04:41.747Z",
+      "type": "debug",
+      "text": "[QR2] executing startup"
+    },
+    {
+      "at": "2026-08-10T14:04:41.747Z",
+      "type": "debug",
+      "text": "[QR2] /executing startup"
+    },
+    {
+      "at": "2026-08-10T14:04:41.747Z",
+      "type": "debug",
+      "text": "[QR2] executing queue (2 items)"
+    },
+    {
+      "at": "2026-08-10T14:04:41.747Z",
+      "type": "log",
+      "text": "[QR2] CHAT_CHANGED 《诡异药剂师》v0.5-E06回归-20260810-J - 2026-08-10@21h58m36s837ms"
+    },
+    {
+      "at": "2026-08-10T14:04:41.750Z",
+      "type": "debug",
+      "text": "[QR2] /executing queue"
+    },
+    {
+      "at": "2026-08-10T14:04:41.750Z",
+      "type": "debug",
+      "text": "[QR2] READY"
+    },
+    {
+      "at": "2026-08-10T14:04:41.959Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:41.961Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:41.984Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:41.984Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:41.984Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:41.984Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:42.017Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:42.017Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-10T14:04:42.061Z",
+      "type": "debug",
+      "text": "Event emitted: online_status_changed"
+    },
+    {
+      "at": "2026-08-10T14:04:42.318Z",
+      "type": "info",
+      "text": "变量结构注册成功"
+    },
+    {
+      "at": "2026-08-10T14:04:42.504Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.MVU变量框架"
+    },
+    {
+      "at": "2026-08-10T14:04:42.504Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.MVU变量框架"
+    },
+    {
+      "at": "2026-08-10T14:04:43.439Z",
+      "type": "debug",
+      "text": "Event emitted: global_Mvu_initialized"
+    },
+    {
+      "at": "2026-08-10T14:04:43.441Z",
+      "type": "log",
+      "text": "[ToolManager] Registered function tool: ToolDefinition"
+    },
+    {
+      "at": "2026-08-10T14:04:43.570Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-10T14:04:44.672Z",
+      "type": "log",
+      "text": "Generate entered"
+    },
+    {
+      "at": "2026-08-10T14:04:44.672Z",
+      "type": "debug",
+      "text": "Event emitted: generation_started"
+    },
+    {
+      "at": "2026-08-10T14:04:44.673Z",
+      "type": "debug",
+      "text": "Event emitted: GENERATION_AFTER_COMMANDS"
+    },
+    {
+      "at": "2026-08-10T14:04:44.673Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(3)}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.673Z",
+      "type": "log",
+      "text": "[QR2] Before-generation hook skipped due to dryRun."
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 5 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 4 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 4 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 3 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 3 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 2 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 2 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 1 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 1 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 1 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-10T14:04:44.675Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "debug",
+      "text": "Skipping extension interceptors for dry run"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "log",
+      "text": "Core/all messages: 16/16"
+    },
+    {
+      "at": "2026-08-10T14:04:44.676Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 8\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-10T14:04:44.677Z",
+      "type": "debug",
+      "text": "[WI] --- START WI SCAN (on 16 messages, trigger = normal) (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T14:04:44.677Z",
+      "type": "debug",
+      "text": "[WI] Context size: 1988000; WI budget: 1988000 (max% = 100%, cap = 0)"
+    },
+    {
+      "at": "2026-08-10T14:04:44.678Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5-E06回归-20260810-J's lore has 102 world info entries [《诡异药剂师》v0.5-E06回归-20260810-J]"
+    },
+    {
+      "at": "2026-08-10T14:04:44.678Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-10T14:04:44.678Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #15.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.678Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21927, LAST_RECEIVE_CHARS: 60363, LAST_SEND_TOKENS: 37481, LAST_SEND_CHARS: 53158, sleep_var_wenfeng: 直观性描写原则：\n- 性爱狂野化描述：禁止含蓄与隐喻。\n- 风格：粗暴直给 · 感官轰炸 · 短句打…息差才能推动剧情发展。\n- 若出现角色掌握自己不应该知道的知识，会极大破坏用户的代入感，必须避免。}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.679Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-10T14:04:44.680Z",
+      "type": "debug",
+      "text": "[Prompt Template] Preprocess characterLore of 《诡异药剂师》v0.5-E06回归-20260810-J/[机制]概念事件激活路由/399"
+    },
+    {
+      "at": "2026-08-10T14:04:44.681Z",
+      "type": "debug",
+      "text": "[WI] Found 102 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] --- SEARCHING ENTRIES (on 102 entries) ---"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 START ---"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Scan state [INITIAL, 1]"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 930, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 48, comment: [mvu_update]变量输出格式, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 920, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 47, comment: [mvu_update]当前变量, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 910, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 46, comment: [mvu_update]变量更新规则, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.682Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 900, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 45, comment: [initvar]初始变量, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 451, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 101, comment: [概念·诅咒]黑蝴蝶剧毒, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activated by primary key match 黑蝴蝶剧毒"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 447, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 97, comment: [概念·诅咒]恶灵血婴, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activated by primary key match 恶灵血婴"
+    },
+    {
+      "at": "2026-08-10T14:04:44.683Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 445, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 95, comment: [概念·能力]鬼婴塑形, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.684Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activated by primary key match 鬼婴塑形"
+    },
+    {
+      "at": "2026-08-10T14:04:44.684Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 443, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 93, comment: [概念·能力]限时诅咒清除, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.684Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activated by primary key match 诅咒清除能力"
+    },
+    {
+      "at": "2026-08-10T14:04:44.684Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 441, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 91, comment: [概念·能力]血肉灾变, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.684Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activated by primary key match 血肉灾变"
+    },
+    {
+      "at": "2026-08-10T14:04:44.685Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 433, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 83, comment: [概念·特殊设定]棒医生称号, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.686Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activated by primary key match 棒医生"
+    },
+    {
+      "at": "2026-08-10T14:04:44.686Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 432, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 82, comment: [概念·特殊设定]找妈妈任务, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.686Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activated by primary key match 找妈妈任务"
+    },
+    {
+      "at": "2026-08-10T14:04:44.686Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 429, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 79, comment: [概念·特殊设定]不眠夜规则, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.686Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activated by primary key match 不眠夜"
+    },
+    {
+      "at": "2026-08-10T14:04:44.687Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 420, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 70, comment: [概念·物品]暴击药剂, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.687Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activated by primary key match 暴击药剂"
+    },
+    {
+      "at": "2026-08-10T14:04:44.687Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 416, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 66, comment: [概念·物品]剔骨刀, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.687Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activated by primary key match 剔骨刀"
+    },
+    {
+      "at": "2026-08-10T14:04:44.687Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 415, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 65, comment: [概念·物品]传说左轮, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.688Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activated by primary key match 传说左轮"
+    },
+    {
+      "at": "2026-08-10T14:04:44.688Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 414, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 64, comment: [概念·场景]魂灯营业, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.688Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activated by primary key match 魂灯"
+    },
+    {
+      "at": "2026-08-10T14:04:44.688Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 407, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 57, comment: [概念·势力]玥玥, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.688Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activated by primary key match 玥玥"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 406, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 56, comment: [概念·势力]猎魔人·奥卡洛斯, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activated by primary key match 猎魔人"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 405, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 55, comment: [概念·势力]猎神者, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activated by primary key match 猎神者"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 404, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 54, comment: [概念·势力]械魔, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activated by primary key match 械魔"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 403, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 53, comment: [概念·势力]情报员024, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activated by primary key match 024"
+    },
+    {
+      "at": "2026-08-10T14:04:44.689Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 399, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 49, comment: [机制]概念事件激活路由, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.690Z",
+      "type": "debug",
+      "text": "[WI] Entry 399 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-10T14:04:44.690Z",
+      "type": "debug",
+      "text": "[WI] Entry 319 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 319, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 44, comment: [事件]E20·师徒归来与阶段收束, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.690Z",
+      "type": "debug",
+      "text": "[WI] Entry 319 activated by primary key match E20"
+    },
+    {
+      "at": "2026-08-10T14:04:44.690Z",
+      "type": "debug",
+      "text": "[WI] Entry 318 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 318, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 43, comment: [事件]E19·猎头者家族绑定, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.691Z",
+      "type": "debug",
+      "text": "[WI] Entry 318 activated by primary key match E19"
+    },
+    {
+      "at": "2026-08-10T14:04:44.691Z",
+      "type": "debug",
+      "text": "[WI] Entry 317 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 317, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 42, comment: [事件]E18·倒吊塔决战与协会覆灭, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.691Z",
+      "type": "debug",
+      "text": "[WI] Entry 317 activated by primary key match E18"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 316 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 316, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 41, comment: [事件]E17·小小介绍棒医生, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 316 activated by primary key match E17"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 315 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 315, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 40, comment: [事件]E16·械魔大军与猎神者, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 315 activated by primary key match E16"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 314 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 314, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 39, comment: [事件]E15·求援信与小小赴约, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 314 activated by primary key match E15"
+    },
+    {
+      "at": "2026-08-10T14:04:44.692Z",
+      "type": "debug",
+      "text": "[WI] Entry 313 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 313, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 38, comment: [事件]E14·瘦长鬼影手术与024诊断, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 313 activated by primary key match E14"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 312 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 312, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 37, comment: [事件]E13·猎杀者夜袭与信使线, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 312 activated by primary key match E13"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 311 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 311, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 36, comment: [事件]E12·血肉灾变与左手共存, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 311 activated by primary key match E12"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 310 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 310, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 35, comment: [事件]E11·血夜地狱行者与左左诞生, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 310 activated by primary key match E11"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 309 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 309, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 34, comment: [事件]E10·视界经营与玥玥治疗, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 309 activated by primary key match E10"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 308 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 308, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 33, comment: [事件]E09·血衣鸿门宴与诅咒绑定, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 308 activated by primary key match E09"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 307 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 307, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 32, comment: [事件]E08·暴击药剂与视界曝光, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 307 activated by primary key match E08"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 306 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 306, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 31, comment: [事件]E07·血衣寻子与鬼婴萌化化解, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 306 activated by primary key match E07"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 305 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 305, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 30, comment: [事件]E06·诅咒清除能力与鬼婴塑形, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 305 activated by primary key match E06"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 304 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 304, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 29, comment: [事件]E05·不眠夜与小小牙科, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 304 activated by primary key match E05"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 303 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 303, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 28, comment: [事件]E04·猎魔人治疗与传说左轮, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 303 activated by primary key match E04"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 302 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 302, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 27, comment: [事件]E03·猪头魔与恶灵血婴, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 302 activated by primary key match E03"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 301, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 26, comment: [事件]E02·血娃娃上门与找妈妈任务, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activated by primary key match E02"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 300 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 300, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 25, comment: [事件]E01·系统觉醒与开店, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.693Z",
+      "type": "debug",
+      "text": "[WI] Entry 300 activated by primary key match E01"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 130 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 130, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 20, comment: [角色]小小, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 130 activated by primary key match 小小"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 110, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 18, comment: [角色]血锯, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activated by primary key match 血锯"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 100 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 100, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 17, comment: [角色]左左, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 100 activated by primary key match 左左"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 63 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 63, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 14, comment: [地点]凄凉荒野与倒吊塔, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 63 activated by primary key match 倒吊塔"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 60, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 12, comment: [地点]血锯药剂店, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activated by primary key match 血锯药剂店"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 41 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 41, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 7, comment: [势力]猎头者家族, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 41 activated by primary key match 猎头者家族"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 40 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 40, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 6, comment: [势力]魔人协会, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 40 activated by primary key match 械魔"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 23 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 23, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 5, comment: [机制]巨像及血肉机械技术, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.694Z",
+      "type": "debug",
+      "text": "[WI] Entry 23 activated by primary key match 械魔"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 21 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 21, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 3, comment: [机制]视界系统, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 21 activated by primary key match 视界"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 3, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 2, comment: [角色索引]八人路由索引, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 1, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 1, comment: [核心]自主世界事件调度, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 from '《诡异药剂师》v0.5-E06回归-20260810-J' processing {uid: 0, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 0, comment: [核心]最高规则与玩家主权, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activated because of constant"
+    },
+    {
+      "at": "2026-08-10T14:04:44.695Z",
+      "type": "debug",
+      "text": "[WI] Search done. Found 52 possible entries."
+    },
+    {
+      "at": "2026-08-10T14:04:44.696Z",
+      "type": "debug",
+      "text": "[WI] --- INCLUSION GROUP CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T14:04:44.696Z",
+      "type": "debug",
+      "text": "[WI] No inclusion groups found"
+    },
+    {
+      "at": "2026-08-10T14:04:44.696Z",
+      "type": "debug",
+      "text": "[WI] --- PROBABILITY CHECKS ---"
+    },
+    {
+      "at": "2026-08-10T14:04:44.696Z",
+      "type": "debug",
+      "text": "WI entry 930 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.704Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activation successful, adding to prompt {uid: 930, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 48, comment: [mvu_update]变量输出格式, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.704Z",
+      "type": "debug",
+      "text": "WI entry 920 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.709Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activation successful, adding to prompt {uid: 920, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 47, comment: [mvu_update]当前变量, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.709Z",
+      "type": "debug",
+      "text": "WI entry 910 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.718Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activation successful, adding to prompt {uid: 910, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 46, comment: [mvu_update]变量更新规则, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.718Z",
+      "type": "debug",
+      "text": "WI entry 451 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.726Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activation successful, adding to prompt {uid: 451, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 101, comment: [概念·诅咒]黑蝴蝶剧毒, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.726Z",
+      "type": "debug",
+      "text": "WI entry 447 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.732Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activation successful, adding to prompt {uid: 447, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 97, comment: [概念·诅咒]恶灵血婴, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.732Z",
+      "type": "debug",
+      "text": "WI entry 445 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.740Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activation successful, adding to prompt {uid: 445, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 95, comment: [概念·能力]鬼婴塑形, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.740Z",
+      "type": "debug",
+      "text": "WI entry 443 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.748Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activation successful, adding to prompt {uid: 443, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 93, comment: [概念·能力]限时诅咒清除, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.748Z",
+      "type": "debug",
+      "text": "WI entry 441 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.761Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activation successful, adding to prompt {uid: 441, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 91, comment: [概念·能力]血肉灾变, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.761Z",
+      "type": "debug",
+      "text": "WI entry 433 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.773Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activation successful, adding to prompt {uid: 433, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 83, comment: [概念·特殊设定]棒医生称号, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.773Z",
+      "type": "debug",
+      "text": "WI entry 432 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.783Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activation successful, adding to prompt {uid: 432, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 82, comment: [概念·特殊设定]找妈妈任务, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.783Z",
+      "type": "debug",
+      "text": "WI entry 429 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.796Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activation successful, adding to prompt {uid: 429, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 79, comment: [概念·特殊设定]不眠夜规则, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.796Z",
+      "type": "debug",
+      "text": "WI entry 420 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.805Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activation successful, adding to prompt {uid: 420, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 70, comment: [概念·物品]暴击药剂, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.806Z",
+      "type": "debug",
+      "text": "WI entry 416 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.815Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activation successful, adding to prompt {uid: 416, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 66, comment: [概念·物品]剔骨刀, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.815Z",
+      "type": "debug",
+      "text": "WI entry 415 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.826Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activation successful, adding to prompt {uid: 415, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 65, comment: [概念·物品]传说左轮, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.826Z",
+      "type": "debug",
+      "text": "WI entry 414 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.839Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activation successful, adding to prompt {uid: 414, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 64, comment: [概念·场景]魂灯营业, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.839Z",
+      "type": "debug",
+      "text": "WI entry 407 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.850Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activation successful, adding to prompt {uid: 407, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 57, comment: [概念·势力]玥玥, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.850Z",
+      "type": "debug",
+      "text": "WI entry 406 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.861Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activation successful, adding to prompt {uid: 406, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 56, comment: [概念·势力]猎魔人·奥卡洛斯, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.861Z",
+      "type": "debug",
+      "text": "WI entry 405 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.873Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activation successful, adding to prompt {uid: 405, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 55, comment: [概念·势力]猎神者, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.873Z",
+      "type": "debug",
+      "text": "WI entry 404 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.882Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activation successful, adding to prompt {uid: 404, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 54, comment: [概念·势力]械魔, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.882Z",
+      "type": "debug",
+      "text": "WI entry 403 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.893Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activation successful, adding to prompt {uid: 403, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 53, comment: [概念·势力]情报员024, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.893Z",
+      "type": "debug",
+      "text": "WI entry 319 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.907Z",
+      "type": "debug",
+      "text": "[WI] Entry 319 activation successful, adding to prompt {uid: 319, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 44, comment: [事件]E20·师徒归来与阶段收束, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.907Z",
+      "type": "debug",
+      "text": "WI entry 318 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.922Z",
+      "type": "debug",
+      "text": "[WI] Entry 318 activation successful, adding to prompt {uid: 318, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 43, comment: [事件]E19·猎头者家族绑定, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.922Z",
+      "type": "debug",
+      "text": "WI entry 317 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.938Z",
+      "type": "debug",
+      "text": "[WI] Entry 317 activation successful, adding to prompt {uid: 317, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 42, comment: [事件]E18·倒吊塔决战与协会覆灭, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.938Z",
+      "type": "debug",
+      "text": "WI entry 316 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.954Z",
+      "type": "debug",
+      "text": "[WI] Entry 316 activation successful, adding to prompt {uid: 316, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 41, comment: [事件]E17·小小介绍棒医生, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.954Z",
+      "type": "debug",
+      "text": "WI entry 315 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.967Z",
+      "type": "debug",
+      "text": "[WI] Entry 315 activation successful, adding to prompt {uid: 315, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 40, comment: [事件]E16·械魔大军与猎神者, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.967Z",
+      "type": "debug",
+      "text": "WI entry 314 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.980Z",
+      "type": "debug",
+      "text": "[WI] Entry 314 activation successful, adding to prompt {uid: 314, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 39, comment: [事件]E15·求援信与小小赴约, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.980Z",
+      "type": "debug",
+      "text": "WI entry 313 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:44.993Z",
+      "type": "debug",
+      "text": "[WI] Entry 313 activation successful, adding to prompt {uid: 313, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 38, comment: [事件]E14·瘦长鬼影手术与024诊断, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:44.993Z",
+      "type": "debug",
+      "text": "WI entry 312 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.008Z",
+      "type": "debug",
+      "text": "[WI] Entry 312 activation successful, adding to prompt {uid: 312, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 37, comment: [事件]E13·猎杀者夜袭与信使线, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.008Z",
+      "type": "debug",
+      "text": "WI entry 311 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.023Z",
+      "type": "debug",
+      "text": "[WI] Entry 311 activation successful, adding to prompt {uid: 311, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 36, comment: [事件]E12·血肉灾变与左手共存, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.023Z",
+      "type": "debug",
+      "text": "WI entry 310 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.038Z",
+      "type": "debug",
+      "text": "[WI] Entry 310 activation successful, adding to prompt {uid: 310, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 35, comment: [事件]E11·血夜地狱行者与左左诞生, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.038Z",
+      "type": "debug",
+      "text": "WI entry 309 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.054Z",
+      "type": "debug",
+      "text": "[WI] Entry 309 activation successful, adding to prompt {uid: 309, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 34, comment: [事件]E10·视界经营与玥玥治疗, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.054Z",
+      "type": "debug",
+      "text": "WI entry 308 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.070Z",
+      "type": "debug",
+      "text": "[WI] Entry 308 activation successful, adding to prompt {uid: 308, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 33, comment: [事件]E09·血衣鸿门宴与诅咒绑定, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.070Z",
+      "type": "debug",
+      "text": "WI entry 307 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.088Z",
+      "type": "debug",
+      "text": "[WI] Entry 307 activation successful, adding to prompt {uid: 307, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 32, comment: [事件]E08·暴击药剂与视界曝光, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.088Z",
+      "type": "debug",
+      "text": "WI entry 306 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.105Z",
+      "type": "debug",
+      "text": "[WI] Entry 306 activation successful, adding to prompt {uid: 306, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 31, comment: [事件]E07·血衣寻子与鬼婴萌化化解, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.105Z",
+      "type": "debug",
+      "text": "WI entry 305 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.122Z",
+      "type": "debug",
+      "text": "[WI] Entry 305 activation successful, adding to prompt {uid: 305, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 30, comment: [事件]E06·诅咒清除能力与鬼婴塑形, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.123Z",
+      "type": "debug",
+      "text": "WI entry 304 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.141Z",
+      "type": "debug",
+      "text": "[WI] Entry 304 activation successful, adding to prompt {uid: 304, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 29, comment: [事件]E05·不眠夜与小小牙科, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.141Z",
+      "type": "debug",
+      "text": "WI entry 303 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.160Z",
+      "type": "debug",
+      "text": "[WI] Entry 303 activation successful, adding to prompt {uid: 303, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 28, comment: [事件]E04·猎魔人治疗与传说左轮, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.160Z",
+      "type": "debug",
+      "text": "WI entry 302 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.180Z",
+      "type": "debug",
+      "text": "[WI] Entry 302 activation successful, adding to prompt {uid: 302, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 27, comment: [事件]E03·猪头魔与恶灵血婴, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.180Z",
+      "type": "debug",
+      "text": "WI entry 301 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.200Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activation successful, adding to prompt {uid: 301, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 26, comment: [事件]E02·血娃娃上门与找妈妈任务, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.200Z",
+      "type": "debug",
+      "text": "WI entry 300 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 300 activation successful, adding to prompt {uid: 300, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 25, comment: [事件]E01·系统觉醒与开店, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.222Z",
+      "type": "debug",
+      "text": "WI entry 130 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.249Z",
+      "type": "debug",
+      "text": "[WI] Entry 130 activation successful, adding to prompt {uid: 130, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 20, comment: [角色]小小, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.249Z",
+      "type": "debug",
+      "text": "WI entry 110 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.279Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activation successful, adding to prompt {uid: 110, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 18, comment: [角色]血锯, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.279Z",
+      "type": "debug",
+      "text": "WI entry 100 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.311Z",
+      "type": "debug",
+      "text": "[WI] Entry 100 activation successful, adding to prompt {uid: 100, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 17, comment: [角色]左左, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.311Z",
+      "type": "debug",
+      "text": "WI entry 63 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.341Z",
+      "type": "debug",
+      "text": "[WI] Entry 63 activation successful, adding to prompt {uid: 63, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 14, comment: [地点]凄凉荒野与倒吊塔, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.341Z",
+      "type": "debug",
+      "text": "WI entry 60 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.373Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activation successful, adding to prompt {uid: 60, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 12, comment: [地点]血锯药剂店, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.373Z",
+      "type": "debug",
+      "text": "WI entry 41 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.404Z",
+      "type": "debug",
+      "text": "[WI] Entry 41 activation successful, adding to prompt {uid: 41, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 7, comment: [势力]猎头者家族, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.404Z",
+      "type": "debug",
+      "text": "WI entry 40 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.433Z",
+      "type": "debug",
+      "text": "[WI] Entry 40 activation successful, adding to prompt {uid: 40, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 6, comment: [势力]魔人协会, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.433Z",
+      "type": "debug",
+      "text": "WI entry 23 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.464Z",
+      "type": "debug",
+      "text": "[WI] Entry 23 activation successful, adding to prompt {uid: 23, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 5, comment: [机制]巨像及血肉机械技术, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.464Z",
+      "type": "debug",
+      "text": "WI entry 21 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.495Z",
+      "type": "debug",
+      "text": "[WI] Entry 21 activation successful, adding to prompt {uid: 21, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 3, comment: [机制]视界系统, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.495Z",
+      "type": "debug",
+      "text": "WI entry 3 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.526Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activation successful, adding to prompt {uid: 3, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 2, comment: [角色索引]八人路由索引, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.526Z",
+      "type": "debug",
+      "text": "WI entry 1 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.573Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activation successful, adding to prompt {uid: 1, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 1, comment: [核心]自主世界事件调度, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.573Z",
+      "type": "debug",
+      "text": "WI entry 0 does not use probability"
+    },
+    {
+      "at": "2026-08-10T14:04:45.624Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activation successful, adding to prompt {uid: 0, world: 《诡异药剂师》v0.5-E06回归-20260810-J, displayIndex: 0, comment: [核心]最高规则与玩家主权, disable: false}"
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 RESULT ---"
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "[WI] Successfully activated 52 new entries to prompt. 52 total entries activated. [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "[WI] Scan done. No new entries to prompt. Stopping."
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "[WI] Setting scan state [NONE, 0]"
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_scan_done"
+    },
+    {
+      "at": "2026-08-10T14:04:45.625Z",
+      "type": "debug",
+      "text": "[WI] --- BUILDING PROMPT ---"
+    },
+    {
+      "at": "2026-08-10T14:04:45.627Z",
+      "type": "log",
+      "text": "[WI] Hypothetically adding 52 entries to prompt [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-10T14:04:45.627Z",
+      "type": "debug",
+      "text": "[WI] --- DONE (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-10T14:04:45.627Z",
+      "type": "log",
+      "text": "skipWIAN not active, adding WIAN"
+    },
+    {
+      "at": "2026-08-10T14:04:45.635Z",
+      "type": "debug",
+      "text": "calling runGenerate"
+    },
+    {
+      "at": "2026-08-10T14:04:45.635Z",
+      "type": "debug",
+      "text": "generating prompt"
+    },
+    {
+      "at": "2026-08-10T14:04:45.635Z",
+      "type": "debug",
+      "text": "---calling setPromptString 0"
+    },
+    {
+      "at": "2026-08-10T14:04:45.635Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_combine_prompts"
+    },
+    {
+      "at": "2026-08-10T14:04:45.791Z",
+      "type": "debug",
+      "text": "Event emitted: chat_completion_prompt_ready"
+    },
+    {
+      "at": "2026-08-10T14:04:45.791Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_data"
+    },
+    {
+      "at": "2026-08-10T14:05:01.201Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    }
+  ]
+}

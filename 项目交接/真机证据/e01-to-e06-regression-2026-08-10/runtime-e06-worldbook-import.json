@@ -1,0 +1,51 @@
+{
+  "importedAt": "2026-08-10T15:05:37.316Z",
+  "targetName": "《诡异药剂师》v0.5-E06回归-20260810-M",
+  "templateName": "《诡异药剂师》v0.5",
+  "artifact": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\角色卡本体\\诡异药剂师_MVU_v0.5\\dist\\诡异药剂师_v0.5.json",
+  "artifactBytes": 861405,
+  "artifactSha256": "15b8785c7af412c5dbdec1ce92a7361714a04114b5c4c299d78ccfdd2d9ac910",
+  "writeSession": {
+    "count": 102,
+    "constants": 6,
+    "selective": 96,
+    "hasEventTransactionRule": true,
+    "hasFallbackOutputProtocol": true,
+    "hasSetvarBan": true,
+    "router": [
+      {
+        "uid": 399,
+        "name": "[机制]概念事件激活路由",
+        "type": "selective",
+        "keys": [],
+        "preprocessing": true
+      }
+    ]
+  },
+  "reloadSession": {
+    "matches": 1,
+    "count": 102,
+    "constants": 6,
+    "selective": 96,
+    "hasEventTransactionRule": true,
+    "hasFallbackOutputProtocol": true,
+    "hasSetvarBan": true,
+    "router": [
+      {
+        "uid": 399,
+        "name": "[机制]概念事件激活路由",
+        "type": "selective",
+        "keys": [],
+        "preprocessing": true
+      }
+    ]
+  },
+  "assertions": {
+    "oneExactWorldbook": true,
+    "allEntriesPersisted": true,
+    "eventTransactionRulePersisted": true,
+    "fallbackOutputProtocolPersisted": true,
+    "setvarBanPersisted": true,
+    "onePreprocessingRouter": true
+  }
+}

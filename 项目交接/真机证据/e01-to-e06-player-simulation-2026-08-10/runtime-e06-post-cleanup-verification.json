@@ -1,0 +1,40 @@
+{
+  "verifiedAt": "2026-08-10T15:46:58.5004698+08:00",
+  "target": "《诡异药剂师》v0.5-E06玩家长测-20260810-A",
+  "bridgeCleanup": {
+    "cardDeleted": true,
+    "chatBackupCreated": true,
+    "chatBackupPath": "C:\\jiuguan\\SillyTavern\\data\\default-user\\backups\\chat-《诡异药剂师》v0.5-E06玩家长测-20260810-A-1786347962211"
+  },
+  "runtimeLists": {
+    "tempCharacterPresent": false,
+    "tempWorldbookPresent": false,
+    "formalCharacterPresent": true,
+    "formalWorldbookPresent": true
+  },
+  "filesystem": {
+    "tempChatDirectoryPresent": false,
+    "tempCharacterFileMatches": 0,
+    "tempWorldbookFileMatches": 0,
+    "formalChatDirectoryPresent": true
+  },
+  "helperRegistry": {
+    "tempCharacterScriptEntryPresent": false,
+    "formalCharacterScriptEntryPreserved": true
+  },
+  "localTempFiles": {
+    "temporaryCardPresent": false,
+    "temporaryStandaloneWorldbookPresent": false
+  },
+  "evidencePreserved": {
+    "hostChatCopies": 3,
+    "requestCaptureJsonFilesIncludingOneDiscarded429": 22,
+    "finalRuntimeEvidence": true,
+    "finalScreenshot": true
+  },
+  "assertions": {
+    "onlyNamedTempCardAndBoundAssetsRemoved": true,
+    "formalV05AssetsRemain": true,
+    "cleanupEvidenceComplete": true
+  }
+}

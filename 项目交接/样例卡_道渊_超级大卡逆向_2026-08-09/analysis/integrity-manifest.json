@@ -1,0 +1,71 @@
+{
+  "source": {
+    "card": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\decoded\\payload-chara.raw.json",
+    "cardSha256": "7759a56059d4e8bd17bfa6a09c5f2c45178393d703e5c5e523873eaa190757a8",
+    "state": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\components\\unpacked\\tavern-cards-state.json",
+    "stateSha256": "ab1c76b7d6e888ddfbadb70227a1e8715d90c8d5e041a753921064ad38bfe3a7"
+  },
+  "counts": {
+    "worldbookEntries": 319,
+    "regexes": 17,
+    "scripts": 4,
+    "openings": 2
+  },
+  "extractionChecks": {
+    "allEntriesMapped": true,
+    "allEntrySemanticTextEqual": true,
+    "allOpeningsMapped": true,
+    "allOpeningSemanticTextEqual": true,
+    "helperScriptsAccountedFor": true,
+    "regexesAccountedFor": true,
+    "idsUnique": true,
+    "commentsUnique": true
+  },
+  "generatedFiles": [
+    {
+      "path": "card-inventory.json",
+      "bytes": 3514,
+      "sha256": "4c36ee05e6fba2c5ea48b6fcd93ac16a7462a3a372cc163ca91b6b154903dd9a"
+    },
+    {
+      "path": "worldbook-entry-index.json",
+      "bytes": 692596,
+      "sha256": "c08b9fce03b713f6946a9d8097dc1040612b753bced67468a38c05ceea513e50"
+    },
+    {
+      "path": "worldbook-entry-index.csv",
+      "bytes": 60402,
+      "sha256": "de29ffb3c20270dc6dec61e4b16f70352fae130112ca67d291409f6ba57e0b66"
+    },
+    {
+      "path": "ejs-usage.json",
+      "bytes": 1800,
+      "sha256": "35e6fb0be9512401088591392a3bb1924ada54f3ac2d969746b6b44f21699cca"
+    },
+    {
+      "path": "runtime-dependency-ledger.json",
+      "bytes": 6565,
+      "sha256": "d431587d198522131b2f93f4355c747fbe33c9867468afee5f9932ab80c6e7e9"
+    },
+    {
+      "path": "component-mapping.json",
+      "bytes": 392674,
+      "sha256": "f07b960f603194fd6e6bb519a35a9bd15ba51d0d11e3d7b0ef9cb34eeb9106cb"
+    },
+    {
+      "path": "worldbook-semantic-classification.csv",
+      "bytes": 17915,
+      "sha256": "e84aa64b2946609c7ed679df0927ce2c39162594cea11910beffa648b82d8e1b"
+    },
+    {
+      "path": "runtime-readonly-evidence.json",
+      "bytes": 2751,
+      "sha256": "07e3ace7d81561b6721dfe55ed67dd05386e4bde7d84bed06b90b3277cc7e2ca"
+    },
+    {
+      "path": "remote-runtime-snapshot-manifest.json",
+      "bytes": 3592,
+      "sha256": "42b231b8c5eced9c00cd017bfd3e64a21704ae091f1d72aafebcd10c6470f3f0"
+    }
+  ]
+}

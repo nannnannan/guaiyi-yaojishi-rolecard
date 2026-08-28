@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-08-09T07:22:34.986Z",
+  "result": {
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@15h10m03s612ms",
+    "messageId": 0,
+    "marker": "__AGENT_B_PERSIST_PROBE_1786260154230__",
+    "afterProbe": "__AGENT_B_PERSIST_PROBE_1786260154230__",
+    "afterRestore": "E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。",
+    "originalNotice": "E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。",
+    "probePersisted": true,
+    "restorePersisted": true
+  }
+}

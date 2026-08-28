@@ -1,0 +1,156 @@
+{
+  "identity": {
+    "spec": "chara_card_v3",
+    "specVersion": "3.0",
+    "name": "《道渊》v5.3",
+    "characterVersion": "",
+    "creator": "",
+    "createDate": "2026-07-11T15:57:01.429Z",
+    "worldbookName": "道友先上我断后",
+    "rawJsonBytes": 1898339,
+    "rawJsonSha256": "7759a56059d4e8bd17bfa6a09c5f2c45178393d703e5c5e523873eaa190757a8",
+    "topLevelKeys": [
+      "name",
+      "description",
+      "personality",
+      "scenario",
+      "first_mes",
+      "mes_example",
+      "creatorcomment",
+      "avatar",
+      "talkativeness",
+      "fav",
+      "tags",
+      "spec",
+      "spec_version",
+      "data",
+      "create_date"
+    ],
+    "dataKeys": [
+      "name",
+      "description",
+      "personality",
+      "scenario",
+      "first_mes",
+      "mes_example",
+      "creator_notes",
+      "system_prompt",
+      "post_history_instructions",
+      "tags",
+      "creator",
+      "character_version",
+      "alternate_greetings",
+      "extensions",
+      "character_book"
+    ],
+    "compatibilityMirrorsEqual": {
+      "name": true,
+      "description": true,
+      "personality": true,
+      "scenario": true,
+      "first_mes": true,
+      "mes_example": true
+    }
+  },
+  "cardText": {
+    "descriptionCharacters": 297,
+    "personalityCharacters": 0,
+    "scenarioCharacters": 0,
+    "firstMessageCharacters": 18650,
+    "alternateGreetingCount": 1,
+    "alternateGreetingCharacters": 6
+  },
+  "worldbook": {
+    "entries": 319,
+    "totalContentCharacters": 210144,
+    "totalContentUtf8Bytes": 539633,
+    "enabled": 295,
+    "disabled": 24,
+    "nativeAlwaysOn": 30,
+    "nativeKeywordActivated": 265,
+    "nativeEnabledWithoutConstantOrKeys": 0,
+    "constant": 54,
+    "selective": 276,
+    "ejsOrDecorator": 2,
+    "initVarEntries": 0,
+    "updateProtocolEntries": 3,
+    "categories": {
+      "地点与世界结构": 11,
+      "机制、物品与能力": 1,
+      "境界与力量体系": 43,
+      "人物与NPC": 165,
+      "势力与组织": 18,
+      "叙事与生成协议": 76,
+      "MVU与变量协议": 5
+    },
+    "positions": {
+      "after_char": 281,
+      "before_char": 38
+    },
+    "depths": {
+      "0": 4,
+      "1": 2,
+      "2": 8,
+      "3": 3,
+      "4": 302
+    },
+    "insertionOrders": {
+      "6": 1,
+      "7": 1,
+      "10": 2,
+      "100": 310,
+      "101": 1,
+      "200": 4
+    },
+    "groups": {
+      "(empty)": 319
+    },
+    "probabilityUsage": {
+      "true:100": 319
+    },
+    "recursionProtection": {
+      "excludeRecursionTrue": 312,
+      "preventRecursionTrue": 319
+    },
+    "duplicateComments": [],
+    "duplicateIds": []
+  },
+  "extensions": {
+    "keys": [
+      "talkativeness",
+      "fav",
+      "world",
+      "depth_prompt",
+      "regex_scripts",
+      "tavern_helper"
+    ],
+    "regexCount": 17,
+    "regexEnabled": 10,
+    "helperScriptCount": 4,
+    "helperScriptsEnabled": 4,
+    "helperScriptNames": [
+      "MVU",
+      "ZOD",
+      "道渊配置助手",
+      "道渊Wiki"
+    ],
+    "helperScriptIds": {
+      "MVU": "bcf2ba69-20d6-49c1-a355-9a99d52257b7",
+      "ZOD": "fc83c3a3-0bc0-4170-a36a-f40f773204ab",
+      "道渊配置助手": "3bb34570-f0ea-4632-ad2d-84bae6343219",
+      "道渊Wiki": "d556bd75-8bfe-48e8-b4cb-a7b177a95b0c"
+    }
+  },
+  "detection": {
+    "primaryType": "mvu_zod",
+    "capabilityFlags": [
+      "regex",
+      "tavern_helper",
+      "ejs",
+      "remote_loader",
+      "embedded_ui"
+    ],
+    "forgeDetectedMvu": false,
+    "actualZodRegistrationDetected": true
+  }
+}

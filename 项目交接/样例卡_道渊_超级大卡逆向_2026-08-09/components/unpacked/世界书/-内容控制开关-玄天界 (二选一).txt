@@ -1,0 +1,10 @@
+<%- await getwi(null, '玄天界介绍') -%>
+<%- await getwi(null, '玄天界主要势力与组织') -%>
+<%- await getwi(null, '玄天界关键人物') -%>
+<%- await getwi(null, '玄天界核心规则') -%>
+<%- await getwi(null, '玄天界周期性秘境') -%>
+<%- await getwi(null, '玄天界前期保护机制') -%>
+<%- await getwi(null, '玄天界宗门生成') -%>
+<%- await getwi(null, '玄天界城市生成') -%>
+<%- await getwi(null, '玄天界宗门体系') -%>
+<%- await getwi(null, '玄天界灵石体系') -%>

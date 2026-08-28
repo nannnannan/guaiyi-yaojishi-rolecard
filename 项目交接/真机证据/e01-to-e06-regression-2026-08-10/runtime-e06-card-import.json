@@ -1,0 +1,38 @@
+{
+  "importedAt": "2026-08-10T15:05:09.809Z",
+  "targetName": "《诡异药剂师》v0.5-E06回归-20260810-M",
+  "cardPath": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\e01-to-e06-regression-2026-08-10\\诡异药剂师_v0.5_E06回归_临时卡.json",
+  "imported": {
+    "name": "《诡异药剂师》v0.5-E06回归-20260810-M"
+  },
+  "writeSession": {
+    "matches": [
+      {
+        "name": "《诡异药剂师》v0.5-E06回归-20260810-M",
+        "avatar": "《诡异药剂师》v0.5-E06回归-20260810-M.png",
+        "boundWorldbook": "《诡异药剂师》v0.5-E06回归-20260810-M",
+        "regexCount": 5,
+        "helperScriptCount": 2
+      }
+    ]
+  },
+  "reloadSession": {
+    "matches": [
+      {
+        "name": "《诡异药剂师》v0.5-E06回归-20260810-M",
+        "avatar": "《诡异药剂师》v0.5-E06回归-20260810-M.png",
+        "boundWorldbook": "《诡异药剂师》v0.5-E06回归-20260810-M",
+        "regexCount": 5,
+        "helperScriptCount": 2
+      }
+    ]
+  },
+  "assertions": {
+    "importedExpectedName": true,
+    "oneCardInWriteSession": true,
+    "oneCardAfterReload": true,
+    "boundWorldbookNamePersisted": true,
+    "fiveRegexesPersisted": true,
+    "twoHelperScriptsPersisted": true
+  }
+}

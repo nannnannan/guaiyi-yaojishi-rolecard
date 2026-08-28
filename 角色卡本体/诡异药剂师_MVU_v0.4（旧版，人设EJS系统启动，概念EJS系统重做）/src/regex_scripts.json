@@ -1,0 +1,36 @@
+[
+  {
+    "id": "tavernweave-status-ui-v0.4",
+    "scriptName": "诡异药剂师v0.4｜死界状态栏",
+    "findRegex": "/<StatusPlaceHolderImpl\\s*\\/>/g",
+    "replace_file": "src/ui/status.html",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-mvu-v0.4",
+    "scriptName": "诡异药剂师v0.4｜隐藏变量块",
+    "findRegex": "/<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  }
+]

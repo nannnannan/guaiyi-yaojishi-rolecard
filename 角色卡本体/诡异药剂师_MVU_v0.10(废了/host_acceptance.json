@@ -1,0 +1,27 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.10.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": "2026-08-24T01:51:05.8255992+08:00",
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Codex offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.10.json",
+  "bytes": 4211989,
+  "sha256": "392a18c593a6c60cc58944711733b0647eba53eb82c2104b50deca36a4d49bf6",
+  "offline_checks": {
+    "command": "npm run check",
+    "status": "passed",
+    "checks": 18833,
+    "event_anchors": 170,
+    "worldbook_entries": 466
+  },
+  "notes": "v0.10 内部候选：冻结 v0.9.3 基线，新增 E127-E170 与阶段末概念，林恩统一18岁；真实宿主导入验收仍需所有者另行授权。"
+}

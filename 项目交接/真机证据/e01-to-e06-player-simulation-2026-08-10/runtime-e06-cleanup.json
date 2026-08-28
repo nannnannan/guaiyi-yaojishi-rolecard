@@ -1,0 +1,76 @@
+{
+  "cleanedAt": "2026-08-10T07:46:20.164Z",
+  "target": {
+    "card": "《诡异药剂师》v0.5-E06玩家长测-20260810-A",
+    "worldbook": "《诡异药剂师》v0.5-E06玩家长测-20260810-A",
+    "localFiles": [
+      "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\e01-to-e06-player-simulation-2026-08-10\\诡异药剂师_v0.5_E06玩家长测_临时卡.json",
+      "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\e01-to-e06-player-simulation-2026-08-10\\《诡异药剂师》v0.5-E06玩家长测-20260810-A.worldbook.json"
+    ]
+  },
+  "before": {
+    "characters": [],
+    "worldbookPresent": true,
+    "worldbookMatches": 1
+  },
+  "scriptRegistryCleanup": {
+    "before": [
+      "欲望风俗店V3.0",
+      "修仙世界",
+      "苍玄界",
+      "未开之花",
+      "锁和钥",
+      "日式中专大乱斗",
+      "《道渊》v5.3",
+      "《诡异药剂师》v0.5",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A",
+      "《诡异药剂师》v0.5-E06玩家长测-20260810-A"
+    ],
+    "after": [
+      "欲望风俗店V3.0",
+      "修仙世界",
+      "苍玄界",
+      "未开之花",
+      "锁和钥",
+      "日式中专大乱斗",
+      "《道渊》v5.3",
+      "《诡异药剂师》v0.5",
+      "《诡异药剂师》v0.5-概念双路验收-20260809-A"
+    ],
+    "presentBefore": true,
+    "presentAfter": false
+  },
+  "characterDelete": null,
+  "afterCharacter": {
+    "characters": [],
+    "worldbookPresent": true,
+    "worldbookMatches": 1
+  },
+  "worldbookDelete": {
+    "ok": true,
+    "result": true
+  },
+  "after": {
+    "characters": [],
+    "worldbookPresent": false,
+    "worldbookMatches": 0
+  },
+  "local": {
+    "tempCardPath": {
+      "absent": true,
+      "deletedNow": true
+    },
+    "tempWorldbookPath": {
+      "absent": true,
+      "deletedNow": true
+    }
+  },
+  "assertions": {
+    "cardAbsent": true,
+    "tempScriptRegistryEntryAbsent": true,
+    "worldbookAbsent": true,
+    "worldbookMultiplicityZero": true,
+    "localTempCardAbsent": true,
+    "localTempWorldbookAbsent": true
+  }
+}

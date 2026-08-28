@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-08-10T15:50:09.905Z",
+  "scope": "角色卡本体/诡异药剂师_MVU_v0.5",
+  "git": {
+    "tracked_files_before": 0,
+    "tracked_files_after": 0,
+    "status": "entire_v0.5_tree_untracked",
+    "note": "无法用git diff证明逐文件改动，因此额外记录前后计数、变更入口、构建指标与真机证据。"
+  },
+  "file_inventory": {
+    "baseline_files": 167,
+    "final_files": 168,
+    "final_src_files": 156,
+    "json_files": 11,
+    "js_mjs_files": 4,
+    "new_source_files": [
+      "src/prompts/concept_event_router.md"
+    ],
+    "principal_modified_files": [
+      "创作规划.yaml",
+      "README.md",
+      "AGENTS.md",
+      "host_acceptance.json",
+      "src/worldbook.json",
+      "src/card.json",
+      "src/initial_variables.json",
+      "src/prompts/system.md",
+      "src/prompts/world.md",
+      "src/prompts/post_history.md",
+      "src/prompts/mvu_update_rules.md",
+      "src/prompts/mvu_output_format.md",
+      "src/prompts/card_description.md",
+      "src/prompts/first_message.md",
+      "src/scripts/schema.js",
+      "src/ui/status.html",
+      "tools/build.mjs",
+      "tools/validate.mjs",
+      "src/events/E04_猎魔人治疗与传说左轮.md",
+      "src/characters/小小/三面性.md",
+      "src/characters/人偶夫人/三面性.md",
+      "src/characters/巫神头颅/多阶段人设.md",
+      "src/concepts/**/*.md"
+    ]
+  },
+  "artifact": {
+    "path": "dist/诡异药剂师_v0.5.json",
+    "worldbook_entries": 102,
+    "concept_entries": 52,
+    "helper_scripts": 2,
+    "regex_scripts": 5,
+    "offline_checks": 5828,
+    "bytes": 861405,
+    "sha256": "15b8785c7af412c5dbdec1ce92a7361714a04114b5c4c299d78ccfdd2d9ac910"
+  },
+  "integrity": {
+    "all_json_parse": true,
+    "all_js_mjs_syntax": true,
+    "utf8_replacement_character_files": 0,
+    "npm_run_check": true
+  },
+  "runtime": {
+    "status": "accepted-release",
+    "successful_samples": [
+      "default16-a",
+      "default16-e"
+    ],
+    "turns_per_sample": 10,
+    "final_boundary": "E01-E05完成，E06预兆",
+    "cleanup_and_restore": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "auditedAt": "2026-08-10T15:45:04.4908010+08:00",
+  "sample": "host-chat-second-run-clean-e06-omen",
+  "runtime": {
+    "sillyTavern": "1.17.0",
+    "tavernHelper": "4.9.1",
+    "model": "gemini-3.1-pro-preview"
+  },
+  "turns": [
+    { "turn": 1, "id": "e02_to_e03", "promptChars": 40573, "conceptHeaderOccurrences": 12, "duplicateConceptHeaders": [] },
+    { "turn": 2, "id": "e03_open", "promptChars": 39562, "conceptHeaderOccurrences": 12, "duplicateConceptHeaders": [] },
+    { "turn": 3, "id": "e03_diagnose", "promptChars": 42506, "conceptHeaderOccurrences": 16, "duplicateConceptHeaders": [] },
+    { "turn": 4, "id": "e03_finish", "promptChars": 43774, "conceptHeaderOccurrences": 16, "duplicateConceptHeaders": [] },
+    { "turn": 5, "id": "e04_open", "promptChars": 49191, "conceptHeaderOccurrences": 16, "duplicateConceptHeaders": [] },
+    { "turn": 6, "id": "e04_finish", "promptChars": 47889, "conceptHeaderOccurrences": 17, "duplicateConceptHeaders": [] },
+    { "turn": 7, "id": "e05_enter", "promptChars": 49914, "conceptHeaderOccurrences": 17, "duplicateConceptHeaders": [] },
+    { "turn": 8, "id": "e05_accept", "promptChars": 50031, "conceptHeaderOccurrences": 18, "duplicateConceptHeaders": [] },
+    { "turn": 9, "id": "e05_extract", "promptChars": 50618, "conceptHeaderOccurrences": 18, "duplicateConceptHeaders": [] },
+    { "turn": 10, "id": "e05_finish", "promptChars": 56334, "conceptHeaderOccurrences": 18, "duplicateConceptHeaders": [] }
+  ],
+  "assertions": {
+    "tenRealRequestPayloadsAudited": true,
+    "allAcceptedTurnsHttp200": true,
+    "eventAndKeywordDualHitsDeduplicatedByConceptUid": true,
+    "noConceptHeaderRepeatedWithinAnyRequest": true,
+    "noFatalEjsRouterOrDuplicateDeclarationError": true
+  },
+  "notes": [
+    "玩家输入和近期 AI 输出包含恶灵血婴、猎魔人、传说左轮、神圣之矛碎片、钢牙、小小等原生绿灯关键词；同轮事件窗也会激活对应概念。十个真实请求中每个概念标题均最多出现一次。",
+    "事件蓝灯标题可能来自不同提示段重复出现；本文件只审计 v0.5 本次改造范围内的 52 条概念正文去重。"
+  ]
+}

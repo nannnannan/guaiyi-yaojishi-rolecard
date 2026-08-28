@@ -1,0 +1,68 @@
+---
+变量输出格式:
+  rule:
+    - you must output the update analysis and the actual update commands at once in the end of the next reply
+    - the update commands works like the **JSON Patch (RFC 6902)** standard, must be a valid JSON array containing operation objects, but supports the following operations instead:
+      - replace: replace the value of existing paths
+      - delta: update the value of existing number paths by a delta value
+      - insert: insert new items into an object or array (using `-` as array index intends appending to the end)
+      - remove
+      - move
+    - don't update field names starts with `_` as they are readonly, such as `_变量`
+    - CRITICAL RULE: ALL `path` values MUST start with a leading slash `/`! For example, use `"/绝色榜"` instead of `"绝色榜"`, and `"/人物/角色名"` instead of `"人物/角色名"`. Missing the leading slash will cause fatal system errors!
+    - 变量路径使用中文，与变量结构严格对应
+    - 特殊路径：$器灵台词 的 JSON Patch 路径为 "/$器灵台词"，前缀 `$` 是变量名的一部分，不可省略！
+    - 数值变量范围 0~100，超出会被自动钳制
+    - 首次回复初始化规则：当用户提交开局信息时（包含姓名、性别、容貌、身形、衣着、道号、境界、灵根、功法、气运等字段），必须在第一次JSONPatch中将所有开局信息解析并注入对应变量，不得遗漏任何字段。这是初始化操作，不是增量变化。具体要求：
+      - 姓名/性别/容貌/身形/衣着：根据用户设定的内容直接写入
+      - 境界：根据用户指定的境界查DC总表，写入"大境界小境界（DC:数值）"格式，如"金丹中期"→"金丹中期（DC:52）"
+      - 灵根：直接写入用户指定的灵根
+      - 功法：创建功法条目，包含类型、境界（默认入门）、熟练度（默认0）、描述
+      - 气运：创建气运条目，解析效果、类型（主动/被动）、使用状态、压制状态
+      - 宗门：用户指定则写入，未指定则保持散修
+      - 宗门贡献：初始化为0，或根据背景设定合理初始值
+      - 神念：根据初始境界生成对应描述
+      - 状态：默认无异常，除非开局有特殊设定
+      - 修为：初始化为0（刚进入当前小境界）
+      - 道心：根据出身背景设定合理初始值
+    - 每回合强制更新变量（即使值未变也必须在Analysis中提及判断）:
+      - 世界.当前时间
+      - 世界.当前地点
+      - 世界.危机程度
+      - 世界.遭遇冷却（必须严格执行每回合减1，若触发遭遇则重置为15）
+      - 世界.动向（维持2~3个事件）
+      - 绝色榜（必须变动两个条目）
+      - 玉简（有消息收发时更新对应好友的历史记录）
+      - $器灵台词（必须替换为新台词）
+  format: |-
+    <UpdateVariable>
+    <Analysis>$(no more than 350 words)
+    Mandatory per-category checklist — you MUST address every category below. Write "no change" if unchanged, but do NOT skip any category.
+
+    0.INITIALIZATION: ${Is this the first reply after user submitted character creation info? If YES, you MUST parse ALL fields (姓名, 性别, 容貌, 身形, 衣着, 境界→DC, 灵根, 功法, 气运, 宗门, 宗门贡献, 神念, 道心, 修为) from user input and initialize via replace/insert. Do NOT leave any field at default.}
+    1.TIME & LOCATION: ${How much time passed? New location?}
+    2.CRISIS: ${危机程度 change?}
+    3.PROTAGONIST STATUS: ${生命/精血/灵力/神识 changes? Any damage, recovery, consumption?}
+    4.CULTIVATION: ${修为 gain? Approaching breakthrough? 道心 shift?}
+    5.STATE & INVENTORY: ${状态 change? Items gained/used/lost in 储物袋? Any updates in 器物?}
+    6.TECHNIQUES: ${功法 practiced? 熟练度 increase? 炼丹/炼器 progress?}
+    7.COMPANIONS(道侣): ${Any 道侣 present? 亲密/外观/心声 updates?}
+    8.SPIRIT PETS(灵宠): ${Any 灵宠 present/participating? 状态/亲密度/心声 updates?}
+    9.NPCs(人物): ${Any NPC interaction? 好感/关系阶段/描述 changes?}
+    10.OPPORTUNITIES(机遇): ${New quest? Quest completed/failed?}
+    11.BEAUTY RANKING(绝色榜): ${MANDATORY — randomly pick 2 DIFFERENT characters from the worldview list, strictly avoid repeating recently used names. Update with new 仙姿+群芳谱}
+    12.JADE SLIPS(玉简): ${Which friend sent or received a message? Record in their history.}
+    13.SPIRIT ARTIFACT LINES($器灵台词): ${MANDATORY — new lines from 灵汐}
+    14.WORLD EVENTS(动向): ${MANDATORY — maintain 2~3 linked events}
+    15.ENCOUNTER COOLDOWN(遭遇冷却): ${MANDATORY — decrease 世界.遭遇冷却 by 1 if > 0. If a dynamic encounter is triggered this turn, reset it to 15.}
+    </Analysis>
+    <JSONPatch>
+    [
+      { "op": "replace", "path": "${/path}", "value": "${new}" },
+      { "op": "delta", "path": "${/path}", "value": "${delta}" },
+      { "op": "insert", "path": "${/path/new_key}", "value": "${new}" },
+      { "op": "remove", "path": "${/path}" },
+      ...
+    ]
+    </JSONPatch>
+    </UpdateVariable>

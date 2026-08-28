@@ -1,0 +1,380 @@
+{
+  "acceptedAt": "2026-08-09T12:03:10.456Z",
+  "target": {
+    "card": "《诡异药剂师》v0.5-概念双路验收-20260809-A",
+    "worldbook": "《诡异药剂师》v0.5-概念双路验收-20260809-A",
+    "concept": "人皮拾荒者",
+    "marker": "游魂巷最神秘的以物易物者，身份来历不明，立场友善但帮忙有限。"
+  },
+  "runtime": {
+    "tavernVersion": "1.17.0",
+    "helperVersion": "4.9.1",
+    "url": "http://127.0.0.1:8000"
+  },
+  "artifact": {
+    "path": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\角色卡本体\\诡异药剂师_MVU_v0.5\\dist\\诡异药剂师_v0.5.json",
+    "bytes": 811921,
+    "sha256": "565787c29c6f8a9a09bcb668fd4410c9c2cf740f4f430c7e3d1e5347fd805aea"
+  },
+  "worldbook": {
+    "characterMatches": 1,
+    "avatar": "《诡异药剂师》v0.5-概念双路验收-20260809-A.png",
+    "boundWorldbook": "《诡异药剂师》v0.5-概念双路验收-20260809-A",
+    "entryCount": 102,
+    "router": {
+      "type": "selective",
+      "keys": [],
+      "startsWithPreprocessing": true,
+      "containsActivewi": true
+    },
+    "concepts": {
+      "count": 52,
+      "selectiveCount": 52,
+      "eventMetadataCount": 52,
+      "noSecondaryKeysCount": 52,
+      "recursionGuardCount": 52
+    },
+    "target": {
+      "uid": 400,
+      "type": "selective",
+      "keys": [
+        "人皮拾荒者",
+        "拾荒者"
+      ],
+      "eventIds": [
+        "E01"
+      ],
+      "scanDepth": "same_as_global",
+      "caseSensitive": "same_as_global"
+    }
+  },
+  "matrix": [
+    {
+      "id": "event_only",
+      "eventId": "E02",
+      "expectedMarkerCount": 1,
+      "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\request-captures\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T11-45-52-029Z.json",
+      "input": "【双路验收】请继续描写柜台边一分钟内的光影变化，不引入新人物或新物品。",
+      "requestStatus": 200,
+      "replyChars": 2727,
+      "promptChars": 25304,
+      "messageRoles": [
+        "system",
+        "user",
+        "system",
+        "user"
+      ],
+      "actualMarkerCount": 1,
+      "eventStateVisible": true,
+      "assistantKeywordHistoryVisible": false,
+      "assertions": {
+        "requestSucceeded": true,
+        "responseCaptured": true,
+        "markerCountMatches": true,
+        "eventStateVisible": true,
+        "assistantKeywordHistoryCorrect": true
+      }
+    },
+    {
+      "id": "user_keyword_only",
+      "eventId": "E20",
+      "expectedMarkerCount": 1,
+      "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\request-captures\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T11-46-22-421Z.json",
+      "input": "【双路验收】林恩想起拾荒者，但不采取额外行动。",
+      "requestStatus": 200,
+      "replyChars": 2107,
+      "promptChars": 24858,
+      "messageRoles": [
+        "system",
+        "user",
+        "system",
+        "user"
+      ],
+      "actualMarkerCount": 1,
+      "eventStateVisible": true,
+      "assistantKeywordHistoryVisible": false,
+      "assertions": {
+        "requestSucceeded": true,
+        "responseCaptured": true,
+        "markerCountMatches": true,
+        "eventStateVisible": true,
+        "assistantKeywordHistoryCorrect": true
+      }
+    },
+    {
+      "id": "assistant_keyword_only",
+      "eventId": "E20",
+      "expectedMarkerCount": 1,
+      "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\request-captures\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T11-46-58-030Z.json",
+      "input": "【双路验收】请继续描写柜台边一分钟内的光影变化，不引入新人物或新物品。",
+      "requestStatus": 200,
+      "replyChars": 1800,
+      "promptChars": 24934,
+      "messageRoles": [
+        "system",
+        "user",
+        "system",
+        "user"
+      ],
+      "actualMarkerCount": 1,
+      "eventStateVisible": true,
+      "assistantKeywordHistoryVisible": true,
+      "assertions": {
+        "requestSucceeded": true,
+        "responseCaptured": true,
+        "markerCountMatches": true,
+        "eventStateVisible": true,
+        "assistantKeywordHistoryCorrect": true
+      }
+    },
+    {
+      "id": "neither_route",
+      "eventId": "E20",
+      "expectedMarkerCount": 0,
+      "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\request-captures\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T11-47-33-785Z.json",
+      "input": "【双路验收】请继续描写柜台边一分钟内的光影变化，不引入新人物或新物品。",
+      "requestStatus": 200,
+      "replyChars": 2129,
+      "promptChars": 24540,
+      "messageRoles": [
+        "system",
+        "user",
+        "system",
+        "user"
+      ],
+      "actualMarkerCount": 0,
+      "eventStateVisible": true,
+      "assistantKeywordHistoryVisible": false,
+      "assertions": {
+        "requestSucceeded": true,
+        "responseCaptured": true,
+        "markerCountMatches": true,
+        "eventStateVisible": true,
+        "assistantKeywordHistoryCorrect": true
+      }
+    },
+    {
+      "id": "both_routes_once",
+      "eventId": "E02",
+      "expectedMarkerCount": 1,
+      "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\request-captures\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T11-48-06-043Z.json",
+      "input": "【双路验收】请描写人皮拾荒者的传闻，但不推进事件。",
+      "requestStatus": 200,
+      "replyChars": 1832,
+      "promptChars": 25284,
+      "messageRoles": [
+        "system",
+        "user",
+        "system",
+        "user"
+      ],
+      "actualMarkerCount": 1,
+      "eventStateVisible": true,
+      "assistantKeywordHistoryVisible": false,
+      "assertions": {
+        "requestSucceeded": true,
+        "responseCaptured": true,
+        "markerCountMatches": true,
+        "eventStateVisible": true,
+        "assistantKeywordHistoryCorrect": true
+      }
+    }
+  ],
+  "regression": {
+    "chat": {
+      "chatId": "《诡异药剂师》v0.5-概念双路验收-20260809-A - 2026-08-09@20h02m37s850ms",
+      "messageCount": 1
+    },
+    "event": {
+      "messageId": 0,
+      "chatId": "《诡异药剂师》v0.5-概念双路验收-20260809-A - 2026-08-09@20h02m37s850ms",
+      "activeId": "E02",
+      "targetStatus": "活跃",
+      "opening": "【双路验收中性开局】柜台后的灯光保持稳定，室内暂时没有新的专名或线索。"
+    },
+    "input": "【双路最终回归】继续描写柜台边的灯光变化，不引入新专名。",
+    "generationEnded": true,
+    "requestStatus": 200,
+    "replyChars": 2217,
+    "markerCount": 1,
+    "statusFrameCount": 1,
+    "captureFile": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\真机证据\\concept-dual-route-2026-08-09\\regression-request-capture\\《诡异药剂师》v0.5-概念双路验收-20260809-A-2026-08-09T12-03-07-123Z.json"
+  },
+  "reload": {
+    "before": {
+      "chatId": "《诡异药剂师》v0.5-概念双路验收-20260809-A - 2026-08-09@20h02m37s850ms",
+      "messageCount": 3,
+      "latestHasMvu": true
+    },
+    "after": {
+      "chatId": "《诡异药剂师》v0.5-概念双路验收-20260809-A - 2026-08-09@20h02m37s850ms",
+      "messageCount": 3,
+      "latestHasMvu": true,
+      "statusFrameCount": 0
+    },
+    "assertions": {
+      "sameChat": true,
+      "messageCountPersisted": true,
+      "mvuPersisted": true
+    }
+  },
+  "console": {
+    "warningOrErrorCount": 27,
+    "fatalRuntimeErrors": [],
+    "entries": [
+      {
+        "at": "2026-08-09T12:02:37.856Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:37.856Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:37.856Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:37.999Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:37.999Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:37.999Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:39.406Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:39.407Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:39.690Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:39.690Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:39.691Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:40.239Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:40.240Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:40.336Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:40.336Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:02:40.336Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:04.293Z",
+        "type": "warning",
+        "text": "Stream stats: 62 tokens, 0.01 seconds, rate: 5166.67 TPS"
+      },
+      {
+        "at": "2026-08-09T12:03:04.499Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:04.500Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:04.682Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:04.682Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:04.682Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:05.443Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:05.443Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:05.479Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:05.479Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      },
+      {
+        "at": "2026-08-09T12:03:05.479Z",
+        "type": "error",
+        "text": "[Macro] Error: Macro \"original\" internal execution error. {macroName: original, range: Object, raw: original, call: Object, error: TypeError: env.functions.original is not a function\n    at Object.handler (http://127.0.0.1:8000/sc…}"
+      }
+    ]
+  },
+  "assertions": {
+    "runtimeVersions": true,
+    "uniqueTemporaryCard": true,
+    "boundWorldbookExact": true,
+    "worldbookEntryCount": true,
+    "routerContract": true,
+    "conceptContract": true,
+    "targetContract": true,
+    "fiveCaseMatrixPassed": true,
+    "matrixCountsExact": true,
+    "regressionGenerationEnded": true,
+    "regressionEventState": true,
+    "regressionRequestCaptured": true,
+    "regressionEventRouteInjectedOnce": true,
+    "regressionStatusRendered": true,
+    "reloadRegression": true,
+    "noFatalRuntimeErrors": true
+  }
+}

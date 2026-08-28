@@ -1,0 +1,4646 @@
+{
+  "capturedAt": "2026-08-09T07:04:53.795Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "selected": {
+    "character": "《诡异药剂师》v0.5",
+    "characterId": "0",
+    "avatar": "《诡异药剂师》v0.5.png",
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@14h53m36s999ms",
+    "messageCount": 1
+  },
+  "host": {
+    "character": "《诡异药剂师》v0.5",
+    "characterId": "0",
+    "avatar": "《诡异药剂师》v0.5.png",
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@14h53m36s999ms",
+    "messageCount": 1,
+    "messageKinds": [
+      {
+        "index": 0,
+        "isUser": false,
+        "isSystem": false,
+        "swipeId": 0,
+        "hasVariables": true
+      }
+    ],
+    "iframeCount": 10,
+    "rendererSettings": {
+      "enabled": true,
+      "collapse_code_block": "frontend_only",
+      "allow_streaming": false,
+      "use_blob_url": false,
+      "use_cleanup_protector": false,
+      "optimize_hljs": true,
+      "depth": 0,
+      "depth_ignore_hidden": false
+    },
+    "regexScripts": [
+      {
+        "id": "tavernweave-hide-status-prompt-v0.5",
+        "name": "诡异药剂师v0.5｜对AI隐藏状态栏占位符",
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "findRegex": "/<StatusPlaceHolderImpl\\s*\\/>/g",
+        "replaceStart": "",
+        "replacementLength": 0,
+        "hasMvuHandshake": false
+      },
+      {
+        "id": "tavernweave-status-ui-v0.5",
+        "name": "诡异药剂师v0.5｜死界状态栏",
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "findRegex": "/<StatusPlaceHolderImpl\\s*\\/>/g",
+        "replaceStart": "```html\n<body>\n<section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界",
+        "replacementLength": 51023,
+        "hasMvuHandshake": true
+      },
+      {
+        "id": "tavernweave-hide-mvu-v0.5",
+        "name": "诡异药剂师v0.5｜隐藏变量块",
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "findRegex": "/<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/gi",
+        "replaceStart": "",
+        "replacementLength": 0,
+        "hasMvuHandshake": false
+      }
+    ],
+    "renderedMessages": [
+      {
+        "messageId": "0",
+        "preBlocks": [
+          {
+            "length": 51012,
+            "hasBodyMarker": true,
+            "hasStatusRoot": true,
+            "start": "<body>\n<section class=\"wa-panel\" data-wa-status-root aria-label=\"诡异药剂师死界状态栏\">\n  <style>\n    .wa-panel {\n      --wa-night: #070b12;\n      --wa-ink: #0d1420;\n    "
+          }
+        ],
+        "hasRenderWrapper": true,
+        "iframeNames": [
+          "TH-message--0--0"
+        ]
+      }
+    ],
+    "messageFrameNames": [
+      "TH-message--0--0"
+    ]
+  },
+  "frames": [
+    {
+      "frameName": "TH-message--0--0",
+      "url": "about:srcdoc",
+      "messageId": 0,
+      "hasStatusRoot": true,
+      "statusClass": "wa-panel",
+      "hasMvu": true,
+      "mvuReadError": null,
+      "hasPersistedData": true,
+      "stateRoots": [
+        "元数据",
+        "世界",
+        "林恩",
+        "事件",
+        "关系",
+        "角色关系",
+        "系统"
+      ],
+      "event": {
+        "activeId": "E02",
+        "activeState": "活跃",
+        "omenId": "",
+        "e01": "完成",
+        "e02": "活跃",
+        "e02Wrap": true,
+        "e03": "未触发"
+      },
+      "button": {
+        "text": "推进：E03 猪头魔与恶灵血婴",
+        "disabled": false,
+        "title": "手动确认推进：把下一事件写入预兆，预兆正文由叙事者下一轮描写。"
+      },
+      "visibleError": null,
+      "size": {
+        "width": 755,
+        "height": 556
+      },
+      "bodyText": ".wa-panel { --wa-night: #070b12; --wa-ink: #0d1420; --wa-card: rgba(16, 28, 41, .88); --wa-line: #29445f; --wa-blue: #5bc5ff; --wa-blue-soft: #9bdcff; --wa-soul: #76f0d2; --wa-text: #e8f2f7; --wa-muted: #9cafbb; --wa-alert: #ff7185; box-sizing: border-box; width: 100%; margin: .8rem 0; color: var(--wa-text); font: 14px/1.55 ui-sans-serif, system-ui, \"Microsoft YaHei\", sans-serif; } .wa-panel * { box-sizing: border-box; } .wa-shell { overflow: hidden; border: 1px solid var(--wa-line); border-radius: 16px; background: radial-gradient(circle at 88% -10%, rgba(91, 197, 255, .14), transparent 34%), radial-gradient(circle at 8% 12%, rgba(118, 240, 210, .07), transparent 28%), linear-gradient(155deg, var(--wa-ink), var(--wa-night)); box-shadow: 0 12px 34px rgba(0, 0, 0, .34), inset 0 0 36px rgba("
+    }
+  ],
+  "listener": {
+    "count": 10,
+    "entries": [
+      {
+        "t": "2026-08-09T07:04:35.962Z",
+        "kind": "event",
+        "name": "WORLDINFO_ENTRIES_LOADED",
+        "payload": [
+          {
+            "globalLore": [],
+            "characterLore": [
+              {
+                "uid": 0,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]最高规则与玩家主权",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 1,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]自主世界事件调度",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 3,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色索引]八人路由索引",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 21,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]视界系统",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 22,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]诅咒与医疗",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 23,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]巨像及血肉机械技术",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 40,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]魔人协会",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 41,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]猎头者家族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 42,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 43,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]夜医",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 44,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]独角恶鬼族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 45,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]游魂巷居民",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 60,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]血锯药剂店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 62,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]45号血衣住所",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 63,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]凄凉荒野与倒吊塔",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 64,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 65,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]独角鬼王神庙",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 100,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]左左",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 110,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血锯",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 120,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血衣女士",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 130,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小小",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 140,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]人偶夫人",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 170,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]泰坦头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 180,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]巫神头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 190,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小宝贝",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 300,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E01·系统觉醒与开店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 301,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E02·血娃娃上门与找妈妈任务",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 302,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E03·猪头魔与恶灵血婴",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 303,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E04·猎魔人治疗与传说左轮",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 304,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E05·不眠夜与小小牙科",
+                "constant": false,
+                "selective": false
+              }
+            ],
+            "chatLore": [],
+            "personaLore": [],
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:36.009Z",
+        "kind": "event",
+        "name": "CHAT_CHANGED",
+        "payload": [
+          "《诡异药剂师》v0.5 - 2026-08-09@14h53m36s999ms"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:36.010Z",
+        "kind": "event",
+        "name": "MESSAGE_RECEIVED",
+        "payload": [
+          0,
+          "first_message"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:36.057Z",
+        "kind": "event",
+        "name": "CHARACTER_MESSAGE_RENDERED",
+        "payload": [
+          0,
+          "first_message"
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:37.122Z",
+        "kind": "event",
+        "name": "GENERATION_STARTED",
+        "payload": [
+          "normal",
+          {}
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:37.128Z",
+        "kind": "event",
+        "name": "WORLDINFO_ENTRIES_LOADED",
+        "payload": [
+          {
+            "globalLore": [],
+            "characterLore": [
+              {
+                "uid": 0,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]最高规则与玩家主权",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 1,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]自主世界事件调度",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 3,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色索引]八人路由索引",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 21,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]视界系统",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 22,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]诅咒与医疗",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 23,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]巨像及血肉机械技术",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 40,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]魔人协会",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 41,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]猎头者家族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 42,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 43,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]夜医",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 44,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]独角恶鬼族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 45,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]游魂巷居民",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 60,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]血锯药剂店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 62,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]45号血衣住所",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 63,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]凄凉荒野与倒吊塔",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 64,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 65,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]独角鬼王神庙",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 100,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]左左",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 110,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血锯",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 120,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血衣女士",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 130,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小小",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 140,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]人偶夫人",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 170,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]泰坦头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 180,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]巫神头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 190,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小宝贝",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 300,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E01·系统觉醒与开店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 301,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E02·血娃娃上门与找妈妈任务",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 302,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E03·猪头魔与恶灵血婴",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 303,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E04·猎魔人治疗与传说左轮",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 304,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E05·不眠夜与小小牙科",
+                "constant": false,
+                "selective": false
+              }
+            ],
+            "chatLore": [],
+            "personaLore": [],
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:38.209Z",
+        "kind": "event",
+        "name": "GENERATION_STARTED",
+        "payload": [
+          "normal",
+          {}
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:38.213Z",
+        "kind": "event",
+        "name": "WORLDINFO_ENTRIES_LOADED",
+        "payload": [
+          {
+            "globalLore": [],
+            "characterLore": [
+              {
+                "uid": 0,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]最高规则与玩家主权",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 1,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[核心]自主世界事件调度",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 3,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色索引]八人路由索引",
+                "constant": true,
+                "selective": false
+              },
+              {
+                "uid": 21,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]视界系统",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 22,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]诅咒与医疗",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 23,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[机制]巨像及血肉机械技术",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 40,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]魔人协会",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 41,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]猎头者家族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 42,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 43,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]夜医",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 44,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]独角恶鬼族",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 45,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[势力]游魂巷居民",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 60,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]血锯药剂店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 62,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]45号血衣住所",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 63,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]凄凉荒野与倒吊塔",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 64,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]人偶庄园",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 65,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[地点]独角鬼王神庙",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 100,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]左左",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 110,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血锯",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 120,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]血衣女士",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 130,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小小",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 140,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]人偶夫人",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 170,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]泰坦头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 180,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]巫神头颅",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 190,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[角色]小宝贝",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 300,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E01·系统觉醒与开店",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 301,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E02·血娃娃上门与找妈妈任务",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 302,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E03·猪头魔与恶灵血婴",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 303,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E04·猎魔人治疗与传说左轮",
+                "constant": false,
+                "selective": false
+              },
+              {
+                "uid": 304,
+                "world": "《诡异药剂师》v0.5",
+                "comment": "[事件]E05·不眠夜与小小牙科",
+                "constant": false,
+                "selective": false
+              }
+            ],
+            "chatLore": [],
+            "personaLore": [],
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:38.462Z",
+        "kind": "event",
+        "name": "WORLDINFO_SCAN_DONE",
+        "payload": [
+          {
+            "globalLore": null,
+            "characterLore": null,
+            "chatLore": null,
+            "personaLore": null,
+            "activated": null,
+            "budget": null
+          }
+        ]
+      },
+      {
+        "t": "2026-08-09T07:04:38.503Z",
+        "kind": "event",
+        "name": "WORLDINFO_SCAN_DONE",
+        "payload": [
+          {
+            "globalLore": null,
+            "characterLore": null,
+            "chatLore": null,
+            "personaLore": null,
+            "activated": null,
+            "budget": null
+          }
+        ]
+      }
+    ]
+  },
+  "earlyConsole": [
+    {
+      "at": "2026-08-09T07:04:35.743Z",
+      "type": "debug",
+      "text": "saw no avatars"
+    },
+    {
+      "at": "2026-08-09T07:04:35.755Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:35.767Z",
+      "type": "info",
+      "text": "Rendered 1 messages in 0.013 seconds."
+    },
+    {
+      "at": "2026-08-09T07:04:35.880Z",
+      "type": "debug",
+      "text": "Event emitted: character_editor_opened"
+    },
+    {
+      "at": "2026-08-09T07:04:35.880Z",
+      "type": "debug",
+      "text": "Event emitted: chat_id_changed"
+    },
+    {
+      "at": "2026-08-09T07:04:35.959Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5's lore has 101 world info entries [《诡异药剂师》v0.5]"
+    },
+    {
+      "at": "2026-08-09T07:04:35.959Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-09T07:04:35.961Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-09T07:04:35.961Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21412, LAST_RECEIVE_CHARS: 58619, LAST_SEND_TOKENS: 24857, LAST_SEND_CHARS: 42422, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-09T07:04:35.961Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-09T07:04:35.963Z",
+      "type": "debug",
+      "text": "[WI] Found 101 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-09T07:04:35.965Z",
+      "type": "log",
+      "text": "[Prompt Template] *** PRELOADING WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-09T07:04:35.967Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-09T07:04:35.967Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21412, LAST_RECEIVE_CHARS: 58619, LAST_SEND_TOKENS: 24857, LAST_SEND_CHARS: 42422, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-09T07:04:35.967Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-09T07:04:35.967Z",
+      "type": "log",
+      "text": "[Prompt Template] *** EVALUATING 0 WORLD INFO ***"
+    },
+    {
+      "at": "2026-08-09T07:04:35.968Z",
+      "type": "debug",
+      "text": "[]"
+    },
+    {
+      "at": "2026-08-09T07:04:35.968Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:BEFORE]/@@generate_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-09T07:04:35.969Z",
+      "type": "debug",
+      "text": "[Prompt Template] [GENERATE:AFTER]/@@generate_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-09T07:04:35.969Z",
+      "type": "log",
+      "text": "[Prompt Template] processing 0 world info in 4ms"
+    },
+    {
+      "at": "2026-08-09T07:04:35.990Z",
+      "type": "debug",
+      "text": "getting sprites list"
+    },
+    {
+      "at": "2026-08-09T07:04:35.990Z",
+      "type": "debug",
+      "text": "Summary has no content"
+    },
+    {
+      "at": "2026-08-09T07:04:35.993Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(1)}"
+    },
+    {
+      "at": "2026-08-09T07:04:35.993Z",
+      "type": "log",
+      "text": "[QR2] CHAT_CHANGED 《诡异药剂师》v0.5 - 2026-08-09@14h53m36s999ms"
+    },
+    {
+      "at": "2026-08-09T07:04:36.003Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 0\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-09T07:04:36.009Z",
+      "type": "debug",
+      "text": "Event emitted: message_received"
+    },
+    {
+      "at": "2026-08-09T07:04:36.010Z",
+      "type": "debug",
+      "text": "[Reasoning] Auto-parsing reasoning block for message 0"
+    },
+    {
+      "at": "2026-08-09T07:04:36.010Z",
+      "type": "debug",
+      "text": "Event emitted: character_message_rendered"
+    },
+    {
+      "at": "2026-08-09T07:04:36.010Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(2)}"
+    },
+    {
+      "at": "2026-08-09T07:04:36.014Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-09T07:04:36.016Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21412, LAST_RECEIVE_CHARS: 58619, LAST_SEND_TOKENS: 24857, LAST_SEND_CHARS: 42422, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-09T07:04:36.016Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-09T07:04:36.016Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:BEFORE]/@@render_before worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-09T07:04:36.017Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:36.043Z",
+      "type": "debug",
+      "text": "[Prompt Template] [RENDER:AFTER]/@@render_after worldinfo templates applied.\n []"
+    },
+    {
+      "at": "2026-08-09T07:04:36.044Z",
+      "type": "log",
+      "text": "[Prompt Template] processing #0 messages in 33ms"
+    },
+    {
+      "at": "2026-08-09T07:04:36.057Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-09T07:04:36.057Z",
+      "type": "debug",
+      "text": "Event emitted: chatLoaded"
+    },
+    {
+      "at": "2026-08-09T07:04:36.062Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_started"
+    },
+    {
+      "at": "2026-08-09T07:04:36.188Z",
+      "type": "log",
+      "text": "[Prompt Template] processing receive result: 21412 tokens and 58619 chars"
+    },
+    {
+      "at": "2026-08-09T07:04:36.876Z",
+      "type": "debug",
+      "text": "Event emitted: online_status_changed"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "log",
+      "text": "Generate entered"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Event emitted: generation_started"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Event emitted: GENERATION_AFTER_COMMANDS"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(3)}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "log",
+      "text": "[QR2] Before-generation hook skipped due to dryRun."
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Skipping extension interceptors for dry run"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "log",
+      "text": "Core/all messages: 1/1"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 0\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] --- START WI SCAN (on 1 messages, trigger = normal) (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Context size: 1970000; WI budget: 1970000 (max% = 100%, cap = 0)"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5's lore has 101 world info entries [《诡异药剂师》v0.5]"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21412, LAST_RECEIVE_CHARS: 58619, LAST_SEND_TOKENS: 24857, LAST_SEND_CHARS: 42422, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Found 101 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] --- SEARCHING ENTRIES (on 101 entries) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 START ---"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Scan state [INITIAL, 1]"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 from '《诡异药剂师》v0.5' processing {uid: 930, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 from '《诡异药剂师》v0.5' processing {uid: 920, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.145Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 from '《诡异药剂师》v0.5' processing {uid: 910, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 from '《诡异药剂师》v0.5' processing {uid: 900, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [initvar]初始变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 from '《诡异药剂师》v0.5' processing {uid: 451, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 from '《诡异药剂师》v0.5' processing {uid: 450, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]血衣诅咒续费绑定}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 from '《诡异药剂师》v0.5' processing {uid: 449, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]目光诅咒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 from '《诡异药剂师》v0.5' processing {uid: 448, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]泰坦诅咒削弱15%}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 from '《诡异药剂师》v0.5' processing {uid: 447, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 from '《诡异药剂师》v0.5' processing {uid: 446, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]龙息之臂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 from '《诡异药剂师》v0.5' processing {uid: 445, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]鬼婴塑形}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 from '《诡异药剂师》v0.5' processing {uid: 444, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]随机诊断术}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 from '《诡异药剂师》v0.5' processing {uid: 443, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]限时诅咒清除}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 from '《诡异药剂师》v0.5' processing {uid: 442, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]过往遗念}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 from '《诡异药剂师》v0.5' processing {uid: 441, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉灾变}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 from '《诡异药剂师》v0.5' processing {uid: 440, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉变异·脑蛇}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 from '《诡异药剂师》v0.5' processing {uid: 439, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]聚焦之瞳}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 from '《诡异药剂师》v0.5' processing {uid: 438, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]心灵契约}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 from '《诡异药剂师》v0.5' processing {uid: 437, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]鬼婴·小呀哒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 from '《诡异药剂师》v0.5' processing {uid: 436, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]相亲相爱一家人视界群}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 from '《诡异药剂师》v0.5' processing {uid: 435, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]猪头屠夫放置之谜}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 from '《诡异药剂师》v0.5' processing {uid: 434, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]狂猎榜}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 from '《诡异药剂师》v0.5' processing {uid: 433, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]棒医生称号}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 from '《诡异药剂师》v0.5' processing {uid: 432, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 from '《诡异药剂师》v0.5' processing {uid: 431, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]幸福之家传闻}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 from '《诡异药剂师》v0.5' processing {uid: 430, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]化解怨结}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 from '《诡异药剂师》v0.5' processing {uid: 429, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]不眠夜规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 from '《诡异药剂师》v0.5' processing {uid: 428, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]黑弦月}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 from '《诡异药剂师》v0.5' processing {uid: 427, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]钢牙}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 from '《诡异药剂师》v0.5' processing {uid: 426, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]试做型巨像012号}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.146Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.147Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 from '《诡异药剂师》v0.5' processing {uid: 425, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]血肉增生药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.147Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.147Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 from '《诡异药剂师》v0.5' processing {uid: 424, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]秘银头骨碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.147Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.147Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 from '《诡异药剂师》v0.5' processing {uid: 423, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]神圣之矛碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 from '《诡异药剂师》v0.5' processing {uid: 422, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]猎杀者120型}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 from '《诡异药剂师》v0.5' processing {uid: 421, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]机械重神·71}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 from '《诡异药剂师》v0.5' processing {uid: 420, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]暴击药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 from '《诡异药剂师》v0.5' processing {uid: 419, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无面魔心脏}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 from '《诡异药剂师》v0.5' processing {uid: 418, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无皮尸傀·幽灵仆从}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 from '《诡异药剂师》v0.5' processing {uid: 417, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]夜魔刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 from '《诡异药剂师》v0.5' processing {uid: 416, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]剔骨刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 from '《诡异药剂师》v0.5' processing {uid: 415, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]传说左轮}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 from '《诡异药剂师》v0.5' processing {uid: 414, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]魂灯营业}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 from '《诡异药剂师》v0.5' processing {uid: 413, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]系统商城}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 from '《诡异药剂师》v0.5' processing {uid: 412, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]独角鬼王神庙}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 from '《诡异药剂师》v0.5' processing {uid: 411, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]倒吊塔地下基地}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 from '《诡异药剂师》v0.5' processing {uid: 410, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]人偶庄园庭院}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 from '《诡异药剂师》v0.5' processing {uid: 409, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]45号闺房}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 from '《诡异药剂师》v0.5' processing {uid: 408, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]虚空折跃龟信使}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 from '《诡异药剂师》v0.5' processing {uid: 407, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]玥玥}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 from '《诡异药剂师》v0.5' processing {uid: 406, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 from '《诡异药剂师》v0.5' processing {uid: 405, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎神者}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 from '《诡异药剂师》v0.5' processing {uid: 404, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]械魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 from '《诡异药剂师》v0.5' processing {uid: 403, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]情报员024}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 from '《诡异药剂师》v0.5' processing {uid: 402, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]夜医转职}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 from '《诡异药剂师》v0.5' processing {uid: 401, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]噬心魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 from '《诡异药剂师》v0.5' processing {uid: 400, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 from '《诡异药剂师》v0.5' processing {uid: 301, world: 《诡异药剂师》v0.5, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activated by primary key match 找妈妈"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 from '《诡异药剂师》v0.5' processing {uid: 190, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activated by primary key match 小宝贝"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 from '《诡异药剂师》v0.5' processing {uid: 110, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activated by primary key match 血锯"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 from '《诡异药剂师》v0.5' processing {uid: 60, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.149Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activated by primary key match 血锯药剂店"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 from '《诡异药剂师》v0.5' processing {uid: 3, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 from '《诡异药剂师》v0.5' processing {uid: 1, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 from '《诡异药剂师》v0.5' processing {uid: 0, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Search done. Found 62 possible entries."
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] --- INCLUSION GROUP CHECKS ---"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] No inclusion groups found"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] --- PROBABILITY CHECKS ---"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "WI entry 930 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activation successful, adding to prompt {uid: 930, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "WI entry 920 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activation successful, adding to prompt {uid: 920, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.150Z",
+      "type": "debug",
+      "text": "WI entry 910 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.152Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activation successful, adding to prompt {uid: 910, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.152Z",
+      "type": "debug",
+      "text": "WI entry 451 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.158Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activation successful, adding to prompt {uid: 451, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.158Z",
+      "type": "debug",
+      "text": "WI entry 450 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.164Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 activation successful, adding to prompt {uid: 450, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]血衣诅咒续费绑定}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.164Z",
+      "type": "debug",
+      "text": "WI entry 449 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.169Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 activation successful, adding to prompt {uid: 449, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]目光诅咒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.169Z",
+      "type": "debug",
+      "text": "WI entry 448 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.175Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 activation successful, adding to prompt {uid: 448, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]泰坦诅咒削弱15%}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.175Z",
+      "type": "debug",
+      "text": "WI entry 447 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.182Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activation successful, adding to prompt {uid: 447, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.182Z",
+      "type": "debug",
+      "text": "WI entry 446 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.190Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 activation successful, adding to prompt {uid: 446, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]龙息之臂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.190Z",
+      "type": "debug",
+      "text": "WI entry 445 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.198Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activation successful, adding to prompt {uid: 445, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]鬼婴塑形}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.198Z",
+      "type": "debug",
+      "text": "WI entry 444 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.207Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 activation successful, adding to prompt {uid: 444, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]随机诊断术}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.207Z",
+      "type": "debug",
+      "text": "WI entry 443 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activation successful, adding to prompt {uid: 443, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]限时诅咒清除}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.219Z",
+      "type": "debug",
+      "text": "WI entry 442 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 activation successful, adding to prompt {uid: 442, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]过往遗念}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.226Z",
+      "type": "debug",
+      "text": "WI entry 441 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.236Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activation successful, adding to prompt {uid: 441, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉灾变}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.236Z",
+      "type": "debug",
+      "text": "WI entry 440 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.246Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 activation successful, adding to prompt {uid: 440, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉变异·脑蛇}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.246Z",
+      "type": "debug",
+      "text": "WI entry 439 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.256Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 activation successful, adding to prompt {uid: 439, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]聚焦之瞳}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.257Z",
+      "type": "debug",
+      "text": "WI entry 438 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.268Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 activation successful, adding to prompt {uid: 438, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]心灵契约}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.268Z",
+      "type": "debug",
+      "text": "WI entry 437 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.280Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 activation successful, adding to prompt {uid: 437, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]鬼婴·小呀哒}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.280Z",
+      "type": "debug",
+      "text": "WI entry 436 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.291Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 activation successful, adding to prompt {uid: 436, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]相亲相爱一家人视界群}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.291Z",
+      "type": "debug",
+      "text": "WI entry 435 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.304Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 activation successful, adding to prompt {uid: 435, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]猪头屠夫放置之谜}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.304Z",
+      "type": "debug",
+      "text": "WI entry 434 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.318Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 activation successful, adding to prompt {uid: 434, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]狂猎榜}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.318Z",
+      "type": "debug",
+      "text": "WI entry 433 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.336Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activation successful, adding to prompt {uid: 433, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]棒医生称号}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.336Z",
+      "type": "debug",
+      "text": "WI entry 432 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.350Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activation successful, adding to prompt {uid: 432, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.350Z",
+      "type": "debug",
+      "text": "WI entry 431 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.364Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 activation successful, adding to prompt {uid: 431, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]幸福之家传闻}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.364Z",
+      "type": "debug",
+      "text": "WI entry 430 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.380Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 activation successful, adding to prompt {uid: 430, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]化解怨结}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.380Z",
+      "type": "debug",
+      "text": "WI entry 429 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.396Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activation successful, adding to prompt {uid: 429, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]不眠夜规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.396Z",
+      "type": "debug",
+      "text": "WI entry 428 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.415Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 activation successful, adding to prompt {uid: 428, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]黑弦月}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.416Z",
+      "type": "debug",
+      "text": "WI entry 427 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.433Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 activation successful, adding to prompt {uid: 427, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]钢牙}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.433Z",
+      "type": "debug",
+      "text": "WI entry 426 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.454Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 activation successful, adding to prompt {uid: 426, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]试做型巨像012号}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.454Z",
+      "type": "debug",
+      "text": "WI entry 425 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.472Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 activation successful, adding to prompt {uid: 425, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]血肉增生药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.472Z",
+      "type": "debug",
+      "text": "WI entry 424 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.493Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 activation successful, adding to prompt {uid: 424, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]秘银头骨碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.493Z",
+      "type": "debug",
+      "text": "WI entry 423 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.513Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 activation successful, adding to prompt {uid: 423, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]神圣之矛碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.513Z",
+      "type": "debug",
+      "text": "WI entry 422 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.530Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 activation successful, adding to prompt {uid: 422, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]猎杀者120型}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.530Z",
+      "type": "debug",
+      "text": "WI entry 421 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.548Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 activation successful, adding to prompt {uid: 421, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]机械重神·71}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.548Z",
+      "type": "debug",
+      "text": "WI entry 420 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.570Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activation successful, adding to prompt {uid: 420, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]暴击药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.570Z",
+      "type": "debug",
+      "text": "WI entry 419 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.588Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 activation successful, adding to prompt {uid: 419, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无面魔心脏}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.588Z",
+      "type": "debug",
+      "text": "WI entry 418 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.609Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 activation successful, adding to prompt {uid: 418, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无皮尸傀·幽灵仆从}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.609Z",
+      "type": "debug",
+      "text": "WI entry 417 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.632Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 activation successful, adding to prompt {uid: 417, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]夜魔刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.632Z",
+      "type": "debug",
+      "text": "WI entry 416 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.652Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activation successful, adding to prompt {uid: 416, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]剔骨刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.652Z",
+      "type": "debug",
+      "text": "WI entry 415 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.704Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activation successful, adding to prompt {uid: 415, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]传说左轮}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.704Z",
+      "type": "debug",
+      "text": "WI entry 414 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.735Z",
+      "type": "debug",
+      "text": "Event emitted: message_iframe_render_ended"
+    },
+    {
+      "at": "2026-08-09T07:04:37.736Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activation successful, adding to prompt {uid: 414, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]魂灯营业}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.736Z",
+      "type": "debug",
+      "text": "WI entry 413 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.760Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 activation successful, adding to prompt {uid: 413, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]系统商城}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.760Z",
+      "type": "debug",
+      "text": "WI entry 412 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.784Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 activation successful, adding to prompt {uid: 412, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]独角鬼王神庙}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.784Z",
+      "type": "debug",
+      "text": "WI entry 411 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.808Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 activation successful, adding to prompt {uid: 411, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]倒吊塔地下基地}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.808Z",
+      "type": "debug",
+      "text": "WI entry 410 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.835Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 activation successful, adding to prompt {uid: 410, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]人偶庄园庭院}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.835Z",
+      "type": "debug",
+      "text": "WI entry 409 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.858Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 activation successful, adding to prompt {uid: 409, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]45号闺房}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.858Z",
+      "type": "debug",
+      "text": "WI entry 408 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.883Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 activation successful, adding to prompt {uid: 408, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]虚空折跃龟信使}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.883Z",
+      "type": "debug",
+      "text": "WI entry 407 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.907Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activation successful, adding to prompt {uid: 407, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]玥玥}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.907Z",
+      "type": "debug",
+      "text": "WI entry 406 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.933Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activation successful, adding to prompt {uid: 406, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.933Z",
+      "type": "debug",
+      "text": "WI entry 405 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.959Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activation successful, adding to prompt {uid: 405, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎神者}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.959Z",
+      "type": "debug",
+      "text": "WI entry 404 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:37.985Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activation successful, adding to prompt {uid: 404, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]械魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:37.985Z",
+      "type": "debug",
+      "text": "WI entry 403 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.011Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activation successful, adding to prompt {uid: 403, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]情报员024}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.012Z",
+      "type": "debug",
+      "text": "WI entry 402 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.039Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 activation successful, adding to prompt {uid: 402, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]夜医转职}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.039Z",
+      "type": "debug",
+      "text": "WI entry 401 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.065Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 activation successful, adding to prompt {uid: 401, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]噬心魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.065Z",
+      "type": "debug",
+      "text": "WI entry 400 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.092Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activation successful, adding to prompt {uid: 400, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.092Z",
+      "type": "debug",
+      "text": "WI entry 301 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.123Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activation successful, adding to prompt {uid: 301, world: 《诡异药剂师》v0.5, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.123Z",
+      "type": "debug",
+      "text": "WI entry 190 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.154Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activation successful, adding to prompt {uid: 190, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.154Z",
+      "type": "debug",
+      "text": "WI entry 110 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.188Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activation successful, adding to prompt {uid: 110, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.188Z",
+      "type": "debug",
+      "text": "WI entry 60 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.209Z",
+      "type": "log",
+      "text": "Generate entered"
+    },
+    {
+      "at": "2026-08-09T07:04:38.209Z",
+      "type": "debug",
+      "text": "Event emitted: generation_started"
+    },
+    {
+      "at": "2026-08-09T07:04:38.209Z",
+      "type": "debug",
+      "text": "Event emitted: GENERATION_AFTER_COMMANDS"
+    },
+    {
+      "at": "2026-08-09T07:04:38.209Z",
+      "type": "log",
+      "text": "[QR2] calling {functionToCall: , args: Array(3)}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.209Z",
+      "type": "log",
+      "text": "[QR2] Before-generation hook skipped due to dryRun."
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "Skipping extension interceptors for dry run"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "log",
+      "text": "Core/all messages: 1/1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "\n    setFloatingPrompt entered\n    ------\n    lastMessageNumber = 0\n    metadata_keys.interval = 1\n    metadata_keys.position = 1\n    metadata_keys.depth = 4\n    metadata_keys.role = 0\n    ------\n    "
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "[WI] --- START WI SCAN (on 1 messages, trigger = normal) (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.210Z",
+      "type": "debug",
+      "text": "[WI] Context size: 1970000; WI budget: 1970000 (max% = 100%, cap = 0)"
+    },
+    {
+      "at": "2026-08-09T07:04:38.212Z",
+      "type": "debug",
+      "text": "[WI] Character 《诡异药剂师》v0.5's lore has 101 world info entries [《诡异药剂师》v0.5]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.212Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_entries_loaded"
+    },
+    {
+      "at": "2026-08-09T07:04:38.213Z",
+      "type": "debug",
+      "text": "[Prompt Template] message #0.0 variables:  {initialized_lorebooks: Object, stat_data: Object, schema: 没有用别管这个}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.213Z",
+      "type": "debug",
+      "text": "[Prompt Template] all variables:  {LAST_RECEIVE_TOKENS: 21412, LAST_RECEIVE_CHARS: 58619, LAST_SEND_TOKENS: 24857, LAST_SEND_CHARS: 42422, sleep_var_wenfeng: # 文风设定：\n- 以直接点的白话作为文风基底。\n- 描写要为情绪服务，若没有情绪，描写也就毫无意义…：粗暴直给 · 感官轰炸 · 短句打击感 · 兽化修辞 · 畸变美学\n- 对性器官进行直白的描写。}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.213Z",
+      "type": "debug",
+      "text": "Event emitted: prompt_template_prepare"
+    },
+    {
+      "at": "2026-08-09T07:04:38.214Z",
+      "type": "debug",
+      "text": "[WI] Found 101 world lore entries. Sorted by strategy [character_first, 1]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.214Z",
+      "type": "debug",
+      "text": "[WI] --- SEARCHING ENTRIES (on 101 entries) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.214Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 START ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Scan state [INITIAL, 1]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 from '《诡异药剂师》v0.5' processing {uid: 930, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 from '《诡异药剂师》v0.5' processing {uid: 920, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 from '《诡异药剂师》v0.5' processing {uid: 910, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 from '《诡异药剂师》v0.5' processing {uid: 900, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [initvar]初始变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 900 has no keys defined, skipped"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 from '《诡异药剂师》v0.5' processing {uid: 451, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 from '《诡异药剂师》v0.5' processing {uid: 450, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]血衣诅咒续费绑定}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 from '《诡异药剂师》v0.5' processing {uid: 449, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]目光诅咒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 from '《诡异药剂师》v0.5' processing {uid: 448, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]泰坦诅咒削弱15%}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 from '《诡异药剂师》v0.5' processing {uid: 447, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 from '《诡异药剂师》v0.5' processing {uid: 446, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]龙息之臂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.215Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 from '《诡异药剂师》v0.5' processing {uid: 445, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]鬼婴塑形}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 from '《诡异药剂师》v0.5' processing {uid: 444, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]随机诊断术}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 from '《诡异药剂师》v0.5' processing {uid: 443, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]限时诅咒清除}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 from '《诡异药剂师》v0.5' processing {uid: 442, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]过往遗念}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 from '《诡异药剂师》v0.5' processing {uid: 441, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉灾变}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 from '《诡异药剂师》v0.5' processing {uid: 440, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉变异·脑蛇}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 from '《诡异药剂师》v0.5' processing {uid: 439, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]聚焦之瞳}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 from '《诡异药剂师》v0.5' processing {uid: 438, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]心灵契约}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 from '《诡异药剂师》v0.5' processing {uid: 437, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]鬼婴·小呀哒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 from '《诡异药剂师》v0.5' processing {uid: 436, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]相亲相爱一家人视界群}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 from '《诡异药剂师》v0.5' processing {uid: 435, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]猪头屠夫放置之谜}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.216Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 from '《诡异药剂师》v0.5' processing {uid: 434, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]狂猎榜}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 from '《诡异药剂师》v0.5' processing {uid: 433, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]棒医生称号}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 from '《诡异药剂师》v0.5' processing {uid: 432, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 from '《诡异药剂师》v0.5' processing {uid: 431, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]幸福之家传闻}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 from '《诡异药剂师》v0.5' processing {uid: 430, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]化解怨结}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 from '《诡异药剂师》v0.5' processing {uid: 429, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]不眠夜规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 from '《诡异药剂师》v0.5' processing {uid: 428, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]黑弦月}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 from '《诡异药剂师》v0.5' processing {uid: 427, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]钢牙}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 from '《诡异药剂师》v0.5' processing {uid: 426, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]试做型巨像012号}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 from '《诡异药剂师》v0.5' processing {uid: 425, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]血肉增生药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 from '《诡异药剂师》v0.5' processing {uid: 424, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]秘银头骨碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 from '《诡异药剂师》v0.5' processing {uid: 423, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]神圣之矛碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 from '《诡异药剂师》v0.5' processing {uid: 422, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]猎杀者120型}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 from '《诡异药剂师》v0.5' processing {uid: 421, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]机械重神·71}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 from '《诡异药剂师》v0.5' processing {uid: 420, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]暴击药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.217Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 from '《诡异药剂师》v0.5' processing {uid: 419, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无面魔心脏}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 from '《诡异药剂师》v0.5' processing {uid: 418, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无皮尸傀·幽灵仆从}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 from '《诡异药剂师》v0.5' processing {uid: 417, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]夜魔刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 from '《诡异药剂师》v0.5' processing {uid: 416, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]剔骨刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 from '《诡异药剂师》v0.5' processing {uid: 415, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]传说左轮}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 from '《诡异药剂师》v0.5' processing {uid: 414, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]魂灯营业}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 from '《诡异药剂师》v0.5' processing {uid: 413, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]系统商城}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 from '《诡异药剂师》v0.5' processing {uid: 412, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]独角鬼王神庙}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 from '《诡异药剂师》v0.5' processing {uid: 411, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]倒吊塔地下基地}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 from '《诡异药剂师》v0.5' processing {uid: 410, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]人偶庄园庭院}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 from '《诡异药剂师》v0.5' processing {uid: 409, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]45号闺房}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 from '《诡异药剂师》v0.5' processing {uid: 408, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]虚空折跃龟信使}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 from '《诡异药剂师》v0.5' processing {uid: 407, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]玥玥}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 from '《诡异药剂师》v0.5' processing {uid: 406, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 from '《诡异药剂师》v0.5' processing {uid: 405, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎神者}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 from '《诡异药剂师》v0.5' processing {uid: 404, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]械魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.218Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 from '《诡异药剂师》v0.5' processing {uid: 403, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]情报员024}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 from '《诡异药剂师》v0.5' processing {uid: 402, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]夜医转职}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 from '《诡异药剂师》v0.5' processing {uid: 401, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]噬心魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 from '《诡异药剂师》v0.5' processing {uid: 400, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 from '《诡异药剂师》v0.5' processing {uid: 301, world: 《诡异药剂师》v0.5, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activated by primary key match 找妈妈"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 from '《诡异药剂师》v0.5' processing {uid: 190, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.219Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activated by primary key match 小宝贝"
+    },
+    {
+      "at": "2026-08-09T07:04:38.220Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 from '《诡异药剂师》v0.5' processing {uid: 110, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.220Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activated by primary key match 血锯"
+    },
+    {
+      "at": "2026-08-09T07:04:38.220Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 from '《诡异药剂师》v0.5' processing {uid: 60, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.220Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activated by primary key match 血锯药剂店"
+    },
+    {
+      "at": "2026-08-09T07:04:38.221Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 from '《诡异药剂师》v0.5' processing {uid: 3, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 from '《诡异药剂师》v0.5' processing {uid: 1, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 from '《诡异药剂师》v0.5' processing {uid: 0, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activated because of constant"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Search done. Found 62 possible entries."
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] --- INCLUSION GROUP CHECKS ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] No inclusion groups found"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] --- PROBABILITY CHECKS ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 930 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 930 activation successful, adding to prompt {uid: 930, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量输出格式}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 920 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 920 activation successful, adding to prompt {uid: 920, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]当前变量}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 910 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 910 activation successful, adding to prompt {uid: 910, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [mvu_update]变量更新规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 451 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 451 activation successful, adding to prompt {uid: 451, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]黑蝴蝶剧毒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 450 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 450 activation successful, adding to prompt {uid: 450, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]血衣诅咒续费绑定}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 449 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 449 activation successful, adding to prompt {uid: 449, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]目光诅咒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "WI entry 448 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.222Z",
+      "type": "debug",
+      "text": "[WI] Entry 448 activation successful, adding to prompt {uid: 448, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]泰坦诅咒削弱15%}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 447 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 447 activation successful, adding to prompt {uid: 447, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·诅咒]恶灵血婴}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 446 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 446 activation successful, adding to prompt {uid: 446, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]龙息之臂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 445 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 445 activation successful, adding to prompt {uid: 445, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]鬼婴塑形}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 444 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 444 activation successful, adding to prompt {uid: 444, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]随机诊断术}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 443 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 443 activation successful, adding to prompt {uid: 443, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]限时诅咒清除}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 442 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 442 activation successful, adding to prompt {uid: 442, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]过往遗念}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "WI entry 441 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.223Z",
+      "type": "debug",
+      "text": "[WI] Entry 441 activation successful, adding to prompt {uid: 441, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉灾变}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 440 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 440 activation successful, adding to prompt {uid: 440, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]血肉变异·脑蛇}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 439 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 439 activation successful, adding to prompt {uid: 439, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]聚焦之瞳}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 438 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 438 activation successful, adding to prompt {uid: 438, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·能力]心灵契约}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 437 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 437 activation successful, adding to prompt {uid: 437, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]鬼婴·小呀哒}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 436 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 436 activation successful, adding to prompt {uid: 436, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]相亲相爱一家人视界群}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 435 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 435 activation successful, adding to prompt {uid: 435, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]猪头屠夫放置之谜}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 434 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 434 activation successful, adding to prompt {uid: 434, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]狂猎榜}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 433 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 433 activation successful, adding to prompt {uid: 433, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]棒医生称号}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 432 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 432 activation successful, adding to prompt {uid: 432, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "WI entry 431 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.224Z",
+      "type": "debug",
+      "text": "[WI] Entry 431 activation successful, adding to prompt {uid: 431, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]幸福之家传闻}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 430 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 430 activation successful, adding to prompt {uid: 430, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]化解怨结}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 429 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 429 activation successful, adding to prompt {uid: 429, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·特殊设定]不眠夜规则}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 428 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 428 activation successful, adding to prompt {uid: 428, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]黑弦月}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 427 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 427 activation successful, adding to prompt {uid: 427, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]钢牙}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 426 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 426 activation successful, adding to prompt {uid: 426, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]试做型巨像012号}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 425 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "[WI] Entry 425 activation successful, adding to prompt {uid: 425, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]血肉增生药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.225Z",
+      "type": "debug",
+      "text": "WI entry 424 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 424 activation successful, adding to prompt {uid: 424, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]秘银头骨碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "WI entry 423 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 423 activation successful, adding to prompt {uid: 423, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]神圣之矛碎片}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "WI entry 422 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 422 activation successful, adding to prompt {uid: 422, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]猎杀者120型}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "WI entry 421 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 421 activation successful, adding to prompt {uid: 421, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]机械重神·71}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "WI entry 420 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "[WI] Entry 420 activation successful, adding to prompt {uid: 420, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]暴击药剂}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.226Z",
+      "type": "debug",
+      "text": "WI entry 419 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 419 activation successful, adding to prompt {uid: 419, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无面魔心脏}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 418 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 418 activation successful, adding to prompt {uid: 418, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]无皮尸傀·幽灵仆从}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 417 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 417 activation successful, adding to prompt {uid: 417, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]夜魔刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 416 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 416 activation successful, adding to prompt {uid: 416, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]剔骨刀}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 415 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 415 activation successful, adding to prompt {uid: 415, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·物品]传说左轮}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 414 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "[WI] Entry 414 activation successful, adding to prompt {uid: 414, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]魂灯营业}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.227Z",
+      "type": "debug",
+      "text": "WI entry 413 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "[WI] Entry 413 activation successful, adding to prompt {uid: 413, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]系统商城}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "WI entry 412 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "[WI] Entry 412 activation successful, adding to prompt {uid: 412, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]独角鬼王神庙}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "WI entry 411 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "[WI] Entry 411 activation successful, adding to prompt {uid: 411, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]倒吊塔地下基地}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "WI entry 410 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "[WI] Entry 410 activation successful, adding to prompt {uid: 410, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]人偶庄园庭院}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "WI entry 409 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "[WI] Entry 409 activation successful, adding to prompt {uid: 409, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·场景]45号闺房}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.228Z",
+      "type": "debug",
+      "text": "WI entry 408 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.230Z",
+      "type": "debug",
+      "text": "[WI] Entry 408 activation successful, adding to prompt {uid: 408, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]虚空折跃龟信使}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "WI entry 407 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "[WI] Entry 407 activation successful, adding to prompt {uid: 407, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]玥玥}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "WI entry 406 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "[WI] Entry 406 activation successful, adding to prompt {uid: 406, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎魔人·奥卡洛斯}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "WI entry 405 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "[WI] Entry 405 activation successful, adding to prompt {uid: 405, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]猎神者}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "WI entry 404 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "[WI] Entry 404 activation successful, adding to prompt {uid: 404, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]械魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.231Z",
+      "type": "debug",
+      "text": "WI entry 403 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "[WI] Entry 403 activation successful, adding to prompt {uid: 403, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]情报员024}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "WI entry 402 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "[WI] Entry 402 activation successful, adding to prompt {uid: 402, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]夜医转职}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "WI entry 401 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "[WI] Entry 401 activation successful, adding to prompt {uid: 401, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]噬心魔}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "WI entry 400 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "[WI] Entry 400 activation successful, adding to prompt {uid: 400, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [概念·势力]人皮拾荒者}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.232Z",
+      "type": "debug",
+      "text": "WI entry 301 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "[WI] Entry 301 activation successful, adding to prompt {uid: 301, world: 《诡异药剂师》v0.5, key: Array(4), keysecondary: Array(0), comment: [事件]E02·血娃娃上门与找妈妈任务}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "WI entry 190 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "[WI] Entry 190 activation successful, adding to prompt {uid: 190, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]小宝贝}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "WI entry 110 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "[WI] Entry 110 activation successful, adding to prompt {uid: 110, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [角色]血锯}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.233Z",
+      "type": "debug",
+      "text": "WI entry 60 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.243Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activation successful, adding to prompt {uid: 60, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.243Z",
+      "type": "debug",
+      "text": "WI entry 3 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.260Z",
+      "type": "info",
+      "text": "变量结构注册成功"
+    },
+    {
+      "at": "2026-08-09T07:04:38.270Z",
+      "type": "debug",
+      "text": "[WI] Entry 60 activation successful, adding to prompt {uid: 60, world: 《诡异药剂师》v0.5, key: Array(3), keysecondary: Array(0), comment: [地点]血锯药剂店}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.270Z",
+      "type": "debug",
+      "text": "WI entry 3 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.300Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activation successful, adding to prompt {uid: 3, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.300Z",
+      "type": "debug",
+      "text": "WI entry 1 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.331Z",
+      "type": "debug",
+      "text": "[WI] Entry 3 activation successful, adding to prompt {uid: 3, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [角色索引]八人路由索引}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.331Z",
+      "type": "debug",
+      "text": "WI entry 1 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.374Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activation successful, adding to prompt {uid: 1, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.374Z",
+      "type": "debug",
+      "text": "WI entry 0 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.417Z",
+      "type": "debug",
+      "text": "[WI] Entry 1 activation successful, adding to prompt {uid: 1, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]自主世界事件调度}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.417Z",
+      "type": "debug",
+      "text": "WI entry 0 does not use probability"
+    },
+    {
+      "at": "2026-08-09T07:04:38.463Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activation successful, adding to prompt {uid: 0, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.463Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 RESULT ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "[WI] Successfully activated 62 new entries to prompt. 62 total entries activated. [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "[WI] Scan done. No new entries to prompt. Stopping."
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "[WI] Setting scan state [NONE, 0]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_scan_done"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "[WI] --- BUILDING PROMPT ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.464Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.465Z",
+      "type": "log",
+      "text": "[WI] Hypothetically adding 62 entries to prompt [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.465Z",
+      "type": "debug",
+      "text": "[WI] --- DONE (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.465Z",
+      "type": "log",
+      "text": "skipWIAN not active, adding WIAN"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] Entry 0 activation successful, adding to prompt {uid: 0, world: 《诡异药剂师》v0.5, key: Array(0), keysecondary: Array(0), comment: [核心]最高规则与玩家主权}"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] --- LOOP #1 RESULT ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] Successfully activated 62 new entries to prompt. 62 total entries activated. [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] Scan done. No new entries to prompt. Stopping."
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] Setting scan state [NONE, 0]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "Event emitted: worldinfo_scan_done"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "[WI] --- BUILDING PROMPT ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script 星河璀璨数据库召回配套正则2 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.503Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [隐藏][不发送]远楼层消息 because depth 0 is less than minDepth 5"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊吐槽tokens because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]节省师尊状态栏tokens because depth 0 is less than minDepth 6"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [清月师尊]🎨插图后续删除保护正文质量 because depth 0 is less than minDepth 1"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]10 层外只显示摘要（仅启用了摘要才生效） because depth 0 is less than minDepth 11"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的思客说书 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.504Z",
+      "type": "debug",
+      "text": "getRegexedString: Skipping script [🥷隐藏]对AI隐藏 2 层外的用户大输入 because depth 0 is less than minDepth 2"
+    },
+    {
+      "at": "2026-08-09T07:04:38.505Z",
+      "type": "log",
+      "text": "[WI] Hypothetically adding 62 entries to prompt [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]"
+    },
+    {
+      "at": "2026-08-09T07:04:38.505Z",
+      "type": "debug",
+      "text": "[WI] --- DONE (DRY RUN) ---"
+    },
+    {
+      "at": "2026-08-09T07:04:38.505Z",
+      "type": "log",
+      "text": "skipWIAN not active, adding WIAN"
+    },
+    {
+      "at": "2026-08-09T07:04:38.508Z",
+      "type": "debug",
+      "text": "calling runGenerate"
+    },
+    {
+      "at": "2026-08-09T07:04:38.508Z",
+      "type": "debug",
+      "text": "generating prompt"
+    },
+    {
+      "at": "2026-08-09T07:04:38.508Z",
+      "type": "debug",
+      "text": "---calling setPromptString 0"
+    },
+    {
+      "at": "2026-08-09T07:04:38.508Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_combine_prompts"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.510Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.511Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.512Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.513Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "calling runGenerate"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "generating prompt"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "---calling setPromptString 0"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_combine_prompts"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.528Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.529Z",
+      "type": "debug",
+      "text": "Debounced metadata save cancelled"
+    },
+    {
+      "at": "2026-08-09T07:04:38.717Z",
+      "type": "debug",
+      "text": "Event emitted: chat_completion_prompt_ready"
+    },
+    {
+      "at": "2026-08-09T07:04:38.718Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_data"
+    },
+    {
+      "at": "2026-08-09T07:04:38.763Z",
+      "type": "debug",
+      "text": "Event emitted: chat_completion_prompt_ready"
+    },
+    {
+      "at": "2026-08-09T07:04:38.764Z",
+      "type": "debug",
+      "text": "Event emitted: generate_after_data"
+    },
+    {
+      "at": "2026-08-09T07:04:39.542Z",
+      "type": "debug",
+      "text": "Saving metadata..."
+    },
+    {
+      "at": "2026-08-09T07:04:39.666Z",
+      "type": "debug",
+      "text": "Chat Completions: saving token cache"
+    },
+    {
+      "at": "2026-08-09T07:04:39.666Z",
+      "type": "debug",
+      "text": "Saved metadata..."
+    },
+    {
+      "at": "2026-08-09T07:04:44.284Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.MVU变量框架"
+    },
+    {
+      "at": "2026-08-09T07:04:44.284Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.MVU变量框架"
+    },
+    {
+      "at": "2026-08-09T07:04:45.260Z",
+      "type": "debug",
+      "text": "Event emitted: global_Mvu_initialized"
+    },
+    {
+      "at": "2026-08-09T07:04:45.262Z",
+      "type": "log",
+      "text": "[ToolManager] Registered function tool: ToolDefinition"
+    },
+    {
+      "at": "2026-08-09T07:04:45.382Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-09T07:04:45.778Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.格式补全"
+    },
+    {
+      "at": "2026-08-09T07:04:45.816Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.空正文梦境提取"
+    },
+    {
+      "at": "2026-08-09T07:04:45.830Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.Kimi 前缀填充"
+    },
+    {
+      "at": "2026-08-09T07:04:45.835Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.压缩相邻消息"
+    },
+    {
+      "at": "2026-08-09T07:04:45.837Z",
+      "type": "debug",
+      "text": "Event emitted: th_unique_check.压缩相邻消息"
+    },
+    {
+      "at": "2026-08-09T07:04:46.945Z",
+      "type": "debug",
+      "text": "Event emitted: settings_updated"
+    },
+    {
+      "at": "2026-08-09T07:04:46.945Z",
+      "type": "debug",
+      "text": "Preset 梦鲸思客V4-0731 saved, but not updating the list"
+    }
+  ]
+}

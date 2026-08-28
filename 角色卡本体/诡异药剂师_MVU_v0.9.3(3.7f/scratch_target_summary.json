@@ -1,0 +1,1143 @@
+[
+  {
+    "id": 501,
+    "comment": "[概念·机制]无瞳法阵",
+    "file": "src/concepts/机制/无瞳法阵.md",
+    "eventIds": [
+      "E45",
+      "E82"
+    ],
+    "length": 1527,
+    "hasVariants": false
+  },
+  {
+    "id": 502,
+    "comment": "[概念·机制]心灵振荡器",
+    "file": "src/concepts/机制/心灵振荡器.md",
+    "eventIds": [
+      "E63"
+    ],
+    "length": 1075,
+    "hasVariants": false
+  },
+  {
+    "id": 503,
+    "comment": "[概念·机制]血肉暴动",
+    "file": "src/concepts/机制/血肉暴动.md",
+    "eventIds": [
+      "E52",
+      "E67",
+      "E68"
+    ],
+    "length": 1371,
+    "hasVariants": false
+  },
+  {
+    "id": 504,
+    "comment": "[概念·机制]血肉遁术",
+    "file": "src/concepts/机制/血肉遁术.md",
+    "eventIds": [
+      "E52"
+    ],
+    "length": 1145,
+    "hasVariants": false
+  },
+  {
+    "id": 505,
+    "comment": "[概念·机制]以M之拳与充能体系",
+    "file": "src/concepts/机制/以M之拳与充能体系.md",
+    "eventIds": [
+      "E52",
+      "E59",
+      "E60",
+      "E61",
+      "E62",
+      "E63",
+      "E67",
+      "E68",
+      "E74",
+      "E75",
+      "E76",
+      "E78"
+    ],
+    "length": 7145,
+    "hasVariants": true
+  },
+  {
+    "id": 506,
+    "comment": "[概念·机制]异虫孵化所",
+    "file": "src/concepts/机制/异虫孵化所.md",
+    "eventIds": [
+      "E52",
+      "E71"
+    ],
+    "length": 940,
+    "hasVariants": false
+  },
+  {
+    "id": 507,
+    "comment": "[概念·势力]白家",
+    "file": "src/concepts/势力/白家.md",
+    "eventIds": [
+      "E41"
+    ],
+    "length": 1392,
+    "hasVariants": true
+  },
+  {
+    "id": 508,
+    "comment": "[概念·势力]超自然总局",
+    "file": "src/concepts/势力/超自然总局.md",
+    "eventIds": [
+      "E37",
+      "E38",
+      "E39"
+    ],
+    "length": 2315,
+    "hasVariants": true
+  },
+  {
+    "id": 509,
+    "comment": "[概念·势力]机械神教",
+    "file": "src/concepts/势力/机械神教.md",
+    "eventIds": [
+      "E43",
+      "E56",
+      "E58",
+      "E65",
+      "E67",
+      "E76",
+      "E77",
+      "E80",
+      "E94"
+    ],
+    "length": 5040,
+    "hasVariants": true
+  },
+  {
+    "id": 510,
+    "comment": "[概念·势力]龙虎山",
+    "file": "src/concepts/势力/龙虎山.md",
+    "eventIds": [
+      "E38"
+    ],
+    "length": 1375,
+    "hasVariants": true
+  },
+  {
+    "id": 511,
+    "comment": "[概念·势力]血肉神教",
+    "file": "src/concepts/势力/血肉神教.md",
+    "eventIds": [
+      "E37",
+      "E38",
+      "E39",
+      "E43"
+    ],
+    "length": 2744,
+    "hasVariants": true
+  },
+  {
+    "id": 512,
+    "comment": "[概念·势力]夜医架构",
+    "file": "src/concepts/势力/夜医架构.md",
+    "eventIds": [
+      "E45",
+      "E47",
+      "E54"
+    ],
+    "length": 2515,
+    "hasVariants": true
+  },
+  {
+    "id": 513,
+    "comment": "[概念·势力]欲望母树派系",
+    "file": "src/concepts/势力/欲望母树派系.md",
+    "eventIds": [
+      "E58",
+      "E62",
+      "E63",
+      "E65",
+      "E76",
+      "E77",
+      "E78",
+      "E94"
+    ],
+    "length": 4338,
+    "hasVariants": true
+  },
+  {
+    "id": 514,
+    "comment": "[概念·场景]002病房",
+    "file": "src/concepts/场景/002病房.md",
+    "eventIds": [
+      "E48",
+      "E57"
+    ],
+    "length": 1220,
+    "hasVariants": false
+  },
+  {
+    "id": 515,
+    "comment": "[概念·场景]白逸别墅",
+    "file": "src/concepts/场景/白逸别墅.md",
+    "eventIds": [
+      "E41"
+    ],
+    "length": 1075,
+    "hasVariants": false
+  },
+  {
+    "id": 516,
+    "comment": "[概念·场景]不正常生物接诊中心",
+    "file": "src/concepts/场景/不正常生物接诊中心.md",
+    "eventIds": [
+      "E47",
+      "E48",
+      "E49",
+      "E55",
+      "E56"
+    ],
+    "length": 1277,
+    "hasVariants": false
+  },
+  {
+    "id": 517,
+    "comment": "[概念·场景]畸变堡垒",
+    "file": "src/concepts/场景/畸变堡垒.md",
+    "eventIds": [
+      "E62",
+      "E63",
+      "E65",
+      "E66",
+      "E67",
+      "E70"
+    ],
+    "length": 1424,
+    "hasVariants": false
+  },
+  {
+    "id": 518,
+    "comment": "[概念·场景]蓝星·魔都",
+    "file": "src/concepts/场景/蓝星·魔都.md",
+    "eventIds": [
+      "E37",
+      "E38",
+      "E39"
+    ],
+    "length": 1277,
+    "hasVariants": false
+  },
+  {
+    "id": 519,
+    "comment": "[概念·场景]林恩故乡县城",
+    "file": "src/concepts/场景/林恩故乡县城.md",
+    "eventIds": [
+      "E40",
+      "E42"
+    ],
+    "length": 1186,
+    "hasVariants": false
+  },
+  {
+    "id": 520,
+    "comment": "[概念·场景]朋克酒店",
+    "file": "src/concepts/场景/朋克酒店.md",
+    "eventIds": [
+      "E51",
+      "E52"
+    ],
+    "length": 1216,
+    "hasVariants": false
+  },
+  {
+    "id": 521,
+    "comment": "[概念·场景]群星圣堂",
+    "file": "src/concepts/场景/群星圣堂.md",
+    "eventIds": [
+      "E46",
+      "E47"
+    ],
+    "length": 1113,
+    "hasVariants": false
+  },
+  {
+    "id": 522,
+    "comment": "[概念·场景]山谷汇合点",
+    "file": "src/concepts/场景/山谷汇合点.md",
+    "eventIds": [
+      "E60",
+      "E61"
+    ],
+    "length": 1114,
+    "hasVariants": false
+  },
+  {
+    "id": 523,
+    "comment": "[概念·场景]夜医前线营地",
+    "file": "src/concepts/场景/夜医前线营地.md",
+    "eventIds": [
+      "E57",
+      "E58",
+      "E59"
+    ],
+    "length": 1081,
+    "hasVariants": false
+  },
+  {
+    "id": 524,
+    "comment": "[概念·场景]仪式塔",
+    "file": "src/concepts/场景/仪式塔.md",
+    "eventIds": [
+      "E44",
+      "E45"
+    ],
+    "length": 1249,
+    "hasVariants": false
+  },
+  {
+    "id": 525,
+    "comment": "[概念·场景]诅咒之城",
+    "file": "src/concepts/场景/诅咒之城.md",
+    "eventIds": [
+      "E58",
+      "E60",
+      "E62",
+      "E77",
+      "E78",
+      "E94"
+    ],
+    "length": 1358,
+    "hasVariants": false
+  },
+  {
+    "id": 526,
+    "comment": "[概念·物品]逗猫棒",
+    "file": "src/concepts/物品/逗猫棒.md",
+    "eventIds": [
+      "E49",
+      "E55"
+    ],
+    "length": 1472,
+    "hasVariants": true
+  },
+  {
+    "id": 527,
+    "comment": "[概念·物品]夺萃之镰",
+    "file": "src/concepts/物品/夺萃之镰.md",
+    "eventIds": [
+      "E61",
+      "E62"
+    ],
+    "length": 1604,
+    "hasVariants": false
+  },
+  {
+    "id": 528,
+    "comment": "[概念·物品]反扫描殖装虫",
+    "file": "src/concepts/物品/反扫描殖装虫.md",
+    "eventIds": [
+      "E56"
+    ],
+    "length": 1098,
+    "hasVariants": false
+  },
+  {
+    "id": 529,
+    "comment": "[概念·物品]秽体史莱姆拟化形态药剂",
+    "file": "src/concepts/物品/秽体史莱姆拟化形态药剂.md",
+    "eventIds": [
+      "E56",
+      "E61"
+    ],
+    "length": 2185,
+    "hasVariants": true
+  },
+  {
+    "id": 530,
+    "comment": "[概念·物品]恐怖书籍",
+    "file": "src/concepts/物品/恐怖书籍.md",
+    "eventIds": [
+      "E48",
+      "E57",
+      "E80",
+      "E93"
+    ],
+    "length": 3055,
+    "hasVariants": true
+  },
+  {
+    "id": 531,
+    "comment": "[概念·物品]猫娘药剂",
+    "file": "src/concepts/物品/猫娘药剂.md",
+    "eventIds": [
+      "E49",
+      "E50",
+      "E63"
+    ],
+    "length": 2509,
+    "hasVariants": true
+  },
+  {
+    "id": 532,
+    "comment": "[概念·物品]赛博机械蓝图",
+    "file": "src/concepts/物品/赛博机械蓝图.md",
+    "eventIds": [
+      "E62"
+    ],
+    "length": 1269,
+    "hasVariants": false
+  },
+  {
+    "id": 533,
+    "comment": "[概念·物品]替死娃娃",
+    "file": "src/concepts/物品/替死娃娃.md",
+    "eventIds": [
+      "E52",
+      "E70",
+      "E72",
+      "E80"
+    ],
+    "length": 1521,
+    "hasVariants": false
+  },
+  {
+    "id": 534,
+    "comment": "[概念·物品]镇魂铃",
+    "file": "src/concepts/物品/镇魂铃.md",
+    "eventIds": [
+      "E55"
+    ],
+    "length": 1005,
+    "hasVariants": false
+  },
+  {
+    "id": 535,
+    "comment": "[概念·物品]重装生化手雷xp1",
+    "file": "src/concepts/物品/重装生化手雷xp1.md",
+    "eventIds": [
+      "E56"
+    ],
+    "length": 1450,
+    "hasVariants": false
+  },
+  {
+    "id": 536,
+    "comment": "[概念·物品]主母的红茶包",
+    "file": "src/concepts/物品/主母的红茶包.md",
+    "eventIds": [
+      "E50"
+    ],
+    "length": 1492,
+    "hasVariants": true
+  },
+  {
+    "id": 537,
+    "comment": "[概念·物品]自缚天使的怜悯（盗版）",
+    "file": "src/concepts/物品/自缚天使的怜悯（盗版）.md",
+    "eventIds": [
+      "E44",
+      "E49",
+      "E62"
+    ],
+    "length": 2436,
+    "hasVariants": true
+  },
+  {
+    "id": 538,
+    "comment": "[概念·特殊设定]术语速查（E36-E64）",
+    "file": "src/concepts/特殊设定/术语速查（E36-E64）.md",
+    "eventIds": [],
+    "length": 1424,
+    "hasVariants": false
+  },
+  {
+    "id": 539,
+    "comment": "[概念·特殊设定]蓝星与平行世界",
+    "file": "src/concepts/特殊设定/蓝星与平行世界.md",
+    "eventIds": [
+      "E37",
+      "E40",
+      "E42",
+      "E43"
+    ],
+    "length": 2293,
+    "hasVariants": true
+  },
+  {
+    "id": 540,
+    "comment": "[概念·特殊设定]平行林恩加密户籍",
+    "file": "src/concepts/特殊设定/平行林恩加密户籍.md",
+    "eventIds": [
+      "E40"
+    ],
+    "length": 1340,
+    "hasVariants": true
+  },
+  {
+    "id": 541,
+    "comment": "[概念·人物]艾尔",
+    "file": "src/concepts/人物/艾尔.md",
+    "eventIds": [
+      "E48"
+    ],
+    "length": 788,
+    "hasVariants": false
+  },
+  {
+    "id": 542,
+    "comment": "[概念·人物]白小凌",
+    "file": "src/concepts/人物/白小凌.md",
+    "eventIds": [
+      "E41"
+    ],
+    "length": 875,
+    "hasVariants": false
+  },
+  {
+    "id": 543,
+    "comment": "[概念·人物]科莱",
+    "file": "src/concepts/人物/科莱.md",
+    "eventIds": [
+      "E47"
+    ],
+    "length": 850,
+    "hasVariants": false
+  },
+  {
+    "id": 544,
+    "comment": "[概念·人物]克勒斯",
+    "file": "src/concepts/人物/克勒斯.md",
+    "eventIds": [
+      "E38",
+      "E39"
+    ],
+    "length": 1359,
+    "hasVariants": true
+  },
+  {
+    "id": 545,
+    "comment": "[概念·人物]森一·940",
+    "file": "src/concepts/人物/森一·940.md",
+    "eventIds": [
+      "E52",
+      "E54"
+    ],
+    "length": 1512,
+    "hasVariants": true
+  },
+  {
+    "id": 546,
+    "comment": "[概念·人物]圣徒·379号博士",
+    "file": "src/concepts/人物/圣徒·379号博士.md",
+    "eventIds": [
+      "E60",
+      "E61"
+    ],
+    "length": 1570,
+    "hasVariants": true
+  },
+  {
+    "id": 547,
+    "comment": "[概念·人物]王蓓",
+    "file": "src/concepts/人物/王蓓.md",
+    "eventIds": [
+      "E38"
+    ],
+    "length": 710,
+    "hasVariants": false
+  },
+  {
+    "id": 548,
+    "comment": "[概念·人物]王朝北",
+    "file": "src/concepts/人物/王朝北.md",
+    "eventIds": [
+      "E38"
+    ],
+    "length": 789,
+    "hasVariants": false
+  },
+  {
+    "id": 549,
+    "comment": "[概念·人物]尹琴",
+    "file": "src/concepts/人物/尹琴.md",
+    "eventIds": [
+      "E39",
+      "E41"
+    ],
+    "length": 1222,
+    "hasVariants": true
+  },
+  {
+    "id": 550,
+    "comment": "[概念·人物]游荡者",
+    "file": "src/concepts/人物/游荡者.md",
+    "eventIds": [
+      "E56"
+    ],
+    "length": 841,
+    "hasVariants": false
+  },
+  {
+    "id": 551,
+    "comment": "[概念·机制]智能动乱纳米集群与T型智能动乱病毒",
+    "file": "src/concepts/机制/智能动乱纳米集群与T型智能动乱病毒.md",
+    "eventIds": [
+      "E67",
+      "E68",
+      "E70"
+    ],
+    "length": 2207,
+    "hasVariants": true
+  },
+  {
+    "id": 552,
+    "comment": "[概念·机制]巨像超维网络",
+    "file": "src/concepts/机制/巨像超维网络.md",
+    "eventIds": [
+      "E78"
+    ],
+    "length": 1652,
+    "hasVariants": true
+  },
+  {
+    "id": 553,
+    "comment": "[概念·机制]机械纳米风暴",
+    "file": "src/concepts/机制/机械纳米风暴.md",
+    "eventIds": [
+      "E67",
+      "E68"
+    ],
+    "length": 1386,
+    "hasVariants": true
+  },
+  {
+    "id": 554,
+    "comment": "[概念·机制]人偶之誓",
+    "file": "src/concepts/机制/人偶之誓.md",
+    "eventIds": [
+      "E69",
+      "E81"
+    ],
+    "length": 1693,
+    "hasVariants": true
+  },
+  {
+    "id": 555,
+    "comment": "[概念·机制]恶堕向的机械姬与驯服崩坏涩涩机制",
+    "file": "src/concepts/机制/恶堕向的机械姬与驯服崩坏涩涩机制.md",
+    "eventIds": [
+      "E75",
+      "E84",
+      "E95"
+    ],
+    "length": 2421,
+    "hasVariants": true
+  },
+  {
+    "id": 556,
+    "comment": "[概念·机制]根源级本体降临献祭规则",
+    "file": "src/concepts/机制/根源级本体降临献祭规则.md",
+    "eventIds": [
+      "E94"
+    ],
+    "length": 890,
+    "hasVariants": false
+  },
+  {
+    "id": 571,
+    "comment": "[概念·机制]血肉利维坦结构与神经链接",
+    "file": "src/concepts/C571_血肉利维坦结构与神经链接.md",
+    "eventIds": [
+      "E96",
+      "E97",
+      "E99",
+      "E100",
+      "E101",
+      "E104",
+      "E109"
+    ],
+    "length": 796,
+    "hasVariants": false
+  },
+  {
+    "id": 572,
+    "comment": "[概念·机制]血肉咒缚瘟疫机制",
+    "file": "src/concepts/C572_血肉咒缚瘟疫机制.md",
+    "eventIds": [
+      "E96",
+      "E97",
+      "E98",
+      "E101",
+      "E104",
+      "E105"
+    ],
+    "length": 669,
+    "hasVariants": false
+  },
+  {
+    "id": 573,
+    "comment": "[概念·人物]初代九字元勋破晓315博士",
+    "file": "src/concepts/C573_初代九字元勋破晓315博士.md",
+    "eventIds": [
+      "E96",
+      "E98",
+      "E102",
+      "E108",
+      "E109",
+      "E110",
+      "E111"
+    ],
+    "length": 636,
+    "hasVariants": false
+  },
+  {
+    "id": 574,
+    "comment": "[概念·物品]灵能芯片与赛博文明火种",
+    "file": "src/concepts/C574_灵能芯片与赛博文明火种.md",
+    "eventIds": [
+      "E98",
+      "E99",
+      "E120"
+    ],
+    "length": 507,
+    "hasVariants": false
+  },
+  {
+    "id": 575,
+    "comment": "[概念·机制]赛博飞升与遗忘诅咒",
+    "file": "src/concepts/C575_赛博飞升与遗忘诅咒.md",
+    "eventIds": [
+      "E98",
+      "E116",
+      "E120"
+    ],
+    "length": 493,
+    "hasVariants": false
+  },
+  {
+    "id": 576,
+    "comment": "[概念·机制]根源禁杀契约法则",
+    "file": "src/concepts/C576_根源禁杀契约法则.md",
+    "eventIds": [
+      "E99",
+      "E100",
+      "E104"
+    ],
+    "length": 477,
+    "hasVariants": false
+  },
+  {
+    "id": 577,
+    "comment": "[概念·机制]死灵畸变体与憎恶者3号",
+    "file": "src/concepts/C577_死灵畸变体与憎恶者3号.md",
+    "eventIds": [
+      "E100"
+    ],
+    "length": 441,
+    "hasVariants": false
+  },
+  {
+    "id": 578,
+    "comment": "[概念·物品]鬼面尖啸者芬芳改装版",
+    "file": "src/concepts/C578_鬼面尖啸者芬芳改装版.md",
+    "eventIds": [
+      "E101"
+    ],
+    "length": 460,
+    "hasVariants": false
+  },
+  {
+    "id": 579,
+    "comment": "[概念·势力]疫医八大执事与第一腔室",
+    "file": "src/concepts/C579_疫医八大执事与第一腔室.md",
+    "eventIds": [
+      "E101",
+      "E102",
+      "E103",
+      "E108"
+    ],
+    "length": 487,
+    "hasVariants": false
+  },
+  {
+    "id": 580,
+    "comment": "[概念·机制]机械姬恶堕大计",
+    "file": "src/concepts/C580_机械姬恶堕大计.md",
+    "eventIds": [
+      "E102",
+      "E104"
+    ],
+    "length": 460,
+    "hasVariants": false
+  },
+  {
+    "id": 581,
+    "comment": "[概念·能力]四寸不烂之舌与官僚腐败艺术",
+    "file": "src/concepts/C581_四寸不烂之舌与官僚腐败艺术.md",
+    "eventIds": [
+      "E101",
+      "E103"
+    ],
+    "length": 448,
+    "hasVariants": false
+  },
+  {
+    "id": 582,
+    "comment": "[概念·机制]以M版血肉瘟疫与羞耻机制",
+    "file": "src/concepts/C582_以M版血肉瘟疫与羞耻机制.md",
+    "eventIds": [
+      "E101",
+      "E104",
+      "E112"
+    ],
+    "length": 426,
+    "hasVariants": false
+  },
+  {
+    "id": 583,
+    "comment": "[概念·物品]四合一超级异常药剂",
+    "file": "src/concepts/C583_四合一超级异常药剂.md",
+    "eventIds": [
+      "E105",
+      "E108"
+    ],
+    "length": 456,
+    "hasVariants": false
+  },
+  {
+    "id": 584,
+    "comment": "[概念·机制]木偶咒印与人偶夫人身世起源",
+    "file": "src/concepts/C584_木偶咒印与人偶夫人身世起源.md",
+    "eventIds": [
+      "E106"
+    ],
+    "length": 427,
+    "hasVariants": false
+  },
+  {
+    "id": 585,
+    "comment": "[概念·机制]心灵语者与人偶庄园执念",
+    "file": "src/concepts/C585_心灵语者与人偶庄园执念.md",
+    "eventIds": [
+      "E106"
+    ],
+    "length": 417,
+    "hasVariants": false
+  },
+  {
+    "id": 586,
+    "comment": "[概念·机制]死兆级傀儡与白痴印记",
+    "file": "src/concepts/C586_死兆级傀儡与白痴印记.md",
+    "eventIds": [
+      "E107",
+      "E108"
+    ],
+    "length": 416,
+    "hasVariants": false
+  },
+  {
+    "id": 587,
+    "comment": "[概念·机制]利维坦鲸落与骨架净化",
+    "file": "src/concepts/C587_利维坦鲸落与骨架净化.md",
+    "eventIds": [
+      "E109",
+      "E112"
+    ],
+    "length": 494,
+    "hasVariants": false
+  },
+  {
+    "id": 588,
+    "comment": "[概念·物品]看了就会死的书破解与熔断机制",
+    "file": "src/concepts/C588_看了就会死的书破解与熔断机制.md",
+    "eventIds": [
+      "E109"
+    ],
+    "length": 491,
+    "hasVariants": false
+  },
+  {
+    "id": 589,
+    "comment": "[概念·能力]灵魂容器钻孔开颅刑讯术",
+    "file": "src/concepts/C589_灵魂容器钻孔开颅刑讯术.md",
+    "eventIds": [
+      "E110"
+    ],
+    "length": 405,
+    "hasVariants": false
+  },
+  {
+    "id": 590,
+    "comment": "[概念·能力]过往遗念肉身重塑法",
+    "file": "src/concepts/C590_过往遗念肉身重塑法.md",
+    "eventIds": [
+      "E110"
+    ],
+    "length": 480,
+    "hasVariants": false
+  },
+  {
+    "id": 591,
+    "comment": "[概念·人物]恶面堕天使与疫医信仰源头",
+    "file": "src/concepts/C591_恶面堕天使与疫医信仰源头.md",
+    "eventIds": [
+      "E111",
+      "E112"
+    ],
+    "length": 429,
+    "hasVariants": false
+  },
+  {
+    "id": 592,
+    "comment": "[概念·机制]主母一体双魂万年分裂史",
+    "file": "src/concepts/C592_主母一体双魂万年分裂史.md",
+    "eventIds": [
+      "E111",
+      "E112"
+    ],
+    "length": 492,
+    "hasVariants": false
+  },
+  {
+    "id": 593,
+    "comment": "[概念·机制]以M快感冲击亵渎神明机制",
+    "file": "src/concepts/C593_以M快感冲击亵渎神明机制.md",
+    "eventIds": [
+      "E111",
+      "E112"
+    ],
+    "length": 494,
+    "hasVariants": false
+  },
+  {
+    "id": 594,
+    "comment": "[概念·机制]红茶包信仰法阵社死唤醒术",
+    "file": "src/concepts/C594_红茶包信仰法阵社死唤醒术.md",
+    "eventIds": [
+      "E112"
+    ],
+    "length": 496,
+    "hasVariants": false
+  },
+  {
+    "id": 595,
+    "comment": "[概念·能力]现实灾变拟化强化卷轴",
+    "file": "src/concepts/C595_现实灾变拟化强化卷轴.md",
+    "eventIds": [
+      "E110",
+      "E113",
+      "E126"
+    ],
+    "length": 482,
+    "hasVariants": false
+  },
+  {
+    "id": 596,
+    "comment": "[概念·机制]巨像深层潜意识空间法则",
+    "file": "src/concepts/C596_巨像深层潜意识空间法则.md",
+    "eventIds": [
+      "E113",
+      "E114",
+      "E115"
+    ],
+    "length": 495,
+    "hasVariants": false
+  },
+  {
+    "id": 597,
+    "comment": "[概念·机制]心象具象化与恐惧投影机制",
+    "file": "src/concepts/C597_心象具象化与恐惧投影机制.md",
+    "eventIds": [
+      "E113",
+      "E116",
+      "E117"
+    ],
+    "length": 475,
+    "hasVariants": false
+  },
+  {
+    "id": 598,
+    "comment": "[概念·人物]左萝实体化与黑丝吊带行装",
+    "file": "src/concepts/C598_左萝实体化与黑丝吊带行装.md",
+    "eventIds": [
+      "E113"
+    ],
+    "length": 437,
+    "hasVariants": false
+  },
+  {
+    "id": 599,
+    "comment": "[概念·机制]小宝贝巨像之舌与钓饵陷阱",
+    "file": "src/concepts/C599_小宝贝巨像之舌与钓饵陷阱.md",
+    "eventIds": [
+      "E114"
+    ],
+    "length": 423,
+    "hasVariants": false
+  },
+  {
+    "id": 600,
+    "comment": "[概念·能力]爆头自戕与巨像之心反向博弈",
+    "file": "src/concepts/C600_爆头自戕与巨像之心反向博弈.md",
+    "eventIds": [
+      "E115"
+    ],
+    "length": 424,
+    "hasVariants": false
+  },
+  {
+    "id": 601,
+    "comment": "[概念·机制]自然生命古树与方舟覆灭史",
+    "file": "src/concepts/C601_自然生命古树与方舟覆灭史.md",
+    "eventIds": [
+      "E117"
+    ],
+    "length": 418,
+    "hasVariants": false
+  },
+  {
+    "id": 602,
+    "comment": "[概念·场景]林恩幼稚园连环失恋情伤走马灯",
+    "file": "src/concepts/C602_林恩幼稚园连环失恋情伤走马灯.md",
+    "eventIds": [
+      "E117"
+    ],
+    "length": 418,
+    "hasVariants": false
+  },
+  {
+    "id": 603,
+    "comment": "[概念·机制]欲望母树肉体深度交融与神性绑定法则",
+    "file": "src/concepts/C603_欲望母树肉体深度交融与神性绑定法则.md",
+    "eventIds": [
+      "E118",
+      "E119"
+    ],
+    "length": 461,
+    "hasVariants": false
+  },
+  {
+    "id": 604,
+    "comment": "[概念·能力]自然领域一丝神性",
+    "file": "src/concepts/C604_自然领域一丝神性.md",
+    "eventIds": [
+      "E119",
+      "E126"
+    ],
+    "length": 415,
+    "hasVariants": false
+  },
+  {
+    "id": 605,
+    "comment": "[概念·机制]地狱牢笼与狂乱色彩天堑",
+    "file": "src/concepts/C605_地狱牢笼与狂乱色彩天堑.md",
+    "eventIds": [
+      "E124"
+    ],
+    "length": 403,
+    "hasVariants": false
+  },
+  {
+    "id": 606,
+    "comment": "[概念·势力]地狱狱卒体系与代理人屠夫",
+    "file": "src/concepts/C606_地狱狱卒体系与代理人屠夫.md",
+    "eventIds": [
+      "E124",
+      "E125"
+    ],
+    "length": 420,
+    "hasVariants": false
+  },
+  {
+    "id": 607,
+    "comment": "[概念·机制]巨像文明三千年自我肢解避咒史",
+    "file": "src/concepts/C607_巨像文明三千年自我肢解避咒史.md",
+    "eventIds": [
+      "E121"
+    ],
+    "length": 420,
+    "hasVariants": false
+  },
+  {
+    "id": 608,
+    "comment": "[概念·机制]永夜中带来春天的渡鸦启蒙神话",
+    "file": "src/concepts/C608_永夜中带来春天的渡鸦启蒙神话.md",
+    "eventIds": [
+      "E121",
+      "E125"
+    ],
+    "length": 436,
+    "hasVariants": false
+  },
+  {
+    "id": 609,
+    "comment": "[概念·机制]紫罗兰无瞳之眼法阵谈判与王后剥离",
+    "file": "src/concepts/C609_紫罗兰无瞳之眼法阵谈判与王后剥离.md",
+    "eventIds": [
+      "E122"
+    ],
+    "length": 432,
+    "hasVariants": false
+  },
+  {
+    "id": 610,
+    "comment": "[概念·机制]王之号角与遮天巨像重组",
+    "file": "src/concepts/C610_王之号角与遮天巨像重组.md",
+    "eventIds": [
+      "E123"
+    ],
+    "length": 401,
+    "hasVariants": false
+  },
+  {
+    "id": 611,
+    "comment": "[概念·机制]意识空间极限断闸机制",
+    "file": "src/concepts/C611_意识空间极限断闸机制.md",
+    "eventIds": [
+      "E124"
+    ],
+    "length": 398,
+    "hasVariants": false
+  },
+  {
+    "id": 612,
+    "comment": "[概念·能力]我也能做你们的渡鸦誓言",
+    "file": "src/concepts/C612_我也能做你们的渡鸦誓言.md",
+    "eventIds": [
+      "E125"
+    ],
+    "length": 399,
+    "hasVariants": false
+  },
+  {
+    "id": 613,
+    "comment": "[概念·机制]咒瞳彻底粉碎损毁退场",
+    "file": "src/concepts/C613_咒瞳彻底粉碎损毁退场.md",
+    "eventIds": [
+      "E125"
+    ],
+    "length": 429,
+    "hasVariants": false
+  },
+  {
+    "id": 614,
+    "comment": "[概念·人物]银发银瞳无垢女王萝莉形态",
+    "file": "src/concepts/C614_银发银瞳无垢女王萝莉形态.md",
+    "eventIds": [
+      "E126"
+    ],
+    "length": 423,
+    "hasVariants": false
+  },
+  {
+    "id": 615,
+    "comment": "[概念·机制]巨像的双生子史诗羁绊任务",
+    "file": "src/concepts/C615_巨像的双生子史诗羁绊任务.md",
+    "eventIds": [
+      "E126"
+    ],
+    "length": 421,
+    "hasVariants": false
+  }
+]

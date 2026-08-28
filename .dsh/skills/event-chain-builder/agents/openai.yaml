@@ -1,0 +1,4 @@
+interface:
+  display_name: "事件链条构建器"
+  short_description: "为 MVU Zod 角色卡添加/维护事件锚点、常驻衔接与上下文窗口"
+  default_prompt: "使用 $event-chain-builder 为 v0.3.3.1 卡新增事件 E13，并同步常驻衔接段、详情窗口、状态栏按钮与验证器。"

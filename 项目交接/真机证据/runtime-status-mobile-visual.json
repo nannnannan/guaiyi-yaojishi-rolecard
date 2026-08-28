@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-08-09T08:00:19.152Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "avatar": "《诡异药剂师》v0.5.png",
+  "latestAssistantId": 4,
+  "frameName": "TH-message--4--0",
+  "metrics": {
+    "clientWidth": 353,
+    "scrollWidth": 353,
+    "overflowFree": true,
+    "activeTab": "wa-tab-current",
+    "button": {
+      "text": "已进入预兆：E03",
+      "disabled": true
+    },
+    "hasMvu": true,
+    "hasStatData": true,
+    "errorText": null
+  },
+  "assertions": {
+    "narrowWidth": true,
+    "noHorizontalOverflow": true,
+    "mvuReady": true,
+    "persistedDataReady": true,
+    "noVisibleError": true
+  }
+}

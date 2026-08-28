@@ -1,0 +1,170 @@
+[
+  {
+    "id": "host-tavern-helper",
+    "role": "execute character-local helper scripts and expose runtime APIs",
+    "class": "host_required",
+    "required": true,
+    "delivery": "host installation",
+    "evidence": "/data/extensions/tavern_helper/scripts",
+    "enabledPolicy": "installed and enabled",
+    "versionOrRef": "runtime probe required",
+    "failureMode": "MVU, schema registration, configuration helper and Wiki loader do not execute",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "host-st-prompt-template",
+    "role": "evaluate EJS in worldbook/prompt content",
+    "class": "host_required",
+    "required": true,
+    "delivery": "host installation",
+    "evidence": "2 entries contain EJS/decorators",
+    "enabledPolicy": "installed with relevant generation/preload features enabled",
+    "versionOrRef": "runtime probe required",
+    "failureMode": "conditional routing and dynamic prompt code remain literal or inactive",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "embedded-script-bcf2ba69-20d6-49c1-a355-9a99d52257b7",
+    "role": "Tavern Helper script: MVU",
+    "class": "embedded_required",
+    "required": true,
+    "delivery": "character card /data/extensions/tavern_helper/scripts",
+    "evidence": {
+      "name": "MVU",
+      "id": "bcf2ba69-20d6-49c1-a355-9a99d52257b7",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/0"
+    },
+    "enabledPolicy": "enabled",
+    "versionOrRef": null,
+    "failureMode": "MVU feature unavailable",
+    "validationOwner": "artifact and runtime debug"
+  },
+  {
+    "id": "embedded-script-fc83c3a3-0bc0-4170-a36a-f40f773204ab",
+    "role": "card-specific Zod schema and schema registration",
+    "class": "embedded_required",
+    "required": true,
+    "delivery": "character card /data/extensions/tavern_helper/scripts",
+    "evidence": {
+      "name": "ZOD",
+      "id": "fc83c3a3-0bc0-4170-a36a-f40f773204ab",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/1"
+    },
+    "enabledPolicy": "enabled",
+    "versionOrRef": null,
+    "failureMode": "MVU state is not validated/coerced by the card schema",
+    "validationOwner": "artifact and runtime debug"
+  },
+  {
+    "id": "embedded-script-3bb34570-f0ea-4632-ad2d-84bae6343219",
+    "role": "Tavern Helper script: 道渊配置助手",
+    "class": "embedded_required",
+    "required": true,
+    "delivery": "character card /data/extensions/tavern_helper/scripts",
+    "evidence": {
+      "name": "道渊配置助手",
+      "id": "3bb34570-f0ea-4632-ad2d-84bae6343219",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/2"
+    },
+    "enabledPolicy": "enabled",
+    "versionOrRef": null,
+    "failureMode": "道渊配置助手 feature unavailable",
+    "validationOwner": "artifact and runtime debug"
+  },
+  {
+    "id": "embedded-script-d556bd75-8bfe-48e8-b4cb-a7b177a95b0c",
+    "role": "Tavern Helper script: 道渊Wiki",
+    "class": "embedded_required",
+    "required": true,
+    "delivery": "character card /data/extensions/tavern_helper/scripts",
+    "evidence": {
+      "name": "道渊Wiki",
+      "id": "d556bd75-8bfe-48e8-b4cb-a7b177a95b0c",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/3"
+    },
+    "enabledPolicy": "enabled",
+    "versionOrRef": null,
+    "failureMode": "道渊Wiki feature unavailable",
+    "validationOwner": "artifact and runtime debug"
+  },
+  {
+    "id": "remote-bcf2ba69-20d6-49c1-a355-9a99d52257b7-0",
+    "role": "remote runtime imported by MVU",
+    "class": "remote_runtime",
+    "required": true,
+    "delivery": "https://testingcf.jsdelivr.net/gh/NLKASHEI/MVU-offline@v1.0.1/mvu_bundle_full.js",
+    "evidence": {
+      "scriptName": "MVU",
+      "scriptId": "bcf2ba69-20d6-49c1-a355-9a99d52257b7",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/0"
+    },
+    "enabledPolicy": "loaded when owning helper script runs",
+    "versionOrRef": "v1.0.1",
+    "fallback": null,
+    "failureMode": "MVU remote feature fails to initialize",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "remote-fc83c3a3-0bc0-4170-a36a-f40f773204ab-0",
+    "role": "remote runtime imported by ZOD",
+    "class": "remote_runtime",
+    "required": true,
+    "delivery": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js",
+    "evidence": {
+      "scriptName": "ZOD",
+      "scriptId": "fc83c3a3-0bc0-4170-a36a-f40f773204ab",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/1"
+    },
+    "enabledPolicy": "loaded when owning helper script runs",
+    "versionOrRef": "unversioned",
+    "fallback": null,
+    "failureMode": "ZOD remote feature fails to initialize",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "remote-3bb34570-f0ea-4632-ad2d-84bae6343219-0",
+    "role": "remote runtime imported by 道渊配置助手",
+    "class": "remote_runtime",
+    "required": true,
+    "delivery": "https://testingcf.jsdelivr.net/gh/NLKASHEI/114514@v1.2.9/道渊配置小助手.min.js",
+    "evidence": {
+      "scriptName": "道渊配置助手",
+      "scriptId": "3bb34570-f0ea-4632-ad2d-84bae6343219",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/2"
+    },
+    "enabledPolicy": "loaded when owning helper script runs",
+    "versionOrRef": "v1.2.9",
+    "fallback": null,
+    "failureMode": "道渊配置助手 remote feature fails to initialize",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "remote-d556bd75-8bfe-48e8-b4cb-a7b177a95b0c-0",
+    "role": "remote runtime imported by 道渊Wiki",
+    "class": "remote_runtime",
+    "required": true,
+    "delivery": "https://cdn.daoyuan.mayuworld.com/scripts/prod/latest/daoyuan-term-widget.min.js",
+    "evidence": {
+      "scriptName": "道渊Wiki",
+      "scriptId": "d556bd75-8bfe-48e8-b4cb-a7b177a95b0c",
+      "jsonPointer": "/data/extensions/tavern_helper/scripts/3"
+    },
+    "enabledPolicy": "loaded when owning helper script runs",
+    "versionOrRef": "latest (mutable)",
+    "fallback": null,
+    "failureMode": "道渊Wiki remote feature fails to initialize",
+    "validationOwner": "runtime debug"
+  },
+  {
+    "id": "embedded-character-regexes",
+    "role": "message/prompt transformations and embedded UI adapters",
+    "class": "embedded_required",
+    "required": true,
+    "delivery": "/data/extensions/regex_scripts",
+    "evidence": "17 character-local regexes",
+    "enabledPolicy": "preserve each packed disabled state",
+    "versionOrRef": null,
+    "failureMode": "update blocks leak into prompts or UI/adapters fail",
+    "validationOwner": "artifact and runtime debug"
+  }
+]

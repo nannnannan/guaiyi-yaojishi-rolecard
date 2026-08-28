@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-08-09T18:00:36.1939066+08:00",
+  "scope": "read-only",
+  "targetCard": "《道渊》v5.3",
+  "commands": [
+    {
+      "command": "bridge-runner.mjs verify",
+      "exitCode": 1,
+      "result": "5/6 passed",
+      "checks": {
+        "requiredFiles": "pass",
+        "topLevelDocs": "pass",
+        "packageManifest": "pass",
+        "privacyAudit": "fail",
+        "javascriptSyntax": "pass",
+        "cliSmokeTests": "pass"
+      },
+      "qualification": "Privacy audit matched pre-existing files below st-bridge-output/backups/card-replace. Those artifacts were not created, opened, quoted or modified by this analysis."
+    },
+    {
+      "command": "bridge-runner.mjs verify-live --json",
+      "exitCode": 0,
+      "result": {
+        "passed": true,
+        "runtime": {
+          "tavernVersion": "1.17.0",
+          "helperVersion": "4.9.1",
+          "online": true
+        },
+        "counts": {
+          "characters": 11,
+          "worldbooks": 16,
+          "presets": 12,
+          "globalRegexes": 9,
+          "globalHelperScripts": 7,
+          "currentChatMessages": 2
+        },
+        "currentState": {
+          "characterSelected": true,
+          "chatSelected": false
+        },
+        "mutations": 0
+      }
+    },
+    {
+      "command": "bridge-runner.mjs bridge status --json",
+      "exitCode": 0,
+      "result": {
+        "url": "http://127.0.0.1:8000",
+        "tavernVersion": "1.17.0",
+        "helperVersion": "4.9.1",
+        "currentCharacter": "SillyTavern System",
+        "chatId": null,
+        "messageCount": 2,
+        "characters": 11,
+        "worldbooks": 16
+      }
+    },
+    {
+      "command": "bridge-runner.mjs bridge characters --json",
+      "exitCode": 0,
+      "result": {
+        "characterCount": 11,
+        "targetCardPresent": false
+      },
+      "qualification": "Other installed character names are intentionally omitted from this evidence file."
+    }
+  ],
+  "stPromptTemplateObservation": {
+    "version": "1.17.6.8",
+    "source": "read-only local bundle inspection and live feature probe",
+    "settings": {
+      "enabled": true,
+      "generate": true,
+      "render": true,
+      "filter": true,
+      "preload_worldinfo": true,
+      "preload_only": true,
+      "inject_loader": false,
+      "sandbox": false,
+      "code_blocks": false
+    },
+    "api": {
+      "getwi": "present"
+    }
+  },
+  "targetMutations": {
+    "cardImported": false,
+    "chatCreated": false,
+    "modelRequestSent": false,
+    "worldbookCreatedOrModified": false,
+    "messagesModified": false
+  },
+  "conclusion": "The host and required APIs were inspected without importing the target card. Import-dependent behavior remains explicitly untested."
+}

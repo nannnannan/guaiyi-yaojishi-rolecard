@@ -1,0 +1,56 @@
+{
+  "source": {
+    "card": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\decoded\\payload-chara.raw.json",
+    "cardSha256": "7759a56059d4e8bd17bfa6a09c5f2c45178393d703e5c5e523873eaa190757a8",
+    "state": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\components\\unpacked\\tavern-cards-state.json",
+    "stateSha256": "ab1c76b7d6e888ddfbadb70227a1e8715d90c8d5e041a753921064ad38bfe3a7"
+  },
+  "counts": {
+    "worldbookEntries": 319,
+    "regexes": 17,
+    "scripts": 4,
+    "openings": 2
+  },
+  "extractionChecks": {
+    "allEntriesMapped": false,
+    "allEntrySemanticTextEqual": false,
+    "allOpeningsMapped": true,
+    "allOpeningSemanticTextEqual": true,
+    "helperScriptsAccountedFor": true,
+    "regexesAccountedFor": true,
+    "idsUnique": true,
+    "commentsUnique": true
+  },
+  "generatedFiles": [
+    {
+      "path": "card-inventory.json",
+      "bytes": 3514,
+      "sha256": "cdbc7b5b79186962a9076833e4ec9fd4175e7a251978a5ffe74898697948991b"
+    },
+    {
+      "path": "worldbook-entry-index.json",
+      "bytes": 542398,
+      "sha256": "3fa08f835f5e3f2b71b3c47715af61253555598a576a4c80c6ef69aeb463510f"
+    },
+    {
+      "path": "worldbook-entry-index.csv",
+      "bytes": 60375,
+      "sha256": "d89b09c105f7ab182a4579b2f69fbb09f05469ac07162b98c29996f44ad59d31"
+    },
+    {
+      "path": "ejs-usage.json",
+      "bytes": 1248,
+      "sha256": "0bc705054c98c6bcdb4869a578f2fcfb12e2d24adef0ba3d49d93fa5d0580fc6"
+    },
+    {
+      "path": "runtime-dependency-ledger.json",
+      "bytes": 6565,
+      "sha256": "d431587d198522131b2f93f4355c747fbe33c9867468afee5f9932ab80c6e7e9"
+    },
+    {
+      "path": "component-mapping.json",
+      "bytes": 232165,
+      "sha256": "4a47e49c14a37d028478d3d2d3496c07fa53afc206c334241342ef9697f8cc5a"
+    }
+  ]
+}

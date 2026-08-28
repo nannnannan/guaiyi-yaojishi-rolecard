@@ -1,0 +1,17 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.3.3.1",
+  "status": "accepted-release",
+  "accepted_at": "2026-08-02",
+  "accepted_by": "owner",
+  "evidence": "所有者在真实 SillyTavern 中验收通过：事件衔接（E01→E02→E03→E04）流程正常，常驻上下文/详情窗口、状态栏推进按钮、收尾门控均符合预期。",
+  "host": {
+    "sillytavern": "1.17.0",
+    "tavern_helper": "4.8.19"
+  },
+  "artifact": "dist/诡异药剂师_v0.3.3.1.json",
+  "bytes": 489015,
+  "sha256": "2a55d6022bb5fbdf706a5acfe84ad24bdf2b28049b7d5d84687bb949e16089e4",
+  "offline_checks": 2025,
+  "notes": "v0.3.3.1 为 v0.32 事件衔接补丁：12对事件剧情引子改为常驻条目并按状态EJS渲染，触发时机以每对自带为准，前件必须收尾或收束（锚点带收尾标记）；事件上下文窗口按状态定位当前锚点（前后各3事件摘要），事件详情窗口构建生成并按当前±1事件展开（均不开递归、不依赖关键词）；状态栏新增手动「推进」按钮兜底；事件蓝灯带EJS状态门槛；衔接优先于原创、禁止原创来客占位。2026-08-02 所有者在真实酒馆验收通过，状态转为 accepted-release。v1.0前不公开发布。"
+}

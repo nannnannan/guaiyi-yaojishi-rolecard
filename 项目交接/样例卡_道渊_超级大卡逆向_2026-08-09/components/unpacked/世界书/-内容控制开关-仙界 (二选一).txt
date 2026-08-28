@@ -1,0 +1,7 @@
+<%- await getwi(null, '仙界介绍') -%>
+<%- await getwi(null, '仙界核心区域') -%>
+<%- await getwi(null, '仙界特殊区域') -%>
+<%- await getwi(null, '仙界天骄大比') -%>
+<%- await getwi(null, '仙界飞升') -%>
+<%- await getwi(null, '仙界关键人物') -%>
+<%- await getwi(null, '仙界宗门生成') -%>

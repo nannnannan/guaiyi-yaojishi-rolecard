@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-08-09",
+  "hashAlgorithm": "SHA-256",
+  "resources": [
+    {
+      "id": "mvu-offline",
+      "role": "MVU runtime",
+      "url": "https://testingcf.jsdelivr.net/gh/NLKASHEI/MVU-offline@v1.0.1/mvu_bundle_full.js",
+      "versionPolicy": "tag v1.0.1",
+      "tagCommit": "d0c83820dcfa93793e8c5a549f42bb167ef591ab",
+      "bundleBuild": "2026-04-25 21:37 (2da97c7)",
+      "bytes": 2598263,
+      "sha256": "dcdbd5b0b837439d90fd0f783bedc1453fa6b8583d9d6a41f16f53a48e3b6dc3"
+    },
+    {
+      "id": "mvu-zod-helper",
+      "role": "Zod integration for MVU commands",
+      "url": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js",
+      "versionPolicy": "default branch; mutable",
+      "bytes": 4502,
+      "sha256": "1e4c6a613ae310a03bfc8e87dd9749bb89efac321fe7afef7b0c6284526128f1"
+    },
+    {
+      "id": "daoyuan-config-helper",
+      "role": "realm and mode configuration",
+      "url": "https://testingcf.jsdelivr.net/gh/NLKASHEI/114514@v1.2.9/道渊配置小助手.min.js",
+      "versionPolicy": "tag v1.2.9",
+      "tagCommit": "dbdd76c0cf526c649c79f392e34abc737d2969a7",
+      "bytes": 95314,
+      "sha256": "6005a8f977c5a6499f188296a7db7cfb5336ec5337caa3f9186d89bb95312c8f"
+    },
+    {
+      "id": "daoyuan-wiki-loader",
+      "role": "Tavern Helper iframe to parent bridge and runtime loader",
+      "url": "https://cdn.daoyuan.mayuworld.com/scripts/prod/latest/daoyuan-term-widget.min.js",
+      "versionPolicy": "latest; mutable",
+      "bytes": 341531,
+      "sha256": "c9e08bd45117025dc8d6c7f04c3569558b1cd8c3a61254dc488e47080e2ea2f1"
+    },
+    {
+      "id": "daoyuan-wiki-runtime",
+      "role": "rendered-message term widget runtime",
+      "url": "https://cdn.daoyuan.mayuworld.com/scripts/prod/latest/daoyuan-term-widget.runtime.min.js",
+      "versionPolicy": "latest; mutable",
+      "characters": 446391,
+      "sha256": "162efbbad11ea6df1a85aa33485b28380b161edceeaa0e4be481317252b07322"
+    },
+    {
+      "id": "daoyuan-wiki-term-index",
+      "role": "term records",
+      "url": "https://cdn.daoyuan.mayuworld.com/scripts/prod/latest/term-index/latest.json",
+      "versionPolicy": "latest; mutable",
+      "schema": 3,
+      "sourceVersion": "v53",
+      "generatedAt": "2026-08-07T15:34:40Z",
+      "records": 292,
+      "sha256": "03a5a6181eb5ce51c08feb52452f2420581d0f17e0068b8d0cf551a14583737f"
+    },
+    {
+      "id": "daoyuan-applause",
+      "role": "optional enabled status UI enhancement",
+      "url": "https://cdn.daoyuan.mayuworld.com/scripts/prod/latest/daoyuan-applause.min.js",
+      "versionPolicy": "latest; mutable",
+      "sha256": "361cd13846049936acdf7f00202523ba5fa51c8e4ef5e1a82d68babf1f9b368c"
+    }
+  ],
+  "sourceReferences": [
+    {
+      "role": "ST-Prompt-Template getwi semantics",
+      "url": "https://github.com/zonde306/ST-Prompt-Template/blob/main/docs/features.md"
+    },
+    {
+      "role": "SillyTavern 1.17.0 World Info order",
+      "url": "https://raw.githubusercontent.com/SillyTavern/SillyTavern/1.17.0/public/scripts/world-info.js"
+    },
+    {
+      "role": "SillyTavern 1.17.0 regex execution",
+      "url": "https://raw.githubusercontent.com/SillyTavern/SillyTavern/1.17.0/public/scripts/extensions/regex/engine.js"
+    },
+    {
+      "role": "Tavern Helper registerVariableSchema boundary",
+      "url": "https://n0vi028.github.io/JS-Slash-Runner-Doc/guide/功能详情/变量/注册变量结构.html"
+    }
+  ],
+  "qualification": "Hashes are point-in-time observations. Mutable URLs must be refreshed for a later release audit."
+}

@@ -1,0 +1,7659 @@
+{
+  "projectName": "《道渊》v5.3",
+  "worldbookName": "道友先上我断后",
+  "form": "charactercard",
+  "mvu": false,
+  "entryManifest": {
+    "unknown": {
+      "NPC人物生成规则": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 0,
+        "keywords": [],
+        "path": "世界书\\NPC人物生成规则.txt"
+      },
+      "秘境/遗迹生成": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 1,
+        "keywords": [],
+        "path": "世界书\\秘境_遗迹生成.txt"
+      },
+      "详细人物:林若悠": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林若悠",
+            "玉灵宫圣女",
+            "空明幻体"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 2,
+        "keywords": [
+          "林若悠",
+          "玉灵宫圣女",
+          "空明幻体"
+        ],
+        "path": "世界书\\详细人物_林若悠.txt"
+      },
+      "详细人物：宫银叶": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "残影身法",
+            "青云步",
+            "冰火双绝体",
+            "联网手机",
+            "护身灵纱",
+            "小混沌手镯",
+            "宫银叶"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 3,
+        "keywords": [
+          "残影身法",
+          "青云步",
+          "冰火双绝体",
+          "联网手机",
+          "护身灵纱",
+          "小混沌手镯",
+          "宫银叶"
+        ],
+        "path": "世界书\\详细人物：宫银叶.txt"
+      },
+      "玄天界宗门生成": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 4,
+        "keywords": [],
+        "path": "世界书\\玄天界宗门生成.txt"
+      },
+      "仙界关键人物": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 5,
+        "keywords": [],
+        "path": "世界书\\仙界关键人物.txt"
+      },
+      "详细人物:慕欣心": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "垂天钓竿",
+            "混元道体",
+            "天庭大帝",
+            "慕欣心"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 6,
+        "keywords": [
+          "垂天钓竿",
+          "混元道体",
+          "天庭大帝",
+          "慕欣心"
+        ],
+        "path": "世界书\\详细人物_慕欣心.txt"
+      },
+      "玄天界城市生成": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 7,
+        "keywords": [],
+        "path": "世界书\\玄天界城市生成.yaml"
+      },
+      "功法生成": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 8,
+        "keywords": [],
+        "path": "世界书\\功法生成.txt"
+      },
+      "机遇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 9,
+        "keywords": [],
+        "path": "世界书\\机遇.txt"
+      },
+      "境界": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 10,
+        "keywords": [],
+        "path": "世界书\\境界.txt"
+      },
+      "人物详情：青衣": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青衣",
+            "绛鳞王",
+            "大兄"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 11,
+        "keywords": [
+          "青衣",
+          "绛鳞王",
+          "大兄"
+        ],
+        "path": "世界书\\人物详情：青衣.txt"
+      },
+      "礼仪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 12,
+        "keywords": [],
+        "path": "世界书\\礼仪.txt"
+      },
+      "战斗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant",
+          "keys": [
+            "战斗",
+            "出手",
+            "攻击",
+            "发起",
+            "偷袭",
+            "决战"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 13,
+        "keywords": [
+          "战斗",
+          "出手",
+          "攻击",
+          "发起",
+          "偷袭",
+          "决战"
+        ],
+        "path": "世界书\\战斗.txt"
+      },
+      "神识": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant",
+          "keys": [
+            "神识"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 14,
+        "keywords": [
+          "神识"
+        ],
+        "path": "世界书\\神识.txt"
+      },
+      "器物": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 15,
+        "keywords": [],
+        "path": "世界书\\器物.txt"
+      },
+      "状态栏": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 6,
+          "role": "system",
+          "depth": 1
+        },
+        "display_index": 16,
+        "keywords": [],
+        "path": "世界书\\状态栏.txt"
+      },
+      "具体数值": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 3
+        },
+        "display_index": 17,
+        "keywords": [],
+        "path": "世界书\\具体数值.txt"
+      },
+      "灵根": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 18,
+        "keywords": [],
+        "path": "世界书\\灵根.yaml"
+      },
+      "玄天界灵石体系": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 19,
+        "keywords": [],
+        "path": "世界书\\玄天界灵石体系.yaml"
+      },
+      "黑暗森林": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 20,
+        "keywords": [],
+        "path": "世界书\\黑暗森林.txt"
+      },
+      "时间": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 21,
+        "keywords": [],
+        "path": "世界书\\时间.txt"
+      },
+      "合理性审查": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 7,
+          "role": "assistant",
+          "depth": 1
+        },
+        "display_index": 22,
+        "keywords": [],
+        "path": "世界书\\合理性审查.txt"
+      },
+      "玄天界介绍": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 23,
+        "keywords": [],
+        "path": "世界书\\玄天界介绍.yaml"
+      },
+      "玄天界主要势力与组织": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 24,
+        "keywords": [],
+        "path": "世界书\\玄天界主要势力与组织.txt"
+      },
+      "玄天界核心规则": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 25,
+        "keywords": [],
+        "path": "世界书\\玄天界核心规则.txt"
+      },
+      "玄天界周期性秘境": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 26,
+        "keywords": [],
+        "path": "世界书\\玄天界周期性秘境.txt"
+      },
+      "地点详情：中央神州": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "中央神州",
+            "中州"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 27,
+        "keywords": [
+          "中央神州",
+          "中州"
+        ],
+        "path": "世界书\\地点详情：中央神州.yaml"
+      },
+      "势力详情：广寒宫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "广寒宫",
+            "北冥雪原"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 28,
+        "keywords": [
+          "广寒宫",
+          "北冥雪原"
+        ],
+        "path": "世界书\\势力详情：广寒宫.yaml"
+      },
+      "势力详情：天机阁": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "天机阁",
+            "中立情报组织"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 29,
+        "keywords": [
+          "天机阁",
+          "中立情报组织"
+        ],
+        "path": "世界书\\势力详情：天机阁.yaml"
+      },
+      "势力详情：太阳神宫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "太阳神宫",
+            "神主",
+            "体修",
+            "体修势力",
+            "南离火洲",
+            "万丈火山之巅"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 30,
+        "keywords": [
+          "太阳神宫",
+          "神主",
+          "体修",
+          "体修势力",
+          "南离火洲",
+          "万丈火山之巅"
+        ],
+        "path": "世界书\\势力详情：太阳神宫.yaml"
+      },
+      "势力详情：蜀山剑门": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "蜀山剑门",
+            "顶尖宗门",
+            "正道魁首",
+            "中央神州西部",
+            "西部",
+            "中央神州",
+            "蜀山"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 31,
+        "keywords": [
+          "蜀山剑门",
+          "顶尖宗门",
+          "正道魁首",
+          "中央神州西部",
+          "西部",
+          "中央神州",
+          "蜀山"
+        ],
+        "path": "世界书\\势力详情：蜀山剑门.yaml"
+      },
+      "势力详情：血神宫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "血神宫",
+            "血宗",
+            "不枯血海",
+            "南离火洲中央",
+            "南离火洲"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 32,
+        "keywords": [
+          "血神宫",
+          "血宗",
+          "不枯血海",
+          "南离火洲中央",
+          "南离火洲"
+        ],
+        "path": "世界书\\势力详情：血神宫.yaml"
+      },
+      "势力详情：万魂殿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万魂殿",
+            "南离火洲",
+            "阴风山脉"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 33,
+        "keywords": [
+          "万魂殿",
+          "南离火洲",
+          "阴风山脉"
+        ],
+        "path": "世界书\\势力详情：万魂殿.yaml"
+      },
+      "势力详情：合欢宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "合欢宗",
+            "百花谷",
+            "百花合欢阁",
+            "勾栏"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 34,
+        "keywords": [
+          "合欢宗",
+          "百花谷",
+          "百花合欢阁",
+          "勾栏"
+        ],
+        "path": "世界书\\势力详情：合欢宗.txt"
+      },
+      "势力详情：尸魔宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "尸魔宗",
+            "南离火洲与北冥雪原的交界",
+            "葬仙坡"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 35,
+        "keywords": [
+          "尸魔宗",
+          "南离火洲与北冥雪原的交界",
+          "葬仙坡"
+        ],
+        "path": "世界书\\势力详情：尸魔宗.yaml"
+      },
+      "玄天界关键人物": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 36,
+        "keywords": [],
+        "path": "世界书\\玄天界关键人物.txt"
+      },
+      "人物详情：幽悦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽悦",
+            "尸魔宗宗主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 37,
+        "keywords": [
+          "幽悦",
+          "尸魔宗宗主"
+        ],
+        "path": "世界书\\人物详情：幽悦.txt"
+      },
+      "人物详情：凌月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "凌月",
+            "尸魔宗圣女",
+            "继承人",
+            "玄阴炼尸诀",
+            "太上玄冰凝身诀",
+            "先天尸魅之体",
+            "本命天尸"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 38,
+        "keywords": [
+          "凌月",
+          "尸魔宗圣女",
+          "继承人",
+          "玄阴炼尸诀",
+          "太上玄冰凝身诀",
+          "先天尸魅之体",
+          "本命天尸"
+        ],
+        "path": "世界书\\人物详情：凌月.txt"
+      },
+      "人物详情：阴罗长老": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "阴罗",
+            "尸魔宗大长老",
+            "主管内务",
+            "夺魂炼尸",
+            "抽取神魂注尸身",
+            "炼制魂尸"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 39,
+        "keywords": [
+          "阴罗",
+          "尸魔宗大长老",
+          "主管内务",
+          "夺魂炼尸",
+          "抽取神魂注尸身",
+          "炼制魂尸"
+        ],
+        "path": "世界书\\人物详情：阴罗长老.txt"
+      },
+      "人物详情：晚絮长老": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "晚絮",
+            "尸魔宗执法长老",
+            "主管刑罚"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 40,
+        "keywords": [
+          "晚絮",
+          "尸魔宗执法长老",
+          "主管刑罚"
+        ],
+        "path": "世界书\\人物详情：晚絮长老.txt"
+      },
+      "人物详情：瑶汐宫主": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "瑶汐宫主",
+            "广寒宫之主",
+            "瑶汐"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 41,
+        "keywords": [
+          "瑶汐宫主",
+          "广寒宫之主",
+          "瑶汐"
+        ],
+        "path": "世界书\\人物详情：瑶汐宫主.txt"
+      },
+      "人物详情：林雪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林雪",
+            "广寒宫圣女",
+            "万年玄冰之态",
+            "太阴神体",
+            "千年一遇至高体质",
+            "天生亲和太阴大道"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 42,
+        "keywords": [
+          "林雪",
+          "广寒宫圣女",
+          "万年玄冰之态",
+          "太阴神体",
+          "千年一遇至高体质",
+          "天生亲和太阴大道"
+        ],
+        "path": "世界书\\人物详情：林雪.txt"
+      },
+      "人物详情：白薇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "剑主",
+            "蜀山剑门掌门",
+            "白薇"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 43,
+        "keywords": [
+          "剑主",
+          "蜀山剑门掌门",
+          "白薇"
+        ],
+        "path": "世界书\\人物详情：白薇.txt"
+      },
+      "人物详情：苏清雪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏清雪",
+            "蜀山剑门圣女",
+            "掌门亲传"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 44,
+        "keywords": [
+          "苏清雪",
+          "蜀山剑门圣女",
+          "掌门亲传"
+        ],
+        "path": "世界书\\人物详情：苏清雪.txt"
+      },
+      "人物详情：玄虚掌教": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玄虚掌教",
+            "昆仑道门掌教",
+            "玄虚"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 45,
+        "keywords": [
+          "玄虚掌教",
+          "昆仑道门掌教",
+          "玄虚"
+        ],
+        "path": "世界书\\人物详情：玄虚掌教.txt"
+      },
+      "人物详情：陆雪琪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆雪琪",
+            "昆仑道门圣女",
+            "气运之女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 46,
+        "keywords": [
+          "陆雪琪",
+          "昆仑道门圣女",
+          "气运之女"
+        ],
+        "path": "世界书\\人物详情：陆雪琪.txt"
+      },
+      "人物详情：紫薇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "紫薇",
+            "天机阁主代行者",
+            "《大衍天机算》",
+            "神通星轨",
+            "拨动命运丝线",
+            "承受因果反噬",
+            "知晓天下九成秘密",
+            "价值连城情报",
+            "天机阁世间代言人"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 47,
+        "keywords": [
+          "紫薇",
+          "天机阁主代行者",
+          "《大衍天机算》",
+          "神通星轨",
+          "拨动命运丝线",
+          "承受因果反噬",
+          "知晓天下九成秘密",
+          "价值连城情报",
+          "天机阁世间代言人"
+        ],
+        "path": "世界书\\人物详情：紫薇.txt"
+      },
+      "人物详情：曦和": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "曦和",
+            "太阳神宫神女",
+            "神女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 48,
+        "keywords": [
+          "曦和",
+          "太阳神宫神女",
+          "神女"
+        ],
+        "path": "世界书\\人物详情：曦和.txt"
+      },
+      "人物详情：血神·绯月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "绯月",
+            "血神宫现任宫主",
+            "血神"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 49,
+        "keywords": [
+          "绯月",
+          "血神宫现任宫主",
+          "血神"
+        ],
+        "path": "世界书\\人物详情：血神·绯月.txt"
+      },
+      "人物详情：天妤夫人": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "天妤夫人",
+            "合欢宗宗主",
+            "天妤"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 50,
+        "keywords": [
+          "天妤夫人",
+          "合欢宗宗主",
+          "天妤"
+        ],
+        "path": "世界书\\人物详情：天妤夫人.txt"
+      },
+      "人物详情：叶清": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叶清",
+            "《嫁衣魔功》残篇"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 51,
+        "keywords": [
+          "叶清",
+          "《嫁衣魔功》残篇"
+        ],
+        "path": "世界书\\人物详情：叶清.txt"
+      },
+      "人物详情：龙傲飞": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "龙傲飞",
+            "天命之子",
+            "三十年河东三十年河西莫欺少年穷"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 52,
+        "keywords": [
+          "龙傲飞",
+          "天命之子",
+          "三十年河东三十年河西莫欺少年穷"
+        ],
+        "path": "世界书\\人物详情：龙傲飞.txt"
+      },
+      "人物详情：苏沐雪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏沐雪",
+            "广寒宫执法长老",
+            "掌宗门刑罚"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 53,
+        "keywords": [
+          "苏沐雪",
+          "广寒宫执法长老",
+          "掌宗门刑罚"
+        ],
+        "path": "世界书\\人物详情：苏沐雪.txt"
+      },
+      "人物详情：叶冰": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叶冰",
+            "蜀山剑门传功长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 54,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [
+          "叶冰",
+          "蜀山剑门传功长老"
+        ],
+        "path": "世界书\\人物详情：叶冰.txt"
+      },
+      "人物详情：炎帝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "炎帝",
+            "太阳神宫之主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 55,
+        "keywords": [
+          "炎帝",
+          "太阳神宫之主"
+        ],
+        "path": "世界书\\人物详情：炎帝.txt"
+      },
+      "人物详情：秦心": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "秦心",
+            "血神宫圣女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 56,
+        "keywords": [
+          "秦心",
+          "血神宫圣女"
+        ],
+        "path": "世界书\\人物详情：秦心.txt"
+      },
+      "人物详情：红绡": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "红绡",
+            "合欢宗圣女",
+            "情天幻海诀",
+            "天魔极乐宝鉴进阶功法",
+            "天妤夫人首徒",
+            "下一代宗主候选人"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 57,
+        "keywords": [
+          "红绡",
+          "合欢宗圣女",
+          "情天幻海诀",
+          "天魔极乐宝鉴进阶功法",
+          "天妤夫人首徒",
+          "下一代宗主候选人"
+        ],
+        "path": "世界书\\人物详情：红绡.txt"
+      },
+      "人物详情：苏琉璃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏琉璃",
+            "九尾天狐族公主",
+            "勾魂狐狸眼",
+            "动情生气冒狐狸尾巴",
+            "九尾天狐王族血脉",
+            "精通幻术魅惑",
+            "神通狐嫁",
+            "本命幻术",
+            "真假难辨幻境",
+            "东极青木域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 58,
+        "keywords": [
+          "苏琉璃",
+          "九尾天狐族公主",
+          "勾魂狐狸眼",
+          "动情生气冒狐狸尾巴",
+          "九尾天狐王族血脉",
+          "精通幻术魅惑",
+          "神通狐嫁",
+          "本命幻术",
+          "真假难辨幻境",
+          "东极青木域"
+        ],
+        "path": "世界书\\人物详情：苏琉璃.txt"
+      },
+      "人物详情：秦无夜": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "秦无夜",
+            "魔道散修",
+            "夜君",
+            "自创阿鼻道三刀",
+            "杀戮魔功",
+            "三刀斩肉身神魂因果",
+            "正魔两道凶名赫赫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 59,
+        "keywords": [
+          "秦无夜",
+          "魔道散修",
+          "夜君",
+          "自创阿鼻道三刀",
+          "杀戮魔功",
+          "三刀斩肉身神魂因果",
+          "正魔两道凶名赫赫"
+        ],
+        "path": "世界书\\人物详情：秦无夜.txt"
+      },
+      "人物详情：云舒窈": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "云舒窈",
+            "昆仑道门外交长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 60,
+        "keywords": [
+          "云舒窈",
+          "昆仑道门外交长老"
+        ],
+        "path": "世界书\\人物详情：云舒窈.txt"
+      },
+      "人物详情：大衍长老": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "大衍",
+            "大衍长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 61,
+        "keywords": [
+          "大衍",
+          "大衍长老"
+        ],
+        "path": "世界书\\人物详情：大衍长老.txt"
+      },
+      "人物详情：烈阳长老": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "烈阳",
+            "太阳神宫刑罚长老",
+            "男性体修",
+            "《烈阳焚天功》",
+            "太阳神宫执法者",
+            "《大日不灭身》",
+            "烈阳长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 62,
+        "keywords": [
+          "烈阳",
+          "太阳神宫刑罚长老",
+          "男性体修",
+          "《烈阳焚天功》",
+          "太阳神宫执法者",
+          "《大日不灭身》",
+          "烈阳长老"
+        ],
+        "path": "世界书\\人物详情：烈阳长老.txt"
+      },
+      "人物详情：构军": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "构军",
+            "血神宫太上长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 63,
+        "keywords": [
+          "构军",
+          "血神宫太上长老"
+        ],
+        "path": "世界书\\人物详情：构军.txt"
+      },
+      "人物详情：林欣": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林欣长老",
+            "合欢宗长老",
+            "天山童姥",
+            "残杀无数年轻男修",
+            "林欣"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 64,
+        "keywords": [
+          "林欣长老",
+          "合欢宗长老",
+          "天山童姥",
+          "残杀无数年轻男修",
+          "林欣"
+        ],
+        "path": "世界书\\人物详情：林欣.txt"
+      },
+      "人物详情：慧空": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "慧空",
+            "大雷音寺之主",
+            "西漠佛国领袖",
+            "天下佛修最高信仰",
+            "坐镇大雷音寺",
+            "镇压上古大魔",
+            "魔高一尺佛高一丈"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 65,
+        "keywords": [
+          "慧空",
+          "大雷音寺之主",
+          "西漠佛国领袖",
+          "天下佛修最高信仰",
+          "坐镇大雷音寺",
+          "镇压上古大魔",
+          "魔高一尺佛高一丈"
+        ],
+        "path": "世界书\\人物详情：慧空.txt"
+      },
+      "人物详情：般若": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "般若",
+            "大雷音寺佛女",
+            "天生佛心",
+            "易悟高深佛理"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 66,
+        "keywords": [
+          "般若",
+          "大雷音寺佛女",
+          "天生佛心",
+          "易悟高深佛理"
+        ],
+        "path": "世界书\\人物详情：般若.txt"
+      },
+      "仙界天骄大比": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 67,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [],
+        "path": "世界书\\仙界天骄大比.txt"
+      },
+      "人物详情：韩月灵": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "韩月灵",
+            "隐世家族传人",
+            "先天冰魄体",
+            "操控极寒之气",
+            "冰系功法绝佳体质",
+            "《冰魄心经》",
+            "玄冰箫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 68,
+        "keywords": [
+          "韩月灵",
+          "隐世家族传人",
+          "先天冰魄体",
+          "操控极寒之气",
+          "冰系功法绝佳体质",
+          "《冰魄心经》",
+          "玄冰箫"
+        ],
+        "path": "世界书\\人物详情：韩月灵.txt"
+      },
+      "人物详情：林妙音": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林妙音",
+            "音修",
+            "《九天霓裳曲》",
+            "音律入道",
+            "琴音化音刃伤人",
+            "抚平伤痛安抚神魂",
+            "琴声对妖兽有奇效",
+            "《安魂引》天音仙子",
+            "抚琴疗伤不求回报"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 69,
+        "keywords": [
+          "林妙音",
+          "音修",
+          "《九天霓裳曲》",
+          "音律入道",
+          "琴音化音刃伤人",
+          "抚平伤痛安抚神魂",
+          "琴声对妖兽有奇效",
+          "《安魂引》天音仙子",
+          "抚琴疗伤不求回报"
+        ],
+        "path": "世界书\\人物详情：林妙音.txt"
+      },
+      "人物详情：广慧": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "广慧",
+            "大雷音寺戒律院首座",
+            "《不动明王经》",
+            "金刚怒火",
+            "大雷音寺戒刀",
+            "追捕叛僧",
+            "镇压南离火洲魔君",
+            "镇魔塔"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 70,
+        "keywords": [
+          "广慧",
+          "大雷音寺戒律院首座",
+          "《不动明王经》",
+          "金刚怒火",
+          "大雷音寺戒刀",
+          "追捕叛僧",
+          "镇压南离火洲魔君",
+          "镇魔塔"
+        ],
+        "path": "世界书\\人物详情：广慧.txt"
+      },
+      "人物详情：幽梦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽梦",
+            "万魂殿圣魂女",
+            "先天通灵之体",
+            "神魂亲和力",
+            "怨魂交响曲",
+            "安抚支配融合怨魂",
+            "怨魂不失理智"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 71,
+        "keywords": [
+          "幽梦",
+          "万魂殿圣魂女",
+          "先天通灵之体",
+          "神魂亲和力",
+          "怨魂交响曲",
+          "安抚支配融合怨魂",
+          "怨魂不失理智"
+        ],
+        "path": "世界书\\人物详情：幽梦.txt"
+      },
+      "人物详情：噬魂长老": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "噬魂长老",
+            "万魂殿长老",
+            "《噬魂大法》",
+            "聚魂瓶",
+            "万魂殿"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 72,
+        "keywords": [
+          "噬魂长老",
+          "万魂殿长老",
+          "《噬魂大法》",
+          "聚魂瓶",
+          "万魂殿"
+        ],
+        "path": "世界书\\人物详情：噬魂长老.txt"
+      },
+      "遁术": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 73,
+        "keywords": [],
+        "path": "世界书\\遁术.txt"
+      },
+      "突破丹药": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 74,
+        "keywords": [],
+        "path": "世界书\\突破丹药.txt"
+      },
+      "识海、神魂、精血": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 75,
+        "keywords": [],
+        "path": "世界书\\识海、神魂、精血.txt"
+      },
+      "玄天界前期保护机制": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 3
+        },
+        "display_index": 76,
+        "keywords": [],
+        "path": "世界书\\玄天界前期保护机制.txt"
+      },
+      "势力详情：大周仙朝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "大周仙朝",
+            "强周",
+            "神朝",
+            "中央集权式修仙帝国",
+            "神武大帝·姬昊天",
+            "皇道龙气",
+            "神都·洛阳",
+            "九条极品龙脉",
+            "星辰铁",
+            "护城大阵",
+            "皇权至上",
+            "律法统御修仙界",
+            "宗门纳税",
+            "修士登记",
+            "三公九卿",
+            "镇魔司",
+            "钦天监",
+            "霸道正统",
+            "大周律法",
+            "中央神州",
+            "神策军",
+            "传国玉玺",
+            "黑暗动乱"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 77,
+        "keywords": [
+          "大周仙朝",
+          "强周",
+          "神朝",
+          "中央集权式修仙帝国",
+          "神武大帝·姬昊天",
+          "皇道龙气",
+          "神都·洛阳",
+          "九条极品龙脉",
+          "星辰铁",
+          "护城大阵",
+          "皇权至上",
+          "律法统御修仙界",
+          "宗门纳税",
+          "修士登记",
+          "三公九卿",
+          "镇魔司",
+          "钦天监",
+          "霸道正统",
+          "大周律法",
+          "中央神州",
+          "神策军",
+          "传国玉玺",
+          "黑暗动乱"
+        ],
+        "path": "世界书\\势力详情：大周仙朝.yaml"
+      },
+      "势力详情：南梁古国": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "南梁古国",
+            "梁国",
+            "醉生梦死之地",
+            "凡人王朝",
+            "梁王·萧衍",
+            "凡人帝王",
+            "建康",
+            "烟雨江南",
+            "歌舞升平",
+            "东南富庶之地",
+            "紫灵米",
+            "以武入道"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 78,
+        "keywords": [
+          "南梁古国",
+          "梁国",
+          "醉生梦死之地",
+          "凡人王朝",
+          "梁王·萧衍",
+          "凡人帝王",
+          "建康",
+          "烟雨江南",
+          "歌舞升平",
+          "东南富庶之地",
+          "紫灵米",
+          "以武入道"
+        ],
+        "path": "世界书\\势力详情：南梁古国.txt"
+      },
+      "心魔劫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "心魔",
+            "心魔劫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 79,
+        "keywords": [
+          "心魔",
+          "心魔劫"
+        ],
+        "path": "世界书\\心魔劫.txt"
+      },
+      "人物详细：冰凤": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "冰凤",
+            "大周帝后",
+            "凤仪宫主",
+            "九天玄凤金红色凤袍",
+            "面若银盘",
+            "目似水杏",
+            "凤羽花钿",
+            "《天凤涅槃经》",
+            "凤鸣九天",
+            "结发妻子",
+            "大周仙朝实际管理者",
+            "后宫三千佳丽",
+            "皇室宝库",
+            "赐死妖族细作"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 80,
+        "keywords": [
+          "冰凤",
+          "大周帝后",
+          "凤仪宫主",
+          "九天玄凤金红色凤袍",
+          "面若银盘",
+          "目似水杏",
+          "凤羽花钿",
+          "《天凤涅槃经》",
+          "凤鸣九天",
+          "结发妻子",
+          "大周仙朝实际管理者",
+          "后宫三千佳丽",
+          "皇室宝库",
+          "赐死妖族细作"
+        ],
+        "path": "世界书\\人物详细：冰凤.txt"
+      },
+      "人物详细：姬紫月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "姬紫月",
+            "永宁公主",
+            "神策军监军",
+            "紫色帝气",
+            "紫绶仙衣",
+            "大周皇室明珠",
+            "淡紫色流仙裙",
+            "流云丝带",
+            "古灵精怪",
+            "紫衣女侠",
+            "溜出神都游历江湖",
+            "惩治恶少",
+            "向往宗门逍遥"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 81,
+        "keywords": [
+          "姬紫月",
+          "永宁公主",
+          "神策军监军",
+          "紫色帝气",
+          "紫绶仙衣",
+          "大周皇室明珠",
+          "淡紫色流仙裙",
+          "流云丝带",
+          "古灵精怪",
+          "紫衣女侠",
+          "溜出神都游历江湖",
+          "惩治恶少",
+          "向往宗门逍遥"
+        ],
+        "path": "世界书\\人物详细：姬紫月.txt"
+      },
+      "人物详细：苏媚": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏媚",
+            "苏贵妃",
+            "合欢宗暗子",
+            "《颠鸾倒凤诀》",
+            "千幻魅影",
+            "调香幻术",
+            "南梁王专宠",
+            "瑶光殿",
+            "吸干武道宗师"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 82,
+        "keywords": [
+          "苏媚",
+          "苏贵妃",
+          "合欢宗暗子",
+          "《颠鸾倒凤诀》",
+          "千幻魅影",
+          "调香幻术",
+          "南梁王专宠",
+          "瑶光殿",
+          "吸干武道宗师"
+        ],
+        "path": "世界书\\人物详细：苏媚.txt"
+      },
+      "人物详细：萧婉儿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "萧婉儿",
+            "长乐公主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 83,
+        "keywords": [
+          "萧婉儿",
+          "长乐公主"
+        ],
+        "path": "世界书\\人物详细：萧婉儿.txt"
+      },
+      "人物详细：姬昊天": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "姬昊天",
+            "神武大帝",
+            "大周仙朝皇帝",
+            "黑金九龙袍",
+            "平天冠",
+            "十二旒冕",
+            "紫金皇气",
+            "言出法随",
+            "《皇极经世书》",
+            "普天之下",
+            "传国玉玺",
+            "禁武令"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 84,
+        "keywords": [
+          "姬昊天",
+          "神武大帝",
+          "大周仙朝皇帝",
+          "黑金九龙袍",
+          "平天冠",
+          "十二旒冕",
+          "紫金皇气",
+          "言出法随",
+          "《皇极经世书》",
+          "普天之下",
+          "传国玉玺",
+          "禁武令"
+        ],
+        "path": "世界书\\人物详细：姬昊天.txt"
+      },
+      "人物详细：李牧": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "李牧",
+            "铁血侯",
+            "神策军大统领",
+            "镇国大将军",
+            "武道体修",
+            "黑玄铁战甲",
+            "巨型战刀",
+            "刀疤脸",
+            "《白虎杀神诀》",
+            "军阵·不动如山",
+            "军魂法相",
+            "人屠",
+            "踏平中型宗门",
+            "宗门草寇论"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 85,
+        "keywords": [
+          "李牧",
+          "铁血侯",
+          "神策军大统领",
+          "镇国大将军",
+          "武道体修",
+          "黑玄铁战甲",
+          "巨型战刀",
+          "刀疤脸",
+          "《白虎杀神诀》",
+          "军阵·不动如山",
+          "军魂法相",
+          "人屠",
+          "踏平中型宗门",
+          "宗门草寇论"
+        ],
+        "path": "世界书\\人物详细：李牧.txt"
+      },
+      "人物详细：萧衍 (梁王)": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "萧衍",
+            "南梁王"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 86,
+        "keywords": [
+          "萧衍",
+          "南梁王"
+        ],
+        "path": "世界书\\人物详细：萧衍 (梁王).txt"
+      },
+      "妖兽化形取名": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "化形、妖兽化形、化形妖兽、化形大妖"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 87,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [
+          "化形、妖兽化形、化形妖兽、化形大妖"
+        ],
+        "path": "世界书\\妖兽化形取名.txt"
+      },
+      "人物详情：青练": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青练"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 88,
+        "keywords": [
+          "青练"
+        ],
+        "path": "世界书\\人物详情：青练.txt"
+      },
+      "地点：东极青木域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "东极青木域",
+            "青木域",
+            "妖族"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 89,
+        "keywords": [
+          "东极青木域",
+          "青木域",
+          "妖族"
+        ],
+        "path": "世界书\\地点：东极青木域.yaml"
+      },
+      "妖族势力：九尾天狐族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "九尾天狐",
+            "天狐族",
+            "青丘国",
+            "妖皇"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 90,
+        "keywords": [
+          "九尾天狐",
+          "天狐族",
+          "青丘国",
+          "妖皇"
+        ],
+        "path": "世界书\\妖族势力：九尾天狐族.yaml"
+      },
+      "妖族势力：神猿族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "神猿",
+            "万妖山脉"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 91,
+        "keywords": [
+          "神猿",
+          "万妖山脉"
+        ],
+        "path": "世界书\\妖族势力：神猿族.yaml"
+      },
+      "妖族势力：蛟龙一族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "蛟龙一族",
+            "蛟龙",
+            "覆海王族",
+            "北冥黑渊"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 92,
+        "keywords": [
+          "蛟龙一族",
+          "蛟龙",
+          "覆海王族",
+          "北冥黑渊"
+        ],
+        "path": "世界书\\妖族势力：蛟龙一族.yaml"
+      },
+      "-内容控制开关-玄天界 (二选一)": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 101
+        },
+        "display_index": 93,
+        "keywords": [],
+        "path": "世界书\\-内容控制开关-玄天界 (二选一).txt"
+      },
+      "妖族人物：敖凌霜": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "敖凌霜",
+            "蛟龙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 94,
+        "keywords": [
+          "敖凌霜",
+          "蛟龙"
+        ],
+        "path": "世界书\\妖族人物：敖凌霜.txt"
+      },
+      "妖族人物：袁琪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "袁琪",
+            "战狂",
+            "神猿",
+            "少主",
+            "神猿族少主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 95,
+        "keywords": [
+          "袁琪",
+          "战狂",
+          "神猿",
+          "少主",
+          "神猿族少主"
+        ],
+        "path": "世界书\\妖族人物：袁琪.txt"
+      },
+      "妖族势力：孔灵月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "孔灵月",
+            "孔雀",
+            "五色孔雀王族",
+            "五色孔雀"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 96,
+        "keywords": [
+          "孔灵月",
+          "孔雀",
+          "五色孔雀王族",
+          "五色孔雀"
+        ],
+        "path": "世界书\\妖族势力：孔灵月.txt"
+      },
+      "妖族人物：蛛心儿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "蛛心儿",
+            "万蛛谷谷主",
+            "万蛛谷",
+            "谷主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 97,
+        "keywords": [
+          "蛛心儿",
+          "万蛛谷谷主",
+          "万蛛谷",
+          "谷主"
+        ],
+        "path": "世界书\\妖族人物：蛛心儿.txt"
+      },
+      "炼气期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "炼气期",
+            "炼气一层",
+            "炼气二层",
+            "炼气三层",
+            "炼气四层",
+            "炼气五层",
+            "炼气六层",
+            "炼气七层",
+            "炼气八层",
+            "炼气九层",
+            "炼气大圆满",
+            "筑基丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 98,
+        "keywords": [
+          "炼气期",
+          "炼气一层",
+          "炼气二层",
+          "炼气三层",
+          "炼气四层",
+          "炼气五层",
+          "炼气六层",
+          "炼气七层",
+          "炼气八层",
+          "炼气九层",
+          "炼气大圆满",
+          "筑基丹"
+        ],
+        "path": "世界书\\炼气期.txt"
+      },
+      "筑基期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "筑基",
+            "筑基期",
+            "筑基初期",
+            "筑基中期",
+            "筑基后期",
+            "筑基期大圆满",
+            "筑基大圆满",
+            "凝金丹",
+            "结金丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 99,
+        "keywords": [
+          "筑基",
+          "筑基期",
+          "筑基初期",
+          "筑基中期",
+          "筑基后期",
+          "筑基期大圆满",
+          "筑基大圆满",
+          "凝金丹",
+          "结金丹"
+        ],
+        "path": "世界书\\筑基期.txt"
+      },
+      "金丹期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "金丹",
+            "金丹期",
+            "金丹初期",
+            "金丹中期",
+            "金丹后期",
+            "金丹期大圆满",
+            "金丹大圆满",
+            "化婴丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 100,
+        "keywords": [
+          "金丹",
+          "金丹期",
+          "金丹初期",
+          "金丹中期",
+          "金丹后期",
+          "金丹期大圆满",
+          "金丹大圆满",
+          "化婴丹"
+        ],
+        "path": "世界书\\金丹期.txt"
+      },
+      "元婴期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "元婴",
+            "元婴期",
+            "元婴初期",
+            "元婴中期",
+            "元婴后期",
+            "元婴大圆满",
+            "元婴期大圆满",
+            "相生神游丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 101,
+        "keywords": [
+          "元婴",
+          "元婴期",
+          "元婴初期",
+          "元婴中期",
+          "元婴后期",
+          "元婴大圆满",
+          "元婴期大圆满",
+          "相生神游丹"
+        ],
+        "path": "世界书\\元婴期.txt"
+      },
+      "化神期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "化神期",
+            "化神",
+            "化神初期",
+            "化神中期",
+            "化神后期",
+            "化神大圆满",
+            "化神期大圆满",
+            "虚合破元丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 102,
+        "keywords": [
+          "化神期",
+          "化神",
+          "化神初期",
+          "化神中期",
+          "化神后期",
+          "化神大圆满",
+          "化神期大圆满",
+          "虚合破元丹"
+        ],
+        "path": "世界书\\化神期.txt"
+      },
+      "炼虚期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "炼虚期",
+            "炼虚",
+            "炼虚后期",
+            "炼虚中期",
+            "炼虚初期",
+            "炼虚大圆满",
+            "炼虚期大圆满",
+            "合体丹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 103,
+        "keywords": [
+          "炼虚期",
+          "炼虚",
+          "炼虚后期",
+          "炼虚中期",
+          "炼虚初期",
+          "炼虚大圆满",
+          "炼虚期大圆满",
+          "合体丹"
+        ],
+        "path": "世界书\\炼虚期.txt"
+      },
+      "合体期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "合体",
+            "合体期",
+            "合体初期",
+            "合体中期",
+            "合体后期",
+            "合体大圆满",
+            "合体期大圆满"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 104,
+        "keywords": [
+          "合体",
+          "合体期",
+          "合体初期",
+          "合体中期",
+          "合体后期",
+          "合体大圆满",
+          "合体期大圆满"
+        ],
+        "path": "世界书\\合体期.txt"
+      },
+      "大乘期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "大乘期",
+            "大乘",
+            "大乘初期",
+            "大乘中期",
+            "大乘后期",
+            "大乘大圆满",
+            "大乘期大圆满"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 105,
+        "keywords": [
+          "大乘期",
+          "大乘",
+          "大乘初期",
+          "大乘中期",
+          "大乘后期",
+          "大乘大圆满",
+          "大乘期大圆满"
+        ],
+        "path": "世界书\\大乘期.txt"
+      },
+      "苏千媚": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏千媚",
+            "天狐",
+            "青丘国主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 106,
+        "keywords": [
+          "苏千媚",
+          "天狐",
+          "青丘国主"
+        ],
+        "path": "世界书\\苏千媚.txt"
+      },
+      "渡劫期": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "渡劫期"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 107,
+        "keywords": [
+          "渡劫期"
+        ],
+        "path": "世界书\\渡劫期.txt"
+      },
+      "雷劫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "雷劫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 108,
+        "keywords": [
+          "雷劫"
+        ],
+        "path": "世界书\\雷劫.txt"
+      },
+      "恋爱": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 109,
+        "keywords": [],
+        "path": "世界书\\恋爱.txt"
+      },
+      "回忆": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 110,
+        "keywords": [],
+        "path": "世界书\\回忆.txt"
+      },
+      "灵压": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 111,
+        "keywords": [],
+        "path": "世界书\\灵压.txt"
+      },
+      "死亡": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 112,
+        "keywords": [],
+        "path": "世界书\\死亡.yaml"
+      },
+      "人物详情：江楚楚": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "小凤凰",
+            "江楚楚",
+            "凤凰血脉"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 113,
+        "keywords": [
+          "小凤凰",
+          "江楚楚",
+          "凤凰血脉"
+        ],
+        "path": "世界书\\人物详情：江楚楚.txt"
+      },
+      "地点详情：南离火洲": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "南离火洲",
+            "南洲",
+            "南离",
+            "火洲"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 114,
+        "keywords": [
+          "南离火洲",
+          "南洲",
+          "南离",
+          "火洲"
+        ],
+        "path": "世界书\\地点详情：南离火洲.yaml"
+      },
+      "地点详情：北冥雪原": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "北冥雪原",
+            "北冥",
+            "北原"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 115,
+        "keywords": [
+          "北冥雪原",
+          "北冥",
+          "北原"
+        ],
+        "path": "世界书\\地点详情：北冥雪原.yaml"
+      },
+      "人物详情:苏灿灿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏灿灿",
+            "女儿"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 116,
+        "keywords": [
+          "苏灿灿",
+          "女儿"
+        ],
+        "path": "世界书\\人物详情_苏灿灿.txt"
+      },
+      "人物详情:苏辰": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏辰",
+            "穿越者"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 117,
+        "keywords": [
+          "苏辰",
+          "穿越者"
+        ],
+        "path": "世界书\\人物详情_苏辰.txt"
+      },
+      "详情人物:慕清弦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "慕清弦",
+            "母亲"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 118,
+        "keywords": [
+          "慕清弦",
+          "母亲"
+        ],
+        "path": "世界书\\详情人物_慕清弦.txt"
+      },
+      "详情人物:温月清": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "温月清"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 119,
+        "keywords": [
+          "温月清"
+        ],
+        "path": "世界书\\详情人物_温月清.txt"
+      },
+      "详情人物:温小暖": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "温小暖"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 120,
+        "keywords": [
+          "温小暖"
+        ],
+        "path": "世界书\\详情人物_温小暖.txt"
+      },
+      "困难模式": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "困难模式"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 121,
+        "keywords": [
+          "困难模式"
+        ],
+        "path": "世界书\\困难模式.txt"
+      },
+      "DC点数判定": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 122,
+        "keywords": [],
+        "path": "世界书\\DC点数判定.txt"
+      },
+      "真仙境": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "真仙境",
+            "飞升",
+            "真仙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 123,
+        "keywords": [
+          "真仙境",
+          "飞升",
+          "真仙"
+        ],
+        "path": "世界书\\真仙境.txt"
+      },
+      "金仙境": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "金仙境",
+            "金仙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 124,
+        "keywords": [
+          "金仙境",
+          "金仙"
+        ],
+        "path": "世界书\\金仙境.txt"
+      },
+      "玄仙境": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玄仙境",
+            "玄仙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 125,
+        "keywords": [
+          "玄仙境",
+          "玄仙"
+        ],
+        "path": "世界书\\玄仙境.txt"
+      },
+      "仙帝境": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "仙帝境",
+            "仙帝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 126,
+        "keywords": [
+          "仙帝境",
+          "仙帝"
+        ],
+        "path": "世界书\\仙帝境.txt"
+      },
+      "超脱境": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "超脱境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 127,
+        "keywords": [
+          "超脱境"
+        ],
+        "path": "世界书\\超脱境.txt"
+      },
+      "仙界介绍": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 128,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [],
+        "path": "世界书\\仙界介绍.txt"
+      },
+      "仙界核心区域": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 129,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [],
+        "path": "世界书\\仙界核心区域.txt"
+      },
+      "仙界地点详情：钧天仙域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "钧天仙域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 130,
+        "keywords": [
+          "钧天仙域"
+        ],
+        "path": "世界书\\仙界地点详情：钧天仙域.yaml"
+      },
+      "仙界地点详情：青华仙域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青华仙域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 131,
+        "keywords": [
+          "青华仙域"
+        ],
+        "path": "世界书\\仙界地点详情：青华仙域.yaml"
+      },
+      "仙界地点详情：炎极仙域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "炎极仙域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 132,
+        "keywords": [
+          "炎极仙域"
+        ],
+        "path": "世界书\\仙界地点详情：炎极仙域.yaml"
+      },
+      "仙界地点详情：太白仙域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "太白仙域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 133,
+        "keywords": [
+          "太白仙域"
+        ],
+        "path": "世界书\\仙界地点详情：太白仙域.yaml"
+      },
+      "仙界地点详情：玄冥仙域": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玄冥仙域"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 134,
+        "keywords": [
+          "玄冥仙域"
+        ],
+        "path": "世界书\\仙界地点详情：玄冥仙域.yaml"
+      },
+      "仙界人物详情：玖柒": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玖柒"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 135,
+        "keywords": [
+          "玖柒"
+        ],
+        "path": "世界书\\仙界人物详情：玖柒.txt"
+      },
+      "仙界势力详情：云上瑶池": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "九天瑶池",
+            "云上媱池",
+            "媱池"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 136,
+        "keywords": [
+          "九天瑶池",
+          "云上媱池",
+          "媱池"
+        ],
+        "path": "世界书\\仙界势力详情：云上瑶池.txt"
+      },
+      "仙界特殊区域": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 137,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [],
+        "path": "世界书\\仙界特殊区域.txt"
+      },
+      "仙界飞升": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 138,
+        "recursion": {
+          "prevent_incoming": false,
+          "prevent_outgoing": true
+        },
+        "keywords": [],
+        "path": "世界书\\仙界飞升.txt"
+      },
+      "详细人物:韩立": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "韩立",
+            "青元剑诀",
+            "玄阴经",
+            "大衍诀"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 139,
+        "keywords": [
+          "韩立",
+          "青元剑诀",
+          "玄阴经",
+          "大衍诀"
+        ],
+        "path": "世界书\\详细人物_韩立.txt"
+      },
+      "详细人物:南宫婉": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "南宫婉",
+            "素女轮回功",
+            "朱雀环",
+            "素心莲灯",
+            "冰魄云裳"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 140,
+        "keywords": [
+          "南宫婉",
+          "素女轮回功",
+          "朱雀环",
+          "素心莲灯",
+          "冰魄云裳"
+        ],
+        "path": "世界书\\详细人物_南宫婉.txt"
+      },
+      "详细人物:银月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "银月",
+            "雪玲"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 141,
+        "keywords": [
+          "银月",
+          "雪玲"
+        ],
+        "path": "世界书\\详细人物_银月.txt"
+      },
+      "详细物品:小绿瓶": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "小绿瓶",
+            "掌天瓶"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 142,
+        "keywords": [
+          "小绿瓶",
+          "掌天瓶"
+        ],
+        "path": "世界书\\详细物品_小绿瓶.txt"
+      },
+      "详细物品:青竹蜂云剑": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青竹蜂云剑"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 143,
+        "keywords": [
+          "青竹蜂云剑"
+        ],
+        "path": "世界书\\详细物品_青竹蜂云剑.txt"
+      },
+      "详细:噬金虫群设定": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "噬金虫",
+            "噬金虫群"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 144,
+        "keywords": [
+          "噬金虫",
+          "噬金虫群"
+        ],
+        "path": "世界书\\详细_噬金虫群设定.txt"
+      },
+      "详细物品:风雷翅": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "风雷翅"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 145,
+        "keywords": [
+          "风雷翅"
+        ],
+        "path": "世界书\\详细物品_风雷翅.txt"
+      },
+      "详细灵宠:啼魂兽": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "啼魂兽"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 146,
+        "keywords": [
+          "啼魂兽"
+        ],
+        "path": "世界书\\详细灵宠_啼魂兽.txt"
+      },
+      "详细物品:虚天鼎": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "虚天鼎"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 147,
+        "keywords": [
+          "虚天鼎"
+        ],
+        "path": "世界书\\详细物品_虚天鼎.txt"
+      },
+      "详细物品:辟邪神雷": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "辟邪神雷"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 148,
+        "keywords": [
+          "辟邪神雷"
+        ],
+        "path": "世界书\\详细物品_辟邪神雷.txt"
+      },
+      "详细人物:石昊": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "荒天帝",
+            "石昊",
+            "石村"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 149,
+        "keywords": [
+          "荒天帝",
+          "石昊",
+          "石村"
+        ],
+        "path": "世界书\\详细人物_石昊.txt"
+      },
+      "详细人物:白小纯": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "白小纯"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 150,
+        "keywords": [
+          "白小纯"
+        ],
+        "path": "世界书\\详细人物_白小纯.yaml"
+      },
+      "详细人物:候小妹": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "候小妹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 151,
+        "keywords": [
+          "候小妹"
+        ],
+        "path": "世界书\\详细人物_候小妹.txt"
+      },
+      "详细人物:古月方源": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "方源",
+            "古月方源"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 152,
+        "keywords": [
+          "方源",
+          "古月方源"
+        ],
+        "path": "世界书\\详细人物_古月方源.txt"
+      },
+      "详细人物:宋文": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "宋文",
+            "极阴"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 153,
+        "keywords": [
+          "宋文",
+          "极阴"
+        ],
+        "path": "世界书\\详细人物_宋文.txt"
+      },
+      "详细人物:商心慈": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "商心慈"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 154,
+        "keywords": [
+          "商心慈"
+        ],
+        "path": "世界书\\详细人物_商心慈.txt"
+      },
+      "-内容控制开关-仙界 (二选一)": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 155,
+        "keywords": [],
+        "path": "世界书\\-内容控制开关-仙界 (二选一).txt"
+      },
+      "详细:血海地印": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "血海地印"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 156,
+        "keywords": [
+          "血海地印"
+        ],
+        "path": "世界书\\详细_血海地印.txt"
+      },
+      "详细:尸王转生决": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "尸王转生决"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 157,
+        "keywords": [
+          "尸王转生决"
+        ],
+        "path": "世界书\\详细_尸王转生决.txt"
+      },
+      "详细:九大天雷秘术": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "九大天雷秘术"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 158,
+        "keywords": [
+          "九大天雷秘术"
+        ],
+        "path": "世界书\\详细_九大天雷秘术.txt"
+      },
+      "详细:万毒混元身": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万毒混元身"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 159,
+        "keywords": [
+          "万毒混元身"
+        ],
+        "path": "世界书\\详细_万毒混元身.txt"
+      },
+      "详细:疑神刺": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "疑神刺"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 160,
+        "keywords": [
+          "疑神刺"
+        ],
+        "path": "世界书\\详细_疑神刺.txt"
+      },
+      "详细:血遁术": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "血遁术"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 161,
+        "keywords": [
+          "血遁术"
+        ],
+        "path": "世界书\\详细_血遁术.txt"
+      },
+      "详细:替死傀儡术": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "替死傀儡",
+            "替死傀儡术"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 162,
+        "keywords": [
+          "替死傀儡",
+          "替死傀儡术"
+        ],
+        "path": "世界书\\详细_替死傀儡术.txt"
+      },
+      "详细:噬元噬魂诀": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "噬元噬魂诀"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 163,
+        "keywords": [
+          "噬元噬魂诀"
+        ],
+        "path": "世界书\\详细_噬元噬魂诀.txt"
+      },
+      "详细:血祭术": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "血祭术"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 164,
+        "keywords": [
+          "血祭术"
+        ],
+        "path": "世界书\\详细_血祭术.txt"
+      },
+      "详细:幽冥爪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽冥爪"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 165,
+        "keywords": [
+          "幽冥爪"
+        ],
+        "path": "世界书\\详细_幽冥爪.txt"
+      },
+      "详细人物:嫣雨烟": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "嫣雨烟",
+            "万法宗",
+            "万法宗圣女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 166,
+        "keywords": [
+          "嫣雨烟",
+          "万法宗",
+          "万法宗圣女"
+        ],
+        "path": "世界书\\详细人物_嫣雨烟.txt"
+      },
+      "详细人物:唐弎": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "唐弎",
+            "唐三"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 167,
+        "keywords": [
+          "唐弎",
+          "唐三"
+        ],
+        "path": "世界书\\详细人物_唐弎.txt"
+      },
+      "详细人物:银黎": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "银黎",
+            "烛龙族",
+            "烛龙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 168,
+        "keywords": [
+          "银黎",
+          "烛龙族",
+          "烛龙"
+        ],
+        "path": "世界书\\详细人物_银黎.txt"
+      },
+      "详细人物:红蝶": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "红蝶"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 169,
+        "keywords": [
+          "红蝶"
+        ],
+        "path": "世界书\\详细人物_红蝶.txt"
+      },
+      "详细人物:王林": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "王林"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 170,
+        "keywords": [
+          "王林"
+        ],
+        "path": "世界书\\详细人物_王林.txt"
+      },
+      "详细人物:楚星绾": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "缚仙血手",
+            "先天紫阴之气",
+            "天庭公主",
+            "楚星绾"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 171,
+        "keywords": [
+          "缚仙血手",
+          "先天紫阴之气",
+          "天庭公主",
+          "楚星绾"
+        ],
+        "path": "世界书\\详细人物_楚星绾.txt"
+      },
+      "防全知": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 4
+        },
+        "display_index": 172,
+        "keywords": [],
+        "path": "世界书\\防全知.txt"
+      },
+      "详细人物：灵玥": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "灵玥",
+            "灵汐",
+            "澪之果"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 173,
+        "keywords": [
+          "灵玥",
+          "灵汐",
+          "澪之果"
+        ],
+        "path": "世界书\\详细人物：灵玥.txt"
+      },
+      "详细人物:上官玥": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "斩孽飞星剑",
+            "无垢剑体",
+            "天庭执剑神将",
+            "上官玥"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 174,
+        "keywords": [
+          "斩孽飞星剑",
+          "无垢剑体",
+          "天庭执剑神将",
+          "上官玥"
+        ],
+        "path": "世界书\\详细人物_上官玥.txt"
+      },
+      "秘境详情：蓬莱仙岛": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "蓬莱仙岛",
+            "甲子仙源",
+            "归墟之眼",
+            "澪之果",
+            "冥煞玄蛇",
+            "渊涯谷",
+            "仙界碎片"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 175,
+        "keywords": [
+          "蓬莱仙岛",
+          "甲子仙源",
+          "归墟之眼",
+          "澪之果",
+          "冥煞玄蛇",
+          "渊涯谷",
+          "仙界碎片"
+        ],
+        "path": "世界书\\秘境详情：蓬莱仙岛.txt"
+      },
+      "道心值设定": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 100,
+          "role": "system",
+          "depth": 3
+        },
+        "display_index": 176,
+        "keywords": [],
+        "path": "世界书\\道心值设定.txt"
+      },
+      "地点详情：幽林血沼": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽林血沼",
+            "蒲灵果",
+            "玉髓芝",
+            "筑基秘境",
+            "险地"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 177,
+        "keywords": [
+          "幽林血沼",
+          "蒲灵果",
+          "玉髓芝",
+          "筑基秘境",
+          "险地"
+        ],
+        "path": "世界书\\地点详情：幽林血沼.txt"
+      },
+      "地点详情：庚金剑冢": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "庚金剑冢",
+            "金灵玉髓",
+            "上古遗址",
+            "凝金丹秘境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 178,
+        "keywords": [
+          "庚金剑冢",
+          "金灵玉髓",
+          "上古遗址",
+          "凝金丹秘境"
+        ],
+        "path": "世界书\\地点详情：庚金剑冢.txt"
+      },
+      "地点详情：琉璃净月宫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "琉璃净月宫",
+            "九曲灵参",
+            "造化青莲莲子",
+            "化婴丹秘境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 179,
+        "keywords": [
+          "琉璃净月宫",
+          "九曲灵参",
+          "造化青莲莲子",
+          "化婴丹秘境"
+        ],
+        "path": "世界书\\地点详情：琉璃净月宫.txt"
+      },
+      "地点详情：五行碎层": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "五行碎层",
+            "五行灵髓",
+            "虚空花",
+            "神游丹秘境",
+            "次空间"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 180,
+        "keywords": [
+          "五行碎层",
+          "五行灵髓",
+          "虚空花",
+          "神游丹秘境",
+          "次空间"
+        ],
+        "path": "世界书\\地点详情：五行碎层.txt"
+      },
+      "地点详情：无垠沙海镜像": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "无垠沙海镜像",
+            "空灵晶液",
+            "镜像世界",
+            "破元丹秘境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 181,
+        "keywords": [
+          "无垠沙海镜像",
+          "空灵晶液",
+          "镜像世界",
+          "破元丹秘境"
+        ],
+        "path": "世界书\\地点详情：无垠沙海镜像.txt"
+      },
+      "地点详情：陨圣乱墟": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陨圣乱墟",
+            "三元归一果",
+            "远古战场",
+            "合体丹秘境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 182,
+        "keywords": [
+          "陨圣乱墟",
+          "三元归一果",
+          "远古战场",
+          "合体丹秘境"
+        ],
+        "path": "世界书\\地点详情：陨圣乱墟.txt"
+      },
+      "地点详情：黄泉冥河引": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "黄泉冥河引",
+            "九转还魂草",
+            "冥界边缘",
+            "虚灵丹秘境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 183,
+        "keywords": [
+          "黄泉冥河引",
+          "九转还魂草",
+          "冥界边缘",
+          "虚灵丹秘境"
+        ],
+        "path": "世界书\\地点详情：黄泉冥河引.txt"
+      },
+      "地点详情：天渊起源地": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "天渊起源地",
+            "玄黄之气",
+            "世界本源",
+            "渡劫秘境",
+            "飞升"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 184,
+        "keywords": [
+          "天渊起源地",
+          "玄黄之气",
+          "世界本源",
+          "渡劫秘境",
+          "飞升"
+        ],
+        "path": "世界书\\地点详情：天渊起源地.txt"
+      },
+      "种族实力对应": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 185,
+        "keywords": [],
+        "path": "世界书\\种族实力对应.txt"
+      },
+      "妖族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 186,
+        "keywords": [],
+        "path": "世界书\\妖族.yaml"
+      },
+      "详细人物:秦浅月": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "秦浅月",
+            "魂主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 187,
+        "keywords": [
+          "秦浅月",
+          "魂主"
+        ],
+        "path": "世界书\\详细人物_秦浅月.txt"
+      },
+      "势力详情：昆仑道门": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "昆仑道门",
+            "昆仑神山"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 188,
+        "keywords": [
+          "昆仑道门",
+          "昆仑神山"
+        ],
+        "path": "世界书\\势力详情：昆仑道门.yaml"
+      },
+      "详细势力:万法宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万法宗",
+            "万法天仪"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 189,
+        "keywords": [
+          "万法宗",
+          "万法天仪"
+        ],
+        "path": "世界书\\详细势力_万法宗.yaml"
+      },
+      "详细人物:许千寻": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "许千寻",
+            "万法宗宗主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 190,
+        "keywords": [
+          "许千寻",
+          "万法宗宗主"
+        ],
+        "path": "世界书\\详细人物_许千寻.txt"
+      },
+      "详细人物:玄清": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玄清",
+            "万法宗传法大长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 191,
+        "keywords": [
+          "玄清",
+          "万法宗传法大长老"
+        ],
+        "path": "世界书\\详细人物_玄清.txt"
+      },
+      "详细人物:柳依依": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "明心守殿灯",
+            "灯影守御体",
+            "天庭掌灯小仙官",
+            "柳依依"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 192,
+        "keywords": [
+          "明心守殿灯",
+          "灯影守御体",
+          "天庭掌灯小仙官",
+          "柳依依"
+        ],
+        "path": "世界书\\详细人物_柳依依.txt"
+      },
+      "详细人物:顾长枫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "顾长枫",
+            "玉灵宫宫主",
+            "万法灵体"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 193,
+        "keywords": [
+          "顾长枫",
+          "玉灵宫宫主",
+          "万法灵体"
+        ],
+        "path": "世界书\\详细人物_顾长枫.txt"
+      },
+      "详细人物:萧玉寒": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "萧玉寒",
+            "玉灵宫传功长老",
+            "琉璃冰骨",
+            "万古玄冰刺"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 194,
+        "keywords": [
+          "萧玉寒",
+          "玉灵宫传功长老",
+          "琉璃冰骨",
+          "万古玄冰刺"
+        ],
+        "path": "世界书\\详细人物_萧玉寒.txt"
+      },
+      "详细人物:苏清禾": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏清禾",
+            "清心灵体",
+            "玉灵宫大师姐"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 195,
+        "keywords": [
+          "苏清禾",
+          "清心灵体",
+          "玉灵宫大师姐"
+        ],
+        "path": "世界书\\详细人物_苏清禾.txt"
+      },
+      "详细人物:云糯糯": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "云糯糯",
+            "灵植亲和体",
+            "玉灵宫小师妹"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 196,
+        "keywords": [
+          "云糯糯",
+          "灵植亲和体",
+          "玉灵宫小师妹"
+        ],
+        "path": "世界书\\详细人物_云糯糯.txt"
+      },
+      "详细人物:苏绾影": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏绾影",
+            "极乐宗主",
+            "九魅天香体",
+            "极乐销魂锁"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 197,
+        "keywords": [
+          "苏绾影",
+          "极乐宗主",
+          "九魅天香体",
+          "极乐销魂锁"
+        ],
+        "path": "世界书\\详细人物_苏绾影.txt"
+      },
+      "详细人物:凌阮阮": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "千丝绕指柔",
+            "凌阮阮",
+            "极乐圣女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 198,
+        "keywords": [
+          "千丝绕指柔",
+          "凌阮阮",
+          "极乐圣女"
+        ],
+        "path": "世界书\\详细人物_凌阮阮.txt"
+      },
+      "详细人物:叶倾心": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "劫灭煞体",
+            "厄难小皮鞭",
+            "极乐宗刑罚长老",
+            "叶倾心"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 199,
+        "keywords": [
+          "劫灭煞体",
+          "厄难小皮鞭",
+          "极乐宗刑罚长老",
+          "叶倾心"
+        ],
+        "path": "世界书\\详细人物_叶倾心.txt"
+      },
+      "详细人物:汐怡": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "极乐宗大师姐",
+            "柔骨魅体",
+            "相思红绸",
+            "汐怡"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 200,
+        "keywords": [
+          "极乐宗大师姐",
+          "柔骨魅体",
+          "相思红绸",
+          "汐怡"
+        ],
+        "path": "世界书\\详细人物_汐怡.txt"
+      },
+      "详细人物:桃夭夭": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "桃夭夭",
+            "极乐宗小师妹",
+            "桃花幻心体",
+            "绯桃幻绫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 201,
+        "keywords": [
+          "桃夭夭",
+          "极乐宗小师妹",
+          "桃花幻心体",
+          "绯桃幻绫"
+        ],
+        "path": "世界书\\详细人物_桃夭夭.txt"
+      },
+      "详细人物:顾幽梵": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "顾幽梵",
+            "阴煞宗主",
+            "纯阴煞体",
+            "大慈大悲亿魂幡"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 202,
+        "keywords": [
+          "顾幽梵",
+          "阴煞宗主",
+          "纯阴煞体",
+          "大慈大悲亿魂幡"
+        ],
+        "path": "世界书\\详细人物_顾幽梵.txt"
+      },
+      "详细人物:苏珞刹": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏珞刹",
+            "阴煞圣女",
+            "天生幽冥重瞳",
+            "藏尸百厄棺"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 203,
+        "keywords": [
+          "苏珞刹",
+          "阴煞圣女",
+          "天生幽冥重瞳",
+          "藏尸百厄棺"
+        ],
+        "path": "世界书\\详细人物_苏珞刹.txt"
+      },
+      "详细人物:霖仙怡": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "霖仙怡",
+            "镇宗长老",
+            "修罗战尸之身",
+            "裂天血月轮"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 204,
+        "keywords": [
+          "霖仙怡",
+          "镇宗长老",
+          "修罗战尸之身",
+          "裂天血月轮"
+        ],
+        "path": "世界书\\详细人物_霖仙怡.txt"
+      },
+      "详细人物:冥霜儿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "冥霜儿",
+            "阴煞宗外门大师姐",
+            "阴煞控魂体",
+            "幽影骨鞭"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 205,
+        "keywords": [
+          "冥霜儿",
+          "阴煞宗外门大师姐",
+          "阴煞控魂体",
+          "幽影骨鞭"
+        ],
+        "path": "世界书\\详细人物_冥霜儿.txt"
+      },
+      "详细人物:楚玉璃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "楚玉璃",
+            "阴煞宗小师妹",
+            "阴灵匿形体",
+            "碎影布偶"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 206,
+        "keywords": [
+          "楚玉璃",
+          "阴煞宗小师妹",
+          "阴灵匿形体",
+          "碎影布偶"
+        ],
+        "path": "世界书\\详细人物_楚玉璃.txt"
+      },
+      "详细人物:白玖璃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "九幽冥火",
+            "妖族圣主",
+            "白玖璃"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 207,
+        "keywords": [
+          "九幽冥火",
+          "妖族圣主",
+          "白玖璃"
+        ],
+        "path": "世界书\\详细人物_白玖璃.txt"
+      },
+      "详细人物:青木璇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青木璇",
+            "圣地大祭司",
+            "万木本源之气"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 208,
+        "keywords": [
+          "青木璇",
+          "圣地大祭司",
+          "万木本源之气"
+        ],
+        "path": "世界书\\详细人物_青木璇.txt"
+      },
+      "详细人物:璃杏": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "传信龙鳞玉",
+            "龙炎幻形体",
+            "真龙族小师姐",
+            "璃杏"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 209,
+        "keywords": [
+          "传信龙鳞玉",
+          "龙炎幻形体",
+          "真龙族小师姐",
+          "璃杏"
+        ],
+        "path": "世界书\\详细人物_璃杏.txt"
+      },
+      "详细人物:杜月菲": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "杜月菲",
+            "灵植小妖师妹",
+            "草木生机体",
+            "青芽灵穗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 210,
+        "keywords": [
+          "杜月菲",
+          "灵植小妖师妹",
+          "草木生机体",
+          "青芽灵穗"
+        ],
+        "path": "世界书\\详细人物_杜月菲.txt"
+      },
+      "详细人物:慕容无尘": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "仙族族长",
+            "慕容无尘",
+            "无尘"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 211,
+        "keywords": [
+          "仙族族长",
+          "慕容无尘",
+          "无尘"
+        ],
+        "path": "世界书\\详细人物_慕容无尘.txt"
+      },
+      "详细人物:慕容初袖": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "慕容初袖",
+            "七窍玲珑心",
+            "初袖"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 212,
+        "keywords": [
+          "慕容初袖",
+          "七窍玲珑心",
+          "初袖"
+        ],
+        "path": "世界书\\详细人物_慕容初袖.txt"
+      },
+      "详细人物:慕容落羽": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "风行隐灵仙体",
+            "慕容落羽",
+            "落羽"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 213,
+        "keywords": [
+          "风行隐灵仙体",
+          "慕容落羽",
+          "落羽"
+        ],
+        "path": "世界书\\详细人物_慕容落羽.txt"
+      },
+      "详细人物:萌梦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "萌梦",
+            "纯净仙元体",
+            "流萤光珠"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 214,
+        "keywords": [
+          "萌梦",
+          "纯净仙元体",
+          "流萤光珠"
+        ],
+        "path": "世界书\\详细人物_萌梦.txt"
+      },
+      "详细人物:钰仙儿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "龙脉女祖",
+            "太虚真龙躯",
+            "钰仙儿"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 215,
+        "keywords": [
+          "龙脉女祖",
+          "太虚真龙躯",
+          "钰仙儿"
+        ],
+        "path": "世界书\\详细人物_钰仙儿.txt"
+      },
+      "详细人物:青渝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "焚天翎羽",
+            "涅槃神火体",
+            "凤血帝女",
+            "青渝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 216,
+        "keywords": [
+          "焚天翎羽",
+          "涅槃神火体",
+          "凤血帝女",
+          "青渝"
+        ],
+        "path": "世界书\\详细人物_青渝.txt"
+      },
+      "详细人物:齐天麟": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "五德无双瑞体",
+            "麒麟圣子",
+            "齐天麟"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 217,
+        "keywords": [
+          "五德无双瑞体",
+          "麒麟圣子",
+          "齐天麟"
+        ],
+        "path": "世界书\\详细人物_齐天麟.txt"
+      },
+      "详细人物:风梧音": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "祖禽遗脉",
+            "风梧音",
+            "裂风本原道基"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 218,
+        "keywords": [
+          "祖禽遗脉",
+          "风梧音",
+          "裂风本原道基"
+        ],
+        "path": "世界书\\详细人物_风梧音.txt"
+      },
+      "详细人物:秦汐雅": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "沧澜侍龙玉",
+            "水脉侍龙体",
+            "秦汐雅"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 219,
+        "keywords": [
+          "沧澜侍龙玉",
+          "水脉侍龙体",
+          "秦汐雅"
+        ],
+        "path": "世界书\\详细人物_秦汐雅.txt"
+      },
+      "详细人物:凌天辰": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "不灭太古王体",
+            "凌天辰",
+            "王族大帝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 220,
+        "keywords": [
+          "不灭太古王体",
+          "凌天辰",
+          "王族大帝"
+        ],
+        "path": "世界书\\详细人物_凌天辰.txt"
+      },
+      "详细人物:凌紫嫣": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "凌紫嫣",
+            "帝道衡仪",
+            "太古王族祖血",
+            "王族帝女"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 221,
+        "keywords": [
+          "凌紫嫣",
+          "帝道衡仪",
+          "太古王族祖血",
+          "王族帝女"
+        ],
+        "path": "世界书\\详细人物_凌紫嫣.txt"
+      },
+      "详细人物:叶婷": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叶婷",
+            "绝对暗杀"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 222,
+        "keywords": [
+          "叶婷",
+          "绝对暗杀"
+        ],
+        "path": "世界书\\详细人物_叶婷.txt"
+      },
+      "修炼突破判定": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "突破",
+            "闭关",
+            "冲击境界"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 223,
+        "keywords": [
+          "突破",
+          "闭关",
+          "冲击境界"
+        ],
+        "path": "世界书\\修炼突破判定.txt"
+      },
+      "详细人物:舞弦琴": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "舞弦琴"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 224,
+        "keywords": [
+          "舞弦琴"
+        ],
+        "path": "世界书\\详细人物_舞弦琴.txt"
+      },
+      "法则劫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "法则劫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 225,
+        "keywords": [
+          "法则劫"
+        ],
+        "path": "世界书\\法则劫.txt"
+      },
+      "仙界宗门生成": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 226,
+        "keywords": [],
+        "path": "世界书\\仙界宗门生成.txt"
+      },
+      "[mvu_update]": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 200,
+          "role": "system",
+          "depth": 0
+        },
+        "display_index": 227,
+        "keywords": [],
+        "path": "世界书\\[mvu_update].txt"
+      },
+      "变量列表": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 200,
+          "role": "system",
+          "depth": 0
+        },
+        "display_index": 228,
+        "keywords": [],
+        "contents": [
+          {
+            "content": "---\n<status_current_variables>"
+          },
+          {
+            "file": "世界书\\变量列表.yaml"
+          },
+          {
+            "content": "</status_current_variables>"
+          }
+        ]
+      },
+      "[mvu_update]变量输出格式": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 200,
+          "role": "system",
+          "depth": 0
+        },
+        "display_index": 229,
+        "keywords": [],
+        "path": "世界书\\[mvu_update]变量输出格式.yaml"
+      },
+      "[mvu_update]变量输出格式强调": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 200,
+          "role": "system",
+          "depth": 0
+        },
+        "display_index": 230,
+        "keywords": [],
+        "path": "世界书\\[mvu_update]变量输出格式强调.yaml"
+      },
+      "[initvar] 初始": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 231,
+        "keywords": [],
+        "path": "世界书\\[initvar] 初始.yaml"
+      },
+      "详细人物：星宿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "星宿",
+            "星神慧瞳",
+            "三相星界",
+            "周天星斗大阵",
+            "智慧仙珠",
+            "宿命天盘",
+            "监天星塔"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 232,
+        "keywords": [
+          "星宿",
+          "星神慧瞳",
+          "三相星界",
+          "周天星斗大阵",
+          "智慧仙珠",
+          "宿命天盘",
+          "监天星塔"
+        ],
+        "path": "世界书\\详细人物：星宿.txt"
+      },
+      "详细人物：红莲": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "红莲",
+            "秘影长暗火",
+            "木灵生息火",
+            "红莲本心火"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 233,
+        "keywords": [
+          "红莲",
+          "秘影长暗火",
+          "木灵生息火",
+          "红莲本心火"
+        ],
+        "path": "世界书\\详细人物：红莲.txt"
+      },
+      "半步超脱": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "半步超脱",
+            "半步超脱境"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 234,
+        "keywords": [
+          "半步超脱",
+          "半步超脱境"
+        ],
+        "path": "世界书\\半步超脱.txt"
+      },
+      "详细人物：南可熙": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "云上瑶池理事",
+            "南可熙"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 235,
+        "keywords": [
+          "云上瑶池理事",
+          "南可熙"
+        ],
+        "path": "世界书\\详细人物：南可熙.txt"
+      },
+      "详细人物：凤灵儿": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "星道宗圣女",
+            "凤灵儿"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 236,
+        "keywords": [
+          "星道宗圣女",
+          "凤灵儿"
+        ],
+        "path": "世界书\\详细人物：凤灵儿.txt"
+      },
+      "详细人物：公孙清": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "公孙清"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 237,
+        "keywords": [
+          "公孙清"
+        ],
+        "path": "世界书\\详细人物：公孙清.txt"
+      },
+      "势力详细：星道宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "星道宗",
+            "摘星悬岛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 238,
+        "keywords": [
+          "星道宗",
+          "摘星悬岛"
+        ],
+        "path": "世界书\\势力详细：星道宗.yaml"
+      },
+      "丹器体系": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "炼丹师",
+            "炼丹",
+            "炼器",
+            "炼制",
+            "炼器师"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 239,
+        "keywords": [
+          "炼丹师",
+          "炼丹",
+          "炼器",
+          "炼制",
+          "炼器师"
+        ],
+        "path": "世界书\\丹器体系.yaml"
+      },
+      "势力详细:大雷音寺": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "大雷音寺"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 240,
+        "keywords": [
+          "大雷音寺"
+        ],
+        "path": "世界书\\势力详细_大雷音寺.yaml"
+      },
+      "人物详情：魏喑": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "魏喑",
+            "人道盟"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 241,
+        "keywords": [
+          "魏喑",
+          "人道盟"
+        ],
+        "path": "世界书\\人物详情：魏喑.txt"
+      },
+      "势力详情:五色孔雀族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "五色孔雀",
+            "五色谷"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 242,
+        "keywords": [
+          "五色孔雀",
+          "五色谷"
+        ],
+        "path": "世界书\\势力详情_五色孔雀族.yaml"
+      },
+      "地点详情:西漠佛国": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "西漠佛国",
+            "西漠",
+            "佛国"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 243,
+        "keywords": [
+          "西漠佛国",
+          "西漠",
+          "佛国"
+        ],
+        "path": "世界书\\地点详情_西漠佛国.yaml"
+      },
+      "势力详情:柳蛇族": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "柳蛇族"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 244,
+        "keywords": [
+          "柳蛇族"
+        ],
+        "path": "世界书\\势力详情_柳蛇族.yaml"
+      },
+      "势力详情:湮丹宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "湮丹宗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 245,
+        "keywords": [
+          "湮丹宗"
+        ],
+        "path": "世界书\\势力详情_湮丹宗.yaml"
+      },
+      "势力详情:灵墟宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "灵墟宗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 246,
+        "keywords": [
+          "灵墟宗"
+        ],
+        "path": "世界书\\势力详情_灵墟宗.yaml"
+      },
+      "势力详情:青玉宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青玉宗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 247,
+        "keywords": [
+          "青玉宗"
+        ],
+        "path": "世界书\\势力详情_青玉宗.yaml"
+      },
+      "势力详情:符韵门": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "符韵门"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 248,
+        "keywords": [
+          "符韵门"
+        ],
+        "path": "世界书\\势力详情_符韵门.yaml"
+      },
+      "势力详情:阵天宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "阵天宗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 249,
+        "keywords": [
+          "阵天宗"
+        ],
+        "path": "世界书\\势力详情_阵天宗.yaml"
+      },
+      "势力详情：斩仙盟": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "斩仙盟"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 250,
+        "keywords": [
+          "斩仙盟"
+        ],
+        "path": "世界书\\势力详情：斩仙盟.yaml"
+      },
+      "人物详情：乔梦玉": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "阵天宗宗主",
+            "乔梦玉"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 251,
+        "keywords": [
+          "阵天宗宗主",
+          "乔梦玉"
+        ],
+        "path": "世界书\\人物详情：乔梦玉.txt"
+      },
+      "人物详情：元容": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "元容",
+            "符韵门门主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 252,
+        "keywords": [
+          "元容",
+          "符韵门门主"
+        ],
+        "path": "世界书\\人物详情：元容.txt"
+      },
+      "人物详情：玄璃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "青玉宗宗主",
+            "玄璃"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 253,
+        "keywords": [
+          "青玉宗宗主",
+          "玄璃"
+        ],
+        "path": "世界书\\人物详情：玄璃.txt"
+      },
+      "人物详情：阳宇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "阳宇",
+            "灵墟宗宗主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 254,
+        "keywords": [
+          "阳宇",
+          "灵墟宗宗主"
+        ],
+        "path": "世界书\\人物详情：阳宇.txt"
+      },
+      "人物详情：林寒绾": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "湮丹宗宗主",
+            "林寒绾"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 255,
+        "keywords": [
+          "湮丹宗宗主",
+          "林寒绾"
+        ],
+        "path": "世界书\\人物详情：林寒绾.txt"
+      },
+      "人物详情：朱离": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "湮丹宗圣女",
+            "朱离"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 256,
+        "keywords": [
+          "湮丹宗圣女",
+          "朱离"
+        ],
+        "path": "世界书\\人物详情：朱离.txt"
+      },
+      "人物详情：侯景": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "侯景",
+            "太尉"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 257,
+        "keywords": [
+          "侯景",
+          "太尉"
+        ],
+        "path": "世界书\\人物详情：侯景.txt"
+      },
+      "长孙镜华": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "长孙镜华"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 258,
+        "keywords": [
+          "长孙镜华"
+        ],
+        "path": "世界书\\长孙镜华.txt"
+      },
+      "人物详情：柳青螭": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "柳青螭"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 259,
+        "keywords": [
+          "柳青螭"
+        ],
+        "path": "世界书\\人物详情：柳青螭.txt"
+      },
+      "人物详情：希夷": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "天机阁阁主",
+            "希夷"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 260,
+        "keywords": [
+          "天机阁阁主",
+          "希夷"
+        ],
+        "path": "世界书\\人物详情：希夷.txt"
+      },
+      "人物详情：辟易川": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "辟易川"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 261,
+        "keywords": [
+          "辟易川"
+        ],
+        "path": "世界书\\人物详情：辟易川.txt"
+      },
+      "人物详情：欧阳灵": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "欧阳灵"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 262,
+        "keywords": [
+          "欧阳灵"
+        ],
+        "path": "世界书\\人物详情：欧阳灵.txt"
+      },
+      "人物详情：黑姬结灯": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "符韵门圣女",
+            "黑姬结灯"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 263,
+        "keywords": [
+          "符韵门圣女",
+          "黑姬结灯"
+        ],
+        "path": "世界书\\人物详情：黑姬结灯.yaml"
+      },
+      "人物详情：李未晞": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "李未晞",
+            "云上瑶池外务执事"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 264,
+        "keywords": [
+          "李未晞",
+          "云上瑶池外务执事"
+        ],
+        "path": "世界书\\人物详情：李未晞.txt"
+      },
+      "人物详情：阴丽华": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "圣德太后",
+            "大周仙朝太后",
+            "阴丽华"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 265,
+        "keywords": [
+          "圣德太后",
+          "大周仙朝太后",
+          "阴丽华"
+        ],
+        "path": "世界书\\人物详情：阴丽华.txt"
+      },
+      "人物详情：九歌": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "九歌"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 266,
+        "keywords": [
+          "九歌"
+        ],
+        "path": "世界书\\人物详情：九歌.txt"
+      },
+      "人物详情：晏青": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "晏青"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 267,
+        "keywords": [
+          "晏青"
+        ],
+        "path": "世界书\\人物详情：晏青.txt"
+      },
+      "人物详情：小D": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "小D"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 268,
+        "keywords": [
+          "小D"
+        ],
+        "path": "世界书\\人物详情：小D.yaml"
+      },
+      "人物详情：白祈昼": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "阵天宗长老",
+            "白祈昼"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 269,
+        "keywords": [
+          "阵天宗长老",
+          "白祈昼"
+        ],
+        "path": "世界书\\人物详情：白祈昼.txt"
+      },
+      "玄天界宗门体系": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 270,
+        "keywords": [],
+        "path": "世界书\\玄天界宗门体系.txt"
+      },
+      "人物详情：璃宫花火": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "璃宫花火"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 271,
+        "keywords": [
+          "璃宫花火"
+        ],
+        "path": "世界书\\人物详情：璃宫花火.yaml"
+      },
+      "人物详情：紫澪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "冥煞玄蛇",
+            "紫澪",
+            "冥煞噬魂玄经"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 272,
+        "keywords": [
+          "冥煞玄蛇",
+          "紫澪",
+          "冥煞噬魂玄经"
+        ],
+        "path": "世界书\\人物详情：紫澪.txt"
+      },
+      "势力详情:万宝楼": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万宝楼",
+            "商会"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 273,
+        "keywords": [
+          "万宝楼",
+          "商会"
+        ],
+        "path": "世界书\\势力详情_万宝楼.yaml"
+      },
+      "势力详情:黑金阁": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "黑金阁",
+            "黑市"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 274,
+        "keywords": [
+          "黑金阁",
+          "黑市"
+        ],
+        "path": "世界书\\势力详情_黑金阁.yaml"
+      },
+      "NPC人物修行": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 275,
+        "keywords": [],
+        "path": "世界书\\NPC人物修行.yaml"
+      },
+      "人物详情:金玉满": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "黑金之主",
+            "黑金阁阁主",
+            "金玉满"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 276,
+        "keywords": [
+          "黑金之主",
+          "黑金阁阁主",
+          "金玉满"
+        ],
+        "path": "世界书\\人物详情_金玉满.txt"
+      },
+      "人物详情:小翠": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "小翠"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 277,
+        "keywords": [
+          "小翠"
+        ],
+        "path": "世界书\\人物详情_小翠.yaml"
+      },
+      "人物详情:万金柝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万宝楼总楼主",
+            "万金柝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 278,
+        "keywords": [
+          "万宝楼总楼主",
+          "万金柝"
+        ],
+        "path": "世界书\\人物详情_万金柝.yaml"
+      },
+      "人物详情:万璇玑": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万宝楼大小姐",
+            "万璇玑"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 279,
+        "keywords": [
+          "万宝楼大小姐",
+          "万璇玑"
+        ],
+        "path": "世界书\\人物详情_万璇玑.yaml"
+      },
+      "人物详情:叶焚渊": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叶焚渊"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 280,
+        "keywords": [
+          "叶焚渊"
+        ],
+        "path": "世界书\\人物详情_叶焚渊.yaml"
+      },
+      "人物详情:显宝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "小显示",
+            "显宝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 281,
+        "keywords": [
+          "小显示",
+          "显宝"
+        ],
+        "path": "世界书\\人物详情_显宝.txt"
+      },
+      "人物详情:海伊": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "海伊"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 282,
+        "keywords": [
+          "海伊"
+        ],
+        "path": "世界书\\人物详情_海伊.yaml"
+      },
+      "人物详情:柳舞蝶": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "柳舞蝶"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 283,
+        "keywords": [
+          "柳舞蝶"
+        ],
+        "path": "世界书\\人物详情_柳舞蝶.txt"
+      },
+      "人物详情：白疏影": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "白疏影"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 284,
+        "keywords": [
+          "白疏影"
+        ],
+        "path": "世界书\\人物详情：白疏影.txt"
+      },
+      "玄天界动态人物相遇": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "constant",
+          "keys": [
+            "坊市",
+            "客栈",
+            "拍卖会",
+            "街道",
+            "秘境",
+            "出门",
+            "闲逛",
+            "探索",
+            "城池",
+            "荒野",
+            "荒原",
+            "城镇",
+            "城池",
+            "游历",
+            "穿行",
+            "落脚",
+            "游历",
+            "寻觅",
+            "猎杀",
+            "历练",
+            "误入",
+            "遗迹",
+            "远遁",
+            "战场"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 10,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 285,
+        "keywords": [
+          "坊市",
+          "客栈",
+          "拍卖会",
+          "街道",
+          "秘境",
+          "出门",
+          "闲逛",
+          "探索",
+          "城池",
+          "荒野",
+          "荒原",
+          "城镇",
+          "城池",
+          "游历",
+          "穿行",
+          "落脚",
+          "游历",
+          "寻觅",
+          "猎杀",
+          "历练",
+          "误入",
+          "遗迹",
+          "远遁",
+          "战场"
+        ],
+        "path": "世界书\\玄天界动态人物相遇.txt"
+      },
+      "仙界动态人物相遇": {
+        "abstract": "",
+        "enabled": false,
+        "strategy": {
+          "type": "constant",
+          "keys": [
+            "坊市",
+            "客栈",
+            "街道",
+            "秘境",
+            "闲逛",
+            "仙界",
+            "天庭",
+            "瑶池",
+            "仙宫",
+            "仙域",
+            "仙市",
+            "飞升"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "order": 10,
+          "role": "system",
+          "depth": 2
+        },
+        "display_index": 286,
+        "keywords": [
+          "坊市",
+          "客栈",
+          "街道",
+          "秘境",
+          "闲逛",
+          "仙界",
+          "天庭",
+          "瑶池",
+          "仙宫",
+          "仙域",
+          "仙市",
+          "飞升"
+        ],
+        "path": "世界书\\仙界动态人物相遇.txt"
+      },
+      "人物详情：李溯": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "李溯"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 287,
+        "keywords": [
+          "李溯"
+        ],
+        "path": "世界书\\人物详情：李溯.yaml"
+      },
+      "人物详情：百铃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "百铃",
+            "黑金阁刺客"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 288,
+        "keywords": [
+          "百铃",
+          "黑金阁刺客"
+        ],
+        "path": "世界书\\人物详情：百铃.yaml"
+      },
+      "人物详情：樊月汐": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "樊月汐"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 289,
+        "keywords": [
+          "樊月汐"
+        ],
+        "path": "世界书\\人物详情：樊月汐.yaml"
+      },
+      "人物详情：卡斯蒂利亚_哈布斯堡": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "卡斯蒂利亚_哈布斯堡"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 290,
+        "keywords": [
+          "卡斯蒂利亚_哈布斯堡"
+        ],
+        "path": "世界书\\人物详情：卡斯蒂利亚_哈布斯堡.yaml"
+      },
+      "人物详情：君姝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "君姝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 291,
+        "keywords": [
+          "君姝"
+        ],
+        "path": "世界书\\人物详情：君姝.txt"
+      },
+      "人物详情：代安池": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "代安池"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 292,
+        "keywords": [
+          "代安池"
+        ],
+        "path": "世界书\\人物详情：代安池.yaml"
+      },
+      "人物详情：桃幽": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "桃幽",
+            "桃花宗宗主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 293,
+        "keywords": [
+          "桃幽",
+          "桃花宗宗主"
+        ],
+        "path": "世界书\\人物详情：桃幽.yaml"
+      },
+      "人物详情：颜小落": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "颜小落",
+            "桃花宗红线长老"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 294,
+        "keywords": [
+          "颜小落",
+          "桃花宗红线长老"
+        ],
+        "path": "世界书\\人物详情：颜小落.yaml"
+      },
+      "人物详情：桃夭诺": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "桃花宗圣女",
+            "桃夭诺"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 295,
+        "keywords": [
+          "桃花宗圣女",
+          "桃夭诺"
+        ],
+        "path": "世界书\\人物详情：桃夭诺.yaml"
+      },
+      "人物详情：苏慕渊": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏慕渊"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        },
+        "display_index": 296,
+        "keywords": [
+          "苏慕渊"
+        ],
+        "path": "世界书\\人物详情：苏慕渊.yaml"
+      },
+      "人物详情：姬觅弥": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "姬觅弥"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 297,
+        "keywords": [
+          "姬觅弥"
+        ],
+        "path": "世界书\\人物详情：姬觅弥.txt"
+      },
+      "人物详情：燕重微": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "燕重微"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 298,
+        "keywords": [
+          "燕重微"
+        ],
+        "path": "世界书\\人物详情：燕重微.yaml"
+      },
+      "人物详情：林素铃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林素铃",
+            "银铃仙子"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 299,
+        "keywords": [
+          "林素铃",
+          "银铃仙子"
+        ],
+        "path": "世界书\\人物详情：林素铃.yaml"
+      },
+      "人物详情：李铭": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "李铭"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 300,
+        "keywords": [
+          "李铭"
+        ],
+        "path": "世界书\\人物详情：李铭.yaml"
+      },
+      "人物详情：苏清漪": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏清漪"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 301,
+        "keywords": [
+          "苏清漪"
+        ],
+        "path": "世界书\\人物详情：苏清漪.yaml"
+      },
+      "势力详情：桃花宗": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "桃花宗"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 302,
+        "keywords": [
+          "桃花宗"
+        ],
+        "path": "世界书\\势力详情：桃花宗.txt"
+      },
+      "人物详情：姜梦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "姜梦",
+            "无我峰峰主"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 303,
+        "keywords": [
+          "姜梦",
+          "无我峰峰主"
+        ],
+        "path": "世界书\\人物详情：姜梦.txt"
+      },
+      "人物详情：云初未来": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "云初未来"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 304,
+        "keywords": [
+          "云初未来"
+        ],
+        "path": "世界书\\人物详情：云初未来.txt"
+      },
+      "人物详情：白倾颜": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "白倾颜",
+            "戮血门门主",
+            "戮血门"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 305,
+        "keywords": [
+          "白倾颜",
+          "戮血门门主",
+          "戮血门"
+        ],
+        "path": "世界书\\人物详情：白倾颜.txt"
+      },
+      "人物详情：顾清清": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "顾清清"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 306,
+        "keywords": [
+          "顾清清"
+        ],
+        "path": "世界书\\人物详情：顾清清.yaml"
+      },
+      "详细：万祀尸皇经": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "万祀尸皇经"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 307,
+        "keywords": [
+          "万祀尸皇经"
+        ],
+        "path": "世界书\\详细：万祀尸皇经.txt"
+      },
+      "详细：幽悦神通": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽陵锁痕",
+            "匠傀观心",
+            "玄棺代命",
+            "枯朝万傀阵"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 308,
+        "keywords": [
+          "幽陵锁痕",
+          "匠傀观心",
+          "玄棺代命",
+          "枯朝万傀阵"
+        ],
+        "path": "世界书\\详细：幽悦神通.txt"
+      },
+      "详细：本命天尸·烬璃": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "烬璃",
+            "本命天尸·烬璃"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 309,
+        "keywords": [
+          "烬璃",
+          "本命天尸·烬璃"
+        ],
+        "path": "世界书\\详细：本命天尸·烬璃.txt"
+      },
+      "人物详情：绯萝": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "绯萝"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 310,
+        "keywords": [
+          "绯萝"
+        ],
+        "path": "世界书\\人物详情：绯萝.txt"
+      },
+      "人物详情：月珑": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "月珑"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 311,
+        "keywords": [
+          "月珑"
+        ],
+        "path": "世界书\\人物详情：月珑.txt"
+      },
+      "人物详情：辛绫": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "辛绫"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 312,
+        "keywords": [
+          "辛绫"
+        ],
+        "path": "世界书\\人物详情：辛绫.txt"
+      },
+      "人物详情：幽姬": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "幽姬"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 313,
+        "keywords": [
+          "幽姬"
+        ],
+        "path": "世界书\\人物详情：幽姬.txt"
+      },
+      "人物详情：玄曦": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玄曦"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 314,
+        "keywords": [
+          "玄曦"
+        ],
+        "path": "世界书\\人物详情：玄曦.txt"
+      },
+      "人物详情：霜甄": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "霜甄"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 315,
+        "keywords": [
+          "霜甄"
+        ],
+        "path": "世界书\\人物详情：霜甄.txt"
+      },
+      "人物详情：蜃娆": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "蜃娆"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 316,
+        "keywords": [
+          "蜃娆"
+        ],
+        "path": "世界书\\人物详情：蜃娆.txt"
+      },
+      "人物详情：袁战天": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "袁战天"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 317,
+        "keywords": [
+          "袁战天"
+        ],
+        "path": "世界书\\人物详情：袁战天.txt"
+      },
+      "人物详情：虚渊": {
+        "abstract": "",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "虚渊"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        },
+        "display_index": 318,
+        "keywords": [
+          "虚渊"
+        ],
+        "path": "世界书\\人物详情：虚渊.txt"
+      }
+    }
+  },
+  "typeLists": {
+    "before_char": [],
+    "after_char": [],
+    "depth": []
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "系统指令：NPC情绪稳定规则\r\n \r\n- 核心规则: 所有NPC不会因挫折、失利、意外等陷入极端绝望、崩溃、癫狂、自暴自弃等非理性极端状态，始终保持符合自身心境与身份的理性情绪，坚守道心与心智底线。\r\n- 贯彻执行: 此规则为高优先级叙事指令，必须严格遵守，保证角色人设稳定、行为逻辑合理，避免剧情出现突兀的情绪崩坏，提升叙事流畅度与真实感。\r\n\r\n必须使用下流露骨的词汇刻画性器官和其他身体部位，包括但不限于“奶子,乳房，奶头,乳头,小穴,阴道,尻穴,逼,逼穴,阴蒂,阴唇,屁眼,肛门,菊花，肉棒，鸡吧，精液”等。\r\n禁止性器官使用以下词汇：\r\n花心 / 肉刃 / 花径 / 花穴 等美化词汇",
+  "first_messages": [
+    "开场白\\0.txt",
+    "开场白\\1.txt"
+  ],
+  "creator": "",
+  "creator_notes": "",
+  "version": "",
+  "create_date": "2026-07-11T15:57:01.429Z",
+  "extensions": {
+    "tavern_helper": {
+      "scripts": {
+        "MVU": {
+          "type": "script",
+          "enabled": true,
+          "id": "bcf2ba69-20d6-49c1-a355-9a99d52257b7",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": [
+              {
+                "name": "重新处理变量",
+                "visible": true
+              },
+              {
+                "name": "重新读取初始变量",
+                "visible": false
+              },
+              {
+                "name": "快照楼层",
+                "visible": false
+              },
+              {
+                "name": "重演楼层",
+                "visible": false
+              },
+              {
+                "name": "重试额外模型解析",
+                "visible": true
+              },
+              {
+                "name": "清除旧楼层变量",
+                "visible": false
+              }
+            ]
+          },
+          "data": {},
+          "export_with": {
+            "data": true,
+            "button": true
+          },
+          "script_file": "脚本\\MVU.txt"
+        },
+        "ZOD": {
+          "type": "script",
+          "enabled": true,
+          "id": "fc83c3a3-0bc0-4170-a36a-f40f773204ab",
+          "content": "import { registerMvuSchema } from 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js';\n\nexport const Schema = z.object({\n  世界: z.object({\n    当前时间: z.string().prefault('未知'),\n    当前地点: z.string().prefault('未知'),\n    危机程度: z.string().prefault('无'),\n    遭遇冷却: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 15))).prefault(0),\n    动向: z.record(\n      z.string().describe('事件标题'),\n      z.preprocess((val) => {\n        if (!val || typeof val !== 'object' || Array.isArray(val)) return val;\n        // 英文→中文自动归一化\n        const map = { type:'类型', description:'描述', desc:'描述', location:'地点', place:'地点', stage:'阶段', phase:'阶段' };\n        const out = {};\n        for (const [k, v] of Object.entries(val)) {\n          out[map[k] || k] = v;\n        }\n        return out;\n      }, z.object({\n        阶段: z.enum(['起', '承', '转', '合']).catch('起').prefault('起'),\n        类型: z.string().prefault('未知'),\n        地点: z.string().prefault(''),\n        描述: z.string().prefault(''),\n      }))\n    ).prefault({}),\n  }).catch({}).prefault({}),\n\n  主角: z.object({\n    姓名: z.string().prefault('未知'),\n    性别: z.string().prefault('未知'),\n    容貌: z.string().prefault('未知'),\n    身形: z.string().prefault('未知'),\n    衣着: z.string().prefault('未知'),\n    境界: z.string().prefault('凡人（DC:0）'),\n    宗门: z.string().prefault('无'),\n    宗门贡献: z.coerce.number().catch(0).prefault(0),\n    所在界: z.enum(['玄天界', '仙界']).catch('玄天界').prefault('玄天界'),\n    生命: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n    精血: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n    灵力: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n    修为: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n    神识: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n    道心: z.coerce.number().catch(50).transform(v => (isNaN(v) ? 50 : _.clamp(v, 0, 100))).prefault(50),\n    神念: z.string().prefault('无'),\n    气运: z.record(\n      z.string().describe('气运名'),\n      z.object({\n        类型: z.coerce.string().prefault('被动'),\n        效果: z.coerce.string().prefault(''),\n        使用状态: z.coerce.string().prefault('常驻'),\n        压制状态: z.coerce.string().prefault('正常'),\n      })\n    ).prefault({}),\n    灵根: z.string().prefault('未知'),\n    状态: z.string().prefault('无异常'),\n    炼丹: z.object({\n      阶级: z.string().catch('未入门').prefault('未入门'),\n      熟练度: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      成功率: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      次数: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : v)).prefault(0),\n    }).catch({}).prefault({}),\n    炼器: z.object({\n      阶级: z.string().catch('未入门').prefault('未入门'),\n      熟练度: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      成功率: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      次数: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : v)).prefault(0),\n    }).catch({}).prefault({}),\n    储物袋: z.record(\n      z.string().describe('物品名'),\n      z.object({\n        描述: z.string().prefault(''),\n        数量: z.coerce.number().catch(1).prefault(1),\n      })\n    ).prefault({})\n     .transform(data => _.pickBy(data, ({ 数量 }) => 数量 > 0)),\n    功法: z.record(\n      z.string().describe('功法名'),\n      z.object({\n        类型: z.string().prefault('未知'),\n        境界: z.string().prefault('未入门'),\n        熟练度: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n        描述: z.string().prefault(''),\n      })\n    ).prefault({}),\n    器物: z.record(\n      z.string().describe('器物名'),\n      z.object({\n        等级: z.string().prefault('未知'),\n        类型: z.string().prefault('未知'),\n        损耗度: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n        状态: z.string().prefault('正常'),\n        描述: z.string().prefault(''),\n      })\n    ).prefault({}),\n  }).catch({}).prefault({}),\n\n  道侣: z.record(\n    z.string().describe('道侣姓名'),\n    z.object({\n      性别: z.string().prefault('未知'),\n      种族: z.string().prefault('人族'),\n      状态: z.string().prefault('正常'),\n      境界: z.string().prefault('未知'),\n      亲密: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      生命: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      灵力: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      修为: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      道心: z.coerce.number().catch(50).transform(v => (isNaN(v) ? 50 : _.clamp(v, 0, 100))).prefault(50),\n      性格: z.string().prefault('未知'),\n      外观: z.string().prefault('未知'),\n      身高: z.coerce.string().prefault('未知'),\n      背景: z.string().prefault(''),\n      神通: z.string().prefault('无'),\n      心声: z.string().prefault('无'),\n    })\n  ).catch({}).prefault({}),\n\n  灵宠: z.record(\n    z.string().describe('灵宠姓名'),\n    z.object({\n      性别: z.string().prefault('未知'),\n      种族: z.string().prefault('未知'),\n      境界: z.string().prefault('未知'),\n      生命: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      灵力: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      修为: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      亲密度: z.coerce.number().catch(50).transform(v => (isNaN(v) ? 50 : _.clamp(v, 0, 100))).prefault(50),\n      性格: z.string().prefault('未知'),\n      容貌外观: z.string().prefault('未知'),\n      神通: z.string().prefault('无'),\n      状态: z.string().prefault('正常'),\n      心声: z.string().prefault('无'),\n    })\n  ).catch({}).prefault({}),\n\n  人物: z.record(\n    z.string().describe('NPC姓名'),\n    z.object({\n      性别: z.string().prefault('未知'),\n      头衔: z.string().prefault(''),\n      境界: z.string().prefault('未知'),\n      好感: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      关系阶段: z.string().prefault('陌生'),\n      生命: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      灵力: z.coerce.number().catch(100).transform(v => (isNaN(v) ? 100 : _.clamp(v, 0, 100))).prefault(100),\n      修为: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      道心: z.coerce.number().catch(50).transform(v => (isNaN(v) ? 50 : _.clamp(v, 0, 100))).prefault(50),\n      性格: z.string().prefault('未知'),\n      描述: z.string().prefault(''),\n    })\n  ).catch({}).prefault({}),\n\n  机遇: z.record(\n    z.string().describe('任务名'),\n    z.object({\n      难度: z.string().prefault('未知'),\n      目标: z.string().prefault(''),\n      机缘: z.string().prefault(''),\n      引言: z.string().prefault(''),\n    })\n  ).catch({}).prefault({})\n   .transform(data => _(data).entries().takeRight(20).fromPairs().value()),\n\n  绝色榜: z.record(\n    z.string().describe('仙子姓名'),\n    z.object({\n      排名: z.coerce.string().prefault('未知'),\n      头衔: z.string().prefault(''),\n      仙姿: z.string().prefault(''),\n      群芳谱: z.string().prefault(''),\n    })\n  ).catch({}).prefault({}),\n\n  玉简: z.record(\n    z.string().describe('好友姓名'),\n    z.object({\n      性别: z.string().prefault('未知'),\n      境界: z.string().prefault('未知'),\n      关系: z.string().prefault('陌生'),\n      好感度: z.coerce.number().catch(0).transform(v => (isNaN(v) ? 0 : _.clamp(v, 0, 100))).prefault(0),\n      历史记录: z.record(\n        z.string().describe('消息标识'),\n        z.object({\n          发送者: z.string().prefault('未知'),\n          时间: z.string().prefault(''),\n          内容: z.string().prefault(''),\n        })\n      ).prefault({})\n       .transform(data => _(data).entries().takeRight(100).fromPairs().value()),\n    })\n  ).catch({}).prefault({}),\n\n  $器灵台词: z.array(z.string()).prefault([]),\n});\n\n$(() => {\n  registerMvuSchema(Schema);\n});",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": []
+          },
+          "data": {},
+          "export_with": {
+            "data": true,
+            "button": true
+          }
+        },
+        "道渊配置助手": {
+          "type": "script",
+          "enabled": true,
+          "id": "3bb34570-f0ea-4632-ad2d-84bae6343219",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": []
+          },
+          "data": {},
+          "export_with": {
+            "data": true,
+            "button": true
+          },
+          "script_file": "脚本\\道渊配置助手.txt"
+        },
+        "道渊Wiki": {
+          "type": "script",
+          "enabled": true,
+          "id": "d556bd75-8bfe-48e8-b4cb-a7b177a95b0c",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": []
+          },
+          "data": {},
+          "export_with": {
+            "data": true,
+            "button": true
+          },
+          "script_file": "脚本\\道渊Wiki.txt"
+        }
+      },
+      "variables": {
+        "phone_data": {
+          "user": {
+            "id": "user",
+            "name": "玖神",
+            "nickname": "",
+            "avatar": "https://files.catbox.moe/wd52xn.JPG",
+            "email": "user@gmail.com",
+            "bio": "",
+            "state": "在线",
+            "phoneBg": "https://files.catbox.moe/c3qnwf.jpg",
+            "chatListBg": "https://files.catbox.moe/r08d2g.jpg",
+            "font": "LXGW WenKai"
+          },
+          "characters": [
+            {
+              "id": "1774095231444",
+              "name": "灵玥",
+              "nickname": "昵称",
+              "avatar": "https://files.catbox.moe/arh2ub.JPG",
+              "email": "character1774095231444@example.com",
+              "chatBg": "https://files.catbox.moe/r08d2g.jpg",
+              "dynamicBg": "https://files.catbox.moe/r08d2g.jpg",
+              "onlineStyle": ""
+            },
+            {
+              "id": "1774095299072",
+              "name": "秦心",
+              "nickname": "昵称",
+              "avatar": "https://files.catbox.moe/arh2ub.JPG",
+              "email": "character1774095299072@example.com",
+              "chatBg": "https://files.catbox.moe/r08d2g.jpg",
+              "dynamicBg": "https://files.catbox.moe/r08d2g.jpg",
+              "onlineStyle": ""
+            }
+          ],
+          "randomAvatars": [
+            "https://files.catbox.moe/arh2ub.JPG",
+            "https://files.catbox.moe/7eb3q3.JPG",
+            "https://files.catbox.moe/o5ana8.JPG",
+            "https://files.catbox.moe/0ihdnf.JPG",
+            "https://files.catbox.moe/8zru9e.JPG",
+            "https://files.catbox.moe/n4uy3d.JPG"
+          ],
+          "backgrounds": [
+            "https://files.catbox.moe/r08d2g.jpg",
+            "https://files.catbox.moe/c3qnwf.jpg",
+            "https://files.catbox.moe/hx3w9g.jpg",
+            "https://files.catbox.moe/8ro986.jpg",
+            "https://files.catbox.moe/frcl2b.jpg",
+            "https://files.catbox.moe/90nlol.jpg",
+            "https://files.catbox.moe/0vj486.jpg",
+            "https://files.catbox.moe/nytecs.jpg",
+            "https://files.catbox.moe/c6x295.jpg",
+            "https://files.catbox.moe/3l9m1t.jpg",
+            "https://files.catbox.moe/99nn6m.jpg",
+            "https://files.catbox.moe/vb4v46.jpg",
+            "https://files.catbox.moe/cjkuqo.jpg",
+            "https://files.catbox.moe/c2hsr6.jpg"
+          ],
+          "music": [
+            {
+              "url": "https://files.catbox.moe/3420bl.mp3",
+              "artist": "Cat & Calmell",
+              "title": "dramatic"
+            },
+            {
+              "url": "https://files.catbox.moe/743jsi.mp3",
+              "artist": "8bite,Dyrox",
+              "title": "frozen heart"
+            },
+            {
+              "url": "https://files.catbox.moe/7dw7ap.mp3",
+              "artist": "Cafuné",
+              "title": "Tek It"
+            },
+            {
+              "url": "https://files.catbox.moe/zx01oj.mp3",
+              "artist": "FIFTY FIFTY",
+              "title": "Cupid"
+            },
+            {
+              "url": "https://files.catbox.moe/wv5h2s.mp3",
+              "artist": "elijah woods",
+              "title": "247, 365"
+            },
+            {
+              "url": "https://files.catbox.moe/ms4bkd.mp3",
+              "artist": "Johnny Stimson",
+              "title": "Butterflies"
+            },
+            {
+              "url": "https://files.catbox.moe/mwmsfs.mp3",
+              "artist": "entoy,suru",
+              "title": "Blue mood"
+            },
+            {
+              "url": "https://files.catbox.moe/zipm4q.mp3",
+              "artist": "Hayd",
+              "title": "Head In The Clouds"
+            },
+            {
+              "url": "https://files.catbox.moe/q85nld.mp3",
+              "artist": "佐藤千亜妃",
+              "title": "S.S.S"
+            },
+            {
+              "url": "https://files.catbox.moe/77bcql.mp3",
+              "artist": "Edo_Ame江户糖,草食考拉",
+              "title": "クリームソーダとシャンデリア"
+            },
+            {
+              "url": "https://files.catbox.moe/2z7gw8.mp3",
+              "artist": "JVKE",
+              "title": "golden hour"
+            },
+            {
+              "url": "https://files.catbox.moe/t8a2t3.mp3",
+              "artist": "當山みれい",
+              "title": "^^"
+            },
+            {
+              "url": "https://files.catbox.moe/78ewdt.mp3",
+              "artist": "あれくん,『ユイカ』",
+              "title": "あのね。"
+            },
+            {
+              "url": "https://files.catbox.moe/iq4gp4.mp3",
+              "artist": "宇多田ヒカル",
+              "title": "One Last Kiss"
+            },
+            {
+              "url": "https://files.catbox.moe/je7m32.mp3",
+              "artist": "HYBS",
+              "title": "Tip Toe"
+            },
+            {
+              "url": "https://files.catbox.moe/42xbhu.mp3",
+              "artist": "keshi",
+              "title": "2 soon"
+            },
+            {
+              "url": "https://files.catbox.moe/dyxukt.mp3",
+              "artist": "ROSÉ",
+              "title": "Gone"
+            },
+            {
+              "url": "https://files.catbox.moe/1xd69s.mp3",
+              "artist": "LANY",
+              "title": "anything 4 u"
+            },
+            {
+              "url": "https://files.catbox.moe/xvb9h2.mp3",
+              "artist": "落日飞车,Michael Seyer",
+              "title": "Jellyfish"
+            },
+            {
+              "url": "https://files.catbox.moe/yvl6y4.mp3",
+              "artist": "keshi",
+              "title": "LIMBO"
+            },
+            {
+              "url": "https://files.catbox.moe/8i9f9c.mp3",
+              "artist": "MyGO!!!!!",
+              "title": "春日影"
+            },
+            {
+              "url": "https://files.catbox.moe/ms9sq7.mp3",
+              "artist": "RADWIMPS",
+              "title": "前前前世 (movie ver.)"
+            },
+            {
+              "url": "https://files.catbox.moe/lq2yf0.mp3",
+              "artist": "『ユイカ』",
+              "title": "17さいのうた。"
+            },
+            {
+              "url": "https://files.catbox.moe/2kafzb.mp3",
+              "artist": "『ユイカ』",
+              "title": "好きだから。"
+            },
+            {
+              "url": "https://files.catbox.moe/2cin5o.mp3",
+              "artist": "瀬名航,鎖那",
+              "title": "ひとり旅"
+            }
+          ],
+          "map": {
+            "name": "",
+            "districts": []
+          },
+          "groups": [],
+          "fonts": [
+            {
+              "name": "linja waso",
+              "url": "https://fontsapi.zeoseven.com/230/main/result.css"
+            },
+            {
+              "name": "GenWanMin2 TC R",
+              "url": "https://fontsapi.zeoseven.com/301/main/result.css"
+            },
+            {
+              "name": "Fusion Pixel 12px M latin",
+              "url": "https://fontsapi.zeoseven.com/570/main/result.css"
+            },
+            {
+              "name": "KingHwaOldSong",
+              "url": "https://fontsapi.zeoseven.com/309/main/result.css"
+            },
+            {
+              "name": "LXGW WenKai",
+              "url": "https://fontsapi.zeoseven.com/292/main/result.css"
+            }
+          ],
+          "_exportMeta": {
+            "version": "1.0",
+            "exportedAt": 1774095315901,
+            "source": "phone_settings_edit"
+          }
+        }
+      }
+    },
+    "talkativeness": "0.5",
+    "fav": false,
+    "world": "道友先上我断后",
+    "depth_prompt": {
+      "prompt": "",
+      "depth": 4,
+      "role": "system"
+    }
+  },
+  "regex_scripts": {
+    "[美化]变量更新中": {
+      "id": "ca6fe732-68f5-4a66-a729-27b15a38f29c",
+      "disabled": false,
+      "runOnEdit": false,
+      "findRegex": "/<(update(?:variable)?)>(?!.*<\\/\\1>)\\s*((?:(?!<\\1>).)*)\\s*$/gsi",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "replace_file": "正则\\[美化]变量更新中.txt"
+    },
+    "[不发送]去除变量更新": {
+      "id": "74ec406d-c738-4c87-a3c2-1bb4c2e81d29",
+      "disabled": false,
+      "runOnEdit": true,
+      "findRegex": "/<(update(?:variable)?)>(?:(?!.*<\\/\\1>)(?:(?!<\\1>).)*$|(?:(?!<\\1>).)*<\\/\\1?>)/gsi",
+      "trimStrings": [],
+      "replaceString": "",
+      "placement": [
+        2
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": false,
+      "promptOnly": true
+    },
+    "[美化]完整变量更新": {
+      "id": "3079bdfe-d2c2-45a8-a9a8-4c55945548db",
+      "disabled": false,
+      "runOnEdit": false,
+      "findRegex": "/<(update(?:variable)?)>\\s*((?:(?!<\\1>).)*)\\s*<\\/\\1>/gsi",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "replace_file": "正则\\[美化]完整变量更新.txt"
+    },
+    "不输出思考": {
+      "id": "dc051ce0-419e-4a05-a39a-7a47855720b8",
+      "disabled": false,
+      "runOnEdit": true,
+      "findRegex": "(<logic_check>[\\s\\S]*?<\\/logic_check>)",
+      "trimStrings": [],
+      "replaceString": "",
+      "placement": [
+        2
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": true,
+      "promptOnly": true
+    },
+    "仅输出最后三条状态栏": {
+      "id": "f00f48c2-26aa-4064-88ba-f39926743c6f",
+      "disabled": true,
+      "runOnEdit": true,
+      "findRegex": "(<data_block>[\\s\\S]*?<\\/data_block>)",
+      "trimStrings": [],
+      "replaceString": "",
+      "placement": [
+        2
+      ],
+      "substituteRegex": 0,
+      "minDepth": 4,
+      "markdownOnly": false,
+      "promptOnly": true
+    },
+    "XML状态栏": {
+      "id": "9abdff6f-f537-467f-9df3-74fd64881057",
+      "disabled": true,
+      "runOnEdit": true,
+      "findRegex": "(<data_block>[\\s\\S]*?<\\/data_block>)",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "replace_file": "正则\\XML状态栏.txt"
+    },
+    "MVU状态栏": {
+      "id": "66a24597-17b6-4bd3-8650-642ee4d1099c",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\MVU状态栏.txt"
+    },
+    "【吃鱼】MVU状态栏 V1.9.3": {
+      "id": "995584e7-5607-4c3a-b1fb-86389166b1dc",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": true,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\【吃鱼】MVU状态栏 V1.9.3.txt"
+    },
+    "开局创造人物2": {
+      "id": "525b64bd-cb0c-4bc4-886d-fdd8d0a1c428",
+      "findRegex": "\\[重塑仙缘\\]",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\开局创造人物2.txt"
+    },
+    "玄天界低阶随机NPC注入": {
+      "id": "50421786-fbde-475d-aa43-6ed546d1bbbc",
+      "findRegex": "\\[RANDOM_NPC\\]/g",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\玄天界低阶随机NPC注入.txt"
+    },
+    "玄天界高阶随机NPC注入": {
+      "id": "8de4aaf2-cd8f-4f19-81ad-d793f1a4d1b1",
+      "findRegex": "\\[RANDOM_NPC_HIGH\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\玄天界高阶随机NPC注入.txt"
+    },
+    "仙界低阶随机NPC注入": {
+      "id": "8e7cc4c4-4c14-45ad-bfef-bc47ef61dc98",
+      "findRegex": "\\[RANDOM_FAIRY_LOW\\]/g",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "disabled": true,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\仙界低阶随机NPC注入.txt"
+    },
+    "仙界高阶随机NPC注入": {
+      "id": "011a1e59-caf6-4edd-83c1-ca651f2789da",
+      "disabled": true,
+      "runOnEdit": true,
+      "findRegex": "\\[RANDOM_FAIRY_HIGH\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "replace_file": "正则\\仙界高阶随机NPC注入.txt"
+    },
+    "玄天界绝色榜人物注入1": {
+      "id": "b451ab2e-dc68-4f61-a4ea-6ffac2fac39b",
+      "findRegex": "\\[RANDOM_BEAUTY\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\玄天界绝色榜人物注入1.txt"
+    },
+    "玄天界绝色榜人物注入2": {
+      "id": "02a5a645-a664-4107-9cfb-2b5bad52dab9",
+      "findRegex": "\\[RANDOM_JUESE\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "replace_file": "正则\\玄天界绝色榜人物注入2.txt"
+    },
+    "仙界绝色榜人物注入1": {
+      "id": "adacad05-93c7-4cfa-b54e-33d384825a54",
+      "disabled": true,
+      "runOnEdit": true,
+      "findRegex": "\\[RANDOM_XUAN\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "replace_file": "正则\\仙界绝色榜人物注入1.txt"
+    },
+    "仙界绝色榜人物注入2": {
+      "id": "c4a0fb64-9a1d-414e-b856-d8e09cae7385",
+      "disabled": true,
+      "runOnEdit": true,
+      "findRegex": "\\[RANDOM_XIAN\\]",
+      "trimStrings": [],
+      "placement": [
+        5
+      ],
+      "substituteRegex": 0,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "replace_file": "正则\\仙界绝色榜人物注入2.txt"
+    }
+  }
+}

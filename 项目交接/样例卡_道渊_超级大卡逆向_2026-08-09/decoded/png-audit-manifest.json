@@ -1,0 +1,122 @@
+{
+  "extractor": {
+    "id": "png-card-audit.mjs",
+    "version": 1,
+    "node": "v24.15.0",
+    "arguments": {
+      "input": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\snapshot\\image-1.png",
+      "output": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\decoded"
+    }
+  },
+  "source": {
+    "basename": "image-1.png",
+    "absolutePath": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\项目交接\\样例卡_道渊_超级大卡逆向_2026-08-09\\snapshot\\image-1.png",
+    "bytes": 5913883,
+    "mtimeUtc": "2026-08-09T08:46:34.528Z",
+    "sha256": "d5fcf612f95620c285610a4702a18ffd0e98797e8903e2eaaf2cfb228a562752"
+  },
+  "png": {
+    "signatureValid": true,
+    "crcValid": true,
+    "terminalIend": true,
+    "chunkCount": 5,
+    "chunks": [
+      {
+        "index": 0,
+        "type": "IHDR",
+        "offset": 8,
+        "length": 13,
+        "storedCrc": "520fdf4e",
+        "computedCrc": "520fdf4e",
+        "crcValid": true
+      },
+      {
+        "index": 1,
+        "type": "IDAT",
+        "offset": 33,
+        "length": 851551,
+        "storedCrc": "36b68bae",
+        "computedCrc": "36b68bae",
+        "crcValid": true
+      },
+      {
+        "index": 2,
+        "type": "tEXt",
+        "offset": 851596,
+        "length": 2531126,
+        "storedCrc": "adb2d1c7",
+        "computedCrc": "adb2d1c7",
+        "crcValid": true
+      },
+      {
+        "index": 3,
+        "type": "tEXt",
+        "offset": 3382734,
+        "length": 2531125,
+        "storedCrc": "b89a8a7e",
+        "computedCrc": "b89a8a7e",
+        "crcValid": true
+      },
+      {
+        "index": 4,
+        "type": "IEND",
+        "offset": 5913871,
+        "length": 0,
+        "storedCrc": "ae426082",
+        "computedCrc": "ae426082",
+        "crcValid": true
+      }
+    ]
+  },
+  "textualPayloads": [
+    {
+      "chunkIndex": 2,
+      "type": "tEXt",
+      "keyword": "chara",
+      "compressed": false,
+      "compressionMethod": null,
+      "languageTag": null,
+      "translatedKeyword": null,
+      "textLength": 2531120,
+      "textSha256": "49d7096d42a2f9b5e9e8b18971287b2886f168fe6a47abf96630909d40095cf1",
+      "recognized": true
+    },
+    {
+      "chunkIndex": 3,
+      "type": "tEXt",
+      "keyword": "ccv3",
+      "compressed": false,
+      "compressionMethod": null,
+      "languageTag": null,
+      "translatedKeyword": null,
+      "textLength": 2531120,
+      "textSha256": "49d7096d42a2f9b5e9e8b18971287b2886f168fe6a47abf96630909d40095cf1",
+      "recognized": true
+    }
+  ],
+  "cardPayloads": [
+    {
+      "keyword": "chara",
+      "sourceChunkIndex": 2,
+      "raw": "payload-chara.raw.json",
+      "rawSha256": "7759a56059d4e8bd17bfa6a09c5f2c45178393d703e5c5e523873eaa190757a8",
+      "normalized": "payload-chara.normalized.json",
+      "normalizedSha256": "9de6cbd010dbbac04bc0841b2501a66881aa7c4d9bfe765469fa578b6d75e8d8",
+      "semanticSha256": "8fff3e9f6fb8f042df3bed17fa1fb64499a129071a66039f3f1a670468b6de6f",
+      "spec": "chara_card_v3",
+      "specVersion": "3.0"
+    },
+    {
+      "keyword": "ccv3",
+      "sourceChunkIndex": 3,
+      "raw": "payload-ccv3.raw.json",
+      "rawSha256": "7759a56059d4e8bd17bfa6a09c5f2c45178393d703e5c5e523873eaa190757a8",
+      "normalized": "payload-ccv3.normalized.json",
+      "normalizedSha256": "9de6cbd010dbbac04bc0841b2501a66881aa7c4d9bfe765469fa578b6d75e8d8",
+      "semanticSha256": "8fff3e9f6fb8f042df3bed17fa1fb64499a129071a66039f3f1a670468b6de6f",
+      "spec": "chara_card_v3",
+      "specVersion": "3.0"
+    }
+  ],
+  "semanticAgreement": true
+}

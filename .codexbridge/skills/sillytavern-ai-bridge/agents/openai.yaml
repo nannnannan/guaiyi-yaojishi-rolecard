@@ -1,0 +1,4 @@
+interface:
+  display_name: "SillyTavern AI 接入工具"
+  short_description: "连接、读取、调试、导入和安全替换 SillyTavern 角色卡"
+  default_prompt: "Use $sillytavern-ai-bridge to connect to a local SillyTavern instance and inspect it safely before making changes."

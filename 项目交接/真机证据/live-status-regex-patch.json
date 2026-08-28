@@ -1,0 +1,34 @@
+{
+  "patchedAt": "2026-08-09T07:23:36.484Z",
+  "artifact": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\角色卡本体\\诡异药剂师_MVU_v0.5\\dist\\诡异药剂师_v0.5.json",
+  "artifactSha256": "9b553618397540c491dd36fe4adacf3eac5da100109dce59c926cb6969a43175",
+  "statusRegexId": "tavernweave-status-ui-v0.5",
+  "target": {
+    "characterId": 0,
+    "name": "《诡异药剂师》v0.5"
+  },
+  "result": {
+    "characterId": "0",
+    "character": "《诡异药剂师》v0.5",
+    "avatar": "《诡异药剂师》v0.5.png",
+    "chatId": "《诡异药剂师》v0.5 - 2026-08-09@15h10m03s612ms",
+    "saveStatus": 200,
+    "saveResponse": "OK",
+    "regexCount": 3,
+    "beforeReplacementLength": 52011,
+    "afterReplacementLength": 51986,
+    "hasMvuHandshake": true
+  },
+  "persisted": {
+    "characterId": "0",
+    "avatar": "《诡异药剂师》v0.5.png",
+    "regexCount": 3,
+    "replacementLength": 51986,
+    "hasMvuHandshake": true,
+    "frameName": "TH-message--0--0",
+    "frameHasMvu": true,
+    "eventButtonText": "推进：E03 猪头魔与恶灵血婴",
+    "eventButtonDisabled": false,
+    "visibleError": null
+  }
+}

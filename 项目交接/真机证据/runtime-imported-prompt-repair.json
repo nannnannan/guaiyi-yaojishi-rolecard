@@ -1,0 +1,31 @@
+{
+  "repairedAt": "2026-08-09T07:58:16.551Z",
+  "artifact": "C:\\Users\\huang\\Desktop\\《诡异药剂师》同人角色卡制作计划\\角色卡本体\\诡异药剂师_MVU_v0.5\\dist\\诡异药剂师_v0.5.json",
+  "artifactSha256": "c8d433c61c4ec933f73522e5bf1e1f1c5e614ef29d346c425a04ba5668375eb7",
+  "target": {
+    "avatar": "《诡异药剂师》v0.5.png",
+    "name": "《诡异药剂师》v0.5"
+  },
+  "before": {
+    "name": "《诡异药剂师》v0.5",
+    "avatar": "《诡异药剂师》v0.5.png",
+    "systemPromptLength": 1879,
+    "postHistoryLength": 687
+  },
+  "save": {
+    "status": 200,
+    "responseText": "OK"
+  },
+  "after": {
+    "systemPromptLength": 1879,
+    "postHistoryLength": 687,
+    "systemPromptExact": true,
+    "postHistoryExact": true
+  },
+  "assertions": {
+    "sourceHadSystemPrompt": true,
+    "sourceHadPostHistory": true,
+    "persistedSystemPromptExact": true,
+    "persistedPostHistoryExact": true
+  }
+}

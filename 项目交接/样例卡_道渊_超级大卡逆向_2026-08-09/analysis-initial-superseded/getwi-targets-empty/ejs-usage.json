@@ -1,0 +1,56 @@
+{
+  "entries": [
+    {
+      "id": 93,
+      "comment": "-内容控制开关-玄天界 (二选一)",
+      "enabled": true,
+      "constant": true,
+      "keys": [],
+      "decorators": [],
+      "calls": [
+        "getwi"
+      ],
+      "getvarPaths": [],
+      "getwiTargets": [],
+      "activewiTargets": [],
+      "defineTargets": [],
+      "source": {
+        "jsonPointer": "/data/character_book/entries/93",
+        "selector": {
+          "id": 93,
+          "comment": "-内容控制开关-玄天界 (二选一)",
+          "displayIndex": 93
+        }
+      }
+    },
+    {
+      "id": 155,
+      "comment": "-内容控制开关-仙界 (二选一)",
+      "enabled": false,
+      "constant": true,
+      "keys": [],
+      "decorators": [],
+      "calls": [
+        "getwi"
+      ],
+      "getvarPaths": [],
+      "getwiTargets": [],
+      "activewiTargets": [],
+      "defineTargets": [],
+      "source": {
+        "jsonPointer": "/data/character_book/entries/155",
+        "selector": {
+          "id": 155,
+          "comment": "-内容控制开关-仙界 (二选一)",
+          "displayIndex": 155
+        }
+      }
+    }
+  ],
+  "entryCount": 2,
+  "getvarPaths": [],
+  "functionUsageCounts": {
+    "getwi": 2
+  },
+  "decorators": {}
+}
