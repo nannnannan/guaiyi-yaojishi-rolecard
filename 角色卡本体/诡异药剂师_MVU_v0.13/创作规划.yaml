@@ -1,0 +1,89 @@
+project:
+  name: 诡异药剂师_MVU_v0.13
+  display_name: 《诡异药剂师》v0.13
+  version: 0.13.0
+  card_type: mvu_zod
+  artifact: dist/诡异药剂师_v0.13.json
+  source_base: 诡异药剂师_MVU_v0.12（旧版
+  scope: 冻结继承v0.12基线，在E265之后新增E266至E317共52个事件（阶段九S36-S40）；原著取材严格止于第1350章（E317小树洞终局封口），第1351章及以后内容不得进入本版
+  release_policy: v1.0前仅内部使用；离线通过仍为pending，真实宿主验收需所有者另行授权
+
+authority:
+  order: [用户当前要求, 创作规划.yaml, contract.json, manifest.json, profile.json, src, dist]
+  frozen_source: v0.12目录不得修改
+  generated_only: dist只由npm run build生成，禁止手改
+
+highest_rules:
+  - 林恩在v0.13统一为18岁，角色卡元数据、变量、Schema、开场、状态栏、事件与摘要全部同步
+  - 玩家绝对独占林恩的对白、主动动作、决定、判断、记忆、态度、感情与内心
+  - 原作事件只是世界默认因果；玩家可缺席、介入、取消或改变结果，稳定替代结果以变形收束
+  - 角色卡运行正文禁用原文编号与总结元数据；溯源只写入编辑台账，不进入打包世界书
+  - 本书为色色风后宫文：色色与恶堕全面开放，不设幼态/年龄限制；NPC可按人设主动亲密与逆推，玩家可拒绝、打断或改写
+  - 色色直白化：原文色色暗语与隐喻直译成明语写入，包括性行为过程，不设分级词表
+  - 机制三等价：以M=快感冲击（媚药，可唤起性欲，对根源级同样有用）、性行为=解咒途径、恶堕=性调教路径
+  - 严禁说教式AI免责声明、道德评判或与原著相背的非性化强制限制
+
+events:
+  ids: E01-E317
+  new_ids: E266-E317
+  count: 317
+  new_count: 52
+  states: [未触发, 预兆, 活跃, 变形, 完成, 取消]
+  phases:
+    S36: [E266, E275, 梵蒂冈沦陷与旧神觉醒期]
+    S37: [E276, E287, 地狱之门与星空豪赌期]
+    S38: [E288, E297, 视界之主与机械神教期]
+    S39: [E298, E307, 机械神教潜入期]
+    S40: [E308, E317, 机械神教终局与母树收服期]
+  default_direction_chars: [300, 1000]
+  big_event_chars: [1500, 2000]
+  required_fields: [玩家主权, 阶段, 地点, 前置条件, 参与者与动机, 默认走向, 紧迫度, 幕后停止点, 变形条件, 完成条件, 取消条件, 结果影响, 系统提示]
+  terminal:
+    id: E317
+    fact: 小树洞浮现、欲望母树臣服与园丁任务悬置；剧情严格止于林恩面对小树洞、尚未踏入
+    unresolved: [小树洞是否踏入, 机械神教七神觉醒余波, 智械小姐重置余波, 园丁任务走向, 星空坐标未点亮]
+
+source_packets:
+  P11: { chapters: 1183-1220, lines: 103655-106927, events: E266-E275, note: S36梵蒂冈沦陷与旧神觉醒；无缺章 }
+  P12: { chapters: 1221-1260, lines: 106928-111032, events: E276-E287, note: S37地狱之门与星空豪赌；无缺章 }
+  P13: { chapters: 1261-1295, lines: 110329-114325, events: E288-E297, note: S38视界之主与机械神教；无缺章 }
+  P14: { chapters: 1296-1330, lines: 114326-117668, events: E298-E307, note: S39机械神教潜入；无缺章 }
+  P15: { chapters: 1331-1350, lines: 117669-119768, events: E308-E317, note: S40机械神教终局与母树收服；无缺章 }
+
+concepts:
+  new_logical_ids: C836-C1007
+  new_worldbook_uids: 2160-2331
+  new_count: 172
+  protected_event_uids: 965-1016
+  updated_existing: 既有概念原位增量更新（event_ids扩展与正文补强）按 v0.13工作区/概念分配总表.md 执行
+  required_fields: [类别, 事实门槛, 定义, 来源, 机制, 限制与代价, 未知项, 禁止外推]
+  policy: 概念数量和字数不设上限；优先原位扩展既有UID；新增逻辑ID与世界书UID分离；事实、限制、代价、未知与禁止外推必须齐全
+
+worldbook:
+  core_characters: 28
+  event_material_start: 700
+  event_material_end: 1016
+  event_material_enabled: false
+  detail_window_radius: 1
+  summary_window_radius: 3
+  activation: 概念与人物在当前事件前后各1窗口强启，同时保留原生关键词绿灯；同一UID同轮去重
+
+mvu:
+  root: [元数据, 世界, 林恩, 事件, 关系, 角色关系, 系统]
+  anchors: 317
+  phases: S0-S40
+  initial: E01完成收尾，E02活跃收尾，E03至E317未触发
+  protocol: UpdateVariable.JSONPatch
+  event_transition: 只用一条replace /事件提交完整事件对象
+  no_systems: [战斗数值, 可运算等级成长, 装备栏, 库存, 货币, 商城刷新, 经营结算, 回合制, 可运算日历]
+
+acceptance:
+  offline: npm run check
+  required:
+    - E01至E317事件、初始变量、Schema、调度、状态栏和世界书注册表一一对应
+    - 新增52条默认走向全部300至1000字（大事件1500字以上）并含收束条件；E266至E316含结果影响，E317无下一事件引入
+    - 新增172条概念（C836-C1007）与既有概念增量更新均保留事实门槛和未知项，UID2160-2331不与事件素材冲突
+    - 林恩18岁全链一致，未成年、幼态、年龄不明与失能主体固定非性
+    - 运行正文无禁用元数据词，UTF-8无替换字符，EJS编译通过
+    - E317之后无推进按钮、无E318、无1350章之后剧情泄漏
+  real_host: 不在本次授权范围，host_acceptance保持pending

@@ -23,3 +23,7 @@ Desktop.ini
 *.temp
 *.log
 ~$*
+
+# Build artifacts and dependencies (per repo convention: v0.12 dist/node_modules untracked)
+**/node_modules/
+**/dist/

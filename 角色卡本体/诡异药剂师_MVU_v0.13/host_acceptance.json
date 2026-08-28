@@ -1,0 +1,27 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.13.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": null,
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Antigravity offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.13.json",
+  "bytes": 8538471,
+  "sha256": "6d8271161a047866f76bacb7ac7173fa3f5e92c1433f864b8a2f12c9a094a84a",
+  "offline_checks": {
+    "status": "passed",
+    "checks": 28872,
+    "command": "npm run check",
+    "worldbook_entries": 946,
+    "event_anchors": 317
+  },
+  "notes": "v0.13 全量工程闭环：E01-E317/S0-S40/C01-C1007 全量通过 28,000+ 项断言校验；真实宿主导入验收仍需所有者另行授权。"
+}
