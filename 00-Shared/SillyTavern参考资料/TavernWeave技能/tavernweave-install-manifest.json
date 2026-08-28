@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "package": "tavernweave-agent-skills",
+  "version": "1.3.0",
+  "skillCount": 20,
+  "skills": [
+    "activate-tavernweave-soul",
+    "code-quality-workflow",
+    "consult-tavernweave-library",
+    "orchestrate-project-blueprint",
+    "reflect-on-vibe-code-growth",
+    "rolecard-workshop-ops",
+    "shadcn-tailwind-ui",
+    "sillytavern-api-reference",
+    "sillytavern-card-components",
+    "sillytavern-card-pipeline",
+    "sillytavern-component-update",
+    "sillytavern-database-rolecards",
+    "sillytavern-embedded-ui",
+    "sillytavern-extension-dev",
+    "sillytavern-media-live2d-runtime",
+    "sillytavern-render-regex-pipeline",
+    "sillytavern-rolecard-performance",
+    "sillytavern-rolecard-security",
+    "sillytavern-runtime-debug",
+    "tavern-card-builder"
+  ],
+  "requiredPaths": [
+    "skills/activate-tavernweave-soul/SKILL.md",
+    "skills/consult-tavernweave-library/SKILL.md",
+    "skills/orchestrate-project-blueprint/SKILL.md",
+    "skills/orchestrate-project-blueprint/assets/templates/total-design.md",
+    "skills/reflect-on-vibe-code-growth/SKILL.md",
+    "skills/reflect-on-vibe-code-growth/agents/openai.yaml",
+    "skills/reflect-on-vibe-code-growth/assets/vibe-code-growth-report.html",
+    "skills/reflect-on-vibe-code-growth/references/mirror-record.schema.json",
+    "skills/reflect-on-vibe-code-growth/scripts/render-text-assessment.mjs",
+    "skills/reflect-on-vibe-code-growth/scripts/save-mirror-record.mjs",
+    "skills/reflect-on-vibe-code-growth/scripts/validate-mirror-record.mjs",
+    "skills/consult-tavernweave-library/assets/picker/index.html"
+  ],
+  "hostRediscovery": "required-new-task",
+  "hostFrontDoor": {
+    "version": "1.3.0",
+    "recommended": true,
+    "managedBlock": "host-adapters/tavernweave-front-door.md",
+    "hostMap": "host-adapters/host-map.json",
+    "manager": "scripts/manage-host-front-door.ps1",
+    "requiredSourcePaths": [
+      "host-adapters/tavernweave-front-door.md",
+      "host-adapters/host-map.json",
+      "scripts/manage-host-front-door.ps1"
+    ],
+    "formalHosts": ["Codex", "Claude"],
+    "dshSupport": "preview-preset-only"
+  },
+  "dshPreview": {
+    "status": "offline-candidate",
+    "contract": "host-adapters/dsh/tw-lite-contract.json",
+    "fullPreset": "host-adapters/dsh/tw-lite-full/agent.cordis.yml",
+    "entryPreset": "host-adapters/dsh/tw-lite-entry/agent.cordis.yml"
+  }
+}

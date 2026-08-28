@@ -1,0 +1,18 @@
+{
+  "name": "tavernweave-agent-skills",
+  "version": "1.3.0",
+  "description": "A routed SillyTavern and Vibe Coding system with 20 focused skills, bounded brainstorming, immutable growth reflection, a complete screened frontend and motion library, resumable authority, host front-door adapters, evidence gates, and portable Soul modes.",
+  "author": {
+    "name": "LiarMTTT"
+  },
+  "homepage": "https://github.com/LiarMTTT/TavernWeave",
+  "repository": "https://github.com/LiarMTTT/TavernWeave",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "agent-skills",
+    "sillytavern",
+    "rolecard",
+    "mvu",
+    "code-quality"
+  ]
+}
