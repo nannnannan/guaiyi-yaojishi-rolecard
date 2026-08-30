@@ -1,0 +1,84 @@
+project:
+  name: 诡异药剂师_MVU_v0.10
+  display_name: 《诡异药剂师》v0.10
+  version: 0.10.0
+  card_type: mvu_zod
+  artifact: dist/诡异药剂师_v0.10.json
+  source_base: 诡异药剂师_MVU_v0.9.3(3.7f
+  scope: 冻结v0.9.3基线，在E126之后新增E127至E170；原著取材严格止于863，下一段内容不得进入本版
+  release_policy: v1.0前仅内部使用；离线通过仍为pending，真实宿主验收需所有者另行授权
+
+authority:
+  order: [用户当前要求, 创作规划.yaml, contract.json, manifest.json, profile.json, src, dist]
+  frozen_source: v0.9.3目录不得修改
+  generated_only: dist只由npm run build生成，禁止手改
+
+highest_rules:
+  - 林恩在v0.10统一为18岁，角色卡元数据、变量、Schema、开场、状态栏、事件与摘要全部同步
+  - 玩家绝对独占林恩的对白、主动动作、决定、判断、记忆、态度、感情与内心
+  - 原作事件只是世界默认因果；玩家可缺席、介入、取消或改变结果，稳定替代结果以变形收束
+  - 角色卡运行正文禁用原文编号与总结元数据；溯源只写入编辑台账，不进入打包世界书
+  - 亲密只允许明确成年、具备同意能力且持续自愿的参与者；未成年、年龄不明或幼态外形固定非性非恋爱
+  - 治疗、救命、契约、所有权、任务数值、失忆、醉酒、睡眠、恐惧、依赖与权力差不能制造同意
+  - 原著中的欺骗、强迫与越界只记录伤害、信任裂痕和后果，不色情化、不奖励化
+  - 以M是快感冲击机制，性行为解咒与恶堕调教是原著机制事实；运行时仍须服从成年人、知情、自愿与玩家主权
+
+events:
+  ids: E01-E170
+  new_ids: E127-E170
+  count: 170
+  new_count: 44
+  states: [未触发, 预兆, 活跃, 变形, 完成, 取消]
+  phases:
+    S18: [E127, E133, 六根源战场与机械狂潮]
+    S19: [E134, E139, 战后撤离与巨像余波]
+    S20: [E140, E145, 王后谈判与堕天使危机]
+    S21: [E146, E151, 主母复苏与羽毛笔真身]
+    S22: [E152, E157, 命运权柄与地狱通牒]
+    S23: [E158, E163, 命运契约与蓝星召唤]
+    S24: [E164, E170, 蓝星救援与双生子悬崖]
+  default_direction_chars: [200, 500]
+  required_fields: [玩家主权, 阶段, 地点, 前置条件, 参与者与动机, 默认走向, 紧迫度, 幕后停止点, 变形条件, 完成条件, 取消条件, 结果影响, 系统提示, 下一事件引入]
+  terminal:
+    id: E170
+    fact: 左左质问后，巨像之脑持餐刀逼近；刀是否落下未知
+    unresolved: [地狱凝视约剩三日, 跨世界召唤规避尚未最终验证, 尹琴完整苏醒状态未知, 白逸成长承诺未验证]
+
+source_packets:
+  P1: { chapters: 718-739, lines: 66657-68415, events: E127-E133 }
+  P2: { chapters: 740-760, lines: 68416-70157, events: E134-E139 }
+  P3: { chapters: 761-780, lines: 70158-71778, events: E140-E145 }
+  P4: { chapters: 781-801, lines: 71779-73524, events: E146-E151 }
+  P5: { chapters: 802-823, lines: 73525-75210, events: E152-E157 }
+  P6: { chapters: 824-843, lines: 75211-76977, events: E158-E163 }
+  P7: { chapters: 844-863, lines: 76978-78747, events: E164-E170 }
+
+worldbook:
+  core_characters: 27
+  event_material_start: 700
+  event_material_end: 869
+  event_material_enabled: false
+  detail_window_radius: 1
+  summary_window_radius: 3
+  concept_policy: 概念数量和字数不设上限；优先扩展既有UID，新增从当前最大UID之后连续编号；事实、限制、代价、未知与禁止外推必须齐全
+  activation: 概念与人物在当前事件前后各1窗口强启，同时保留原生关键词绿灯；同一UID同轮去重
+
+mvu:
+  root: [元数据, 世界, 林恩, 事件, 关系, 角色关系, 系统]
+  anchors: 170
+  phases: S0-S24
+  initial: E01完成收尾，E02活跃收尾，E03至E170未触发
+  protocol: UpdateVariable.JSONPatch
+  event_transition: 只用一条replace /事件提交完整事件对象
+  no_systems: [战斗数值, 可运算等级成长, 装备栏, 库存, 货币, 商城刷新, 经营结算, 回合制, 可运算日历]
+
+acceptance:
+  offline: npm run check
+  required:
+    - E01至E170事件、初始变量、Schema、调度、状态栏和世界书注册表一一对应
+    - 新增44条默认走向全部200至500字并含取消条件
+    - 概念条目事实与原文包一致，未知项不被补成答案
+    - 林恩18岁全链一致，银色幻想成人口径不再与成人机制冲突
+    - 运行正文无禁用元数据词，UTF-8无替换字符，EJS编译通过
+    - E170之后无推进按钮、无E171、无863之后剧情泄漏
+  real_host: 不在本次授权范围，host_acceptance保持pending

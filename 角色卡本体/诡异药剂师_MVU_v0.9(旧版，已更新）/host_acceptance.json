@@ -1,0 +1,21 @@
+{
+    "id": "tavernweave.weird-apothecary.host-acceptance",
+    "version": "0.9.0",
+    "status": "pending",
+    "accepted_at": null,
+    "accepted_by": null,
+    "tested_at": null,
+    "last_runtime_tested_at": null,
+    "last_runtime_sha256": null,
+    "tested_by": null,
+    "evidence": null,
+    "host": {
+        "sillytavern": null,
+        "tavern_helper": null
+    },
+    "artifact": "dist/诡异药剂师_v0.9.json",
+    "bytes": 3436881,
+    "sha256": "b164fe6370bb0a5581fd90a6b6eac5c83a3da7d32500a9685ffcac850e960f0e",
+    "offline_checks": 14855,
+    "notes": "v0.9全量阶段五候选基线：372条世界书（126事件/27人物/深度概念全量扩充）、125对全量衔接桥、S0-S17全阶段覆盖、MVU新关系字段。已修复白逸/黑颅/渡鸦/林樱/小丑等核心人设偏差，修正魔人协会决战/猎神者/倒吊塔概念，补齐阶段五多阶段演变与门控。真实宿主导入验收（需所有者授权）。"
+}

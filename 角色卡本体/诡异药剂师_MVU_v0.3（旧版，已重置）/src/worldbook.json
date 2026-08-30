@@ -1,0 +1,546 @@
+{
+  "name": "诡异药剂师世界书 v0.3",
+  "description": "第1至149章阶段1沙盒世界书。稳定ID：weird-apothecary-worldbook。十名主要角色在运行时各合并为一条姓名蓝灯。",
+  "extensions": {
+    "tavernweave": {
+      "id": "weird-apothecary-worldbook",
+      "version": "0.3.0"
+    }
+  },
+  "entries": [
+    {
+      "id": 0,
+      "comment": "[核心]最高规则与玩家主权",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 10,
+      "content_file": "src/prompts/world.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 1,
+      "comment": "[核心]自主世界事件调度",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 20,
+      "content_file": "src/prompts/mainline.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 2,
+      "comment": "[核心]文风协议",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 30,
+      "content_file": "src/prompts/style.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 3,
+      "comment": "[角色索引]十人精简路由",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 40,
+      "content_file": "src/characters/角色速览.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 20,
+      "comment": "[机制]死界基础法则",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 50,
+      "content_file": "src/mechanisms/死界基础法则.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 21,
+      "comment": "[机制]视界系统",
+      "keys": ["视界", "视界系统", "系统观察镜头", "情报员024"],
+      "constant": false,
+      "insertion_order": 60,
+      "content_file": "src/mechanisms/视界系统.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 22,
+      "comment": "[机制]诅咒与医疗",
+      "keys": ["诅咒与医疗", "异常诅咒", "诅咒治疗", "过往遗念"],
+      "constant": false,
+      "insertion_order": 61,
+      "content_file": "src/mechanisms/诅咒与医疗.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 23,
+      "comment": "[机制]巨像及血肉机械技术",
+      "keys": ["巨像", "血肉机械", "血肉傀儡", "钢性傀儡", "械魔"],
+      "constant": false,
+      "insertion_order": 62,
+      "content_file": "src/mechanisms/巨像及血肉机械技术.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 40,
+      "comment": "[势力]魔人协会",
+      "keys": ["魔人协会", "情报员024", "噬心魔", "械魔", "猎杀者"],
+      "constant": false,
+      "insertion_order": 80,
+      "content_file": "src/factions/魔人协会.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 41,
+      "comment": "[势力]猎头者家族",
+      "keys": ["猎头者家族", "猎头者", "家庭记忆", "头颅契约"],
+      "constant": false,
+      "insertion_order": 81,
+      "content_file": "src/factions/猎头者家族.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 42,
+      "comment": "[势力]人偶庄园",
+      "keys": ["人偶庄园", "庄园人偶", "人偶家族"],
+      "constant": false,
+      "insertion_order": 82,
+      "content_file": "src/factions/人偶庄园.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 43,
+      "comment": "[势力]夜医",
+      "keys": ["夜医", "夜间出诊", "异常医生"],
+      "constant": false,
+      "insertion_order": 83,
+      "content_file": "src/factions/夜医.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 44,
+      "comment": "[势力]独角恶鬼族",
+      "keys": ["独角恶鬼族", "独角恶鬼", "独角鬼王"],
+      "constant": false,
+      "insertion_order": 84,
+      "content_file": "src/factions/独角恶鬼族.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 45,
+      "comment": "[势力]游魂巷居民",
+      "keys": ["游魂巷居民", "游魂巷邻居", "游魂巷街坊", "候诊室群像"],
+      "constant": false,
+      "insertion_order": 85,
+      "content_file": "src/factions/游魂巷居民.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 60,
+      "comment": "[地点]血锯药剂店",
+      "keys": ["血锯药剂店", "药剂店", "后院地窖"],
+      "constant": false,
+      "insertion_order": 90,
+      "content_file": "src/locations/血锯药剂店.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 61,
+      "comment": "[地点]游魂巷",
+      "keys": ["游魂巷", "魂灯", "不眠夜"],
+      "constant": false,
+      "insertion_order": 91,
+      "content_file": "src/locations/游魂巷.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 62,
+      "comment": "[地点]45号血衣住所",
+      "keys": ["45号", "血衣住所", "血衣女士住所"],
+      "constant": false,
+      "insertion_order": 92,
+      "content_file": "src/locations/45号血衣住所.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 63,
+      "comment": "[地点]凄凉荒野与倒吊塔",
+      "keys": ["凄凉荒野", "倒吊塔"],
+      "constant": false,
+      "insertion_order": 93,
+      "content_file": "src/locations/凄凉荒野与倒吊塔.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 64,
+      "comment": "[地点]人偶庄园",
+      "keys": ["人偶庄园", "庄园工坊"],
+      "constant": false,
+      "insertion_order": 94,
+      "content_file": "src/locations/人偶庄园.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 65,
+      "comment": "[地点]独角鬼王神庙",
+      "keys": ["独角鬼王神庙", "鬼王神庙"],
+      "constant": false,
+      "insertion_order": 95,
+      "content_file": "src/locations/独角鬼王神庙.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 100,
+      "comment": "[角色]左左",
+      "keys": ["左左", "林恩左手", "左手变异体"],
+      "constant": false,
+      "insertion_order": 100,
+      "content_files": [
+        "src/characters/左左/角色速览.md",
+        "src/characters/左左/基础信息.md",
+        "src/characters/左左/性格调色盘.md",
+        "src/characters/左左/三面性.md",
+        "src/characters/左左/多阶段人设.md",
+        "src/characters/左左/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 110,
+      "comment": "[角色]血锯",
+      "keys": ["血锯", "血锯狂人", "血锯师父"],
+      "constant": false,
+      "insertion_order": 110,
+      "content_files": [
+        "src/characters/血锯/角色速览.md",
+        "src/characters/血锯/基础信息.md",
+        "src/characters/血锯/性格调色盘.md",
+        "src/characters/血锯/三面性.md",
+        "src/characters/血锯/多阶段人设.md",
+        "src/characters/血锯/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 120,
+      "comment": "[角色]血衣女士",
+      "keys": ["血衣女士", "血衣恶灵", "红衣女人", "45号住户"],
+      "constant": false,
+      "insertion_order": 120,
+      "content_files": [
+        "src/characters/血衣女士/角色速览.md",
+        "src/characters/血衣女士/基础信息.md",
+        "src/characters/血衣女士/性格调色盘.md",
+        "src/characters/血衣女士/三面性.md",
+        "src/characters/血衣女士/多阶段人设.md",
+        "src/characters/血衣女士/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 130,
+      "comment": "[角色]小小",
+      "keys": ["小小", "巨大病患", "夜间牙科"],
+      "constant": false,
+      "insertion_order": 130,
+      "content_files": [
+        "src/characters/小小/角色速览.md",
+        "src/characters/小小/基础信息.md",
+        "src/characters/小小/性格调色盘.md",
+        "src/characters/小小/三面性.md",
+        "src/characters/小小/多阶段人设.md",
+        "src/characters/小小/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 140,
+      "comment": "[角色]人偶夫人",
+      "keys": ["人偶夫人", "人偶庄园女主人"],
+      "constant": false,
+      "insertion_order": 140,
+      "content_files": [
+        "src/characters/人偶夫人/角色速览.md",
+        "src/characters/人偶夫人/基础信息.md",
+        "src/characters/人偶夫人/性格调色盘.md",
+        "src/characters/人偶夫人/三面性.md",
+        "src/characters/人偶夫人/多阶段人设.md",
+        "src/characters/人偶夫人/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 150,
+      "comment": "[角色]爱丽丝",
+      "keys": ["爱丽丝", "幸福之家", "地缚灵少女"],
+      "constant": false,
+      "insertion_order": 150,
+      "content_files": [
+        "src/characters/爱丽丝/角色速览.md",
+        "src/characters/爱丽丝/基础信息.md",
+        "src/characters/爱丽丝/性格调色盘.md",
+        "src/characters/爱丽丝/三面性.md",
+        "src/characters/爱丽丝/多阶段人设.md",
+        "src/characters/爱丽丝/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 160,
+      "comment": "[角色]黑弦月",
+      "keys": ["黑弦月", "第七人偶", "庄园观察员"],
+      "constant": false,
+      "insertion_order": 160,
+      "content_files": [
+        "src/characters/黑弦月/角色速览.md",
+        "src/characters/黑弦月/基础信息.md",
+        "src/characters/黑弦月/性格调色盘.md",
+        "src/characters/黑弦月/三面性.md",
+        "src/characters/黑弦月/多阶段人设.md",
+        "src/characters/黑弦月/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 170,
+      "comment": "[角色]泰坦头颅",
+      "keys": ["泰坦头颅", "泰坦之首"],
+      "constant": false,
+      "insertion_order": 170,
+      "content_files": [
+        "src/characters/泰坦头颅/角色速览.md",
+        "src/characters/泰坦头颅/基础信息.md",
+        "src/characters/泰坦头颅/性格调色盘.md",
+        "src/characters/泰坦头颅/三面性.md",
+        "src/characters/泰坦头颅/多阶段人设.md",
+        "src/characters/泰坦头颅/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 180,
+      "comment": "[角色]巫神头颅",
+      "keys": ["巫神头颅", "巫神之首"],
+      "constant": false,
+      "insertion_order": 180,
+      "content_files": [
+        "src/characters/巫神头颅/角色速览.md",
+        "src/characters/巫神头颅/基础信息.md",
+        "src/characters/巫神头颅/性格调色盘.md",
+        "src/characters/巫神头颅/三面性.md",
+        "src/characters/巫神头颅/多阶段人设.md",
+        "src/characters/巫神头颅/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 190,
+      "comment": "[角色]小宝贝",
+      "keys": ["小宝贝", "地窖里的小宝贝", "巨型舌头"],
+      "constant": false,
+      "insertion_order": 190,
+      "content_files": [
+        "src/characters/小宝贝/角色速览.md",
+        "src/characters/小宝贝/基础信息.md",
+        "src/characters/小宝贝/性格调色盘.md",
+        "src/characters/小宝贝/三面性.md",
+        "src/characters/小宝贝/多阶段人设.md",
+        "src/characters/小宝贝/二次解释.md"
+      ],
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 220,
+      "comment": "[配角群像]药剂店来客",
+      "keys": ["人皮拾荒者", "血娃娃", "猪头魔", "恶灵血婴", "烧死鬼", "奥卡洛斯", "黑蛾妖精玥玥"],
+      "constant": false,
+      "insertion_order": 220,
+      "content_file": "src/npcs/药剂店来客.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 221,
+      "comment": "[配角群像]游魂巷异常",
+      "keys": ["血肉欺诈者", "钢性傀儡", "黑夜食腐者", "血肉傀儡", "猎杀者"],
+      "constant": false,
+      "insertion_order": 221,
+      "content_file": "src/npcs/游魂巷异常群像.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 222,
+      "comment": "[配角群像]魔人协会人物",
+      "keys": ["情报员024", "024", "械魔", "噬心魔"],
+      "constant": false,
+      "insertion_order": 222,
+      "content_file": "src/npcs/魔人协会人物.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 223,
+      "comment": "[配角群像]视界与情报人物",
+      "keys": ["视界情报", "情报交易", "情报员", "视界观察者"],
+      "constant": false,
+      "insertion_order": 223,
+      "content_file": "src/npcs/视界与情报人物.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 300,
+      "comment": "[事件]E01·血娃娃上门",
+      "keys": ["E01", "事件E01", "血娃娃上门"],
+      "constant": false,
+      "insertion_order": 300,
+      "content_file": "src/events/E01_血娃娃上门.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 301,
+      "comment": "[事件]E02·猪头魔与恶灵血婴",
+      "keys": ["E02", "事件E02", "猪头魔与恶灵血婴"],
+      "constant": false,
+      "insertion_order": 301,
+      "content_file": "src/events/E02_猪头魔与恶灵血婴.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 302,
+      "comment": "[事件]E03·小小夜间牙科",
+      "keys": ["E03", "事件E03", "小小夜间牙科"],
+      "constant": false,
+      "insertion_order": 302,
+      "content_file": "src/events/E03_小小夜间牙科.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 303,
+      "comment": "[事件]E04·血衣女士寻子",
+      "keys": ["E04", "事件E04", "血衣女士寻子"],
+      "constant": false,
+      "insertion_order": 303,
+      "content_file": "src/events/E04_血衣女士寻子.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 304,
+      "comment": "[事件]E05·暴击药剂副作用扩散",
+      "keys": ["E05", "事件E05", "暴击药剂副作用扩散"],
+      "constant": false,
+      "insertion_order": 304,
+      "content_file": "src/events/E05_暴击药剂副作用扩散.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 305,
+      "comment": "[事件]E06·血衣女士宴会与诅咒治疗",
+      "keys": ["E06", "事件E06", "血衣女士宴会", "血衣诅咒治疗"],
+      "constant": false,
+      "insertion_order": 305,
+      "content_file": "src/events/E06_血衣女士宴会与诅咒治疗.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 306,
+      "comment": "[事件]E07·血肉傀儡追杀与左左诞生",
+      "keys": ["E07", "事件E07", "左左诞生", "血肉傀儡追杀"],
+      "constant": false,
+      "insertion_order": 306,
+      "content_file": "src/events/E07_血肉傀儡追杀与左左诞生.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 307,
+      "comment": "[事件]E08·猎杀者夜袭与情报转折",
+      "keys": ["E08", "事件E08", "猎杀者夜袭", "情报转折"],
+      "constant": false,
+      "insertion_order": 307,
+      "content_file": "src/events/E08_猎杀者夜袭与情报转折.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 308,
+      "comment": "[事件]E09·械魔进攻",
+      "keys": ["E09", "事件E09", "械魔进攻"],
+      "constant": false,
+      "insertion_order": 308,
+      "content_file": "src/events/E09_械魔进攻.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 309,
+      "comment": "[事件]E10·噬心魔出击与协会覆灭",
+      "keys": ["E10", "事件E10", "噬心魔出击", "魔人协会覆灭"],
+      "constant": false,
+      "insertion_order": 309,
+      "content_file": "src/events/E10_噬心魔出击与协会覆灭.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 310,
+      "comment": "[事件]E11·猎头者家庭记忆与契约",
+      "keys": ["E11", "事件E11", "猎头者家庭记忆", "头颅契约"],
+      "constant": false,
+      "insertion_order": 310,
+      "content_file": "src/events/E11_猎头者家庭记忆与契约.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 311,
+      "comment": "[事件]E12·师徒归来与阶段收束",
+      "keys": ["E12", "事件E12", "血锯归来", "人偶夫人归来", "阶段收束"],
+      "constant": false,
+      "insertion_order": 311,
+      "content_file": "src/events/E12_师徒归来与阶段收束.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+
+    {
+      "id": 900,
+      "comment": "[initvar]初始变量（默认禁用）",
+      "keys": [],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 900,
+      "content_json_file": "src/initial_variables.json",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 910,
+      "comment": "[mvu_update]变量更新规则",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 910,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_update_rules.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 920,
+      "comment": "[mvu_update]当前变量",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 920,
+      "position_number": 4,
+      "depth": 0,
+      "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    },
+    {
+      "id": 930,
+      "comment": "[mvu_update]变量输出格式",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 930,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_output_format.md",
+      "extensions": {"exclude_recursion": true, "prevent_recursion": true}
+    }
+  ]
+}

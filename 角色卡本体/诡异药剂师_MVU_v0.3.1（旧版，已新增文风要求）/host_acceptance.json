@@ -1,0 +1,17 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.31.0",
+  "status": "candidate",
+  "accepted_at": "",
+  "accepted_by": "owner",
+  "evidence": "v0.31 为候选版，等待所有者在真实酒馆测试后确认。",
+  "host": {
+    "sillytavern": "1.17.0",
+    "tavern_helper": "4.8.19"
+  },
+  "artifact": "dist/诡异药剂师_v0.31.json",
+  "bytes": 337929,
+  "sha256": "4fa999de5fb184f26edd81def467bac65456cef6e9b5878327d7ce0d81c78728",
+  "offline_checks": 1850,
+  "notes": "v0.31 重置世界书、游玩规则与角色阶段人设；离线验证通过前保持候选状态。v1.0前不公开发布。"
+}

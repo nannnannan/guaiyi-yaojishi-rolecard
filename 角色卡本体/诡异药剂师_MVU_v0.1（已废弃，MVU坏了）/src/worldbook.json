@@ -1,0 +1,176 @@
+{
+  "name": "诡异药剂师｜血锯药剂店世界书 v0.1",
+  "description": "七人轻量 MVU 角色卡的内嵌世界书；稳定 ID：weird-apothecary-worldbook。",
+  "extensions": {
+    "tavernweave": {
+      "id": "weird-apothecary-worldbook",
+      "version": "0.1.0"
+    }
+  },
+  "entries": [
+    {
+      "id": 0,
+      "comment": "[核心]基础世界观",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 10,
+      "content_file": "src/prompts/world.md"
+    },
+    {
+      "id": 1,
+      "comment": "[核心]v0.1 主线",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 20,
+      "content_file": "src/prompts/mainline.md"
+    },
+    {
+      "id": 2,
+      "comment": "[核心]轻量病例",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 30,
+      "content_file": "src/prompts/medical.md"
+    },
+    {
+      "id": 3,
+      "comment": "[核心]文风协议",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 40,
+      "content_file": "src/prompts/style.md"
+    },
+    {
+      "id": 10,
+      "comment": "[角色]左左",
+      "keys": [
+        "左左",
+        "左手",
+        "共生",
+        "不稳定药剂",
+        "诅咒组织"
+      ],
+      "constant": false,
+      "insertion_order": 100,
+      "content_file": "src/characters/左左.md"
+    },
+    {
+      "id": 11,
+      "comment": "[角色]血锯",
+      "keys": [
+        "血锯",
+        "师父",
+        "原店主",
+        "地窖钥匙"
+      ],
+      "constant": false,
+      "insertion_order": 110,
+      "content_file": "src/characters/血锯.md"
+    },
+    {
+      "id": 12,
+      "comment": "[角色]血衣女士",
+      "keys": [
+        "血衣女士",
+        "血衣恶灵",
+        "红衣女人",
+        "血娃娃",
+        "妈妈"
+      ],
+      "constant": false,
+      "insertion_order": 120,
+      "content_file": "src/characters/血衣女士.md"
+    },
+    {
+      "id": 13,
+      "comment": "[角色]小小",
+      "keys": [
+        "小小",
+        "巨大病患",
+        "夜间牙科",
+        "口腔不适"
+      ],
+      "constant": false,
+      "insertion_order": 130,
+      "content_file": "src/characters/小小.md"
+    },
+    {
+      "id": 14,
+      "comment": "[角色]人偶夫人",
+      "keys": [
+        "人偶夫人",
+        "人偶庄园",
+        "庄园女主人",
+        "诅咒委托"
+      ],
+      "constant": false,
+      "insertion_order": 140,
+      "content_file": "src/characters/人偶夫人.md"
+    },
+    {
+      "id": 15,
+      "comment": "[角色]爱丽丝",
+      "keys": [
+        "爱丽丝",
+        "幸福之家",
+        "地缚灵",
+        "一家人"
+      ],
+      "constant": false,
+      "insertion_order": 150,
+      "content_file": "src/characters/爱丽丝.md"
+    },
+    {
+      "id": 16,
+      "comment": "[角色]黑弦月",
+      "keys": [
+        "黑弦月",
+        "第七人偶",
+        "人偶庄园",
+        "庄园观察员"
+      ],
+      "constant": false,
+      "insertion_order": 160,
+      "content_file": "src/characters/黑弦月.md"
+    },
+    {
+      "id": 90,
+      "comment": "[initvar]初始变量（默认禁用）",
+      "keys": [],
+      "constant": false,
+      "enabled": false,
+      "insertion_order": 900,
+      "content_json_file": "src/initial_variables.json"
+    },
+    {
+      "id": 91,
+      "comment": "[mvu_update]变量更新规则",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 910,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_update_rules.md"
+    },
+    {
+      "id": 92,
+      "comment": "[mvu_update]当前变量",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 920,
+      "position_number": 4,
+      "depth": 0,
+      "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>"
+    },
+    {
+      "id": 93,
+      "comment": "[mvu_update]变量输出格式",
+      "keys": [],
+      "constant": true,
+      "insertion_order": 930,
+      "position_number": 4,
+      "depth": 0,
+      "content_file": "src/prompts/mvu_output_format.md"
+    }
+  ]
+}

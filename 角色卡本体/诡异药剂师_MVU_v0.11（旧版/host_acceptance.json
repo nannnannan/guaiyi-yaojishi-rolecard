@@ -1,0 +1,27 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.11.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": "2026-08-25T03:13:47.788Z",
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Codex offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.11.json",
+  "bytes": 5494880,
+  "sha256": "ce50a98d628f41aa5454a27146a4e313219d43be54363b1d8e723ff929bae23e",
+  "offline_checks": {
+    "command": "npm run check",
+    "status": "passed",
+    "checks": 21822,
+    "event_anchors": 218,
+    "worldbook_entries": 586
+  },
+  "notes": "v0.11 重构版+全量扩写：全链路重构（85事件默认走向350-450字、E172/E204/E210因果修复、28角色六组件去扁平化、新增C757-C761概念、28人口径统一）+ E01-E125 旧事件默认走向全量扩写至350-450；林恩统一18岁；真实宿主导入验收仍需所有者另行授权。"
+}

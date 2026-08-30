@@ -1,0 +1,172 @@
+{
+  "id": "tavernweave.weird-apothecary.contract",
+  "version": "0.5.0",
+  "required": {
+    "card_type": "mvu_zod",
+    "internal_before_v1": true,
+    "stage_scope": "第1至149章",
+    "core_character_count": 8,
+    "core_characters": [
+      "左左",
+      "血锯",
+      "血衣女士",
+      "小小",
+      "人偶夫人",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "component_matrix": [
+      "角色速览",
+      "基础信息",
+      "性格调色盘",
+      "三面性",
+      "多阶段人设",
+      "二次解释"
+    ],
+    "non_romantic_characters": [
+      "血锯",
+      "小小",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "factions": [
+      "魔人协会",
+      "猎头者家族",
+      "人偶庄园",
+      "夜医",
+      "独角恶鬼族",
+      "游魂巷居民"
+    ],
+    "mechanisms": [
+      "视界系统",
+      "诅咒与医疗",
+      "巨像及血肉机械技术"
+    ],
+    "locations": [
+      "血锯药剂店",
+      "45号血衣住所",
+      "凄凉荒野与倒吊塔",
+      "独角鬼王神庙",
+      "人偶庄园"
+    ],
+    "event_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20"
+    ],
+    "event_states": [
+      "未触发",
+      "预兆",
+      "活跃",
+      "变形",
+      "完成",
+      "取消"
+    ],
+    "opening_patient": "血娃娃",
+    "opening_marker": "<StatusPlaceHolderImpl/>",
+    "opening_must_match_v0_2": false,
+    "opening_source_verbatim": true,
+    "opening_style_check": "开场白为小说原文逐字摘抄（仅格式调整），与opening_source.txt归一化比对",
+    "time_progression": "纯事件驱动，不维护天数计数",
+    "stage_character_switch": "事件为主，好感/信赖/恶堕值为辅",
+    "evil_value_scope": "全部关系角色保留兼容恶堕字段；小小为幼态角色且恶堕恒为0，其余角色按各自边界决定是否锁定",
+    "ui_pages": [
+      "当前状态",
+      "人物关系",
+      "世界事件",
+      "系统"
+    ],
+    "update_protocol": "UpdateVariable.JSONPatch",
+    "event_state_semantics": "only 活跃 is active; 变形 is a terminal stable alternative result",
+    "event_transition_patch": "any anchor status/tail, active event or omen migration replaces /事件 atomically",
+    "empty_event_objects": "no active event or omen uses canonical fully cleared detail objects",
+    "worldbook_stable_id": "weird-apothecary-worldbook",
+    "worldbook_version": "0.5.0",
+    "concept_activation": {
+      "router_entry_id": 399,
+      "concept_id_start": 400,
+      "concept_id_end": 451,
+      "concept_count": 52,
+      "mode": "event_window_or_native_green",
+      "event_window_radius": 3,
+      "native_chat_roles": [
+        "user",
+        "assistant"
+      ],
+      "inherit_global_scan_depth": true,
+      "deduplicate_by": "world.uid"
+    },
+    "host_versions": {
+      "sillytavern": "1.17.0",
+      "tavern_helper": "4.9.1"
+    }
+  },
+  "forbidden": {
+    "systems": [
+      "combat",
+      "level_progression_system",
+      "tracked_rank_system",
+      "combat_stats",
+      "skill_tree",
+      "tracked_inventory_system",
+      "tracked_currency_system",
+      "shop_economy",
+      "v0.2_chat_migration",
+      "day_counter"
+    ],
+    "player_control": [
+      "invent Lin En dialogue",
+      "invent Lin En voluntary actions",
+      "invent Lin En decisions",
+      "invent Lin En judgments",
+      "invent Lin En memories",
+      "invent Lin En inner thoughts"
+    ],
+    "runtime_claims": [
+      "player must install Zod",
+      "static validation proves real-host execution",
+      "v0.5 migrates v0.2 or v0.3 chats"
+    ]
+  },
+  "acceptance": [
+    "JSON parses as chara_card_v3",
+    "top-level and data-level core fields are mirrored",
+    "all eight stage-1 main characters contain stage-split components and one merged runtime entry each",
+    "all factions, mechanisms, locations and event anchors exist",
+    "all 52 concept entries activate through event-window force activation OR native green-light keywords and deduplicate by world.uid",
+    "native green-light concept activation inherits host user plus assistant scanning and global scan depth",
+    "the preprocessing concept router emits no model-visible prompt text",
+    "all packed worldbook entries enable both recursion guards",
+    "initial variables and schema have exactly the seven required roots and no case root",
+    "event ledger uses six anchor states; only 活跃 is active, while 变形 is terminal, and at most one anchor may be active",
+    "cross-anchor event migrations replace the complete /事件 object atomically and preserve canonical empty objects",
+    "non-romantic characters keep attraction at zero",
+    "every relationship root retains an evil-value compatibility field; 小小 is initialized and locked at zero",
+    "minor characters are embedded into faction/location/event entries, not standalone entries",
+    "Alice is absent; Black String Moon appears only as the E20 item concept and before arrival only in an in-transit context",
+    "MVU loader and Zod schema are embedded and enabled",
+    "four-page status UI reads MVU with chat-message fallback and never renders stale active-event or omen details for canonical empty state",
+    "closed think blocks are removed separately from model prompt history and markdown display",
+    "opening text follows the style checklist and does not control Lin En",
+    "real-host behavior remains pending until user acceptance"
+  ]
+}

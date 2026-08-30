@@ -1,0 +1,88 @@
+{
+  "id": "tavernweave.weird-apothecary.v0.2",
+  "version": "0.2.0",
+  "profile": "profile.json",
+  "contract": "contract.json",
+  "source_root": "src",
+  "packed_json": "dist/诡异药剂师_血锯药剂店_v0.2.json",
+  "card": {
+    "stable_id": "weird-apothecary-blood-saw-shop",
+    "display_name": "《诡异药剂师：血锯药剂店》v0.2",
+    "metadata": "src/card.json",
+    "system_prompt": "src/prompts/system.md",
+    "post_history_instructions": "src/prompts/post_history.md",
+    "first_message": "src/prompts/first_message.md",
+    "example_dialogue": "src/prompts/examples.md",
+    "description": "src/prompts/card_description.md"
+  },
+  "worldbook": {
+    "stable_id": "weird-apothecary-worldbook",
+    "version": "0.2.0",
+    "source": "src/worldbook.json",
+    "attachment": "/data/character_book"
+  },
+  "tavern_helper_scripts": "src/tavern_helper_scripts.json",
+  "regex_scripts": "src/regex_scripts.json",
+  "initial_variables": "src/initial_variables.json",
+  "deliverables": [
+    "dist/诡异药剂师_血锯药剂店_v0.2.json"
+  ],
+  "collision_policy": "replace-generated-artifact-from-maintained-source",
+  "runtime_dependencies": [
+    {
+      "id": "sillytavern",
+      "role": "host",
+      "class": "host_required",
+      "version": "1.17.0",
+      "evidence": "user runtime and C:/jiuguan/SillyTavern/package.json",
+      "failure": "card cannot be imported or played"
+    },
+    {
+      "id": "tavern-helper",
+      "role": "script host, injected zod, MVU bridge and iframe APIs",
+      "class": "host_required",
+      "version": "4.8.19",
+      "evidence": "installed manifest and declarations",
+      "failure": "fall back to readable narrative; MVU and UI report unavailable"
+    },
+    {
+      "id": "mvu-loader",
+      "role": "load MagVarUpdate",
+      "class": "embedded_required",
+      "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-loader-v0.2]",
+      "failure": "narrative remains readable; persistent state is unavailable"
+    },
+    {
+      "id": "mvu-zod-schema",
+      "role": "validate the v0.2 state shape",
+      "class": "embedded_required",
+      "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-schema-v0.2]",
+      "failure": "state validation is unavailable"
+    },
+    {
+      "id": "magvarupdate",
+      "role": "MVU JSON Patch runtime",
+      "class": "remote_runtime",
+      "ref": "b42817925d0391c15fa242a8238d2bbe28eb6319",
+      "primary": "https://cdn.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate@b42817925d0391c15fa242a8238d2bbe28eb6319/artifact/bundle.js",
+      "fallback": "https://testingcf.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate@b42817925d0391c15fa242a8238d2bbe28eb6319/artifact/bundle.js",
+      "runtime_check": "waitGlobalInitialized('Mvu')"
+    },
+    {
+      "id": "mvu-zod-bridge",
+      "role": "registerMvuSchema",
+      "class": "remote_runtime",
+      "ref": "7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f",
+      "primary": "https://cdn.jsdelivr.net/gh/StageDog/tavern_resource@7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f/dist/util/mvu_zod.js",
+      "fallback": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource@7f29257de3ffbd83d63bc37ca09f4d4ecad6ca0f/dist/util/mvu_zod.js",
+      "runtime_check": "typeof registerMvuSchema === 'function'"
+    },
+    {
+      "id": "node",
+      "role": "local build and validation",
+      "class": "development_only",
+      "version": "installed",
+      "failure": "source remains usable but JSON cannot be rebuilt locally"
+    }
+  ]
+}

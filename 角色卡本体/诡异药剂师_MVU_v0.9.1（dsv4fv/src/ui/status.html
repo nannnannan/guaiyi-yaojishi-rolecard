@@ -1,0 +1,2826 @@
+<body>
+<section class="mvi" data-mvi-root aria-label="死界药剂师手札 · 多模态视界仪">
+  <style>
+    .mvi {
+      --mvi-ink: #090a0f;
+      --mvi-panel: #11141c;
+      --mvi-panel-2: #171b27;
+      --mvi-line: #40334e;
+      --mvi-line-dim: #2b2338;
+      --mvi-soul: #5ef2c0;
+      --mvi-mech: #7cc7ff;
+      --mvi-void: #c07cff;
+      --mvi-abyss: #ff4d6d;
+      --mvi-relic: #ffd977;
+      --mvi-text: #ece5d8;
+      --mvi-muted: #9b91a5;
+      --mvi-serif: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+      --mvi-ui: "Microsoft YaHei", system-ui, sans-serif;
+      box-sizing: border-box;
+      width: 100%;
+      margin: .9rem 0;
+      color: var(--mvi-text);
+      font-family: var(--mvi-ui);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .mvi *, .mvi *::before, .mvi *::after { box-sizing: border-box; }
+    .mvi-frame {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--mvi-line);
+      border-radius: 10px;
+      background:
+        radial-gradient(circle at 12% -10%, rgba(192,124,255,.12), transparent 34%),
+        radial-gradient(circle at 88% 8%, rgba(124,199,255,.09), transparent 30%),
+        radial-gradient(circle at 50% 110%, rgba(94,242,192,.06), transparent 38%),
+        linear-gradient(165deg, #15131c 0%, #0b0d13 48%, #080a0f 100%);
+      box-shadow:
+        0 0 0 1px rgba(255,217,119,.07),
+        0 18px 48px rgba(0,0,0,.62),
+        inset 0 0 90px rgba(0,0,0,.48);
+    }
+    .mvi-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .22;
+      background:
+        repeating-linear-gradient(115deg, rgba(255,255,255,.025) 0 1px, transparent 1px 7px),
+        repeating-linear-gradient(335deg, rgba(0,0,0,.12) 0 1px, transparent 1px 9px);
+    }
+    .mvi-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      padding: .85rem 1rem;
+      border-bottom: 1px solid var(--mvi-line);
+      background: linear-gradient(90deg, rgba(192,124,255,.12), rgba(124,199,255,.06) 45%, rgba(94,242,192,.05));
+    }
+    .mvi-seal {
+      flex: 0 0 auto;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255,217,119,.65);
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 32% 30%, rgba(94,242,192,.55), transparent 42%),
+        radial-gradient(circle at 68% 65%, rgba(192,124,255,.45), transparent 46%),
+        radial-gradient(circle, rgba(8,10,14,.95), rgba(20,16,28,.95));
+      box-shadow: 0 0 18px rgba(255,217,119,.18), inset 0 0 12px rgba(0,0,0,.8);
+      animation: mvi-seal-breathe 4s ease-in-out infinite;
+    }
+    .mvi-brand { min-width: 0; }
+    .mvi-title {
+      margin: 0;
+      font-family: var(--mvi-serif);
+      font-size: 1.04rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      color: var(--mvi-text);
+      text-shadow: 0 0 18px rgba(124,199,255,.22);
+    }
+    .mvi-subtitle {
+      margin: .12rem 0 0;
+      font-size: .68rem;
+      letter-spacing: .22em;
+      color: var(--mvi-muted);
+      text-transform: uppercase;
+    }
+    .mvi-version {
+      margin-left: auto;
+      white-space: nowrap;
+      padding: .24rem .6rem;
+      border: 1px solid rgba(255,217,119,.35);
+      border-radius: 3px;
+      color: #ffe9a3;
+      font-size: .72rem;
+      letter-spacing: .1em;
+      background: rgba(255,217,119,.07);
+    }
+    .mvi-alert {
+      margin: .8rem .9rem 0;
+      padding: .6rem .8rem;
+      border: 1px dashed rgba(255,77,109,.75);
+      border-radius: 5px;
+      color: #ffc3cc;
+      background: rgba(255,77,109,.08);
+      font-size: .82rem;
+    }
+    .mvi-panels {
+      position: relative;
+      display: grid;
+      gap: .68rem;
+      padding: .8rem .9rem .95rem;
+    }
+    .mvi-panel {
+      border: 1px solid var(--mvi-line-dim);
+      border-radius: 7px;
+      background: linear-gradient(180deg, rgba(23,27,39,.88), rgba(15,17,25,.92));
+      box-shadow: inset 0 0 22px rgba(0,0,0,.3);
+    }
+    .mvi-panel-head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .7rem .85rem;
+      border: 0;
+      background: transparent;
+      color: var(--mvi-text);
+      font: inherit;
+      font-size: .95rem;
+      text-align: left;
+      cursor: pointer;
+    }
+    .mvi-panel-head:focus-visible { outline: 1px solid var(--mvi-relic); outline-offset: -2px; }
+    .mvi-panel-head[aria-expanded="true"] {
+      background: linear-gradient(90deg, rgba(192,124,255,.14), rgba(124,199,255,.05));
+      border-bottom: 1px solid var(--mvi-line);
+      box-shadow: inset 0 -1px 0 rgba(255,217,119,.2);
+    }
+    .mvi-panel-icon { font-size: 1.18rem; filter: drop-shadow(0 0 6px rgba(94,242,192,.35)); }
+    .mvi-panel-title { font-family: var(--mvi-serif); font-weight: 700; letter-spacing: .12em; }
+    .mvi-panel-tag {
+      margin-left: .15rem;
+      font-size: .68rem;
+      letter-spacing: .08em;
+      color: var(--mvi-muted);
+    }
+    .mvi-chevron {
+      margin-left: auto;
+      color: var(--mvi-relic);
+      font-size: .8rem;
+      transition: transform .25s ease;
+    }
+    .mvi-panel-head[aria-expanded="true"] .mvi-chevron { transform: rotate(180deg); }
+    .mvi-panel-body { padding: .8rem .85rem .9rem; }
+    .mvi-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .62rem; }
+    .mvi-card {
+      position: relative;
+      min-width: 0;
+      padding: .75rem .8rem;
+      border: 1px solid var(--mvi-line-dim);
+      border-radius: 5px;
+      background: rgba(10,12,18,.72);
+      overflow: hidden;
+    }
+    .mvi-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--mvi-soul), var(--mvi-mech));
+      opacity: .75;
+    }
+    .mvi-card--wide { grid-column: 1 / -1; }
+    .mvi-card--void::before { background: linear-gradient(180deg, var(--mvi-void), var(--mvi-abyss)); }
+    .mvi-card--relic::before { background: linear-gradient(180deg, var(--mvi-relic), var(--mvi-void)); }
+    .mvi-card--alert {
+      border-color: rgba(255,77,109,.72);
+      animation: mvi-alert-pulse 2.1s ease-in-out infinite;
+    }
+    .mvi-label {
+      margin: 0 0 .38rem;
+      display: flex;
+      align-items: center;
+      gap: .38rem;
+      color: var(--mvi-muted);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .mvi-value { margin: 0; overflow-wrap: anywhere; }
+    .mvi-value + .mvi-value { margin-top: .22rem; }
+    .mvi-muted { color: var(--mvi-muted); }
+    .mvi-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .28rem;
+      margin: .14rem .3rem .14rem 0;
+      padding: .18rem .55rem;
+      border: 1px solid rgba(124,199,255,.32);
+      border-radius: 3px;
+      color: #cfe8ff;
+      background: rgba(124,199,255,.08);
+      font-size: .78rem;
+    }
+    .mvi-chip--void {
+      border-color: rgba(192,124,255,.4);
+      color: #eed4ff;
+      background: rgba(192,124,255,.1);
+    }
+    .mvi-chip--abyss {
+      border-color: rgba(255,77,109,.42);
+      color: #ffb3c2;
+      background: rgba(255,77,109,.1);
+    }
+    .mvi-chip--relic {
+      border-color: rgba(255,217,119,.45);
+      color: #ffe9a3;
+      background: rgba(255,217,119,.1);
+    }
+    .mvi-badge-grid { display: flex; flex-wrap: wrap; gap: .42rem; margin-top: .55rem; }
+    .mvi-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .38rem;
+      padding: .28rem .68rem;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      font-size: .79rem;
+      font-weight: 500;
+    }
+    .mvi-badge--gold {
+      color: #ffe9a3;
+      border-color: rgba(255,217,119,.58);
+      background: linear-gradient(135deg, rgba(255,217,119,.18), rgba(170,110,20,.1));
+      box-shadow: 0 0 16px rgba(255,217,119,.2);
+      font-weight: 700;
+    }
+    .mvi-badge--soul {
+      color: #c8ffef;
+      border-color: rgba(94,242,192,.5);
+      background: rgba(94,242,192,.1);
+      box-shadow: 0 0 14px rgba(94,242,192,.14);
+    }
+    .mvi-badge--mech {
+      color: #d4ecff;
+      border-color: rgba(124,199,255,.52);
+      background: rgba(124,199,255,.1);
+      box-shadow: 0 0 14px rgba(124,199,255,.14);
+    }
+    .mvi-badge--void {
+      color: #efd6ff;
+      border-color: rgba(192,124,255,.55);
+      background: rgba(192,124,255,.12);
+      box-shadow: 0 0 14px rgba(192,124,255,.16);
+    }
+    .mvi-badge--abyss {
+      color: #ffc2cf;
+      border-color: rgba(255,77,109,.55);
+      background: rgba(255,77,109,.1);
+      box-shadow: 0 0 14px rgba(255,77,109,.14);
+    }
+    .mvi-meter {
+      display: grid;
+      grid-template-columns: 4.1rem minmax(0, 1fr) 4.4rem;
+      align-items: center;
+      gap: .5rem;
+      margin: .42rem 0;
+    }
+    .mvi-meter-name { color: var(--mvi-muted); font-size: .8rem; }
+    .mvi-track {
+      position: relative;
+      height: .5rem;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 999px;
+      background: rgba(0,0,0,.55);
+    }
+    .mvi-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--mvi-soul), var(--mvi-mech));
+      box-shadow: 0 0 12px rgba(94,242,192,.35);
+      transition: width .35s ease;
+    }
+    .mvi-fill::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+      animation: mvi-flow 2.4s linear infinite;
+    }
+    .mvi-fill[data-kind="negative"] {
+      background: linear-gradient(90deg, var(--mvi-abyss), var(--mvi-void));
+      box-shadow: 0 0 12px rgba(255,77,109,.35);
+    }
+    .mvi-meter-value { color: var(--mvi-text); font-size: .76rem; text-align: right; }
+    .mvi-person {
+      border: 1px solid var(--mvi-line-dim);
+      border-radius: 5px;
+      background: rgba(9,11,17,.72);
+    }
+    .mvi-person + .mvi-person { margin-top: .5rem; }
+    .mvi-person summary {
+      display: flex;
+      justify-content: space-between;
+      gap: .6rem;
+      padding: .62rem .75rem;
+      cursor: pointer;
+      list-style: none;
+    }
+    .mvi-person summary::-webkit-details-marker { display: none; }
+    .mvi-person summary:focus-visible { outline: 1px solid var(--mvi-relic); outline-offset: -2px; }
+    .mvi-person-name { font-weight: 700; color: var(--mvi-text); }
+    .mvi-person-status { color: var(--mvi-soul); text-align: right; font-size: .84rem; }
+    .mvi-person-body { padding: 0 .75rem .72rem; border-top: 1px dashed rgba(192,124,255,.2); }
+    .mvi-person-meta { margin: .5rem 0; color: var(--mvi-muted); font-size: .82rem; }
+    .mvi-edge {
+      padding: .5rem 0;
+      border-top: 1px dashed rgba(124,199,255,.16);
+    }
+    .mvi-edge:first-child { border-top: 0; padding-top: 0; }
+    .mvi-event-id { color: var(--mvi-relic); font-weight: 700; letter-spacing: .1em; }
+    .mvi-list { margin: .3rem 0 0; padding-left: 1.1rem; }
+    .mvi-list li + li { margin-top: .24rem; }
+    .mvi-btn {
+      margin-top: .6rem;
+      padding: .44rem .9rem;
+      border: 1px solid rgba(255,217,119,.55);
+      border-radius: 4px;
+      color: #ffe9a3;
+      background: linear-gradient(135deg, rgba(255,217,119,.14), rgba(192,124,255,.1));
+      font: inherit;
+      font-size: .82rem;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+    .mvi-btn:hover:not(:disabled), .mvi-btn:focus-visible:not(:disabled) {
+      border-color: var(--mvi-relic);
+      color: #fff3c9;
+      box-shadow: 0 0 16px rgba(255,217,119,.24);
+    }
+    .mvi-btn:disabled { opacity: .45; cursor: not-allowed; }
+    .mvi-foot {
+      padding: .58rem .95rem .75rem;
+      border-top: 1px solid var(--mvi-line);
+      color: var(--mvi-muted);
+      font-size: .74rem;
+      text-align: center;
+      background: rgba(0,0,0,.2);
+    }
+    @keyframes mvi-seal-breathe {
+      0%, 100% { opacity: .72; transform: scale(.96); box-shadow: 0 0 12px rgba(255,217,119,.12), inset 0 0 12px rgba(0,0,0,.8); }
+      50% { opacity: 1; transform: scale(1.04); box-shadow: 0 0 24px rgba(94,242,192,.28), inset 0 0 12px rgba(0,0,0,.8); }
+    }
+    @keyframes mvi-alert-pulse {
+      0%, 100% { box-shadow: 0 0 0 rgba(255,77,109,0); }
+      50% { box-shadow: 0 0 22px rgba(255,77,109,.3); }
+    }
+    @keyframes mvi-flow {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @media (max-width: 640px) {
+      .mvi-grid { grid-template-columns: 1fr; }
+      .mvi-meter { grid-template-columns: 3.6rem minmax(0, 1fr) 3.8rem; }
+      .mvi-version { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .mvi *, .mvi *::before, .mvi *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+
+  <div class="mvi-frame">
+    <header class="mvi-header">
+      <span class="mvi-seal" aria-hidden="true"></span>
+      <div class="mvi-brand">
+        <h3 class="mvi-title">死界药剂师手札 · 多模态视界仪</h3>
+        <p class="mvi-subtitle">Death Realm Alchemist's Codex · Multi-Modal Observatory</p>
+      </div>
+      <span class="mvi-version">《诡异药剂师》v0.9.1.1</span>
+    </header>
+
+    <div id="mvi-error" class="mvi-alert" role="status" hidden></div>
+
+    <div class="mvi-panels">
+      <section class="mvi-panel">
+        <button class="mvi-panel-head" type="button" data-mvi-open="mvi-current" aria-expanded="true">
+          <span class="mvi-panel-icon">🩸</span>
+          <span class="mvi-panel-title">体魄与理智</span>
+          <span class="mvi-panel-tag">BODY &amp; MIND</span>
+          <span class="mvi-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mvi-panel-body" id="mvi-current">
+          <div class="mvi-grid">
+            <article class="mvi-card">
+              <p class="mvi-label">👤 林恩·基础体魄与身份</p>
+              <p class="mvi-value" id="mvi-linen">读取中……</p>
+              <div id="mvi-identities"></div>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">🎯 当前明确目标</p>
+              <p class="mvi-value" id="mvi-task">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-task-note"></p>
+            </article>
+            <article class="mvi-card mvi-card--wide">
+              <p class="mvi-label">🧪 压力 · 道德 · 罪恶 · 复苏度</p>
+              <div id="mvi-linen-status"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mvi-panel">
+        <button class="mvi-panel-head" type="button" data-mvi-open="mvi-events" aria-expanded="false">
+          <span class="mvi-panel-icon">📜</span>
+          <span class="mvi-panel-title">大势与事件</span>
+          <span class="mvi-panel-tag">OMEN &amp; CRISIS</span>
+          <span class="mvi-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mvi-panel-body" id="mvi-events" hidden>
+          <div class="mvi-grid">
+            <article class="mvi-card">
+              <p class="mvi-label">🌐 世界宏观大势 S0–S17</p>
+              <p class="mvi-value" id="mvi-phase">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-phase-progress"></p>
+              <div id="mvi-world-clues"></div>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">📍 地点与场景时序</p>
+              <p class="mvi-value" id="mvi-location">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-time"></p>
+            </article>
+            <article class="mvi-card mvi-card--wide mvi-card--alert" id="mvi-current-event-card">
+              <p class="mvi-label">⚡ 当前唯一活跃重大危机</p>
+              <p class="mvi-value" id="mvi-current-event">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-current-event-progress"></p>
+            </article>
+            <article class="mvi-card mvi-card--wide" id="mvi-event-detail-card">
+              <p class="mvi-label">⚡ 事件因果详情</p>
+              <p class="mvi-value" id="mvi-event-title">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-event-detail"></p>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">👁️ 近期预兆</p>
+              <p class="mvi-value" id="mvi-omen-title">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-omen-detail"></p>
+              <button class="mvi-btn" id="mvi-advance-btn" type="button" disabled>读取中……</button>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">📜 最近事件结算</p>
+              <ul class="mvi-list" id="mvi-results"></ul>
+            </article>
+            <article class="mvi-card mvi-card--wide">
+              <p class="mvi-label">⚖️ 事件六态法则</p>
+              <p class="mvi-value mvi-muted">
+                <span class="mvi-chip">未触发：尚未进入预兆</span>
+                <span class="mvi-chip">预兆：方向模糊、即将登场</span>
+                <span class="mvi-chip">活跃：唯一重大事件</span>
+                <span class="mvi-chip">变形：替代结果稳定收束</span>
+                <span class="mvi-chip">完成：正常收束</span>
+                <span class="mvi-chip">取消：因果不复存在</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mvi-panel">
+        <button class="mvi-panel-head" type="button" data-mvi-open="mvi-people" aria-expanded="false">
+          <span class="mvi-panel-icon">👥</span>
+          <span class="mvi-panel-title">深渊人物</span>
+          <span class="mvi-panel-tag">ABYSSAL CAST</span>
+          <span class="mvi-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mvi-panel-body" id="mvi-people" hidden>
+          <div class="mvi-grid">
+            <article class="mvi-card mvi-card--wide">
+              <p class="mvi-label">👥 已解锁人物矩阵</p>
+              <div id="mvi-relations"><p class="mvi-muted">读取中……</p></div>
+            </article>
+            <article class="mvi-card mvi-card--wide">
+              <p class="mvi-label">🕸️ 阵营间关系网络</p>
+              <div id="mvi-edges"><p class="mvi-muted">读取中……</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mvi-panel">
+        <button class="mvi-panel-head" type="button" data-mvi-open="mvi-system" aria-expanded="false">
+          <span class="mvi-panel-icon">🔮</span>
+          <span class="mvi-panel-title">药囊·咒瞳与圣遗</span>
+          <span class="mvi-panel-tag">CURSE &amp; RELIC</span>
+          <span class="mvi-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mvi-panel-body" id="mvi-system" hidden>
+          <div class="mvi-grid">
+            <article class="mvi-card mvi-card--void">
+              <p class="mvi-label">🔮 咒瞳军械库</p>
+              <div id="mvi-sys-curse-skills"></div>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">⚡ 当前所受诅咒 / 契约</p>
+              <div id="mvi-sys-active-curses"></div>
+            </article>
+            <article class="mvi-card mvi-card--relic">
+              <p class="mvi-label">🗡️ 随身圣遗物与医疗器具</p>
+              <div id="mvi-sys-relics"></div>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">🧪 深渊行医与成长技能</p>
+              <p class="mvi-value" id="mvi-sys-level">读取中……</p>
+              <div id="mvi-sys-skills"></div>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">📖 恶灵与物品图鉴</p>
+              <ul class="mvi-list" id="mvi-sys-codex"></ul>
+            </article>
+            <article class="mvi-card">
+              <p class="mvi-label">🏆 深渊成就</p>
+              <ul class="mvi-list" id="mvi-sys-achievements"></ul>
+            </article>
+            <article class="mvi-card mvi-card--wide">
+              <p class="mvi-label">💬 系统日志与世界通知</p>
+              <p class="mvi-value" id="mvi-sys-notice">读取中……</p>
+              <p class="mvi-value mvi-muted" id="mvi-sys-event-notice"></p>
+              <p class="mvi-value mvi-muted" id="mvi-sys-task" style="display:none;"></p>
+              <p class="mvi-value mvi-muted" id="mvi-sys-task-stage" style="display:none;"></p>
+              <p class="mvi-value mvi-muted" id="mvi-sys-task-note" style="display:none;"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="mvi-foot">人物页只显示已解锁信息；姓名解锁不代表登场。取消态不自动推进，由正文核对局部依赖。恶堕值只随玩家明确行动推进。</footer>
+  </div>
+
+  <script>
+    (() => {
+      const FALLBACK_STATE = {
+  "元数据": {
+    "卡名": "《诡异药剂师》v0.9.1",
+    "版本": "0.9.1"
+  },
+  "世界": {
+    "阶段编号": "S0",
+    "阶段名称": "药店接管期",
+    "模糊阶段进度": "初期",
+    "当前场景时间": "E02收尾·午后",
+    "地点": "游魂巷·血锯药剂店",
+    "氛围": "午后的药剂店，柜台上的盘子里放着从血娃娃胃中取出的器官",
+    "大局线索": []
+  },
+  "林恩": {
+    "年龄": 17,
+    "身体状况": "正常",
+    "当前身份": [
+      "血锯学徒",
+      "临时店主"
+    ],
+    "等级": 2,
+    "技能": [
+      "随机诊断术（被动，系统辅助诊断）",
+      "中级家务（901/1000）",
+      "初级药剂制造（90/100）",
+      "初级手术（20/100）"
+    ],
+    "成就": [
+      "隐藏任务·血娃娃找妈妈（完成度2%）"
+    ],
+    "图鉴已解锁": [
+      "血娃娃（血肉恶灵）",
+      "血娃娃的右眼（稀有物品）"
+    ],
+    "关键诅咒或契约": [],
+    "当前明确目标": "研究盘中的器官线索，追查血娃娃的妈妈",
+    "最近明确指令": "",
+    "压力": 0,
+    "道德": 0,
+    "罪恶": 0,
+    "复苏度": 0,
+    "替死娃娃剩余": 0,
+    "天使之吻状态": false,
+    "根系网络权限": false,
+    "巨像网络权限": false,
+    "咒瞳状态": "完好·可用",
+    "拟化技能": "精通（+0）"
+  },
+  "事件": {
+    "锚点状态": {
+      "E01": {
+        "标题": "系统觉醒与开店",
+        "状态": "完成",
+        "收尾": true
+      },
+      "E02": {
+        "标题": "血娃娃上门与找妈妈任务",
+        "状态": "活跃",
+        "收尾": true
+      },
+      "E03": {
+        "标题": "猪头魔与恶灵血婴",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E04": {
+        "标题": "猎魔人治疗与传说左轮",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E05": {
+        "标题": "不眠夜与小小牙科",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E06": {
+        "标题": "诅咒清除能力与鬼婴塑形",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E07": {
+        "标题": "血衣寻子与鬼婴萌化化解",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E08": {
+        "标题": "暴击药剂与视界曝光",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E09": {
+        "标题": "血衣鸿门宴与诅咒绑定",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E10": {
+        "标题": "视界经营与玥玥治疗",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E11": {
+        "标题": "血夜地狱行者与左左诞生",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E12": {
+        "标题": "血肉灾变与左手共存",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E13": {
+        "标题": "猎杀者夜袭与信使线",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E14": {
+        "标题": "瘦长鬼影手术与024诊断",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E15": {
+        "标题": "求援信与小小赴约",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E16": {
+        "标题": "械魔大军与猎神者",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E17": {
+        "标题": "小小介绍棒医生",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E18": {
+        "标题": "倒吊塔决战与协会覆灭",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E19": {
+        "标题": "猎头者家族绑定",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E20": {
+        "标题": "师徒归来与阶段收束",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E21": {
+        "标题": "魔鬼训练与首次独立出诊",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E22": {
+        "标题": "幸福之家的血肉晚宴",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E23": {
+        "标题": "异域同乡与爱丽丝初愈",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E24": {
+        "标题": "诅咒复燃与古堡围猎",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E25": {
+        "标题": "双面伯爵与心脑之汤",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E26": {
+        "标题": "爱丽丝重生与母女终局",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E27": {
+        "标题": "白逸遣返与九州异变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E28": {
+        "标题": "爱丽丝日常与十四病战蜥",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E29": {
+        "标题": "传奇赠药与夜医启程",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E30": {
+        "标题": "血月狼群与寂静镇试诊",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E31": {
+        "标题": "哭泣小丑与血肉灾变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E32": {
+        "标题": "小丑余波与夜医接纳",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E33": {
+        "标题": "夜医试炼与白夜旧梦",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E34": {
+        "标题": "倒吊天使与夜医授职",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E35": {
+        "标题": "左左拟化与蓝星鬼袭",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E36": {
+        "标题": "左左醉酒与酒店暧昧",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E37": {
+        "标题": "白逸召唤降临与总局清剿",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E38": {
+        "标题": "审问王蓓与根源关系网",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E39": {
+        "标题": "暴食血祭与血娃娃回收",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E40": {
+        "标题": "户籍锁定与血娃娃共情",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E41": {
+        "标题": "白家休整与机械造物",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E42": {
+        "标题": "跳车寻母与林樱初遇",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E43": {
+        "标题": "回归汇报与被收教子",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E44": {
+        "标题": "盗版史诗药剂与巨像脑情报",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E45": {
+        "标题": "召唤四阶段与无瞳法阵",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E46": {
+        "标题": "拟化惩罚与踢裆反杀",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E47": {
+        "标题": "群星圣堂实习与误麻院长",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E48": {
+        "标题": "接诊喵喵与002盗书",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E49": {
+        "标题": "犬皮改造真相与千人寻亲",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E50": {
+        "标题": "猫娘药剂与喵喵破茧",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E51": {
+        "标题": "黑弦月到货与保护契约",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E52": {
+        "标题": "森一夜袭与四次重生",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E53": {
+        "标题": "三重算计与平等契约",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E54": {
+        "标题": "疫医暗面与最高级保护",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E55": {
+        "标题": "喵喵宠物与家人复仇",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E56": {
+        "标题": "史莱姆整形与游荡者情报",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E57": {
+        "标题": "整备出征与收编小宝贝",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E58": {
+        "标题": "前线观战与银色幻想降临",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E59": {
+        "标题": "斩臂反击与三根源驰援",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E60": {
+        "标题": "圣子推定与圣徒叛变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E61": {
+        "标题": "突围反杀与夺萃之镰",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E62": {
+        "标题": "折跃入城与疫医伪装",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E63": {
+        "标题": "堡垒解围与欲望教派",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E64": {
+        "标题": "诅咒之城余韵",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E65": {
+        "标题": "疫医X博士潜入与指挥官拉拢示爱",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E66": {
+        "标题": "电钻充能暴走与人偶情感暴涨",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E67": {
+        "标题": "纳米风暴追杀与快感冲击蜂巢",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E68": {
+        "标题": "血肉养蛊与病毒反噬纳米风暴",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E69": {
+        "标题": "黑弦月签人偶之誓",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E70": {
+        "标题": "撤离堡垒揭巨像之心",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E71": {
+        "标题": "设伏反打银色幻想",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E72": {
+        "标题": "核爆硬抗捕获机械姬",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E73": {
+        "标题": "猎魔左轮处决与破防全部失败",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E74": {
+        "标题": "快感冲击逼供缴双剑与龙狙",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E75": {
+        "标题": "触发恶堕向机械姬调教任务",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E76": {
+        "标题": "全城机械紊乱与死星结晶交易",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E77": {
+        "标题": "万机之神投影降临贯穿取心",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E78": {
+        "标题": "巨像网络苏醒与捣翻万机之神",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E79": {
+        "标题": "黑弦月只身赴死与求婚被拒",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E80": {
+        "标题": "直死书与六诅咒同归于尽",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E81": {
+        "标题": "黑弦月肉身挡轰炸与解雇无效",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E82": {
+        "标题": "白发异变与虚握差杀万机之神",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E83": {
+        "标题": "艾雯爵士救场与八音盒扰泰坦",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E84": {
+        "标题": "吞钱逼斗志与认义弟立执念",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E85": {
+        "标题": "强吻黑弦月遭漏电惩罚",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E86": {
+        "标题": "工伤条款强制治疗黑弦月",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E87": {
+        "标题": "锁与钥匙比喻诱骗左左签据",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E88": {
+        "标题": "恒星熔炉锻造人偶之臂",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E89": {
+        "标题": "求左左做爱解诅咒被拒",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E90": {
+        "标题": "救回乱流深处的恶灵妹妹",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E91": {
+        "标题": "妹妹误触性释放与骨科召唤",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E92": {
+        "标题": "诱捕左左强行性释放解咒",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E93": {
+        "标题": "入视界建群与喵喵参战",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E94": {
+        "标题": "三蜂巢饱和轰炸与母树降临",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E95": {
+        "标题": "银色幻想恨意暴增与总攻",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E96": {
+        "标题": "血肉利维坦突现与战局逆转",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E97": {
+        "标题": "三大根源混战与利维坦升空",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E98": {
+        "标题": "赛博飞升升格与喵喵血仇",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E99": {
+        "标题": "冤家组队与12小时禁杀契约",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E100": {
+        "标题": "利维坦走廊潜伏与老六挂机",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E101": {
+        "标题": "夺舍洛什与芬芳尖啸者嘴遁",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E102": {
+        "标题": "机械姬恶堕大计与荣升执事",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E103": {
+        "标题": "腐败执事生活与全厂物资收买",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E104": {
+        "标题": "以M破防机械姬与苦肉计夺权",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E105": {
+        "标题": "密室除患与全舰生化下毒",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E106": {
+        "标题": "木偶咒印与人偶夫人真相",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E107": {
+        "标题": "傀儡接管与双簧大戏诱敌",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E108": {
+        "标题": "第一腔室掀牌与全舰异变灾变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E109": {
+        "标题": "利维坦鲸落与替身破死书",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E110": {
+        "标题": "开颅刑讯与兄长残躯回溯",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E111": {
+        "标题": "恶面堕天使降临与巨头噬神",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E112": {
+        "标题": "以M亵渎神明与红茶包唤醒主母",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E113": {
+        "标题": "巨像红芒爆发与深层空间降临",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E114": {
+        "标题": "万机梦魇与解救巨像之舌",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E115": {
+        "标题": "母树现身色诱与爆头自戕博弈",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E116": {
+        "标题": "荒原漫步心智交锋与耍赖骑乘",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E117": {
+        "标题": "往昔恐惧投影生命树与幼稚园",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E118": {
+        "标题": "幻境以M快打与欲望母树交融",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E119": {
+        "标题": "替死复活晋升与一丝神性觉醒",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E120": {
+        "标题": "艾雯失忆死战与巨像之门开启",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E121": {
+        "标题": "知识禁库渡鸦寓言与自我肢解",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E122": {
+        "标题": "紫罗兰法阵决裂与剥离左左",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E123": {
+        "标题": "巨像重组与破宇冲向地狱边界",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E124": {
+        "标题": "直面狂乱色彩与极限断闸救赎",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E125": {
+        "标题": "废墟渡鸦誓言与咒瞳绝唱挡刀",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E126": {
+        "标题": "银发女王萝莉诞生与六根源对峙",
+        "状态": "未触发",
+        "收尾": false
+      }
+    },
+    "唯一活跃事件": {
+      "事件ID": "E02",
+      "标题": "血娃娃上门与找妈妈任务",
+      "地点": "血锯药剂店门前",
+      "参与者": [
+        "血娃娃"
+      ],
+      "状态": "活跃",
+      "紧迫度": "中",
+      "模糊期限": "正在等待回应",
+      "进展": "血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子",
+      "幕后停止点": "等待林恩处置盘中线索或决定下一步"
+    },
+    "近期预兆": {
+      "事件ID": "",
+      "方向": "",
+      "地点": "",
+      "参与者": [],
+      "紧迫度": "无",
+      "模糊期限": ""
+    },
+    "最近结果": [],
+    "阶段总结": [],
+    "原创重大事件待定队列": []
+  },
+  "关系": {
+    "左左": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未诞生",
+      "处境": "尚未形成独立个体",
+      "关系类型": "尚未诞生",
+      "人物阶段": "未诞生",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；她以独立意识身份与林恩共生，色色由双方互动自然推进，不被外观形态设限",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "血锯": {
+      "解锁": true,
+      "在场": false,
+      "生存状态": "暂离",
+      "位置": "游魂巷外，具体未知",
+      "处境": "离店两天",
+      "关系类型": "师徒",
+      "人物阶段": "师父暂时离店",
+      "好感": 25,
+      "信赖": 15,
+      "戒备": 10,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [
+        "把药剂店与地窖钥匙暂时交给林恩"
+      ],
+      "边界": "固定非恋爱师徒；师徒情谊不等于无条件兜底",
+      "关键记忆": [
+        "血锯留下短笺并暂时离店"
+      ],
+      "最近互动": "离店前把店铺交给林恩照看"
+    },
+    "血衣女士": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "45号血衣住所",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未接触",
+      "人物阶段": "寻子线未公开",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 20,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [
+        "血娃娃胃中取出不知名女人的头发、耳朵与梳子（疑似寻母线索）"
+      ],
+      "边界": "治疗、孩子与保护责任不能制造亲密同意；恶堕值只随玩家明确行动推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "小小": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "牙痛事件尚未进入预兆",
+      "关系类型": "未接触",
+      "人物阶段": "命名前",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；她以根源级泰坦与未婚妻身份与林恩相处，色色由双方互动自然推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "人偶夫人": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "人偶庄园或外出，具体未知",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未接触",
+      "人物阶段": "归来前",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 15,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "治疗与契约的权力压力解除后才可能讨论平等亲密；恶堕值只随玩家明确行动推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "泰坦头颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "家庭记忆线尚未公开",
+      "关系类型": "未接触",
+      "人物阶段": "资料锁定",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；吸引恒为0",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "巫神头颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "家庭记忆线尚未公开",
+      "关系类型": "未接触",
+      "人物阶段": "资料锁定",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；吸引恒为0；恶堕值初始0，是否变化由玩家行动形成新事实后记录",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "小宝贝": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "血锯药剂店后院地窖",
+      "处境": "等待例行投喂",
+      "关系类型": "临时看管人与被投喂者",
+      "人物阶段": "两年投喂期",
+      "好感": 5,
+      "信赖": 0,
+      "戒备": 20,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [
+        "被喂两年过期药剂，好感极低但未伤人"
+      ],
+      "边界": "固定非恋爱；不使用饥饿或栖身处压力强迫服从",
+      "关键记忆": [
+        "每日清晨投喂过期药剂，地窖发出暴怒嘶吼"
+      ],
+      "最近互动": "开店阶段清晨投喂过期药剂，好感-10"
+    },
+    "爱丽丝": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；她以存世数百年的地缚灵身份与林恩相处，色色由双方互动自然推进，治疗与地缚依赖不构成同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "白逸": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱同乡与盟友；治疗、去势后遗症和跨界依赖不能制造亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "倒吊天使": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "关系方向开放；原作之吻、任务、高好感、授职与治疗均不代表玩家接受关系",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "白夜": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱前辈；理念认可、特批资格与引见主母不能制造亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "渡鸦": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱夜医同僚；考验、救治、审查与接纳不等于完全信任",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "黑颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱夜医同僚；短时恢复生前肉身不改变边界",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "猪头屠夫": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱幕后反派；交易、送达与救命事实不构成亲密关系",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "哭泣小丑": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱体内诅咒人格；侵蚀、替代人格和显化均不能被叙述为亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "黑白小丑": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱独立反派；与哭泣小丑显化体分离，林恩当前不知道其身份与山巅密谈",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "黑弦月": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "人偶庄园（未到货）",
+      "处境": "尚未与林恩接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；人偶契约与充能依赖不构成同意，色色由双方互动自然推进（含人偶主动逆推）",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "喵喵": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "尚未与林恩接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；她以猫耳娘少女身份与林恩相处，宠物依恋与色色由双方互动自然推进",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "林樱": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "蓝星·东北黑龙地区县城",
+      "处境": "未与林恩正式接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕全面开放；平行世界水仙线，不设血缘限制；身份疑云与触碰记忆闪现待后续揭晓",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "艾雯爵士": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "黑夜城",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱义兄与师长；吸引与恶堕恒为0，关系以信任与亲情推进",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "羽毛笔": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "002病房",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕字段建立、初始0、随明确互动变动；怪谈存在，素材不足处按'不详'处理",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "a01银色幻想": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "诅咒之城（机械神教侧）",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕字段建立、初始0、随明确互动变动（机娘开发向）；敌对立场不取消字段推进",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "欲望母树": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "诅咒之城（欲望母树派系）",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕字段建立、初始0、随明确互动变动；现阶段以'有趣后辈'态度为起点，素材不足处按'不详'处理",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "万机之神": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；机械神教根源与敌对立场不构成亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "巨像之脑": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "恋爱、吸引与恶堕字段建立、初始0、随明确互动变动；素材不足处按'不详'处理",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "血肉支配者": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "涩涩度": 0,
+      "情感开发度": 0,
+      "驯服度": 0,
+      "崩坏值": 0,
+      "恨意值": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；恒锁定，只按最低限度记录幕后根源",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    }
+  },
+  "角色关系": [],
+  "系统": {
+    "当前任务": "血娃娃找妈妈（隐藏任务）",
+    "任务阶段": "追查线索（完成度2%）",
+    "任务状态": "进行中",
+    "任务说明": "帮助血娃娃找到她的母亲。盘中不知名女人的头发、耳朵与梳子是当前线索。主线‘活过血夜’继续有效。",
+    "图鉴": [],
+    "成就": [],
+    "最近提示": "系统可辅助诊断，但不替林恩决策。",
+    "事件通知": "E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。",
+    "更新模式": "同轮更新；可选独立预设"
+  }
+};
+let mvuAvailable = false;
+      let mvuWritable = false;
+      let persistedDataReady = false;
+      let currentIsLatest = false;
+      let writeInFlight = false;
+      let disposed = false;
+      let renderedEvents = FALLBACK_STATE.事件;
+      const BRIDGE_PAIRS = [
+        { from: 'E01', to: 'E02', title: '血娃娃上门与找妈妈任务', dir: '门外阴影中出现抱着断臂洋娃娃的小身影', loc: '血锯药剂店门外', urgency: '低', deadline: '营业初' },
+        { from: 'E02', to: 'E03', title: '猪头魔与恶灵血婴', dir: '门外传来沉重脚步与猪类哼哼，影子捂着腹部', loc: '血锯药剂店门外', urgency: '中', deadline: '傍晚入夜前' },
+        { from: 'E03', to: 'E04', title: '猎魔人治疗与传说左轮', dir: '傍晚有背着猎魔弩的瘦高男人带伤上门', loc: '血锯药剂店', urgency: '中', deadline: '当日' },
+        { from: 'E04', to: 'E05', title: '不眠夜与小小牙科', dir: '夜幕降临后，门外传来伪装与沉重的脚步', loc: '血锯药剂店门外', urgency: '高', deadline: '午夜' },
+        { from: 'E05', to: 'E06', title: '诅咒清除能力与鬼婴塑形', dir: '黎明敲门声，店内的鬼婴开始躁动', loc: '血锯药剂店', urgency: '中', deadline: 'E05收尾后的黎明' },
+        { from: 'E06', to: 'E07', title: '血衣寻子与鬼婴萌化化解', dir: '午后红衣女人登门寻子，语气温柔眼神冰冷', loc: '血锯药剂店', urgency: '中', deadline: '当日' },
+        { from: 'E07', to: 'E08', title: '暴击药剂与视界曝光', dir: '黑甲骑士与猎魔人先后购药，互相盯着头顶', loc: '血锯药剂店', urgency: '低', deadline: '当日' },
+        { from: 'E08', to: 'E09', title: '血衣鸿门宴与诅咒绑定', dir: '45号递来请柬，黄昏亮灯', loc: '45号血衣住所', urgency: '中', deadline: '黄昏' },
+        { from: 'E09', to: 'E10', title: '视界经营与玥玥治疗', dir: '视界店铺线索与门外妖精的断臂', loc: '血锯药剂店与视界', urgency: '中', deadline: '当日' },
+        { from: 'E10', to: 'E11', title: '血夜地狱行者与左左诞生', dir: '血锯血字警告，门外金属与血肉摩擦的脚步声', loc: '血锯药剂店', urgency: '极高', deadline: '当夜' },
+        { from: 'E11', to: 'E12', title: '血肉灾变与左手共存', dir: '怪物体内的茧囊路径暴露，药剂与小宝贝处于可用范围', loc: '游魂巷战场', urgency: '极高', deadline: '当夜' },
+        { from: 'E12', to: 'E13', title: '猎杀者夜袭与信使线', dir: '夜里猎杀者翻墙，机械眼亮起', loc: '游魂巷', urgency: '高', deadline: '当夜' },
+        { from: 'E13', to: 'E14', title: '瘦长鬼影手术与024诊断', dir: '瘦长鬼影捂着腰复诊，柜台清单比记性诚实', loc: '血锯药剂店', urgency: '低', deadline: '猎杀者夜袭收尾后的复诊时段' },
+        { from: 'E14', to: 'E15', title: '求援信与小小赴约', dir: '空白信纸与待命的虚空折跃龟摆在桌边，联络对象尚未决定', loc: '血锯药剂店', urgency: '中', deadline: 'E14诊疗收尾后' },
+        { from: 'E15', to: 'E16', title: '械魔大军与猎神者', dir: '巷口地面震动，军团气息逼近', loc: '游魂巷', urgency: '极高', deadline: '即将' },
+        { from: 'E16', to: 'E17', title: '小小介绍棒医生', dir: '小小把林恩叼到父母面前，用婴儿语介绍', loc: '游魂巷战场', urgency: '高', deadline: '当场' },
+        { from: 'E17', to: 'E18', title: '倒吊塔决战与协会覆灭', dir: '倒吊塔升空，巨像012号缓缓站起', loc: '凄凉荒野·倒吊塔', urgency: '极高', deadline: '即将' },
+        { from: 'E18', to: 'E19', title: '猎头者家族绑定', dir: '巫神头颅卷住衣领，另一只触手掏出录音笔', loc: '倒吊塔废墟', urgency: '中', deadline: '当场' },
+        { from: 'E19', to: 'E20', title: '师徒归来与阶段收束', dir: '巷外传来熟悉的沉重脚步与拍门声', loc: '血锯药剂店门外', urgency: '中', deadline: '即将' },
+        { from: 'E20', to: 'E21', title: '魔鬼训练与首次独立出诊', dir: '血锯把幸福之家正式订单与地图放到柜台上', loc: '血锯药剂店', urgency: '中', deadline: '临行前' },
+        { from: 'E21', to: 'E22', title: '幸福之家的血肉晚宴', dir: '古堡大门打开，过度热情的一家人迎出门外', loc: '幸福之家古堡', urgency: '中', deadline: '抵达后' },
+        { from: 'E22', to: 'E23', title: '异域同乡与爱丽丝初愈', dir: '白逸以汉语留下秘密会面的暗号', loc: '幸福之家古堡', urgency: '高', deadline: '宴席尚未结束' },
+        { from: 'E23', to: 'E24', title: '诅咒复燃与古堡围猎', dir: '刚恢复的暖意退去，墙体重新传出低语', loc: '幸福之家古堡', urgency: '高', deadline: '初治后' },
+        { from: 'E24', to: 'E25', title: '双面伯爵与心脑之汤', dir: '高台仍有最后一名家人守住通往高塔的路', loc: '幸福之家高台', urgency: '极高', deadline: '围猎仍在继续' },
+        { from: 'E25', to: 'E26', title: '爱丽丝重生与母女终局', dir: '遗骸、心脏与真相已经齐备，冷冻库手术台等待重建', loc: '幸福之家冷冻库', urgency: '极高', deadline: '玛丽追击中' },
+        { from: 'E26', to: 'E27', title: '白逸遣返与九州异变', dir: '返店后发现少了一个人，白逸的身体边缘开始透明', loc: '血锯药剂店', urgency: '高', deadline: '召唤时效将尽' },
+        { from: 'E27', to: 'E28', title: '爱丽丝日常与十四病战蜥', dir: '跨界风波暂歇，药店重新开门营业', loc: '游魂巷药剂店', urgency: '低', deadline: '返店营业时' },
+        { from: 'E28', to: 'E29', title: '传奇赠药与夜医启程', dir: '门外出现熟悉脚步，柜台上多出两瓶传奇药剂', loc: '血锯药剂店', urgency: '中', deadline: '启程前' },
+        { from: 'E29', to: 'E30', title: '血月狼群与寂静镇试诊', dir: '血月荒野出现狼群包围，远处可见寂静镇灯火', loc: '诅咒之领', urgency: '高', deadline: '抵达诅咒之领后' },
+        { from: 'E30', to: 'E31', title: '哭泣小丑与血肉灾变', dir: '连续诊断后出现哭泣轮廓，认知开始错位', loc: '寂静镇', urgency: '极高', deadline: '异常正在加深' },
+        { from: 'E31', to: 'E32', title: '小丑余波与夜医接纳', dir: '夜医先抢救伤者并审问诅咒来源', loc: '寂静镇', urgency: '中', deadline: '灾变收束后' },
+        { from: 'E32', to: 'E33', title: '夜医试炼与白夜旧梦', dir: '登记完成后，候选人被带入没有正常器械的试炼大厅', loc: '黑夜之城', urgency: '中', deadline: '取得候选资格后' },
+        { from: 'E33', to: 'E34', title: '倒吊天使与夜医授职', dir: '白夜带路进入锁链遍布的地下殿堂', loc: '黑夜之城地下殿堂', urgency: '高', deadline: '资格确认后' },
+        { from: 'E34', to: 'E35', title: '左左拟化与蓝星鬼袭', dir: '拟化能力首次可供实测，九州调查局同步推进白逸审讯', loc: '黑夜之城与九州魔都', urgency: '中', deadline: '授职后' },
+        { from: 'E35', to: 'E36', title: '左左醉酒与酒店暧昧', dir: '授勋已毕，裹袍里的左左一路蹬踹挣扎，酒馆灯牌在前方亮起', loc: '黑夜城', urgency: '低', deadline: '授勋后' },
+        { from: 'E36', to: 'E37', title: '白逸召唤降临与总局清剿', dir: '法阵爆出邪气，白逸以林恩特征与一元硬币为靶向咒语念动召唤', loc: '超自然总局地下收容区', urgency: '极高', deadline: '召唤发动时' },
+        { from: 'E37', to: 'E38', title: '审问王蓓与根源关系网', dir: '清剿暂歇，灌下恶灵显形药剂的王蓓可供审问，被困者仍在各区域等待救援', loc: '超自然总局', urgency: '中', deadline: '清剿收尾时' },
+        { from: 'E38', to: 'E39', title: '暴食血祭与血娃娃回收', dir: '总局广场刻下【暴食】血祭法阵，克勒斯在尸堆间化黑藤遁走', loc: '魔都广场', urgency: '极高', deadline: '血祭启动时' },
+        { from: 'E39', to: 'E40', title: '户籍锁定与血娃娃共情', dir: '血娃娃被制服后安静下来，总局房间里的电视与电脑可供检索', loc: '总局豪华房间', urgency: '低', deadline: '善后休整时' },
+        { from: 'E40', to: 'E41', title: '白家休整与机械造物', dir: '白逸邀请林恩回别墅休整，换洗衣物与证件已在准备', loc: '白逸别墅', urgency: '低', deadline: '休整期' },
+        { from: 'E41', to: 'E42', title: '跳车寻母与林樱初遇', dir: '火车飞驰中林恩身体闪烁，面板跳出【回归倒计时】', loc: '驶往黑龙的列车', urgency: '极高', deadline: '倒计时归零前' },
+        { from: 'E42', to: 'E43', title: '回归汇报与被收教子', dir: '漆黑裂隙把林恩拖回黑夜城，左左正等在坠落点旁', loc: '黑夜城', urgency: '中', deadline: '回归后' },
+        { from: 'E43', to: 'E44', title: '盗版史诗药剂与巨像脑情报', dir: '主母宣布亲授史诗药剂【自缚天使的怜悯】，仪式塔传来第一声炸炉', loc: '黑夜城仪式塔', urgency: '中', deadline: '炼药期' },
+        { from: 'E44', to: 'E45', title: '召唤四阶段与无瞳法阵', dir: '主母让林恩去找艾雯爵士办理专属召唤仪式，仪式塔西侧大门敞开', loc: '仪式塔', urgency: '中', deadline: '炼成后' },
+        { from: 'E45', to: 'E46', title: '拟化惩罚与踢裆反杀', dir: '离开仪式塔，左左翻起旧账嬉笑，小巷无人在旁', loc: '仪式塔外小巷', urgency: '低', deadline: '报到前' },
+        { from: 'E46', to: 'E47', title: '群星圣堂实习与误麻院长', dir: '林恩持推荐信赶到群星圣堂，71号狂躁巨人正撞塌墙壁冲入大厅', loc: '群星圣堂', urgency: '高', deadline: '实习首日' },
+        { from: 'E47', to: 'E48', title: '接诊喵喵与002盗书', dir: '因误麻院长被调往不正常生物接诊中心值夜班，深夜十二点门外传来爪子推门声', loc: '不正常生物接诊中心', urgency: '高', deadline: '夜班' },
+        { from: 'E48', to: 'E49', title: '犬皮改造真相与千人寻亲', dir: '喵喵昏睡，随包里的全家福照片浮着紫色咒术光晕', loc: '接诊中心', urgency: '中', deadline: '猫化暂歇时' },
+        { from: 'E49', to: 'E50', title: '猫娘药剂与喵喵破茧', dir: '喵喵分来半块小鱼干，鼓起勇气请求变成人', loc: '病院炼药房', urgency: '中', deadline: '委托成立后' },
+        { from: 'E50', to: 'E51', title: '黑弦月到货与保护契约', dir: '虚空折跃龟撞破空间送来人偶庄园的快递箱，箱内蜷着黑裙人偶', loc: '朋克酒店', urgency: '中', deadline: '到货当日' },
+        { from: 'E51', to: 'E52', title: '森一夜袭与四次重生', dir: '睡梦中突发任务【恶毒的窥视】弹出，走廊外传来白色乌鸦面具的注视', loc: '朋克酒店', urgency: '极高', deadline: '当夜' },
+        { from: 'E52', to: 'E53', title: '三重算计与平等契约', dir: '森一伏诛后黑弦月能源不足，能量立方却被掉包成玻璃碎片，箱内响起人偶夫人留言', loc: '朋克酒店房间', urgency: '高', deadline: '战后补能时' },
+        { from: 'E53', to: 'E54', title: '疫医暗面与最高级保护', dir: '林恩视界上报主母，艾雯爵士赶到酒店查探森一尸体', loc: '酒店现场', urgency: '中', deadline: '上报后' },
+        { from: 'E54', to: 'E55', title: '喵喵宠物与家人复仇', dir: '夜晚喵喵趁林恩熟睡钻进被窝，次日检查确认已是正常猫耳娘', loc: '林恩房间', urgency: '低', deadline: '次日' },
+        { from: 'E55', to: 'E56', title: '史莱姆整形与游荡者情报', dir: '夜班又有病人登门：先是挤门求诊的秽体史莱姆，随后是投影战况的机械游荡者', loc: '接诊中心', urgency: '中', deadline: '夜班' },
+        { from: 'E56', to: 'E57', title: '整备出征与收编小宝贝', dir: '第八天下午主母召见：巨像之脑现世，两神教增兵，令林恩午后备好东西随白夜出发', loc: '黑夜城', urgency: '高', deadline: '出征前' },
+        { from: 'E57', to: 'E58', title: '前线观战与银色幻想降临', dir: '白夜指向黑雾中的诅咒之城，欲望母树结盟下场的情报落入耳中', loc: '前线营地', urgency: '高', deadline: '观战时机' },
+        { from: 'E58', to: 'E59', title: '斩臂反击与三根源驰援', dir: 'a01的探测仪扫到二人，数字光流开始折跃', loc: '诅咒之城街区', urgency: '极高', deadline: '即刻' },
+        { from: 'E59', to: 'E60', title: '圣子推定与圣徒叛变', dir: '回营见利维坦扭曲难民与互相猜忌的夜医，汇合点的圣徒已派来信使', loc: '前线营地', urgency: '极高', deadline: '行军前' },
+        { from: 'E60', to: 'E61', title: '突围反杀与夺萃之镰', dir: '圣徒叛变已揭破，山谷两侧疫医包围圈成型，突围方向只剩向西', loc: '山谷包围圈', urgency: '极高', deadline: '包围圈合拢前' },
+        { from: 'E61', to: 'E62', title: '折跃入城与疫医伪装', dir: '死亡凋零缠身，林恩折跃入诅咒之城，前方出现欲望母树派系的巨型畸变堡垒', loc: '诅咒之城', urgency: '极高', deadline: '凋零恶化前' },
+        { from: 'E62', to: 'E63', title: '堡垒解围与欲望教派', dir: '机械神教三台破坏者轰破肉壁，心灵振荡器开始崩断堡垒内意识', loc: '畸变堡垒', urgency: '极高', deadline: '堡垒覆灭前' },
+        // E64→E65 桥：E64为开放钩子不设六态（恒未触发不当前件），前件判断改用 E63
+        { from: 'E63', to: 'E65', title: '疫医X博士潜入与指挥官拉拢示爱', dir: '畸变堡垒深处传来疫医干部的潜入指令，欲望教派指挥官借机示好拉拢', loc: '畸变堡垒', urgency: '中', deadline: 'E65启程时' },
+        { from: 'E63', to: 'E64', title: '诅咒之城余韵', dir: '疫医潜伏与欲望教派声望平稳过渡', loc: '畸变堡垒', urgency: '低', deadline: '阶段余韵' },
+        { from: 'E65', to: 'E66', title: '电钻充能暴走与人偶情感暴涨', dir: '黑弦月电量告急，电钻充能暴走，人偶情感随之暴涨', loc: '畸变堡垒', urgency: '高', deadline: '充能刻不容缓' },
+        { from: 'E66', to: 'E67', title: '纳米风暴追杀与快感冲击蜂巢', dir: '纳米风暴衔尾追杀，前方浮现快感冲击蜂巢', loc: '根系网络', urgency: '极高', deadline: '追杀进行中' },
+        { from: 'E67', to: 'E68', title: '血肉养蛊与病毒反噬纳米风暴', dir: '以自身血肉养蛊，病毒反噬纳米风暴的时机成熟', loc: '根系网络', urgency: '极高', deadline: '反噬窗口' },
+        { from: 'E68', to: 'E69', title: '黑弦月签人偶之誓', dir: '黑弦月提出签下人偶之誓，契约天平重新倾斜', loc: '根系网络', urgency: '中', deadline: '契约当场' },
+        { from: 'E69', to: 'E70', title: '撤离堡垒揭巨像之心', dir: '撤离途中揭破巨像之心，心脏身份浮出水面', loc: '畸变堡垒', urgency: '高', deadline: '撤离时' },
+        { from: 'E70', to: 'E71', title: '设伏反打银色幻想', dir: '决定设伏反打银色幻想，诱饵与陷阱开始布设', loc: '畸变堡垒外', urgency: '极高', deadline: '伏击发动前' },
+        { from: 'E71', to: 'E72', title: '核爆硬抗捕获机械姬', dir: '机械姬发射核子裂变弹，硬抗后试图生擒', loc: '诅咒之城', urgency: '极高', deadline: '核爆瞬间' },
+        { from: 'E72', to: 'E73', title: '猎魔左轮处决与破防全部失败', dir: '猎魔左轮处决与精神破防全部失败，机械姬仍无破绽', loc: '诅咒之城', urgency: '高', deadline: '审讯时' },
+        { from: 'E73', to: 'E74', title: '快感冲击逼供缴双剑与龙狙', dir: '改用以M快感冲击逼供，逼其缴出双剑与龙狙', loc: '审讯点', urgency: '中', deadline: '逼供进行中' },
+        { from: 'E74', to: 'E75', title: '触发恶堕向机械姬调教任务', dir: '涩涩度见顶，恶堕向机械姬调教任务悄然触发', loc: '审讯点', urgency: '中', deadline: '任务触发时' },
+        { from: 'E75', to: 'E76', title: '全城机械紊乱与死星结晶交易', dir: '全城机械紊乱，死星结晶交易成为解局筹码', loc: '诅咒之城', urgency: '高', deadline: '紊乱扩散前' },
+        { from: 'E76', to: 'E77', title: '万机之神投影降临贯穿取心', dir: '万机之神投影降临，光矛贯穿直取心脏', loc: '诅咒之城', urgency: '极高', deadline: '降临即死局' },
+        { from: 'E77', to: 'E78', title: '巨像网络苏醒与捣翻万机之神', dir: '巨像网络苏醒，反手捣翻万机之神投影', loc: '诅咒之城', urgency: '极高', deadline: '苏醒反扑时' },
+        { from: 'E78', to: 'E79', title: '黑弦月只身赴死与求婚被拒', dir: '黑弦月只身穿越轰炸区赴死，求婚遭拒', loc: '轰炸区', urgency: '极高', deadline: '接应窗口' },
+        { from: 'E79', to: 'E80', title: '直死书与六诅咒同归于尽', dir: '直死书翻开，六诅咒同归于尽的最后手段浮出', loc: '战场', urgency: '极高', deadline: '决战时刻' },
+        { from: 'E80', to: 'E81', title: '黑弦月肉身挡轰炸与解雇无效', dir: '黑弦月肉身挡下地毯轰炸，解雇指令被无视', loc: '战场', urgency: '极高', deadline: '轰炸落点' },
+        { from: 'E81', to: 'E82', title: '白发异变与虚握差杀万机之神', dir: '白发异变，虚握差一点击杀万机之神', loc: '战场', urgency: '极高', deadline: '再战瞬间' },
+        { from: 'E82', to: 'E83', title: '艾雯爵士救场与八音盒扰泰坦', dir: '艾雯爵士救场，八音盒旋律扰断泰坦头颅', loc: '战场', urgency: '极高', deadline: '援军抵达' },
+        { from: 'E83', to: 'E84', title: '吞钱逼斗志与认义弟立执念', dir: '吞钱逼出斗志，认下义弟立起执念', loc: '据点', urgency: '中', deadline: '苏醒休整期' },
+        { from: 'E84', to: 'E85', title: '强吻黑弦月遭漏电惩罚', dir: '强吻黑弦月，触电式漏电惩罚劈面而来', loc: '据点', urgency: '低', deadline: '日常缝隙' },
+        { from: 'E85', to: 'E86', title: '工伤条款强制治疗黑弦月', dir: '工伤条款生效，强制治疗黑弦月的拉扯开始', loc: '据点', urgency: '低', deadline: '治疗期' },
+        { from: 'E86', to: 'E87', title: '锁与钥匙比喻诱骗左左签据', dir: '以锁与钥匙作比，诱骗左左签下契约', loc: '据点', urgency: '中', deadline: '签约当场' },
+        { from: 'E87', to: 'E88', title: '恒星熔炉锻造人偶之臂', dir: '恒星熔炉点火，锻造人偶之臂的材料齐备', loc: '熔炉', urgency: '中', deadline: '锻造窗口' },
+        { from: 'E88', to: 'E89', title: '求左左做爱解诅咒被拒', dir: '涩涩诅咒爆发，黑弦月向左左提出解咒请求', loc: '据点', urgency: '高', deadline: '诅咒发作时' },
+        { from: 'E89', to: 'E90', title: '救回乱流深处的恶灵妹妹', dir: '爱丽丝执念挣脱，乱流深处恶灵妹妹待救', loc: '乱流深处', urgency: '高', deadline: '救援窗口' },
+        { from: 'E90', to: 'E91', title: '妹妹误触性释放与骨科召唤', dir: '妹妹误触性释放，骨科向召唤随之发动', loc: '乱流深处', urgency: '中', deadline: '误触后续' },
+        { from: 'E91', to: 'E92', title: '诱捕左左强行性释放解咒', dir: '诱捕左左强行性释放解咒，天平再失衡', loc: '据点', urgency: '高', deadline: '解咒推进' },
+        { from: 'E92', to: 'E93', title: '入视界建群与喵喵参战', dir: '带爱丽丝入视界建群，喵喵抵达参战', loc: '视界', urgency: '中', deadline: '集结期' },
+        { from: 'E93', to: 'E94', title: '三蜂巢饱和轰炸与母树降临', dir: '三大蜂巢饱和轰炸，欲望母树降临战场', loc: '诅咒之城', urgency: '极高', deadline: '总攻开始' },
+        { from: 'E94', to: 'E95', title: '银色幻想恨意暴增与总攻', dir: '银色幻想恨意暴增，率军发起总攻', loc: '战场', urgency: '极高', deadline: '总攻打响' },
+        { from: 'E95', to: 'E96', title: '血肉利维坦突现与战局逆转', dir: '总攻打响后利维坦升空，全舰释放血肉瘟疫瘫痪机械神教', loc: '废墟上空', urgency: '极高', deadline: '逆转时刻' },
+        { from: 'E96', to: 'E97', title: '三大根源混战与利维坦升空', dir: '三大根源正面神战爆发，艾雯撑盾，林恩确立斩首潜入方案', loc: '废墟战场', urgency: '极高', deadline: '神战僵局' },
+        { from: 'E97', to: 'E98', title: '赛博飞升升格与喵喵血仇', dir: '艾雯升格赛博飞升者托付灵能芯片，喵喵揭露315灭门血仇', loc: '灵能结界', urgency: '极高', deadline: '升格倒计时' },
+        { from: 'E98', to: 'E99', title: '冤家组队与12小时禁杀契约', dir: '与银色幻想绑定12小时禁杀契约，高维投送降落利维坦尾部', loc: '折跃阵地', urgency: '高', deadline: '潜入前夕' },
+        { from: 'E99', to: 'E100', title: '利维坦走廊潜伏与老六挂机', dir: '伪装眼球挂机搜刮血肉，银色核弹清场突破外层走廊', loc: '尾部走廊', urgency: '中', deadline: '清场时刻' },
+        { from: 'E100', to: 'E101', title: '夺舍洛什与芬芳尖啸者嘴遁', dir: '夺舍洛什掌控初级权限，改装尖啸者播放芬芳乐曲挑起党争', loc: '行动部', urgency: '中', deadline: '党争引爆' },
+        { from: 'E101', to: 'E102', title: '机械姬恶堕大计与荣升执事', dir: '推销机械姬恶堕大计吓退众疫医，315破格授予第八执事', loc: '连线总厅', urgency: '中', deadline: '上位受封' },
+        { from: 'E102', to: 'E103', title: '腐败执事生活与全厂物资收买', dir: '大肆改单截留神性殖装中饱私囊，重贿元老收买全舰人心', loc: '殖装工厂', urgency: '低', deadline: '搜刮完毕' },
+        { from: 'E103', to: 'E104', title: '以M破防机械姬与苦肉计夺权', dir: '释放以M破防银色幻想，苦肉计骗取315最高武装控制权', loc: '2号走廊', urgency: '高', deadline: '夺权完成' },
+        { from: 'E104', to: 'E105', title: '密室除患与全舰生化下毒', dir: '密室斩杀莱恩博士，调制四合一药剂下发全舰完成生化布毒', loc: '绝密实验室', urgency: '高', deadline: '全舰下毒' },
+        { from: 'E105', to: 'E106', title: '木偶咒印与人偶夫人真相', dir: '黑弦月破译木偶符文确认喵喵生母为人偶夫人，身世惊天闭环', loc: '执事休息室', urgency: '高', deadline: '真相大白' },
+        { from: 'E106', to: 'E107', title: '傀儡接管与双簧大戏诱敌', dir: '接管524具战斗傀儡，双簧大戏押送俘虏直入第一腔室', loc: '傀儡总厂', urgency: '高', deadline: '杀入核心' },
+        { from: 'E107', to: 'E108', title: '第一腔室掀牌与全舰异变灾变', dir: '近身反跳死缚锁死315，响指引爆全舰药剂斩获恐惧魔王', loc: '第一腔室', urgency: '极高', deadline: '掀牌决战' },
+        { from: 'E108', to: 'E109', title: '利维坦鲸落与替身破死书', dir: '诅咒清除引发利维坦鲸落，人偶替身熔断破解即死之书', loc: '坠落主控室', urgency: '极高', deadline: '鲸落解体' },
+        { from: 'E109', to: 'E110', title: '开颅刑讯与兄长残躯回溯', dir: '单分子剑钻孔开颅刑讯315，过往遗念回溯喵喵兄长温情告别', loc: '残骸核心台', urgency: '高', deadline: '终结315' },
+        { from: 'E110', to: 'E111', title: '恶面堕天使降临与巨头噬神', dir: '恶面堕天使黑羽降临，林恩化身不死巨头死咬手腕施加死缚', loc: '虚空裂隙前', urgency: '极高', deadline: '极限锁神' },
+        { from: 'E111', to: 'E112', title: '以M亵渎神明与红茶包唤醒主母', dir: '以M狂灌神明，信仰连线喊红茶包泡茶唤醒主母善面夺权', loc: '共鸣空间', urgency: '极高', deadline: '善面镇压' },
+        { from: 'E112', to: 'E113', title: '巨像红芒爆发与深层空间降临', dir: '巨像红芒吞噬战场拉入全员，寻获实体化左萝换装黑丝吊带', loc: '深层空间', urgency: '高', deadline: '空间降临' },
+        { from: 'E113', to: 'E114', title: '万机梦魇与解救巨像之舌', dir: '打崩机械意识群解救小宝贝，识破欲望母树以舌为饵圈套', loc: '围猎广场', urgency: '高', deadline: '识破圈套' },
+        { from: 'E114', to: 'E115', title: '母树现身色诱与爆头自戕博弈', dir: '母树垂柳妖精色诱，林恩爆头自戕反向拿捏神明放走左左', loc: '垂柳回廊', urgency: '极高', deadline: '自戕逼退' },
+        { from: 'E115', to: 'E116', title: '荒原漫步心智交锋与耍赖骑乘', dir: '荒原漫步心智攻防，脱靴耍赖遭小板凳暴打成功拖延时间', loc: '黑夜荒原', urgency: '中', deadline: '沙漏耗尽' },
+        { from: 'E116', to: 'E117', title: '往昔恐惧投影生命树与幼稚园', dir: '母树生命树燃尽心魔爆发，林恩经历幼稚园连环失恋走马灯', loc: '投影领域', urgency: '高', deadline: '心魔爆发' },
+        { from: 'E117', to: 'E118', title: '幻境以M快打与欲望母树交融', dir: '限时解咒萌发绿叶，血肉巨树深处激烈撕扯肉体交融做爱', loc: '古树深处', urgency: '极高', deadline: '神性交融' },
+        { from: 'E118', to: 'E119', title: '替死复活晋升与一丝神性觉醒', dir: '替死娃娃复活直升55级体质破千，觉醒自然领域一丝神性', loc: '复苏圣所', urgency: '高', deadline: '神性觉醒' },
+        { from: 'E119', to: 'E120', title: '艾雯失忆死战与巨像之门开启', dir: '艾雯失忆化身灵能巨人死战阻敌，巨像之心激活大门开启', loc: '通天阶梯', urgency: '极高', deadline: '大门开启' },
+        { from: 'E120', to: 'E121', title: '知识禁库渡鸦寓言与自我肢解', dir: '左左诵读渡鸦神话，巨像之脑苏醒揭示三千年自我肢解真相', loc: '知识禁库', urgency: '高', deadline: '真相摊牌' },
+        { from: 'E121', to: 'E122', title: '紫罗兰法阵决裂与剥离左左', dir: '紫罗兰法阵暴显自剖心脏谈判，左左被剥离为完全独立灵魂', loc: '禁库王座', urgency: '极高', deadline: '灵魂剥离' },
+        { from: 'E122', to: 'E123', title: '巨像重组与破宇冲向地狱边界', dir: '巨像重组吹响王之号角冲向地狱边界，林恩全网直播搞钱', loc: '苍穹黑雾', urgency: '高', deadline: '冲向天堑' },
+        { from: 'E123', to: 'E124', title: '直面狂乱色彩与极限断闸救赎', dir: '直面狂乱色彩双目炸裂，林恩意识空间极限断闸保全主脑', loc: '天顶废墟', urgency: '极高', deadline: '极限断闸' },
+        { from: 'E124', to: 'E125', title: '废墟渡鸦誓言与咒瞳绝唱挡刀', dir: '背负主脑立下渡鸦誓言，最后不死诅咒挡刀咒瞳碎裂退场', loc: '中心废墟', urgency: '极高', deadline: '咒瞳碎裂' },
+        { from: 'E125', to: 'E126', title: '银发女王萝莉诞生与六根源对峙', dir: '拟化银发女王萝莉认主重植心脏达信赖，六大根源终极对峙', loc: '决战苍穹', urgency: '高', deadline: '阶段收束' },
+      ];
+
+      function findReadyPair(events) {
+        const anchors = events.锚点状态 ?? {};
+        for (const pair of BRIDGE_PAIRS) {
+          const from = anchors[pair.from] ?? {};
+          const fromState = from.状态;
+          const toState = anchors[pair.to]?.状态;
+          const wrappedUp = fromState === '完成' || fromState === '变形'
+            || (fromState === '活跃' && from.收尾 === true);
+          if (wrappedUp && toState === '未触发') return pair;
+        }
+        return null;
+      }
+
+      function findCancelledPair(events) {
+        const anchors = events.锚点状态 ?? {};
+        return BRIDGE_PAIRS.find(pair => anchors[pair.from]?.状态 === '取消'
+          && anchors[pair.to]?.状态 === '未触发') ?? null;
+      }
+
+      const root = document.currentScript?.closest('[data-mvi-root]')
+        ?? document.querySelector('[data-mvi-root]');
+      if (!root) return;
+      const byId = id => root.querySelector(`#${id}`);
+      const text = (id, value) => { const node = byId(id); if (node) node.textContent = value ?? '无'; };
+      const asArray = value => Array.isArray(value) ? value : [];
+      const clamp = value => Math.max(0, Math.min(100, Number(value) || 0));
+
+      function updateAdvanceButton(events = renderedEvents) {
+        const btn = byId('mvi-advance-btn');
+        if (!btn) return;
+        renderedEvents = events ?? {};
+        const pair = findReadyPair(events);
+        const cancelledPair = findCancelledPair(events);
+        const omenId = events.近期预兆?.事件ID;
+        if (disposed) {
+          btn.disabled = true;
+          btn.textContent = '状态栏已卸载';
+          btn.title = '';
+        } else if (!currentIsLatest) {
+          btn.disabled = true;
+          btn.textContent = pair ? `历史楼层只读：${pair.to}` : '历史楼层只读';
+          btn.title = '只有聊天中的最新楼层可以推进事件。';
+        } else if (!mvuAvailable) {
+          btn.disabled = true;
+          btn.textContent = '等待 MVU 接口';
+          btn.title = '尚未检测到宿主 MVU 接口。';
+        } else if (!mvuWritable) {
+          btn.disabled = true;
+          btn.textContent = 'MVU 写入接口不可用';
+          btn.title = '当前 MVU 只提供读取能力，无法安全推进事件。';
+        } else if (!persistedDataReady) {
+          btn.disabled = true;
+          btn.textContent = '等待变量初始化';
+          btn.title = '最新楼层尚无已持久化的 MVU 数据。';
+        } else if (writeInFlight) {
+          btn.disabled = true;
+          btn.textContent = '正在推进，请稍候';
+          btn.title = '事件写入进行中。';
+        } else if (omenId) {
+          btn.disabled = true;
+          btn.textContent = `已进入预兆：${omenId}`;
+          btn.title = '';
+        } else if (pair) {
+          btn.disabled = false;
+          btn.textContent = `推进：${pair.to} ${pair.title}`;
+          btn.title = '手动确认推进：把下一事件写入预兆，预兆正文由叙事者下一轮描写。';
+        } else if (cancelledPair) {
+          btn.disabled = true;
+          btn.textContent = `需正文判定局部依赖：${cancelledPair.to}`;
+          btn.title = '前件为取消态，状态栏不自动猜测后续。由正文核对后件前置与替代入口，并以单条 replace /事件 处理。';
+        } else {
+          btn.disabled = true;
+          btn.textContent = '当前无可推进事件';
+          btn.title = '';
+        }
+      }
+
+      function renderList(node, items, emptyText = '暂无') {
+        node.replaceChildren();
+        const values = asArray(items);
+        if (!values.length) {
+          const li = document.createElement('li');
+          li.textContent = emptyText;
+          li.className = 'mvi-muted';
+          node.append(li);
+          return;
+        }
+        for (const item of values) {
+          const li = document.createElement('li');
+          li.textContent = String(item);
+          node.append(li);
+        }
+      }
+
+      function relationWord(value, positive = true) {
+        const score = clamp(value);
+        if (!positive) {
+          if (score >= 65) return '高度';
+          if (score >= 30) return '明显';
+          if (score > 0) return '轻微';
+          return '无';
+        }
+        if (score >= 65) return '深厚';
+        if (score >= 30) return '稳定';
+        if (score > 0) return '初步';
+        if (score <= -30) return '破裂';
+        if (score < 0) return '疏离';
+        return '未建立';
+      }
+
+      function makeMeter(label, value, negative = false) {
+        const score = clamp(value);
+        const row = document.createElement('div');
+        row.className = 'mvi-meter';
+        const name = document.createElement('span');
+        name.className = 'mvi-meter-name';
+        name.textContent = label;
+        const track = document.createElement('span');
+        track.className = 'mvi-track';
+        const fill = document.createElement('span');
+        fill.className = 'mvi-fill';
+        fill.dataset.kind = negative ? 'negative' : 'positive';
+        fill.style.left = '0%';
+        fill.style.width = `${score}%`;
+        track.append(fill);
+        const words = document.createElement('span');
+        words.className = 'mvi-meter-value';
+        words.textContent = `${score} · ${relationWord(score, !negative)}`;
+        row.append(name, track, words);
+        return row;
+      }
+
+      function appendOptionalMeter(body, relation, key, label, negative = false) {
+        const value = Number(relation?.[key]);
+        if (Number.isFinite(value) && value > 0) {
+          body.append(makeMeter(label, value, negative));
+        }
+      }
+
+      function renderRelations(relations) {
+        const container = byId('mvi-relations');
+        container.replaceChildren();
+        const unlocked = Object.entries(relations ?? {}).filter(([, relation]) => relation?.解锁);
+        if (!unlocked.length) {
+          const empty = document.createElement('p');
+          empty.className = 'mvi-muted';
+          empty.textContent = '尚无人物解锁。';
+          container.append(empty);
+          return;
+        }
+        for (const [name, relation] of unlocked) {
+          const details = document.createElement('details');
+          details.className = 'mvi-person';
+          const summary = document.createElement('summary');
+          const heading = document.createElement('span');
+          heading.className = 'mvi-person-name';
+          heading.textContent = name;
+          const status = document.createElement('span');
+          status.className = 'mvi-person-status';
+          status.textContent = `${relation.生存状态 ?? '状态未知'}${relation.在场 ? ' · 在场' : ''}`;
+          summary.append(heading, status);
+
+          const body = document.createElement('div');
+          body.className = 'mvi-person-body';
+          const meta = document.createElement('p');
+          meta.className = 'mvi-person-meta';
+          meta.textContent = `${relation.关系类型 ?? '关系未明'}｜${relation.人物阶段 ?? '阶段未明'}｜${relation.位置 ?? '位置未知'}`;
+          const situation = document.createElement('p');
+          situation.className = 'mvi-value';
+          situation.textContent = relation.处境 ?? '处境未知';
+          const hasContact = relation.最近互动 && relation.最近互动 !== '无';
+          if (hasContact) {
+            body.append(meta, situation);
+            body.append(
+              makeMeter('好感', relation.好感),
+              makeMeter('信赖', relation.信赖),
+              makeMeter('戒备', relation.戒备, true),
+              makeMeter('吸引', relation.吸引),
+              makeMeter('创伤', relation.关系创伤, true),
+              makeMeter('恶堕', relation.恶堕, true)
+            );
+            appendOptionalMeter(body, relation, '涩涩度', '涩涩度');
+            appendOptionalMeter(body, relation, '情感开发度', '情感开发度');
+            appendOptionalMeter(body, relation, '驯服度', '驯服度');
+            appendOptionalMeter(body, relation, '崩坏值', '崩坏值', true);
+            appendOptionalMeter(body, relation, '恨意值', '恨意值', true);
+            const cue = document.createElement('p');
+            cue.className = 'mvi-muted';
+            cue.textContent = `最近互动：${relation.最近互动}`;
+            body.append(cue);
+          } else {
+            const locked = document.createElement('p');
+            locked.className = 'mvi-muted';
+            locked.textContent = '尚无实际接触，仅显示姓名与状态。';
+            body.append(locked);
+          }
+          details.append(summary, body);
+          container.append(details);
+        }
+      }
+
+      function renderEdges(edges) {
+        const container = byId('mvi-edges');
+        container.replaceChildren();
+        const values = asArray(edges);
+        if (!values.length) {
+          const empty = document.createElement('p');
+          empty.className = 'mvi-muted';
+          empty.textContent = '尚无需要长期记录的角色关系。';
+          container.append(empty);
+          return;
+        }
+        for (const edge of values) {
+          const row = document.createElement('div');
+          row.className = 'mvi-edge';
+          const title = document.createElement('p');
+          title.className = 'mvi-value';
+          title.textContent = `${asArray(edge.双方).join(' ↔ ')}｜${edge.关系类型 ?? '关系未明'}`;
+          const detail = document.createElement('p');
+          detail.className = 'mvi-value mvi-muted';
+          detail.textContent = `${edge.当前状态 ?? '状态未明'}｜${edge.公开程度 ?? '公开程度未明'}｜${edge.最近变化 ?? '暂无变化'}`;
+          row.append(title, detail);
+          container.append(row);
+        }
+      }
+
+      function updateUrgency(card, urgency) {
+        if (!card) return;
+        card.classList.toggle('mvi-card--alert', urgency === '高' || urgency === '极高');
+      }
+
+      function render(data) {
+        const state = data?.stat_data;
+        if (!state) throw new Error('当前楼层还没有初始化变量');
+        const world = state.世界 ?? {};
+        const linen = state.林恩 ?? {};
+        const system = state.系统 ?? {};
+        const events = state.事件 ?? {};
+        const activeSource = events.唯一活跃事件 ?? {};
+        const hasActive = activeSource.状态 === '活跃' && Boolean(activeSource.事件ID);
+        const active = hasActive ? activeSource : {
+          事件ID: '', 标题: '', 地点: '', 参与者: [], 状态: '无', 紧迫度: '无', 模糊期限: '', 进展: '', 幕后停止点: '',
+        };
+        const omenSource = events.近期预兆 ?? {};
+        const hasOmen = Boolean(omenSource.事件ID);
+        const omen = hasOmen ? omenSource : {
+          事件ID: '', 方向: '', 地点: '', 参与者: [], 紧迫度: '无', 模糊期限: '',
+        };
+
+        text('mvi-phase', `${world.阶段编号 ?? '未知'} · ${world.阶段名称 ?? '阶段未知'}`);
+        text('mvi-phase-progress', `${world.模糊阶段进度 ?? '进度未知'}｜${world.氛围 ?? '氛围未知'}`);
+        const cluesBox = byId('mvi-world-clues');
+        if (cluesBox) {
+          cluesBox.replaceChildren();
+          const clues = asArray(world.大局线索);
+          if (clues.length) {
+            for (const clue of clues) {
+              const chip = document.createElement('span');
+              chip.className = 'mvi-chip mvi-chip--void';
+              chip.textContent = `◈ ${clue}`;
+              cluesBox.append(chip);
+            }
+          } else {
+            const empty = document.createElement('span');
+            empty.className = 'mvi-muted';
+            empty.textContent = '暂无大局线索。';
+            cluesBox.append(empty);
+          }
+        }
+        text('mvi-location', world.地点);
+        text('mvi-time', world.当前场景时间);
+        text('mvi-linen', `17岁｜${linen.身体状况 ?? '身体状况未知'}`);
+        const identityBox = byId('mvi-identities');
+        identityBox.replaceChildren();
+        for (const identity of asArray(linen.当前身份)) {
+          const chip = document.createElement('span');
+          chip.className = 'mvi-chip';
+          chip.textContent = identity;
+          identityBox.append(chip);
+        }
+        text('mvi-task', `${system.当前任务 ?? '无'}｜${system.任务状态 ?? '无'}`);
+        text('mvi-task-note', `${linen.当前明确目标 ?? '目标未明确'}｜${system.任务说明 ?? '无说明'}`);
+        text('mvi-current-event', `${active.事件ID || '无'} ${active.标题 || '暂无活跃事件'}｜${active.紧迫度 ?? '无'}`);
+        text('mvi-current-event-progress', hasActive
+          ? `${active.地点 || '地点未知'}｜${active.模糊期限 || '期限未知'}｜${active.进展 || '暂无进展'}`
+          : '暂无活跃事件详情');
+        updateUrgency(byId('mvi-current-event-card'), active.紧迫度);
+
+        renderRelations(state.关系);
+        renderEdges(state.角色关系);
+
+        text('mvi-event-title', `${active.事件ID || '无'} ${active.标题 || '暂无活跃事件'}｜${active.状态 ?? '无'}｜紧迫度 ${active.紧迫度 ?? '无'}`);
+        text('mvi-event-detail', hasActive
+          ? `${active.地点 || '地点未知'}｜参与者：${asArray(active.参与者).join('、') || '未知'}｜${active.模糊期限 || '期限未知'}｜${active.进展 || '暂无进展'}`
+          : '暂无活跃事件详情');
+        updateUrgency(byId('mvi-event-detail-card'), active.紧迫度);
+
+        text('mvi-omen-title', `${omen.事件ID || '无预兆'}｜${omen.紧迫度 ?? '无'}`);
+        text('mvi-omen-detail', hasOmen
+          ? `${omen.方向 || '方向待定'}｜${omen.地点 || '地点未知'}｜${omen.模糊期限 || '期限未知'}`
+          : '暂无近期预兆');
+        updateAdvanceButton(events);
+        renderList(
+          byId('mvi-results'),
+          asArray(events.最近结果).slice(-3).reverse().map(item => `${item.事件ID || '原创'} ${item.标题}：${item.结果}`),
+          '暂无事件结果'
+        );
+
+        text('mvi-sys-task', `${system.当前任务 ?? '无'}｜${system.任务状态 ?? '无'}`);
+        text('mvi-sys-task-stage', system.任务阶段 ?? '');
+        text('mvi-sys-task-note', system.任务说明 ?? '');
+        text('mvi-sys-level', `等级 ${linen.等级 ?? 1}`);
+        const skillBox = byId('mvi-sys-skills');
+        if (skillBox) {
+          skillBox.replaceChildren();
+          const skills = asArray(linen.技能);
+          if (!skills.length) {
+            const empty = document.createElement('p');
+            empty.className = 'mvi-muted';
+            empty.textContent = '暂无技能。';
+            skillBox.append(empty);
+          } else {
+            for (const skill of skills) {
+              const chip = document.createElement('span');
+              chip.className = 'mvi-chip';
+              chip.textContent = skill;
+              skillBox.append(chip);
+            }
+          }
+        }
+
+        const curseBox = byId('mvi-sys-curse-skills');
+        if (curseBox) {
+          curseBox.replaceChildren();
+          const allSkills = asArray(linen.技能);
+          const curseSkills = allSkills.filter(s => /诅咒|咒瞳|以M|异虫|100%|直死|血肉|精神|诊断|拟化/.test(s));
+          if (!curseSkills.length) {
+            const empty = document.createElement('p');
+            empty.className = 'mvi-muted';
+            empty.textContent = '右眼咒瞳尚未收录可释放诅咒。';
+            curseBox.append(empty);
+          } else {
+            for (const item of curseSkills) {
+              const chip = document.createElement('span');
+              chip.className = 'mvi-chip mvi-chip--void';
+              chip.textContent = `👁️ ${item}`;
+              curseBox.append(chip);
+            }
+          }
+        }
+
+        const activeCurseBox = byId('mvi-sys-active-curses');
+        if (activeCurseBox) {
+          activeCurseBox.replaceChildren();
+          const curses = asArray(linen.关键诅咒或契约);
+          if (!curses.length) {
+            const empty = document.createElement('p');
+            empty.className = 'mvi-muted';
+            empty.textContent = '身心澄澈，未受恶性诅咒侵蚀。';
+            activeCurseBox.append(empty);
+          } else {
+            for (const curse of curses) {
+              const chip = document.createElement('span');
+              chip.className = 'mvi-chip mvi-chip--abyss';
+              chip.textContent = `⚡ ${curse}`;
+              activeCurseBox.append(chip);
+            }
+          }
+        }
+
+        const relicsBox = byId('mvi-sys-relics');
+        if (relicsBox) {
+          relicsBox.replaceChildren();
+          const allItems = [...asArray(system.图鉴), ...asArray(linen.图鉴已解锁)];
+          const relics = allItems.filter(item => /刀|枪|左轮|矛|异物|发条|眼|灯|娃娃|圣杯|芯片|结晶|药剂|试剂/.test(item));
+          const displayRelics = relics.length ? relics : allItems;
+          if (!displayRelics.length) {
+            const empty = document.createElement('p');
+            empty.className = 'mvi-muted';
+            empty.textContent = '随身行囊未收录圣遗物与器械。';
+            relicsBox.append(empty);
+          } else {
+            for (const item of displayRelics) {
+              const chip = document.createElement('span');
+              chip.className = 'mvi-chip mvi-chip--relic';
+              chip.textContent = `🗡️ ${item}`;
+              relicsBox.append(chip);
+            }
+          }
+        }
+
+        const linenStatusBox = byId('mvi-linen-status');
+        if (linenStatusBox) {
+          linenStatusBox.replaceChildren();
+          linenStatusBox.append(
+            makeMeter('压力', linen.压力, true),
+            makeMeter('道德', linen.道德),
+            makeMeter('罪恶', linen.罪恶, true),
+            makeMeter('复苏度', linen.复苏度)
+          );
+
+          const badgeGrid = document.createElement('div');
+          badgeGrid.className = 'mvi-badge-grid';
+
+          const dollCount = Number(linen.替死娃娃剩余 ?? 0);
+          if (dollCount > 0) {
+            const doll = document.createElement('span');
+            doll.className = 'mvi-badge mvi-badge--gold';
+            doll.textContent = `🪆 替死娃娃 ×${dollCount}`;
+            badgeGrid.append(doll);
+          }
+
+          if (linen.天使之吻状态) {
+            const kiss = document.createElement('span');
+            kiss.className = 'mvi-badge mvi-badge--soul';
+            kiss.textContent = '🪽 主母·天使之吻庇护';
+            badgeGrid.append(kiss);
+          }
+
+          if (linen.根系网络权限) {
+            const rootNet = document.createElement('span');
+            rootNet.className = 'mvi-badge mvi-badge--void';
+            rootNet.textContent = '🌲 欲望母树·根系网络';
+            badgeGrid.append(rootNet);
+          }
+
+          if (linen.巨像网络权限) {
+            const colossus = document.createElement('span');
+            colossus.className = 'mvi-badge mvi-badge--mech';
+            colossus.textContent = '⚙️ 巨像超维算力网络';
+            badgeGrid.append(colossus);
+          }
+
+          if (linen.咒瞳状态) {
+            const eye = document.createElement('span');
+            eye.className = 'mvi-badge mvi-badge--void';
+            eye.textContent = `👁️ 咒瞳：${linen.咒瞳状态}`;
+            badgeGrid.append(eye);
+          }
+
+          if (linen.拟化技能) {
+            const morph = document.createElement('span');
+            morph.className = 'mvi-badge mvi-badge--mech';
+            morph.textContent = `🧬 拟化：${linen.拟化技能}`;
+            badgeGrid.append(morph);
+          }
+
+          if (badgeGrid.children.length > 0) {
+            linenStatusBox.append(badgeGrid);
+          }
+        }
+        renderList(byId('mvi-sys-codex'), [...asArray(system.图鉴), ...asArray(linen.图鉴已解锁)], '图鉴尚未收录条目');
+        renderList(byId('mvi-sys-achievements'), [...asArray(system.成就), ...asArray(linen.成就)], '尚无成就');
+        text('mvi-sys-notice', system.最近提示 ?? '');
+        text('mvi-sys-event-notice', system.事件通知 ?? '');
+
+        byId('mvi-error').hidden = true;
+      }
+
+      function showFallback(error) {
+        const node = byId('mvi-error');
+        node.textContent = `等待变量初始化：当前仅显示初始预览，不会据此执行推进。${error?.message ? `（${error.message}）` : ''}`;
+        node.hidden = false;
+      }
+
+      function showRuntimeError(message) {
+        const node = byId('mvi-error');
+        node.textContent = message;
+        node.hidden = false;
+      }
+
+      function getHostWindows() {
+        const hosts = [globalThis];
+        for (const candidate of [globalThis.parent, globalThis.top]) {
+          try {
+            if (candidate && !hosts.includes(candidate)) hosts.push(candidate);
+          } catch {
+            // 跨域父页面不可访问时继续使用当前窗口。
+          }
+        }
+        return hosts;
+      }
+
+      function findMvu() {
+        for (const host of getHostWindows()) {
+          try {
+            if (host.Mvu?.getMvuData) return host.Mvu;
+          } catch {
+            // 某一层窗口不可访问时继续向上查找。
+          }
+        }
+        return undefined;
+      }
+
+      async function waitForMvuBridge() {
+        const deadline = Date.now() + 25000;
+        let handshakeAttempted = false;
+        while (!disposed && Date.now() < deadline) {
+          let mvu = findMvu();
+          if (mvu) return mvu;
+          if (!handshakeAttempted && typeof waitGlobalInitialized === 'function') {
+            handshakeAttempted = true;
+            try {
+              const remaining = Math.max(1, deadline - Date.now());
+              await Promise.race([
+                waitGlobalInitialized('Mvu'),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('MVU 初始化超时')), remaining)),
+              ]);
+            } catch (error) {
+              showRuntimeError(`等待 MVU 初始化失败：${error?.message ?? error}`);
+            }
+            mvu = findMvu();
+            if (mvu) return mvu;
+          }
+          await new Promise(resolve => setTimeout(resolve, 250));
+        }
+        return findMvu();
+      }
+
+      function getMessageId() {
+        if (typeof getCurrentMessageId === 'function') return getCurrentMessageId();
+        const match = String(globalThis.name || '').match(/^TH-message--(\d+)--/);
+        return match ? Number(match[1]) : 'latest';
+      }
+
+      function getLatestMessageId() {
+        for (const host of getHostWindows()) {
+          try {
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            const chat = context?.chat;
+            if (!Array.isArray(chat)) continue;
+            for (let index = chat.length - 1; index >= 0; index -= 1) {
+              if (!chat[index]?.is_system) return index;
+            }
+          } catch {
+            // 当前宿主入口不可用时尝试下一层窗口。
+          }
+        }
+        return null;
+      }
+
+      function isLatestMessage(messageId) {
+        if (messageId === 'latest') return true;
+        const latestMessageId = getLatestMessageId();
+        return Number.isInteger(messageId) && messageId === latestMessageId;
+      }
+
+      function unwrapMessageVariables(message) {
+        const variables = message?.variables;
+        if (!variables) return undefined;
+        if (Array.isArray(variables)) return variables[message?.swipe_id ?? 0] ?? variables.at(-1);
+        if (variables.stat_data) return variables;
+        return variables[message?.swipe_id ?? 0];
+      }
+
+      function readStoredVariables(messageId) {
+        for (const host of getHostWindows()) {
+          try {
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            const chat = context?.chat;
+            if (!Array.isArray(chat) || !chat.length) continue;
+            const startIndex = Number.isInteger(messageId)
+              ? Math.min(messageId, chat.length - 1)
+              : chat.length - 1;
+            for (let index = startIndex; index >= 0; index -= 1) {
+              const data = unwrapMessageVariables(chat[index]);
+              if (data?.stat_data) return data;
+            }
+          } catch {
+            // 当前宿主入口不可用时尝试下一层窗口。
+          }
+        }
+        return undefined;
+      }
+
+      function readCurrent(mvu = findMvu()) {
+        if (disposed) return;
+        const messageId = getMessageId();
+        currentIsLatest = isLatestMessage(messageId);
+        mvuAvailable = Boolean(mvu);
+        mvuWritable = typeof mvu?.replaceMvuData === 'function';
+        let data;
+        let readError;
+        try {
+          data = mvu?.getMvuData({ type: 'message', message_id: messageId });
+        } catch (error) {
+          readError = error;
+        }
+        if (!data?.stat_data) data = readStoredVariables(messageId);
+        persistedDataReady = Boolean(data?.stat_data);
+        if (!persistedDataReady) {
+          render({ stat_data: FALLBACK_STATE });
+          showFallback(readError ?? new Error('当前楼层尚无已保存变量'));
+          return;
+        }
+        render(data);
+        byId('mvi-error').hidden = true;
+      }
+
+      async function advanceCurrentEvent() {
+        if (disposed || writeInFlight) return;
+        const mvu = findMvu();
+        if (!mvu || typeof mvu.replaceMvuData !== 'function') {
+          mvuAvailable = Boolean(mvu);
+          mvuWritable = false;
+          updateAdvanceButton();
+          showRuntimeError('推进不可用：未检测到完整的宿主 MVU 读写接口。');
+          return;
+        }
+        const messageId = getMessageId();
+        currentIsLatest = isLatestMessage(messageId);
+        if (!currentIsLatest) {
+          updateAdvanceButton();
+          showRuntimeError('历史楼层只读：请在聊天中的最新状态栏执行推进。');
+          return;
+        }
+
+        writeInFlight = true;
+        updateAdvanceButton();
+        let succeeded = false;
+        try {
+          const data = mvu.getMvuData({ type: 'message', message_id: 'latest' });
+          if (!data?.stat_data) {
+            persistedDataReady = false;
+            throw new Error('最新楼层尚无已持久化的 MVU 数据');
+          }
+          if (data.stat_data.事件?.近期预兆?.事件ID) {
+            throw new Error(`已有近期预兆：${data.stat_data.事件.近期预兆.事件ID}`);
+          }
+          const pair = findReadyPair(data.stat_data.事件 ?? {});
+          if (!pair) throw new Error('最新状态已变化，当前没有可推进事件');
+
+          const state = JSON.parse(JSON.stringify(data.stat_data));
+          const events = state.事件;
+          const fromAnchor = events.锚点状态?.[pair.from];
+          const toAnchor = events.锚点状态?.[pair.to];
+          if (!fromAnchor || !toAnchor) throw new Error('事件锚点数据不完整');
+          if (fromAnchor.状态 === '活跃') fromAnchor.状态 = '完成';
+          if (['完成', '变形', '取消'].includes(fromAnchor.状态)) fromAnchor.收尾 = true;
+          toAnchor.状态 = '预兆';
+          toAnchor.收尾 = false;
+          events.近期预兆 = {
+            事件ID: pair.to,
+            方向: pair.dir,
+            地点: pair.loc,
+            参与者: [],
+            紧迫度: pair.urgency,
+            模糊期限: pair.deadline,
+          };
+          const hasActive = Object.values(events.锚点状态).some(anchor => anchor.状态 === '活跃');
+          if (!hasActive) {
+            events.唯一活跃事件 = {
+              事件ID: '', 标题: '', 地点: '', 参与者: [], 状态: '无', 紧迫度: '无', 模糊期限: '', 进展: '', 幕后停止点: '',
+            };
+          }
+          state.系统 = state.系统 ?? {};
+          state.系统.事件通知 = `${pair.to}已进入预兆：${pair.dir}`;
+          const full = JSON.parse(JSON.stringify(data));
+          full.stat_data = state;
+          await mvu.replaceMvuData(full, { type: 'message', message_id: 'latest' });
+          const written = mvu.getMvuData({ type: 'message', message_id: 'latest' });
+          const writtenEvents = written?.stat_data?.事件;
+          const writtenFrom = writtenEvents?.锚点状态?.[pair.from];
+          const writtenTo = writtenEvents?.锚点状态?.[pair.to];
+          if (writtenEvents?.近期预兆?.事件ID !== pair.to
+            || writtenTo?.状态 !== '预兆'
+            || !['完成', '变形'].includes(writtenFrom?.状态)
+            || writtenFrom?.收尾 !== true) {
+            throw new Error('MVU 写入后复核不一致');
+          }
+          persistedDataReady = true;
+          succeeded = true;
+        } catch (error) {
+          readCurrent(mvu);
+          showRuntimeError(`推进失败：${error?.message ?? error}。已重新读取最新状态，请以当前显示为准。`);
+        } finally {
+          writeInFlight = false;
+          if (succeeded) readCurrent(mvu);
+          else updateAdvanceButton();
+        }
+      }
+
+      const panelHeads = [...root.querySelectorAll('[data-mvi-open]')];
+      const uiAbortController = new AbortController();
+      const uiSignal = uiAbortController.signal;
+      function activatePanel(targetId) {
+        for (const head of panelHeads) {
+          const body = byId(head.getAttribute('data-mvi-open'));
+          const isTarget = body?.id === targetId;
+          if (body) body.hidden = !isTarget;
+          head.setAttribute('aria-expanded', String(isTarget));
+        }
+      }
+      panelHeads.forEach((head, index) => {
+        head.addEventListener('click', () => {
+          const targetId = head.getAttribute('data-mvi-open');
+          const body = byId(targetId);
+          if (!body || body.hidden) {
+            activatePanel(targetId);
+          } else {
+            for (const other of panelHeads) {
+              const otherBody = byId(other.getAttribute('data-mvi-open'));
+              if (otherBody) otherBody.hidden = true;
+              other.setAttribute('aria-expanded', 'false');
+            }
+          }
+        }, { signal: uiSignal });
+        head.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const offset = event.key === 'ArrowLeft' ? -1 : event.key === 'ArrowRight' ? 1 : 0;
+          const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? panelHeads.length - 1 : (index + offset + panelHeads.length) % panelHeads.length;
+          panelHeads[nextIndex].focus();
+          activatePanel(panelHeads[nextIndex].getAttribute('data-mvi-open'));
+        }, { signal: uiSignal });
+      });
+
+      const subscriptions = [];
+      async function bootstrap() {
+        readCurrent();
+        const mvu = await waitForMvuBridge();
+        if (disposed) return;
+        if (!mvu) {
+          mvuAvailable = false;
+          mvuWritable = false;
+          persistedDataReady = false;
+          updateAdvanceButton();
+          showRuntimeError('状态栏无法连接 MVU 接口；请确认酒馆助手与卡内 MVU 脚本已启用。');
+          return;
+        }
+        mvuAvailable = true;
+        mvuWritable = typeof mvu.replaceMvuData === 'function';
+        readCurrent(mvu);
+        const advanceBtn = byId('mvi-advance-btn');
+        if (advanceBtn) advanceBtn.addEventListener('click', () => void advanceCurrentEvent(), { signal: uiSignal });
+        if (mvu.events && typeof eventOn === 'function') {
+          const refresh = () => { if (!disposed) readCurrent(mvu); };
+          subscriptions.push(eventOn(mvu.events.VARIABLE_INITIALIZED, refresh));
+          subscriptions.push(eventOn(mvu.events.VARIABLE_UPDATE_ENDED, refresh));
+        }
+      }
+      window.addEventListener('pagehide', () => {
+        disposed = true;
+        uiAbortController.abort();
+        subscriptions.forEach(subscription => subscription?.stop?.());
+        subscriptions.length = 0;
+      }, { once: true });
+      void bootstrap();
+    })();
+  </script>
+</section>
+</body>

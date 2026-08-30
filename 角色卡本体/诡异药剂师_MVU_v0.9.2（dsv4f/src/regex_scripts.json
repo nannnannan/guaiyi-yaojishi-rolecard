@@ -1,0 +1,87 @@
+[
+  {
+    "id": "tavernweave-hide-status-prompt-v0.9.2",
+    "scriptName": "诡异药剂师v0.9.2｜对AI隐藏状态栏占位符",
+    "findRegex": "/<StatusPlaceHolderImpl\\s*\\/>/g",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-status-ui-v0.9.2",
+    "scriptName": "诡异药剂师v0.9.2｜死界状态栏",
+    "findRegex": "/<StatusPlaceHolderImpl\\s*\\/>/g",
+    "replace_file": "src/ui/status.html",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-mvu-v0.9.2",
+    "scriptName": "诡异药剂师v0.9.2｜隐藏变量块",
+    "findRegex": "/<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-think-prompt-v0.9.2",
+    "scriptName": "诡异药剂师v0.9.2｜对AI隐藏思考块",
+    "findRegex": "/<think\\b[^>]*>[\\s\\S]*?<\\/think>/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-think-display-v0.9.2",
+    "scriptName": "诡异药剂师v0.9.2｜隐藏思考块",
+    "findRegex": "/<think\\b[^>]*>[\\s\\S]*?<\\/think>/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  }
+]

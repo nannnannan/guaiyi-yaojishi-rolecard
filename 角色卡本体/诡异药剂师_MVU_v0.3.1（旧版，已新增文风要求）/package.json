@@ -1,0 +1,11 @@
+{
+  "name": "weird-apothecary-mvu-card",
+  "private": true,
+  "version": "0.31.0",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "validate": "node tools/validate.mjs",
+    "check": "node tools/build.mjs && node tools/validate.mjs"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.32.0",
+  "status": "candidate",
+  "accepted_at": "",
+  "accepted_by": "owner",
+  "evidence": "v0.31 为候选版，等待所有者在真实酒馆测试后确认。",
+  "host": {
+    "sillytavern": "1.17.0",
+    "tavern_helper": "4.8.19"
+  },
+  "artifact": "dist/诡异药剂师_v0.32.json",
+  "bytes": 394191,
+  "sha256": "8b24ead6352c707b8a40d023029a0e6375db4b3b87c9d91dde0484ab8ec1b1be",
+  "offline_checks": 1938,
+  "notes": "v0.32 为 v0.31 补丁：开场白替换为小说血娃娃剧情原文摘抄，E01与相关设定按原文重写；离线验证通过前保持候选状态。v1.0前不公开发布。"
+}

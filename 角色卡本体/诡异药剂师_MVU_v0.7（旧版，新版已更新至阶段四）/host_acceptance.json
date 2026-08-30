@@ -1,0 +1,21 @@
+{
+    "id": "tavernweave.weird-apothecary.host-acceptance",
+    "version": "0.7.0",
+    "status": "accepted-release",
+    "accepted_at": "2026-08-15T23:53:17+08:00",
+    "accepted_by": "owner",
+    "tested_at": "2026-08-15T23:53:17+08:00",
+    "last_runtime_tested_at": null,
+    "last_runtime_sha256": null,
+    "tested_by": "owner",
+    "evidence": "所有者于2026-08-15明确指示：v0.7标志为已测试完成（accepted-release）。本次为所有者决定，未在本会话产生新的真机运行证据；既有离线基线（21767项）与产物哈希一致。",
+    "host": {
+        "sillytavern": null,
+        "tavern_helper": null
+    },
+    "artifact": "dist/诡异药剂师_v0.7.json",
+    "bytes": 2329974,
+    "sha256": "999b005fe909d6096c11bd48fccf9e7bffcdb9ab0536a003e406da0a025a8380",
+    "offline_checks": 21767,
+    "notes": "v0.7由v0.6独立复制并扩写阶段三（第277至431章、小总结14至20）：新增E36至E64共29个锚点（S8蓝星召唤与寻亲、S9黑夜城成长与人偶线、S10宗教战争与疫医伪装），全卡桥扩至63对；新增黑弦月、喵喵、林樱、艾雯爵士、羽毛笔、a01银色幻想、欲望母树7名独立人设并扩写倒吊天使；色色与恶堕全面开放（女性角色无锁，固定非恋爱男性角色维持锁），NPC可主动逆推；概念详写、数量不设上限；'大哔哔'直写为'大鸡巴'。旧版真机证据与accepted-release哈希不继承；离线构建通过后于2026-08-15由所有者明确指示转为accepted-release（本次为所有者决定，未产生新的真机运行证据）。"
+}

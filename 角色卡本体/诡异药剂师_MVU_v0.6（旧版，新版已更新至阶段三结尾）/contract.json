@@ -1,0 +1,801 @@
+{
+    "id": "tavernweave.weird-apothecary.contract",
+    "version": "0.6.0",
+    "required": {
+        "card_type": "mvu_zod",
+        "internal_before_v1": true,
+        "stage_scope": "第1至276章；本版新增范围为第150至276章、小总结08至13",
+        "core_character_count": 17,
+        "core_characters": [
+            "左左",
+            "血锯",
+            "血衣女士",
+            "小小",
+            "人偶夫人",
+            "爱丽丝",
+            "白逸",
+            "泰坦头颅",
+            "巫神头颅",
+            "小宝贝",
+            "倒吊天使",
+            "白夜",
+            "渡鸦",
+            "黑颅",
+            "猪头屠夫",
+            "哭泣小丑",
+            "黑白小丑"
+        ],
+        "character_entry_ids": {
+            "左左": 100,
+            "血锯": 110,
+            "血衣女士": 120,
+            "小小": 130,
+            "人偶夫人": 140,
+            "爱丽丝": 150,
+            "白逸": 160,
+            "泰坦头颅": 170,
+            "巫神头颅": 180,
+            "小宝贝": 190,
+            "倒吊天使": 200,
+            "白夜": 210,
+            "渡鸦": 220,
+            "黑颅": 230,
+            "猪头屠夫": 240,
+            "哭泣小丑": 250,
+            "黑白小丑": 260
+        },
+        "component_matrix": [
+            "角色速览",
+            "基础信息",
+            "性格调色盘",
+            "三面性",
+            "多阶段人设",
+            "二次解释"
+        ],
+        "candidate_rephrase_characters": [
+            "爱丽丝",
+            "白逸",
+            "倒吊天使",
+            "白夜",
+            "渡鸦",
+            "黑颅",
+            "猪头屠夫",
+            "哭泣小丑",
+            "黑白小丑"
+        ],
+        "non_romantic_characters": [
+            "血锯",
+            "小小",
+            "泰坦头颅",
+            "巫神头颅",
+            "小宝贝",
+            "白逸",
+            "白夜",
+            "渡鸦",
+            "黑颅",
+            "猪头屠夫",
+            "哭泣小丑",
+            "黑白小丑"
+        ],
+        "romance_open_characters": [
+            "爱丽丝",
+            "倒吊天使"
+        ],
+        "evil_locked_characters": [
+            "血锯",
+            "小小",
+            "爱丽丝",
+            "泰坦头颅",
+            "小宝贝",
+            "白逸",
+            "白夜",
+            "渡鸦",
+            "黑颅",
+            "猪头屠夫",
+            "哭泣小丑",
+            "黑白小丑"
+        ],
+        "event_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08",
+            "E09",
+            "E10",
+            "E11",
+            "E12",
+            "E13",
+            "E14",
+            "E15",
+            "E16",
+            "E17",
+            "E18",
+            "E19",
+            "E20",
+            "E21",
+            "E22",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27",
+            "E28",
+            "E29",
+            "E30",
+            "E31",
+            "E32",
+            "E33",
+            "E34",
+            "E35"
+        ],
+        "event_titles": {
+            "E01": "系统觉醒与开店",
+            "E02": "血娃娃上门与找妈妈任务",
+            "E03": "猪头魔与恶灵血婴",
+            "E04": "猎魔人治疗与传说左轮",
+            "E05": "不眠夜与小小牙科",
+            "E06": "诅咒清除能力与鬼婴塑形",
+            "E07": "血衣寻子与鬼婴萌化化解",
+            "E08": "暴击药剂与视界曝光",
+            "E09": "血衣鸿门宴与诅咒绑定",
+            "E10": "视界经营与玥玥治疗",
+            "E11": "血夜地狱行者与左左诞生",
+            "E12": "血肉灾变与左手共存",
+            "E13": "猎杀者夜袭与信使线",
+            "E14": "瘦长鬼影手术与024诊断",
+            "E15": "求援信与小小赴约",
+            "E16": "械魔大军与猎神者",
+            "E17": "小小介绍棒医生",
+            "E18": "倒吊塔决战与协会覆灭",
+            "E19": "猎头者家族绑定",
+            "E20": "师徒归来与阶段收束",
+            "E21": "魔鬼训练与首次独立出诊",
+            "E22": "幸福之家的血肉晚宴",
+            "E23": "异域同乡与爱丽丝初愈",
+            "E24": "诅咒复燃与古堡围猎",
+            "E25": "双面伯爵与心脑之汤",
+            "E26": "爱丽丝重生与母女终局",
+            "E27": "白逸遣返与九州异变",
+            "E28": "爱丽丝日常与十四病战蜥",
+            "E29": "传奇赠药与夜医启程",
+            "E30": "血月狼群与寂静镇试诊",
+            "E31": "哭泣小丑与血肉灾变",
+            "E32": "小丑余波与夜医接纳",
+            "E33": "夜医试炼与白夜旧梦",
+            "E34": "倒吊天使与夜医授职",
+            "E35": "左左拟化与蓝星鬼袭"
+        },
+        "event_states": [
+            "未触发",
+            "预兆",
+            "活跃",
+            "变形",
+            "完成",
+            "取消"
+        ],
+        "stage_ranges": {
+            "S0": [
+                "E01",
+                "E02"
+            ],
+            "S1": [
+                "E03",
+                "E04",
+                "E05"
+            ],
+            "S2": [
+                "E06",
+                "E07",
+                "E08",
+                "E09",
+                "E10"
+            ],
+            "S3": [
+                "E11",
+                "E12",
+                "E13",
+                "E14",
+                "E15",
+                "E16",
+                "E17",
+                "E18"
+            ],
+            "S4": [
+                "E19",
+                "E20"
+            ],
+            "S5": [
+                "E21",
+                "E22",
+                "E23",
+                "E24",
+                "E25",
+                "E26",
+                "E27",
+                "E28"
+            ],
+            "S6": [
+                "E29",
+                "E30",
+                "E31",
+                "E32"
+            ],
+            "S7": [
+                "E33",
+                "E34",
+                "E35"
+            ]
+        },
+        "event_dependencies": {
+            "E21": {
+                "hard_all": [
+                    "E20已收束"
+                ],
+                "hard_any": [
+                    "幸福之家正式订单",
+                    "同一求诊的可靠委托入口"
+                ],
+                "independent_fallback": [
+                    "视界或委托方直接发单"
+                ]
+            },
+            "E22": {
+                "hard_all": [
+                    "已抵达幸福之家"
+                ],
+                "hard_any": [
+                    "正门迎客",
+                    "其他入口进入古堡"
+                ],
+                "independent_fallback": [
+                    "绕过宴席后识破傀儡家庭"
+                ]
+            },
+            "E23": {
+                "hard_all": [
+                    "白逸或爱丽丝仍可接触"
+                ],
+                "hard_any": [
+                    "白逸求救",
+                    "冷冻库线索",
+                    "爱丽丝主动现身"
+                ],
+                "independent_fallback": [
+                    "未赴宴仍可诊疗傀儡控制"
+                ]
+            },
+            "E24": {
+                "hard_all": [
+                    "玛丽深层诅咒明确复燃"
+                ],
+                "hard_any": [
+                    "女主人再次恶化",
+                    "古堡家人或墙体重新受控"
+                ],
+                "independent_fallback": [
+                    "初治变形后由其他载体显形"
+                ]
+            },
+            "E25": {
+                "hard_all": [
+                    "古堡深层真相仍存在"
+                ],
+                "hard_any": [
+                    "卡梅尔",
+                    "高塔铁笼",
+                    "玛丽显形"
+                ],
+                "independent_fallback": [
+                    "绕过家主防线直接调查高塔"
+                ]
+            },
+            "E26": {
+                "hard_all": [
+                    "爱丽丝灵魂仍在",
+                    "已取得遗骸或等效重建媒介"
+                ],
+                "hard_any": [
+                    "母女对质可发生",
+                    "真相可传递给爱丽丝"
+                ],
+                "independent_fallback": [
+                    "使用其他载体重建爱丽丝"
+                ]
+            },
+            "E27": {
+                "hard_all": [
+                    "白逸仍存活"
+                ],
+                "hard_any": [
+                    "召唤时效崩解",
+                    "其他跨界返回机制"
+                ],
+                "independent_fallback": [
+                    "白逸以其他方式获救后返乡"
+                ]
+            },
+            "E28": {
+                "hard_all": [
+                    "药店恢复营业"
+                ],
+                "hard_any": [
+                    "爱丽丝术后日常",
+                    "战蜥来店"
+                ],
+                "independent_fallback": [
+                    "任一支线独立稳定后走变形"
+                ]
+            },
+            "E29": {
+                "hard_all": [
+                    "夜医路线仍有效"
+                ],
+                "hard_any": [
+                    "转职道具",
+                    "可信夜医引荐"
+                ],
+                "independent_fallback": [
+                    "无血锯赠药时仍可正式启程"
+                ]
+            },
+            "E30": {
+                "hard_all": [
+                    "进入诅咒之领并寻找夜医"
+                ],
+                "hard_any": [
+                    "狼人阻路",
+                    "直接抵达寂静镇",
+                    "夜医主动接触"
+                ],
+                "independent_fallback": [
+                    "绕过狼人取得诊疗考察机会"
+                ]
+            },
+            "E31": {
+                "hard_all": [
+                    "哭泣小丑已入体"
+                ],
+                "hard_any": [
+                    "高压诊断累积",
+                    "其他医疗刺激",
+                    "负面情绪刺激"
+                ],
+                "independent_fallback": [
+                    "E30变形后由等效刺激引爆"
+                ]
+            },
+            "E32": {
+                "hard_all": [
+                    "夜医仍与林恩接触"
+                ],
+                "hard_any": [
+                    "爆发后抢救审查",
+                    "正常推荐审查"
+                ],
+                "independent_fallback": [
+                    "E31取消时跳过抢救与诅咒审问"
+                ]
+            },
+            "E33": {
+                "hard_all": [
+                    "取得夜医候选或试炼资格"
+                ],
+                "hard_any": [
+                    "组织准入",
+                    "元勋担保"
+                ],
+                "independent_fallback": [
+                    "附条件观察后进入试炼"
+                ]
+            },
+            "E34": {
+                "hard_all": [
+                    "可进入黑夜之城核心区"
+                ],
+                "hard_any": [
+                    "白夜引荐",
+                    "泰坦契约印",
+                    "主母主动召见"
+                ],
+                "independent_fallback": [
+                    "常规考试通过后正式引见"
+                ]
+            },
+            "E35": {
+                "hard_all": [],
+                "hard_any": [
+                    "已获得拟化且左左仍在",
+                    "白逸已回九州并受官方调查"
+                ],
+                "independent_fallback": [
+                    "任一并行线存在即可变形收束"
+                ]
+            }
+        },
+        "opening_patient": "血娃娃",
+        "opening_marker": "<StatusPlaceHolderImpl/>",
+        "opening_source_verbatim": true,
+        "time_progression": "纯事件驱动，不维护日历计数",
+        "evil_value_scope": "全部关系角色保留兼容恶堕字段；小小与爱丽丝幼态外观阶段恒为0，其余角色按确认边界决定是否锁定",
+        "factions": [
+            "魔人协会",
+            "猎头者家族",
+            "人偶庄园",
+            "夜医",
+            "独角恶鬼族",
+            "游魂巷居民"
+        ],
+        "mechanisms": [
+            "视界系统",
+            "诅咒与医疗",
+            "巨像及血肉机械技术"
+        ],
+        "locations": [
+            "血锯药剂店",
+            "45号血衣住所",
+            "凄凉荒野与倒吊塔",
+            "独角鬼王神庙",
+            "人偶庄园"
+        ],
+        "update_protocol": "UpdateVariable.JSONPatch",
+        "event_state_semantics": "only 活跃 is active; 变形 is a terminal stable alternative result",
+        "event_transition_patch": "any anchor status/tail, active event or omen migration replaces /事件 atomically",
+        "cancel_transition_policy": "status UI never auto-advances a cancelled predecessor; narrative evaluates local dependencies",
+        "empty_event_objects": "no active event or omen uses canonical fully cleared detail objects",
+        "worldbook_stable_id": "weird-apothecary-worldbook",
+        "worldbook_version": "0.6.0",
+        "worldbook_entry_count": 167,
+        "event_context_windows": {
+            "detail_radius": 1,
+            "summary_radius": 3,
+            "detail_source_uid": 1,
+            "material_entry_start": 300,
+            "material_entry_end": 334,
+            "material_entries_enabled": false
+        },
+        "concept_activation": {
+            "router_entry_id": 399,
+            "concept_id_start": 400,
+            "concept_id_end": 492,
+            "concept_count": 93,
+            "new_concept_id_start": 452,
+            "new_concept_id_end": 492,
+            "new_concept_count": 41,
+            "mode": "event_window_or_native_green",
+            "event_window_radius": 1,
+            "native_chat_roles": [
+                "user",
+                "assistant"
+            ],
+            "inherit_global_scan_depth": true,
+            "deduplicate_by": "world.uid",
+            "stage1_enriched_concept_start": 400,
+            "stage1_enriched_concept_end": 451,
+            "stage1_enriched_concept_count": 52,
+            "detailed_static_format": [
+                "事实门槛",
+                "定义",
+                "来源",
+                "机制",
+                "限制与代价",
+                "未知项",
+                "禁止外推"
+            ],
+            "detailed_variant_format": [
+                "事件演进",
+                "当前状态"
+            ],
+            "state_variants": {
+                "mode": "event_state_gated_variants",
+                "gate_source": "stat_data.事件.锚点状态.<事件ID>.状态",
+                "gate_states": [
+                    "完成",
+                    "变形"
+                ],
+                "baseline_required": true,
+                "variant_required_fields": [
+                    "事件演进",
+                    "当前状态"
+                ],
+                "variant_optional_fields": [
+                    "人物关联",
+                    "来源",
+                    "定义"
+                ],
+                "static_form_allowed": true
+            }
+        },
+        "character_activation": {
+            "router_entry_id": 399,
+            "character_count": 17,
+            "mode": "event_cast_window_or_native_green",
+            "event_window_radius": 1,
+            "native_chat_roles": [
+                "user",
+                "assistant"
+            ],
+            "inherit_global_scan_depth": true,
+            "deduplicate_by": "world.uid",
+            "route_kind": "character"
+        },
+        "character_event_ids": {
+            "左左": [
+                "E11",
+                "E12",
+                "E18",
+                "E20",
+                "E22",
+                "E23",
+                "E24",
+                "E26",
+                "E33",
+                "E35"
+            ],
+            "血锯": [
+                "E01",
+                "E18",
+                "E20",
+                "E21",
+                "E26",
+                "E29"
+            ],
+            "血衣女士": [
+                "E07",
+                "E09",
+                "E11",
+                "E12",
+                "E13"
+            ],
+            "小小": [
+                "E05",
+                "E15",
+                "E16",
+                "E17",
+                "E18",
+                "E19",
+                "E34"
+            ],
+            "人偶夫人": [
+                "E15",
+                "E18",
+                "E20"
+            ],
+            "爱丽丝": [
+                "E22",
+                "E23",
+                "E24",
+                "E25",
+                "E26",
+                "E28"
+            ],
+            "白逸": [
+                "E22",
+                "E23",
+                "E24",
+                "E25",
+                "E26",
+                "E27",
+                "E35"
+            ],
+            "泰坦头颅": [
+                "E15",
+                "E16",
+                "E17",
+                "E18",
+                "E19",
+                "E34"
+            ],
+            "巫神头颅": [
+                "E15",
+                "E16",
+                "E17",
+                "E19",
+                "E34"
+            ],
+            "小宝贝": [
+                "E01",
+                "E11"
+            ],
+            "倒吊天使": [
+                "E34"
+            ],
+            "白夜": [
+                "E33",
+                "E34"
+            ],
+            "渡鸦": [
+                "E30",
+                "E31",
+                "E32",
+                "E33"
+            ],
+            "黑颅": [
+                "E30",
+                "E31",
+                "E32"
+            ],
+            "猪头屠夫": [
+                "E25",
+                "E26",
+                "E32"
+            ],
+            "哭泣小丑": [
+                "E25",
+                "E28",
+                "E30",
+                "E31",
+                "E32",
+                "E34"
+            ],
+            "黑白小丑": [
+                "E32"
+            ]
+        },
+        "existing_concept_event_extensions": {
+            "402": [
+                "E13",
+                "E20",
+                "E29",
+                "E30",
+                "E31",
+                "E32",
+                "E33",
+                "E34"
+            ],
+            "415": [
+                "E04",
+                "E11",
+                "E12",
+                "E18",
+                "E31"
+            ],
+            "416": [
+                "E14",
+                "E21"
+            ],
+            "417": [
+                "E13",
+                "E18",
+                "E25"
+            ],
+            "423": [
+                "E05",
+                "E18",
+                "E26",
+                "E31"
+            ],
+            "425": [
+                "E06",
+                "E12",
+                "E23",
+                "E26",
+                "E31"
+            ],
+            "431": [
+                "E20",
+                "E21",
+                "E22"
+            ],
+            "432": [
+                "E02",
+                "E21"
+            ],
+            "435": [
+                "E23",
+                "E25",
+                "E26",
+                "E32"
+            ],
+            "436": [
+                "E19",
+                "E34"
+            ],
+            "438": [
+                "E19",
+                "E34"
+            ],
+            "439": [
+                "E12",
+                "E13",
+                "E18",
+                "E25"
+            ],
+            "441": [
+                "E12",
+                "E31",
+                "E33"
+            ],
+            "442": [
+                "E17",
+                "E19",
+                "E23",
+                "E25",
+                "E26",
+                "E32",
+                "E33"
+            ],
+            "443": [
+                "E06",
+                "E07",
+                "E09",
+                "E18",
+                "E19",
+                "E26",
+                "E31",
+                "E34"
+            ],
+            "444": [
+                "E14",
+                "E28",
+                "E30",
+                "E31"
+            ],
+            "446": [
+                "E12",
+                "E13",
+                "E18",
+                "E24",
+                "E25"
+            ]
+        },
+        "host_versions": {
+            "sillytavern": "1.17.0",
+            "tavern_helper": "4.9.1"
+        }
+    },
+    "forbidden": {
+        "systems": [
+            "combat",
+            "level_progression_system",
+            "tracked_rank_system",
+            "combat_stats",
+            "skill_tree",
+            "tracked_inventory_system",
+            "tracked_currency_system",
+            "shop_economy",
+            "old_chat_migration",
+            "day_counter"
+        ],
+        "player_control": [
+            "invent Lin En dialogue",
+            "invent Lin En voluntary actions",
+            "invent Lin En decisions",
+            "invent Lin En judgments",
+            "invent Lin En memories",
+            "invent Lin En inner thoughts",
+            "invent Lin En relationship acceptance"
+        ],
+        "runtime_claims": [
+            "player must install Zod",
+            "static validation proves real-host execution",
+            "v0.6 is accepted before live host testing"
+        ],
+        "continuity": [
+            "Alice disappeared permanently",
+            "Crying Clown permanently cured",
+            "Black String Moon is active in stage two",
+            "Lin En knows the butcher-clown mountain conversation"
+        ]
+    },
+    "acceptance": [
+        "JSON parses as chara_card_v3 and top-level/data mirrors match",
+        "all 17 core characters have six registered runtime components; unconfirmed deep reinterpretations remain unregistered candidate drafts",
+        "all 35 event anchors use six-state EJS gates; E21 through E34 contain next-event introductions and E35 has no E36",
+        "34 bridge pairs exist; cancelled predecessors are not auto-advanced by the UI",
+        "event details use current plus or minus one anchor while compact continuity summaries use current plus or minus three anchors",
+        "all 93 concepts use a plus or minus one event-window force activation OR native green-light keywords and deduplicate by world.uid",
+        "all 52 stage-one concepts preserve their stable UIDs, names, categories, keywords and event metadata while using the same detailed static format and fact gates as stage two",
+        "all 17 characters use a plus or minus one event-cast force activation OR native name keywords, keep stage EJS, and deduplicate by world.uid",
+        "all packed worldbook entries enable both recursion guards",
+        "initial variables, schema, opening initvar and status fallback are deeply equal",
+        "cross-anchor event migrations replace the complete /事件 object atomically",
+        "Alice hiding is not disappearance; Carmel and the mistress recover before Mary reactivates; manifestation death is not curse cure",
+        "Blood Lady default neglect is overridden by recorded player return facts",
+        "Black-White Clown and Pig Butcher backstage knowledge remains outside Lin En knowledge",
+        "real-host behavior remains pending until explicit authorization and user acceptance"
+    ]
+}

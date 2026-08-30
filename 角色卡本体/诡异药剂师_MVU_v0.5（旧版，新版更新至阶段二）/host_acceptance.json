@@ -1,0 +1,21 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.5.0",
+  "status": "accepted-release",
+  "accepted_at": "2026-08-10T15:47:55.061Z",
+  "accepted_by": "AGENT B (Codex)",
+  "tested_at": "2026-08-10T15:47:55.061Z",
+  "last_runtime_tested_at": "2026-08-10T15:45:50.805Z",
+  "last_runtime_sha256": "15b8785c7af412c5dbdec1ce92a7361714a04114b5c4c299d78ccfdd2d9ac910",
+  "tested_by": "AGENT B (Codex)",
+  "evidence": "当前哈希双样本真机证据：../../项目交接/真机证据/e01-to-e06-regression-2026-08-10/default16-a-runtime-e06-player-simulation.json 与 default16-e-runtime-e06-player-simulation.json；两组均为10轮HTTP成功，E01-E05完成、E06仅预兆，每轮事件事务、概念事件窗单次注入、玩家主权、时间格式、状态栏与重载持久化通过。清理证据：同目录runtime-e06-cleanup.json。双路关键词专项历史矩阵证据仍位于../concept-dual-route-2026-08-09/。",
+  "host": {
+    "sillytavern": "1.17.0",
+    "tavern_helper": "4.9.1"
+  },
+  "artifact": "dist/诡异药剂师_v0.5.json",
+  "bytes": 861405,
+  "sha256": "15b8785c7af412c5dbdec1ce92a7361714a04114b5c4c299d78ccfdd2d9ac910",
+  "offline_checks": 5828,
+  "notes": "102条世界书、20锚点、52条概念，5828项离线验证通过。当前哈希已完成两组独立E01至E06预兆真机回归并人工复核；临时卡、同名世界书、脚本登记、正则白名单及本地临时文件均已清理。测试使用Default兼容预设，结束后已恢复梦鲸思客V4-0731、30000最大输出、high推理与原custom/gemini-3.1-pro-preview连接。HTTP 429/524零回复记录归类为上游环境噪声。"
+}

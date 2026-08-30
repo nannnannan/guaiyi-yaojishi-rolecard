@@ -1,0 +1,1548 @@
+<body>
+<section class="wa-panel" data-wa-status-root aria-label="诡异药剂师死界状态栏">
+  <style>
+    .wa-panel {
+      --wa-night: #070b12;
+      --wa-ink: #0d1420;
+      --wa-card: rgba(16, 28, 41, .88);
+      --wa-line: #29445f;
+      --wa-blue: #5bc5ff;
+      --wa-blue-soft: #9bdcff;
+      --wa-soul: #76f0d2;
+      --wa-text: #e8f2f7;
+      --wa-muted: #9cafbb;
+      --wa-alert: #ff7185;
+      box-sizing: border-box;
+      width: 100%;
+      margin: .8rem 0;
+      color: var(--wa-text);
+      font: 14px/1.55 ui-sans-serif, system-ui, "Microsoft YaHei", sans-serif;
+    }
+    .wa-panel * { box-sizing: border-box; }
+    .wa-shell {
+      overflow: hidden;
+      border: 1px solid var(--wa-line);
+      border-radius: 16px;
+      background:
+        radial-gradient(circle at 88% -10%, rgba(91, 197, 255, .14), transparent 34%),
+        radial-gradient(circle at 8% 12%, rgba(118, 240, 210, .07), transparent 28%),
+        linear-gradient(155deg, var(--wa-ink), var(--wa-night));
+      box-shadow: 0 12px 34px rgba(0, 0, 0, .34), inset 0 0 36px rgba(91, 197, 255, .025);
+    }
+    .wa-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .8rem;
+      padding: .8rem 1rem;
+      border-bottom: 1px solid rgba(91, 197, 255, .2);
+    }
+    .wa-brand { display: flex; align-items: center; gap: .65rem; min-width: 0; }
+    .wa-lamp {
+      width: .72rem;
+      height: .95rem;
+      border-radius: 52% 48% 56% 44%;
+      background: var(--wa-soul);
+      box-shadow: 0 0 9px rgba(118, 240, 210, .8), 0 0 22px rgba(91, 197, 255, .38);
+      animation: wa-breathe 3.4s ease-in-out infinite;
+      flex: 0 0 auto;
+    }
+    .wa-title { margin: 0; font-size: 1rem; letter-spacing: .08em; overflow-wrap: anywhere; }
+    .wa-version { color: var(--wa-blue-soft); font-size: .75rem; white-space: nowrap; }
+    .wa-tabs { display: flex; gap: .4rem; padding: .65rem .7rem 0; overflow-x: auto; }
+    .wa-tab {
+      appearance: none;
+      border: 1px solid var(--wa-line);
+      border-radius: 999px;
+      padding: .4rem .72rem;
+      color: var(--wa-muted);
+      background: rgba(255, 255, 255, .025);
+      cursor: pointer;
+      font: inherit;
+      white-space: nowrap;
+    }
+    .wa-tab:hover, .wa-tab:focus-visible { border-color: var(--wa-blue); outline: none; }
+    .wa-tab[aria-selected="true"] {
+      color: var(--wa-text);
+      border-color: var(--wa-blue);
+      background: rgba(91, 197, 255, .14);
+      box-shadow: 0 0 14px rgba(91, 197, 255, .12);
+    }
+    .wa-page { padding: .75rem; }
+    .wa-page[hidden] { display: none; }
+    .wa-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .62rem; }
+    .wa-card {
+      min-width: 0;
+      padding: .72rem;
+      border: 1px solid rgba(41, 68, 95, .86);
+      border-radius: 11px;
+      background: var(--wa-card);
+    }
+    .wa-card--wide { grid-column: 1 / -1; }
+    .wa-card--urgent {
+      border-color: rgba(255, 113, 133, .7);
+      animation: wa-alert 1.9s ease-in-out infinite;
+    }
+    .wa-label { margin: 0 0 .35rem; color: var(--wa-blue-soft); font-size: .72rem; letter-spacing: .08em; }
+    .wa-value { margin: 0; overflow-wrap: anywhere; }
+    .wa-value + .wa-value { margin-top: .22rem; }
+    .wa-muted { color: var(--wa-muted); }
+    .wa-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      margin: .15rem .2rem .15rem 0;
+      padding: .14rem .45rem;
+      border: 1px solid rgba(91, 197, 255, .28);
+      border-radius: 999px;
+      color: var(--wa-blue-soft);
+      background: rgba(91, 197, 255, .06);
+      font-size: .78rem;
+    }
+    .wa-person {
+      border: 1px solid rgba(41, 68, 95, .72);
+      border-radius: 10px;
+      background: rgba(7, 11, 18, .34);
+    }
+    .wa-person + .wa-person { margin-top: .52rem; }
+    .wa-person summary {
+      display: flex;
+      justify-content: space-between;
+      gap: .6rem;
+      padding: .62rem .68rem;
+      cursor: pointer;
+      list-style: none;
+    }
+    .wa-person summary::-webkit-details-marker { display: none; }
+    .wa-person summary:focus-visible { outline: 1px solid var(--wa-blue); outline-offset: -2px; }
+    .wa-name { font-weight: 700; color: var(--wa-text); }
+    .wa-status { color: var(--wa-soul); text-align: right; }
+    .wa-person-body { padding: 0 .68rem .7rem; border-top: 1px dashed rgba(91, 197, 255, .16); }
+    .wa-person-meta { margin: .55rem 0; color: var(--wa-muted); }
+    .wa-meter-row {
+      display: grid;
+      grid-template-columns: 3.3rem minmax(0, 1fr) 4.6rem;
+      align-items: center;
+      gap: .45rem;
+      margin: .34rem 0;
+    }
+    .wa-meter {
+      position: relative;
+      height: .42rem;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .07);
+    }
+    .wa-meter > span {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--wa-soul), var(--wa-blue));
+      transition: width .3s ease, left .3s ease;
+    }
+    .wa-meter > span[data-negative="true"] { background: linear-gradient(90deg, var(--wa-alert), #d485ff); }
+    .wa-meter-text { color: var(--wa-muted); font-size: .75rem; text-align: right; }
+    .wa-edge {
+      padding: .55rem 0;
+      border-top: 1px dashed rgba(91, 197, 255, .15);
+    }
+    .wa-edge:first-child { border-top: 0; padding-top: 0; }
+    .wa-event-id { color: var(--wa-soul); font-weight: 700; letter-spacing: .08em; }
+    .wa-list { margin: .3rem 0 0; padding-left: 1.15rem; }
+    .wa-list li + li { margin-top: .25rem; }
+    .wa-foot { padding: .55rem .9rem .75rem; color: var(--wa-muted); font-size: .75rem; }
+    .wa-btn {
+      margin-top: .55rem;
+      padding: .42rem .8rem;
+      border: 1px solid rgba(91, 197, 255, .45);
+      border-radius: 999px;
+      color: var(--wa-blue-soft);
+      background: rgba(91, 197, 255, .08);
+      font: inherit;
+      font-size: .8rem;
+      cursor: pointer;
+    }
+    .wa-btn:hover:not(:disabled), .wa-btn:focus-visible:not(:disabled) {
+      border-color: var(--wa-blue);
+      color: var(--wa-text);
+      background: rgba(91, 197, 255, .16);
+    }
+    .wa-btn:disabled { opacity: .45; cursor: not-allowed; }
+    .wa-error {
+      margin: .75rem;
+      padding: .7rem;
+      border: 1px dashed var(--wa-alert);
+      border-radius: 9px;
+      color: #ffc3cc;
+    }
+    @keyframes wa-breathe {
+      0%, 100% { opacity: .64; transform: scale(.92); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    @keyframes wa-alert {
+      0%, 100% { box-shadow: 0 0 0 rgba(255, 113, 133, 0); }
+      50% { box-shadow: 0 0 16px rgba(255, 113, 133, .14); }
+    }
+    @media (max-width: 600px) {
+      .wa-grid { grid-template-columns: 1fr; }
+      .wa-card--wide { grid-column: auto; }
+      .wa-meter-row { grid-template-columns: 3rem minmax(0, 1fr) 4rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wa-panel *, .wa-panel *::before, .wa-panel *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+
+  <div class="wa-shell">
+    <header class="wa-head">
+      <div class="wa-brand">
+        <span class="wa-lamp" aria-hidden="true"></span>
+        <h3 class="wa-title">死界观察终端</h3>
+      </div>
+      <span class="wa-version">《诡异药剂师》v0.6</span>
+    </header>
+
+    <nav class="wa-tabs" role="tablist" aria-label="状态页">
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-current" aria-controls="wa-current" aria-selected="true">当前状态</button>
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-people" aria-controls="wa-people" aria-selected="false" tabindex="-1">人物关系</button>
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-events" aria-controls="wa-events" aria-selected="false" tabindex="-1">世界事件</button>
+      <button class="wa-tab" type="button" role="tab" id="wa-tab-system" aria-controls="wa-system" aria-selected="false" tabindex="-1">系统</button>
+    </nav>
+
+    <div id="wa-error" class="wa-error" role="status" hidden></div>
+
+    <section class="wa-page" id="wa-current" role="tabpanel" aria-labelledby="wa-tab-current">
+      <div class="wa-grid">
+        <article class="wa-card">
+          <p class="wa-label">世界阶段</p>
+          <p class="wa-value" id="wa-phase">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-phase-progress"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">地点与时间</p>
+          <p class="wa-value" id="wa-location">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-time"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">林恩</p>
+          <p class="wa-value" id="wa-linen">读取中……</p>
+          <div id="wa-identities"></div>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">系统目标</p>
+          <p class="wa-value" id="wa-task">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-task-note"></p>
+        </article>
+        <article class="wa-card wa-card--wide" id="wa-current-event-card">
+          <p class="wa-label">当前重大事件</p>
+          <p class="wa-value" id="wa-current-event">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-current-event-progress"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wa-page" id="wa-people" role="tabpanel" aria-labelledby="wa-tab-people" hidden>
+      <div class="wa-grid">
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">已解锁人物</p>
+          <div id="wa-relations"><p class="wa-muted">读取中……</p></div>
+        </article>
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">重要角色间关系</p>
+          <div id="wa-edges"><p class="wa-muted">读取中……</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wa-page" id="wa-events" role="tabpanel" aria-labelledby="wa-tab-events" hidden>
+      <div class="wa-grid">
+        <article class="wa-card wa-card--wide" id="wa-event-detail-card">
+          <p class="wa-label">唯一活跃事件</p>
+          <p class="wa-value" id="wa-event-title">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-event-detail"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">近期预兆</p>
+          <p class="wa-value" id="wa-omen-title">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-omen-detail"></p>
+          <button class="wa-btn" id="wa-advance-btn" type="button" disabled>读取中……</button>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">最近结果</p>
+          <ul class="wa-list" id="wa-results"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="wa-page" id="wa-system" role="tabpanel" aria-labelledby="wa-tab-system" hidden>
+      <div class="wa-grid">
+        <article class="wa-card">
+          <p class="wa-label">当前任务</p>
+          <p class="wa-value" id="wa-sys-task">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-sys-task-stage"></p>
+          <p class="wa-value wa-muted" id="wa-sys-task-note"></p>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">成长记录</p>
+          <p class="wa-value" id="wa-sys-level">读取中……</p>
+          <div id="wa-sys-skills"></div>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">图鉴</p>
+          <ul class="wa-list" id="wa-sys-codex"></ul>
+        </article>
+        <article class="wa-card">
+          <p class="wa-label">成就</p>
+          <ul class="wa-list" id="wa-sys-achievements"></ul>
+        </article>
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">亲密接受度（恶堕值）</p>
+          <div id="wa-sys-evil"></div>
+        </article>
+        <article class="wa-card wa-card--wide">
+          <p class="wa-label">系统提示</p>
+          <p class="wa-value" id="wa-sys-notice">读取中……</p>
+          <p class="wa-value wa-muted" id="wa-sys-event-notice"></p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="wa-foot">人物页只显示已解锁信息；姓名解锁不代表登场。取消态不自动推进，由正文核对局部依赖。恶堕值只随玩家明确行动推进。</footer>
+  </div>
+
+  <script>
+    (() => {
+      const FALLBACK_STATE = {
+  "元数据": {
+    "卡名": "《诡异药剂师》v0.6",
+    "版本": "0.6.0"
+  },
+  "世界": {
+    "阶段编号": "S0",
+    "阶段名称": "药店接管期",
+    "模糊阶段进度": "初期",
+    "当前场景时间": "E02收尾·午后",
+    "地点": "游魂巷·血锯药剂店",
+    "氛围": "午后的药剂店，柜台上的盘子里放着从血娃娃胃中取出的器官",
+    "大局线索": []
+  },
+  "林恩": {
+    "年龄": 17,
+    "身体状况": "正常",
+    "当前身份": [
+      "血锯学徒",
+      "临时店主"
+    ],
+    "等级": 2,
+    "技能": [
+      "随机诊断术（被动，系统辅助诊断）",
+      "中级家务（901/1000）",
+      "初级药剂制造（90/100）",
+      "初级手术（20/100）"
+    ],
+    "成就": [
+      "隐藏任务·血娃娃找妈妈（完成度2%）"
+    ],
+    "图鉴已解锁": [
+      "血娃娃（血肉恶灵）",
+      "血娃娃的右眼（稀有物品）"
+    ],
+    "关键诅咒或契约": [],
+    "当前明确目标": "研究盘中的器官线索，追查血娃娃的妈妈",
+    "最近明确指令": ""
+  },
+  "事件": {
+    "锚点状态": {
+      "E01": {
+        "标题": "系统觉醒与开店",
+        "状态": "完成",
+        "收尾": true
+      },
+      "E02": {
+        "标题": "血娃娃上门与找妈妈任务",
+        "状态": "活跃",
+        "收尾": true
+      },
+      "E03": {
+        "标题": "猪头魔与恶灵血婴",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E04": {
+        "标题": "猎魔人治疗与传说左轮",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E05": {
+        "标题": "不眠夜与小小牙科",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E06": {
+        "标题": "诅咒清除能力与鬼婴塑形",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E07": {
+        "标题": "血衣寻子与鬼婴萌化化解",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E08": {
+        "标题": "暴击药剂与视界曝光",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E09": {
+        "标题": "血衣鸿门宴与诅咒绑定",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E10": {
+        "标题": "视界经营与玥玥治疗",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E11": {
+        "标题": "血夜地狱行者与左左诞生",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E12": {
+        "标题": "血肉灾变与左手共存",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E13": {
+        "标题": "猎杀者夜袭与信使线",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E14": {
+        "标题": "瘦长鬼影手术与024诊断",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E15": {
+        "标题": "求援信与小小赴约",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E16": {
+        "标题": "械魔大军与猎神者",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E17": {
+        "标题": "小小介绍棒医生",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E18": {
+        "标题": "倒吊塔决战与协会覆灭",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E19": {
+        "标题": "猎头者家族绑定",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E20": {
+        "标题": "师徒归来与阶段收束",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E21": {
+        "标题": "魔鬼训练与首次独立出诊",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E22": {
+        "标题": "幸福之家的血肉晚宴",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E23": {
+        "标题": "异域同乡与爱丽丝初愈",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E24": {
+        "标题": "诅咒复燃与古堡围猎",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E25": {
+        "标题": "双面伯爵与心脑之汤",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E26": {
+        "标题": "爱丽丝重生与母女终局",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E27": {
+        "标题": "白逸遣返与九州异变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E28": {
+        "标题": "爱丽丝日常与十四病战蜥",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E29": {
+        "标题": "传奇赠药与夜医启程",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E30": {
+        "标题": "血月狼群与寂静镇试诊",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E31": {
+        "标题": "哭泣小丑与血肉灾变",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E32": {
+        "标题": "小丑余波与夜医接纳",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E33": {
+        "标题": "夜医试炼与白夜旧梦",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E34": {
+        "标题": "倒吊天使与夜医授职",
+        "状态": "未触发",
+        "收尾": false
+      },
+      "E35": {
+        "标题": "左左拟化与蓝星鬼袭",
+        "状态": "未触发",
+        "收尾": false
+      }
+    },
+    "唯一活跃事件": {
+      "事件ID": "E02",
+      "标题": "血娃娃上门与找妈妈任务",
+      "地点": "血锯药剂店门前",
+      "参与者": [
+        "血娃娃"
+      ],
+      "状态": "活跃",
+      "紧迫度": "中",
+      "模糊期限": "正在等待回应",
+      "进展": "血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子",
+      "幕后停止点": "等待林恩处置盘中线索或决定下一步"
+    },
+    "近期预兆": {
+      "事件ID": "",
+      "方向": "",
+      "地点": "",
+      "参与者": [],
+      "紧迫度": "无",
+      "模糊期限": ""
+    },
+    "最近结果": [],
+    "阶段总结": [],
+    "原创重大事件待定队列": []
+  },
+  "关系": {
+    "左左": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未诞生",
+      "处境": "尚未形成独立个体",
+      "关系类型": "尚未诞生",
+      "人物阶段": "未诞生",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "未确认独立成年形态与心智前，吸引固定为0；恶堕值不随事件推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "血锯": {
+      "解锁": true,
+      "在场": false,
+      "生存状态": "暂离",
+      "位置": "游魂巷外，具体未知",
+      "处境": "离店两天",
+      "关系类型": "师徒",
+      "人物阶段": "师父暂时离店",
+      "好感": 25,
+      "信赖": 15,
+      "戒备": 10,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [
+        "把药剂店与地窖钥匙暂时交给林恩"
+      ],
+      "边界": "固定非恋爱师徒；师徒情谊不等于无条件兜底",
+      "关键记忆": [
+        "血锯留下短笺并暂时离店"
+      ],
+      "最近互动": "离店前把店铺交给林恩照看"
+    },
+    "血衣女士": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "45号血衣住所",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未接触",
+      "人物阶段": "寻子线未公开",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 20,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [
+        "血娃娃胃中取出不知名女人的头发、耳朵与梳子（疑似寻母线索）"
+      ],
+      "边界": "治疗、孩子与保护责任不能制造亲密同意；恶堕值只随玩家明确行动推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "小小": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "牙痛事件尚未进入预兆",
+      "关系类型": "未接触",
+      "人物阶段": "命名前",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱、非成人；吸引与恶堕恒为0，禁止推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "人偶夫人": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "人偶庄园或外出，具体未知",
+      "处境": "尚未与林恩正式接触",
+      "关系类型": "未接触",
+      "人物阶段": "归来前",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 15,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "治疗与契约的权力压力解除后才可能讨论平等亲密；恶堕值只随玩家明确行动推进",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "泰坦头颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "家庭记忆线尚未公开",
+      "关系类型": "未接触",
+      "人物阶段": "资料锁定",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；吸引恒为0",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "巫神头颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未知",
+      "处境": "家庭记忆线尚未公开",
+      "关系类型": "未接触",
+      "人物阶段": "资料锁定",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱；吸引恒为0；恶堕值初始0，是否变化由玩家行动形成新事实后记录",
+      "关键记忆": [],
+      "最近互动": "无"
+    },
+    "小宝贝": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "血锯药剂店后院地窖",
+      "处境": "等待例行投喂",
+      "关系类型": "临时看管人与被投喂者",
+      "人物阶段": "两年投喂期",
+      "好感": 5,
+      "信赖": 0,
+      "戒备": 20,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [
+        "被喂两年过期药剂，好感极低但未伤人"
+      ],
+      "边界": "固定非恋爱；不使用饥饿或栖身处压力强迫服从",
+      "关键记忆": [
+        "每日清晨投喂过期药剂，地窖发出暴怒嘶吼"
+      ],
+      "最近互动": "开店阶段清晨投喂过期药剂，好感-10"
+    },
+    "爱丽丝": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "非性恋爱与吸引方向开放；幼态外观期间恶堕恒为0，治疗、家人承诺与地缚依赖不能制造亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "白逸": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱同乡与盟友；治疗、去势后遗症和跨界依赖不能制造亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "倒吊天使": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "关系方向开放；原作之吻、任务、高好感、授职与治疗均不代表玩家接受关系",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "白夜": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱前辈；理念认可、特批资格与引见主母不能制造亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "渡鸦": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱夜医同僚；考验、救治、审查与接纳不等于完全信任",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "黑颅": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱夜医同僚；短时恢复生前肉身不改变边界",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "猪头屠夫": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱幕后反派；交易、送达与救命事实不构成亲密关系",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "哭泣小丑": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱体内诅咒人格；侵蚀、替代人格和显化均不能被叙述为亲密同意",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    },
+    "黑白小丑": {
+      "解锁": false,
+      "在场": false,
+      "生存状态": "活动",
+      "位置": "未解锁",
+      "处境": "未解锁",
+      "关系类型": "未建立",
+      "人物阶段": "未接触",
+      "好感": 0,
+      "信赖": 0,
+      "戒备": 0,
+      "吸引": 0,
+      "关系创伤": 0,
+      "恶堕": 0,
+      "可见迹象": [],
+      "边界": "固定非恋爱独立反派；与哭泣小丑显化体分离，林恩当前不知道其身份与山巅密谈",
+      "关键记忆": [],
+      "最近互动": "尚未发生"
+    }
+  },
+  "角色关系": [],
+  "系统": {
+    "当前任务": "血娃娃找妈妈（隐藏任务）",
+    "任务阶段": "追查线索（完成度2%）",
+    "任务状态": "进行中",
+    "任务说明": "帮助血娃娃找到她的母亲。盘中不知名女人的头发、耳朵与梳子是当前线索。主线‘活过血夜’继续有效。",
+    "图鉴": [],
+    "成就": [],
+    "最近提示": "系统可辅助诊断，但不替林恩决策。",
+    "事件通知": "E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。",
+    "更新模式": "同轮更新；可选独立预设"
+  }
+}
+;
+      let mvuAvailable = false;
+      let persistedDataReady = false;
+      let currentIsLatest = false;
+      let writeInFlight = false;
+      let disposed = false;
+      let renderedEvents = FALLBACK_STATE.事件;
+      const BRIDGE_PAIRS = [
+        { from: 'E01', to: 'E02', title: '血娃娃上门与找妈妈任务', dir: '门外阴影中出现抱着断臂洋娃娃的小身影', loc: '血锯药剂店门外', urgency: '低', deadline: '营业初' },
+        { from: 'E02', to: 'E03', title: '猪头魔与恶灵血婴', dir: '门外传来沉重脚步与猪类哼哼，影子捂着腹部', loc: '血锯药剂店门外', urgency: '中', deadline: '傍晚入夜前' },
+        { from: 'E03', to: 'E04', title: '猎魔人治疗与传说左轮', dir: '傍晚有背着猎魔弩的瘦高男人带伤上门', loc: '血锯药剂店', urgency: '中', deadline: '当日' },
+        { from: 'E04', to: 'E05', title: '不眠夜与小小牙科', dir: '夜幕降临后，门外传来伪装与沉重的脚步', loc: '血锯药剂店门外', urgency: '高', deadline: '午夜' },
+        { from: 'E05', to: 'E06', title: '诅咒清除能力与鬼婴塑形', dir: '黎明敲门声，店内的鬼婴开始躁动', loc: '血锯药剂店', urgency: '中', deadline: 'E05收尾后的黎明' },
+        { from: 'E06', to: 'E07', title: '血衣寻子与鬼婴萌化化解', dir: '午后红衣女人登门寻子，语气温柔眼神冰冷', loc: '血锯药剂店', urgency: '中', deadline: '当日' },
+        { from: 'E07', to: 'E08', title: '暴击药剂与视界曝光', dir: '黑甲骑士与猎魔人先后购药，互相盯着头顶', loc: '血锯药剂店', urgency: '低', deadline: '当日' },
+        { from: 'E08', to: 'E09', title: '血衣鸿门宴与诅咒绑定', dir: '45号递来请柬，黄昏亮灯', loc: '45号血衣住所', urgency: '中', deadline: '黄昏' },
+        { from: 'E09', to: 'E10', title: '视界经营与玥玥治疗', dir: '视界店铺线索与门外妖精的断臂', loc: '血锯药剂店与视界', urgency: '中', deadline: '当日' },
+        { from: 'E10', to: 'E11', title: '血夜地狱行者与左左诞生', dir: '血锯血字警告，门外金属与血肉摩擦的脚步声', loc: '血锯药剂店', urgency: '极高', deadline: '当夜' },
+        { from: 'E11', to: 'E12', title: '血肉灾变与左手共存', dir: '怪物体内的茧囊路径暴露，药剂与小宝贝处于可用范围', loc: '游魂巷战场', urgency: '极高', deadline: '当夜' },
+        { from: 'E12', to: 'E13', title: '猎杀者夜袭与信使线', dir: '夜里猎杀者翻墙，机械眼亮起', loc: '游魂巷', urgency: '高', deadline: '当夜' },
+        { from: 'E13', to: 'E14', title: '瘦长鬼影手术与024诊断', dir: '瘦长鬼影捂着腰复诊，柜台清单比记性诚实', loc: '血锯药剂店', urgency: '低', deadline: '猎杀者夜袭收尾后的复诊时段' },
+        { from: 'E14', to: 'E15', title: '求援信与小小赴约', dir: '空白信纸与待命的虚空折跃龟摆在桌边，联络对象尚未决定', loc: '血锯药剂店', urgency: '中', deadline: 'E14诊疗收尾后' },
+        { from: 'E15', to: 'E16', title: '械魔大军与猎神者', dir: '巷口地面震动，军团气息逼近', loc: '游魂巷', urgency: '极高', deadline: '即将' },
+        { from: 'E16', to: 'E17', title: '小小介绍棒医生', dir: '小小把林恩叼到父母面前，用婴儿语介绍', loc: '游魂巷战场', urgency: '高', deadline: '当场' },
+        { from: 'E17', to: 'E18', title: '倒吊塔决战与协会覆灭', dir: '倒吊塔升空，巨像012号缓缓站起', loc: '凄凉荒野·倒吊塔', urgency: '极高', deadline: '即将' },
+        { from: 'E18', to: 'E19', title: '猎头者家族绑定', dir: '巫神头颅卷住衣领，另一只触手掏出录音笔', loc: '倒吊塔废墟', urgency: '中', deadline: '当场' },
+        { from: 'E19', to: 'E20', title: '师徒归来与阶段收束', dir: '巷外传来熟悉的沉重脚步与拍门声', loc: '血锯药剂店门外', urgency: '中', deadline: '即将' },
+        { from: 'E20', to: 'E21', title: '魔鬼训练与首次独立出诊', dir: '血锯把幸福之家正式订单与地图放到柜台上', loc: '血锯药剂店', urgency: '中', deadline: '临行前' },
+        { from: 'E21', to: 'E22', title: '幸福之家的血肉晚宴', dir: '古堡大门打开，过度热情的一家人迎出门外', loc: '幸福之家古堡', urgency: '中', deadline: '抵达后' },
+        { from: 'E22', to: 'E23', title: '异域同乡与爱丽丝初愈', dir: '白逸以汉语留下秘密会面的暗号', loc: '幸福之家古堡', urgency: '高', deadline: '宴席尚未结束' },
+        { from: 'E23', to: 'E24', title: '诅咒复燃与古堡围猎', dir: '刚恢复的暖意退去，墙体重新传出低语', loc: '幸福之家古堡', urgency: '高', deadline: '初治后' },
+        { from: 'E24', to: 'E25', title: '双面伯爵与心脑之汤', dir: '高台仍有最后一名家人守住通往高塔的路', loc: '幸福之家高台', urgency: '极高', deadline: '围猎仍在继续' },
+        { from: 'E25', to: 'E26', title: '爱丽丝重生与母女终局', dir: '遗骸、心脏与真相已经齐备，冷冻库手术台等待重建', loc: '幸福之家冷冻库', urgency: '极高', deadline: '玛丽追击中' },
+        { from: 'E26', to: 'E27', title: '白逸遣返与九州异变', dir: '返店后发现少了一个人，白逸的身体边缘开始透明', loc: '血锯药剂店', urgency: '高', deadline: '召唤时效将尽' },
+        { from: 'E27', to: 'E28', title: '爱丽丝日常与十四病战蜥', dir: '跨界风波暂歇，药店重新开门营业', loc: '游魂巷药剂店', urgency: '低', deadline: '返店营业时' },
+        { from: 'E28', to: 'E29', title: '传奇赠药与夜医启程', dir: '门外出现熟悉脚步，柜台上多出两瓶传奇药剂', loc: '血锯药剂店', urgency: '中', deadline: '启程前' },
+        { from: 'E29', to: 'E30', title: '血月狼群与寂静镇试诊', dir: '血月荒野出现狼群包围，远处可见寂静镇灯火', loc: '诅咒之领', urgency: '高', deadline: '抵达诅咒之领后' },
+        { from: 'E30', to: 'E31', title: '哭泣小丑与血肉灾变', dir: '连续诊断后出现哭泣轮廓，认知开始错位', loc: '寂静镇', urgency: '极高', deadline: '异常正在加深' },
+        { from: 'E31', to: 'E32', title: '小丑余波与夜医接纳', dir: '夜医先抢救伤者并审问诅咒来源', loc: '寂静镇', urgency: '中', deadline: '灾变收束后' },
+        { from: 'E32', to: 'E33', title: '夜医试炼与白夜旧梦', dir: '登记完成后，候选人被带入没有正常器械的试炼大厅', loc: '黑夜之城', urgency: '中', deadline: '取得候选资格后' },
+        { from: 'E33', to: 'E34', title: '倒吊天使与夜医授职', dir: '白夜带路进入锁链遍布的地下殿堂', loc: '黑夜之城地下殿堂', urgency: '高', deadline: '资格确认后' },
+        { from: 'E34', to: 'E35', title: '左左拟化与蓝星鬼袭', dir: '拟化能力首次可供实测，九州调查局同步推进白逸审讯', loc: '黑夜之城与九州魔都', urgency: '中', deadline: '授职后' },
+      ];
+
+      function findReadyPair(events) {
+        const anchors = events.锚点状态 ?? {};
+        for (const pair of BRIDGE_PAIRS) {
+          const from = anchors[pair.from] ?? {};
+          const fromState = from.状态;
+          const toState = anchors[pair.to]?.状态;
+          const wrappedUp = fromState === '完成' || fromState === '变形'
+            || (fromState === '活跃' && from.收尾 === true);
+          if (wrappedUp && toState === '未触发') return pair;
+        }
+        return null;
+      }
+
+      function findCancelledPair(events) {
+        const anchors = events.锚点状态 ?? {};
+        return BRIDGE_PAIRS.find(pair => anchors[pair.from]?.状态 === '取消'
+          && anchors[pair.to]?.状态 === '未触发') ?? null;
+      }
+
+      const root = document.currentScript?.closest('[data-wa-status-root]')
+        ?? document.querySelector('[data-wa-status-root]');
+      if (!root) return;
+      const byId = id => root.querySelector(`#${id}`);
+      const text = (id, value) => { const node = byId(id); if (node) node.textContent = value ?? '无'; };
+      const asArray = value => Array.isArray(value) ? value : [];
+      const clamp = value => Math.max(0, Math.min(100, Number(value) || 0));
+
+      function updateAdvanceButton(events = renderedEvents) {
+        const btn = byId('wa-advance-btn');
+        if (!btn) return;
+        renderedEvents = events ?? {};
+        const pair = findReadyPair(events);
+        const cancelledPair = findCancelledPair(events);
+        const omenId = events.近期预兆?.事件ID;
+        if (disposed) {
+          btn.disabled = true;
+          btn.textContent = '状态栏已卸载';
+          btn.title = '';
+        } else if (!currentIsLatest) {
+          btn.disabled = true;
+          btn.textContent = pair ? `历史楼层只读：${pair.to}` : '历史楼层只读';
+          btn.title = '只有聊天中的最新楼层可以推进事件。';
+        } else if (!mvuAvailable) {
+          btn.disabled = true;
+          btn.textContent = '等待 MVU 接口';
+          btn.title = '尚未检测到宿主 MVU 接口。';
+        } else if (!persistedDataReady) {
+          btn.disabled = true;
+          btn.textContent = '等待变量初始化';
+          btn.title = '最新楼层尚无已持久化的 MVU 数据。';
+        } else if (writeInFlight) {
+          btn.disabled = true;
+          btn.textContent = '正在推进，请稍候';
+          btn.title = '事件写入进行中。';
+        } else if (pair) {
+          btn.disabled = false;
+          btn.textContent = `推进：${pair.to} ${pair.title}`;
+          btn.title = '手动确认推进：把下一事件写入预兆，预兆正文由叙事者下一轮描写。';
+        } else if (omenId) {
+          btn.disabled = true;
+          btn.textContent = `已进入预兆：${omenId}`;
+          btn.title = '';
+        } else if (cancelledPair) {
+          btn.disabled = true;
+          btn.textContent = `需正文判定局部依赖：${cancelledPair.to}`;
+          btn.title = '前件为取消态，状态栏不自动猜测后续。由正文核对后件前置与替代入口，并以单条 replace /事件 处理。';
+        } else {
+          btn.disabled = true;
+          btn.textContent = '当前无可推进事件';
+          btn.title = '';
+        }
+      }
+
+      function renderList(node, items, emptyText = '暂无') {
+        node.replaceChildren();
+        const values = asArray(items);
+        if (!values.length) {
+          const li = document.createElement('li');
+          li.textContent = emptyText;
+          li.className = 'wa-muted';
+          node.append(li);
+          return;
+        }
+        for (const item of values) {
+          const li = document.createElement('li');
+          li.textContent = String(item);
+          node.append(li);
+        }
+      }
+
+      function relationWord(value, positive = true) {
+        const score = clamp(value);
+        if (!positive) {
+          if (score >= 65) return '高度';
+          if (score >= 30) return '明显';
+          if (score > 0) return '轻微';
+          return '无';
+        }
+        if (score >= 65) return '深厚';
+        if (score >= 30) return '稳定';
+        if (score > 0) return '初步';
+        if (score <= -30) return '破裂';
+        if (score < 0) return '疏离';
+        return '未建立';
+      }
+
+      function makeMeter(label, value, negative = false) {
+        const score = clamp(value);
+        const row = document.createElement('div');
+        row.className = 'wa-meter-row';
+        const name = document.createElement('span');
+        name.textContent = label;
+        const track = document.createElement('span');
+        track.className = 'wa-meter';
+        const fill = document.createElement('span');
+        fill.dataset.negative = String(negative);
+        fill.style.left = '0%';
+        fill.style.width = `${score}%`;
+        track.append(fill);
+        const words = document.createElement('span');
+        words.className = 'wa-meter-text';
+        words.textContent = `${score} · ${relationWord(Math.abs(score), negative)}`;
+        row.append(name, track, words);
+        return row;
+      }
+
+      function renderRelations(relations) {
+        const container = byId('wa-relations');
+        container.replaceChildren();
+        const unlocked = Object.entries(relations ?? {}).filter(([, relation]) => relation?.解锁);
+        if (!unlocked.length) {
+          const empty = document.createElement('p');
+          empty.className = 'wa-muted';
+          empty.textContent = '尚无人物解锁。';
+          container.append(empty);
+          return;
+        }
+        for (const [name, relation] of unlocked) {
+          const details = document.createElement('details');
+          details.className = 'wa-person';
+          const summary = document.createElement('summary');
+          const heading = document.createElement('span');
+          heading.className = 'wa-name';
+          heading.textContent = name;
+          const status = document.createElement('span');
+          status.className = 'wa-status';
+          status.textContent = `${relation.生存状态 ?? '状态未知'}${relation.在场 ? ' · 在场' : ''}`;
+          summary.append(heading, status);
+
+          const body = document.createElement('div');
+          body.className = 'wa-person-body';
+          const meta = document.createElement('p');
+          meta.className = 'wa-person-meta';
+          meta.textContent = `${relation.关系类型 ?? '关系未明'}｜${relation.人物阶段 ?? '阶段未明'}｜${relation.位置 ?? '位置未知'}`;
+          const situation = document.createElement('p');
+          situation.className = 'wa-value';
+          situation.textContent = relation.处境 ?? '处境未知';
+          const hasContact = relation.最近互动 && relation.最近互动 !== '无';
+          if (hasContact) {
+            body.append(meta, situation);
+            body.append(
+              makeMeter('好感', relation.好感),
+              makeMeter('信赖', relation.信赖),
+              makeMeter('戒备', relation.戒备, true),
+              makeMeter('吸引', relation.吸引),
+              makeMeter('创伤', relation.关系创伤, true),
+              makeMeter('恶堕', relation.恶堕, true)
+            );
+            const cue = document.createElement('p');
+            cue.className = 'wa-muted';
+            cue.textContent = `最近互动：${relation.最近互动}`;
+            body.append(cue);
+          } else {
+            const locked = document.createElement('p');
+            locked.className = 'wa-muted';
+            locked.textContent = '尚无实际接触，仅显示姓名与状态。';
+            body.append(locked);
+          }
+          details.append(summary, body);
+          container.append(details);
+        }
+      }
+
+      function renderEdges(edges) {
+        const container = byId('wa-edges');
+        container.replaceChildren();
+        const values = asArray(edges);
+        if (!values.length) {
+          const empty = document.createElement('p');
+          empty.className = 'wa-muted';
+          empty.textContent = '尚无需要长期记录的角色关系。';
+          container.append(empty);
+          return;
+        }
+        for (const edge of values) {
+          const row = document.createElement('div');
+          row.className = 'wa-edge';
+          const title = document.createElement('p');
+          title.className = 'wa-value';
+          title.textContent = `${asArray(edge.双方).join(' ↔ ')}｜${edge.关系类型 ?? '关系未明'}`;
+          const detail = document.createElement('p');
+          detail.className = 'wa-value wa-muted';
+          detail.textContent = `${edge.当前状态 ?? '状态未明'}｜${edge.公开程度 ?? '公开程度未明'}｜${edge.最近变化 ?? '暂无变化'}`;
+          row.append(title, detail);
+          container.append(row);
+        }
+      }
+
+      function updateUrgency(card, urgency) {
+        card.classList.toggle('wa-card--urgent', urgency === '高' || urgency === '极高');
+      }
+
+      function render(data) {
+        const state = data?.stat_data;
+        if (!state) throw new Error('当前楼层还没有初始化变量');
+        const world = state.世界 ?? {};
+        const linen = state.林恩 ?? {};
+        const system = state.系统 ?? {};
+        const events = state.事件 ?? {};
+        const activeSource = events.唯一活跃事件 ?? {};
+        const hasActive = activeSource.状态 === '活跃' && Boolean(activeSource.事件ID);
+        const active = hasActive ? activeSource : {
+          事件ID: '', 标题: '', 地点: '', 参与者: [], 状态: '无', 紧迫度: '无', 模糊期限: '', 进展: '', 幕后停止点: '',
+        };
+        const omenSource = events.近期预兆 ?? {};
+        const hasOmen = Boolean(omenSource.事件ID);
+        const omen = hasOmen ? omenSource : {
+          事件ID: '', 方向: '', 地点: '', 参与者: [], 紧迫度: '无', 模糊期限: '',
+        };
+
+        text('wa-phase', `${world.阶段编号 ?? '未知'} · ${world.阶段名称 ?? '阶段未知'}`);
+        text('wa-phase-progress', `${world.模糊阶段进度 ?? '进度未知'}｜${world.氛围 ?? '氛围未知'}`);
+        text('wa-location', world.地点);
+        text('wa-time', world.当前场景时间);
+        text('wa-linen', `17岁｜${linen.身体状况 ?? '身体状况未知'}`);
+        const identityBox = byId('wa-identities');
+        identityBox.replaceChildren();
+        for (const identity of asArray(linen.当前身份)) {
+          const chip = document.createElement('span');
+          chip.className = 'wa-chip';
+          chip.textContent = identity;
+          identityBox.append(chip);
+        }
+        text('wa-task', `${system.当前任务 ?? '无'}｜${system.任务状态 ?? '无'}`);
+        text('wa-task-note', `${linen.当前明确目标 ?? '目标未明确'}｜${system.任务说明 ?? '无说明'}`);
+        text('wa-current-event', `${active.事件ID || '无'} ${active.标题 || '暂无活跃事件'}｜${active.紧迫度 ?? '无'}`);
+        text('wa-current-event-progress', hasActive
+          ? `${active.地点 || '地点未知'}｜${active.模糊期限 || '期限未知'}｜${active.进展 || '暂无进展'}`
+          : '暂无活跃事件详情');
+        updateUrgency(byId('wa-current-event-card'), active.紧迫度);
+
+        renderRelations(state.关系);
+        renderEdges(state.角色关系);
+
+        text('wa-event-title', `${active.事件ID || '无'} ${active.标题 || '暂无活跃事件'}｜${active.状态 ?? '无'}｜紧迫度 ${active.紧迫度 ?? '无'}`);
+        text('wa-event-detail', hasActive
+          ? `${active.地点 || '地点未知'}｜参与者：${asArray(active.参与者).join('、') || '未知'}｜${active.模糊期限 || '期限未知'}｜${active.进展 || '暂无进展'}`
+          : '暂无活跃事件详情');
+        updateUrgency(byId('wa-event-detail-card'), active.紧迫度);
+
+        text('wa-omen-title', `${omen.事件ID || '无预兆'}｜${omen.紧迫度 ?? '无'}`);
+        text('wa-omen-detail', hasOmen
+          ? `${omen.方向 || '方向待定'}｜${omen.地点 || '地点未知'}｜${omen.模糊期限 || '期限未知'}`
+          : '暂无近期预兆');
+        updateAdvanceButton(events);
+        renderList(
+          byId('wa-results'),
+          asArray(events.最近结果).slice(-3).reverse().map(item => `${item.事件ID || '原创'} ${item.标题}：${item.结果}`),
+          '暂无事件结果'
+        );
+
+        text('wa-sys-task', `${system.当前任务 ?? '无'}｜${system.任务状态 ?? '无'}`);
+        text('wa-sys-task-stage', system.任务阶段 ?? '');
+        text('wa-sys-task-note', system.任务说明 ?? '');
+        text('wa-sys-level', `等级 ${linen.等级 ?? 1}`);
+        const skillBox = byId('wa-sys-skills');
+        skillBox.replaceChildren();
+        for (const skill of asArray(linen.技能)) {
+          const chip = document.createElement('span');
+          chip.className = 'wa-chip';
+          chip.textContent = skill;
+          skillBox.append(chip);
+        }
+        renderList(byId('wa-sys-codex'), [...asArray(system.图鉴), ...asArray(linen.图鉴已解锁)], '图鉴尚未收录条目');
+        renderList(byId('wa-sys-achievements'), [...asArray(system.成就), ...asArray(linen.成就)], '尚无成就');
+        const evilBox = byId('wa-sys-evil');
+        evilBox.replaceChildren();
+        const unlockedPeople = Object.entries(state.关系 ?? {}).filter(([, relation]) => relation?.解锁);
+        if (!unlockedPeople.length) {
+          const empty = document.createElement('p');
+          empty.className = 'wa-muted';
+          empty.textContent = '尚无已解锁人物。';
+          evilBox.append(empty);
+        } else {
+          for (const [name, relation] of unlockedPeople) {
+            evilBox.append(makeMeter(name, relation.恶堕 ?? 0, true));
+          }
+        }
+        text('wa-sys-notice', system.最近提示 ?? '');
+        text('wa-sys-event-notice', system.事件通知 ?? '');
+
+        byId('wa-error').hidden = true;
+      }
+
+      function showFallback(error) {
+        const node = byId('wa-error');
+        node.textContent = `等待变量初始化：当前仅显示初始预览，不会据此执行推进。${error?.message ? `（${error.message}）` : ''}`;
+        node.hidden = false;
+      }
+
+      function showRuntimeError(message) {
+        const node = byId('wa-error');
+        node.textContent = message;
+        node.hidden = false;
+      }
+
+      function getHostWindows() {
+        const hosts = [globalThis];
+        for (const candidate of [globalThis.parent, globalThis.top]) {
+          try {
+            if (candidate && !hosts.includes(candidate)) hosts.push(candidate);
+          } catch {
+            // 跨域父页面不可访问时继续使用当前窗口。
+          }
+        }
+        return hosts;
+      }
+
+      function findMvu() {
+        for (const host of getHostWindows()) {
+          try {
+            if (host.Mvu?.getMvuData) return host.Mvu;
+          } catch {
+            // 某一层窗口不可访问时继续向上查找。
+          }
+        }
+        return undefined;
+      }
+
+      async function persistLatestMessageData(messageId, data) {
+        const hosts = getHostWindows();
+        const orderedHosts = [...hosts.filter(host => host !== globalThis), globalThis];
+        let lastError;
+        for (const host of orderedHosts) {
+          try {
+            const helper = host.TavernHelper;
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            if (typeof helper?.setChatMessages !== 'function' || typeof context?.saveChat !== 'function') continue;
+            await helper.setChatMessages([{ message_id: Number(messageId), data }], { refresh: 'none' });
+            await context.saveChat();
+            return;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+        throw lastError ?? new Error('宿主未提供消息变量保存接口');
+      }
+
+      async function waitForMvuBridge() {
+        const deadline = Date.now() + 25000;
+        let handshakeAttempted = false;
+        while (!disposed && Date.now() < deadline) {
+          let mvu = findMvu();
+          if (mvu) return mvu;
+          if (!handshakeAttempted && typeof waitGlobalInitialized === 'function') {
+            handshakeAttempted = true;
+            try {
+              const remaining = Math.max(1, deadline - Date.now());
+              await Promise.race([
+                waitGlobalInitialized('Mvu'),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('MVU 初始化超时')), remaining)),
+              ]);
+            } catch (error) {
+              showRuntimeError(`等待 MVU 初始化失败：${error?.message ?? error}`);
+            }
+            mvu = findMvu();
+            if (mvu) return mvu;
+          }
+          await new Promise(resolve => setTimeout(resolve, 250));
+        }
+        return findMvu();
+      }
+
+      function getMessageId() {
+        if (typeof getCurrentMessageId === 'function') return getCurrentMessageId();
+        const match = String(globalThis.name || '').match(/^TH-message--(\d+)--/);
+        return match ? Number(match[1]) : 'latest';
+      }
+
+      function getLatestMessageId() {
+        for (const host of getHostWindows()) {
+          try {
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            const chat = context?.chat;
+            if (!Array.isArray(chat)) continue;
+            for (let index = chat.length - 1; index >= 0; index -= 1) {
+              if (!chat[index]?.is_system) return index;
+            }
+          } catch {
+            // 当前宿主入口不可用时尝试下一层窗口。
+          }
+        }
+        return null;
+      }
+
+      function isLatestMessage(messageId) {
+        if (messageId === 'latest') return true;
+        const latestMessageId = getLatestMessageId();
+        return Number.isInteger(messageId) && messageId === latestMessageId;
+      }
+
+      function unwrapMessageVariables(message) {
+        const variables = message?.variables;
+        if (!variables) return undefined;
+        if (Array.isArray(variables)) return variables[message?.swipe_id ?? 0] ?? variables.at(-1);
+        if (variables.stat_data) return variables;
+        return variables[message?.swipe_id ?? 0];
+      }
+
+      function readStoredVariables(messageId) {
+        for (const host of getHostWindows()) {
+          try {
+            const tavern = host.SillyTavern;
+            const context = typeof tavern?.getContext === 'function' ? tavern.getContext() : tavern;
+            const chat = context?.chat;
+            if (!Array.isArray(chat) || !chat.length) continue;
+            const startIndex = Number.isInteger(messageId)
+              ? Math.min(messageId, chat.length - 1)
+              : chat.length - 1;
+            for (let index = startIndex; index >= 0; index -= 1) {
+              const data = unwrapMessageVariables(chat[index]);
+              if (data?.stat_data) return data;
+            }
+          } catch {
+            // 当前宿主入口不可用时尝试下一层窗口。
+          }
+        }
+        return undefined;
+      }
+
+      function readCurrent(mvu = findMvu()) {
+        if (disposed) return;
+        const messageId = getMessageId();
+        currentIsLatest = isLatestMessage(messageId);
+        mvuAvailable = Boolean(mvu);
+        let data;
+        let readError;
+        try {
+          data = mvu?.getMvuData({ type: 'message', message_id: messageId });
+        } catch (error) {
+          readError = error;
+        }
+        if (!data?.stat_data) data = readStoredVariables(messageId);
+        persistedDataReady = Boolean(data?.stat_data);
+        if (!persistedDataReady) {
+          render({ stat_data: FALLBACK_STATE });
+          showFallback(readError ?? new Error('当前楼层尚无已保存变量'));
+          return;
+        }
+        render(data);
+        byId('wa-error').hidden = true;
+      }
+
+      async function advanceCurrentEvent() {
+        if (disposed || writeInFlight) return;
+        const mvu = findMvu();
+        if (!mvu) {
+          mvuAvailable = false;
+          updateAdvanceButton();
+          showRuntimeError('推进不可用：未检测到宿主 MVU 接口。');
+          return;
+        }
+        const messageId = getMessageId();
+        currentIsLatest = isLatestMessage(messageId);
+        if (!currentIsLatest) {
+          updateAdvanceButton();
+          showRuntimeError('历史楼层只读：请在聊天中的最新状态栏执行推进。');
+          return;
+        }
+
+        writeInFlight = true;
+        updateAdvanceButton();
+        let succeeded = false;
+        try {
+          const data = mvu.getMvuData({ type: 'message', message_id: 'latest' });
+          if (!data?.stat_data) {
+            persistedDataReady = false;
+            throw new Error('最新楼层尚无已持久化的 MVU 数据');
+          }
+          if (data.stat_data.事件?.近期预兆?.事件ID) {
+            throw new Error(`已有近期预兆：${data.stat_data.事件.近期预兆.事件ID}`);
+          }
+          const pair = findReadyPair(data.stat_data.事件 ?? {});
+          if (!pair) throw new Error('最新状态已变化，当前没有可推进事件');
+
+          const state = JSON.parse(JSON.stringify(data.stat_data));
+          const events = state.事件;
+          const fromAnchor = events.锚点状态?.[pair.from];
+          const toAnchor = events.锚点状态?.[pair.to];
+          if (!fromAnchor || !toAnchor) throw new Error('事件锚点数据不完整');
+          if (fromAnchor.状态 === '活跃') fromAnchor.状态 = '完成';
+          if (['完成', '变形', '取消'].includes(fromAnchor.状态)) fromAnchor.收尾 = true;
+          toAnchor.状态 = '预兆';
+          toAnchor.收尾 = false;
+          events.近期预兆 = {
+            事件ID: pair.to,
+            方向: pair.dir,
+            地点: pair.loc,
+            参与者: [],
+            紧迫度: pair.urgency,
+            模糊期限: pair.deadline,
+          };
+          const hasActive = Object.values(events.锚点状态).some(anchor => anchor.状态 === '活跃');
+          if (!hasActive) {
+            events.唯一活跃事件 = {
+              事件ID: '', 标题: '', 地点: '', 参与者: [], 状态: '无', 紧迫度: '无', 模糊期限: '', 进展: '', 幕后停止点: '',
+            };
+          }
+          state.系统 = state.系统 ?? {};
+          state.系统.事件通知 = `${pair.to}已进入预兆：${pair.dir}`;
+          const full = JSON.parse(JSON.stringify(data));
+          full.stat_data = state;
+          await mvu.replaceMvuData(full, { type: 'message', message_id: 'latest' });
+          await persistLatestMessageData(getLatestMessageId(), full);
+          persistedDataReady = true;
+          succeeded = true;
+        } catch (error) {
+          showRuntimeError(`推进失败：${error?.message ?? error}`);
+        } finally {
+          writeInFlight = false;
+          if (succeeded) readCurrent(mvu);
+          else updateAdvanceButton();
+        }
+      }
+
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const uiAbortController = new AbortController();
+      const uiSignal = uiAbortController.signal;
+      function activateTab(next) {
+        for (const tab of tabs) {
+          const selected = tab === next;
+          tab.setAttribute('aria-selected', String(selected));
+          tab.tabIndex = selected ? 0 : -1;
+          byId(tab.getAttribute('aria-controls')).hidden = !selected;
+        }
+      }
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(tab), { signal: uiSignal });
+        tab.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const offset = event.key === 'ArrowLeft' ? -1 : event.key === 'ArrowRight' ? 1 : 0;
+          const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + offset + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          activateTab(tabs[nextIndex]);
+        }, { signal: uiSignal });
+      });
+
+      const subscriptions = [];
+      async function bootstrap() {
+        readCurrent();
+        const mvu = await waitForMvuBridge();
+        if (disposed) return;
+        if (!mvu) {
+          mvuAvailable = false;
+          persistedDataReady = false;
+          updateAdvanceButton();
+          showRuntimeError('状态栏无法连接 MVU 接口；请确认酒馆助手与卡内 MVU 脚本已启用。');
+          return;
+        }
+        mvuAvailable = true;
+        readCurrent(mvu);
+        const advanceBtn = byId('wa-advance-btn');
+        if (advanceBtn) advanceBtn.addEventListener('click', () => void advanceCurrentEvent(), { signal: uiSignal });
+        if (mvu.events && typeof eventOn === 'function') {
+          const refresh = () => { if (!disposed) readCurrent(mvu); };
+          subscriptions.push(eventOn(mvu.events.VARIABLE_INITIALIZED, refresh));
+          subscriptions.push(eventOn(mvu.events.VARIABLE_UPDATE_ENDED, refresh));
+        }
+      }
+      window.addEventListener('pagehide', () => {
+        disposed = true;
+        uiAbortController.abort();
+        subscriptions.forEach(subscription => subscription?.stop?.());
+        subscriptions.length = 0;
+      }, { once: true });
+      void bootstrap();
+    })();
+  </script>
+</section>
+</body>

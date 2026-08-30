@@ -1,0 +1,142 @@
+{
+  "id": "tavernweave.weird-apothecary.contract",
+  "version": "0.3.3.1",
+  "required": {
+    "card_type": "mvu_zod",
+    "internal_before_v1": true,
+    "stage_scope": "第1至149章",
+    "core_character_count": 8,
+    "core_characters": [
+      "左左",
+      "血锯",
+      "血衣女士",
+      "小小",
+      "人偶夫人",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "component_matrix": [
+      "角色速览",
+      "基础信息",
+      "性格调色盘",
+      "三面性",
+      "多阶段人设",
+      "二次解释"
+    ],
+    "non_romantic_characters": [
+      "血锯",
+      "小小",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "factions": [
+      "魔人协会",
+      "猎头者家族",
+      "人偶庄园",
+      "夜医",
+      "独角恶鬼族",
+      "游魂巷居民"
+    ],
+    "mechanisms": [
+      "视界系统",
+      "诅咒与医疗",
+      "巨像及血肉机械技术"
+    ],
+    "locations": [
+      "血锯药剂店",
+      "45号血衣住所",
+      "凄凉荒野与倒吊塔",
+      "独角鬼王神庙",
+      "人偶庄园"
+    ],
+    "event_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "event_states": [
+      "未触发",
+      "预兆",
+      "活跃",
+      "变形",
+      "完成",
+      "取消"
+    ],
+    "opening_patient": "血娃娃",
+    "opening_marker": "<StatusPlaceHolderImpl/>",
+    "opening_must_match_v0_2": false,
+    "opening_source_verbatim": true,
+    "opening_style_check": "开场白为小说原文逐字摘抄（仅格式调整），与opening_source.txt归一化比对",
+    "time_progression": "纯事件驱动，不维护天数计数",
+    "stage_character_switch": "事件为主，好感/信赖/恶堕值为辅",
+    "evil_value_scope": "全部女性角色建MVU变量，初始0，不锁定；幼态角色（小小）不建",
+    "ui_pages": [
+      "当前状态",
+      "人物关系",
+      "世界事件",
+      "系统"
+    ],
+    "update_protocol": "UpdateVariable.JSONPatch",
+    "worldbook_stable_id": "weird-apothecary-worldbook",
+    "worldbook_version": "0.3.3.1",
+    "host_versions": {
+      "sillytavern": "1.17.0",
+      "tavern_helper": "4.8.19"
+    }
+  },
+  "forbidden": {
+    "systems": [
+      "combat",
+      "level",
+      "rank",
+      "combat_stats",
+      "skill_tree",
+      "inventory",
+      "currency",
+      "shop_economy",
+      "v0.2_chat_migration",
+      "day_counter"
+    ],
+    "player_control": [
+      "invent Lin En dialogue",
+      "invent Lin En voluntary actions",
+      "invent Lin En decisions",
+      "invent Lin En judgments",
+      "invent Lin En memories",
+      "invent Lin En inner thoughts"
+    ],
+    "runtime_claims": [
+      "player must install Zod",
+      "static validation proves real-host execution",
+      "v0.3.3.1 migrates v0.2 or v0.3 chats"
+    ]
+  },
+  "acceptance": [
+    "JSON parses as chara_card_v3",
+    "top-level and data-level core fields are mirrored",
+    "all eight stage-1 main characters contain stage-split components and one merged runtime entry each",
+    "all factions, mechanisms, locations and event anchors exist",
+    "all packed worldbook entries enable both recursion guards",
+    "initial variables and schema have exactly the seven required roots and no case root",
+    "event ledger uses six states and permits only one active major event",
+    "non-romantic characters keep attraction at zero",
+    "every female character has an evil-value variable initialized at zero and unlocked",
+    "minor characters are embedded into faction/location/event entries, not standalone entries",
+    "no Alice or Black String Moon references remain in v0.3.3.1",
+    "MVU loader and Zod schema are embedded and enabled",
+    "four-page status UI reads MVU with chat-message fallback",
+    "opening text follows the style checklist and does not control Lin En",
+    "real-host behavior remains pending until user acceptance"
+  ]
+}

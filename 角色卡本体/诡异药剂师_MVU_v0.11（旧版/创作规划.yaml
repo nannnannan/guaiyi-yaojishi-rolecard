@@ -1,0 +1,91 @@
+project:
+  name: 诡异药剂师_MVU_v0.11
+  display_name: 《诡异药剂师》v0.11
+  version: 0.11.0
+  card_type: mvu_zod
+  artifact: dist/诡异药剂师_v0.11.json
+  source_base: 诡异药剂师_MVU_v0.10(3.7f
+  scope: 冻结v0.10基线，在E170之后新增E171至E218；原著取材严格止于1015，第926章源文缺失，后一段内容不得进入本版
+  release_policy: v1.0前仅内部使用；离线通过仍为pending，真实宿主验收需所有者另行授权
+
+authority:
+  order: [用户当前要求, 创作规划.yaml, contract.json, manifest.json, profile.json, src, dist]
+  frozen_source: v0.10目录不得修改
+  generated_only: dist只由npm run build生成，禁止手改
+
+highest_rules:
+  - 林恩在v0.11统一为18岁，角色卡元数据、变量、Schema、开场、状态栏、事件与摘要全部同步
+  - 玩家绝对独占林恩的对白、主动动作、决定、判断、记忆、态度、感情与内心
+  - 原作事件只是世界默认因果；玩家可缺席、介入、取消或改变结果，稳定替代结果以变形收束
+  - 角色卡运行正文禁用原文编号与总结元数据；溯源只写入编辑台账，不进入打包世界书
+  - 本书为色色风后宫文：色色与恶堕全面开放，不设幼态/年龄限制；NPC可按人设主动亲密与逆推，玩家可拒绝、打断或改写
+  - 色色直白化：原文色色暗语与隐喻直译成明语写入，包括性行为过程，不设分级词表
+  - 机制三等价：以M=快感冲击（媚药，可唤起性欲，对根源级同样有用）、性行为=解咒途径、恶堕=性调教路径
+  - 严禁说教式AI免责声明、道德评判或与原著相背的非性化强制限制
+
+events:
+  ids: E01-E218
+  new_ids: E171-E218
+  count: 218
+  new_count: 48
+  states: [未触发, 预兆, 活跃, 变形, 完成, 取消]
+  phases:
+    S25: [E171, E178, 咒瞳异变与蓝星召唤追查]
+    S26: [E179, E186, 蓝星寄生危机与血肉运输拦截]
+    S27: [E187, E194, 离魂街与游魂巷反血肉据点清剿]
+    S28: [E195, E202, 蓝星返乡与根源保护冲突]
+    S29: [E203, E210, 跨界倒计时与返乡争夺]
+    S30: [E211, E214, 蜀都寄生虫追查]
+    S31: [E215, E218, 蜀都封城与使徒对峙]
+  default_direction_chars: [200, 500]
+  required_fields: [玩家主权, 阶段, 地点, 前置条件, 参与者与动机, 默认走向, 紧迫度, 幕后停止点, 变形条件, 完成条件, 取消条件, 结果影响, 系统提示]
+  terminal:
+    id: E218
+    fact: 七使徒完成包围，其余六名使徒开始攻击；咒瞳仅在玩家明确选择后开启
+    unresolved: [攻击结果未知, 伤亡未知, 突围未知, 胜负未知, 数百名休眠感染者后续未知, 隐修会内部裂痕走向未知]
+
+source_packets:
+  P1: { chapters: 864-888, lines: 78748-80855, events: E171-E178 }
+  P2: { chapters: 889-913, lines: 80856-82523, events: E179-E186 }
+  P3: { chapters: 914-939, lines: 82524-84309, events: E187-E194, note: 第926章源文缺失 }
+  P4: { chapters: 940-964, lines: 84310-86104, events: E195-E202 }
+  P5: { chapters: 965-989, lines: 86105-87991, events: E203-E210 }
+  P6: { chapters: 990-1015, lines: 87992-89911, events: E211-E218 }
+
+concepts:
+  new_logical_ids: C691-C761
+  new_worldbook_uids: 2000-2070
+  new_count: 71
+  updated_existing_count: 24
+  protected_event_uids: 870-917
+  required_fields: [类别, 事实门槛, 定义, 来源, 机制, 限制与代价, 未知项, 禁止外推]
+  policy: 概念数量和字数不设上限；优先原位扩展既有UID；新增逻辑ID与世界书UID分离；事实、限制、代价、未知与禁止外推必须齐全
+
+worldbook:
+  core_characters: 28
+  event_material_start: 700
+  event_material_end: 917
+  event_material_enabled: false
+  detail_window_radius: 1
+  summary_window_radius: 3
+  activation: 概念与人物在当前事件前后各1窗口强启，同时保留原生关键词绿灯；同一UID同轮去重
+
+mvu:
+  root: [元数据, 世界, 林恩, 事件, 关系, 角色关系, 系统]
+  anchors: 218
+  phases: S0-S31
+  initial: E01完成收尾，E02活跃收尾，E03至E218未触发
+  protocol: UpdateVariable.JSONPatch
+  event_transition: 只用一条replace /事件提交完整事件对象
+  no_systems: [战斗数值, 可运算等级成长, 装备栏, 库存, 货币, 商城刷新, 经营结算, 回合制, 可运算日历]
+
+acceptance:
+  offline: npm run check
+  required:
+    - E01至E218事件、初始变量、Schema、调度、状态栏和世界书注册表一一对应
+    - 新增48条默认走向全部200至500字并含取消条件；E171至E217含后继引入，E218无后继
+    - 新增71条概念与24条既有更新均保留事实门槛和未知项，UID不与事件素材冲突
+    - 林恩18岁全链一致，未成年、幼态、年龄不明与失能主体固定非性
+    - 运行正文无禁用元数据词，UTF-8无替换字符，EJS编译通过
+    - E218之后无推进按钮、无E219、无1015之后剧情泄漏
+  real_host: 不在本次授权范围，host_acceptance保持pending

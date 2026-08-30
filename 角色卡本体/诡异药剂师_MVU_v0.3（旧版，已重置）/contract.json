@@ -1,0 +1,137 @@
+{
+  "id": "tavernweave.weird-apothecary.contract",
+  "version": "0.3.0",
+  "required": {
+    "card_type": "mvu_zod",
+    "internal_before_v1": true,
+    "stage_scope": "第1至149章",
+    "core_character_count": 10,
+    "core_characters": [
+      "左左",
+      "血锯",
+      "血衣女士",
+      "小小",
+      "人偶夫人",
+      "爱丽丝",
+      "黑弦月",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "component_matrix": [
+      "角色速览",
+      "基础信息",
+      "性格调色盘",
+      "三面性",
+      "多阶段人设",
+      "二次解释"
+    ],
+    "non_romantic_characters": [
+      "血锯",
+      "小小",
+      "爱丽丝",
+      "泰坦头颅",
+      "巫神头颅",
+      "小宝贝"
+    ],
+    "factions": [
+      "魔人协会",
+      "猎头者家族",
+      "人偶庄园",
+      "夜医",
+      "独角恶鬼族",
+      "游魂巷居民"
+    ],
+    "mechanisms": [
+      "死界基础法则",
+      "视界系统",
+      "诅咒与医疗",
+      "巨像及血肉机械技术"
+    ],
+    "locations": [
+      "血锯药剂店",
+      "游魂巷",
+      "45号血衣住所",
+      "凄凉荒野与倒吊塔",
+      "人偶庄园",
+      "独角鬼王神庙"
+    ],
+    "event_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "event_states": [
+      "未触发",
+      "预兆",
+      "活跃",
+      "变形",
+      "完成",
+      "取消"
+    ],
+    "opening_patient": "血娃娃",
+    "opening_marker": "<StatusPlaceHolderImpl/>",
+    "opening_must_match_v0_2": true,
+    "ui_pages": [
+      "当前状态",
+      "人物关系",
+      "世界事件"
+    ],
+    "update_protocol": "UpdateVariable.JSONPatch",
+    "worldbook_stable_id": "weird-apothecary-worldbook",
+    "worldbook_version": "0.3.0",
+    "host_versions": {
+      "sillytavern": "1.17.0",
+      "tavern_helper": "4.8.19"
+    }
+  },
+  "forbidden": {
+    "systems": [
+      "combat",
+      "level",
+      "rank",
+      "combat_stats",
+      "skill_tree",
+      "inventory",
+      "currency",
+      "shop_economy",
+      "v0.2_chat_migration"
+    ],
+    "player_control": [
+      "invent Lin En dialogue",
+      "invent Lin En voluntary actions",
+      "invent Lin En decisions",
+      "invent Lin En judgments",
+      "invent Lin En memories",
+      "invent Lin En inner thoughts"
+    ],
+    "runtime_claims": [
+      "player must install Zod",
+      "static validation proves real-host execution",
+      "v0.3 migrates v0.2 chats"
+    ]
+  },
+  "acceptance": [
+    "JSON parses as chara_card_v3",
+    "top-level and data-level core fields are mirrored",
+    "all ten main characters contain all six source components and one merged runtime entry",
+    "all factions, mechanisms, locations and event anchors exist",
+    "all packed worldbook entries enable both recursion guards",
+    "initial variables and schema have exactly the seven required roots and no case root",
+    "event ledger uses six states and permits only one active major event",
+    "non-romantic characters lock attraction at zero",
+    "MVU loader and Zod schema are embedded and enabled",
+    "three-page status UI reads MVU with chat-message fallback",
+    "opening text is byte-identical to v0.2 and does not control Lin En",
+    "real-host behavior remains pending until user acceptance"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "tavernweave.weird-apothecary.host-acceptance",
+    "version": "0.8.0",
+    "status": "pending",
+    "accepted_at": null,
+    "accepted_by": null,
+    "tested_at": null,
+    "last_runtime_tested_at": null,
+    "last_runtime_sha256": null,
+    "tested_by": null,
+    "evidence": null,
+    "host": {
+        "sillytavern": null,
+        "tavern_helper": null
+    },
+    "artifact": "dist/诡异药剂师_v0.8.json",
+    "bytes": 3031965,
+    "sha256": "05ffbe56f1e01e7e898664b2cde52502786a85db98dac5e27fb627e5fe2c429a",
+    "offline_checks": 15138,
+    "notes": "v0.8阶段四候选基线：315条世界书（96事件/27人物/概念400-492共92+493-550共58+551起20）、95对桥、S0-S13、MVU新关系字段。npm run check 15114项通过。后续：中期冲突核查→终期全量复查+盲测→真机验收（需所有者授权）。"
+}
