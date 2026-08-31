@@ -1,0 +1,1585 @@
+<body>
+<section class="dc-grimoire-v2" data-wa-status-root aria-label="死界药剂师手札 · 多模态全息视界仪">
+  <!-- 内联 SVG 滤镜与渐变定义 (0 外部依赖) -->
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+    <defs>
+      <linearGradient id="dc-grad-soul" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2ee6a8" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="dc-grad-cyber" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="dc-grad-blood" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff4d6a" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <linearGradient id="dc-grad-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f5c542" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="dc-grad-void" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#c084fc" />
+        <stop offset="100%" stop-color="#7e22ce" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <style>
+    /* ==========================================================================
+       1. 殿堂级暗黑哥特 × 赛博灵能设计系统 (Grimoire HUD v2.0 Design Tokens)
+       ========================================================================== */
+    .dc-grimoire-v2 {
+      --dc-bg-abyss: #050811;
+      --dc-bg-glass: rgba(8, 14, 26, 0.85);
+      --dc-bg-card: rgba(13, 22, 38, 0.75);
+      --dc-bg-card-hover: rgba(20, 33, 56, 0.88);
+      --dc-soul-emerald: #2ee6a8;
+      --dc-soul-glow: rgba(46, 230, 168, 0.38);
+      --dc-cyber-blue: #38bdf8;
+      --dc-cyber-glow: rgba(56, 189, 248, 0.35);
+      --dc-crimson-blood: #ff4d6a;
+      --dc-crimson-glow: rgba(255, 77, 106, 0.4);
+      --dc-sacred-gold: #f5c542;
+      --dc-sacred-glow: rgba(245, 197, 66, 0.38);
+      --dc-void-purple: #c084fc;
+      --dc-void-glow: rgba(192, 132, 252, 0.4);
+      --dc-border-gold: rgba(245, 197, 66, 0.22);
+      --dc-border-cyan: rgba(56, 189, 248, 0.2);
+      --dc-text-bright: #ffffff;
+      --dc-text-main: #e2e8f0;
+      --dc-text-sub: #94a3b8;
+      --dc-text-muted: #64748b;
+
+      box-sizing: border-box;
+      width: 100%;
+      margin: 1rem 0;
+      color: var(--dc-text-main);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Cinzel", "Noto Serif SC", serif, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .dc-grimoire-v2 * { box-sizing: border-box; margin: 0; padding: 0; }
+    .dc-grimoire-v2 ::selection { background: var(--dc-soul-glow); color: #fff; }
+
+    /* 全息手札总容器 */
+    .dc-tome-v2 {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--dc-border-gold);
+      border-radius: 16px;
+      background:
+        radial-gradient(ellipse at 10% 0%, rgba(192, 132, 252, 0.12), transparent 40%),
+        radial-gradient(ellipse at 90% 0%, rgba(56, 189, 248, 0.12), transparent 40%),
+        radial-gradient(circle at 50% 100%, rgba(255, 77, 106, 0.08), transparent 50%),
+        linear-gradient(175deg, #090e1a 0%, #05070d 60%, #070b14 100%);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.75),
+        inset 0 0 40px rgba(56, 189, 248, 0.03),
+        inset 0 0 60px rgba(245, 197, 66, 0.02);
+    }
+
+    .dc-tome-v2::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      pointer-events: none;
+      border: 1px solid rgba(245, 197, 66, 0.12);
+      border-radius: 13px;
+    }
+
+    /* 顶部视界状态栏 */
+    .dc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid rgba(245, 197, 66, 0.18);
+      background: linear-gradient(90deg, rgba(46, 230, 168, 0.05), rgba(192, 132, 252, 0.04) 50%, rgba(56, 189, 248, 0.05));
+    }
+    .dc-brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .dc-lamp-core {
+      position: relative;
+      width: 1.1rem;
+      height: 1.35rem;
+      flex-shrink: 0;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      background: radial-gradient(circle at 35% 30%, #e0fff7, var(--dc-soul-emerald) 60%, #064e3b 100%);
+      box-shadow: 0 0 14px var(--dc-soul-emerald), 0 0 28px var(--dc-soul-glow);
+      animation: dc-breathe-lamp 3.6s ease-in-out infinite;
+    }
+    @keyframes dc-breathe-lamp {
+      0%, 100% { transform: scale(1); filter: brightness(1); }
+      50% { transform: scale(1.08); filter: brightness(1.35) drop-shadow(0 0 8px var(--dc-soul-emerald)); }
+    }
+    .dc-title-main {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: var(--dc-text-bright);
+      text-shadow: 0 0 14px rgba(46, 230, 168, 0.4);
+    }
+    .dc-badge-ver {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid var(--dc-border-gold);
+      background: rgba(245, 197, 66, 0.1);
+      color: var(--dc-sacred-gold);
+      letter-spacing: 0.04em;
+    }
+
+    /* 四大功能舱导航 */
+    .dc-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      padding: 0.35rem 0.6rem;
+      background: rgba(5, 8, 17, 0.7);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    }
+    .dc-nav-btn {
+      appearance: none;
+      background: transparent;
+      border: none;
+      border-radius: 10px;
+      padding: 0.65rem 0.4rem;
+      color: var(--dc-text-sub);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+    .dc-nav-btn:hover {
+      color: var(--dc-text-bright);
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .dc-nav-btn[aria-selected="true"] {
+      color: var(--dc-text-bright);
+      background: linear-gradient(180deg, rgba(56, 189, 248, 0.14) 0%, rgba(8, 14, 26, 0.3) 100%);
+      box-shadow: inset 0 0 16px rgba(56, 189, 248, 0.18), 0 2px 8px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+    .dc-nav-btn[aria-selected="true"]::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 20%;
+      right: 20%;
+      height: 2px;
+      background: var(--dc-cyber-blue);
+      box-shadow: 0 0 8px var(--dc-cyber-blue);
+      border-radius: 999px;
+    }
+
+    /* 舱室面板 */
+    .dc-chamber {
+      padding: 1.15rem;
+      display: block;
+      animation: dc-fade-in 0.3s ease-out;
+    }
+    .dc-chamber[hidden] { display: none; }
+    @keyframes dc-fade-in {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 网格卡片系统 */
+    .dc-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .dc-card-box {
+      background: var(--dc-bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .dc-card-box:hover {
+      border-color: rgba(245, 197, 66, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 15px rgba(245, 197, 66, 0.08);
+    }
+    .dc-card-full { grid-column: 1 / -1; }
+
+    .dc-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+    .dc-card-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--dc-sacred-gold);
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .dc-card-value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dc-text-bright);
+    }
+    .dc-card-meta {
+      font-size: 0.82rem;
+      color: var(--dc-text-sub);
+      margin-top: 0.3rem;
+      line-height: 1.45;
+    }
+
+    /* 舱室 1 特效：体魄双环与动态危机挂件 */
+    .dc-biometric-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.75rem 0;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .dc-ring-gauge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .dc-ring-svg {
+      width: 100px;
+      height: 100px;
+      transform: rotate(-90deg);
+    }
+    .dc-ring-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.06);
+      stroke-width: 8;
+    }
+    .dc-ring-progress {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.8s ease;
+    }
+    .dc-ring-val {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--dc-text-bright);
+      text-shadow: 0 0 10px currentColor;
+    }
+    .dc-ring-label {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--dc-text-sub);
+    }
+
+    .dc-hazards-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.85rem;
+      min-height: 0;
+    }
+    .dc-hazard-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: rgba(255, 77, 106, 0.12);
+      border: 1px solid rgba(255, 77, 106, 0.4);
+      color: #ff9eb0;
+      box-shadow: 0 0 12px rgba(255, 77, 106, 0.2);
+      animation: dc-hazard-pulse 2.8s infinite ease-in-out;
+    }
+    @keyframes dc-hazard-pulse {
+      0%, 100% { box-shadow: 0 0 10px rgba(255, 77, 106, 0.2); }
+      50% { box-shadow: 0 0 20px rgba(255, 77, 106, 0.45); border-color: rgba(255, 77, 106, 0.7); }
+    }
+    .dc-hazard-badge--peace {
+      background: rgba(46, 230, 168, 0.08);
+      border-color: rgba(46, 230, 168, 0.25);
+      color: var(--dc-soul-emerald);
+      box-shadow: none;
+      animation: none;
+    }
+
+    /* 舱室 2 特效：28人深渊情缘录 */
+    .dc-char-filter-bar {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.3rem;
+    }
+    .dc-filter-chip {
+      appearance: none;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      color: var(--dc-text-sub);
+      font-size: 0.78rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .dc-filter-chip:hover, .dc-filter-chip.active {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: var(--dc-cyber-blue);
+      color: var(--dc-text-bright);
+    }
+    .dc-char-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.85rem;
+    }
+    .dc-char-card {
+      background: var(--dc-bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 0.85rem;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .dc-char-card:hover {
+      background: var(--dc-bg-card-hover);
+      border-color: var(--dc-void-purple);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--dc-void-glow);
+    }
+    .dc-char-card.is-active-scene {
+      border-color: var(--dc-soul-emerald);
+      box-shadow: 0 0 16px var(--dc-soul-glow);
+      background: linear-gradient(180deg, rgba(46, 230, 168, 0.12) 0%, rgba(13, 22, 38, 0.85) 100%);
+    }
+    .dc-char-card.is-locked {
+      opacity: 0.65;
+      border-style: dashed;
+      background: rgba(8, 14, 26, 0.5);
+    }
+    .dc-char-head-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    .dc-char-name {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--dc-text-bright);
+    }
+    .dc-char-title {
+      font-size: 0.72rem;
+      color: var(--dc-sacred-gold);
+      padding: 0.15rem 0.45rem;
+      background: rgba(245, 197, 66, 0.1);
+      border-radius: 4px;
+      border: 1px solid rgba(245, 197, 66, 0.2);
+    }
+    .dc-char-avatar-box {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 0.65rem;
+    }
+    .dc-char-icon-frame {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #2a3b5c, #0d1626);
+      border: 2px solid var(--dc-sacred-gold);
+      box-shadow: 0 0 10px rgba(245, 197, 66, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    /* 双轨发光进度条 */
+    .dc-track-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+    .dc-track-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .dc-track-label {
+      width: 52px;
+      color: var(--dc-text-sub);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .dc-track-bar-bg {
+      flex: 1;
+      height: 7px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+    .dc-track-fill-aff {
+      height: 100%;
+      background: linear-gradient(90deg, #fb7185, #f43f5e);
+      box-shadow: 0 0 8px #f43f5e;
+      border-radius: 999px;
+      transition: width 0.6s ease;
+    }
+    .dc-track-fill-corr {
+      height: 100%;
+      background: linear-gradient(90deg, #c084fc, #9333ea);
+      box-shadow: 0 0 8px #9333ea;
+      border-radius: 999px;
+      transition: width 0.6s ease;
+    }
+    .dc-track-num {
+      width: 28px;
+      text-align: right;
+      font-weight: 700;
+      color: var(--dc-text-bright);
+      font-size: 0.75rem;
+    }
+
+    /* 角色详情弹窗抽屉 */
+    .dc-char-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      z-index: 50;
+      animation: dc-fade-in 0.2s ease-out;
+    }
+    .dc-char-modal-box {
+      width: 100%;
+      max-width: 480px;
+      max-height: 85%;
+      overflow-y: auto;
+      background: linear-gradient(175deg, #101a2e 0%, #070b16 100%);
+      border: 1px solid var(--dc-sacred-gold);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(245, 197, 66, 0.2);
+    }
+
+    /* 舱室 3 特效：大势星图 */
+    .dc-timeline-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .dc-event-hero-card {
+      background: linear-gradient(175deg, rgba(20, 32, 54, 0.9) 0%, rgba(10, 16, 28, 0.95) 100%);
+      border: 1px solid var(--dc-cyber-blue);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--dc-cyber-glow);
+      border-radius: 14px;
+      padding: 1.2rem;
+    }
+    .dc-advance-btn {
+      appearance: none;
+      width: 100%;
+      padding: 0.85rem;
+      margin-top: 1rem;
+      background: linear-gradient(90deg, #0284c7, #2563eb 50%, #4f46e5);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .dc-advance-btn:hover:not(:disabled) {
+      filter: brightness(1.2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 26px rgba(2, 132, 199, 0.6);
+    }
+    .dc-advance-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      filter: grayscale(0.8);
+    }
+
+    /* 舱室 4 特效：咒瞳、六面骰与背包 */
+    .dc-dice-hud {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+    .dc-dice-face {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(245, 197, 66, 0.2);
+      border-radius: 10px;
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+      transition: all 0.25s;
+    }
+    .dc-dice-face.active {
+      background: linear-gradient(180deg, rgba(245, 197, 66, 0.2) 0%, rgba(20, 25, 38, 0.8) 100%);
+      border-color: var(--dc-sacred-gold);
+      box-shadow: 0 0 16px var(--dc-sacred-glow);
+      transform: scale(1.04);
+    }
+    .dc-dice-pips {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--dc-sacred-gold);
+      margin-bottom: 0.25rem;
+    }
+    .dc-dice-skill-name {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--dc-text-bright);
+    }
+    .dc-dice-skill-desc {
+      font-size: 0.68rem;
+      color: var(--dc-text-sub);
+      margin-top: 0.2rem;
+      line-height: 1.35;
+    }
+
+    .dc-inventory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 0.65rem;
+    }
+    .dc-item-slot {
+      background: rgba(10, 16, 28, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 0.65rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .dc-item-slot:hover {
+      border-color: var(--dc-soul-emerald);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 12px var(--dc-soul-glow);
+    }
+    .dc-item-icon { font-size: 1.5rem; margin-bottom: 0.3rem; }
+    .dc-item-name { font-size: 0.78rem; font-weight: 700; color: var(--dc-text-bright); }
+    .dc-item-qty { font-size: 0.68rem; color: var(--dc-soul-emerald); font-weight: 700; }
+
+    @media (max-width: 640px) {
+      .dc-nav-btn { font-size: 0.75rem; padding: 0.5rem 0.2rem; }
+      .dc-dice-hud { grid-template-columns: repeat(2, 1fr); }
+      .dc-biometric-section { justify-content: center; }
+      .dc-top-bar { padding: 0.75rem 1rem; }
+    }
+  </style>
+
+  <div class="dc-tome-v2">
+    <!-- 顶部状态栏 -->
+    <header class="dc-top-bar">
+      <div class="dc-brand-group">
+        <span class="dc-lamp-core" aria-hidden="true"></span>
+        <div>
+          <h3 class="dc-title-main">死界药剂师手札</h3>
+          <p style="font-size: 0.7rem; color: var(--dc-text-sub);">多模态全息视界仪 · Grimoire HUD v2.0</p>
+        </div>
+      </div>
+      <span class="dc-badge-ver">《诡异药剂师》v0.14</span>
+    </header>
+
+    <!-- 四大核心功能舱导航 -->
+    <nav class="dc-nav-grid" role="tablist" aria-label="视界仪功能舱">
+      <button class="dc-nav-btn" type="button" role="tab" id="wa-tab-v2-bio" aria-controls="wa-pane-bio" aria-selected="true">🧬 生化·体魄</button>
+      <button class="dc-nav-btn" type="button" role="tab" id="wa-tab-v2-chars" aria-controls="wa-pane-chars" aria-selected="false" tabindex="-1">👥 深渊情缘</button>
+      <button class="dc-nav-btn" type="button" role="tab" id="wa-tab-v2-events" aria-controls="wa-pane-events" aria-selected="false" tabindex="-1">📜 大势星图</button>
+      <button class="dc-nav-btn" type="button" role="tab" id="wa-tab-v2-items" aria-controls="wa-pane-items" aria-selected="false" tabindex="-1">🔮 咒瞳·药囊</button>
+    </nav>
+
+    <!-- 舱室 1：生化·体魄与神性状态 -->
+    <section class="dc-chamber" id="wa-pane-bio" role="tabpanel" aria-labelledby="wa-tab-v2-bio">
+      <div class="dc-grid-layout">
+        <article class="dc-card-box dc-card-full">
+          <div class="dc-card-header">
+            <span class="dc-card-title">🩸 林恩生命体征与灵能回路 (18岁独占主权)</span>
+            <span id="wa-v2-identity-badge" class="dc-badge-ver" style="border-color: var(--dc-soul-emerald); color: var(--dc-soul-emerald);">血锯学徒 · 临时店主</span>
+          </div>
+
+          <div class="dc-biometric-section">
+            <div class="dc-ring-gauge">
+              <svg class="dc-ring-svg" viewBox="0 0 100 100">
+                <circle class="dc-ring-bg" cx="50" cy="50" r="40" />
+                <circle id="wa-ring-hp" class="dc-ring-progress" stroke="url(#dc-grad-soul)" cx="50" cy="50" r="40" stroke-dasharray="251.2" stroke-dashoffset="25.1" />
+              </svg>
+              <div class="dc-ring-val" id="wa-v2-hp-text" style="color: var(--dc-soul-emerald);">90%</div>
+              <div class="dc-ring-label">🩸 体魄气血</div>
+            </div>
+
+            <div class="dc-ring-gauge">
+              <svg class="dc-ring-svg" viewBox="0 0 100 100">
+                <circle class="dc-ring-bg" cx="50" cy="50" r="40" />
+                <circle id="wa-ring-san" class="dc-ring-progress" stroke="url(#dc-grad-cyber)" cx="50" cy="50" r="40" stroke-dasharray="251.2" stroke-dashoffset="50.2" />
+              </svg>
+              <div class="dc-ring-val" id="wa-v2-san-text" style="color: var(--dc-cyber-blue);">80%</div>
+              <div class="dc-ring-label">🧠 灵能理智</div>
+            </div>
+          </div>
+
+          <div id="wa-v2-hazards-box" class="dc-hazards-wrap">
+            <div class="dc-hazard-badge dc-hazard-badge--peace">✨ 身心状态稳定 · 暂无神性失控危机</div>
+          </div>
+        </article>
+
+        <!-- 真实 S0/S1 阶段 -->
+        <article class="dc-card-box">
+          <div class="dc-card-header">
+            <span class="dc-card-title">🌐 大势宏观阶段</span>
+          </div>
+          <div class="dc-card-value" id="wa-v2-phase">S0·药店接管期</div>
+          <div class="dc-card-meta" id="wa-v2-phase-desc">黑夜城初醒接管药剂店，在游魂巷开启药剂师与急救生涯。</div>
+        </article>
+
+        <article class="dc-card-box">
+          <div class="dc-card-header">
+            <span class="dc-card-title">📍 当前时空坐标</span>
+          </div>
+          <div class="dc-card-value" id="wa-v2-location">游魂巷 · 血锯药剂店门前</div>
+          <div class="dc-card-meta" id="wa-v2-time">E02收尾 · 午后的药剂店</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 舱室 2：深渊情缘录 -->
+    <section class="dc-chamber" id="wa-pane-chars" role="tabpanel" aria-labelledby="wa-tab-v2-chars" hidden>
+      <div class="dc-char-filter-bar" id="wa-v2-char-filters">
+        <button class="dc-filter-chip active" data-filter="all">全部 (28)</button>
+        <button class="dc-filter-chip" data-filter="active">⚡ 当前在场</button>
+        <button class="dc-filter-chip" data-filter="heroines">💖 核心女主</button>
+        <button class="dc-filter-chip" data-filter="elders">🏛️ 神明长辈</button>
+        <button class="dc-filter-chip" data-filter="comrades">🩺 夜医同僚</button>
+      </div>
+
+      <div class="dc-char-grid" id="wa-v2-char-list">
+        <!-- 动态 JavaScript 注水渲染 -->
+      </div>
+    </section>
+
+    <!-- 舱室 3：大势星图 -->
+    <section class="dc-chamber" id="wa-pane-events" role="tabpanel" aria-labelledby="wa-tab-v2-events" hidden>
+      <div class="dc-timeline-box">
+        <article class="dc-event-hero-card">
+          <div class="dc-card-header">
+            <span class="dc-card-title" style="color: var(--dc-cyber-blue);">⚡ 当前唯一活跃主线事件</span>
+            <span id="wa-v2-evt-status-badge" class="dc-badge-ver" style="border-color: var(--dc-cyber-blue); color: var(--dc-cyber-blue);">活跃收尾中</span>
+          </div>
+          <div class="dc-card-value" id="wa-v2-hero-evt-title" style="font-size: 1.15rem; margin-bottom: 0.4rem;">E02·血娃娃上门与找妈妈任务</div>
+          <div class="dc-card-meta" id="wa-v2-hero-evt-desc">
+            血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子。血娃娃外出找妈妈。
+          </div>
+
+          <button id="wa-v2-advance-btn" class="dc-advance-btn" type="button">
+            <span>⚔️ 结算 E02 并承接 E03·猪头魔与恶灵血婴</span>
+          </button>
+        </article>
+
+        <article class="dc-card-box">
+          <div class="dc-card-header">
+            <span class="dc-card-title">📜 大势阶段历程 (348 锚点闭环)</span>
+          </div>
+          <div class="dc-card-meta" id="wa-v2-history-summary">
+            已开启 S0 药店接管期。因果链条严丝合缝，林恩对白、动作与记忆 100% 独占。
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 舱室 4：咒瞳·药囊与深渊圣遗物 -->
+    <section class="dc-chamber" id="wa-pane-items" role="tabpanel" aria-labelledby="wa-tab-v2-items" hidden>
+      <article class="dc-card-box dc-card-full" style="margin-bottom: 1rem;">
+        <div class="dc-card-header">
+          <span class="dc-card-title">🎲 专属神技与右眼咒瞳状态</span>
+          <span id="wa-v2-dice-status-badge" class="dc-badge-ver" style="color: var(--dc-text-sub);">尚未觉醒/未解锁</span>
+        </div>
+
+        <!-- 咒瞳未激活时显示说明，激活后点亮六面骰 -->
+        <div id="wa-v2-dice-placeholder" style="padding: 1rem; text-align: center; color: var(--dc-text-sub); font-size: 0.85rem; background: rgba(0,0,0,0.25); border-radius: 10px; border: 1px dashed rgba(255,255,255,0.1);">
+          👁️ 当前右眼咒瞳尚未移植觉醒。随主线推进至后续剧情（灭杀玛丽夫人获得咒瞳、神之方程式魔改小眼萝）后，将在此解锁<b>【真·神选史诗六面骰】</b>全套神技。
+        </div>
+
+        <div class="dc-dice-hud" id="wa-v2-dice-container" style="display: none;">
+          <div class="dc-dice-face active" data-pip="1">
+            <div class="dc-dice-pips">⚀ 1点</div>
+            <div class="dc-dice-skill-name">【咒瞳活性化】</div>
+            <div class="dc-dice-skill-desc">化作小眼萝代放诅咒，<b>完全免除反噬</b>，林恩支付养料(肾透支)</div>
+          </div>
+          <div class="dc-dice-face" data-pip="2">
+            <div class="dc-dice-pips">⚁ 2点</div>
+            <div class="dc-dice-skill-name">【熄火与反噬】</div>
+            <div class="dc-dice-skill-desc">诅咒释放瞬间彻底哑火，本体承受严重反噬剧痛(纯负面惩罚)</div>
+          </div>
+          <div class="dc-dice-face" data-pip="3">
+            <div class="dc-dice-pips">⚂ 3点</div>
+            <div class="dc-dice-skill-name">【无事发生】</div>
+            <div class="dc-dice-skill-desc">正常模式，正常施放指定诅咒，正常承受原本消耗与反噬</div>
+          </div>
+          <div class="dc-dice-face" data-pip="4">
+            <div class="dc-dice-pips">⚃ 4点</div>
+            <div class="dc-dice-skill-name">【生与死】</div>
+            <div class="dc-dice-skill-desc">与目标强制对赌骰子点数：<b>点数小者即死！点数相同一起死！</b></div>
+          </div>
+          <div class="dc-dice-face" data-pip="5">
+            <div class="dc-dice-pips">⚄ 5点</div>
+            <div class="dc-dice-skill-name">【永久诅咒】</div>
+            <div class="dc-dice-skill-desc">将限时诅咒转变为永久诅咒，区域转为不可磨灭诅咒禁区</div>
+          </div>
+          <div class="dc-dice-face" data-pip="6">
+            <div class="dc-dice-pips">⚅ 6点</div>
+            <div class="dc-dice-skill-name">【全面动乱】</div>
+            <div class="dc-dice-skill-desc">将诅咒威力与范围拉至绝对极限，引发天灾级动乱(巨像供能)</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 药囊与圣遗物背包 -->
+      <article class="dc-card-box dc-card-full">
+        <div class="dc-card-header">
+          <span class="dc-card-title">🧪 奇迹药囊、武器与深渊圣遗物</span>
+        </div>
+        <div class="dc-inventory-grid" id="wa-v2-inventory-grid">
+          <!-- 动态 JavaScript 注水渲染 -->
+        </div>
+      </article>
+    </section>
+
+    <!-- 角色详情动态弹层 -->
+    <div id="wa-v2-modal-backdrop" class="dc-char-modal-backdrop" hidden>
+      <div class="dc-char-modal-box">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <h4 id="wa-modal-char-name" style="color: var(--dc-text-bright); font-size: 1.1rem; font-weight: 800;">角色名</h4>
+          <button id="wa-modal-close-btn" type="button" style="background: none; border: none; color: var(--dc-text-sub); font-size: 1.3rem; cursor: pointer;">✕</button>
+        </div>
+        <div id="wa-modal-char-content" style="font-size: 0.85rem; color: var(--dc-text-sub); line-height: 1.6;">
+          <!-- 动态填充 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       7. MVU 数据响应总线与前端控制器
+       ========================================================================== -->
+  <script>
+    (function () {
+      const root = document.querySelector('[data-wa-status-root]');
+      if (!root) return;
+
+      const byId = id => root.querySelector('#' + id);
+
+      const FALLBACK_STATE = {"元数据":{"卡名":"《诡异药剂师》v0.14","版本":"0.14.0"},"世界":{"阶段编号":"S0","阶段名称":"药店接管期","模糊阶段进度":"初期","当前场景时间":"E02收尾·午后","地点":"游魂巷·血锯药剂店","氛围":"午后的药剂店，柜台上的盘子里放着从血娃娃胃中取出的器官","大局线索":[]},"林恩":{"年龄":18,"身体状况":"正常","当前身份":["血锯学徒","临时店主"],"等级":2,"技能":["随机诊断术（被动，系统辅助诊断）","中级家务（901/1000）","初级药剂制造（90/100）","初级手术（20/100）"],"成就":["隐藏任务·血娃娃找妈妈（完成度2%）"],"图鉴已解锁":["血娃娃（血肉恶灵）","血娃娃的右眼（稀有物品）"],"关键诅咒或契约":[],"当前明确目标":"研究盘中的器官线索，追查血娃娃的妈妈","最近明确指令":"","压力":0,"道德":0,"罪恶":0,"复苏度":0,"替死娃娃剩余":0,"天使之吻状态":false,"根系网络权限":false,"巨像网络权限":false,"咒瞳状态":"完好·可用","拟化技能":"精通（+0）"},"事件":{"锚点状态":{"E01":{"标题":"系统觉醒与开店","状态":"完成","收尾":true},"E02":{"标题":"血娃娃上门与找妈妈任务","状态":"活跃","收尾":true},"E03":{"标题":"猪头魔与恶灵血婴","状态":"未触发","收尾":false},"E04":{"标题":"猎魔人治疗与传说左轮","状态":"未触发","收尾":false},"E05":{"标题":"不眠夜与小小牙科","状态":"未触发","收尾":false},"E06":{"标题":"诅咒清除能力与鬼婴塑形","状态":"未触发","收尾":false},"E07":{"标题":"血衣寻子与鬼婴萌化化解","状态":"未触发","收尾":false},"E08":{"标题":"暴击药剂与视界曝光","状态":"未触发","收尾":false},"E09":{"标题":"血衣鸿门宴与诅咒绑定","状态":"未触发","收尾":false},"E10":{"标题":"视界经营与玥玥治疗","状态":"未触发","收尾":false},"E11":{"标题":"血夜地狱行者与左左诞生","状态":"未触发","收尾":false},"E12":{"标题":"血肉灾变与左手共存","状态":"未触发","收尾":false},"E13":{"标题":"猎杀者夜袭与信使线","状态":"未触发","收尾":false},"E14":{"标题":"瘦长鬼影手术与024诊断","状态":"未触发","收尾":false},"E15":{"标题":"求援信与小小赴约","状态":"未触发","收尾":false},"E16":{"标题":"械魔大军与猎神者","状态":"未触发","收尾":false},"E17":{"标题":"小小介绍棒医生","状态":"未触发","收尾":false},"E18":{"标题":"倒吊塔决战与协会覆灭","状态":"未触发","收尾":false},"E19":{"标题":"猎头者家族绑定","状态":"未触发","收尾":false},"E20":{"标题":"师徒归来与阶段收束","状态":"未触发","收尾":false},"E21":{"标题":"魔鬼训练与首次独立出诊","状态":"未触发","收尾":false},"E22":{"标题":"幸福之家的血肉晚宴","状态":"未触发","收尾":false},"E23":{"标题":"异域同乡与爱丽丝初愈","状态":"未触发","收尾":false},"E24":{"标题":"诅咒复燃与古堡围猎","状态":"未触发","收尾":false},"E25":{"标题":"双面伯爵与心脑之汤","状态":"未触发","收尾":false},"E26":{"标题":"爱丽丝重生与母女终局","状态":"未触发","收尾":false},"E27":{"标题":"白逸遣返与九州异变","状态":"未触发","收尾":false},"E28":{"标题":"爱丽丝日常与十四病战蜥","状态":"未触发","收尾":false},"E29":{"标题":"传奇赠药与夜医启程","状态":"未触发","收尾":false},"E30":{"标题":"血月狼群与寂静镇试诊","状态":"未触发","收尾":false},"E31":{"标题":"哭泣小丑与血肉灾变","状态":"未触发","收尾":false},"E32":{"标题":"小丑余波与夜医接纳","状态":"未触发","收尾":false},"E33":{"标题":"夜医试炼与白夜旧梦","状态":"未触发","收尾":false},"E34":{"标题":"倒吊天使与夜医授职","状态":"未触发","收尾":false},"E35":{"标题":"左左拟化与蓝星鬼袭","状态":"未触发","收尾":false},"E36":{"标题":"左左醉酒与安全照护","状态":"未触发","收尾":false},"E37":{"标题":"白逸召唤降临与总局清剿","状态":"未触发","收尾":false},"E38":{"标题":"审问王蓓与根源关系网","状态":"未触发","收尾":false},"E39":{"标题":"暴食血祭与血娃娃回收","状态":"未触发","收尾":false},"E40":{"标题":"户籍锁定与血娃娃共情","状态":"未触发","收尾":false},"E41":{"标题":"白家休整与机械造物","状态":"未触发","收尾":false},"E42":{"标题":"跳车寻母与林樱初遇","状态":"未触发","收尾":false},"E43":{"标题":"回归汇报与被收教子","状态":"未触发","收尾":false},"E44":{"标题":"盗版史诗药剂与巨像脑情报","状态":"未触发","收尾":false},"E45":{"标题":"召唤四阶段与无瞳法阵","状态":"未触发","收尾":false},"E46":{"标题":"强制拟化与边界反击","状态":"未触发","收尾":false},"E47":{"标题":"群星圣堂实习与误麻院长","状态":"未触发","收尾":false},"E48":{"标题":"接诊喵喵与002盗书","状态":"未触发","收尾":false},"E49":{"标题":"犬皮改造真相与千人寻亲","状态":"未触发","收尾":false},"E50":{"标题":"猫娘药剂与喵喵破茧","状态":"未触发","收尾":false},"E51":{"标题":"黑弦月到货与保护契约","状态":"未触发","收尾":false},"E52":{"标题":"森一夜袭与四次重生","状态":"未触发","收尾":false},"E53":{"标题":"三重算计与平等契约","状态":"未触发","收尾":false},"E54":{"标题":"疫医暗面与最高级保护","状态":"未触发","收尾":false},"E55":{"标题":"喵喵收养与家人复仇","状态":"未触发","收尾":false},"E56":{"标题":"史莱姆整形与游荡者情报","状态":"未触发","收尾":false},"E57":{"标题":"整备出征与收编小宝贝","状态":"未触发","收尾":false},"E58":{"标题":"前线观战与银色幻想降临","状态":"未触发","收尾":false},"E59":{"标题":"斩臂反击与三根源驰援","状态":"未触发","收尾":false},"E60":{"标题":"圣子推定与圣徒叛变","状态":"未触发","收尾":false},"E61":{"标题":"突围反杀与夺萃之镰","状态":"未触发","收尾":false},"E62":{"标题":"折跃入城与疫医伪装","状态":"未触发","收尾":false},"E63":{"标题":"堡垒解围与欲望教派","状态":"未触发","收尾":false},"E64":{"标题":"诅咒之城余韵","状态":"未触发","收尾":false},"E65":{"标题":"疫医X博士潜入·指挥官拉拢示爱","状态":"未触发","收尾":false},"E66":{"标题":"电钻充能暴走·人偶情感暴涨","状态":"未触发","收尾":false},"E67":{"标题":"纳米风暴追杀·快感冲击蜂巢","状态":"未触发","收尾":false},"E68":{"标题":"血肉养蛊·病毒反噬纳米风暴","状态":"未触发","收尾":false},"E69":{"标题":"黑弦月签人偶之誓","状态":"未触发","收尾":false},"E70":{"标题":"撤离堡垒揭巨像之心","状态":"未触发","收尾":false},"E71":{"标题":"设伏反打银色幻想","状态":"未触发","收尾":false},"E72":{"标题":"核爆硬抗捕获机械姬","状态":"未触发","收尾":false},"E73":{"标题":"猎魔左轮处决与破防全部失败","状态":"未触发","收尾":false},"E74":{"标题":"快感冲击逼供缴双剑与龙狙","状态":"未触发","收尾":false},"E75":{"标题":"触发恶堕向机械姬调教任务","状态":"未触发","收尾":false},"E76":{"标题":"全城机械紊乱与死星结晶交易","状态":"未触发","收尾":false},"E77":{"标题":"万机之神投影降临贯穿取心","状态":"未触发","收尾":false},"E78":{"标题":"巨像网络苏醒与捣翻万机之神","状态":"未触发","收尾":false},"E79":{"标题":"黑弦月只身赴死与求婚被拒","状态":"未触发","收尾":false},"E80":{"标题":"直死书与六诅咒同归于尽","状态":"未触发","收尾":false},"E81":{"标题":"黑弦月肉身挡轰炸与解雇无效","状态":"未触发","收尾":false},"E82":{"标题":"白发异变与虚握差杀万机之神","状态":"未触发","收尾":false},"E83":{"标题":"艾雯爵士救场与八音盒扰泰坦","状态":"未触发","收尾":false},"E84":{"标题":"吞钱逼斗志与认义弟立执念","状态":"未触发","收尾":false},"E85":{"标题":"轮椅碰撞与漏电警告","状态":"未触发","收尾":false},"E86":{"标题":"工伤条款与同意治疗黑弦月","状态":"未触发","收尾":false},"E87":{"标题":"纽带比喻与无效解咒字据","状态":"未触发","收尾":false},"E88":{"标题":"恒星熔炉锻造人偶之臂","状态":"未触发","收尾":false},"E89":{"标题":"求左左协助解咒被拒","状态":"未触发","收尾":false},"E90":{"标题":"救回乱流深处的恶灵妹妹","状态":"未触发","收尾":false},"E91":{"标题":"妹妹误触诅咒释放与照护","状态":"未触发","收尾":false},"E92":{"标题":"强制调用左手解咒事故","状态":"未触发","收尾":false},"E93":{"标题":"入视界建群与喵喵参战","状态":"未触发","收尾":false},"E94":{"标题":"三蜂巢饱和轰炸与母树降临","状态":"未触发","收尾":false},"E95":{"标题":"银色幻想恨意暴增与总攻","状态":"未触发","收尾":false},"E96":{"标题":"血肉利维坦突现与战局逆转","状态":"未触发","收尾":false},"E97":{"标题":"三大根源混战与利维坦升空","状态":"未触发","收尾":false},"E98":{"标题":"赛博飞升升格与喵喵血仇","状态":"未触发","收尾":false},"E99":{"标题":"冤家组队与12小时禁杀契约","状态":"未触发","收尾":false},"E100":{"标题":"利维坦走廊潜伏与老六挂机","状态":"未触发","收尾":false},"E101":{"标题":"夺舍洛什与芬芳尖啸者嘴遁","状态":"未触发","收尾":false},"E102":{"标题":"机械姬恶堕大计与荣升执事","状态":"未触发","收尾":false},"E103":{"标题":"腐败执事生活与全厂物资收买","状态":"未触发","收尾":false},"E104":{"标题":"以M破防机械姬与苦肉计夺权","状态":"未触发","收尾":false},"E105":{"标题":"密室除患与全舰生化下毒","状态":"未触发","收尾":false},"E106":{"标题":"木偶咒印与人偶夫人真相","状态":"未触发","收尾":false},"E107":{"标题":"傀儡接管与双簧大戏诱敌","状态":"未触发","收尾":false},"E108":{"标题":"第一腔室掀牌与全舰异变灾变","状态":"未触发","收尾":false},"E109":{"标题":"利维坦鲸落与替身破死书","状态":"未触发","收尾":false},"E110":{"标题":"开颅刑讯与兄长残躯回溯","状态":"未触发","收尾":false},"E111":{"标题":"恶面堕天使降临与巨头噬神","状态":"未触发","收尾":false},"E112":{"标题":"以M亵渎神明与红茶包唤醒主母","状态":"未触发","收尾":false},"E113":{"标题":"巨像红芒爆发与深层空间降临","状态":"未触发","收尾":false},"E114":{"标题":"万机梦魇与解救巨像之舌","状态":"未触发","收尾":false},"E115":{"标题":"母树现身色诱与爆头自戕博弈","状态":"未触发","收尾":false},"E116":{"标题":"荒原漫步心智交锋与耍赖骑乘","状态":"未触发","收尾":false},"E117":{"标题":"往昔恐惧投影生命树与幼稚园","状态":"未触发","收尾":false},"E118":{"标题":"幻境以M快打与欲望母树交融","状态":"未触发","收尾":false},"E119":{"标题":"替死复活晋升与一丝神性觉醒","状态":"未触发","收尾":false},"E120":{"标题":"艾雯失忆死战与巨像之门开启","状态":"未触发","收尾":false},"E121":{"标题":"知识禁库渡鸦寓言与自我肢解","状态":"未触发","收尾":false},"E122":{"标题":"紫罗兰法阵决裂与剥离左左","状态":"未触发","收尾":false},"E123":{"标题":"巨像重组与破宇冲向地狱边界","状态":"未触发","收尾":false},"E124":{"标题":"直面狂乱色彩与极限断闸救赎","状态":"未触发","收尾":false},"E125":{"标题":"废墟渡鸦誓言与咒瞳绝唱挡刀","状态":"未触发","收尾":false},"E126":{"标题":"银发女王萝莉诞生与六根源对峙","状态":"未触发","收尾":false},"E127":{"标题":"六根源僵局与诅咒全面加深","状态":"未触发","收尾":false},"E128":{"标题":"支配者目的与母树第一绑定","状态":"未触发","收尾":false},"E129":{"标题":"泰坦暴怒降临与支配者追猎","状态":"未触发","收尾":false},"E130":{"标题":"巫神头颅复苏与家族重聚","状态":"未触发","收尾":false},"E131":{"标题":"母树临时同盟与未来筹码","状态":"未触发","收尾":false},"E132":{"标题":"机械狂潮解封与泰坦引流","状态":"未触发","收尾":false},"E133":{"标题":"血肉夺舰与集团撤离计划","状态":"未触发","收尾":false},"E134":{"标题":"全面狩猎与银色幻想终局变故","状态":"未触发","收尾":false},"E135":{"标题":"聚合体开颅与喵喵兄长残魂","状态":"未触发","收尾":false},"E136":{"标题":"最后一面与兄长永别","状态":"未触发","收尾":false},"E137":{"标题":"纳米血肉集群认亲与新族群","状态":"未触发","收尾":false},"E138":{"标题":"巨像罪疚与地狱追责誓言","状态":"未触发","收尾":false},"E139":{"标题":"王后真名揭晓与左左苏醒","状态":"未触发","收尾":false},"E140":{"标题":"王后归属谈判与巨像收容","状态":"未触发","收尾":false},"E141":{"标题":"巨像神殿掩埋与战舰返城","状态":"未触发","收尾":false},"E142":{"标题":"心灵深渊仪式与堕天使复苏","状态":"未触发","收尾":false},"E143":{"标题":"还书禁忌与羽毛笔失忆承诺","状态":"未触发","收尾":false},"E144":{"标题":"权柄异常与命运书写救城","状态":"未触发","收尾":false},"E145":{"标题":"堕天使决战与八音盒权柄造物","状态":"未触发","收尾":false},"E146":{"标题":"心灵深渊救援与主母归返","状态":"未触发","收尾":false},"E147":{"标题":"主母复苏与地狱反噬降临","状态":"未触发","收尾":false},"E148":{"标题":"神之方程式与凝视十七","状态":"未触发","收尾":false},"E149":{"标题":"重返002与认知空间驱逐","状态":"未触发","收尾":false},"E150":{"标题":"权柄病变与拒绝放弃","状态":"未触发","收尾":false},"E151":{"标题":"血肉真身接纳与平等信任","状态":"未触发","收尾":false},"E152":{"标题":"命运规则神与正式对话","状态":"未触发","收尾":false},"E153":{"标题":"古老狱规回应与生死反转","状态":"未触发","收尾":false},"E154":{"标题":"地狱惩罚预演与七日通牒","状态":"未触发","收尾":false},"E155":{"标题":"路西法前史与渡鸦指引","状态":"未触发","收尾":false},"E156":{"标题":"蓝星死界恶鬼与召唤预警","状态":"未触发","收尾":false},"E157":{"标题":"规避凝视的跨世界方案","状态":"未触发","收尾":false},"E158":{"标题":"百零七世界咒式与关系裂痕","状态":"未触发","收尾":false},"E159":{"标题":"羽毛笔重逢与生死命运契约","状态":"未触发","收尾":false},"E160":{"标题":"蓝星百鬼夜行与魔改义肢","状态":"未触发","收尾":false},"E161":{"标题":"尹依身世与死界恶鬼辨认","状态":"未触发","收尾":false},"E162":{"标题":"多次召唤失败与跨界失联","状态":"未触发","收尾":false},"E163":{"标题":"尹琴中弹与部分降临窗口","状态":"未触发","收尾":false},"E164":{"标题":"部分降临与恶灵聚合体镇压","状态":"未触发","收尾":false},"E165":{"标题":"尹依交易与尹琴急救","状态":"未触发","收尾":false},"E166":{"标题":"蓝星善后与夜医学徒去向","状态":"未触发","收尾":false},"E167":{"标题":"自毁争执与左左离家","状态":"未触发","收尾":false},"E168":{"标题":"双生关系危机与共同过夜","状态":"未触发","收尾":false},"E169":{"标题":"夜间越界与信任崩塌","状态":"未触发","收尾":false},"E170":{"标题":"清晨质问与餐刀悬崖","状态":"未触发","收尾":false},"E171":{"标题":"餐刀危机的降温与事实核查","状态":"未触发","收尾":false},"E172":{"标题":"修瞳条件与失控的视野勘测","状态":"未触发","收尾":false},"E173":{"标题":"九次垫刀与史诗级咒瞳复原","状态":"未触发","收尾":false},"E174":{"标题":"命运骰与半城全面动乱","状态":"未触发","收尾":false},"E175":{"标题":"活性咒瞳意识体与等价交易","状态":"未触发","收尾":false},"E176":{"标题":"夜医培训与血衣召唤确认","状态":"未触发","收尾":false},"E177":{"标题":"幸福之家重访与地缚复发","状态":"未触发","收尾":false},"E178":{"标题":"冷库口供与跨界怨灵产业链疑云","状态":"未触发","收尾":false},"E179":{"标题":"蓝星旧日线索与药剂店失守疑报","状态":"未触发","收尾":false},"E180":{"标题":"爱丽丝的燕尾服与双重污染预警","状态":"未触发","收尾":false},"E181":{"标题":"禁欲监护与诅咒失控排查","状态":"未触发","收尾":false},"E182":{"标题":"血雾遭遇与爬行者潜入","状态":"未触发","收尾":false},"E183":{"标题":"寄生兽催熟与高活性血肉污染","状态":"未触发","收尾":false},"E184":{"标题":"警戒线教学与腔室反伏击","状态":"未触发","收尾":false},"E185":{"标题":"快感冲击变异与爬行者失能","状态":"未触发","收尾":false},"E186":{"标题":"行走的悬赏与控制腔逼供","状态":"未触发","收尾":false},"E187":{"标题":"样本截获与爬行者接管","状态":"未触发","收尾":false},"E188":{"标题":"钟塔诱袭与蓝星裂隙窥视","状态":"未触发","收尾":false},"E189":{"标题":"白夜汇合与尹依故人链","状态":"未触发","收尾":false},"E190":{"标题":"师生误会与持续污染诊断","状态":"未触发","收尾":false},"E191":{"标题":"降温隔离与血锯厕所现状","状态":"未触发","收尾":false},"E192":{"标题":"伪装顾客与大舌头经营网络","状态":"未触发","收尾":false},"E193":{"标题":"血畸藤鸡汤与设宴反制","状态":"未触发","收尾":false},"E194":{"标题":"私藏清算与鬼婴人质线索","状态":"未触发","收尾":false},"E195":{"标题":"群发求援与根源法阵曝光","状态":"未触发","收尾":false},"E196":{"标题":"套娃炸弹与血色传送门反爆","状态":"未触发","收尾":false},"E197":{"标题":"鬼婴救援与罗斯特灵魂收押","状态":"未触发","收尾":false},"E198":{"标题":"血衣日记与私人复仇债","状态":"未触发","收尾":false},"E199":{"标题":"必赴蓝星与旧神遗产争夺","状态":"未触发","收尾":false},"E200":{"标题":"根源围控与王后危机佯动","状态":"未触发","收尾":false},"E201":{"标题":"白逸失联与首次跨界呼叫","状态":"未触发","收尾":false},"E202":{"标题":"诅咒绕行与母树神性疑云","状态":"未触发","收尾":false},"E203":{"标题":"适应方案与极端疗法争议","状态":"未触发","收尾":false},"E204":{"标题":"多世界强制召唤与折跃逃脱","状态":"未触发","收尾":false},"E205":{"标题":"羽毛笔重逢与最后期限停战","状态":"未触发","收尾":false},"E206":{"标题":"归零前一秒与蓝星双召唤","状态":"未触发","收尾":false},"E207":{"标题":"西南堡垒降临与祭场解救","状态":"未触发","收尾":false},"E208":{"标题":"隐修会布阵与群体急救启动","状态":"未触发","收尾":false},"E209":{"标题":"三百九十一人救回与灵魂封护","状态":"未触发","收尾":false},"E210":{"标题":"寄生兽蔓延情报与弥赛亚首战","状态":"未触发","收尾":false},"E211":{"标题":"公路截车与血娃娃再捕获","状态":"未触发","收尾":false},"E212":{"标题":"临时协作与废水工厂突袭","状态":"未触发","收尾":false},"E213":{"标题":"灵肉绑定与一个月休眠缓冲","状态":"未触发","收尾":false},"E214":{"标题":"十二翼显影与停车场临时基地","状态":"未触发","收尾":false},"E215":{"标题":"鲶鱼战术与全城迷雾动乱","状态":"未触发","收尾":false},"E216":{"标题":"封城戒严与必要代价之争","状态":"未触发","收尾":false},"E217":{"标题":"王麟执念样本与医院救援","状态":"未触发","收尾":false},"E218":{"标题":"地狱来客自白与七使徒围攻","状态":"未触发","收尾":false},"E219":{"标题":"蜀都血肉动乱与七圣徒团灭","状态":"未触发","收尾":false},"E220":{"标题":"血娃娃摸鱼与弥赛亚复读","状态":"未触发","收尾":false},"E221":{"标题":"接通黑夜城与执念思路","状态":"未触发","收尾":false},"E222":{"标题":"全球审讯与一半人计划","状态":"未触发","收尾":false},"E223":{"标题":"寄生兽泄底与第一使徒真身","状态":"未触发","收尾":false},"E224":{"标题":"核武袭蜀与血肉壁垒救世","状态":"未触发","收尾":false},"E225":{"标题":"弥赛亚透支血脉与变秃变强","状态":"未触发","收尾":false},"E226":{"标题":"送走左左与魇魔登场","状态":"未触发","收尾":false},"E227":{"标题":"燕尾服与心灵抑制器","状态":"未触发","收尾":false},"E228":{"标题":"死缚殉爆与debuff雪球","状态":"未触发","收尾":false},"E229":{"标题":"巨像之心灾变与灭魇魔投影","状态":"未触发","收尾":false},"E230":{"标题":"九重梦魇与心灵分流","状态":"未触发","收尾":false},"E231":{"标题":"横断山脉与假召唤法阵","状态":"未触发","收尾":false},"E232":{"标题":"第一使徒被引动与弥赛亚被缚","状态":"未触发","收尾":false},"E233":{"标题":"弥赛亚割腕传信与恩师脸崩","状态":"未触发","收尾":false},"E234":{"标题":"口嗨啪树与最终决战开启","状态":"未触发","收尾":false},"E235":{"标题":"机械梯队轰炸与眼球定身","状态":"未触发","收尾":false},"E236":{"标题":"九重梦魇骰点5·永久诅咒","状态":"未触发","收尾":false},"E237":{"标题":"地缚灵骰点3失败与灌注精神力","状态":"未触发","收尾":false},"E238":{"标题":"撵走弥赛亚与生死对赌","状态":"未触发","收尾":false},"E239":{"标题":"雷霆审判与权柄剥夺肉体","状态":"未触发","收尾":false},"E240":{"标题":"左左断联与掘地三尺","状态":"未触发","收尾":false},"E241":{"标题":"舍弃血肉·锻造至高机体","状态":"未触发","收尾":false},"E242":{"标题":"机械之躯归来·我回来了","状态":"未触发","收尾":false},"E243":{"标题":"斩断血肉支配者投影","状态":"未触发","收尾":false},"E244":{"标题":"纳米吞噬者与灵能处理器","状态":"未触发","收尾":false},"E245":{"标题":"三位一体揭露与左左复归","状态":"未触发","收尾":false},"E246":{"标题":"跃迁追击与宣战血肉神教","状态":"未触发","收尾":false},"E247":{"标题":"灭尽救援者与第二躯体","状态":"未触发","收尾":false},"E248":{"标题":"审视二卡与温情相拥","状态":"未触发","收尾":false},"E249":{"标题":"血肉灾变与首次涩涩","状态":"未触发","收尾":false},"E250":{"标题":"现场直播与昏厥的左手","状态":"未触发","收尾":false},"E251":{"标题":"肉量加30%与权柄衰减","状态":"未触发","收尾":false},"E252":{"标题":"蓝星之盟与召唤黑夜城","状态":"未触发","收尾":false},"E253":{"标题":"小林恩诞生与心灵分流","状态":"未触发","收尾":false},"E254":{"标题":"全球核弹拦截与第二职业凭证","状态":"未触发","收尾":false},"E255":{"标题":"解密与同盟·公海禁地","状态":"未触发","收尾":false},"E256":{"标题":"普鲁斯之死与教会弥赛亚","状态":"未触发","收尾":false},"E257":{"标题":"娘化世界观与林樱","状态":"未触发","收尾":false},"E258":{"标题":"回家认亲·林镇南杨琳","状态":"未触发","收尾":false},"E259":{"标题":"修罗场与教学","状态":"未触发","收尾":false},"E260":{"标题":"血衣线·上·晓晴身世","状态":"未触发","收尾":false},"E261":{"标题":"血衣线·下·魔都复仇","状态":"未触发","收尾":false},"E262":{"标题":"复仇终局·攻略血衣","状态":"未触发","收尾":false},"E263":{"标题":"谢幕遗留·艳英","状态":"未触发","收尾":false},"E264":{"标题":"收束·情与家","状态":"未触发","收尾":false},"E265":{"标题":"公海前奏·克苏鲁注视","状态":"未触发","收尾":false},"E266":{"标题":"魂灯入城·圣城通讯与猫娘军团","状态":"未触发","收尾":false},"E267":{"标题":"圣女的天灯·神的方程式","状态":"未触发","收尾":false},"E268":{"标题":"虔信者·艾泽法拉与潮涌潮枯","状态":"未触发","收尾":false},"E269":{"标题":"嘴遁破防·往日遗念揭真与海嗣诱拐","状态":"未触发","收尾":false},"E270":{"标题":"隐修会秘辛·旧日的血契","状态":"未触发","收尾":false},"E271":{"标题":"深海隐修地·唤潮者","状态":"未触发","收尾":false},"E272":{"标题":"破界血战·叹息之潮","状态":"未触发","收尾":false},"E273":{"标题":"天使禁区·渡鸦预言与旧日神明任务","状态":"未触发","收尾":false},"E274":{"标题":"旧日时代·渡鸦的号角","状态":"未触发","收尾":false},"E275":{"标题":"垂暮克苏鲁·边境是一个生灵","状态":"未触发","收尾":false},"E276":{"标题":"旧日陨落与最后的希望之谎","状态":"未触发","收尾":false},"E277":{"标题":"拖入地狱的仪式与预料之外的剧变","状态":"未触发","收尾":false},"E278":{"标题":"最后的命令与门之界门","状态":"未触发","收尾":false},"E279":{"标题":"锁链拖行与升华的家人们","状态":"未触发","收尾":false},"E280":{"标题":"胜利的收尾与谎言的代价","状态":"未触发","收尾":false},"E281":{"标题":"失落的眷者与星空之引","状态":"未触发","收尾":false},"E282":{"标题":"告别全世界的倒计时与左左的追逐","状态":"未触发","收尾":false},"E283":{"标题":"星海豪赌·无瞳法阵与灾厄的凝视","状态":"未触发","收尾":false},"E284":{"标题":"苍蓝之梦与归乡的拖行","状态":"未触发","收尾":false},"E285":{"标题":"冰箱新生与灾厄的真相","状态":"未触发","收尾":false},"E286":{"标题":"泰坦暴走与欲望母树之战","状态":"未触发","收尾":false},"E287":{"标题":"深海权能与海嗣女王的抉择","状态":"未触发","收尾":false},"E288":{"标题":"冰箱惩罚夜与视界强拖","状态":"未触发","收尾":false},"E289":{"标题":"视界谈判·三条件与狱卒之疑","状态":"未触发","收尾":false},"E290":{"标题":"无瞳之眼指向灾厄·留在地狱宣言","状态":"未触发","收尾":false},"E291":{"标题":"命运女神的真容·神不可直视","状态":"未触发","收尾":false},"E292":{"标题":"出兵介入·魅魔外交沦陷","状态":"未触发","收尾":false},"E293":{"标题":"乐不思蜀·机械神教饱和袭击","状态":"未触发","收尾":false},"E294":{"标题":"编造身世·混入机械神教","状态":"未触发","收尾":false},"E295":{"标题":"录音破防·全面空袭·纸条蚀痕","状态":"未触发","收尾":false},"E296":{"标题":"逼入绝境·幻象旧日·黑星蜂巢","状态":"未触发","收尾":false},"E297":{"标题":"骗局收网·神性蜕变·瘟疫捕获与拖行剧本","状态":"未触发","收尾":false},"E298":{"标题":"病名为爱·黑雾重逢","状态":"未触发","收尾":false},"E299":{"标题":"一家人之诺·意识上传","状态":"未触发","收尾":false},"E300":{"标题":"文明的伊始·血肉的苦弱","状态":"未触发","收尾":false},"E301":{"标题":"收不住的演技·道德触底反弹","状态":"未触发","收尾":false},"E302":{"标题":"心灵分流·肃正猎杀令","状态":"未触发","收尾":false},"E303":{"标题":"指挥官救命·以命相护","状态":"未触发","收尾":false},"E304":{"标题":"肃正死光·输了的代价","状态":"未触发","收尾":false},"E305":{"标题":"不醒的幻梦·因为那会杀了她","状态":"未触发","收尾":false},"E306":{"标题":"总攻前夜·智脑的路线交易","状态":"未触发","收尾":false},"E307":{"标题":"三分钟洗劫·绝地逃亡","状态":"未触发","收尾":false},"E308":{"标题":"万机之神的阴谋·七号诞所","状态":"未触发","收尾":false},"E309":{"标题":"卡bug横跳与根源机体入手","状态":"未触发","收尾":false},"E310":{"标题":"咒瞳自赌与小眼萝归来","状态":"未触发","收尾":false},"E311":{"标题":"不死冲锋·双重雷霆与金蝉脱壳","状态":"未触发","收尾":false},"E312":{"标题":"七神：将军与智脑的交易","状态":"未触发","收尾":false},"E313":{"标题":"小冰箱的切割","状态":"未触发","收尾":false},"E314":{"标题":"你有爱过她吗·士兵请回应我","状态":"未触发","收尾":false},"E315":{"标题":"对母树的史诗级攻略","状态":"未触发","收尾":false},"E316":{"标题":"母树的堕落与园丁任务","状态":"未触发","收尾":false},"E317":{"标题":"小树洞·阶段九收束","状态":"未触发","收尾":false},"E318":{"标题":"母树核心与离狱抵押","状态":"未触发","收尾":false},"E319":{"标题":"七神分化与银幻格式化","状态":"未触发","收尾":false},"E320":{"标题":"母树意识反击与蜂巢隔离","状态":"未触发","收尾":false},"E321":{"标题":"血肉投毒与内部界门","状态":"未触发","收尾":false},"E322":{"标题":"银色幻想拦截与界门崩解","状态":"未触发","收尾":false},"E323":{"标题":"坠落荒地与小丑诅咒危机","状态":"未触发","收尾":false},"E324":{"标题":"左左母树救援与银幻护魂","状态":"未触发","收尾":false},"E325":{"标题":"银幻修复与小冰箱坦白","状态":"未触发","收尾":false},"E326":{"标题":"数据丢失与爱人定义","状态":"未触发","收尾":false},"E327":{"标题":"疫医黑粉与遗蜕线索","状态":"未触发","收尾":false},"E328":{"标题":"主仆欲望与根系吞噬","状态":"未触发","收尾":false},"E329":{"标题":"母树迁移准备与战舰残骸","状态":"未触发","收尾":false},"E330":{"标题":"战舰遗念与SS威胁","状态":"未触发","收尾":false},"E331":{"标题":"上传修复与银幻决裂","状态":"未触发","收尾":false},"E332":{"标题":"七神重组与母树迁回","状态":"未触发","收尾":false},"E333":{"标题":"黑夜城权柄与花粉异变","状态":"未触发","收尾":false},"E334":{"标题":"羽毛笔预言与和谈前夜","状态":"未触发","收尾":false},"E335":{"标题":"和谈契约与独行准备","状态":"未触发","收尾":false},"E336":{"标题":"变节者与血肉陷阱","状态":"未触发","收尾":false},"E337":{"标题":"黑夜城围攻与视界战场","状态":"未触发","收尾":false},"E338":{"标题":"人偶家族回援","状态":"未触发","收尾":false},"E339":{"标题":"错误衔尾与大君复苏","状态":"未触发","收尾":false},"E340":{"标题":"蜂巢复苏与蓝星法阵","状态":"未触发","收尾":false},"E341":{"标题":"黑夜城余烬与母树沉寂","状态":"未触发","收尾":false},"E342":{"标题":"黑夜城旧景与最后消息","状态":"未触发","收尾":false},"E343":{"标题":"送葬魂灯与灭狱赌局","状态":"未触发","收尾":false},"E344":{"标题":"外部灾厄与苍蓝法师塔","状态":"未触发","收尾":false},"E345":{"标题":"混乱色彩与古老记忆","状态":"未触发","收尾":false},"E346":{"标题":"紫罗兰大君自抹与黑夜城复生","状态":"未触发","收尾":false},"E347":{"标题":"苏醒与黑海初见","状态":"未触发","收尾":false},"E348":{"标题":"自由与有人要见你","状态":"未触发","收尾":false}},"唯一活跃事件":{"事件ID":"E02","标题":"血娃娃上门与找妈妈任务","地点":"血锯药剂店门前","参与者":["血娃娃"],"状态":"活跃","紧迫度":"中","模糊期限":"正在等待回应","进展":"血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子","幕后停止点":"等待林恩处置盘中线索或决定下一步"},"近期预兆":{"事件ID":"","方向":"","地点":"","参与者":[],"紧迫度":"无","模糊期限":""},"最近结果":[],"阶段总结":[],"原创重大事件待定队列":[]},"关系":{"左左":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未诞生","处境":"尚未形成独立个体","关系类型":"尚未诞生","人物阶段":"未诞生","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"王后神魂的尊严底线与共生体的生命安全；亲密互动与调教随羁绊自然推进","关键记忆":[],"最近互动":"无"},"血锯":{"解锁":true,"在场":false,"生存状态":"暂离","位置":"游魂巷外，具体未知","处境":"离店两天","关系类型":"师徒","人物阶段":"师父暂时离店","好感":25,"信赖":15,"戒备":10,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":["把药剂店与地窖钥匙暂时交给林恩"],"边界":"固定非恋爱师徒；师徒情谊不等于无条件兜底","关键记忆":["血锯留下短笺并暂时离店"],"最近互动":"离店前把店铺交给林恩照看"},"血衣女士":{"解锁":false,"在场":false,"生存状态":"活动","位置":"45号血衣住所","处境":"尚未与林恩正式接触","关系类型":"未接触","人物阶段":"寻子线未公开","好感":0,"信赖":0,"戒备":20,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":["血娃娃胃中取出不知名女人的头发、耳朵与梳子（疑似寻母线索）"],"边界":"恶鬼复仇的执念与游魂巷秩序；推拿理疗与以M依赖","关键记忆":[],"最近互动":"无"},"小小":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未知","处境":"牙痛事件尚未进入预兆","关系类型":"未接触","人物阶段":"命名前","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"泰坦一族的纯真誓约与对林恩的独占依恋；未婚妻羁绊与神族契约","关键记忆":[],"最近互动":"无"},"人偶夫人":{"解锁":false,"在场":false,"生存状态":"活动","位置":"人偶庄园或外出，具体未知","处境":"尚未与林恩正式接触","关系类型":"未接触","人物阶段":"归来前","好感":0,"信赖":0,"戒备":15,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"人偶庄园的利益算计与女儿们的守护底线；同盟合作与主仆/调教亲密随互动展开","关键记忆":[],"最近互动":"无"},"泰坦头颅":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未知","处境":"家庭记忆线尚未公开","关系类型":"未接触","人物阶段":"资料锁定","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱；吸引恒为0","关键记忆":[],"最近互动":"无"},"巫神头颅":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未知","处境":"家庭记忆线尚未公开","关系类型":"未接触","人物阶段":"资料锁定","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱；吸引恒为0；恶堕值初始0，是否变化由玩家行动形成新事实后记录","关键记忆":[],"最近互动":"无"},"小宝贝":{"解锁":false,"在场":false,"生存状态":"活动","位置":"血锯药剂店后院地窖","处境":"等待例行投喂","关系类型":"临时看管人与被投喂者","人物阶段":"两年投喂期","好感":5,"信赖":0,"戒备":20,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":["被喂两年过期药剂，好感极低但未伤人"],"边界":"固定非恋爱；巨像之舌的野性食欲与坐骑羁绊；过期药剂投喂与战斗驱使","关键记忆":["每日清晨投喂过期药剂，地窖发出暴怒嘶吼"],"最近互动":"开店阶段清晨投喂过期药剂，好感-10"},"爱丽丝":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"幸福之家的家人底线与对大管家的绝对守护；古堡燕尾服与地缚灵亲密羁绊","关键记忆":[],"最近互动":"尚未发生"},"白逸":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱同乡与过命战友兄弟；两界情报互通与并肩作战","关键记忆":[],"最近互动":"尚未发生"},"倒吊天使":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"神圣主母的教母尊严与治愈誓言；神明救赎、恋爱与恶堕调教全开放","关键记忆":[],"最近互动":"尚未发生"},"白夜":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱夜医元勋前辈；医道理念认可与反血肉阵营协作","关键记忆":[],"最近互动":"尚未发生"},"渡鸦":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱夜医同僚；考验、救治、审查与接纳不等于完全信任","关键记忆":[],"最近互动":"尚未发生"},"黑颅":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱夜医同僚；短时恢复生前肉身不改变边界","关键记忆":[],"最近互动":"尚未发生"},"猪头屠夫":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱幕后反派；交易、送达与救命事实不构成亲密关系","关键记忆":[],"最近互动":"尚未发生"},"哭泣小丑":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱体内宿存诅咒人格；狂乱侵蚀与借力反噬","关键记忆":[],"最近互动":"尚未发生"},"黑白小丑":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱独立反派；与哭泣小丑显化体分离，林恩当前不知道其身份与山巅密谈","关键记忆":[],"最近互动":"尚未发生"},"黑弦月":{"解锁":false,"在场":false,"生存状态":"活动","位置":"人偶庄园（未到货）","处境":"尚未与林恩接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"哥特人偶的忠诚契约与发条核心；遥控器快感调教与主仆恶堕线全开放","关键记忆":[],"最近互动":"尚未发生"},"喵喵":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未知","处境":"尚未与林恩接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"猫耳娘战仆的专属依赖与身世释怀；贴身侍奉与主仆亲密线全开放","关键记忆":[],"最近互动":"尚未发生"},"林樱":{"解锁":false,"在场":false,"生存状态":"活动","位置":"蓝星·东北黑龙地区县城","处境":"未与林恩正式接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"女版林恩的水仙同位体共鸣；水仙恋线与平行世界羁绊全开放","关键记忆":[],"最近互动":"尚未发生"},"艾雯爵士":{"解锁":false,"在场":false,"生存状态":"活动","位置":"黑夜城","处境":"尚未与林恩正式接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱义兄与师长；吸引与恶堕恒为0，关系以信任与亲情推进","关键记忆":[],"最近互动":"尚未发生"},"羽毛笔":{"解锁":false,"在场":false,"生存状态":"活动","位置":"002病房","处境":"尚未与林恩正式接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"作为堕落命运之神的傲娇与真身羞耻；恋爱、涩涩度与恶堕（性调教）全面开放，伴侣契约与命运羁绊随明确互动展开","关键记忆":[],"最近互动":"尚未发生"},"a01银色幻想":{"解锁":false,"在场":false,"生存状态":"活动","位置":"诅咒之城（机械神教侧）","处境":"尚未与林恩正式接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"机械神教的战术条例与最高指令；机械姬恶堕调教三轨系统全开放","关键记忆":[],"最近互动":"尚未发生"},"欲望母树":{"解锁":false,"在场":false,"生存状态":"活动","位置":"诅咒之城（欲望母树派系）","处境":"尚未与林恩正式接触","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"欲望神性的生命繁衍本能；神性肉体交融与第一绑定者契约","关键记忆":[],"最近互动":"尚未发生"},"万机之神":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱；机械神教至高根源主宰，绝对神性与算力敌对","关键记忆":[],"最近互动":"尚未发生"},"巨像之脑":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"傲娇帝王主脑的尊严与双生羁绊；恋爱、恶堕与【巨像的双生子】调教全开放","关键记忆":[],"最近互动":"尚未发生"},"血肉支配者":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未解锁","处境":"未解锁","关系类型":"未建立","人物阶段":"未接触","好感":0,"信赖":0,"戒备":0,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"固定非恋爱；恒锁定，只按最低限度记录幕后根源","关键记忆":[],"最近互动":"尚未发生"},"弥赛亚":{"解锁":false,"在场":false,"生存状态":"活动","位置":"未登场","处境":"尚未与林恩产生直接接触","关系类型":"尚未结识","人物阶段":"未登场","好感":0,"信赖":0,"戒备":95,"吸引":0,"关系创伤":0,"恶堕":0,"涩涩度":0,"情感开发度":0,"驯服度":0,"崩坏值":0,"恨意值":0,"可见迹象":[],"边界":"不可侵犯的神圣教条与患者生死底线；倒吊以M破防与使徒恋爱恶堕全开放","关键记忆":[],"最近互动":"无"}},"角色关系":[],"系统":{"当前任务":"血娃娃找妈妈（隐藏任务）","任务阶段":"追查线索（完成度2%）","任务状态":"进行中","任务说明":"帮助血娃娃找到她的母亲。盘中不知名女人的头发、耳朵与梳子是当前线索。主线‘活过血夜’继续有效。","图鉴":[],"成就":[],"最近提示":"系统可辅助诊断，但不替林恩决策。","事件通知":"E02血娃娃诊疗已完成，等待处置寻母线索；E03尚未进入预兆。","更新模式":"同轮更新；可选独立预设"}};
+      let mvuAvailable = false;
+      let mvuWritable = false;
+      let persistedDataReady = false;
+      let writeInFlight = false;
+      let disposed = false;
+
+      // 264 锚点状态栏桥对
+      const ALL_EVENT_IDS = Array.from({ length: 348 }, (_, i) => `E${String(i + 1).padStart(2, '0')}`);
+      const ADVANCE_PAIRS = [
+
+        { from: 'E01', to: 'E02', label: '结算并承接 E02' },
+        { from: 'E02', to: 'E03', label: '结算并承接 E03' },
+        { from: 'E03', to: 'E04', label: '结算并承接 E04' },
+        { from: 'E04', to: 'E05', label: '结算并承接 E05' },
+        { from: 'E05', to: 'E06', label: '结算并承接 E06' },
+        { from: 'E06', to: 'E07', label: '结算并承接 E07' },
+        { from: 'E07', to: 'E08', label: '结算并承接 E08' },
+        { from: 'E08', to: 'E09', label: '结算并承接 E09' },
+        { from: 'E09', to: 'E10', label: '结算并承接 E10' },
+        { from: 'E10', to: 'E11', label: '结算并承接 E11' },
+        { from: 'E11', to: 'E12', label: '结算并承接 E12' },
+        { from: 'E12', to: 'E13', label: '结算并承接 E13' },
+        { from: 'E13', to: 'E14', label: '结算并承接 E14' },
+        { from: 'E14', to: 'E15', label: '结算并承接 E15' },
+        { from: 'E15', to: 'E16', label: '结算并承接 E16' },
+        { from: 'E16', to: 'E17', label: '结算并承接 E17' },
+        { from: 'E17', to: 'E18', label: '结算并承接 E18' },
+        { from: 'E18', to: 'E19', label: '结算并承接 E19' },
+        { from: 'E19', to: 'E20', label: '结算并承接 E20' },
+        { from: 'E20', to: 'E21', label: '结算并承接 E21' },
+        { from: 'E21', to: 'E22', label: '结算并承接 E22' },
+        { from: 'E22', to: 'E23', label: '结算并承接 E23' },
+        { from: 'E23', to: 'E24', label: '结算并承接 E24' },
+        { from: 'E24', to: 'E25', label: '结算并承接 E25' },
+        { from: 'E25', to: 'E26', label: '结算并承接 E26' },
+        { from: 'E26', to: 'E27', label: '结算并承接 E27' },
+        { from: 'E27', to: 'E28', label: '结算并承接 E28' },
+        { from: 'E28', to: 'E29', label: '结算并承接 E29' },
+        { from: 'E29', to: 'E30', label: '结算并承接 E30' },
+        { from: 'E30', to: 'E31', label: '结算并承接 E31' },
+        { from: 'E31', to: 'E32', label: '结算并承接 E32' },
+        { from: 'E32', to: 'E33', label: '结算并承接 E33' },
+        { from: 'E33', to: 'E34', label: '结算并承接 E34' },
+        { from: 'E34', to: 'E35', label: '结算并承接 E35' },
+        { from: 'E35', to: 'E36', label: '结算并承接 E36' },
+        { from: 'E36', to: 'E37', label: '结算并承接 E37' },
+        { from: 'E37', to: 'E38', label: '结算并承接 E38' },
+        { from: 'E38', to: 'E39', label: '结算并承接 E39' },
+        { from: 'E39', to: 'E40', label: '结算并承接 E40' },
+        { from: 'E40', to: 'E41', label: '结算并承接 E41' },
+        { from: 'E41', to: 'E42', label: '结算并承接 E42' },
+        { from: 'E42', to: 'E43', label: '结算并承接 E43' },
+        { from: 'E43', to: 'E44', label: '结算并承接 E44' },
+        { from: 'E44', to: 'E45', label: '结算并承接 E45' },
+        { from: 'E45', to: 'E46', label: '结算并承接 E46' },
+        { from: 'E46', to: 'E47', label: '结算并承接 E47' },
+        { from: 'E47', to: 'E48', label: '结算并承接 E48' },
+        { from: 'E48', to: 'E49', label: '结算并承接 E49' },
+        { from: 'E49', to: 'E50', label: '结算并承接 E50' },
+        { from: 'E50', to: 'E51', label: '结算并承接 E51' },
+        { from: 'E51', to: 'E52', label: '结算并承接 E52' },
+        { from: 'E52', to: 'E53', label: '结算并承接 E53' },
+        { from: 'E53', to: 'E54', label: '结算并承接 E54' },
+        { from: 'E54', to: 'E55', label: '结算并承接 E55' },
+        { from: 'E55', to: 'E56', label: '结算并承接 E56' },
+        { from: 'E56', to: 'E57', label: '结算并承接 E57' },
+        { from: 'E57', to: 'E58', label: '结算并承接 E58' },
+        { from: 'E58', to: 'E59', label: '结算并承接 E59' },
+        { from: 'E59', to: 'E60', label: '结算并承接 E60' },
+        { from: 'E60', to: 'E61', label: '结算并承接 E61' },
+        { from: 'E61', to: 'E62', label: '结算并承接 E62' },
+        { from: 'E62', to: 'E63', label: '结算并承接 E63' },
+        { from: 'E63', to: 'E64', label: '结算并承接 E64' },
+        { from: 'E63', to: 'E65', label: '结算并承接 E65' } /* E64为开放钩子不设六态（恒未触发不当前件），前件判断改用 E63 */,
+        { from: 'E65', to: 'E66', label: '结算并承接 E66' },
+        { from: 'E66', to: 'E67', label: '结算并承接 E67' },
+        { from: 'E67', to: 'E68', label: '结算并承接 E68' },
+        { from: 'E68', to: 'E69', label: '结算并承接 E69' },
+        { from: 'E69', to: 'E70', label: '结算并承接 E70' },
+        { from: 'E70', to: 'E71', label: '结算并承接 E71' },
+        { from: 'E71', to: 'E72', label: '结算并承接 E72' },
+        { from: 'E72', to: 'E73', label: '结算并承接 E73' },
+        { from: 'E73', to: 'E74', label: '结算并承接 E74' },
+        { from: 'E74', to: 'E75', label: '结算并承接 E75' },
+        { from: 'E75', to: 'E76', label: '结算并承接 E76' },
+        { from: 'E76', to: 'E77', label: '结算并承接 E77' },
+        { from: 'E77', to: 'E78', label: '结算并承接 E78' },
+        { from: 'E78', to: 'E79', label: '结算并承接 E79' },
+        { from: 'E79', to: 'E80', label: '结算并承接 E80' },
+        { from: 'E80', to: 'E81', label: '结算并承接 E81' },
+        { from: 'E81', to: 'E82', label: '结算并承接 E82' },
+        { from: 'E82', to: 'E83', label: '结算并承接 E83' },
+        { from: 'E83', to: 'E84', label: '结算并承接 E84' },
+        { from: 'E84', to: 'E85', label: '结算并承接 E85' },
+        { from: 'E85', to: 'E86', label: '结算并承接 E86' },
+        { from: 'E86', to: 'E87', label: '结算并承接 E87' },
+        { from: 'E87', to: 'E88', label: '结算并承接 E88' },
+        { from: 'E88', to: 'E89', label: '结算并承接 E89' },
+        { from: 'E89', to: 'E90', label: '结算并承接 E90' },
+        { from: 'E90', to: 'E91', label: '结算并承接 E91' },
+        { from: 'E91', to: 'E92', label: '结算并承接 E92' },
+        { from: 'E92', to: 'E93', label: '结算并承接 E93' },
+        { from: 'E93', to: 'E94', label: '结算并承接 E94' },
+        { from: 'E94', to: 'E95', label: '结算并承接 E95' },
+        { from: 'E95', to: 'E96', label: '结算并承接 E96' },
+        { from: 'E96', to: 'E97', label: '结算并承接 E97' },
+        { from: 'E97', to: 'E98', label: '结算并承接 E98' },
+        { from: 'E98', to: 'E99', label: '结算并承接 E99' },
+        { from: 'E99', to: 'E100', label: '结算并承接 E100' },
+        { from: 'E100', to: 'E101', label: '结算并承接 E101' },
+        { from: 'E101', to: 'E102', label: '结算并承接 E102' },
+        { from: 'E102', to: 'E103', label: '结算并承接 E103' },
+        { from: 'E103', to: 'E104', label: '结算并承接 E104' },
+        { from: 'E104', to: 'E105', label: '结算并承接 E105' },
+        { from: 'E105', to: 'E106', label: '结算并承接 E106' },
+        { from: 'E106', to: 'E107', label: '结算并承接 E107' },
+        { from: 'E107', to: 'E108', label: '结算并承接 E108' },
+        { from: 'E108', to: 'E109', label: '结算并承接 E109' },
+        { from: 'E109', to: 'E110', label: '结算并承接 E110' },
+        { from: 'E110', to: 'E111', label: '结算并承接 E111' },
+        { from: 'E111', to: 'E112', label: '结算并承接 E112' },
+        { from: 'E112', to: 'E113', label: '结算并承接 E113' },
+        { from: 'E113', to: 'E114', label: '结算并承接 E114' },
+        { from: 'E114', to: 'E115', label: '结算并承接 E115' },
+        { from: 'E115', to: 'E116', label: '结算并承接 E116' },
+        { from: 'E116', to: 'E117', label: '结算并承接 E117' },
+        { from: 'E117', to: 'E118', label: '结算并承接 E118' },
+        { from: 'E118', to: 'E119', label: '结算并承接 E119' },
+        { from: 'E119', to: 'E120', label: '结算并承接 E120' },
+        { from: 'E120', to: 'E121', label: '结算并承接 E121' },
+        { from: 'E121', to: 'E122', label: '结算并承接 E122' },
+        { from: 'E122', to: 'E123', label: '结算并承接 E123' },
+        { from: 'E123', to: 'E124', label: '结算并承接 E124' },
+        { from: 'E124', to: 'E125', label: '结算并承接 E125' },
+        { from: 'E125', to: 'E126', label: '结算并承接 E126' },
+        { from: 'E126', to: 'E127', label: '结算并承接 E127' },
+        { from: 'E127', to: 'E128', label: '结算并承接 E128' },
+        { from: 'E128', to: 'E129', label: '结算并承接 E129' },
+        { from: 'E129', to: 'E130', label: '结算并承接 E130' },
+        { from: 'E130', to: 'E131', label: '结算并承接 E131' },
+        { from: 'E131', to: 'E132', label: '结算并承接 E132' },
+        { from: 'E132', to: 'E133', label: '结算并承接 E133' },
+        { from: 'E133', to: 'E134', label: '结算并承接 E134' },
+        { from: 'E134', to: 'E135', label: '结算并承接 E135' },
+        { from: 'E135', to: 'E136', label: '结算并承接 E136' },
+        { from: 'E136', to: 'E137', label: '结算并承接 E137' },
+        { from: 'E137', to: 'E138', label: '结算并承接 E138' },
+        { from: 'E138', to: 'E139', label: '结算并承接 E139' },
+        { from: 'E139', to: 'E140', label: '结算并承接 E140' },
+        { from: 'E140', to: 'E141', label: '结算并承接 E141' },
+        { from: 'E141', to: 'E142', label: '结算并承接 E142' },
+        { from: 'E142', to: 'E143', label: '结算并承接 E143' },
+        { from: 'E143', to: 'E144', label: '结算并承接 E144' },
+        { from: 'E144', to: 'E145', label: '结算并承接 E145' },
+        { from: 'E145', to: 'E146', label: '结算并承接 E146' },
+        { from: 'E146', to: 'E147', label: '结算并承接 E147' },
+        { from: 'E147', to: 'E148', label: '结算并承接 E148' },
+        { from: 'E148', to: 'E149', label: '结算并承接 E149' },
+        { from: 'E149', to: 'E150', label: '结算并承接 E150' },
+        { from: 'E150', to: 'E151', label: '结算并承接 E151' },
+        { from: 'E151', to: 'E152', label: '结算并承接 E152' },
+        { from: 'E152', to: 'E153', label: '结算并承接 E153' },
+        { from: 'E153', to: 'E154', label: '结算并承接 E154' },
+        { from: 'E154', to: 'E155', label: '结算并承接 E155' },
+        { from: 'E155', to: 'E156', label: '结算并承接 E156' },
+        { from: 'E156', to: 'E157', label: '结算并承接 E157' },
+        { from: 'E157', to: 'E158', label: '结算并承接 E158' },
+        { from: 'E158', to: 'E159', label: '结算并承接 E159' },
+        { from: 'E159', to: 'E160', label: '结算并承接 E160' },
+        { from: 'E160', to: 'E161', label: '结算并承接 E161' },
+        { from: 'E161', to: 'E162', label: '结算并承接 E162' },
+        { from: 'E162', to: 'E163', label: '结算并承接 E163' },
+        { from: 'E163', to: 'E164', label: '结算并承接 E164' },
+        { from: 'E164', to: 'E165', label: '结算并承接 E165' },
+        { from: 'E165', to: 'E166', label: '结算并承接 E166' },
+        { from: 'E166', to: 'E167', label: '结算并承接 E167' },
+        { from: 'E167', to: 'E168', label: '结算并承接 E168' },
+        { from: 'E168', to: 'E169', label: '结算并承接 E169' },
+        { from: 'E169', to: 'E170', label: '结算并承接 E170' },
+        { from: 'E170', to: 'E171', label: '结算并承接 E171' },
+        { from: 'E171', to: 'E172', label: '结算并承接 E172' },
+        { from: 'E172', to: 'E173', label: '结算并承接 E173' },
+        { from: 'E173', to: 'E174', label: '结算并承接 E174' },
+        { from: 'E174', to: 'E175', label: '结算并承接 E175' },
+        { from: 'E175', to: 'E176', label: '结算并承接 E176' },
+        { from: 'E176', to: 'E177', label: '结算并承接 E177' },
+        { from: 'E177', to: 'E178', label: '结算并承接 E178' },
+        { from: 'E178', to: 'E179', label: '结算并承接 E179' },
+        { from: 'E179', to: 'E180', label: '结算并承接 E180' },
+        { from: 'E180', to: 'E181', label: '结算并承接 E181' },
+        { from: 'E181', to: 'E182', label: '结算并承接 E182' },
+        { from: 'E182', to: 'E183', label: '结算并承接 E183' },
+        { from: 'E183', to: 'E184', label: '结算并承接 E184' },
+        { from: 'E184', to: 'E185', label: '结算并承接 E185' },
+        { from: 'E185', to: 'E186', label: '结算并承接 E186' },
+        { from: 'E186', to: 'E187', label: '结算并承接 E187' },
+        { from: 'E187', to: 'E188', label: '结算并承接 E188' },
+        { from: 'E188', to: 'E189', label: '结算并承接 E189' },
+        { from: 'E189', to: 'E190', label: '结算并承接 E190' },
+        { from: 'E190', to: 'E191', label: '结算并承接 E191' },
+        { from: 'E191', to: 'E192', label: '结算并承接 E192' },
+        { from: 'E192', to: 'E193', label: '结算并承接 E193' },
+        { from: 'E193', to: 'E194', label: '结算并承接 E194' },
+        { from: 'E194', to: 'E195', label: '结算并承接 E195' },
+        { from: 'E195', to: 'E196', label: '结算并承接 E196' },
+        { from: 'E196', to: 'E197', label: '结算并承接 E197' },
+        { from: 'E197', to: 'E198', label: '结算并承接 E198' },
+        { from: 'E198', to: 'E199', label: '结算并承接 E199' },
+        { from: 'E199', to: 'E200', label: '结算并承接 E200' },
+        { from: 'E200', to: 'E201', label: '结算并承接 E201' },
+        { from: 'E201', to: 'E202', label: '结算并承接 E202' },
+        { from: 'E202', to: 'E203', label: '结算并承接 E203' },
+        { from: 'E203', to: 'E204', label: '结算并承接 E204' },
+        { from: 'E204', to: 'E205', label: '结算并承接 E205' },
+        { from: 'E205', to: 'E206', label: '结算并承接 E206' },
+        { from: 'E206', to: 'E207', label: '结算并承接 E207' },
+        { from: 'E207', to: 'E208', label: '结算并承接 E208' },
+        { from: 'E208', to: 'E209', label: '结算并承接 E209' },
+        { from: 'E209', to: 'E210', label: '结算并承接 E210' },
+        { from: 'E210', to: 'E211', label: '结算并承接 E211' },
+        { from: 'E211', to: 'E212', label: '结算并承接 E212' },
+        { from: 'E212', to: 'E213', label: '结算并承接 E213' },
+        { from: 'E213', to: 'E214', label: '结算并承接 E214' },
+        { from: 'E214', to: 'E215', label: '结算并承接 E215' },
+        { from: 'E215', to: 'E216', label: '结算并承接 E216' },
+        { from: 'E216', to: 'E217', label: '结算并承接 E217' },
+        { from: 'E217', to: 'E218', label: '结算并承接 E218' },
+        { from: 'E218', to: 'E219', label: '结算并承接 E219' },
+        { from: 'E219', to: 'E220', label: '结算并承接 E220' },
+        { from: 'E220', to: 'E221', label: '结算并承接 E221' },
+        { from: 'E221', to: 'E222', label: '结算并承接 E222' },
+        { from: 'E222', to: 'E223', label: '结算并承接 E223' },
+        { from: 'E223', to: 'E224', label: '结算并承接 E224' },
+        { from: 'E224', to: 'E225', label: '结算并承接 E225' },
+        { from: 'E225', to: 'E226', label: '结算并承接 E226' },
+        { from: 'E226', to: 'E227', label: '结算并承接 E227' },
+        { from: 'E227', to: 'E228', label: '结算并承接 E228' },
+        { from: 'E228', to: 'E229', label: '结算并承接 E229' },
+        { from: 'E229', to: 'E230', label: '结算并承接 E230' },
+        { from: 'E230', to: 'E231', label: '结算并承接 E231' },
+        { from: 'E231', to: 'E232', label: '结算并承接 E232' },
+        { from: 'E232', to: 'E233', label: '结算并承接 E233' },
+        { from: 'E233', to: 'E234', label: '结算并承接 E234' },
+        { from: 'E234', to: 'E235', label: '结算并承接 E235' },
+        { from: 'E235', to: 'E236', label: '结算并承接 E236' },
+        { from: 'E236', to: 'E237', label: '结算并承接 E237' },
+        { from: 'E237', to: 'E238', label: '结算并承接 E238' },
+        { from: 'E238', to: 'E239', label: '结算并承接 E239' },
+        { from: 'E239', to: 'E240', label: '结算并承接 E240' },
+        { from: 'E240', to: 'E241', label: '结算并承接 E241' },
+        { from: 'E241', to: 'E242', label: '结算并承接 E242' },
+        { from: 'E242', to: 'E243', label: '结算并承接 E243' },
+        { from: 'E243', to: 'E244', label: '结算并承接 E244' },
+        { from: 'E244', to: 'E245', label: '结算并承接 E245' },
+        { from: 'E245', to: 'E246', label: '结算并承接 E246' },
+        { from: 'E246', to: 'E247', label: '结算并承接 E247' },
+        { from: 'E247', to: 'E248', label: '结算并承接 E248' },
+        { from: 'E248', to: 'E249', label: '结算并承接 E249' },
+        { from: 'E249', to: 'E250', label: '结算并承接 E250' },
+        { from: 'E250', to: 'E251', label: '结算并承接 E251' },
+        { from: 'E251', to: 'E252', label: '结算并承接 E252' },
+        { from: 'E252', to: 'E253', label: '结算并承接 E253' },
+        { from: 'E253', to: 'E254', label: '结算并承接 E254' },
+        { from: 'E254', to: 'E255', label: '结算并承接 E255' },
+        { from: 'E255', to: 'E256', label: '结算并承接 E256' },
+        { from: 'E256', to: 'E257', label: '结算并承接 E257' },
+        { from: 'E257', to: 'E258', label: '结算并承接 E258' },
+        { from: 'E258', to: 'E259', label: '结算并承接 E259' },
+        { from: 'E259', to: 'E260', label: '结算并承接 E260' },
+        { from: 'E260', to: 'E261', label: '结算并承接 E261' },
+        { from: 'E261', to: 'E262', label: '结算并承接 E262' },
+        { from: 'E262', to: 'E263', label: '结算并承接 E263' },
+        { from: 'E263', to: 'E264', label: '结算并承接 E264' },
+        { from: 'E264', to: 'E265', label: '结算并承接 E265' },
+        { from: 'E265', to: 'E266', label: '结算并承接 E266' },
+        { from: 'E266', to: 'E267', label: '结算并承接 E267' },
+        { from: 'E267', to: 'E268', label: '结算并承接 E268' },
+        { from: 'E268', to: 'E269', label: '结算并承接 E269' },
+        { from: 'E269', to: 'E270', label: '结算并承接 E270' },
+        { from: 'E270', to: 'E271', label: '结算并承接 E271' },
+        { from: 'E271', to: 'E272', label: '结算并承接 E272' },
+        { from: 'E272', to: 'E273', label: '结算并承接 E273' },
+        { from: 'E273', to: 'E274', label: '结算并承接 E274' },
+        { from: 'E274', to: 'E275', label: '结算并承接 E275' },
+        { from: 'E275', to: 'E276', label: '结算并承接 E276' },
+        { from: 'E276', to: 'E277', label: '结算并承接 E277' },
+        { from: 'E277', to: 'E278', label: '结算并承接 E278' },
+        { from: 'E278', to: 'E279', label: '结算并承接 E279' },
+        { from: 'E279', to: 'E280', label: '结算并承接 E280' },
+        { from: 'E280', to: 'E281', label: '结算并承接 E281' },
+        { from: 'E281', to: 'E282', label: '结算并承接 E282' },
+        { from: 'E282', to: 'E283', label: '结算并承接 E283' },
+        { from: 'E283', to: 'E284', label: '结算并承接 E284' },
+        { from: 'E284', to: 'E285', label: '结算并承接 E285' },
+        { from: 'E285', to: 'E286', label: '结算并承接 E286' },
+        { from: 'E286', to: 'E287', label: '结算并承接 E287' },
+        { from: 'E287', to: 'E288', label: '结算并承接 E288' },
+        { from: 'E288', to: 'E289', label: '结算并承接 E289' },
+        { from: 'E289', to: 'E290', label: '结算并承接 E290' },
+        { from: 'E290', to: 'E291', label: '结算并承接 E291' },
+        { from: 'E291', to: 'E292', label: '结算并承接 E292' },
+        { from: 'E292', to: 'E293', label: '结算并承接 E293' },
+        { from: 'E293', to: 'E294', label: '结算并承接 E294' },
+        { from: 'E294', to: 'E295', label: '结算并承接 E295' },
+        { from: 'E295', to: 'E296', label: '结算并承接 E296' },
+        { from: 'E296', to: 'E297', label: '结算并承接 E297' },
+        { from: 'E297', to: 'E298', label: '结算并承接 E298' },
+        { from: 'E298', to: 'E299', label: '结算并承接 E299' },
+        { from: 'E299', to: 'E300', label: '结算并承接 E300' },
+        { from: 'E300', to: 'E301', label: '结算并承接 E301' },
+        { from: 'E301', to: 'E302', label: '结算并承接 E302' },
+        { from: 'E302', to: 'E303', label: '结算并承接 E303' },
+        { from: 'E303', to: 'E304', label: '结算并承接 E304' },
+        { from: 'E304', to: 'E305', label: '结算并承接 E305' },
+        { from: 'E305', to: 'E306', label: '结算并承接 E306' },
+        { from: 'E306', to: 'E307', label: '结算并承接 E307' },
+        { from: 'E307', to: 'E308', label: '结算并承接 E308' },
+        { from: 'E308', to: 'E309', label: '结算并承接 E309' },
+        { from: 'E309', to: 'E310', label: '结算并承接 E310' },
+        { from: 'E310', to: 'E311', label: '结算并承接 E311' },
+        { from: 'E311', to: 'E312', label: '结算并承接 E312' },
+        { from: 'E312', to: 'E313', label: '结算并承接 E313' },
+        { from: 'E313', to: 'E314', label: '结算并承接 E314' },
+        { from: 'E314', to: 'E315', label: '结算并承接 E315' },
+        { from: 'E315', to: 'E316', label: '结算并承接 E316' },
+        { from: 'E316', to: 'E317', label: '结算并承接 E317' },
+        { from: 'E317', to: 'E318', label: '结算并承接 E318' },
+        { from: 'E318', to: 'E319', label: '结算并承接 E319' },
+        { from: 'E319', to: 'E320', label: '结算并承接 E320' },
+        { from: 'E320', to: 'E321', label: '结算并承接 E321' },
+        { from: 'E321', to: 'E322', label: '结算并承接 E322' },
+        { from: 'E322', to: 'E323', label: '结算并承接 E323' },
+        { from: 'E323', to: 'E324', label: '结算并承接 E324' },
+        { from: 'E324', to: 'E325', label: '结算并承接 E325' },
+        { from: 'E325', to: 'E326', label: '结算并承接 E326' },
+        { from: 'E326', to: 'E327', label: '结算并承接 E327' },
+        { from: 'E327', to: 'E328', label: '结算并承接 E328' },
+        { from: 'E328', to: 'E329', label: '结算并承接 E329' },
+        { from: 'E329', to: 'E330', label: '结算并承接 E330' },
+        { from: 'E330', to: 'E331', label: '结算并承接 E331' },
+        { from: 'E331', to: 'E332', label: '结算并承接 E332' },
+        { from: 'E332', to: 'E333', label: '结算并承接 E333' },
+        { from: 'E333', to: 'E334', label: '结算并承接 E334' },
+        { from: 'E334', to: 'E335', label: '结算并承接 E335' },
+        { from: 'E335', to: 'E336', label: '结算并承接 E336' },
+        { from: 'E336', to: 'E337', label: '结算并承接 E337' },
+        { from: 'E337', to: 'E338', label: '结算并承接 E338' },
+        { from: 'E338', to: 'E339', label: '结算并承接 E339' },
+        { from: 'E339', to: 'E340', label: '结算并承接 E340' },
+        { from: 'E340', to: 'E341', label: '结算并承接 E341' },
+        { from: 'E341', to: 'E342', label: '结算并承接 E342' },
+        { from: 'E342', to: 'E343', label: '结算并承接 E343' },
+        { from: 'E343', to: 'E344', label: '结算并承接 E344' },
+        { from: 'E344', to: 'E345', label: '结算并承接 E345' },
+        { from: 'E345', to: 'E346', label: '结算并承接 E346' },
+        { from: 'E346', to: 'E347', label: '结算并承接 E347' },
+        { from: 'E347', to: 'E348', label: '结算并承接 E348' },
+
+      ];
+
+      // 28 位核心角色全量花名册静态元数据
+      const CHARACTERS_METADATA = [
+        { name: '左左', unlock_event: 'E11', title: '傲娇手灵 / 巨像王后意识', group: 'heroines', icon: '🖐️', aff: 95, corr: 85, quote: '老娘只是怕你死了没人发工钱！', desc: '独立意识共生体，巨像王后意识残响，嘴硬心软极度护短。开局尚未诞生(E11血夜诞生)。' },
+        { name: '爱丽丝', unlock_event: 'E22', title: '地缚灵妹妹 / 幸福之家', group: 'heroines', icon: '🎀', aff: 92, corr: 60, quote: '哥哥……爱丽丝有好好看家哦。', desc: '死兆级恶灵，对家人有至死执念，燕尾服制作者。开局尚未结识(E22求诊)。' },
+        { name: '血衣女士', unlock_event: 'E54', title: '死兆巨头 / 蓝星旧魂', group: 'heroines', icon: '👠', aff: 88, corr: 70, quote: '施暴者……一个都别想逃。', desc: '生前蓝星受害母亲，死界巨头，对女儿小呀哒极度牵挂。开局尚未结识(E54初遇)。' },
+        { name: '弥赛亚', unlock_event: 'E210', title: '第一使徒 / 炽天使圣女', group: 'heroines', icon: '🕊️', aff: 45, corr: 30, quote: '主啊……这绝非神圣之道……！', desc: '蓝星隐修会第一使徒，圣光天灯执掌者，被以M破防后良知动摇。开局尚未结识(E210初战)。' },
+        { name: 'a01银色幻想', unlock_event: 'E78', title: '赛博智械 / 机械神教', group: 'heroines', icon: '🤖', aff: 50, corr: 40, quote: '自适系统过载……异常数据溢出……', desc: '机械神教高阶智械机娘，怪感传染全集群，逻辑崩坏边缘。开局尚未结识(E78交锋)。' },
+        { name: '黑弦月', unlock_event: 'E35', title: '第七人偶 / 庄园暗杀者', group: 'heroines', icon: '🗡️', aff: 75, corr: 55, quote: '执行……清除指令。林恩先生除外。', desc: '人偶庄园暗杀人偶，情感觉醒中，对林恩产生特殊依恋。开局尚未结识(E35初遇)。' },
+        { name: '小小', unlock_event: 'E05', title: '泰坦古神幼女 / 未婚妻', group: 'heroines', icon: '🧸', aff: 90, corr: 20, quote: '林恩哥哥，小小牙齿不疼了！', desc: '远古泰坦神血脉，幼态纯真，与林恩有订婚信物。开局牙痛线尚未进入预兆。' },
+        { name: '林樱', unlock_event: 'E208', title: '蓝星同位体 / 高冷女高', group: 'heroines', icon: '🎒', aff: 65, corr: 10, quote: '你身上……有和我一样的味道。', desc: '蓝星神秘女高中生，冷静求知，记忆闪回同位体。开局尚未结识。' },
+        { name: '喵喵', unlock_event: 'E42', title: '娇憨猫娘 / 深渊破茧', group: 'heroines', icon: '🐱', aff: 86, corr: 45, quote: '喵呜！哥哥去买小鱼干了喵！', desc: '深渊破茧猫娘，珍藏兄长遗留小鱼石子，娇憨忠诚。开局尚未结识。' },
+        { name: '倒吊天使', unlock_event: 'E28', title: '受难主母 / 堕天使古神', group: 'elders', icon: '⛓️', aff: 85, corr: 0, quote: '孩子，到主母怀里来……', desc: '黑夜城至高主宰之一，受难圣母与深渊黑化双生面。开局尚未引见。' },
+        { name: '巨像之脑', unlock_event: 'E102', title: '歼星女王 / 银发银瞳萝莉', group: 'elders', icon: '🧠', aff: 82, corr: 65, quote: '愚蠢的碳基脑袋，割以永治！', desc: '巨像军团核心主脑，量子算力无双，傲娇毒舌萝莉身。开局尚未结识。' },
+        { name: '欲望母树', unlock_event: 'E85', title: '繁衍主宰 / 生命古树堕化', group: 'elders', icon: '🌳', aff: 78, corr: 80, quote: '你的种子……让妾身心颤呢。', desc: '生命古树堕落神性，欲望掌控者，以M解咒契约方。开局尚未接触。' },
+        { name: '万机之神', unlock_event: 'E105', title: '赛博飞升主宰 / 机械源头', group: 'elders', icon: '⚙️', aff: 60, corr: 0, quote: '血肉苦弱，飞升永恒。', desc: '机械神教至高图腾，握痕烙印，冷酷算力。开局尚未降临。' },
+        { name: '羽毛笔', unlock_event: 'E48', title: '虚无作家 / 002命运神', group: 'elders', icon: '🪶', aff: 88, corr: 0, quote: '命运……只需添上一笔。', desc: '002室命运规则神，外表流脓巨神自卑，吃小鱼干时极度慵懒。开局尚未结识(E48初遇)。' },
+        { name: '血肉支配者', unlock_event: 'E88', title: '血肉天灾源头 / 利维坦', group: 'elders', icon: '🐙', aff: 10, corr: 0, quote: '万物皆为血肉食粮……', desc: '血肉神教至高源头，神话侧影，降临蓝星的大敌。' },
+        { name: '血锯', unlock_event: 'E01', title: '领路导师 / 狂暴外科医', group: 'comrades', icon: '🪚', aff: 25, corr: 0, quote: '徒儿，隔门捅为师六刀是吧？！', desc: '林恩医道领路人，凶悍护短，电锯手术狂热者。开局离店两天暂离在外。' },
+        { name: '人偶夫人', unlock_event: 'E34', title: '庄园贵妇 / 优雅解咒者', group: 'comrades', icon: '👒', aff: 85, corr: 0, quote: '林恩小先生的医术，总是令人惊喜。', desc: '人偶庄园女主人，优雅贵妇，暗中护短长辈。开局尚未结识。' },
+        { name: '艾雯爵士', unlock_event: 'E58', title: '灵能学者 / 九字元勋', group: 'comrades', icon: '🔮', aff: 88, corr: 0, quote: '根据灵能测算，盲修风险极高……', desc: '灵能飞升元勋，赛博学者，偷窥澡堂社死受害者。开局尚未结识。' },
+        { name: '泰坦头颅', unlock_event: 'E05', title: '远古战神 / 暴躁女儿奴', group: 'elders', icon: '🗿', aff: 80, corr: 0, quote: '谁敢欺负小小，老子生撕了他！', desc: '断颈泰坦战神，豪放粗暴，极度宠溺小小。开局尚未结识。' },
+        { name: '巫神头颅', unlock_event: 'E60', title: '冷艳古神 / 多疑傲娇主母', group: 'elders', icon: '🐍', aff: 75, corr: 0, quote: '哼，油腔滑调的药剂师小子。', desc: '上古巫神之首，蛇发多疑，傲娇冷艳。开局尚未结识。' },
+        { name: '白夜', unlock_event: 'E90', title: '八字元勋 / 蓝星旧梦医者', group: 'comrades', icon: '🩺', aff: 80, corr: 0, quote: '那片故土的雨，好久没见过了。', desc: '背负蓝星执念的夜医元老，严苛考官，铁血医者。开局尚未结识。' },
+        { name: '渡鸦', unlock_event: 'E03', title: '试诊考官 / 冷面纪律引路人', group: 'comrades', icon: '🦅', aff: 70, corr: 0, quote: '考核标准，不容半分僭越。', desc: '黑夜城试诊考官，极致秩序与纪律信徒。开局尚未敲门。' },
+        { name: '黑颅', unlock_event: 'E45', title: '亡灵主治 / 骷髅冷幽默', group: 'comrades', icon: '💀', aff: 72, corr: 0, quote: '咔哒咔哒……骨头很硬，适合做标本。', desc: '亡灵女夜医，擅长骨骼灵魂解构，冷幽默十足。' },
+        { name: '白逸', unlock_event: 'E18', title: '同乡高中生 / 逗比跟班', group: 'comrades', icon: '🪙', aff: 85, corr: 0, quote: '林哥救我！我真不想当异端啊！', desc: '蓝星高中生，逗比同乡，抛硬币召唤林恩的活宝。' },
+        { name: '小宝贝', unlock_event: 'E57', title: '巨像之舌 / 地窖干饭神兽', group: 'comrades', icon: '👅', aff: 80, corr: 0, quote: '嗷呜！狂舔！', desc: '血锯地窖干饭神兽，巨像活体部件，贪吃认主。' },
+        { name: '猪头屠夫', unlock_event: 'E03', title: '路西法狱卒 / 冷酷掮客', group: 'comrades', icon: '🐷', aff: 40, corr: 0, quote: '契约已定，刀俎无情。', desc: '路西法深渊狱卒，字面履约掮客，林恩身世见证者。' },
+        { name: '哭泣小丑', unlock_event: 'E25', title: '狂乱深渊 / 赋病疯批', group: 'comrades', icon: '🎭', aff: 30, corr: 0, quote: '哈哈哈哈……哭出来就痛快了！', desc: '狂乱赋病小丑，神性污染源头，癫狂嘲弄。' },
+        { name: '黑白小丑', unlock_event: 'E30', title: '八音盒刺客 / 弹簧小人', group: 'comrades', icon: '🎪', aff: 35, corr: 0, quote: '叮咚……发条转动，死亡降临。', desc: '八音盒阴暗潜伏刺客，机关算尽，弹簧杀机。' }
+      ];
+
+      // 原著全套道具与药剂库（真实事件解锁）
+      const INVENTORY_DATABASE = [
+        { name: '夜魔刀', icon: '🔪', type: 'weapon', unlock_event: 'E01', desc: '传说级手术刀，半米刀身，永不磨损绝对法则。' },
+        { name: '强力粘合剂', icon: '🧪', type: 'potion', unlock_event: 'E01', desc: '外科手术专用生物胶，器官缝合对接存活率95%。' },
+        { name: '夜医麻醉枸杞茶', icon: '🍵', type: 'potion', unlock_event: 'E02', desc: '麻药瓶装温热枸杞茶，无麻醉效果，温补气血。' },
+        { name: '暴击药剂', icon: '⚡', type: 'potion', unlock_event: 'E08', desc: '猛男药剂，暴击率+100%，附带闪光秃头爆衣。' },
+        { name: '血肉增生药剂', icon: '🩸', type: 'potion', unlock_event: 'E11', desc: '极速断肢重生，过量诱发血肉异变催生独立意识。' },
+        { name: '恶灵显形药剂', icon: '👁️', type: 'potion', unlock_event: 'E15', desc: '打破相位壁垒，将无形恶灵幽魂强制物理实体化。' },
+        { name: '爱丽丝燕尾服', icon: '🤵', type: 'armor', unlock_event: 'E22', desc: '恶灵亲手缝制，受击自动释放虚无锁链反杀。' },
+        { name: '替死娃娃(x5)', icon: '🧸', type: 'relic', unlock_event: 'E36', desc: '承受致命伤瞬间位移免死，代价双倍剧痛(以M充能MAX)。' },
+        { name: '夺萃之镰', icon: '🪓', type: 'weapon', unlock_event: 'E61', desc: '血肉神教巨镰，化作血雾折跃无敌帧，每日需嗜杀。' },
+        { name: '自缚天使怜悯(盗版)', icon: '✨', type: 'potion', unlock_event: 'E70', desc: '主母口水拉丝版史诗药剂，强效压制根源级诅咒。' },
+        { name: '小鱼形石子', icon: '🐟', type: 'relic', unlock_event: 'E136', desc: '喵喵兄长遗物，晶莹小鱼干之石，永恒羁绊心锚。' },
+        { name: '迷雾药剂', icon: '🌫️', type: 'potion', unlock_event: 'E180', desc: '大范围遮蔽视线与灵能感知，夜医隐秘猎杀必备。' },
+        { name: '血畸藤浓缩汁', icon: '🌿', type: 'potion', unlock_event: 'E193', desc: '极香食肉植物，食入后骨髓生根破体瞬间致瘫。' },
+        { name: '圣十字半身铠', icon: '✝️', type: 'armor', unlock_event: 'E210', desc: '弥赛亚骑士重铠，两千年圣者祝福，抵御一切疾病。' },
+        { name: '圣者的镇魔罗盘', icon: '🧭', type: 'relic', unlock_event: 'E210', desc: '精准感知定位数十公里内一切邪恶气息与恶魔。' },
+        { name: '欲望母树精华泉水', icon: '💧', type: 'potion', unlock_event: 'E85', desc: '数千年自然神性源泉，稳固神魂，抗诅咒时光燃料。' }
+      ];
+
+      let currentFilter = 'all';
+      let lastKnownState = FALLBACK_STATE;
+
+      function isEventCompleted(eventId, state) {
+        if (!eventId) return true;
+        const anchors = state?.事件?.锚点状态 ?? {};
+        const st = anchors[eventId]?.状态;
+        return st === '完成' || st === '跳过' || st === '变形';
+      }
+
+      function findCancelledPair(state) {
+        const anchors = state?.事件?.锚点状态 ?? {};
+        for (const pair of ADVANCE_PAIRS) {
+          if (anchors[pair.from]?.状态 === '取消') {
+            return pair; // 需正文判定局部依赖
+          }
+        }
+        return null;
+      }
+
+      function findActivePair(state) {
+        const anchors = state?.事件?.锚点状态 ?? {};
+        for (const pair of ADVANCE_PAIRS) {
+          const fromState = anchors[pair.from]?.状态;
+          const toState = anchors[pair.to]?.状态;
+          if (['完成', '变形'].includes(fromState) && toState === '预兆') {
+            return pair;
+          }
+        }
+        return null;
+      }
+
+      function updateAdvanceButton() {
+        const btn = byId('wa-v2-advance-btn');
+        if (!btn) return;
+
+        const cancelled = findCancelledPair(lastKnownState);
+        if (cancelled) {
+          btn.disabled = true;
+          btn.textContent = '🔒 事件已取消（需正文判定局部依赖）';
+          return;
+        }
+
+        const activePair = findActivePair(lastKnownState);
+        if (activePair) {
+          btn.disabled = writeInFlight || !mvuWritable;
+          btn.textContent = `⚔️ ${activePair.label}`;
+        } else {
+          // 当前处于活跃事件中（如 E02 活跃）
+          const curEvt = lastKnownState?.事件?.唯一活跃事件;
+          if (curEvt?.事件ID === 'E02' || (curEvt?.事件ID && curEvt?.状态 === '活跃')) {
+            btn.disabled = writeInFlight || !mvuWritable;
+            if (curEvt.事件ID === 'E02') {
+              btn.textContent = '⚔️ 结算 E02 并承接 E03·猪头魔与恶灵血婴';
+            } else {
+              const nextIdx = ALL_EVENT_IDS.indexOf(curEvt.事件ID) + 1;
+              const nextId = ALL_EVENT_IDS[nextIdx] || '终局';
+              btn.textContent = `⚔️ 结算 ${curEvt.事件ID} 并承接 ${nextId}`;
+            }
+          } else {
+            btn.disabled = true;
+            btn.textContent = '🕊️ 剧情平稳探索中 (与NPC自由对话推进)';
+          }
+        }
+      }
+
+      // 渲染 28 人深渊情缘卡片列表（严格依据 MVU 真实字段判断在场与解锁）
+      function renderCharacters(state) {
+        const list = byId('wa-v2-char-list');
+        if (!list) return;
+
+        const rels = state?.关系 ?? FALLBACK_STATE.关系 ?? {};
+        const activeEvt = state?.事件?.唯一活跃事件 ?? {};
+        const participants = activeEvt.参与者 ?? [];
+
+        let filtered = CHARACTERS_METADATA.map(meta => {
+          const r = rels[meta.name];
+
+          // 解锁逻辑：MVU中解锁为true，或好感>0，或对应主线事件已完成
+          const isUnlocked = Boolean(r?.解锁 === true || (typeof r?.好感 === 'number' && r.好感 > 0) || (typeof r?.好感度 === 'number' && r.好感度 > 0) || isEventCompleted(meta.unlock_event, state));
+
+          // 在场逻辑：必须在当前活跃事件参与者中，或 MVU 显式标明在场为 true，且生存状态不是暂离/失联
+          const isInScene = Boolean(participants.includes(meta.name) || r?.在场 === true);
+          const isActive = isUnlocked && isInScene && r?.生存状态 !== '暂离' && r?.生存状态 !== '失联';
+
+          return {
+            ...meta,
+            aff: typeof r?.好感 === 'number' ? r.好感 : (typeof r?.好感度 === 'number' ? r.好感度 : (isUnlocked ? meta.aff : 0)),
+            corr: typeof r?.涩涩度 === 'number' ? r.涩涩度 : (typeof r?.恶堕 === 'number' ? r.恶堕 : (typeof r?.崩坏值 === 'number' ? r.崩坏值 : (isUnlocked ? meta.corr : 0))),
+            status: r?.生存状态 ?? (isUnlocked ? '活动' : '未登场'),
+            is_unlocked: isUnlocked,
+            is_active: isActive
+          };
+        });
+
+        if (currentFilter === 'active') filtered = filtered.filter(c => c.is_active);
+        else if (currentFilter === 'heroines') filtered = filtered.filter(c => c.group === 'heroines');
+        else if (currentFilter === 'elders') filtered = filtered.filter(c => c.group === 'elders');
+        else if (currentFilter === 'comrades') filtered = filtered.filter(c => c.group === 'comrades');
+
+        // 在场角色排在最前，已解锁排第二，未解锁排最后
+        filtered.sort((a, b) => {
+          if (a.is_active !== b.is_active) return b.is_active ? 1 : -1;
+          if (a.is_unlocked !== b.is_unlocked) return b.is_unlocked ? 1 : -1;
+          return 0;
+        });
+
+        list.innerHTML = filtered.map(c => {
+          if (!c.is_unlocked) {
+            return `
+              <div class="dc-char-card is-locked" data-char-name="${c.name}">
+                <div class="dc-char-head-row">
+                  <div class="dc-char-name" style="color:var(--dc-text-muted);">${c.name} <span style="font-size:0.7rem; color:var(--dc-text-muted);">🔒 尚未结识</span></div>
+                  <span class="dc-char-title" style="border-color:rgba(255,255,255,0.1); color:var(--dc-text-muted);">未登场</span>
+                </div>
+                <div class="dc-char-avatar-box">
+                  <div class="dc-char-icon-frame" style="border-color:var(--dc-text-muted); opacity:0.4;">❓</div>
+                  <div style="font-size:0.75rem; color:var(--dc-text-muted); line-height:1.4;">
+                    <div>（随主线推进至 ${c.unlock_event} 时解锁）</div>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+
+          return `
+            <div class="dc-char-card ${c.is_active ? 'is-active-scene' : ''}" data-char-name="${c.name}">
+              <div class="dc-char-head-row">
+                <div class="dc-char-name">${c.name} ${c.is_active ? '<span style="color:var(--dc-soul-emerald); font-size:0.75rem;">⚡在场</span>' : ''}</div>
+                <span class="dc-char-title">${c.title}</span>
+              </div>
+              <div class="dc-char-avatar-box">
+                <div class="dc-char-icon-frame">${c.icon}</div>
+                <div style="font-size:0.78rem; color:var(--dc-text-sub); line-height:1.4;">
+                  <div style="color:var(--dc-text-bright); font-style:italic;">“${c.quote}”</div>
+                </div>
+              </div>
+              <div class="dc-track-row">
+                <div class="dc-track-item">
+                  <span class="dc-track-label">💖 羁绊好感</span>
+                  <div class="dc-track-bar-bg"><div class="dc-track-fill-aff" style="width: ${Math.min(100, c.aff)}%;"></div></div>
+                  <span class="dc-track-num">${c.aff}</span>
+                </div>
+                <div class="dc-track-item">
+                  <span class="dc-track-label">🖤 调教恶堕</span>
+                  <div class="dc-track-bar-bg"><div class="dc-track-fill-corr" style="width: ${Math.min(100, c.corr)}%;"></div></div>
+                  <span class="dc-track-num">${c.corr}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        // 绑定卡片点击弹出详情
+        list.querySelectorAll('.dc-char-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const name = card.getAttribute('data-char-name');
+            const data = filtered.find(c => c.name === name);
+            if (data && data.is_unlocked) openCharModal(data);
+          });
+        });
+      }
+
+      function openCharModal(c) {
+        byId('wa-modal-char-name').textContent = `${c.name} · ${c.title}`;
+        byId('wa-modal-char-content').innerHTML = `
+          <p style="margin-bottom: 0.75rem; color: var(--dc-text-bright); font-weight:700;">【原声金句语料】</p>
+          <blockquote style="padding: 0.5rem 0.75rem; background: rgba(0,0,0,0.4); border-left: 3px solid var(--dc-sacred-gold); margin-bottom: 1rem; font-style: italic; color: #fff;">
+            “${c.quote}”
+          </blockquote>
+          <p style="margin-bottom: 0.5rem; color: var(--dc-sacred-gold); font-weight:700;">【角色本质与二次思考】</p>
+          <p style="margin-bottom: 1rem; line-height:1.6;">${c.desc}</p>
+          <div style="display:flex; justify-content:space-between; padding:0.6rem; background:rgba(255,255,255,0.04); border-radius:8px;">
+            <span>💖 当前好感度: <b style="color:#fb7185;">${c.aff}</b></span>
+            <span>🖤 恶堕/调教值: <b style="color:#c084fc;">${c.corr}</b></span>
+          </div>
+        `;
+        byId('wa-v2-modal-backdrop').hidden = false;
+      }
+
+      byId('wa-modal-close-btn')?.addEventListener('click', () => {
+        byId('wa-v2-modal-backdrop').hidden = true;
+      });
+      byId('wa-v2-modal-backdrop')?.addEventListener('click', (e) => {
+        if (e.target === byId('wa-v2-modal-backdrop')) byId('wa-v2-modal-backdrop').hidden = true;
+      });
+
+      byId('wa-v2-char-filters')?.addEventListener('click', (e) => {
+        if (e.target.classList.contains('dc-filter-chip')) {
+          byId('wa-v2-char-filters').querySelectorAll('.dc-filter-chip').forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          currentFilter = e.target.getAttribute('data-filter');
+          renderCharacters(lastKnownState);
+        }
+      });
+
+      // 渲染背包与道具
+      function renderInventory(state) {
+        const grid = byId('wa-v2-inventory-grid');
+        if (!grid) return;
+
+        const unlockedItems = INVENTORY_DATABASE.filter(item => isEventCompleted(item.unlock_event, state));
+
+        grid.innerHTML = unlockedItems.map(it => `
+          <div class="dc-item-slot" title="${it.desc}">
+            <div class="dc-item-icon">${it.icon}</div>
+            <div class="dc-item-name">${it.name}</div>
+            <div class="dc-item-qty">已装配</div>
+          </div>
+        `).join('');
+      }
+
+      // Tab 切换交互
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      function activateTab(next) {
+        tabs.forEach(t => {
+          const sel = t === next;
+          t.setAttribute('aria-selected', String(sel));
+          t.tabIndex = sel ? 0 : -1;
+          const panel = byId(t.getAttribute('aria-controls'));
+          if (panel) panel.hidden = !sel;
+        });
+      }
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => activateTab(tab));
+      });
+
+      // 六面骰交互
+      root.querySelectorAll('.dc-dice-face').forEach(face => {
+        face.addEventListener('click', () => {
+          root.querySelectorAll('.dc-dice-face').forEach(f => f.classList.remove('active'));
+          face.classList.add('active');
+        });
+      });
+
+      // 动态自适应危机挂件渲染
+      function renderHazards(state) {
+        const wrap = byId('wa-v2-hazards-box');
+        if (!wrap) return;
+
+        const linen = state?.林恩 ?? {};
+        const activeHazards = [];
+
+        if ((linen.狂乱度 ?? 0) > 0) {
+          activeHazards.push({ label: '🎭 小丑狂乱', val: linen.狂乱度, color: 'var(--dc-crimson-blood)' });
+        }
+        if ((linen.欲望值 ?? 0) > 0) {
+          activeHazards.push({ label: '🌳 母树欲望', val: linen.欲望值, color: 'var(--dc-void-purple)' });
+        }
+        if (linen.巨像维生 === true) {
+          activeHazards.push({ label: '🩸 巨像外挂血管', val: '供能中', color: 'var(--dc-cyber-blue)' });
+        }
+        if ((linen.咒瞳负载 ?? 0) > 0) {
+          activeHazards.push({ label: '👁️ 咒瞳负载', val: linen.咒瞳负载 + '%', color: 'var(--dc-sacred-gold)' });
+        }
+
+        if (activeHazards.length === 0) {
+          wrap.innerHTML = '<div class="dc-hazard-badge dc-hazard-badge--peace">✨ 身心状态稳定 · 暂无神性失控危机</div>';
+        } else {
+          wrap.innerHTML = activeHazards.map(h => `
+            <div class="dc-hazard-badge" style="border-color:${h.color}; color:${h.color};">
+              <span>${h.label}: ${h.val}</span>
+            </div>
+          `).join('');
+        }
+      }
+
+      function updateUI(state) {
+        lastKnownState = state || FALLBACK_STATE;
+
+        // 渲染阶段与坐标（真实 S0 / E02 状态）
+        const world = lastKnownState.世界 ?? {};
+        const env = lastKnownState.环境 ?? {};
+        const evt = lastKnownState.事件?.唯一活跃事件 ?? {};
+        const linen = lastKnownState.林恩 ?? {};
+
+        const phaseName = world.阶段名称 || world.宏观阶段 || 'S0·药店接管期';
+        const phaseDesc = world.阶段目标 || '黑夜城初醒接管药剂店，在游魂巷开启药剂师与急救生涯。';
+        const loc = (world.地点 || env.地点 || '游魂巷 · 血锯药剂店') + ' · ' + (env.微观场景 || '药剂店门前');
+        const timeDesc = world.当前场景时间 || env.时间流逝 || 'E02收尾 · 午后的药剂店';
+
+        if (byId('wa-v2-phase')) byId('wa-v2-phase').textContent = phaseName;
+        if (byId('wa-v2-phase-desc')) byId('wa-v2-phase-desc').textContent = phaseDesc;
+        if (byId('wa-v2-location')) byId('wa-v2-location').textContent = loc;
+        if (byId('wa-v2-time')) byId('wa-v2-time').textContent = timeDesc;
+
+        // 渲染身份
+        if (byId('wa-v2-identity-badge')) {
+          const idents = Array.isArray(linen.当前身份) ? linen.当前身份.join(' · ') : (linen.当前身份 || '血锯学徒 · 临时店主');
+          byId('wa-v2-identity-badge').textContent = idents;
+        }
+
+        // 渲染主线事件
+        if (byId('wa-v2-hero-evt-title')) byId('wa-v2-hero-evt-title').textContent = (evt.事件ID || 'E02') + '·' + (evt.标题 || '血娃娃上门与找妈妈任务');
+        if (byId('wa-v2-hero-evt-desc')) byId('wa-v2-hero-evt-desc').textContent = evt.进展 || '血娃娃诊疗已完成：从胃中物理取出洋娃娃断臂并缝合，收右眼作抵押，触发隐藏任务‘血娃娃找妈妈’（完成度2%）；盘中留有不知名女人的头发、耳朵与梳子。血娃娃外出找妈妈。';
+
+        // 咒瞳六面骰显示门控：未魔改前隐藏，魔改后显示
+        const diceUnlocked = isEventCompleted('E173', lastKnownState) || (linen.咒瞳状态 && linen.咒瞳状态.includes('魔改'));
+        if (byId('wa-v2-dice-container') && byId('wa-v2-dice-placeholder')) {
+          if (diceUnlocked) {
+            byId('wa-v2-dice-container').style.display = 'grid';
+            byId('wa-v2-dice-placeholder').style.display = 'none';
+            if (byId('wa-v2-dice-status-badge')) {
+              byId('wa-v2-dice-status-badge').textContent = '真·神选史诗魔改版';
+              byId('wa-v2-dice-status-badge').style.color = 'var(--dc-sacred-gold)';
+            }
+          } else {
+            byId('wa-v2-dice-container').style.display = 'none';
+            byId('wa-v2-dice-placeholder').style.display = 'block';
+            if (byId('wa-v2-dice-status-badge')) {
+              byId('wa-v2-dice-status-badge').textContent = '尚未觉醒/未解锁';
+              byId('wa-v2-dice-status-badge').style.color = 'var(--dc-text-sub)';
+            }
+          }
+        }
+
+        // 渲染危机挂件、人物、道具与推进按钮
+        renderHazards(lastKnownState);
+        renderCharacters(lastKnownState);
+        renderInventory(lastKnownState);
+        updateAdvanceButton();
+      }
+
+      // 初始化渲染
+      updateUI(FALLBACK_STATE);
+
+      // MVU Bridge 连接监听
+      async function connectMvu() {
+        if (typeof waitForMvuBridge === 'function') {
+          try {
+            const mvu = await waitForMvuBridge();
+            if (mvu) {
+              mvuAvailable = true;
+              mvuWritable = typeof mvu.replaceMvuData === 'function';
+              if (mvu.getMvuData) {
+                const liveData = mvu.getMvuData();
+                if (liveData) updateUI(liveData);
+              }
+              if (mvu.events && typeof eventOn === 'function') {
+                const refresh = () => {
+                  if (mvu.getMvuData) updateUI(mvu.getMvuData());
+                };
+                eventOn(mvu.events.VARIABLE_INITIALIZED, refresh);
+                eventOn(mvu.events.VARIABLE_UPDATE_ENDED, refresh);
+              }
+            }
+          } catch (e) {
+            console.warn('MVU Bridge 降级使用初始状态');
+          }
+        }
+      }
+      void connectMvu();
+    })();
+  </script>
+</section>
+</body>

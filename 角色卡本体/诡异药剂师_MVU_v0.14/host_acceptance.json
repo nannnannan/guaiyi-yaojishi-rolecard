@@ -1,0 +1,27 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.14.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": null,
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Antigravity offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.14.json",
+  "bytes": null,
+  "sha256": null,
+  "offline_checks": {
+    "status": "passed",
+    "checks": 30473,
+    "command": "npm run check",
+    "worldbook_entries": 1003,
+    "event_anchors": 348
+  },
+  "notes": "v0.14 候选由 v0.13 继承并接入 E318-E348/S41-S45；离线构建与验证完成后再填写产物证据，真实宿主导入验收仍需所有者另行授权。"
+}
