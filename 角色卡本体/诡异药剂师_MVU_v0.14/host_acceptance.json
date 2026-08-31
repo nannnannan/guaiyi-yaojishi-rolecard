@@ -7,18 +7,18 @@
   "tested_at": null,
   "last_runtime_tested_at": null,
   "last_runtime_sha256": null,
-  "tested_by": "Antigravity offline validation",
+  "tested_by": "Codex offline validation",
   "evidence": null,
   "host": {
     "sillytavern": null,
     "tavern_helper": null
   },
   "artifact": "dist/诡异药剂师_v0.14.json",
-  "bytes": null,
-  "sha256": null,
+  "bytes": 9606956,
+  "sha256": "9e5034bcbcced62727ed780d8967f090981ec07448bdcd76e8b6867c7ebea082",
   "offline_checks": {
     "status": "passed",
-    "checks": 30473,
+    "checks": 33998,
     "command": "npm run check",
     "worldbook_entries": 1003,
     "event_anchors": 348

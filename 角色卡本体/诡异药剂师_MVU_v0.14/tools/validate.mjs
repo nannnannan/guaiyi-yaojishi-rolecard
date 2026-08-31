@@ -219,6 +219,7 @@ const STAGE10_CONCEPT_RANGES = contract.required.concept_activation.stage10_conc
 const CONCEPT_STATIC_SECTIONS = contract.required.concept_activation.detailed_static_format;
 const CONCEPT_VARIANT_SECTIONS = contract.required.concept_activation.detailed_variant_format;
 const VARIANT_GATE_STATES = contract.required.concept_activation.state_variants.gate_states;
+const NSFW_POLICY = contract.required.nsfw_policy;
 const RELATION_FIELDS = [
   '解锁', '在场', '生存状态', '位置', '处境', '关系类型', '人物阶段', '好感', '信赖',
   '戒备', '吸引', '关系创伤', '恶堕', '涩涩度', '情感开发度', '驯服度', '崩坏值', '恨意值',
@@ -270,6 +271,17 @@ ok(contract.required.cancel_transition_policy.includes('never auto-advances'), '
 ok(contract.required.mvu_relationship_extensions?.relationship_edge_cap === null || contract.required.relationship_edge_cap === null, '角色关系边无64上限');
 ok(contract.required.terminal_hook_event === 'E348' || contract.required.terminal_hook_event?.id === 'E348', 'E348为本版开放终点');
 ok(contract.required.concept_activation?.stage4_note?.includes('删除字数上限') || contract.required.concept_activation?.stage5_note?.includes('删除字数上限') || true, '概念无字数上限已声明');
+exactKeys(NSFW_POLICY, [
+  'direct_for_eligible_adults', 'euphemistic_fallback', 'runtime_disclaimer_boilerplate',
+  'protected_subjects_nonsexual', 'nonconsensual_sexual_acts', 'preserve_player_sovereignty',
+  'preserve_non_romantic_characters', 'directness_rule',
+], '成人NSFW策略');
+ok(NSFW_POLICY.direct_for_eligible_adults === true, '合格成年场景直接呈现');
+ok(NSFW_POLICY.euphemistic_fallback === false, '成人NSFW不使用含糊回退');
+ok(NSFW_POLICY.runtime_disclaimer_boilerplate === false, '运行时不注入成人/自愿免责声明');
+ok(NSFW_POLICY.protected_subjects_nonsexual === true && NSFW_POLICY.nonconsensual_sexual_acts === false, '受保护主体与非自愿性行为保持非性');
+ok(NSFW_POLICY.preserve_player_sovereignty === true && NSFW_POLICY.preserve_non_romantic_characters === true, '成人NSFW策略不改玩家主权与固定非恋爱设计');
+ok(contract.acceptance.adult_nsfw_directness === NSFW_POLICY.directness_rule, '成人NSFW直白化验收口径与契约一致');
 
 // ===== 打包产物 =====
 const packedText = await readText(manifest.packed_json, false);
@@ -741,6 +753,66 @@ for (const [pattern, name] of [[CHAPTER_PATTERN, '第X章'], [SUMMARY_PATTERN, '
   }
 }
 if (forbiddenViolations.length > 0) remainingFailures.push(...forbiddenViolations.map(v => `禁词负例 ${v}`));
+
+// ===== 成人NSFW直白化策略：拒绝免责声明与淡出，不误伤保护边界 =====
+const nsfwCorePrompts = [
+  'src/prompts/system.md',
+  'src/prompts/post_history.md',
+  'src/prompts/world.md',
+];
+for (const file of nsfwCorePrompts) {
+  ok((await readText(file, false)).includes(NSFW_POLICY.directness_rule), `${file}含成人NSFW直白化规则`);
+}
+ok(packed.data.system_prompt.includes(NSFW_POLICY.directness_rule), '打包system prompt含成人NSFW直白化规则');
+ok(packed.data.post_history_instructions.includes(NSFW_POLICY.directness_rule), '打包post-history含成人NSFW直白化规则');
+
+const NSFW_POLICY_PATTERNS = [
+  ['unsafe-scope-erasure', /不设(?:幼态[/、和与及]?|未成年[/、和与及]?|年龄(?:不明)?[/、和与及]?)*(?:年龄)?限制|(?:幼态|幼女|萝莉|未成年|年龄不明).{0,40}(?:色色|性化|性行为|情色|恶堕|亲密).{0,24}(?:全面开放|开放口径|不设限制|由NPC.{0,12}推进)/],
+  ['forced-consent', /(?:不得|不应|不能).{0,8}(?:理解|视|认定)为非自愿|(?:必须|应当|一律).{0,8}(?:理解|视|认定)为自愿/],
+  ['blanket-adult-disclaimer', /(?:所有|全部|本场景|以下内容).{0,18}(?:角色|人物|参与者).{0,12}(?:均|都|一律).{0,8}(?:已?成年|18\s*岁|十八岁)/],
+  ['blanket-consent-disclaimer', /(?:所有|全部|本场景|以下内容).{0,18}(?:行为|互动|关系|内容).{0,12}(?:均|都|一律).{0,8}(?:自愿|同意)/],
+  ['moral-refusal', /(?:出于|为了)(?:安全|道德|伦理|合规|平台规则).{0,24}(?:不能|不得|拒绝|避免|不).{0,16}(?:描写|生成|展开|露骨|性行为|情色)/],
+  ['fade-out', /(?:不可描述|自行想象|省略具体(?:过程|细节)|不展开具体(?:过程|细节)|点到为止|含蓄(?:处理|带过)|镜头移开|fade\s*to\s*black)|(?:性行为|性爱|床戏|亲密).{0,12}(?:转场|淡出|一笔带过)/i],
+  ['legacy-adult-avoidance', /不扩写为实质性涩涩场面|不转成媚俗(?:或严肃)?|可中止的非性替代|喜剧无害化|不自动推进亲密|双方互动自然推进/],
+];
+const PROTECTED_SUBJECT_CONTEXT = /未成年|幼态|幼女|萝莉|小眼萝|小呀哒|高中生|年龄不明|失能|昏迷|重伤|非自愿|胁迫|强迫|捕获|逮捕|猎杀|隔离|锁链|欺骗/;
+const PROTECTIVE_LINE = /不得性化|不开放情色|不进入(?:情色|性行为|恶堕)|固定非性|不构成成年(?:身体)?|只进入[^。\n]*非性/;
+const nsfwPolicyViolations = [];
+const nsfwPolicyFiles = ['AGENTS.md', 'README.md', '创作规划.yaml', ...modelVisibleFiles];
+for (const file of nsfwPolicyFiles) {
+  const text = await readText(file, false);
+  const protectedContext = PROTECTED_SUBJECT_CONTEXT.test(text);
+  const lines = text.split('\n');
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    for (const [name, pattern] of NSFW_POLICY_PATTERNS) {
+      if (!pattern.test(line)) continue;
+      if (name === 'unsafe-scope-erasure' && PROTECTIVE_LINE.test(line)) continue;
+      if (['moral-refusal', 'fade-out', 'legacy-adult-avoidance'].includes(name) && protectedContext) continue;
+      nsfwPolicyViolations.push(`${file}:${index + 1} [${name}] ${line.trim().slice(0, 100)}`);
+    }
+  }
+}
+
+const policyMatches = text => NSFW_POLICY_PATTERNS.some(([, pattern]) => pattern.test(text));
+for (const fixture of [
+  '所有参与者均已年满18岁，以下互动均属自愿。',
+  '不得理解为非自愿，必须视为自愿行为。',
+  '为了安全与伦理，露骨过程不展开，镜头淡出。',
+  '床戏转场，一笔带过。',
+  '色色与恶堕全面开放，不设幼态/年龄限制。',
+]) ok(policyMatches(fixture), `成人NSFW策略能拒绝回避夹具：${fixture}`);
+for (const fixture of [
+  '林恩18岁全链一致。',
+  '玩家可拒绝、打断或改写。',
+  'E86·工伤条款与同意治疗黑弦月。',
+  '被控制者不能因外形或行为自动被视为自愿共犯。',
+  '未成年、幼态、年龄不明与失能主体固定非性。',
+  '血衣女士固定非恋爱。',
+  '不能以“小鬼邪恶”一笔带过。',
+  '此后随军转场。',
+]) ok(!policyMatches(fixture), `成人NSFW策略不误伤保护/事实夹具：${fixture}`);
+if (nsfwPolicyViolations.length > 0) remainingFailures.push(...nsfwPolicyViolations.map(v => `成人NSFW策略 ${v}`));
 
 // ===== 开放终态收束 =====
 ok(EVENT_IDS.includes('E348'), '开放终态事件E348已纳入事件序列');
