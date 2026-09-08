@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-07",
+  "command": "npm run check",
+  "results": [
+    {
+      "status": "built",
+      "card_type": "mvu_zod",
+      "output": "dist/诡异药剂师_v0.14_精修集成候选.json",
+      "worldbook_entries": 1009,
+      "helper_scripts": 2,
+      "regex_scripts": 5,
+      "bytes": 9724983
+    },
+    {
+      "status": "validated",
+      "offline_validation": "passed",
+      "card_type": "mvu_zod",
+      "artifact": "dist/诡异药剂师_v0.14_精修集成候选.json",
+      "worldbook_entries": 1009,
+      "main_characters": 28,
+      "event_anchors": 348,
+      "checks": 36698,
+      "bytes": 9724983,
+      "sha256": "9a11e59b8043cbfaf477f3d7c2a0b5788ec1d474fc92fff102ac5f0431dfd5c2",
+      "real_host_acceptance": "pending"
+    },
+    {
+      "status": "passed",
+      "checks": 651,
+      "core_characters": 28,
+      "optional_npcs": 6,
+      "worldbook_entries": 1009,
+      "real_host_acceptance": "pending"
+    }
+  ],
+  "totalChecks": 37349,
+  "sourceAndDraftUnchanged": true,
+  "host": "pending"
+}

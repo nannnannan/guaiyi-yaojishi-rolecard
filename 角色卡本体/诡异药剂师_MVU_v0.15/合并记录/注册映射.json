@@ -1,0 +1,113 @@
+{
+  "optional": {
+    "拥星者": {
+      "entry_id": 300,
+      "event_ids": [
+        "E337",
+        "E338"
+      ],
+      "content_files": [
+        "src/characters/拥星者/角色速览.md",
+        "src/characters/拥星者/基础信息.md",
+        "src/characters/拥星者/性格调色盘.md",
+        "src/characters/拥星者/三面性.md",
+        "src/characters/拥星者/多阶段人设.md",
+        "src/characters/拥星者/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "高权重可选NPC；通过角色世界书词条和事件窗口激活，不进入28名核心关系表。"
+    },
+    "智脑": {
+      "entry_id": 301,
+      "event_ids": [
+        "E319",
+        "E321",
+        "E323",
+        "E331",
+        "E340",
+        "E342"
+      ],
+      "content_files": [
+        "src/characters/智脑/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "视界之主": {
+      "entry_id": 302,
+      "event_ids": [
+        "E335",
+        "E336",
+        "E337",
+        "E338",
+        "E344"
+      ],
+      "content_files": [
+        "src/characters/视界之主/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "人偶家": {
+      "entry_id": 303,
+      "event_ids": [
+        "E338",
+        "E339",
+        "E342"
+      ],
+      "content_files": [
+        "src/characters/人偶家/角色速览.md",
+        "src/characters/人偶家/基础信息.md",
+        "src/characters/人偶家/性格调色盘.md",
+        "src/characters/人偶家/三面性.md",
+        "src/characters/人偶家/多阶段人设.md",
+        "src/characters/人偶家/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。"
+    },
+    "老人": {
+      "entry_id": 304,
+      "event_ids": [
+        "E344",
+        "E345",
+        "E346",
+        "E347",
+        "E348"
+      ],
+      "content_files": [
+        "src/characters/老人/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "奈奈子": {
+      "entry_id": 305,
+      "event_ids": [
+        "E344",
+        "E345",
+        "E346",
+        "E348"
+      ],
+      "content_files": [
+        "src/characters/奈奈子/角色速览.md",
+        "src/characters/奈奈子/基础信息.md",
+        "src/characters/奈奈子/性格调色盘.md",
+        "src/characters/奈奈子/三面性.md",
+        "src/characters/奈奈子/多阶段人设.md",
+        "src/characters/奈奈子/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。"
+    }
+  },
+  "minorNpc": {
+    "id": 306,
+    "file": "src/prompts/minor_npcs.md"
+  },
+  "coreCharacterCount": 28,
+  "worldbookEntries": 1009
+}

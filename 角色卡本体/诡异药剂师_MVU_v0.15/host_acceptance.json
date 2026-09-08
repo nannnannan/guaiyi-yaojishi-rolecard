@@ -1,0 +1,29 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.15.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": null,
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Codex offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.15.json",
+  "bytes": 9697613,
+  "sha256": "182123994d0197886c2849792ed2bbafd0b9902f3f540cdb95fc2b70dbf0f17b",
+  "offline_checks": {
+    "status": "passed",
+    "command": "npm run check",
+    "worldbook_entries": 1009,
+    "event_anchors": 348,
+    "checks": 36524,
+    "integration_checks": 765,
+    "total_checks": 37289
+  },
+  "notes": "v0.15由已精修的v0.14集成候选升版，含三位单文件NPC；真实宿主验收仍pending。"
+}
