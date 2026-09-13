@@ -1,0 +1,114 @@
+【世界书操作】
+来源: @types/function/worldbook.d.ts
+用途: 获取、创建、删除、修改世界书及其条目，管理世界书绑定
+
+════════════════════════════════════════
+一、世界书条目结构 WorldbookEntry
+════════════════════════════════════════
+
+{
+  uid: number              // 条目ID(世界书内部唯一)
+  name: string             // 条目名称
+  enabled: boolean         // 是否启用
+  content: string          // 条目内容(发给AI的提示词)
+  probability: number      // 激活概率%
+
+  strategy: {              // 激活策略
+    type: 'constant'|'selective'|'vectorized'
+      // constant=蓝灯(常驻) selective=绿灯(需关键词) vectorized=向量化
+    keys: (string|RegExp)[]           // 主要关键字
+    keys_secondary: {                  // 次要关键字
+      logic: 'and_any'|'and_all'|'not_all'|'not_any'
+      keys: (string|RegExp)[]
+    }
+    scan_depth: 'same_as_global'|number  // 扫描深度
+  }
+
+  position: {              // 插入位置
+    type: 'before_character_definition'|'after_character_definition'
+         |'before_example_messages'|'after_example_messages'
+         |'before_author_note'|'after_author_note'|'at_depth'
+    role: 'system'|'assistant'|'user'  // 仅at_depth时有效
+    depth: number                       // 仅at_depth时有效
+    order: number
+  }
+
+  recursion: {             // 递归设置
+    prevent_incoming: boolean   // 禁止被其他条目递归激活
+    prevent_outgoing: boolean   // 禁止递归激活其他条目
+    delay_until: null|number    // 延迟到第n级递归
+  }
+
+  effect: {                // 时效设置
+    sticky: null|number    // 黏性(激活后持续n轮)
+    cooldown: null|number  // 冷却(激活后冷却n轮)
+    delay: null|number     // 延迟(至少n楼后才激活)
+  }
+}
+
+════════════════════════════════════════
+二、世界书列表与绑定
+════════════════════════════════════════
+
+getWorldbookNames() → string[]              // 获取所有世界书名
+getGlobalWorldbookNames() → string[]        // 获取全局开启的世界书
+rebindGlobalWorldbooks(names) → Promise     // 重新绑定全局世界书
+
+getCharWorldbookNames('current') → {primary, additional}  // 角色卡绑定的世界书
+rebindCharWorldbooks('current', {primary, additional})     // 重新绑定角色卡世界书
+
+getChatWorldbookName('current') → string|null              // 聊天绑定的世界书
+rebindChatWorldbook('current', name) → Promise             // 重新绑定聊天世界书
+getOrCreateChatWorldbook('current', name?) → Promise<string> // 获取或新建聊天世界书
+
+════════════════════════════════════════
+三、世界书CRUD
+════════════════════════════════════════
+
+createWorldbook(name, entries?) → Promise<boolean>
+  创建世界书，返回true(新建)/false(替换)
+
+createOrReplaceWorldbook(name, entries?, {render?}) → Promise<boolean>
+  创建或替换世界书
+
+deleteWorldbook(name) → Promise<boolean>
+
+getWorldbook(name) → Promise<WorldbookEntry[]>
+  获取世界书全部条目
+
+replaceWorldbook(name, entries, {render?}) → Promise<void>
+  整体替换世界书内容
+  render: 'debounced'(默认)|'immediate'
+
+updateWorldbookWith(name, updater, {render?}) → Promise<WorldbookEntry[]>
+  函数式更新
+
+  示例:
+    // 禁止所有条目递归
+    await updateWorldbookWith('书名', wb => wb.map(e => ({
+      ...e, recursion:{prevent_incoming:true, prevent_outgoing:true, delay_until:null}
+    })));
+
+    // 删除含"神乐光"的条目
+    await updateWorldbookWith('书名', wb => {
+      _.remove(wb, e => e.name.includes('神乐光'));
+      return wb;
+    });
+
+════════════════════════════════════════
+四、条目级操作
+════════════════════════════════════════
+
+createWorldbookEntries(name, newEntries, {render?})
+  → Promise<{worldbook, new_entries}>
+  新增条目，不设置的字段用默认值
+
+  示例:
+    await createWorldbookEntries('书名', [{name:'神乐光'}, {}]);
+
+deleteWorldbookEntries(name, predicate, {render?})
+  → Promise<{worldbook, deleted_entries}>
+  按条件删除条目
+
+  示例:
+    await deleteWorldbookEntries('书名', e => e.name.includes('神乐光'));

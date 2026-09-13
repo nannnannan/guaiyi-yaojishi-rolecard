@@ -1,0 +1,589 @@
+{
+  "concepts": [
+    {
+      "id": "C857",
+      "title": "海嗣电码与三叉戟领域",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C857_海嗣_海洋的子嗣.md",
+      "output": "概念/C857_海嗣电码与三叉戟领域.md",
+      "source_events": [
+        "E433"
+      ],
+      "source_lines": [
+        [
+          153257,
+          153328
+        ]
+      ]
+    },
+    {
+      "id": "C897",
+      "title": "系统空间遭无序侵入",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C897_系统空间监禁.md",
+      "output": "概念/C897_系统空间遭无序侵入.md",
+      "source_events": [
+        "E423"
+      ],
+      "source_lines": [
+        [
+          150478,
+          150506
+        ]
+      ]
+    },
+    {
+      "id": "C938",
+      "title": "蚀痕分身与海域侦察",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C938_蚀痕入海权能.md",
+      "output": "概念/C938_蚀痕分身与海域侦察.md",
+      "source_events": [
+        "E428",
+        "E434"
+      ],
+      "source_lines": [
+        [
+          151680,
+          151691
+        ],
+        [
+          153524,
+          153670
+        ]
+      ]
+    },
+    {
+      "id": "C1304",
+      "title": "血族诅咒族内转移与压制",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1304_血族诅咒族内转移与压制.md",
+      "source_events": [
+        "E419",
+        "E421"
+      ],
+      "source_lines": [
+        [
+          149644,
+          149708
+        ],
+        [
+          150055,
+          150168
+        ]
+      ]
+    },
+    {
+      "id": "C1305",
+      "title": "罪孽城宫殿与地下封锁",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1305_罪孽城宫殿与地下封锁.md",
+      "source_events": [
+        "E419",
+        "E422"
+      ],
+      "source_lines": [
+        [
+          149521,
+          149528
+        ],
+        [
+          150208,
+          150300
+        ]
+      ]
+    },
+    {
+      "id": "C1306",
+      "title": "紫黑病变与时间入侵媒介",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1306_紫黑病变与时间入侵媒介.md",
+      "source_events": [
+        "E422",
+        "E423"
+      ],
+      "source_lines": [
+        [
+          150179,
+          150300
+        ],
+        [
+          150318,
+          150360
+        ]
+      ]
+    },
+    {
+      "id": "C1307",
+      "title": "鲜血孽灵与同位接触差异",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1307_鲜血孽灵与同位接触差异.md",
+      "source_events": [
+        "E423",
+        "E425"
+      ],
+      "source_lines": [
+        [
+          150343,
+          150475
+        ],
+        [
+          150966,
+          151003
+        ]
+      ]
+    },
+    {
+      "id": "C1308",
+      "title": "未来来客与当前玩家能力边界",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1308_未来来客与当前玩家能力边界.md",
+      "source_events": [
+        "E425",
+        "E426"
+      ],
+      "source_lines": [
+        [
+          150855,
+          151005
+        ],
+        [
+          151040,
+          151155
+        ]
+      ]
+    },
+    {
+      "id": "C1309",
+      "title": "边境红霆与灭绝令证词",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1309_边境红霆与灭绝令证词.md",
+      "source_events": [
+        "E428",
+        "E434"
+      ],
+      "source_lines": [
+        [
+          151620,
+          151647
+        ],
+        [
+          153418,
+          153507
+        ]
+      ]
+    },
+    {
+      "id": "C1310",
+      "title": "四境狱卒与王骑权限",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1310_四境狱卒与王骑权限.md",
+      "source_events": [
+        "E428",
+        "E431"
+      ],
+      "source_lines": [
+        [
+          151693,
+          151708
+        ],
+        [
+          152541,
+          152585
+        ]
+      ]
+    },
+    {
+      "id": "C1311",
+      "title": "深海黑体与幻境场域",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1311_深海黑体与幻境场域.md",
+      "source_events": [
+        "E429",
+        "E431"
+      ],
+      "source_lines": [
+        [
+          151723,
+          151875
+        ],
+        [
+          152649,
+          152688
+        ]
+      ],
+      "hidden_after": [
+        "E432"
+      ]
+    },
+    {
+      "id": "C1312",
+      "title": "大黑彘的诅咒唤醒与净化",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1312_大黑彘的诅咒唤醒与净化.md",
+      "source_events": [
+        "E430",
+        "E431"
+      ],
+      "source_lines": [
+        [
+          152039,
+          152446
+        ],
+        [
+          152449,
+          152528
+        ]
+      ],
+      "hidden_after": [
+        "E432"
+      ]
+    },
+    {
+      "id": "C1313",
+      "title": "西海叛乱与污染种子",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1313_西海叛乱与污染种子.md",
+      "source_events": [
+        "E431",
+        "E432"
+      ],
+      "source_lines": [
+        [
+          152541,
+          152585
+        ],
+        [
+          153113,
+          153168
+        ]
+      ]
+    },
+    {
+      "id": "C1314",
+      "title": "弑利亚与王兽共享视野",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1314_弑利亚与王兽共享视野.md",
+      "source_events": [
+        "E431",
+        "E433",
+        "E434"
+      ],
+      "source_lines": [
+        [
+          152823,
+          152874
+        ],
+        [
+          153364,
+          153404
+        ],
+        [
+          153405,
+          153439
+        ]
+      ]
+    },
+    {
+      "id": "C1315",
+      "title": "无序化牺牲与记录抹除",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1315_无序化牺牲与记录抹除.md",
+      "source_events": [
+        "E432"
+      ],
+      "source_lines": [
+        [
+          152969,
+          153134
+        ]
+      ]
+    },
+    {
+      "id": "C1316",
+      "title": "弑神者巨鲨与熔岩巨神",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1316_弑神者巨鲨与熔岩巨神.md",
+      "source_events": [
+        "E431"
+      ],
+      "source_lines": [
+        [
+          152627,
+          152745
+        ]
+      ]
+    },
+    {
+      "id": "C1317",
+      "title": "八面镇旗与节点互援窗口",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1317_八面镇旗与节点互援窗口.md",
+      "source_events": [
+        "E434"
+      ],
+      "source_lines": [
+        [
+          153651,
+          153711
+        ]
+      ]
+    },
+    {
+      "id": "C1319",
+      "title": "无尽海域边疆航行限制",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1319_无尽海域边疆航行限制.md",
+      "source_events": [
+        "E428",
+        "E431"
+      ],
+      "source_lines": [
+        [
+          151449,
+          151647
+        ],
+        [
+          152767,
+          152816
+        ]
+      ]
+    },
+    {
+      "id": "C1320",
+      "title": "三位一体提案与缺失拼图",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1320_三位一体提案与缺失拼图.md",
+      "source_events": [
+        "E426"
+      ],
+      "source_lines": [
+        [
+          151265,
+          151294
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "哭泣小丑",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/哭泣小丑/基础信息.md",
+      "output": "人物增量/哭泣小丑_C.md",
+      "source_events": [
+        "E419",
+        "E423",
+        "E428",
+        "E430",
+        "E431",
+        "E432",
+        "E434"
+      ],
+      "source_lines": [
+        [
+          149615,
+          149708
+        ],
+        [
+          150418,
+          150563
+        ],
+        [
+          151474,
+          151490
+        ],
+        [
+          152224,
+          152336
+        ],
+        [
+          152823,
+          152929
+        ],
+        [
+          152969,
+          153134
+        ],
+        [
+          153462,
+          153711
+        ]
+      ]
+    },
+    {
+      "name": "巨像之脑",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/巨像之脑/角色速览.md",
+      "output": "人物增量/巨像之脑_C.md",
+      "source_events": [
+        "E424",
+        "E426"
+      ],
+      "source_lines": [
+        [
+          150625,
+          150644
+        ],
+        [
+          151040,
+          151294
+        ]
+      ]
+    },
+    {
+      "name": "艾雯爵士",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/艾雯爵士/角色速览.md",
+      "output": "人物增量/艾雯爵士_C.md",
+      "source_events": [
+        "E424",
+        "E425",
+        "E426",
+        "E428"
+      ],
+      "source_lines": [
+        [
+          150596,
+          150644
+        ],
+        [
+          150927,
+          150964
+        ],
+        [
+          151095,
+          151217
+        ],
+        [
+          151449,
+          151529
+        ]
+      ]
+    },
+    {
+      "name": "孽主",
+      "kind": "new",
+      "base_path": null,
+      "output": "NPC/孽主.md",
+      "source_events": [
+        "E419",
+        "E421",
+        "E422",
+        "E423",
+        "E427",
+        "E428",
+        "E430"
+      ],
+      "source_lines": [
+        [
+          149521,
+          149708
+        ],
+        [
+          150055,
+          150168
+        ],
+        [
+          150179,
+          150300
+        ],
+        [
+          150343,
+          150475
+        ],
+        [
+          151330,
+          151441
+        ],
+        [
+          151449,
+          151610
+        ],
+        [
+          152184,
+          152216
+        ]
+      ]
+    },
+    {
+      "name": "弑利亚",
+      "kind": "new",
+      "base_path": null,
+      "output": "NPC/弑利亚.md",
+      "source_events": [
+        "E431",
+        "E433",
+        "E434"
+      ],
+      "source_lines": [
+        [
+          152807,
+          152886
+        ],
+        [
+          153364,
+          153404
+        ],
+        [
+          153405,
+          153711
+        ]
+      ]
+    },
+    {
+      "name": "大黑彘",
+      "kind": "new",
+      "base_path": null,
+      "output": "NPC/大黑彘.md",
+      "source_events": [
+        "E430",
+        "E431"
+      ],
+      "source_lines": [
+        [
+          152039,
+          152446
+        ],
+        [
+          152449,
+          152957
+        ]
+      ],
+      "hidden_after": [
+        "E432"
+      ]
+    },
+    {
+      "name": "艾泽法拉",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C906_不死眷者艾泽法拉.md",
+      "output": "NPC/艾泽法拉_深海联络.md",
+      "source_events": [
+        "E433"
+      ],
+      "source_lines": [
+        [
+          153257,
+          153359
+        ]
+      ]
+    }
+  ]
+}

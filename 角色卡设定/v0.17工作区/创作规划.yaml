@@ -1,0 +1,46 @@
+project:
+  name: v0.17阶段十二设定精修
+  status: completed_authoring
+  runtime_base: 角色卡本体/诡异药剂师_MVU_v0.16
+  runtime_version: 0.16.0
+  candidate_label: v0.17
+scope:
+  chapters: [1611, 1767]
+  events: [E397, E434]
+  planned_event_count: 38
+  source: 角色卡设定/原文.txt
+  source_ledger: 来源台账.json
+  future: 不读取或引入1768章之后正文
+writing:
+  nsfw: 已按授权回填 NSFW（含 E400/E420）；整卡已集成至 E434。不写占位、叠甲、回避话术或解释性包装
+  whitespace_priority: 事实不足处仍可留白；已授权 NSFW 段不再以零字节跳过
+  player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
+  evidence: 原文是唯一事实来源，旧切片只作待核线索
+  events: 普通默认走向500至1000字，重大事件约2000字，事实不足与留白不填充
+  concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件
+  metadata: 章节与行号仅放核对记录，正文使用E/C编号
+workflow:
+  - 冻结原文分包和只读指纹
+  - 三组子代理逐包精读并重写事件
+  - 交叉核对事件事实和玩家主权
+  - 概念去重及人物和NPC增量
+  - 摘要衔接与完整离线验收
+delivery:
+  check: npm run check -- --complete
+  integration: completed
+  package: completed
+  git_push: not_started
+  real_host: deferred
+result:
+  event_slots: 38
+  nonempty_events: 38
+  blank_events: []
+  concepts: 56
+  concept_updates: 19
+  new_concepts: 37
+  character_and_npc_files: 27
+  source_packets_read: 33
+  independent_content_files_reviewed: 124
+  full_offline_checks: 21783
+  complete: true
+  integrated: true

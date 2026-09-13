@@ -1,0 +1,103 @@
+【消息楼层操作】
+来源: @types/function/chat_message.d.ts
+用途: 获取、修改、创建、删除、移动聊天消息楼层
+
+════════════════════════════════════════
+一、数据类型
+════════════════════════════════════════
+
+ChatMessage {
+  message_id: number        // 楼层号
+  name: string              // 发言者名称
+  role: 'system'|'assistant'|'user'  // 角色
+  is_hidden: boolean        // 是否隐藏
+  message: string           // 消息正文
+  data: Record<string,any>  // 楼层变量(用于MVU等)
+  extra: Record<string,any> // 额外数据
+}
+
+ChatMessageSwiped 额外包含:
+  swipe_id: number          // 当前选中的消息页索引
+  swipes: string[]          // 所有消息页的正文
+  swipes_data: Record[]     // 所有消息页的变量
+  swipes_info: Record[]     // 所有消息页的信息
+
+════════════════════════════════════════
+二、获取消息
+════════════════════════════════════════
+
+getChatMessages(range, option?) → ChatMessage[] 或 ChatMessageSwiped[]
+
+  range: 楼层号或范围
+    - 数字: 0, 10, -1(最新), -2(倒数第二)
+    - 字符串范围: '0-{{lastMessageId}}'
+
+  option:
+    - role: 'all'|'system'|'assistant'|'user' (默认'all')
+    - hide_state: 'all'|'hidden'|'unhidden' (默认'all')
+    - include_swipes: boolean (默认false, true返回ChatMessageSwiped)
+
+  示例:
+    const msg = getChatMessages(-1)[0];              // 最新一楼
+    const all = getChatMessages('0-{{lastMessageId}}');  // 所有楼层
+    const swiped = getChatMessages(0, {include_swipes:true}); // 含消息页
+
+════════════════════════════════════════
+三、修改消息
+════════════════════════════════════════
+
+setChatMessages(messages, option?) → Promise<void>
+
+  messages: [{message_id, ...要修改的字段}]
+  option.refresh: 'none'|'affected'|'all' (默认'affected')
+
+  示例:
+    // 修改正文
+    await setChatMessages([{message_id:10, message:'新内容'}]);
+    // 设置多个开局
+    await setChatMessages([{message_id:0, swipes:['开局1','开局2']}]);
+    // 切换到开局3
+    await setChatMessages([{message_id:0, swipe_id:2}]);
+    // 重新渲染第4楼的前端界面
+    await setChatMessages([{message_id:4}]);
+    // 隐藏所有楼层
+    await setChatMessages(_.range(getLastMessageId()+1).map(id=>({message_id:id, is_hidden:true})));
+
+════════════════════════════════════════
+四、创建消息
+════════════════════════════════════════
+
+createChatMessages(messages, option?) → Promise<void>
+
+  messages: [{role, message, name?, is_hidden?, data?, extra?}]
+  option:
+    - insert_before: number|'end' (默认末尾)
+    - refresh: 'none'|'affected'|'all'
+
+  示例:
+    await createChatMessages([{role:'user', message:'你好'}]);
+    await createChatMessages([{role:'assistant', message:'你好'}], {insert_before:10});
+
+════════════════════════════════════════
+五、删除消息
+════════════════════════════════════════
+
+deleteChatMessages(message_ids, option?) → Promise<void>
+
+  示例:
+    await deleteChatMessages([10, 15, -2, getLastMessageId()]);
+    await deleteChatMessages(_.range(getLastMessageId()+1)); // 删除全部
+
+════════════════════════════════════════
+六、移动消息(旋转)
+════════════════════════════════════════
+
+rotateChatMessages(begin, middle, end, option?) → Promise<void>
+
+  将 [begin,middle) [middle,end) 旋转为 [middle,end) [begin,middle)
+
+  示例:
+    // 将最后一楼移到第5楼前
+    await rotateChatMessages(5, getLastMessageId(), getLastMessageId()+1);
+    // 将前3楼放到最后
+    await rotateChatMessages(0, 3, getLastMessageId()+1);

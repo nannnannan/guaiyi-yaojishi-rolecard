@@ -1,0 +1,90 @@
+【宏与正则】
+来源: @types/function/macro_like.d.ts, @types/function/tavern_regex.d.ts
+用途: 注册自定义宏(文本替换)、操作酒馆正则(显示/提示词替换规则)
+
+════════════════════════════════════════
+一、注册助手宏
+════════════════════════════════════════
+
+registerMacroLike(regex, replace) → {unregister}
+
+  注册后，酒馆提示词和楼层显示中匹配到的文本会被替换
+
+  regex: 匹配的正则表达式
+  replace: (context, substring, ...args) => string
+    context: {message_id?, role?}
+
+  示例:
+    // 统计行数的宏
+    registerMacroLike(
+      /<count_lines>(.*?)<count_lines>/gi,
+      (ctx, content) => content.split('\n').length.toString()
+    );
+
+unregisterMacroLike(regex) → void
+  取消注册
+
+════════════════════════════════════════
+二、酒馆正则结构 TavernRegex
+════════════════════════════════════════
+
+{
+  id: string
+  script_name: string        // 正则名称
+  enabled: boolean
+  scope: 'global'|'character'  // 全局或局部
+
+  find_regex: string         // 查找正则
+  replace_string: string     // 替换内容
+  trim_strings: string       // 修剪字符串
+
+  source: {                  // 作用于什么来源的文本
+    user_input: boolean
+    ai_output: boolean
+    slash_command: boolean
+    world_info: boolean
+  }
+  destination: {             // 用于什么目的
+    display: boolean         // 仅格式显示
+    prompt: boolean          // 仅格式提示词
+  }
+  run_on_edit: boolean       // 编辑时是否运行
+  min_depth / max_depth: number|null  // 深度范围
+}
+
+════════════════════════════════════════
+三、获取/修改正则
+════════════════════════════════════════
+
+isCharacterTavernRegexesEnabled() → boolean   // 局部正则是否启用
+
+getTavernRegexes({scope?, enable_state?}) → TavernRegex[]
+  scope: 'all'|'global'|'character'(默认'all')
+  enable_state: 'all'|'enabled'|'disabled'(默认'all')
+
+replaceTavernRegexes(regexes, {scope?}) → Promise<void>
+  整体替换(很慢!会重载聊天)
+
+updateTavernRegexesWith(updater, {scope?}) → Promise<TavernRegex[]>
+  函数式更新
+
+  示例:
+    // 开启所有名字含"舞台少女"的正则
+    await updateTavernRegexesWith(regexes => {
+      regexes.forEach(r => {
+        if (r.script_name.includes('舞台少女')) r.enabled = true;
+      });
+      return regexes;
+    });
+
+════════════════════════════════════════
+四、应用正则到文本
+════════════════════════════════════════
+
+formatAsTavernRegexedString(text, source, destination, {depth?, character_name?})
+  source: 'user_input'|'ai_output'|'slash_command'|'world_info'|'reasoning'
+  destination: 'display'|'prompt'
+
+  示例:
+    const msg = getChatMessages(-1)[0];
+    const result = formatAsTavernRegexedString(msg.message, 'ai_output', 'display', {depth:0});

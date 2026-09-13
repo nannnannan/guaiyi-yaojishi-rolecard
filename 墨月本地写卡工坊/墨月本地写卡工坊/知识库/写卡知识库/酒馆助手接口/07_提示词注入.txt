@@ -1,0 +1,58 @@
+【提示词注入】
+来源: @types/function/inject.d.ts
+用途: 向AI请求中注入额外提示词(如思维链、系统指令等)
+
+════════════════════════════════════════
+一、注入提示词
+════════════════════════════════════════
+
+injectPrompts(prompts, options?) → {uninject}
+
+  prompts: InjectionPrompt[]
+  options:
+    once?: boolean  // 是否仅下一次生成有效(默认false)
+
+  返回 {uninject()} 可取消注入
+
+  InjectionPrompt:
+    id: string                      // 唯一标识
+    position: 'in_chat'|'none'      // in_chat插入聊天, none仅用于激活世界书
+    depth: number                   // 插入深度(0=最底部)
+    role: 'system'|'assistant'|'user'
+    content: string                 // 提示词内容
+    filter?: ()=>boolean            // 过滤条件(返回true才启用)
+    should_scan?: boolean           // 是否加入世界书扫描文本
+
+  示例:
+    // 注入思维链提示
+    const {uninject} = injectPrompts([{
+      id: 'cot',
+      role: 'system',
+      content: '请先在<thinking>中思考...',
+      position: 'in_chat',
+      depth: 0,
+      should_scan: true
+    }]);
+
+    // 仅下一次生成有效
+    injectPrompts([{
+      id: 'temp_hint',
+      role: 'system',
+      content: '这次请用日语回复',
+      position: 'in_chat',
+      depth: 0
+    }], {once: true});
+
+  注意:
+    - 注入的提示词仅在当前聊天文件中有效
+    - 切换聊天后需重新注入，可监听 tavern_events.CHAT_CHANGED
+    - 也可监听 tavern_events.GENERATION_AFTER_COMMANDS 在生成前注入
+
+════════════════════════════════════════
+二、移除注入
+════════════════════════════════════════
+
+uninjectPrompts(ids) → void
+
+  示例:
+    uninjectPrompts(['cot', 'temp_hint']);

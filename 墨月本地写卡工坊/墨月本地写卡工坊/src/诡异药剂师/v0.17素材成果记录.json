@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-13",
+  "project": "诡异药剂师",
+  "recordType": "external_project_runtime_and_authoring_index",
+  "authoring": {
+    "workspace": "角色卡设定/v0.17工作区",
+    "scope": "E397-E434 / 原文1611-1767",
+    "events_added": 38,
+    "concepts_new": 37,
+    "concepts_updated": 19,
+    "concept_uid": "2573-2609 (C1284-C1320)",
+    "event_uid": "1096-1133",
+    "new_npcs": 9,
+    "six_component_new": false,
+    "nsfw": "authorized_backfill_included"
+  },
+  "runtime": {
+    "version": "0.17.0",
+    "path": "角色卡本体/诡异药剂师_MVU_v0.17",
+    "artifact": "角色卡本体/诡异药剂师_MVU_v0.17/dist/诡异药剂师_v0.17.json",
+    "bytes": 11282817,
+    "sha256": "6305a7c7d2888c6c5bdbde9134b5625fcee04d4a1356503b6ddba22341420e90",
+    "events": "E01-E434",
+    "stages": "S0-S59",
+    "worldbook_entries": 1179,
+    "offline_checks": 44011,
+    "integrated": true,
+    "host_acceptance": "pending"
+  },
+  "latestWritingDecision": {
+    "pendingBoard": "合并记录/待拍板.md 三条用户已确认",
+    "nextContent": "E435+ 另开工作区"
+  },
+  "nextStep": [
+    "host_acceptance deferred",
+    "E435+ authoring when authorized",
+    "git sync when authorized"
+  ],
+  "scope": {
+    "copiedOrMovedSourceFiles": false,
+    "cardBuilt": false,
+    "packaged": false,
+    "committed": false,
+    "pushed": false,
+    "hostTested": false
+  },
+  "historicalAcceptanceRecord": "验收记录.json"
+}

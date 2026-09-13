@@ -1,0 +1,85 @@
+EJS变量读写与输出
+
+═══════════════════════════════════════
+一、变量读写
+═══════════════════════════════════════
+
+【读取变量】
+getvar('路径')                              → 值
+getvar('路径', { defaults: 0 })             → 不存在时返回0
+getvar('stat_data.角色.好感度')             → MVU变量（stat_data前缀必写）
+getvar('stat_data.角色.好感度') !== undefined → 判断是否存在
+
+【设置变量】
+setvar('key', value, { scope: 'local' })     → 写入聊天变量
+setvar('key', value, { scope: 'message' })   → 写入消息变量（默认）
+setvar('key', value, { flags: 'nx' })        → 仅不存在时写入
+setvar('key', value, 'global')               → scope快捷写法
+setvar('key', value, 'nx')                   → flags快捷写法
+
+【增减变量】
+incvar('好感度', 5, { scope: 'local', min: 0, max: 100 })  → +5，限制范围
+decvar('金币', 100, { scope: 'local', min: 0 })             → -100，不低于0
+
+【删除/插入】
+delvar('key')                    → 删除变量
+delvar('key', '属性名')          → 删除对象属性
+insvar('数组', '新元素')         → 追加到数组末尾
+
+【作用域】
+global   全局变量，持久化，跨角色跨对话共享
+local    聊天变量，持久化，当前聊天记录
+message  消息变量，持久化，绑定到具体消息楼层（默认）
+cache    临时变量，不持久化（默认读取源）
+initial  初始变量，只读
+
+优先级（高→低）：消息变量(最新→最旧) → 聊天变量 → 全局变量
+合并后的变量在 variables 对象中可直接访问。
+
+═══════════════════════════════════════
+二、输出与世界书条目加载
+═══════════════════════════════════════
+
+【print输出】
+<%_
+if (getvar('stat_data.天气') === '晴天') {
+  print('【阳光明媚，适合出门】');
+}
+_%>
+
+【getwi加载其他条目】必须加await
+<%_
+if (getvar('stat_data.好感度') < 30) {
+  print(await getwi('角色_阶段01'));
+} else {
+  print(await getwi('角色_阶段02'));
+}
+_%>
+
+等价写法：<%- await getwi('条目名') %>
+
+getwi参数：
+await getwi('条目名')                → 自动推断世界书
+await getwi('世界书名', '条目名')     → 指定世界书
+await getwi('条目名', { key: value }) → 传递数据
+
+【activewi激活条目】让酒馆原生处理（遵循绿灯/向量化等）
+await activewi('条目名')         → 普通激活
+await activewi('条目名', true)   → 强制激活
+※ 必须在 [GENERATE:BEFORE] 或 @@generate_before 条目中使用
+
+【填入变量值】
+<%= getvar('stat_data.好感度') %>
+<%= YAML.stringify(getvar('stat_data'), { blockQuote: 'literal' }) %>
+<%= JSON.stringify(getvar('stat_data')) %>
+
+═══════════════════════════════════════
+三、聊天消息操作
+═══════════════════════════════════════
+
+getChatMessage(idx)                  → 指定楼层消息内容
+getChatMessages(count)               → 最后N条消息
+getChatMessages(start, end)          → 范围内消息
+matchChatMessages(['关键词'])         → 最后2楼是否包含关键词
+matchChatMessages(['关键词'], { start: -4 })  → 扩大扫描范围
+matchChatMessages([/正则/s])         → 正则匹配

@@ -1,0 +1,85 @@
+【角色卡管理】
+来源: @types/function/character.d.ts
+用途: 创建、获取、修改、删除角色卡，获取角色卡列表
+
+════════════════════════════════════════
+一、角色卡数据结构 (Character)
+════════════════════════════════════════
+
+主要字段:
+  name          角色名
+  personality   性格
+  description   描述
+  scenario      场景
+  first_mes     第一条消息
+  creator_notes 创作者笔记
+  system_prompt 系统提示词
+  post_history_instructions  越权提示词(角色备注)
+  tags          标签数组
+  creator       创作者
+  extensions.depth_prompt     深度提示词 (含 prompt, depth, role)
+  data.extensions.regex_scripts  角色正则表达式数组
+
+════════════════════════════════════════
+二、查询角色卡
+════════════════════════════════════════
+
+getCharacterNames() → Promise<string[]>
+  获取所有已导入角色卡的名称列表
+
+getCurrentCharacterName() → Promise<string>
+  获取当前选中的角色卡名称
+
+getCharacter(name?) → Promise<Character>
+  获取角色卡完整数据
+  name: 角色卡名称(可选，默认当前角色)
+
+════════════════════════════════════════
+三、创建角色卡
+════════════════════════════════════════
+
+createCharacter(character) → Promise<void>
+  创建新角色卡
+  character: 至少需要 name 字段
+
+  示例:
+    await createCharacter({
+      name: '测试角色',
+      personality: '开朗活泼',
+      description: '一个测试用角色',
+      first_mes: '你好！我是测试角色！',
+    });
+
+════════════════════════════════════════
+四、修改角色卡
+════════════════════════════════════════
+
+replaceCharacter(character, name?) → Promise<void>
+  整体替换角色卡数据
+  character: 完整的角色卡数据
+  name: 要替换的角色卡名(可选，默认当前角色)
+
+updateCharacterWith(updater, name?) → Promise<void>
+  局部修改角色卡数据(推荐)
+  updater: 接收当前角色卡数据，直接修改即可
+  name: 角色卡名(可选，默认当前角色)
+
+  示例:
+    // 修改性格描述
+    await updateCharacterWith(char => {
+      char.personality = '沉稳冷静';
+    });
+
+    // 添加标签
+    await updateCharacterWith(char => {
+      char.tags.push('原创角色');
+    });
+
+════════════════════════════════════════
+五、删除角色卡
+════════════════════════════════════════
+
+deleteCharacter(name?, delete_chats?) → Promise<void>
+  删除角色卡
+  name: 角色卡名(可选，默认当前角色)
+  delete_chats: 是否同时删除聊天记录(可选，默认false)

@@ -1,0 +1,49 @@
+写卡知识库索引
+
+按需Read对应条目获取详细内容。
+
+EJS/
+  EJS基础语法          标签语法、条件控制if/else、易错点
+  EJS变量与输出        变量读写getvar/setvar、getwi加载条目、聊天消息操作
+  EJS装饰器与注入      @@装饰器、内容注入前缀、@INJECT、injectPrompt、正则激活
+  EJS多阶段人设        多阶段控制器写法（getwi加载禁用条目）、@@iframe状态栏、@@preprocessing动态激活
+  EJS函数速查          内置常量、调试方法、完整函数列表
+  EJS动态内容控制器    @@preprocessing控制器实例（根据变量/地点/角色名动态加载条目）
+  EJS调色盘多阶段人设  用EJS在一个条目内实现调色盘+衍生+二次解释的多阶段切换（含秋啾啾实例解析）
+
+酒馆助手接口/
+  00_接口索引        按功能分类的接口速查目录
+  01_消息楼层操作    getChatMessages/setChatMessages等
+  02_变量读写        getVariables/replaceVariables等
+  03_世界书操作      getWorldbook/replaceWorldbook等
+  04_AI生成请求      generate/generateRaw
+  05_楼层显示        getMessageDiv/formatAsDisplayedMessage等
+  06_事件监听        eventOn/tavern_events
+  07_提示词注入      injectPrompts
+  08_预设操作        getPreset/setPreset等
+  09_角色卡信息      getCharacterData等
+  10_宏与正则        registerMacroLike/formatAsTavernRegexedString
+  11_音频播放        playAudio等
+  12_脚本与按钮      getScriptId/appendInexistentScriptButtons
+  13_扩展管理        installExtension等
+  14_导入原始数据    importRaw等
+  15_工具函数        getLastMessageId/replaceMacro/getIframeName
+  16_MVU变量框架     Mvu对象/getMvuData/parseMessage/事件
+  17_Slash命令       triggerSlash
+  18_版本信息        getVersion
+  19_角色卡管理      createCharacter/editCharacter等
+
+MVU/
+  MVU_ZOD指南        完整MVU ZOD工作流（结构脚本→初始变量→提示词→正则→脚本→界面）
+
+世界书配置/
+  世界书配置指南     触发策略（蓝灯/绿灯）、位置、顺序、深度、递归、各类条目推荐配置、LorebookToolCall参数对照表
+
+自查/
+  一般条目自查           角色卡制作审查（外貌差异化/八股化/绝对零度/语料纯净度/格式）+ 故事内容审查
+  前端美化自查           正则配置/HTML基础/标签一致性/模式A正文美化/模式B结构化数据
+  世界书评估             评估原则/条目配置检查/写作质量抽查/评估输出格式
+  世界观自查             通用检查（废话/零度/白描/配置）+ 路径A/B/C专项+ EJS+MVU联动检查
+  MVU自查                变量结构脚本/初始变量/变量列表/变量更新规则/变量输出格式/变量输出格式强调
+  MVU前端状态栏自查      HTML结构/CSS样式/变量获取/初始化逻辑/常见错误
+  EJS调色盘多阶段自查    前提检查/EJS语法/调色盘结构完整性/阶段衔接/二次解释匹配/条目配置

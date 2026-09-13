@@ -1,0 +1,113 @@
+【AI生成请求】
+来源: @types/function/generate.d.ts
+用途: 请求AI生成回复，支持流式传输、自定义提示词、自定义API
+
+════════════════════════════════════════
+一、携带预设生成
+════════════════════════════════════════
+
+generate(config) → Promise<string>
+
+  使用酒馆当前预设(含所有提示词、世界书等)请求AI生成
+
+  config:
+    user_input?: string          // 用户输入
+    should_stream?: boolean      // 流式传输(默认false)
+    should_silence?: boolean     // 静默生成(默认false,true不影响停止按钮)
+    image?: File|string|(File|string)[]  // 图片输入
+    overrides?: Overrides        // 覆盖指定提示词
+    injects?: InjectionPrompt[]  // 额外注入提示词
+    max_chat_history?: 'all'|number  // 最多使用多少条历史
+    custom_api?: CustomApiConfig // 自定义API
+    generation_id?: string       // 唯一标识(用于停止特定生成)
+
+  示例:
+    const result = await generate({user_input:'你好'});
+    const result = await generate({user_input:'描述图片', image:'https://...'});
+
+════════════════════════════════════════
+二、不携带预设生成(自定义提示词顺序)
+════════════════════════════════════════
+
+generateRaw(config) → Promise<string>
+
+  额外参数:
+    ordered_prompts?: (BuiltinPrompt|RolePrompt)[]
+      自定义提示词顺序，未列出的内置提示词不会被使用
+
+  BuiltinPrompt可选值:
+    'world_info_before'|'persona_description'|'char_description'
+    |'char_personality'|'scenario'|'world_info_after'
+    |'dialogue_examples'|'chat_history'|'user_input'
+
+  RolePrompt: {role:'system'|'assistant'|'user', content:string}
+
+  示例:
+    const result = await generateRaw({
+      user_input: '你好',
+      ordered_prompts: [
+        'char_description',
+        {role:'system', content:'系统提示'},
+        'chat_history',
+        'user_input',
+      ]
+    });
+
+════════════════════════════════════════
+三、覆盖选项 Overrides
+════════════════════════════════════════
+
+overrides: {
+  world_info_before?: string
+  persona_description?: string
+  char_description?: string
+  char_personality?: string
+  scenario?: string
+  world_info_after?: string
+  dialogue_examples?: string
+  chat_history?: {
+    with_depth_entries?: boolean  // 是否用深度插入条目
+    author_note?: string         // 覆盖作者注释
+    prompts?: RolePrompt[]       // 覆盖聊天历史
+  }
+}
+
+════════════════════════════════════════
+四、流式传输
+════════════════════════════════════════
+
+需先监听事件再调用generate:
+
+  eventOn(iframe_events.STREAM_TOKEN_RECEIVED_FULLY, text => {
+    // text: 完整累积文本 "这是","这是一条","这是一条流式"
+  });
+  eventOn(iframe_events.STREAM_TOKEN_RECEIVED_INCREMENTALLY, text => {
+    // text: 增量文本 "这是","一条","流式"
+  });
+  const result = await generate({user_input:'你好', should_stream:true});
+
+════════════════════════════════════════
+五、自定义API
+════════════════════════════════════════
+
+custom_api: {
+  apiurl: string       // API地址
+  key?: string         // API密钥
+  model: string        // 模型名称
+  source?: string      // API源(默认'openai')
+  max_tokens?: 'same_as_preset'|'unset'|number
+  temperature?: 'same_as_preset'|'unset'|number
+  frequency_penalty?: 'same_as_preset'|'unset'|number
+  presence_penalty?: 'same_as_preset'|'unset'|number
+  top_p?: 'same_as_preset'|'unset'|number
+  top_k?: 'same_as_preset'|'unset'|number
+}
+
+════════════════════════════════════════
+六、其他函数
+════════════════════════════════════════
+
+getModelList({apiurl, key?}) → Promise<string[]>  // 获取模型列表
+stopGenerationById(generation_id) → boolean        // 停止特定生成
+stopAllGeneration() → boolean                      // 停止所有生成
+builtin_prompt_default_order → BuiltinPrompt[]     // 默认提示词顺序

@@ -1,0 +1,99 @@
+【预设操作】
+来源: @types/function/preset.d.ts
+用途: 获取、创建、修改、切换预设(包括提示词列表、温度等参数)
+
+════════════════════════════════════════
+一、预设结构 Preset
+════════════════════════════════════════
+
+{
+  settings: {
+    max_context: number              // 最大上下文token数
+    max_completion_tokens: number    // 最大回复token数
+    should_stream: boolean           // 流式传输
+    temperature: number              // 温度
+    frequency_penalty: number        // 频率惩罚
+    presence_penalty: number         // 存在惩罚
+    top_p / top_k / min_p / top_a    // 采样参数
+    seed: number                     // 种子(-1随机)
+    squash_system_messages: boolean  // 压缩系统消息
+    reasoning_effort: 'auto'|'min'|'low'|'medium'|'high'|'max'  // 推理强度
+    request_thoughts: boolean        // 请求思维链
+    request_images: boolean          // 请求图片
+    enable_function_calling: boolean // 函数调用
+    enable_web_search: boolean       // 网络搜索
+    allow_sending_images: 'disabled'|'auto'|'low'|'high'
+    character_name_prefix: 'none'|'default'|'content'|'completion'
+  }
+  prompts: PresetPrompt[]            // 已添加的提示词
+  prompts_unused: PresetPrompt[]     // 未添加的提示词
+  extensions: { ... }                // 扩展字段(正则、酒馆助手等)
+}
+
+提示词类型:
+  普通提示词: 用户手动添加的, id为自定义字符串
+  系统提示词: id为 'main'|'nsfw'|'jailbreak'|'enhanceDefinitions'
+  占位符提示词: id为 'worldInfoBefore'|'charDescription'|'chatHistory'等
+
+════════════════════════════════════════
+二、预设列表与切换
+════════════════════════════════════════
+
+getPresetNames() → string[]           // 获取所有预设名
+getLoadedPresetName() → string        // 当前加载的预设名
+loadPreset(name) → boolean            // 切换预设
+
+════════════════════════════════════════
+三、预设CRUD
+════════════════════════════════════════
+
+getPreset(name) → Preset
+  name可为 'in_use' 获取当前使用中的预设
+
+createPreset(name, preset?) → Promise<boolean>
+deletePreset(name) → Promise<boolean>
+renamePreset(name, new_name) → Promise<boolean>
+createOrReplacePreset(name, preset?, {render?}) → Promise<boolean>
+
+════════════════════════════════════════
+四、修改预设
+════════════════════════════════════════
+
+replacePreset(name, preset, {render?}) → Promise<void>
+  整体替换
+
+updatePresetWith(name, updater, {render?}) → Promise<Preset>
+  函数式更新
+
+setPreset(name, partial_preset, {render?}) → Promise<Preset>
+  部分更新(未给出的字段保持原值)
+
+  render: 'debounced'(默认)|'immediate'|'none'
+
+  示例:
+    // 开启流式传输
+    await setPreset('in_use', {settings:{should_stream:true}});
+
+    // 关闭含"COT"的条目
+    await updatePresetWith('in_use', preset => {
+      preset.prompts.filter(p => p.name.includes('COT')).forEach(p => p.enabled=false);
+      return preset;
+    });
+
+    // 添加提示词条目
+    await updatePresetWith('in_use', preset => {
+      preset.prompts.push({
+        id:'new', name:'新提示词', enabled:true,
+        position:{type:'relative'}, role:'user', content:'内容'
+      });
+      return preset;
+    });
+
+════════════════════════════════════════
+五、工具函数
+════════════════════════════════════════
+
+isPresetNormalPrompt(prompt) → boolean     // 是否普通提示词
+isPresetSystemPrompt(prompt) → boolean     // 是否系统提示词
+isPresetPlaceholderPrompt(prompt) → boolean // 是否占位符提示词
+default_preset → Preset                     // 默认预设内容

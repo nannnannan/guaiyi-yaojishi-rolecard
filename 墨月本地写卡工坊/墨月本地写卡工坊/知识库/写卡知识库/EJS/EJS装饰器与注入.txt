@@ -1,0 +1,63 @@
+EJS装饰器与注入
+
+═══════════════════════════════════════
+一、装饰器（条目内容开头，每行一个，不能有空行）
+═══════════════════════════════════════
+
+@@activate              视为蓝灯永久激活
+@@dont_activate         完全禁止激活
+@@generate_before       注入到提示词开头
+@@generate_after        注入到提示词末尾
+@@render_before         渲染到消息开头（不发给AI）
+@@render_after          渲染到消息末尾（不发给AI）
+@@preprocessing         在世界书处理前执行（用于动态激活绿灯）
+@@initial_variables     将内容视为初始变量
+@@private               自动包裹作用域，避免变量重复声明
+@@if 条件               条件为false时排除此条目
+@@iframe                创建iframe包裹，避免样式污染
+@@iframe 标题文字       自动折叠的iframe
+
+@@if 示例：
+@@if variables.好感度 >= 90
+好感度很高时才发送的内容
+
+═══════════════════════════════════════
+二、内容注入（条目标题/备忘前缀）
+═══════════════════════════════════════
+
+[GENERATE:BEFORE]     提示词开头（仅蓝灯）
+[GENERATE:AFTER]      提示词末尾（蓝灯和绿灯）
+[RENDER:BEFORE]       消息开头渲染（不发给AI）
+[RENDER:AFTER]        消息末尾渲染（不发给AI）
+[InitialVariables]    初始变量（标准JSON）
+
+═══════════════════════════════════════
+三、@INJECT注入（条目必须设为禁用）
+═══════════════════════════════════════
+
+以独立 {role, content} 消息插入Prompt（比世界书合并更精确）。
+
+@INJECT pos=1,role=system              绝对位置
+@INJECT pos=-1,role=user               最后位置
+@INJECT target=user,index=1,at=before,role=system    目标消息前
+@INJECT target=assistant,index=-1,at=after,role=user  最后助手消息后
+@INJECT regex=你好,at=before,role=system              正则匹配
+
+═══════════════════════════════════════
+四、injectPrompt（依赖倒置注入）
+═══════════════════════════════════════
+
+世界书中定义：
+<% injectPrompt("CoT", `思考步骤内容`) %>
+
+预设中使用：
+<%- getPromptsInjected("CoT") %>
+
+用途：世界书定义提示词片段，在预设指定位置精确注入。
+
+═══════════════════════════════════════
+五、正则激活
+═══════════════════════════════════════
+
+activateRegex(/<think>[\s\S]*?<\/think>/gi, "");   → 隐藏思维链
+activateRegex(/pattern/gi, '替换', { message: true, html: true });  → 楼层HTML替换

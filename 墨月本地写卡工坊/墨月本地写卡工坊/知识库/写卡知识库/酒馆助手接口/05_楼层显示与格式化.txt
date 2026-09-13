@@ -1,0 +1,51 @@
+【楼层显示与格式化】
+来源: @types/function/displayed_message.d.ts
+用途: 获取楼层的DOM元素、将文本格式化为酒馆显示格式、刷新楼层显示
+
+════════════════════════════════════════
+一、获取楼层DOM
+════════════════════════════════════════
+
+retrieveDisplayedMessage(message_id) → JQuery<HTMLDivElement>
+
+  获取某楼层的消息内容JQuery实例(需该楼层已在页面上显示)
+
+  示例:
+    const text = retrieveDisplayedMessage(0).text();         // 获取文本
+    retrieveDisplayedMessage(0).text('新内容');               // 临时修改显示
+    retrieveDisplayedMessage(0).append('<pre>追加</pre>');    // 追加内容
+
+  注意: 这样的修改只影响当前显示，不会保存到消息文件。
+  要实际修改消息请用 setChatMessages。
+
+════════════════════════════════════════
+二、文本→显示HTML
+════════════════════════════════════════
+
+formatAsDisplayedMessage(text, {message_id?}) → string
+
+  将字符串处理为酒馆用于显示的html:
+  1. 替换酒馆宏 (如 {{char}})
+  2. 应用酒馆正则
+  3. 转换为html格式
+
+  option:
+    message_id: 'last'|'last_user'|'last_char'|number (默认最新楼层)
+
+  示例:
+    const html = formatAsDisplayedMessage('{{char}} speaks in {{lastMessageId}}');
+    // → "<p>少女歌剧 speaks in 5</p>"
+
+════════════════════════════════════════
+三、刷新单个楼层显示
+════════════════════════════════════════
+
+refreshOneMessage(message_id, $mes?) → Promise<void>
+
+  刷新或替换单个楼层的显示(如果该楼层没显示在网页上则无操作)
+
+  示例:
+    await refreshOneMessage(0);                    // 刷新第0楼
+    await refreshOneMessage(getLastMessageId());   // 刷新最新楼层
+    // 强行让第5楼显示第0楼的消息(仅影响网页显示)
+    await refreshOneMessage(0, $('#chat > .mes[mesid="5"]'));

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-08",
+  "project": "诡异药剂师",
+  "sourceRoot": "C:/Users/huang/Desktop/《诡异药剂师》同人角色卡制作计划/角色卡本体/诡异药剂师_MVU_v0.15",
+  "artifact": "C:/Users/huang/Desktop/《诡异药剂师》同人角色卡制作计划/角色卡本体/诡异药剂师_MVU_v0.15/dist/诡异药剂师_v0.15.json",
+  "mode": "authorized v0.15 version bump and rebuilt artifact validation",
+  "userReportedPackagingComplete": true,
+  "checks": [
+    {
+      "command": "node tools/validate.mjs",
+      "exitCode": 0,
+      "result": {
+        "status": "validated",
+        "offline_validation": "passed",
+        "card_type": "mvu_zod",
+        "artifact": "dist/诡异药剂师_v0.15.json",
+        "worldbook_entries": 1009,
+        "main_characters": 28,
+        "event_anchors": 348,
+        "checks": 36524,
+        "bytes": 9697613,
+        "sha256": "182123994d0197886c2849792ed2bbafd0b9902f3f540cdb95fc2b70dbf0f17b",
+        "real_host_acceptance": "pending"
+      }
+    },
+    {
+      "command": "node tools/validate-integration.mjs",
+      "exitCode": 0,
+      "result": {
+        "status": "passed",
+        "checks": 765,
+        "core_characters": 28,
+        "optional_npcs": 6,
+        "worldbook_entries": 1009,
+        "real_host_acceptance": "pending"
+      }
+    }
+  ],
+  "repacked": true,
+  "hostAcceptance": "pending",
+  "buildCommand": "npm run check",
+  "changedNpcEntries": [
+    301,
+    302,
+    304
+  ],
+  "otherArtifactFieldsUnchanged": true,
+  "writingReview": "passed",
+  "version": "0.15.0"
+}

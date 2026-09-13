@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/character.zh.json
+头像: null
+版本: ''
+作者: ''
+备注: ''
+
+第一条消息:
+  - 文件: 第一条消息/0
+
+角色描述: ''
+
+世界书名称: 与角色卡名称相同
+条目: []
+
+扩展字段:
+  正则: []
+  酒馆助手:
+    脚本库: []

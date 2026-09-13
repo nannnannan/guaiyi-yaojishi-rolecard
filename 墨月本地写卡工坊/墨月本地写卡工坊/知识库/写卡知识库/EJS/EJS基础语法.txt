@@ -1,0 +1,67 @@
+EJS基础语法（SillyTavern + ST-Prompt-Template扩展）
+
+运行环境：世界书条目、预设提示词、角色卡定义、消息中均可执行EJS代码。
+核心用途：根据变量值动态控制哪些提示词发送给AI，实现多阶段人设、条件分支、状态栏渲染等。
+
+═══════════════════════════════════════
+一、标签语法
+═══════════════════════════════════════
+
+<%_ 代码 _%>    执行代码，不输出，自动去空白（推荐）
+<%= 表达式 %>    输出值（HTML转义）
+<%- 表达式 %>    输出值（原样，不转义）
+<%# 注释 %>      注释，不执行
+
+标签外的文本是普通提示词，会直接发送给AI。
+
+═══════════════════════════════════════
+二、条件控制（if/else）
+═══════════════════════════════════════
+
+<%_ if (getvar('stat_data.角色.好感度') < 30) { _%>
+好感度低时AI看到的提示词
+<%_ } else if (getvar('stat_data.角色.好感度') < 60) { _%>
+中等好感度提示词
+<%_ } else { _%>
+高好感度提示词
+<%_ } _%>
+
+文本相等用 ===：
+<%_ if (getvar('stat_data.天气') === '晴天') { _%>
+
+多条件用 && 和 ||：
+<%_ if (getvar('stat_data.好感度') > 50 && getvar('stat_data.信任') > 30) { _%>
+
+═══════════════════════════════════════
+三、易错点
+═══════════════════════════════════════
+
+1. getwi必须加await：
+   ✅ <%- await getwi('条目名') %>
+   ❌ <%- getwi('条目名') %>
+
+2. MVU变量路径必须带stat_data前缀：
+   ✅ getvar('stat_data.角色.好感度')
+   ❌ getvar('角色.好感度')
+
+3. 不需要[0]索引：
+   ✅ getvar('stat_data.角色.好感度')
+   ❌ getvar('stat_data.角色.好感度[0]')
+
+4. 多条目共享变量名用typeof防重复声明：
+   ✅ if (typeof v === 'undefined') var v = getvar('路径');
+   ❌ const v = getvar('路径');  // 第二个条目会报错
+
+5. activewi必须在[GENERATE:BEFORE]或@@generate_before中使用
+
+6. @INJECT条目必须设为禁用状态
+
+7. 装饰器之间不能有空行
+
+8. define函数内必须用this访问getvar/setvar等：
+   ✅ define('fn', function() { return this.getvar('key'); })
+   ❌ define('fn', () => getvar('key'))
+
+9. @@preprocessing不能和@@generate_before/@@generate_after同时使用
+
+10. setvar后立即读取需要 { noCache: true }

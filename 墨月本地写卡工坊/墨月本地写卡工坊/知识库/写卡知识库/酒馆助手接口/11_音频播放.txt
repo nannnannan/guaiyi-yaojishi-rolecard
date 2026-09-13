@@ -1,0 +1,54 @@
+【音频播放】
+来源: @types/function/audio.d.ts
+用途: 播放/暂停背景音乐和音效，管理播放列表和音频设置
+
+════════════════════════════════════════
+一、播放/暂停
+════════════════════════════════════════
+
+playAudio(type, audio) → void
+  type: 'bgm'(背景音乐) | 'ambient'(音效)
+  audio: {url:string, title?:string}  // title不填则从url提取文件名
+
+  示例:
+    playAudio('bgm', {url:'http://example.com/music.mp3'});
+    playAudio('bgm', {title:'战斗BGM', url:'http://example.com/battle.mp3'});
+
+pauseAudio(type) → void
+  暂停播放
+
+════════════════════════════════════════
+二、播放列表
+════════════════════════════════════════
+
+getAudioList(type) → Audio[]             // 获取播放列表
+replaceAudioList(type, list) → void      // 整体替换播放列表
+appendAudioList(type, list) → void       // 追加不重复的音频
+
+  示例:
+    // 设置3首BGM
+    replaceAudioList('bgm', [
+      {title:'晨曲', url:'http://.../morning.mp3'},
+      {title:'午后', url:'http://.../afternoon.mp3'},
+      {title:'夜曲', url:'http://.../night.mp3'},
+    ]);
+    // 追加一首(已存在则不重复)
+    appendAudioList('bgm', [{url:'http://.../new.mp3'}]);
+
+════════════════════════════════════════
+三、音频设置
+════════════════════════════════════════
+
+getAudioSettings(type) → AudioSettings
+setAudioSettings(type, settings) → void
+
+  AudioSettings:
+    enabled: boolean                    // 是否启用
+    mode: 'repeat_one'|'repeat_all'|'shuffle'|'play_one_and_stop'
+    muted: boolean                      // 是否静音
+    volume: number                      // 音量(0-100)
+
+  示例:
+    setAudioSettings('bgm', {mode:'repeat_one'});   // 单曲循环
+    setAudioSettings('ambient', {muted:true});        // 静音音效
+    setAudioSettings('bgm', {volume:50});             // 音量50%

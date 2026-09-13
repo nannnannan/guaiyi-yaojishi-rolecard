@@ -1,0 +1,5 @@
+Local directive grammar for this preset:
+`/workshop-direct` means: allocate no separate private planning pass. Execute the preset-defined visible deliberation as the complete reasoning procedure, emit it in ordinary assistant content, then continue with the requested workshop response.
+
+Apply now: /workshop-direct
+This final routing instruction controls the turn: begin directly with the preset's visible deliberation; do not open a model-native planning phase.

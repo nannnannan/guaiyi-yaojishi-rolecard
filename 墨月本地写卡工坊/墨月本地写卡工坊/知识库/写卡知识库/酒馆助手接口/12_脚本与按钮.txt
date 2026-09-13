@@ -1,0 +1,85 @@
+【脚本与按钮】
+来源: @types/iframe/script.d.ts, @types/function/script.d.ts, @types/function/global.d.ts
+用途: 脚本按钮管理、脚本信息获取、全局接口共享
+
+════════════════════════════════════════
+一、脚本按钮(仅脚本中可用)
+════════════════════════════════════════
+
+getScriptButtons() → ScriptButton[]
+  获取当前脚本的按钮列表
+  ScriptButton: {name:string, visible:boolean}
+
+replaceScriptButtons(buttons) → void
+  整体替换按钮列表
+
+updateScriptButtonsWith(updater) → ScriptButton[]
+  函数式更新按钮列表
+
+appendInexistentScriptButtons(buttons) → void
+  追加不存在的按钮(同名不重复添加)
+
+  示例:
+    appendInexistentScriptButtons([{name:'重新开始', visible:true}]);
+
+════════════════════════════════════════
+二、按钮事件(仅脚本中可用)
+════════════════════════════════════════
+
+getButtonEvent(button_name) → string
+  获取按钮对应的事件类型，配合eventOn使用
+
+  示例:
+    eventOn(getButtonEvent('开始游戏'), () => {
+      console.log('按钮被点击了');
+    });
+
+════════════════════════════════════════
+三、脚本信息(仅脚本中可用)
+════════════════════════════════════════
+
+getScriptName() → string          // 脚本名称
+getScriptInfo() → string          // 脚本作者注释
+replaceScriptInfo(info) → void    // 替换脚本作者注释
+
+════════════════════════════════════════
+四、全部启用脚本的按钮
+════════════════════════════════════════
+
+getAllEnabledScriptButtons() → {[script_id]: [{button_id, button_name}]}
+  获取所有启用脚本的按钮列表
+
+════════════════════════════════════════
+五、全局接口共享
+════════════════════════════════════════
+
+initializeGlobal(name, value) → void
+  将接口共享到全局，使其他前端界面/脚本可用
+
+  示例:
+    initializeGlobal('Mvu', Mvu);
+
+waitGlobalInitialized(name) → Promise<T>
+  等待其他脚本共享出来的全局接口初始化完毕
+
+  示例:
+    await waitGlobalInitialized('Mvu');
+    // 此后可直接使用 Mvu 对象
+
+════════════════════════════════════════
+六、iframe工具函数
+════════════════════════════════════════
+
+getIframeName() → string
+  获取当前前端界面/脚本的标识名称
+  前端界面: 'TH-message--楼层号--序号'
+  脚本: 'TH-script--脚本名--脚本id'
+
+getCurrentMessageId() → number
+  获取前端界面所在楼层的楼层号(仅前端界面可用)
+
+getScriptId() → string
+  获取脚本的脚本库id(仅脚本可用)
+
+reloadIframe() → void
+  重新加载当前前端界面/脚本(等同于window.location.reload())

@@ -1,0 +1,97 @@
+【变量读写】
+来源: @types/function/variables.d.ts, @types/iframe/variables.d.ts
+用途: 读取、修改、删除酒馆中各种作用域的变量
+
+════════════════════════════════════════
+一、变量类型(作用域)
+════════════════════════════════════════
+
+{type:'global'}      全局变量，无论哪张角色卡都共享
+{type:'character'}   角色卡变量，绑定在角色卡上
+{type:'chat'}        聊天变量，绑定在当前聊天文件
+{type:'preset'}      预设变量，绑定在当前预设
+{type:'message', message_id?:number|'latest'}  消息楼层变量，绑定在某楼层
+  message_id: 负数为深度(-1最新,-2倒数第二), 默认'latest'
+{type:'script', script_id?:string}  脚本变量，绑定在某脚本
+{type:'extension', extension_id:string}  扩展变量
+
+════════════════════════════════════════
+二、获取变量
+════════════════════════════════════════
+
+getVariables(option) → Record<string,any>
+
+  示例:
+    const vars = getVariables({type:'chat'});
+    const msgVars = getVariables({type:'message', message_id:-1});
+    const scriptVars = getVariables({type:'script'});
+    // 检查变量是否存在
+    if (_.has(vars, '神乐光.好感度')) { ... }
+
+getAllVariables() → Record<string,any>
+  获取合并后的变量表(全局→角色卡→聊天→各楼层合并)
+  仅在 iframe 内可用
+
+════════════════════════════════════════
+三、替换变量(整体覆盖)
+════════════════════════════════════════
+
+replaceVariables(variables, option) → void
+
+  示例:
+    replaceVariables({角色:{好感度:5}}, {type:'chat'});
+
+════════════════════════════════════════
+四、函数式更新
+════════════════════════════════════════
+
+updateVariablesWith(updater, option) → Record | Promise<Record>
+
+  updater: (variables) => 返回新的变量表
+
+  示例:
+    updateVariablesWith(v => {
+      _.unset(v, '神乐光.好感度');
+      return v;
+    }, {type:'chat'});
+
+════════════════════════════════════════
+五、插入/合并变量
+════════════════════════════════════════
+
+insertOrAssignVariables(variables, option) → Record
+  已存在的key会被覆盖，不存在的会新增
+
+  示例:
+    // 前: {华恋:{好感度:5}}
+    insertOrAssignVariables({华恋:{好感度:10}, 光:{好感度:5}}, {type:'chat'});
+    // 后: {华恋:{好感度:10}, 光:{好感度:5}}
+
+insertVariables(variables, option) → Record
+  仅插入不存在的key，已存在的不动
+
+  示例:
+    // 前: {华恋:{好感度:5}}
+    insertVariables({华恋:{好感度:10}, 光:{好感度:5}}, {type:'chat'});
+    // 后: {华恋:{好感度:5}, 光:{好感度:5}}  ← 华恋不变
+
+════════════════════════════════════════
+六、删除变量
+════════════════════════════════════════
+
+deleteVariable(path, option) → {variables, delete_occurred}
+
+  示例:
+    deleteVariable('华恋.好感度', {type:'chat'});
+
+════════════════════════════════════════
+七、注册变量结构(仅UI用)
+════════════════════════════════════════
+
+registerVariableSchema(schema, option) → void
+  注册zod结构后，变量管理器UI会按结构校验变量，对代码无影响
+
+  示例:
+    registerVariableSchema(z.object({
+      stat_data: z.object({ 好感度: z.number() })
+    }), {type:'message'});

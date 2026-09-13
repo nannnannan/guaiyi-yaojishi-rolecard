@@ -1,0 +1,45 @@
+EJS函数速查与内置常量
+
+═══════════════════════════════════════
+一、常用内置常量
+═══════════════════════════════════════
+
+variables         合并后的所有变量对象
+_                 Lodash库
+$                 jQuery库
+toastr            通知库（toastr.info/success/warning/error）
+userName          用户名
+charName          角色名
+lastMessageId     最后消息ID
+lastUserMessage   最后用户消息内容
+lastCharMessage   最后角色消息内容
+generateType      生成类型：normal/continue/regenerate/swipe
+runType           当前阶段：generate/preparation/render
+
+仅渲染时（runType='render'）：
+message_id        消息楼层号
+is_last           是否最后一条
+is_user           是否用户消息
+is_system         是否系统消息
+
+═══════════════════════════════════════
+二、调试方法
+═══════════════════════════════════════
+
+提示词查看器：输入框左下角魔棒 → 提示词查看器（查看实际发送内容）
+弹窗：alert('消息')
+通知：toastr.info('消息')
+控制台：console.log('消息')（F12 → Console）
+断点：<%_ debugger; _%>（F12打开后暂停执行）
+
+═══════════════════════════════════════
+三、完整函数速查
+═══════════════════════════════════════
+
+变量：getvar setvar incvar decvar delvar insvar define patchVariables
+世界书：await getwi  await activewi  await getEnabledWorldInfoEntries
+角色/预设：await getchar  await getpreset  await getqr  await getCharData
+消息：getChatMessage  getChatMessages  matchChatMessages
+输出：print  injectPrompt  getPromptsInjected  hasPromptsInjected
+正则：activateRegex
+工具：parseJSON  jsonPatch  await evalTemplate  await execute

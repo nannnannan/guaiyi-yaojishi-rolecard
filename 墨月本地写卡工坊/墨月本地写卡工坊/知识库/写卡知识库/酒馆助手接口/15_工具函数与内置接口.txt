@@ -1,0 +1,76 @@
+【工具函数与内置接口】
+来源: @types/function/util.d.ts, @types/function/builtin.d.ts
+用途: 宏替换、获取楼层号、错误处理、剪贴板、markdown渲染等工具
+
+════════════════════════════════════════
+一、酒馆助手工具函数
+════════════════════════════════════════
+
+substitudeMacros(text) → string
+  替换字符串中的酒馆宏
+  示例: substitudeMacros('{{char}} in {{lastMessageId}}') → '少女歌剧 in 5'
+
+getLastMessageId() → number
+  获取最新楼层id
+
+getMessageId(iframe_name) → number
+  从前端界面iframe标识名称获取楼层号(仅对前端界面iframe可用)
+
+errorCatched(fn) → fn
+  包装函数，使其报错时通过酒馆通知弹窗显示
+  示例:
+    function init() { throw Error('出错了'); }
+    $(() => { errorCatched(init)(); });
+
+════════════════════════════════════════
+二、酒馆内置接口 (builtin对象)
+════════════════════════════════════════
+
+builtin.addOneMessage(mes, options?)
+  向网页添加一条楼层渲染(底层操作，一般用createChatMessages代替)
+
+builtin.copyText(text)
+  复制文本到剪贴板
+
+builtin.duringGenerating() → boolean
+  当前是否正在生成中
+
+builtin.renderMarkdown(text) → string
+  将markdown渲染为html
+
+builtin.uuidv4() → string
+  生成UUID
+
+builtin.saveSettings() → Promise<void>
+  保存酒馆设置
+
+builtin.getImageTokenCost(data_url, quality) → Promise<number>
+  获取图片的token消耗
+  quality: 'low'|'auto'|'high'
+
+builtin.getVideoTokenCost(data_url) → Promise<number>
+  获取视频的token消耗
+
+builtin.parseRegexFromString(regex) → RegExp|null
+  将正则字符串解析为RegExp对象
+
+builtin.reloadAndRenderChatWithoutEvents() → Promise<void>
+  刷新当前聊天并触发渲染事件
+
+builtin.reloadChatWithoutEvents() → Promise<void>
+  刷新当前聊天但不触发事件
+
+builtin.reloadEditor(file, load_if_not_selected?)
+  刷新世界书编辑器显示
+
+builtin.reloadEditorDebounced(file, load_if_not_selected?)
+  刷新世界书编辑器显示(防抖)
+
+builtin.renderPromptManager(after_try_generate?)
+  刷新预设提示词列表
+
+builtin.renderPromptManagerDebounced(after_try_generate?)
+  刷新预设提示词列表(防抖)
+
+builtin.promptManager
+  预设提示词管理器的底层对象，可用于获取提示词集合等

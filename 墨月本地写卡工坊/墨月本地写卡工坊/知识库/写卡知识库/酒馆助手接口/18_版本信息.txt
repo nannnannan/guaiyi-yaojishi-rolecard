@@ -1,0 +1,18 @@
+【版本信息】
+来源: @types/function/version.d.ts
+用途: 获取酒馆和酒馆助手的版本号，用于兼容性判断
+
+════════════════════════════════════════
+
+getTavernVersion() → Promise<string>
+  获取SillyTavern酒馆的版本号
+  示例返回值: "1.12.9"
+
+getTavernHelperVersion() → Promise<string>
+  获取酒馆助手(TavernHelper)插件的版本号
+  示例返回值: "1.5.0"
+
+使用场景:
+  - 检查酒馆版本是否支持某个功能
+  - 检查酒馆助手版本是否满足脚本最低要求
+  - 在脚本启动时进行版本兼容性校验

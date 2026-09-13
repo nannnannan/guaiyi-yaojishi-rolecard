@@ -1,0 +1,728 @@
+{
+  "status": "events_cross_reviewed",
+  "scope": [
+    397,
+    434
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        1611,
+        1669
+      ],
+      "events": [
+        397,
+        408
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        1670,
+        1716
+      ],
+      "events": [
+        409,
+        418
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        1717,
+        1767
+      ],
+      "events": [
+        419,
+        434
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E397",
+      "title": "渡鸦残躯与细胞记忆",
+      "stage": "S53",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E397_渡鸦残躯与细胞记忆.md",
+      "output": "事件/E397_渡鸦残躯与细胞记忆.md",
+      "source_chapters": [
+        1611,
+        1614
+      ],
+      "source_lines": [
+        141073,
+        141392
+      ],
+      "next": "E398",
+      "status": "reviewed"
+    },
+    {
+      "id": "E398",
+      "title": "夏娃降临",
+      "stage": "S53",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E398_夏娃降临.md",
+      "output": "事件/E398_夏娃降临.md",
+      "source_chapters": [
+        1615,
+        1618
+      ],
+      "source_lines": [
+        141393,
+        141692
+      ],
+      "next": "E399",
+      "status": "reviewed"
+    },
+    {
+      "id": "E399",
+      "title": "夏娃进入家庭",
+      "stage": "S53",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E399_夏娃进入家庭.md",
+      "output": "事件/E399_夏娃进入家庭.md",
+      "source_chapters": [
+        1619,
+        1625
+      ],
+      "source_lines": [
+        141693,
+        142295
+      ],
+      "next": "E400",
+      "status": "reviewed"
+    },
+    {
+      "id": "E400",
+      "title": "血肉分析与私人订制",
+      "stage": "S53",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E400_血肉分析与私人订制.md",
+      "output": "事件/E400_血肉分析与私人订制.md",
+      "source_chapters": [
+        1626,
+        1630
+      ],
+      "source_lines": [
+        142296,
+        142663
+      ],
+      "status": "reviewed",
+      "next": "E401"
+    },
+    {
+      "id": "E401",
+      "title": "血肉支配者的定位",
+      "stage": "S53",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E401_血肉支配者的定位.md",
+      "output": "事件/E401_血肉支配者的定位.md",
+      "source_chapters": [
+        1631,
+        1634
+      ],
+      "source_lines": [
+        142664,
+        142988
+      ],
+      "next": "E402",
+      "status": "reviewed"
+    },
+    {
+      "id": "E402",
+      "title": "第九根源与蠕动之城",
+      "stage": "S54",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E402_第九根源与蠕动之城.md",
+      "output": "事件/E402_第九根源与蠕动之城.md",
+      "source_chapters": [
+        1635,
+        1641
+      ],
+      "source_lines": [
+        142989,
+        143492
+      ],
+      "next": "E403",
+      "status": "reviewed"
+    },
+    {
+      "id": "E403",
+      "title": "命运羽毛笔的短暂干涉",
+      "stage": "S54",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E403_命运羽毛笔的短暂干涉.md",
+      "output": "事件/E403_命运羽毛笔的短暂干涉.md",
+      "source_chapters": [
+        1642,
+        1646
+      ],
+      "source_lines": [
+        143493,
+        143872
+      ],
+      "next": "E404",
+      "status": "reviewed"
+    },
+    {
+      "id": "E404",
+      "title": "狱卒尸骸核爆与血肉世界崩坏",
+      "stage": "S54",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E404_狱卒尸骸核爆与血肉世界崩坏.md",
+      "output": "事件/E404_狱卒尸骸核爆与血肉世界崩坏.md",
+      "source_chapters": [
+        1647,
+        1650
+      ],
+      "source_lines": [
+        143873,
+        144225
+      ],
+      "next": "E405",
+      "status": "reviewed"
+    },
+    {
+      "id": "E405",
+      "title": "四线战场展开",
+      "stage": "S54",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E405_四线战场展开.md",
+      "output": "事件/E405_四线战场展开.md",
+      "source_chapters": [
+        1651,
+        1654
+      ],
+      "source_lines": [
+        144226,
+        144564
+      ],
+      "next": "E406",
+      "status": "reviewed"
+    },
+    {
+      "id": "E406",
+      "title": "旧书牵制与孽主退出",
+      "stage": "S55",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E406_旧书牵制与孽主收编.md",
+      "output": "事件/E406_旧书牵制与孽主退出.md",
+      "source_chapters": [
+        1655,
+        1661
+      ],
+      "source_lines": [
+        144565,
+        145106
+      ],
+      "next": "E407",
+      "status": "reviewed"
+    },
+    {
+      "id": "E407",
+      "title": "最后的爆弹与渡鸦屏障",
+      "stage": "S55",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E407_最后的爆弹与渡鸦屏障.md",
+      "output": "事件/E407_最后的爆弹与渡鸦屏障.md",
+      "source_chapters": [
+        1662,
+        1664
+      ],
+      "source_lines": [
+        145107,
+        145331
+      ],
+      "next": "E408",
+      "status": "reviewed"
+    },
+    {
+      "id": "E408",
+      "title": "血肉支配者陨落",
+      "stage": "S55",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E408_血肉支配者陨落.md",
+      "output": "事件/E408_血肉支配者陨落.md",
+      "source_chapters": [
+        1665,
+        1669
+      ],
+      "source_lines": [
+        145332,
+        145746
+      ],
+      "next": "E409",
+      "status": "reviewed"
+    },
+    {
+      "id": "E409",
+      "title": "诸天狱卒与康斯坦丁",
+      "stage": "S55",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E409_诸天狱卒与康斯坦丁.md",
+      "output": "事件/E409_诸天狱卒与康斯坦丁.md",
+      "source_chapters": [
+        1670,
+        1673
+      ],
+      "source_lines": [
+        145747,
+        146084
+      ],
+      "next": "E410",
+      "status": "reviewed"
+    },
+    {
+      "id": "E410",
+      "title": "旧日血肉之核",
+      "stage": "S55",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E410_旧日血肉之核.md",
+      "output": "事件/E410_旧日血肉之核.md",
+      "source_chapters": [
+        1674,
+        1676
+      ],
+      "source_lines": [
+        146085,
+        146331
+      ],
+      "next": "E411",
+      "status": "reviewed"
+    },
+    {
+      "id": "E411",
+      "title": "无尽深渊与往昔六千年",
+      "stage": "S56",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E411_无尽深渊与往昔六千年.md",
+      "output": "事件/E411_无尽深渊与往昔六千年.md",
+      "source_chapters": [
+        1677,
+        1682
+      ],
+      "source_lines": [
+        146332,
+        146783
+      ],
+      "next": "E412",
+      "status": "reviewed"
+    },
+    {
+      "id": "E412",
+      "title": "古老的堕落之心",
+      "stage": "S56",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E412_古老的堕落之心.md",
+      "output": "事件/E412_古老的堕落之心.md",
+      "source_chapters": [
+        1682,
+        1685
+      ],
+      "source_lines": [
+        146784,
+        147028
+      ],
+      "next": "E413",
+      "status": "reviewed"
+    },
+    {
+      "id": "E413",
+      "title": "母树的自然蜕变",
+      "stage": "S56",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E413_母树的自然蜕变.md",
+      "output": "事件/E413_母树的自然蜕变.md",
+      "source_chapters": [
+        1686,
+        1694
+      ],
+      "source_lines": [
+        147029,
+        147689
+      ],
+      "next": "E414",
+      "status": "reviewed"
+    },
+    {
+      "id": "E414",
+      "title": "无序三柱与渡鸦因果",
+      "stage": "S56",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E414_无序三柱与渡鸦因果.md",
+      "output": "事件/E414_无序三柱与渡鸦因果.md",
+      "source_chapters": [
+        1694,
+        1697
+      ],
+      "source_lines": [
+        147690,
+        147911
+      ],
+      "next": "E415",
+      "status": "reviewed"
+    },
+    {
+      "id": "E415",
+      "title": "第二职业与三年前身体",
+      "stage": "S56",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E415_第二职业与三年前身体.md",
+      "output": "事件/E415_第二职业与三年前身体.md",
+      "source_chapters": [
+        1697,
+        1698
+      ],
+      "source_lines": [
+        147912,
+        148037
+      ],
+      "next": "E416",
+      "status": "reviewed"
+    },
+    {
+      "id": "E416",
+      "title": "时间之外的污染者",
+      "stage": "S57",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E416_时间之外的污染者.md",
+      "output": "事件/E416_时间之外的污染者.md",
+      "source_chapters": [
+        1699,
+        1701
+      ],
+      "source_lines": [
+        148038,
+        148274
+      ],
+      "next": "E417",
+      "status": "reviewed"
+    },
+    {
+      "id": "E417",
+      "title": "时间裂隙任务",
+      "stage": "S57",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E417_时间裂隙任务.md",
+      "output": "事件/E417_时间裂隙任务.md",
+      "source_chapters": [
+        1702,
+        1710
+      ],
+      "source_lines": [
+        148275,
+        148992
+      ],
+      "next": "E418",
+      "status": "reviewed"
+    },
+    {
+      "id": "E418",
+      "title": "来自未来的苍蓝身影",
+      "stage": "S57",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E418_来自未来的苍蓝身影.md",
+      "output": "事件/E418_来自未来的苍蓝身影.md",
+      "source_chapters": [
+        1711,
+        1716
+      ],
+      "source_lines": [
+        148993,
+        149493
+      ],
+      "next": "E419",
+      "status": "reviewed"
+    },
+    {
+      "id": "E419",
+      "title": "罪孽城招募与身份揭露",
+      "stage": "S57",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E419_罪孽城招募与身份揭露.md",
+      "output": "事件/E419_罪孽城招募与身份揭露.md",
+      "source_chapters": [
+        1717,
+        1720
+      ],
+      "source_lines": [
+        149494,
+        149823
+      ],
+      "next": "E421",
+      "status": "reviewed",
+      "next_event": "E420"
+    },
+    {
+      "id": "E420",
+      "title": "罪孽城公开惩罚",
+      "stage": "S57",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E420_罪孽城公开惩罚.md",
+      "output": "事件/E420_罪孽城公开惩罚.md",
+      "source_chapters": [
+        1721,
+        1723
+      ],
+      "source_lines": [
+        149824,
+        150054
+      ],
+      "status": "reviewed"
+    },
+    {
+      "id": "E421",
+      "title": "血族诅咒压制",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E421_血族诅咒压制.md",
+      "output": "事件/E421_血族诅咒压制.md",
+      "source_chapters": [
+        1723,
+        1724
+      ],
+      "source_lines": [
+        150055,
+        150169
+      ],
+      "next": "E422",
+      "status": "reviewed"
+    },
+    {
+      "id": "E422",
+      "title": "紫黑病变证据",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E422_紫黑病变证据.md",
+      "output": "事件/E422_紫黑病变证据.md",
+      "source_chapters": [
+        1725,
+        1726
+      ],
+      "source_lines": [
+        150170,
+        150300
+      ],
+      "next": "E423",
+      "status": "reviewed"
+    },
+    {
+      "id": "E423",
+      "title": "鲜血孽灵入侵",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E423_鲜血孽灵入侵.md",
+      "output": "事件/E423_鲜血孽灵入侵.md",
+      "source_chapters": [
+        1726,
+        1729
+      ],
+      "source_lines": [
+        150301,
+        150595
+      ],
+      "next": "E424",
+      "status": "reviewed"
+    },
+    {
+      "id": "E424",
+      "title": "黑夜城增援与正义群殴",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E424_黑夜城增援与正义群殴.md",
+      "output": "事件/E424_黑夜城增援与正义群殴.md",
+      "source_chapters": [
+        1730,
+        1732
+      ],
+      "source_lines": [
+        150596,
+        150854
+      ],
+      "next": "E425",
+      "status": "reviewed"
+    },
+    {
+      "id": "E425",
+      "title": "未来林恩带走孽灵",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E425_未来林恩带走孽灵.md",
+      "output": "事件/E425_未来林恩带走孽灵.md",
+      "source_chapters": [
+        1733,
+        1734
+      ],
+      "source_lines": [
+        150855,
+        151031
+      ],
+      "next": "E426",
+      "status": "reviewed"
+    },
+    {
+      "id": "E426",
+      "title": "时间战争与三位一体承诺",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E426_时间战争与三位一体承诺.md",
+      "output": "事件/E426_时间战争与三位一体承诺.md",
+      "source_chapters": [
+        1735,
+        1737
+      ],
+      "source_lines": [
+        151032,
+        151296
+      ],
+      "next": "E427",
+      "status": "reviewed"
+    },
+    {
+      "id": "E427",
+      "title": "孽主的现实反应",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E427_孽主的现实反应.md",
+      "output": "事件/E427_孽主的现实反应.md",
+      "source_chapters": [
+        1738,
+        1739
+      ],
+      "source_lines": [
+        151297,
+        151442
+      ],
+      "next": "E428",
+      "status": "reviewed"
+    },
+    {
+      "id": "E428",
+      "title": "无尽海域起航",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E428_无尽海域起航.md",
+      "output": "事件/E428_无尽海域起航.md",
+      "source_chapters": [
+        1739,
+        1742
+      ],
+      "source_lines": [
+        151443,
+        151710
+      ],
+      "next": "E429",
+      "status": "reviewed"
+    },
+    {
+      "id": "E429",
+      "title": "深海黑体与幻境领域",
+      "stage": "S58",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E429_深海黑体与幻境领域.md",
+      "output": "事件/E429_深海黑体与幻境领域.md",
+      "source_chapters": [
+        1743,
+        1744
+      ],
+      "source_lines": [
+        151711,
+        151876
+      ],
+      "next": "E430",
+      "status": "reviewed"
+    },
+    {
+      "id": "E430",
+      "title": "深海吞噬者觉醒",
+      "stage": "S59",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E430_深海吞噬者觉醒.md",
+      "output": "事件/E430_深海吞噬者觉醒.md",
+      "source_chapters": [
+        1745,
+        1751
+      ],
+      "source_lines": [
+        151877,
+        152446
+      ],
+      "next": "E431",
+      "status": "reviewed"
+    },
+    {
+      "id": "E431",
+      "title": "西海叛乱与深渊逃亡",
+      "stage": "S59",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E431_西海叛乱与深渊逃亡.md",
+      "output": "事件/E431_西海叛乱与深渊逃亡.md",
+      "source_chapters": [
+        1752,
+        1758
+      ],
+      "source_lines": [
+        152447,
+        152957
+      ],
+      "next": "E432",
+      "status": "reviewed"
+    },
+    {
+      "id": "E432",
+      "title": "遗忘法则与小丑承诺",
+      "stage": "S59",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E432_遗忘法则与小丑承诺.md",
+      "output": "事件/E432_遗忘法则与小丑承诺.md",
+      "source_chapters": [
+        1758,
+        1760
+      ],
+      "source_lines": [
+        152958,
+        153182
+      ],
+      "next": "E433",
+      "status": "reviewed"
+    },
+    {
+      "id": "E433",
+      "title": "深海电码与第二渡鸦",
+      "stage": "S59",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E433_深海电码与第二渡鸦.md",
+      "output": "事件/E433_深海电码与第二渡鸦.md",
+      "source_chapters": [
+        1761,
+        1763
+      ],
+      "source_lines": [
+        153183,
+        153404
+      ],
+      "next": "E434",
+      "status": "reviewed"
+    },
+    {
+      "id": "E434",
+      "title": "灭绝令与八旗牢笼",
+      "stage": "S59",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段12_第1611-1767章/事件/E434_灭绝令与八旗牢笼.md",
+      "output": "事件/E434_灭绝令与八旗牢笼.md",
+      "source_chapters": [
+        1764,
+        1767
+      ],
+      "source_lines": [
+        153405,
+        153711
+      ],
+      "next": null,
+      "status": "reviewed"
+    }
+  ]
+}

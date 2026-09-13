@@ -1,0 +1,720 @@
+{
+  "concepts": [
+    {
+      "id": "C1275",
+      "title": "渡鸦残躯读取与精神过载",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C1275_渡鸦吸收与旧记忆侵蚀.md",
+      "output": "概念/C1275_渡鸦残躯读取与精神过载.md",
+      "source_events": [
+        "E397"
+      ],
+      "source_lines": [
+        [
+          141236,
+          141391
+        ]
+      ]
+    },
+    {
+      "id": "C1281",
+      "title": "细胞记忆与份额承载",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C1281_细胞承载精神与记忆.md",
+      "output": "概念/C1281_细胞记忆与份额承载.md",
+      "source_events": [
+        "E397"
+      ],
+      "source_lines": [
+        [
+          141213,
+          141243
+        ]
+      ]
+    },
+    {
+      "id": "C675",
+      "title": "诅咒加深的战场后果",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C675_血肉支配者的诅咒全面加深权柄.md",
+      "output": "概念/C675_诅咒加深的战场后果.md",
+      "source_events": [
+        "E401",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          142819,
+          142827
+        ],
+        [
+          145423,
+          145490
+        ],
+        [
+          145503,
+          145515
+        ]
+      ]
+    },
+    {
+      "id": "C784",
+      "title": "血肉剥夺范围与代价",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C784_血肉权柄剥夺.md",
+      "output": "概念/C784_血肉剥夺范围与代价.md",
+      "source_events": [
+        "E406"
+      ],
+      "source_lines": [
+        [
+          144721,
+          144810
+        ]
+      ]
+    },
+    {
+      "id": "C684",
+      "title": "命运干涉停顿与反噬",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C684_命运书写救城反噬与规则神对话.md",
+      "output": "概念/C684_命运干涉停顿与反噬.md",
+      "source_events": [
+        "E403",
+        "E405"
+      ],
+      "source_lines": [
+        [
+          143653,
+          143810
+        ],
+        [
+          144378,
+          144400
+        ]
+      ]
+    },
+    {
+      "id": "C1273",
+      "title": "时间棺椁与原初外储",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C1273_时间之外的棺椁.md",
+      "output": "概念/C1273_时间棺椁与原初外储.md",
+      "source_events": [
+        "E404",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          143900,
+          143951
+        ],
+        [
+          145553,
+          145570
+        ]
+      ]
+    },
+    {
+      "id": "C610",
+      "title": "巨像临时重组与分裂",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C610_王之号角与遮天巨像重组.md",
+      "output": "概念/C610_巨像临时重组与分裂.md",
+      "source_events": [
+        "E402",
+        "E405"
+      ],
+      "source_lines": [
+        [
+          143263,
+          143282
+        ],
+        [
+          144329,
+          144365
+        ]
+      ]
+    },
+    {
+      "id": "C1211",
+      "title": "原初外力引导与限时解限",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C1211_初诞者力量的驱动与限度.md",
+      "output": "概念/C1211_原初外力引导与限时解限.md",
+      "source_events": [
+        "E407",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          145253,
+          145301
+        ],
+        [
+          145553,
+          145659
+        ]
+      ]
+    },
+    {
+      "id": "C588",
+      "title": "旧书牵制根源的限度",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C588_看了就会死的书破解与熔断机制.md",
+      "output": "概念/C588_旧书牵制根源的限度.md",
+      "source_events": [
+        "E406"
+      ],
+      "source_lines": [
+        [
+          144629,
+          144663
+        ]
+      ]
+    },
+    {
+      "id": "C1284",
+      "title": "夏娃血肉结构与弱基因联系",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1284_夏娃血肉结构与弱基因联系.md",
+      "source_events": [
+        "E398",
+        "E399"
+      ],
+      "source_lines": [
+        [
+          141547,
+          141674
+        ],
+        [
+          141772,
+          141788
+        ],
+        [
+          142266,
+          142295
+        ]
+      ]
+    },
+    {
+      "id": "C1285",
+      "title": "血肉标本双向定位",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1285_血肉标本双向定位.md",
+      "source_events": [
+        "E401"
+      ],
+      "source_lines": [
+        [
+          142704,
+          142808
+        ],
+        [
+          142334,
+          142355
+        ]
+      ]
+    },
+    {
+      "id": "C1286",
+      "title": "蠕动之城与灵能隐匿",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1286_蠕动之城与灵能隐匿.md",
+      "source_events": [
+        "E402"
+      ],
+      "source_lines": [
+        [
+          143023,
+          143073
+        ]
+      ]
+    },
+    {
+      "id": "C1287",
+      "title": "血肉世界跃迁与核心",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1287_血肉世界跃迁与核心.md",
+      "source_events": [
+        "E403",
+        "E404"
+      ],
+      "source_lines": [
+        [
+          143753,
+          143791
+        ],
+        [
+          144071,
+          144202
+        ]
+      ]
+    },
+    {
+      "id": "C1288",
+      "title": "狱卒尸骸爆破与投送次序",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1288_狱卒尸骸爆破与投送次序.md",
+      "source_events": [
+        "E404",
+        "E406",
+        "E407"
+      ],
+      "source_lines": [
+        [
+          143945,
+          144175
+        ],
+        [
+          144565,
+          144617
+        ],
+        [
+          145164,
+          145201
+        ]
+      ]
+    },
+    {
+      "id": "C1289",
+      "title": "四线战场与空间分割",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1289_四线战场与空间分割.md",
+      "source_events": [
+        "E405"
+      ],
+      "source_lines": [
+        [
+          144226,
+          144564
+        ]
+      ]
+    },
+    {
+      "id": "C1290",
+      "title": "孽主退出战争契约",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1290_孽主退出战争契约.md",
+      "source_events": [
+        "E406"
+      ],
+      "source_lines": [
+        [
+          144946,
+          145044
+        ]
+      ]
+    },
+    {
+      "id": "C1291",
+      "title": "旧日屏障与亚当证词",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1291_旧日屏障与亚当证词.md",
+      "source_events": [
+        "E407",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          145180,
+          145301
+        ],
+        [
+          145676,
+          145722
+        ],
+        [
+          145203,
+          145241
+        ]
+      ]
+    },
+    {
+      "id": "C692",
+      "title": "幸福之家整体迁移",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/concepts/C692_爱丽丝地缚复发与古堡家人边界.md",
+      "output": "概念/C692_幸福之家整体迁移.md",
+      "source_events": [
+        "E402"
+      ],
+      "source_lines": [
+        [
+          143197,
+          143224
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "巨像之脑",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/巨像之脑/角色速览.md",
+      "output": "人物增量/巨像之脑_A.md",
+      "source_events": [
+        "E397",
+        "E398",
+        "E399",
+        "E405",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          141101,
+          141142
+        ],
+        [
+          141480,
+          141599
+        ],
+        [
+          142098,
+          142186
+        ],
+        [
+          144329,
+          144365
+        ],
+        [
+          145475,
+          145615
+        ]
+      ]
+    },
+    {
+      "name": "艾雯爵士",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/艾雯爵士/角色速览.md",
+      "output": "人物增量/艾雯爵士_A.md",
+      "source_events": [
+        "E398",
+        "E402",
+        "E404",
+        "E405",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          141480,
+          141558
+        ],
+        [
+          142990,
+          143045
+        ],
+        [
+          143969,
+          144175
+        ],
+        [
+          144226,
+          144403
+        ],
+        [
+          145475,
+          145667
+        ]
+      ]
+    },
+    {
+      "name": "自缚天使",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/倒吊天使/角色速览.md",
+      "output": "人物增量/自缚天使_A.md",
+      "source_events": [
+        "E398",
+        "E403",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          141534,
+          141700
+        ],
+        [
+          143653,
+          143826
+        ],
+        [
+          145475,
+          145736
+        ]
+      ]
+    },
+    {
+      "name": "人偶家",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/人偶家/角色速览.md",
+      "output": "人物增量/人偶家_A.md",
+      "source_events": [
+        "E398",
+        "E401",
+        "E402",
+        "E405",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          141572,
+          141597
+        ],
+        [
+          142864,
+          142950
+        ],
+        [
+          143023,
+          143029
+        ],
+        [
+          144431,
+          144488
+        ],
+        [
+          145524,
+          145624
+        ]
+      ]
+    },
+    {
+      "name": "喵喵",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/喵喵/角色速览.md",
+      "output": "人物增量/喵喵_A.md",
+      "source_events": [
+        "E399",
+        "E400"
+      ],
+      "source_lines": [
+        [
+          142153,
+          142295
+        ],
+        [
+          142357,
+          142663
+        ]
+      ]
+    },
+    {
+      "name": "小小",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/小小/角色速览.md",
+      "output": "人物增量/小小_A.md",
+      "source_events": [
+        "E399",
+        "E406"
+      ],
+      "source_lines": [
+        [
+          142033,
+          142076
+        ],
+        [
+          144791,
+          144879
+        ]
+      ]
+    },
+    {
+      "name": "血锯",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/血锯/角色速览.md",
+      "output": "人物增量/血锯_A.md",
+      "source_events": [
+        "E402",
+        "E403"
+      ],
+      "source_lines": [
+        [
+          143469,
+          143472
+        ],
+        [
+          143588,
+          143617
+        ]
+      ]
+    },
+    {
+      "name": "黑弦月",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/黑弦月/角色速览.md",
+      "output": "人物增量/黑弦月_A.md",
+      "source_events": [
+        "E402",
+        "E403",
+        "E405"
+      ],
+      "source_lines": [
+        [
+          143477,
+          143490
+        ],
+        [
+          143671,
+          143744
+        ],
+        [
+          144435,
+          144505
+        ]
+      ]
+    },
+    {
+      "name": "爱丽丝",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/爱丽丝/角色速览.md",
+      "output": "人物增量/爱丽丝_A.md",
+      "source_events": [
+        "E402"
+      ],
+      "source_lines": [
+        [
+          143178,
+          143224
+        ]
+      ]
+    },
+    {
+      "name": "血肉支配者",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/血肉支配者/角色速览.md",
+      "output": "人物增量/血肉支配者_A.md",
+      "source_events": [
+        "E401",
+        "E404",
+        "E406",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          142752,
+          142827
+        ],
+        [
+          144084,
+          144225
+        ],
+        [
+          144641,
+          144685
+        ],
+        [
+          145388,
+          145722
+        ]
+      ]
+    },
+    {
+      "name": "泰坦头颅",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/泰坦头颅/角色速览.md",
+      "output": "人物增量/泰坦头颅_A.md",
+      "source_events": [
+        "E401",
+        "E406",
+        "E407",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          142780,
+          142831
+        ],
+        [
+          144675,
+          144787
+        ],
+        [
+          145107,
+          145301
+        ],
+        [
+          145435,
+          145670
+        ]
+      ]
+    },
+    {
+      "name": "巫神头颅",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/巫神头颅/角色速览.md",
+      "output": "人物增量/巫神头颅_A.md",
+      "source_events": [
+        "E403",
+        "E405",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          143653,
+          143685
+        ],
+        [
+          144296,
+          144407
+        ],
+        [
+          145475,
+          145670
+        ]
+      ]
+    },
+    {
+      "name": "夏娃",
+      "kind": "new",
+      "base_path": null,
+      "output": "NPC/夏娃.md",
+      "source_events": [
+        "E398",
+        "E399",
+        "E400",
+        "E401",
+        "E402",
+        "E406",
+        "E408"
+      ],
+      "source_lines": [
+        [
+          141547,
+          141691
+        ],
+        [
+          142098,
+          142295
+        ],
+        [
+          142296,
+          142663
+        ],
+        [
+          142704,
+          142808
+        ],
+        [
+          143030,
+          143044
+        ],
+        [
+          144978,
+          145001
+        ],
+        [
+          145503,
+          145596
+        ]
+      ]
+    }
+  ]
+}

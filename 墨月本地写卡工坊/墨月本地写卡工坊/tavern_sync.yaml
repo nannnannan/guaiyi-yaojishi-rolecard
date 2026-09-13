@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/settings.zh.json
+
+# 这里只用于把正文中的同名占位转换为 <user>。
+# 不需要转换时保持 User；角色卡正文应优先直接使用 <user>。
+user名称: User
+
+# `pnpm new -- "角色卡名"` 会自动登记项目。
+配置: {}

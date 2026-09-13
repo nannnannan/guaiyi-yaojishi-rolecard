@@ -1,0 +1,104 @@
+【MVU变量框架】
+来源: @types/iframe/exported.mvu.d.ts
+用途: 与MVU变量框架交互——获取/修改MVU变量、解析变量更新命令、监听变量事件
+前提: 必须先 await waitGlobalInitialized('Mvu') 才能使用
+
+════════════════════════════════════════
+一、获取MVU数据
+════════════════════════════════════════
+
+Mvu.getMvuData(option) → MvuData
+
+  option: 与变量读写相同的VariableOption
+  MvuData: {
+    initialized_lorebooks: Record     // 已初始化的世界书
+    stat_data: Record<string,any>     // 实际变量数据(核心!)
+    ...
+  }
+
+  示例:
+    await waitGlobalInitialized('Mvu');
+    // 获取最新楼层的MVU数据
+    const data = Mvu.getMvuData({type:'message', message_id:'latest'});
+    const stat = data.stat_data;  // 这就是变量
+
+    // 获取前端界面所在楼层
+    const data = Mvu.getMvuData({type:'message', message_id:getCurrentMessageId()});
+
+════════════════════════════════════════
+二、替换MVU数据
+════════════════════════════════════════
+
+Mvu.replaceMvuData(mvu_data, option) → Promise<void>
+
+  示例:
+    const data = Mvu.getMvuData({type:'message', message_id:'latest'});
+    _.set(data, 'stat_data.角色.好感度', 30);
+    await Mvu.replaceMvuData(data, {type:'message', message_id:'latest'});
+
+════════════════════════════════════════
+三、解析变量更新命令
+════════════════════════════════════════
+
+Mvu.parseMessage(message, old_data) → Promise<MvuData>
+
+  解析包含 _.set() 等命令的消息字符串，更新变量
+  用于自行调用generate后手动更新变量(因为不会自动触发MVU)
+
+  示例:
+    const old_data = Mvu.getMvuData({type:'message', message_id:getCurrentMessageId()});
+    const message = await generate({user_input:'你好'});
+    const new_data = await Mvu.parseMessage(message, old_data);
+    await Mvu.replaceMvuData(new_data, {type:'message', message_id:getCurrentMessageId()});
+
+════════════════════════════════════════
+四、MVU事件
+════════════════════════════════════════
+
+Mvu.events.VARIABLE_INITIALIZED
+  新开聊天时变量初始化完成
+  listener: (variables, swipe_id) => void
+
+Mvu.events.VARIABLE_UPDATE_STARTED
+  变量更新开始
+  listener: (variables) => void
+
+Mvu.events.COMMAND_PARSED
+  变量更新命令解析完成(可修复命令!)
+  listener: (variables, commands, message_content) => void
+
+  命令类型: set|insert|delete|add|move
+  每个命令: {type, full_match, args:[], reason}
+
+  示例:
+    // 修复gemini在中文间加的'-'
+    eventOn(Mvu.events.COMMAND_PARSED, (vars, commands) => {
+      commands.forEach(cmd => { cmd.args[0] = cmd.args[0].replaceAll('-',''); });
+    });
+
+Mvu.events.VARIABLE_UPDATE_ENDED
+  变量更新结束(可修改最终结果!)
+  listener: (new_variables, old_variables) => void
+
+  示例:
+    // 限制好感度0~100
+    eventOn(Mvu.events.VARIABLE_UPDATE_ENDED, vars => {
+      _.update(vars, 'stat_data.角色.好感度', v => _.clamp(v, 0, 100));
+    });
+
+    // 限制变动幅度不超过3
+    eventOn(Mvu.events.VARIABLE_UPDATE_ENDED, (newV, oldV) => {
+      const oldVal = _.get(oldV, 'stat_data.角色.好感度');
+      _.update(newV, 'stat_data.角色.好感度', v => _.clamp(v, oldVal-3, oldVal+3));
+    });
+
+Mvu.events.BEFORE_MESSAGE_UPDATE
+  即将用更新后的变量更新楼层
+  listener: ({variables, message_content}) => void
+
+════════════════════════════════════════
+五、其他
+════════════════════════════════════════
+
+Mvu.isDuringExtraAnalysis() → boolean
+  酒馆是否正在进行额外模型解析

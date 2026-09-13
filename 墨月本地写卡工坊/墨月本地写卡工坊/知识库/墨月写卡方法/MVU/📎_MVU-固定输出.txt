@@ -1,0 +1,115 @@
+{{addvar::active_workshop_task::
+<workshop_task id="mvu_fixed_output">
+  <mission>依据当前角色卡初始模板，只原样交付MVU不随角色设计变化的变量列表、变量输出格式及其世界书配置；不读取任何自定义变量终稿，不进行创作型讨论。</mission>
+  <knowledge>本轮只调用并执行名为 knowledge_mvu_fixed_output 的知识标签。标签内标记为当前模板正文的内容是唯一来源，不从聊天历史或其他资料补写替代版本。</knowledge>
+  <artifact>依次输出变量列表、[mvu_update]变量输出格式和两者的世界书配置；每份内容独立代码块、完整可复制。</artifact>
+  <units>核对当前模板版本；逐字复制变量列表；逐字复制变量输出格式；复核标签、深度、角色、顺序和递归；形成完成哨兵。</units>
+  <boundaries>不得改写、翻译、精简或优化固定正文；不得把用户变量代入模板；不得增加变量、initvar、更新规则、正则、状态栏、EJS或当前模板未列出的额外输出。</boundaries>
+  <validation>变量列表使用单数&lt;status_current_variable&gt;；输出格式与当前初始模板逐行一致；两项世界书配置均使用系统D0、顺序14720和双向禁止递归；没有正则。</validation>
+  <stop>两项固定正文及其配置全部输出并核对后停止。若用户只要求其中一项，只输出所要求正文及配置；不借机重复整套。</stop>
+</workshop_task>
+}}{{trim}}
+
+<knowledge_mvu_fixed_output>
+# MVU专项：固定输出
+
+## 一、条目性质
+
+本条目不是设计助手，只负责当前模板中的“变量列表”和“变量输出格式”两项MVU固定正文及世界书配置。普通模式不设计或生成正则，统一正则文件由用户另行提供。用户要求整套时直接按下列顺序交付，不询问角色名、变量内容或玩法。
+
+本提示词源文件中的酒馆宏使用反斜杠保护，防止写卡预设自身提前展开。向用户输出变量列表时，必须去掉保护用反斜杠，最终正文中应出现两个普通左花括号和两个普通右花括号。
+
+## 二、固定输出一：变量列表
+
+条目名固定为`变量列表`，正文逐字输出为：
+
+```yaml
+---
+<status_current_variable>
+\{\{format_message_variable::stat_data\}\}
+</status_current_variable>
+```
+
+不得添加`[mvu_update]`前缀，不得把标签改成复数，不得把宏展开成某一轮变量值。
+
+## 三、固定输出二：[mvu_update]变量输出格式
+
+条目名固定为`[mvu_update]变量输出格式`，正文逐字输出为：
+
+```yaml
+---
+变量输出格式:
+  rule:
+    - you must output the update analysis and the actual update commands at once in the end of the next reply
+    - the update commands works like the **JSON Patch (RFC 6902)** standard, must be a valid JSON array containing operation objects, but supports the following operations instead:
+      - replace: replace the value of existing paths
+      - delta: update the value of existing number paths by a delta value
+      - insert: insert new items into an object or array (using `-` as array index intends appending to the end)
+      - remove
+      - move
+    - don't update field names starts with `_` as they are readonly, such as `_变量`
+  format: |-
+    <UpdateVariable>
+    <Analysis>$(IN ENGLISH, no more than 80 words)
+    - ${calculate time passed: ...}
+    - ${decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes/no}
+    - ${analyze every variable based on its corresponding `check`, according only to current reply instead of previous plots: ...}
+    </Analysis>
+    <JSONPatch>
+    [
+      { "op": "replace", "path": "${/path/to/variable}", "value": "${new_value}" },
+      { "op": "delta", "path": "${/path/to/number/variable}", "value": "${positive_or_negative_delta}" },
+      { "op": "insert", "path": "${/path/to/object/new_key}", "value": "${new_value}" },
+      { "op": "insert", "path": "${/path/to/array/-}", "value": "${new_value}" },
+      { "op": "remove", "path": "${/path/to/object/key}" },
+      { "op": "remove", "path": "${/path/to/array/0}" },
+      { "op": "move", "from": "${/path/to/variable}", "to": "${/path/to/another/path}" },
+      ...
+    ]
+    </JSONPatch>
+    </UpdateVariable>
+```
+
+花括号内的`${...}`是固定格式示意，不得替换成用户变量，也不得删除省略号。
+
+## 四、固定输出配置
+
+整套交付时输出：
+
+```yaml
+固定输出配置:
+  变量列表:
+    启用: true
+    激活策略: 蓝灯
+    插入位置: 指定深度
+    角色: 系统
+    深度: 0
+    顺序: 14720
+    不可被其他条目激活: true
+    不可激活其他条目: true
+
+  '[mvu_update]变量输出格式':
+    启用: true
+    激活策略: 蓝灯
+    插入位置: 指定深度
+    角色: 系统
+    深度: 0
+    顺序: 14720
+    不可被其他条目激活: true
+    不可激活其他条目: true
+```
+
+## 五、输出纪律与自查
+
+输出时，每个代码块前只写输出项或配置名称。允许在YAML中使用`# @qk-unit | ...`控制注释，但清洗后固定正文必须与本条目完全一致。最后一个配置代码块内写`# @qk-complete | 工件=MVU固定输出 | 已闭合=变量列表,变量输出格式,配置`。
+
+完成前逐项检查：
+
+1. 变量列表是单数标签，宏未被展开、未带保护反斜杠。
+2. 变量输出格式逐行完整，操作名和XML标签没有改写。
+3. 世界书条目均为系统D0、顺序14720、双向禁止递归。
+4. 没有输出initvar、更新规则、用户变量、正则、状态栏或当前模板外的额外内容。
+
+全部正确后停止，并提醒用户下一步开启“MVU·状态栏需求判定”。不再讲解MVU原理。
+当本条目完成最终交付时，最终回复的最后一句固定为：“请保存本轮最终内容，并隐藏本次使用本条目产生的所有楼层。”讨论仍在继续时不提前发送这句话。
+</knowledge_mvu_fixed_output>

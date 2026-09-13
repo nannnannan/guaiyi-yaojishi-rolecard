@@ -1,0 +1,64 @@
+EJS多阶段人设系统
+
+═══════════════════════════════════════
+一、多阶段人设（控制器+分阶段条目）
+═══════════════════════════════════════
+
+结构：
+  控制器条目（蓝灯永久激活）→ 读变量 → getwi加载对应阶段条目
+  阶段条目（禁用）→ 被控制器按需加载
+
+控制器写法：
+<%_
+if (typeof goodwill === 'undefined') var goodwill = getvar('stat_data.好感度', { defaults: 0 });
+_%>
+<%_ if (goodwill < 30) { _%>
+<%- await getwi('角色_阶段01') %>
+<%_ } else if (goodwill < 60) { _%>
+<%- await getwi('角色_阶段02') %>
+<%_ } else { _%>
+<%- await getwi('角色_阶段03') %>
+<%_ } _%>
+
+条目配置：
+  控制器   → 蓝灯永久激活，顺序100
+  阶段条目 → 禁用，顺序98~800
+
+防重复声明（多条目共享变量名时必用）：
+if (typeof value === 'undefined') var value = getvar('路径', { defaults: 0 });
+
+或使用 @@private 装饰器自动包裹作用域。
+
+═══════════════════════════════════════
+二、@@iframe状态栏示例
+═══════════════════════════════════════
+
+@@render_after
+@@iframe
+@@if !is_user && !is_system
+<html>
+<head></head>
+<body>
+<div>
+好感度：<%- variables.stat_data.角色.好感度 %>
+</div>
+</body>
+</html>
+
+折叠版：
+@@render_after
+@@iframe 状态栏（点击展开）
+@@if !is_user && !is_system
+<html>...内容...</html>
+
+═══════════════════════════════════════
+三、@@preprocessing动态激活示例
+═══════════════════════════════════════
+
+@@preprocessing
+<%_ if (getvar('stat_data.天气') === '晴天') { _%>
+晴天关键词
+<%_ } _%>
+
+条目内容处理后变为"晴天关键词"，激活以此为绿灯关键词的其他条目。
+要求：SillyTavern 1.13.4+

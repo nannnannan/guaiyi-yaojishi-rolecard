@@ -1,0 +1,48 @@
+【角色卡信息(只读)】
+来源: @types/function/raw_character.d.ts
+用途: 获取角色卡底层数据、头像路径、聊天历史摘要(只读，不修改)
+
+════════════════════════════════════════
+一、获取角色卡原始数据
+════════════════════════════════════════
+
+getCharData(name) → SillyTavern.v1CharData | null
+  获取角色卡的原始数据对象
+  name: 角色名或 'current'(当前角色卡)
+
+getCharAvatarPath(name) → string | null
+  获取角色卡头像路径
+
+════════════════════════════════════════
+二、聊天历史
+════════════════════════════════════════
+
+getChatHistoryBrief(name, allowAvatar?) → Promise<any[]|null>
+  获取角色的聊天历史摘要列表
+
+getChatHistoryDetail(data, isGroupChat?) → Promise<Record|null>
+  获取聊天历史详情
+
+════════════════════════════════════════
+三、RawCharacter 类
+════════════════════════════════════════
+
+RawCharacter 类提供更多底层方法:
+
+  RawCharacter.find({name:'current'}) → v1CharData
+    按名称查找角色卡数据
+
+  RawCharacter.findCharacterIndex(name) → number
+    查找角色卡在数组中的索引
+
+  RawCharacter.getChatsFromFiles(data, isGroupChat) → Promise<Record>
+    从聊天文件获取聊天内容
+
+  实例方法(需 new RawCharacter(charData)):
+    .getCardData() → v1CharData         // 完整角色数据
+    .getAvatarId() → string             // 头像ID
+    .getRegexScripts() → RegexScript[]   // 局部正则脚本
+    .getCharacterBook() → Book|null      // 角色书(内嵌世界书)
+    .getWorldName() → string             // 角色世界书名称
+
+注意: 如果要修改角色卡，请使用 19_角色卡管理.txt 中的接口。

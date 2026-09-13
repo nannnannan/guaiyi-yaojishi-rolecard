@@ -1,0 +1,244 @@
+{
+  "status": "passed",
+  "checks": 21784,
+  "errors": [],
+  "warnings": [],
+  "planned_events": 38,
+  "written_events": 38,
+  "blank_events": [],
+  "events": [
+    {
+      "id": "E397",
+      "blank": false,
+      "chars": 926,
+      "length_exception": null
+    },
+    {
+      "id": "E398",
+      "blank": false,
+      "chars": 712,
+      "length_exception": null
+    },
+    {
+      "id": "E399",
+      "blank": false,
+      "chars": 795,
+      "length_exception": null
+    },
+    {
+      "id": "E400",
+      "blank": false,
+      "chars": 1113,
+      "length_exception": "药剂失控与私人订制过程需直写，默认走向略超1000字。"
+    },
+    {
+      "id": "E401",
+      "blank": false,
+      "chars": 648,
+      "length_exception": null
+    },
+    {
+      "id": "E402",
+      "blank": false,
+      "chars": 836,
+      "length_exception": null
+    },
+    {
+      "id": "E403",
+      "blank": false,
+      "chars": 721,
+      "length_exception": null
+    },
+    {
+      "id": "E404",
+      "blank": false,
+      "chars": 676,
+      "length_exception": null
+    },
+    {
+      "id": "E405",
+      "blank": false,
+      "chars": 606,
+      "length_exception": null
+    },
+    {
+      "id": "E406",
+      "blank": false,
+      "chars": 734,
+      "length_exception": null
+    },
+    {
+      "id": "E407",
+      "blank": false,
+      "chars": 693,
+      "length_exception": null
+    },
+    {
+      "id": "E408",
+      "blank": false,
+      "chars": 754,
+      "length_exception": null
+    },
+    {
+      "id": "E409",
+      "blank": false,
+      "chars": 764,
+      "length_exception": null
+    },
+    {
+      "id": "E410",
+      "blank": false,
+      "chars": 668,
+      "length_exception": null
+    },
+    {
+      "id": "E411",
+      "blank": false,
+      "chars": 1066,
+      "length_exception": "NSFW补给与动机回指织入，事实连续保留"
+    },
+    {
+      "id": "E412",
+      "blank": false,
+      "chars": 710,
+      "length_exception": null
+    },
+    {
+      "id": "E413",
+      "blank": false,
+      "chars": 1440,
+      "length_exception": "NSFW补写织入默认走向，事实连续保留，不机械压缩"
+    },
+    {
+      "id": "E414",
+      "blank": false,
+      "chars": 747,
+      "length_exception": null
+    },
+    {
+      "id": "E415",
+      "blank": false,
+      "chars": 546,
+      "length_exception": null
+    },
+    {
+      "id": "E416",
+      "blank": false,
+      "chars": 572,
+      "length_exception": null
+    },
+    {
+      "id": "E417",
+      "blank": false,
+      "chars": 1958,
+      "length_exception": "多场景连续事实与分步选择保留，未机械补足或压缩独立事实"
+    },
+    {
+      "id": "E418",
+      "blank": false,
+      "chars": 1143,
+      "length_exception": "NSFW补写织入默认走向，事实连续保留，不机械压缩"
+    },
+    {
+      "id": "E419",
+      "blank": false,
+      "chars": 1137,
+      "length_exception": "NSFW补写织入默认走向，事实连续保留，不机械压缩"
+    },
+    {
+      "id": "E420",
+      "blank": false,
+      "chars": 1164,
+      "length_exception": "公开惩罚含药剂强制、当众体罚与催情失控多步机制，须保留完整性虐因果"
+    },
+    {
+      "id": "E421",
+      "blank": false,
+      "chars": 740,
+      "length_exception": null
+    },
+    {
+      "id": "E422",
+      "blank": false,
+      "chars": 692,
+      "length_exception": null
+    },
+    {
+      "id": "E423",
+      "blank": false,
+      "chars": 607,
+      "length_exception": null
+    },
+    {
+      "id": "E424",
+      "blank": false,
+      "chars": 689,
+      "length_exception": null
+    },
+    {
+      "id": "E425",
+      "blank": false,
+      "chars": 933,
+      "length_exception": null
+    },
+    {
+      "id": "E426",
+      "blank": false,
+      "chars": 940,
+      "length_exception": null
+    },
+    {
+      "id": "E427",
+      "blank": false,
+      "chars": 801,
+      "length_exception": null
+    },
+    {
+      "id": "E428",
+      "blank": false,
+      "chars": 1074,
+      "length_exception": "NSFW补写织入编组磨合与海域限制，事实连续保留，不机械压缩"
+    },
+    {
+      "id": "E429",
+      "blank": false,
+      "chars": 591,
+      "length_exception": null
+    },
+    {
+      "id": "E430",
+      "blank": false,
+      "chars": 1373,
+      "length_exception": "多步战斗机制和留白后保留独立信息"
+    },
+    {
+      "id": "E431",
+      "blank": false,
+      "chars": 1135,
+      "length_exception": "多步战斗机制和留白后保留独立信息"
+    },
+    {
+      "id": "E432",
+      "blank": false,
+      "chars": 747,
+      "length_exception": null
+    },
+    {
+      "id": "E433",
+      "blank": false,
+      "chars": 681,
+      "length_exception": null
+    },
+    {
+      "id": "E434",
+      "blank": false,
+      "chars": 1111,
+      "length_exception": "围困主线并入蚀痕赤裸分身凝出与多点诱饵，事实连续保留，不机械压缩"
+    }
+  ],
+  "concepts": 56,
+  "characters": 27,
+  "complete": true,
+  "integrated": false,
+  "real_host": "deferred"
+}

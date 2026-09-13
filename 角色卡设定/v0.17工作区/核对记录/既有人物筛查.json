@@ -1,0 +1,282 @@
+[
+  {
+    "name": "a01银色幻想",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/a01银色幻想",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "万机之神",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/万机之神",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "人偶夫人",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/人偶夫人",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "人偶家",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/人偶家",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/人偶家_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "倒吊天使",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/倒吊天使",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/自缚天使_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "哭泣小丑",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/哭泣小丑",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/哭泣小丑_B.md",
+      "人物增量/哭泣小丑_C.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "喵喵",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/喵喵",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/喵喵_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "奈奈子",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/奈奈子",
+    "status": "separate_time_version",
+    "outputs": [
+      "NPC/未来画家.md"
+    ],
+    "basis": "B9—B10，未来画家采用独立时间版本资料，不倒灌当前奈奈子的知识与行为"
+  },
+  {
+    "name": "小宝贝",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/小宝贝",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "小小",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/小小",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/小小_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "左左",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/左左",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/左左_B.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "巨像之脑",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/巨像之脑",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/巨像之脑_A.md",
+      "人物增量/巨像之脑_C.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "巫神头颅",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/巫神头颅",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/巫神头颅_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "弥赛亚",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/弥赛亚",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "拥星者",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/拥星者",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "智脑",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/智脑",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "林樱",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/林樱",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "欲望母树",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/欲望母树",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/欲望母树_B.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "泰坦头颅",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/泰坦头颅",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/泰坦头颅_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "渡鸦",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/渡鸦",
+    "status": "covered_by_concept_increment",
+    "outputs": [
+      "概念/C1275_渡鸦残躯读取与精神过载.md",
+      "概念/C1281_细胞记忆与份额承载.md",
+      "概念/C1291_旧日屏障与亚当证词.md",
+      "概念/C1303_旧神碑林与历史影像证据.md"
+    ],
+    "basis": "新事实已在相应概念中逐事件登记；身份线索与远方反噬不重复扩写成未经证实的人物履历"
+  },
+  {
+    "name": "爱丽丝",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/爱丽丝",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/爱丽丝_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "猪头屠夫",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/猪头屠夫",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "白夜",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/白夜",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "白逸",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/白逸",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "羽毛笔",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/羽毛笔",
+    "status": "covered_by_concept_increment",
+    "outputs": [
+      "概念/C684_命运干涉停顿与反噬.md"
+    ],
+    "basis": "新事实已在相应概念中逐事件登记；身份线索与远方反噬不重复扩写成未经证实的人物履历"
+  },
+  {
+    "name": "老人",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/老人",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "艾雯爵士",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/艾雯爵士",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/艾雯爵士_A.md",
+      "人物增量/艾雯爵士_C.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "血肉支配者",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/血肉支配者",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/血肉支配者_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "血衣女士",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/血衣女士",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "血锯",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/血锯",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/血锯_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "视界之主",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/视界之主",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "黑弦月",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/黑弦月",
+    "status": "increment_authored",
+    "outputs": [
+      "人物增量/黑弦月_A.md"
+    ],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "黑白小丑",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/黑白小丑",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  },
+  {
+    "name": "黑颅",
+    "base_path": "角色卡本体/诡异药剂师_MVU_v0.16/src/characters/黑颅",
+    "status": "no_new_independent_increment",
+    "outputs": [],
+    "basis": "A1—A12、B1—B10、C1—C11逐包人物事实筛查；仅有称呼、旧状态延续或未到场者不另造增量"
+  }
+]

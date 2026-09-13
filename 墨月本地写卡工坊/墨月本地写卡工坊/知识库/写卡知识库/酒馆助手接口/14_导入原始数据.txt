@@ -1,0 +1,36 @@
+【导入原始数据】
+来源: @types/function/import_raw.d.ts
+用途: 像酒馆界面里那样导入角色卡、聊天记录、预设、世界书、正则
+
+════════════════════════════════════════
+
+importRawCharacter(filename, content:Blob) → Promise<Response>
+  导入角色卡(新建/更新)
+  示例:
+    const resp = await fetch(角色卡链接);
+    await importRawCharacter('角色名.png', await resp.blob());
+
+importRawChat(filename, content:string) → Promise<Response>
+  导入聊天文件(仅能导入到当前角色卡)
+  注意: filename实际不会作为最终文件名
+  示例:
+    const resp = await fetch(聊天文件链接);
+    await importRawChat('chat.jsonl', await resp.text());
+
+importRawPreset(filename, content:string) → Promise<boolean>
+  导入预设(新建/更新)
+  示例:
+    const resp = await fetch(预设链接);
+    await importRawPreset('预设名.json', await resp.text());
+
+importRawWorldbook(filename, content:string) → Promise<Response>
+  导入世界书(新建/更新)
+  示例:
+    const resp = await fetch(世界书链接);
+    await importRawWorldbook('世界书名.json', await resp.text());
+
+importRawTavernRegex(filename, content:string) → boolean
+  导入酒馆正则
+  示例:
+    const resp = await fetch(正则链接);
+    importRawTavernRegex('正则名.json', await resp.text());
