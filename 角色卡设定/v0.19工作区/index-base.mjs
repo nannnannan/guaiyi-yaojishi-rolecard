@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url)),workspace=path.resolve(root,'../..');
+const base='角色卡本体/诡异药剂师_MVU_v0.18';
+const wb=JSON.parse(fs.readFileSync(path.join(workspace,base,'src/worldbook.json'),'utf8'));
+const entries=wb.entries.filter(e=>e.comment?.includes('概念')).map(e=>({uid:e.id,title:e.comment,keys:e.keys,files:[e.content_file,...(e.content_files||[])].filter(Boolean)}));
+fs.mkdirSync(path.join(root,'核对记录'),{recursive:true});
+fs.writeFileSync(path.join(root,'核对记录/既有概念索引.json'),JSON.stringify(entries,null,2)+'\n');
+const files=fs.readdirSync(path.join(workspace,base,'src/concepts'),{recursive:true}).filter(f=>f.endsWith('.md'));
+const logical=files.map(file=>({id:file.match(/(?:^|[\\/])(C\d+)_/)?.[1],file:`${base}/src/concepts/${file.replaceAll('\\','/')}`})).filter(x=>x.id);
+fs.writeFileSync(path.join(root,'核对记录/既有逻辑编号.json'),JSON.stringify(logical,null,2)+'\n');
+const characters=fs.readdirSync(path.join(workspace,base,'src/characters'),{withFileTypes:true}).filter(e=>e.isDirectory()).map(e=>({name:e.name,base_path:`${base}/src/characters/${e.name}`,status:'pending'}));
+fs.writeFileSync(path.join(root,'核对记录/既有人物筛查.json'),JSON.stringify(characters,null,2)+'\n');
+console.log(JSON.stringify({concept_entries:entries.length,logical:logical.length,max_id:Math.max(...logical.map(x=>+x.id.slice(1))),characters:characters.length}));

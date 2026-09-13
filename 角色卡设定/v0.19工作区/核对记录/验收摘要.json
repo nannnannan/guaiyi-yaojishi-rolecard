@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "checks": 28920,
+  "errors": [],
+  "warnings": [],
+  "planned_events": 48,
+  "written_events": 48,
+  "blank_events": [],
+  "events": [
+    {
+      "id": "E493",
+      "blank": false,
+      "chars": 940,
+      "length_exception": null
+    },
+    {
+      "id": "E494",
+      "blank": false,
+      "chars": 1992,
+      "length_exception": "银幻上传抛芯截戟多线，默认走向略超重大上限"
+    },
+    {
+      "id": "E495",
+      "blank": false,
+      "chars": 3099,
+      "length_exception": "拖无序下地至夺控冲心跨包完成态，字数超重大上限"
+    },
+    {
+      "id": "E496",
+      "blank": false,
+      "chars": 923,
+      "length_exception": null
+    },
+    {
+      "id": "E497",
+      "blank": false,
+      "chars": 2043,
+      "length_exception": null
+    },
+    {
+      "id": "E498",
+      "blank": false,
+      "chars": 618,
+      "length_exception": null
+    },
+    {
+      "id": "E499",
+      "blank": false,
+      "chars": 787,
+      "length_exception": null
+    },
+    {
+      "id": "E500",
+      "blank": false,
+      "chars": 1025,
+      "length_exception": "共浴开端直写，略超常规上限"
+    },
+    {
+      "id": "E501",
+      "blank": false,
+      "chars": 987,
+      "length_exception": null
+    },
+    {
+      "id": "E502",
+      "blank": false,
+      "chars": 998,
+      "length_exception": null
+    },
+    {
+      "id": "E503",
+      "blank": false,
+      "chars": 2287,
+      "length_exception": "反叛＋吞噬升格与拟态直写，略超重大事件上限"
+    },
+    {
+      "id": "E504",
+      "blank": false,
+      "chars": 1801,
+      "length_exception": null
+    },
+    {
+      "id": "E505",
+      "blank": false,
+      "chars": 971,
+      "length_exception": null
+    },
+    {
+      "id": "E506",
+      "blank": false,
+      "chars": 3117,
+      "length_exception": "两段界门+万机再现+降阶莫比乌斯+现实双开门全文，重大机制展开"
+    },
+    {
+      "id": "E507",
+      "blank": false,
+      "chars": 1804,
+      "length_exception": null
+    },
+    {
+      "id": "E508",
+      "blank": false,
+      "chars": 2462,
+      "length_exception": "跨A10起手至A11心灵海截击全文（诅咒拉回/五台光门/西方坐标/二次巨构），机制纠偏长篇"
+    },
+    {
+      "id": "E509",
+      "blank": false,
+      "chars": 1477,
+      "length_exception": "B1边境机制纠偏中篇（无坐标界门/七千年呼唤/外来者解说/五台特化起手），字数介于常规与重大之间"
+    },
+    {
+      "id": "E510",
+      "blank": false,
+      "chars": 574,
+      "length_exception": null
+    },
+    {
+      "id": "E511",
+      "blank": false,
+      "chars": 1967,
+      "length_exception": "跨B1人偶/巨像抽出与B2奇异世界批量交机至九台加压，机制纠偏长篇"
+    },
+    {
+      "id": "E512",
+      "blank": false,
+      "chars": 1886,
+      "length_exception": "双机稀释至渡鸦化与战前计划全文揭示，机制纠偏长篇"
+    },
+    {
+      "id": "E513",
+      "blank": false,
+      "chars": 2515,
+      "length_exception": "B3全幅入海至顶缘（双林恩读忆/交尸独攀），机制纠偏长篇"
+    },
+    {
+      "id": "E514",
+      "blank": false,
+      "chars": 1876,
+      "length_exception": "B4前段刺胸熔铸与矩阵启动分拍至银幻即将夺权"
+    },
+    {
+      "id": "E515",
+      "blank": false,
+      "chars": 3500,
+      "length_exception": "跨B4夺权升神至B5苍蓝进食本体完成，不具名奈奈子"
+    },
+    {
+      "id": "E516",
+      "blank": false,
+      "chars": 3844,
+      "length_exception": "独留收尾→奇点归墟→现实临时容器→壁咚银幻归心；巨像醒转留给E517"
+    },
+    {
+      "id": "E517",
+      "blank": false,
+      "chars": 467,
+      "length_exception": "E516已收壁咚归心；本事件仅巨像醒转吐槽「又多了一位」，事实短不凑字"
+    },
+    {
+      "id": "E518",
+      "blank": false,
+      "chars": 2358,
+      "length_exception": "跨B6呼叫入口+回城灾厄前锋与B7意识域摊牌至「开始吧」；早期包段不倒灌全谈"
+    },
+    {
+      "id": "E519",
+      "blank": false,
+      "chars": 1311,
+      "length_exception": "迁神具名+当世无序化+地狱侧第二轮收割兑现；删屏障/四王后篇幅不足不凑字"
+    },
+    {
+      "id": "E520",
+      "blank": false,
+      "chars": 1697,
+      "length_exception": "一月混乱+时间战争×54机制+会议口头说明；止于污染警示，三柱长谈不倒灌故不足2200不凑"
+    },
+    {
+      "id": "E521",
+      "blank": false,
+      "chars": 2761,
+      "length_exception": "B9新神理论＋封神点名＋玻璃珠分发全文；删以太回声／全地狱表决／席位确认"
+    },
+    {
+      "id": "E522",
+      "blank": false,
+      "chars": 950,
+      "length_exception": "房内灌输实施（过程不展开）＋主动飞罪；介于常规与机制展开之间"
+    },
+    {
+      "id": "E523",
+      "blank": false,
+      "chars": 2883,
+      "length_exception": "跨B10误认劝停晕血至B11咬透恢复；幼态非性越界过程不展开"
+    },
+    {
+      "id": "E524",
+      "blank": false,
+      "chars": 1042,
+      "length_exception": "B11渡鸦节点调查前半至平台惊停；神王／三招不入包"
+    },
+    {
+      "id": "E525",
+      "blank": false,
+      "chars": 2766,
+      "length_exception": "跨C1空平台神王当面至C2多次再来秒回；一击未竟+因果可视+规则演示，字数超重大上限"
+    },
+    {
+      "id": "E526",
+      "blank": false,
+      "chars": 814,
+      "length_exception": null
+    },
+    {
+      "id": "E527",
+      "blank": false,
+      "chars": 956,
+      "length_exception": "半封卡战争+自造丰碑闭环+左左斩碑跨包，略超常规上限"
+    },
+    {
+      "id": "E528",
+      "blank": false,
+      "chars": 1405,
+      "length_exception": "空间自证+再战神王星系半米反制+当世无敌遣返定志，介于常规与重大之间"
+    },
+    {
+      "id": "E529",
+      "blank": false,
+      "chars": 1940,
+      "length_exception": "失踪一月+夏娃战书+巨像镜像力量法则全程至点名泰坦拒保护"
+    },
+    {
+      "id": "E530",
+      "blank": false,
+      "chars": 2044,
+      "length_exception": "私藏汇总审判+三日空窗+广场熔烧试探+左左照+四角裤坐实"
+    },
+    {
+      "id": "E531",
+      "blank": false,
+      "chars": 1795,
+      "length_exception": "硬盘审判+夏娃巨像原委+死水之鱼+天道创规则+银幻信任表态"
+    },
+    {
+      "id": "E532",
+      "blank": false,
+      "chars": 1741,
+      "length_exception": "杀意程序科技战+迁坐标+创造教学虚无破茧+拥抱钩子，略低于重大下限仍按重大机制"
+    },
+    {
+      "id": "E533",
+      "blank": false,
+      "chars": 627,
+      "length_exception": null
+    },
+    {
+      "id": "E534",
+      "blank": false,
+      "chars": 1245,
+      "length_exception": "私核坦白与保密轴，略超普通上限"
+    },
+    {
+      "id": "E535",
+      "blank": false,
+      "chars": 774,
+      "length_exception": null
+    },
+    {
+      "id": "E536",
+      "blank": false,
+      "chars": 785,
+      "length_exception": null
+    },
+    {
+      "id": "E537",
+      "blank": false,
+      "chars": 898,
+      "length_exception": null
+    },
+    {
+      "id": "E538",
+      "blank": false,
+      "chars": 890,
+      "length_exception": null
+    },
+    {
+      "id": "E539",
+      "blank": false,
+      "chars": 949,
+      "length_exception": null
+    },
+    {
+      "id": "E540",
+      "blank": false,
+      "chars": 1099,
+      "length_exception": "起航收束与争霸战报压缩，略超普通上限"
+    }
+  ],
+  "concepts": 64,
+  "characters": 25,
+  "complete": true,
+  "integrated": false,
+  "real_host": "deferred"
+}

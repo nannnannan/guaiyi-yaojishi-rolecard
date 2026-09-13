@@ -1,0 +1,55 @@
+project:
+  name: v0.19阶段十四设定精修
+  status: authoring
+  runtime_base: 角色卡本体/诡异药剂师_MVU_v0.18
+  runtime_version: 0.18.0
+  runtime_terminal_event: E492
+  candidate_label: v0.19
+scope:
+  chapters: [1927, 2086]
+  events: [E493, E540]
+  planned_event_count: 48
+  runtime_stages: [S67, S73]
+  source: 角色卡设定/原文.txt
+  source_ledger: 来源台账.json
+  candidate_slice: 角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章
+  future: 不读取或引入2087章之后正文
+groups:
+  A: {chapters: [1927, 1980], events: [E493, E508]}
+  B: {chapters: [1981, 2033], events: [E509, E524]}
+  C: {chapters: [2034, 2086], events: [E525, E540]}
+writing:
+  nsfw: 事实成立则直写；事实不足才留白；不写占位、叠甲、回避话术或非性替代；幼态/幼年体外形固定非性
+  whitespace_priority: 事实不足处留白，不凑字；留白不是 NSFW 回避手段
+  player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
+  evidence: 原文是唯一事实来源；事件正文以核对记录为准，旧切片只作待核线索
+  events: 普通默认走向500至1000字，重大事件约2000字，事实不足与留白不填充
+  concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件；新增概念逻辑编号建议自C1389起
+  metadata: 章节与行号仅放核对记录，正文使用E/C编号
+  notes:
+    - 承接 E492 开放终点（以太「吃了」）；门前胜负与巨像尽噬未闭合，不得提前写结局
+    - 幼态外形固定非性；成年事实成立则直写
+workflow:
+  - 冻结原文分包和只读指纹（已完成 33 包）
+  - index-base 对照 v0.18 卡体（已完成；既有逻辑编号最大至 C1388）
+  - 三组子代理逐包精读并按核对记录重写事件（未开始）
+  - 交叉核对事件事实和玩家主权
+  - 概念去重及人物和NPC增量
+  - 摘要衔接与完整离线验收（npm run check -- --complete）
+  - 本阶段不做 integrate/pack/host；不创建 MVU_v0.19
+delivery:
+  check: npm run check
+  integration: not_started
+  package: not_started
+  git_push: not_started
+  real_host: deferred
+result:
+  source_packets: done
+  source_packets_count: 33
+  planned_events: 48
+  events_authored: 0
+  events_status: pending
+  complete: false
+  integrated: false
+  open_end: 承接E492以太「吃了」；本阶段终点待精读后确认
+  next: 三组逐包精读 A1–C11 → 事件 E493–E540

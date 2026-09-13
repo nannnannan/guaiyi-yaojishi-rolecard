@@ -1,0 +1,2216 @@
+{
+  "source": "角色卡设定/原文.txt",
+  "normalization": "UTF-8 remove BOM; CRLF to LF; packet ends in LF",
+  "normalized_sha256": "0f09c0e698a94c6435efea651b15d91a435863bc8ee9ec0bcfdea58499aa0f1f",
+  "chapter_range": [
+    1927,
+    2086
+  ],
+  "line_range": [
+    165861,
+    179813
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        1927,
+        1980
+      ],
+      "events": [
+        493,
+        508
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        1981,
+        2033
+      ],
+      "events": [
+        509,
+        524
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        2034,
+        2086
+      ],
+      "events": [
+        525,
+        540
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "id": "A1",
+      "group": "A",
+      "chapters": [
+        1927,
+        1931
+      ],
+      "lines": [
+        165861,
+        166224
+      ],
+      "sha256": "89c800d0bcc28b2338f6dfdf9bc34103fb619b35fa035a226654ef014ff781a8",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A1.md"
+    },
+    {
+      "id": "A2",
+      "group": "A",
+      "chapters": [
+        1932,
+        1936
+      ],
+      "lines": [
+        166225,
+        166582
+      ],
+      "sha256": "7f207c37b0894cb569591bebdaade29359f0904daf900de9b14763aa8ef1dc71",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A2.md"
+    },
+    {
+      "id": "A3",
+      "group": "A",
+      "chapters": [
+        1937,
+        1941
+      ],
+      "lines": [
+        166583,
+        166962
+      ],
+      "sha256": "b693da53565695a3a77b26d23fb1884f7bb64996aa2a2922e088edd9f87696a4",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A3.md"
+    },
+    {
+      "id": "A4",
+      "group": "A",
+      "chapters": [
+        1942,
+        1946
+      ],
+      "lines": [
+        166963,
+        167385
+      ],
+      "sha256": "ca83ce1678a4320e07d37baa4a2d387e343ef966fd67836310a229e95704dc31",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A4.md"
+    },
+    {
+      "id": "A5",
+      "group": "A",
+      "chapters": [
+        1947,
+        1951
+      ],
+      "lines": [
+        167386,
+        167805
+      ],
+      "sha256": "519bb0127e12b74c342165fe4176515a002da71a970223451b63ac3db8e70194",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A5.md"
+    },
+    {
+      "id": "A6",
+      "group": "A",
+      "chapters": [
+        1952,
+        1956
+      ],
+      "lines": [
+        167806,
+        168212
+      ],
+      "sha256": "682aa82a3438c1f4fb7f7fb2e52e212616c04f997b257bec7343c571ebe8cca9",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A6.md"
+    },
+    {
+      "id": "A7",
+      "group": "A",
+      "chapters": [
+        1957,
+        1961
+      ],
+      "lines": [
+        168213,
+        168587
+      ],
+      "sha256": "1bf9b8667395cfbbc93b2d6f7ece5c49572dfb1350d99f1936e37b8af30a185c",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A7.md"
+    },
+    {
+      "id": "A8",
+      "group": "A",
+      "chapters": [
+        1962,
+        1966
+      ],
+      "lines": [
+        168588,
+        168985
+      ],
+      "sha256": "a23a0ca875cbcf5c17ede770ab1fb90f91afd9dd9ee429024fd19466776eb0a3",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A8.md"
+    },
+    {
+      "id": "A9",
+      "group": "A",
+      "chapters": [
+        1967,
+        1971
+      ],
+      "lines": [
+        168986,
+        169443
+      ],
+      "sha256": "772184b55e6d6e1aeb73721065d78e3bddd69eaab31cdd0ecdab7897d6e97132",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A9.md"
+    },
+    {
+      "id": "A10",
+      "group": "A",
+      "chapters": [
+        1972,
+        1976
+      ],
+      "lines": [
+        169444,
+        169891
+      ],
+      "sha256": "e70f13ab40e1766d73f4e5346ae6061d4f6f33a8860570c4c5f7fbe60e44a249",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A10.md"
+    },
+    {
+      "id": "A11",
+      "group": "A",
+      "chapters": [
+        1977,
+        1980
+      ],
+      "lines": [
+        169892,
+        170250
+      ],
+      "sha256": "7568977e28db9df0cafd2ec32cc419a1550e64b44c3caef23fdd33d0179584ce",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A11.md"
+    },
+    {
+      "id": "B1",
+      "group": "B",
+      "chapters": [
+        1981,
+        1985
+      ],
+      "lines": [
+        170251,
+        170716
+      ],
+      "sha256": "f54cda00c16ce0e3765d489b7c6f4414faeefde528d479d28bde24987fbff31f",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B1.md"
+    },
+    {
+      "id": "B2",
+      "group": "B",
+      "chapters": [
+        1986,
+        1990
+      ],
+      "lines": [
+        170717,
+        171186
+      ],
+      "sha256": "bdec4ace2c7029c5d0bcd62efae15cd4c5d972b8421642e616382cec1bc35b95",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B2.md"
+    },
+    {
+      "id": "B3",
+      "group": "B",
+      "chapters": [
+        1991,
+        1995
+      ],
+      "lines": [
+        171187,
+        171640
+      ],
+      "sha256": "f8232ccd475e920c34cabe5960a9991403171d94ad45fbbeadbd7638157ff494",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B3.md"
+    },
+    {
+      "id": "B4",
+      "group": "B",
+      "chapters": [
+        1996,
+        2000
+      ],
+      "lines": [
+        171641,
+        172132
+      ],
+      "sha256": "807a1dc3d638dab6a4730751f3c1156f2327aafe2af53d1b91610e431d7962c1",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B4.md"
+    },
+    {
+      "id": "B5",
+      "group": "B",
+      "chapters": [
+        2001,
+        2005
+      ],
+      "lines": [
+        172133,
+        172622
+      ],
+      "sha256": "2d4cb6e653c1315f11b907c9f22c222357f628fc9fb1f16aa39d4374113c4f05",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B5.md"
+    },
+    {
+      "id": "B6",
+      "group": "B",
+      "chapters": [
+        2006,
+        2010
+      ],
+      "lines": [
+        172623,
+        173016
+      ],
+      "sha256": "2969e365972656f7df3c075b91f86aefc05dd76c2c133fb4695914214714f390",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B6.md"
+    },
+    {
+      "id": "B7",
+      "group": "B",
+      "chapters": [
+        2011,
+        2015
+      ],
+      "lines": [
+        173017,
+        173435
+      ],
+      "sha256": "acd12bf53d01dc19fb93d73c13e694b59afd528e94c07624813a85b737799426",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B7.md"
+    },
+    {
+      "id": "B8",
+      "group": "B",
+      "chapters": [
+        2016,
+        2020
+      ],
+      "lines": [
+        173436,
+        173850
+      ],
+      "sha256": "8d33ff071f2fac865f9dafaffa1a70e91a80c88d06b45ab4bf319d6e7a674f23",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B8.md"
+    },
+    {
+      "id": "B9",
+      "group": "B",
+      "chapters": [
+        2021,
+        2025
+      ],
+      "lines": [
+        173851,
+        174277
+      ],
+      "sha256": "385bb546f821814051eb6e556d478bbcbf77cf0639e2913f3f89561d2536f234",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B9.md"
+    },
+    {
+      "id": "B10",
+      "group": "B",
+      "chapters": [
+        2026,
+        2030
+      ],
+      "lines": [
+        174278,
+        174742
+      ],
+      "sha256": "1146372a3be5856686ff50b522b11bdbb91435abb05ef65137b29751ec1ea03e",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B10.md"
+    },
+    {
+      "id": "B11",
+      "group": "B",
+      "chapters": [
+        2031,
+        2033
+      ],
+      "lines": [
+        174743,
+        175039
+      ],
+      "sha256": "326afbde35b9a669f819d2c2bf5f2cd9290bc726c2f46c69d86e6d37bfbcd455",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B11.md"
+    },
+    {
+      "id": "C1",
+      "group": "C",
+      "chapters": [
+        2034,
+        2038
+      ],
+      "lines": [
+        175040,
+        175544
+      ],
+      "sha256": "ed9f7ebb686a6c787fcc3293a4ddca99b78883271d90048d5568df284a050e20",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C1.md"
+    },
+    {
+      "id": "C2",
+      "group": "C",
+      "chapters": [
+        2039,
+        2043
+      ],
+      "lines": [
+        175545,
+        176042
+      ],
+      "sha256": "79558c082d611aa26ccfe2d3e89ed690c35aab97086aeecab566a8c65a579eec",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C2.md"
+    },
+    {
+      "id": "C3",
+      "group": "C",
+      "chapters": [
+        2044,
+        2048
+      ],
+      "lines": [
+        176043,
+        176485
+      ],
+      "sha256": "349563965e92ddebca16b8a72f9c3b49a63200f55482848e898bdad4424fd68b",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C3.md"
+    },
+    {
+      "id": "C4",
+      "group": "C",
+      "chapters": [
+        2049,
+        2053
+      ],
+      "lines": [
+        176486,
+        176978
+      ],
+      "sha256": "83229fe7c370112591638b7e1441e0c6075d6a40c4c3338dee1763c9fd38abe5",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C4.md"
+    },
+    {
+      "id": "C5",
+      "group": "C",
+      "chapters": [
+        2054,
+        2058
+      ],
+      "lines": [
+        176979,
+        177415
+      ],
+      "sha256": "e7f3cd4041af12fe4583929fb00f1de12bcb8873ad6c234abccbfa4a26ad939a",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C5.md"
+    },
+    {
+      "id": "C6",
+      "group": "C",
+      "chapters": [
+        2059,
+        2063
+      ],
+      "lines": [
+        177416,
+        177852
+      ],
+      "sha256": "949c77bb9779dd545c4e2b7fe3d561e2c38876381be93f51f0cc9d6a1e71a697",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C6.md"
+    },
+    {
+      "id": "C7",
+      "group": "C",
+      "chapters": [
+        2064,
+        2068
+      ],
+      "lines": [
+        177853,
+        178278
+      ],
+      "sha256": "2d93feddad0663b54925de458e2a371fda595eee738697f004baadd882b5d133",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C7.md"
+    },
+    {
+      "id": "C8",
+      "group": "C",
+      "chapters": [
+        2069,
+        2073
+      ],
+      "lines": [
+        178279,
+        178689
+      ],
+      "sha256": "6d8fe07867336d18a01a84ee8b9509d823546ecfee14e50d6789e2ab70b2e5f0",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C8.md"
+    },
+    {
+      "id": "C9",
+      "group": "C",
+      "chapters": [
+        2074,
+        2078
+      ],
+      "lines": [
+        178690,
+        179119
+      ],
+      "sha256": "b37fe48c9ca04a9346a2a2e443b94b96f1dc627dc59ced613ff4162d9d20f837",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C9.md"
+    },
+    {
+      "id": "C10",
+      "group": "C",
+      "chapters": [
+        2079,
+        2083
+      ],
+      "lines": [
+        179120,
+        179567
+      ],
+      "sha256": "fc590fabfd8c611ca796b587a8465f710d559d753f200ea7bb6941108c5b775d",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C10.md"
+    },
+    {
+      "id": "C11",
+      "group": "C",
+      "chapters": [
+        2084,
+        2086
+      ],
+      "lines": [
+        179568,
+        179813
+      ],
+      "sha256": "a2d9d05f6f9fdba89866ed6f4271fac2de08225da0e055754c55b904703df8ce",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C11.md"
+    }
+  ],
+  "baselines": [
+    {
+      "root": "角色卡本体/诡异药剂师_MVU_v0.18",
+      "files": 1575,
+      "bytes": 22047088,
+      "sha256": "2397bbb5946e1a5c0d5342e98e0f2e772bd505f7f21c531207bcd2383d2fac55"
+    },
+    {
+      "root": "角色卡设定/v0.18工作区",
+      "files": 215,
+      "bytes": 2048010,
+      "sha256": "d1524236b634f75d8e4c5184d5e07b85ac49111bc4d18caeaecaf429d59cda6e"
+    },
+    {
+      "root": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章",
+      "files": 67,
+      "bytes": 1493340,
+      "sha256": "c85a06fb6eec4f1a8e0ce261f72ca0ef9b0248ceae2735b30a8b2e7217b8c62d"
+    }
+  ],
+  "events": [
+    {
+      "id": "E493",
+      "title": "原子革命启动与学者吞噬",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E493_原子革命启动与学者吞噬.md",
+      "output": "事件/E493_原子革命启动与学者吞噬.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1927,
+        1931
+      ],
+      "source_lines": [
+        165861,
+        165965
+      ],
+      "concept_refs": [
+        "C1322",
+        "C1388",
+        "C1387",
+        "C1369",
+        "C1372",
+        "C1376",
+        "C953",
+        "C1371",
+        "C1389"
+      ],
+      "next_event": "E494"
+    },
+    {
+      "id": "E494",
+      "title": "银幻上传与芯片脱险",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E494_银幻上传与芯片脱险.md",
+      "output": "事件/E494_银幻上传与芯片脱险.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1927,
+        1931
+      ],
+      "source_lines": [
+        165966,
+        166224
+      ],
+      "concept_refs": [
+        "C953",
+        "C645",
+        "C925",
+        "C1322",
+        "C1211",
+        "C906",
+        "C1347",
+        "C1213",
+        "C1332",
+        "C1376",
+        "C987",
+        "C1371",
+        "C1389"
+      ],
+      "next_event": "E495",
+      "length_exception": "银幻上传抛芯截戟多线，默认走向略超重大上限",
+      "major": true
+    },
+    {
+      "id": "E495",
+      "title": "无序冲心与将军失控",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E495_无序冲心与将军失控.md",
+      "output": "事件/E495_无序冲心与将军失控.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1932,
+        1941
+      ],
+      "source_lines": [
+        166225,
+        166736
+      ],
+      "concept_refs": [
+        "C1322",
+        "C1213",
+        "C1332",
+        "C1273",
+        "C1276",
+        "C1211",
+        "C1330",
+        "C997",
+        "C987",
+        "C1011",
+        "C1376",
+        "C1377",
+        "C1388",
+        "C643",
+        "C1371",
+        "C1389"
+      ],
+      "next_event": "E496",
+      "length_exception": "拖无序下地至夺控冲心跨包完成态，字数超重大上限",
+      "major": true
+    },
+    {
+      "id": "E496",
+      "title": "原子进度百分之九十九",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E496_原子进度百分之九十九.md",
+      "output": "事件/E496_原子进度百分之九十九.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1937,
+        1941
+      ],
+      "source_lines": [
+        166737,
+        166871
+      ],
+      "concept_refs": [
+        "C1322",
+        "C1388",
+        "C987",
+        "C997",
+        "C1011",
+        "C1371",
+        "C1377",
+        "C1376",
+        "C1357",
+        "C1389"
+      ],
+      "next_event": "E497"
+    },
+    {
+      "id": "E497",
+      "title": "灵魂定位与至臻机体",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E497_灵魂定位与至臻机体.md",
+      "output": "事件/E497_灵魂定位与至臻机体.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1937,
+        1946
+      ],
+      "source_lines": [
+        166872,
+        167385
+      ],
+      "packets": [
+        "A3",
+        "A4"
+      ],
+      "major": true,
+      "summary": "卡伦现身交至臻机体；银幻女王宣言与回归救人；巫神被噬；死书挡杀；冲/驾。灵魂定位/光宴重创承E496。",
+      "concept_refs": [
+        "C588",
+        "C787",
+        "C788",
+        "C883",
+        "C916",
+        "C1273",
+        "C1322",
+        "C1357",
+        "C1388"
+      ],
+      "next_event": "E498",
+      "length_exception": null,
+      "corrections": [
+        "至臻/交权/回归在A4；A3仅卡伦现身段并入；灵魂定位/光宴已由E496完成"
+      ]
+    },
+    {
+      "id": "E498",
+      "title": "数学魔方困局与战场回归",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E498_数学魔方困局与战场回归.md",
+      "output": "事件/E498_数学魔方困局与战场回归.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1947,
+        1951
+      ],
+      "source_lines": [
+        167386,
+        167550
+      ],
+      "packets": [
+        "A5"
+      ],
+      "summary": "撤离途中再入数学魔方；银幻公式破阵；位移徒劳仍逃。删除虚构双人预锁与回归熔炉。",
+      "concept_refs": [
+        "C1322",
+        "C1357",
+        "C1358",
+        "C1388"
+      ],
+      "next_event": "E499"
+    },
+    {
+      "id": "E499",
+      "title": "绝境开门",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E499_绝境开门.md",
+      "output": "事件/E499_绝境开门.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1947,
+        1951
+      ],
+      "source_lines": [
+        167551,
+        167629
+      ],
+      "packets": [
+        "A5"
+      ],
+      "summary": "巫术/巨像化/拥星者绝境；假开门半魂诱敌。非真开界门。",
+      "concept_refs": [
+        "C833",
+        "C877",
+        "C883",
+        "C1011",
+        "C1388"
+      ],
+      "next_event": "E500"
+    },
+    {
+      "id": "E500",
+      "title": "莫比乌斯环逃生",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E500_莫比乌斯环逃生.md",
+      "output": "事件/E500_莫比乌斯环逃生.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1947,
+        1951
+      ],
+      "source_lines": [
+        167630,
+        167805
+      ],
+      "packets": [
+        "A5"
+      ],
+      "summary": "双重套娃莫比乌斯放逐奇异世界；泉水共浴开端。海嗣后移。",
+      "corrections": [
+        "含A5共浴开端；海嗣/灭绝者/封印不入"
+      ],
+      "concept_refs": [
+        "C785",
+        "C1194",
+        "C1354",
+        "C1388"
+      ],
+      "next_event": "E501",
+      "length_exception": "共浴开端直写，略超常规上限"
+    },
+    {
+      "id": "E501",
+      "title": "灵魂修复与海嗣汇合",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E501_灵魂修复与海嗣汇合.md",
+      "output": "事件/E501_灵魂修复与海嗣汇合.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1952,
+        1956
+      ],
+      "source_lines": [
+        167806,
+        168071
+      ],
+      "packets": [
+        "A6"
+      ],
+      "summary": "泉水疗伤结算；海嗣汇合；劝服或吞噬窗口；有条件释放灭绝者。封印构想不入，提案人后钉灭绝者。",
+      "corrections": [
+        "A5仅共浴开端，完成态在A6；删银幻提恒星封印／试制／半魂锚点不能动"
+      ],
+      "concept_refs": [
+        "C1194",
+        "C906",
+        "C830",
+        "C857",
+        "C1347",
+        "C1346",
+        "C1354",
+        "C788",
+        "C1357",
+        "C1002",
+        "C1388"
+      ],
+      "next_event": "E502"
+    },
+    {
+      "id": "E502",
+      "title": "释放灭绝者与假封印",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E502_释放灭绝者与假封印.md",
+      "output": "事件/E502_释放灭绝者与假封印.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1952,
+        1961
+      ],
+      "source_lines": [
+        168072,
+        168282
+      ],
+      "packets": [
+        "A6",
+        "A7"
+      ],
+      "summary": "记忆证将军被夺控；灭绝者献封印镇压／恒星矩阵并求见切片；第一重假以太械笼被识破。删假封印闭合。",
+      "corrections": [
+        "主轴=劝服释放后的情报核验，非假封印样机；提案人是灭绝者；1957假以太试探作尾声"
+      ],
+      "concept_refs": [
+        "C1388",
+        "C1322",
+        "C987",
+        "C997",
+        "C988",
+        "C1011",
+        "C1357",
+        "C1354",
+        "C830",
+        "C906"
+      ],
+      "next_event": "E503"
+    },
+    {
+      "id": "E503",
+      "title": "反叛与机械七神",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E503_反叛与机械七神.md",
+      "output": "事件/E503_反叛与机械七神.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1957,
+        1966
+      ],
+      "source_lines": [
+        168283,
+        168735
+      ],
+      "packets": [
+        "A7",
+        "A8"
+      ],
+      "major": true,
+      "summary": "真陵墓、叛军巨构反叛、水银假以太、巨像细胞＋海嗣再镇压；吞噬灭绝者宣布七神；拟态轻薄收束。无失控碰撞。",
+      "corrections": [
+        "吞噬／七神落A8；删短暂失控／第三机神碰撞／光环桥梁；叛军巨构不是有效样机"
+      ],
+      "concept_refs": [
+        "C945",
+        "C1355",
+        "C926",
+        "C830",
+        "C906",
+        "C1211",
+        "C788",
+        "C1011",
+        "C1354",
+        "C1388"
+      ],
+      "next_event": "E504",
+      "length_exception": "反叛＋吞噬升格与拟态直写，略超重大事件上限"
+    },
+    {
+      "id": "E504",
+      "title": "恒星封印巨构",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E504_恒星封印巨构.md",
+      "output": "事件/E504_恒星封印巨构.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1962,
+        1966
+      ],
+      "source_lines": [
+        168736,
+        168985
+      ],
+      "packets": [
+        "A8"
+      ],
+      "major": true,
+      "summary": "银幻重设计数百公里巨构；棺椁真切片；先光热失败后初诞者金光超新星镇成银球；大君推论；多台分段仅口号。",
+      "corrections": [
+        "两次试验缺一不可；真切片在棺椁不在旧陵墓；删七层光环／一次即成／持续耗能已证；五台破界不入"
+      ],
+      "concept_refs": [
+        "C1273",
+        "C1211",
+        "C1330",
+        "C796",
+        "C1355",
+        "C829",
+        "C906",
+        "C785",
+        "C1354",
+        "C1388"
+      ],
+      "next_event": "E505"
+    },
+    {
+      "id": "E505",
+      "title": "五台巨构与破界",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E505_五台巨构与破界.md",
+      "output": "事件/E505_五台巨构与破界.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1967,
+        1971
+      ],
+      "source_lines": [
+        168986,
+        169108
+      ],
+      "next_event": "E506",
+      "packets": [
+        "A9"
+      ],
+      "summary": "血肉农场造到第五台即物质极限；脱光供材；棺椁卡缝破界入乱流。五台未启用未随行。",
+      "corrections": [
+        "删五台封印网/巨构共振破界/携台入乱流/三叉戟撬界；钉血肉农场失活上限与棺椁卡缝"
+      ],
+      "concept_refs": [
+        "C796",
+        "C830",
+        "C906",
+        "C925",
+        "C1211",
+        "C1273",
+        "C1354",
+        "C785",
+        "C1388"
+      ],
+      "major": false
+    },
+    {
+      "id": "E506",
+      "title": "银幻断后与界门开启",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E506_银幻断后与界门开启.md",
+      "output": "事件/E506_银幻断后与界门开启.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1967,
+        1971
+      ],
+      "source_lines": [
+        169109,
+        169443
+      ],
+      "next_event": "E507",
+      "packets": [
+        "A9"
+      ],
+      "major": true,
+      "length_exception": "两段界门+万机再现+降阶莫比乌斯+现实双开门全文，重大机制展开",
+      "summary": "乱流门将成被截；万机再现断后；艾雯降阶+莫比乌斯+赛博拖回现实；夜医灌注；船长稳门+主母冲出。",
+      "corrections": [
+        "拆两段界门；保留万机再现/降阶/莫比乌斯/赛博；删五台屏障与全军已过；止于船长+主母"
+      ],
+      "concept_refs": [
+        "C833",
+        "C877",
+        "C906",
+        "C925",
+        "C1011",
+        "C1211",
+        "C1322",
+        "C1354",
+        "C1379",
+        "C1387",
+        "C1388",
+        "C787"
+      ]
+    },
+    {
+      "id": "E507",
+      "title": "暂时升神与原子风暴",
+      "stage": "S69",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E507_暂时升神与原子风暴.md",
+      "output": "事件/E507_暂时升神与原子风暴.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1972,
+        1976
+      ],
+      "source_lines": [
+        169444,
+        169796
+      ],
+      "next_event": "E508",
+      "packets": [
+        "A10"
+      ],
+      "major": true,
+      "summary": "黑堡穿过；四根源恢复古神本相；原子风暴与神降烬灭；遗念失败判空城回援。五台未用。",
+      "corrections": [
+        "升神=古神本相非未达者拔高；大头娃娃不升神；五台未出场；遗念在地狱火走廊"
+      ],
+      "concept_refs": [
+        "C1194",
+        "C1211",
+        "C1322",
+        "C1336",
+        "C1354",
+        "C1388",
+        "C853",
+        "C785",
+        "C1209"
+      ]
+    },
+    {
+      "id": "E508",
+      "title": "母树危机与五台封印",
+      "stage": "S69",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E508_母树危机与五台封印.md",
+      "output": "事件/E508_母树危机与五台封印.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1972,
+        1980
+      ],
+      "source_lines": [
+        169797,
+        170250
+      ],
+      "next_event": "E509",
+      "packets": [
+        "A10",
+        "A11"
+      ],
+      "major": true,
+      "length_exception": "跨A10起手至A11心灵海截击全文（诅咒拉回/五台光门/西方坐标/二次巨构），机制纠偏长篇",
+      "summary": "空城裹苗→诅咒拉回抽树→五台光门局部剥离→西方百万里远征→心灵海截裂隙前「以太！！」。",
+      "corrections": [
+        "光门吸噬非实地布阵；删地下缝隙扑树/欲望潮汐/恒星光环压城/母树锚；止于以太！！不倒灌B1"
+      ],
+      "concept_refs": [
+        "C642",
+        "C660",
+        "C682",
+        "C738",
+        "C833",
+        "C877",
+        "C1211",
+        "C1245",
+        "C1322",
+        "C1354",
+        "C1388",
+        "C1379"
+      ]
+    },
+    {
+      "id": "E509",
+      "title": "以太本体与边境冲击",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E509_以太本体与边境冲击.md",
+      "output": "事件/E509_以太本体与边境冲击.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1981,
+        1985
+      ],
+      "source_lines": [
+        170251,
+        170531
+      ],
+      "next_event": "E510",
+      "packets": [
+        "B1"
+      ],
+      "major": true,
+      "length_exception": "B1边境机制纠偏中篇（无坐标界门/七千年呼唤/外来者解说/五台特化起手），字数介于常规与重大之间",
+      "summary": "诅咒拽出夏娃巫神→无坐标界门追至西境→银色聚合物应七千年呼唤撞击→外来者本体解说→五台特化锁定与决斗起手。",
+      "corrections": [
+        "删母树远征/黑潮咬壁；钉无坐标界门→西境→七千年呼唤→外来者解说→五台特化决斗起手；巨像抽出不倒灌"
+      ],
+      "concept_refs": [
+        "C675",
+        "C877",
+        "C833",
+        "C1211",
+        "C1245",
+        "C1322",
+        "C1354",
+        "C1379",
+        "C1388",
+        "C925",
+        "C1309",
+        "C606"
+      ]
+    },
+    {
+      "id": "E510",
+      "title": "初诞光晕与边境决战",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E510_无序三柱与核心搜捕.md",
+      "output": "事件/E510_无序三柱与核心搜捕.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1981,
+        1985
+      ],
+      "source_lines": [
+        170532,
+        170617
+      ],
+      "next_event": "E511",
+      "packets": [
+        "B1"
+      ],
+      "major": false,
+      "summary": "初诞光晕硬顶五台→心灵炸颅/灵能轰落→引灾厄扬言→万丈巨人与西部银潮起手。无三柱标记。",
+      "corrections": [
+        "改核标题；包内零「无序三柱」；删假核心辨认；止于银潮起手，人偶/巨像抽出不倒灌"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1245",
+        "C1322",
+        "C1354",
+        "C1388",
+        "C1209",
+        "C1330",
+        "C1372"
+      ]
+    },
+    {
+      "id": "E511",
+      "title": "人偶军团与巨构扩张",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E511_人偶军团与巨构扩张.md",
+      "output": "事件/E511_人偶军团与巨构扩张.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1981,
+        1990
+      ],
+      "source_lines": [
+        170618,
+        170919
+      ],
+      "next_event": "E512",
+      "packets": [
+        "B1",
+        "B2"
+      ],
+      "major": true,
+      "length_exception": "跨B1人偶/巨像抽出与B2奇异世界批量交机至九台加压，机制纠偏长篇",
+      "summary": "戒指人偶阻潮→八音盒大分裂抽巨像之脑→银潮融巨人→奇异世界五座新机+六至九台→狱卒旁观「等」。",
+      "corrections": [
+        "删黑堡舱门/荒原光环抉择；巨构扩张钉奇异世界工厂；止于九台与狱卒旁观，双机/渡鸦不倒灌"
+      ],
+      "concept_refs": [
+        "C584",
+        "C682",
+        "C648",
+        "C615",
+        "C906",
+        "C830",
+        "C925",
+        "C1211",
+        "C1322",
+        "C1354",
+        "C1388",
+        "C785",
+        "C914",
+        "C606"
+      ]
+    },
+    {
+      "id": "E512",
+      "title": "渡鸦尸体与预设计划",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E512_渡鸦尸体与预设计划.md",
+      "output": "事件/E512_渡鸦尸体与预设计划.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1986,
+        1990
+      ],
+      "source_lines": [
+        170920,
+        171186
+      ],
+      "next_event": "E513",
+      "packets": [
+        "B2"
+      ],
+      "major": true,
+      "length_exception": "双机稀释至渡鸦化与战前计划全文揭示，机制纠偏长篇",
+      "summary": "药剂耗尽→以太冲境→两台全新巨构同启稀释→魂躯渡鸦化链接成功→战前传音计划揭示（未入海）。",
+      "corrections": [
+        "稀释=两台同启非第十+第十一；止于计划揭示未入海；删船锚高山预兆"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1218",
+        "C1245",
+        "C1274",
+        "C1275",
+        "C1322",
+        "C1354",
+        "C1388",
+        "C785",
+        "C925",
+        "C914",
+        "C608"
+      ]
+    },
+    {
+      "id": "E513",
+      "title": "心灵之海与左左登山",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E513_心灵之海与左左登山.md",
+      "output": "事件/E513_心灵之海与左左登山.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1991,
+        1995
+      ],
+      "source_lines": [
+        171187,
+        171640
+      ],
+      "next_event": "E514",
+      "packets": [
+        "B3"
+      ],
+      "major": true,
+      "length_exception": "B3全幅入海至顶缘（双林恩读忆/交尸独攀），机制纠偏长篇",
+      "summary": "心灵之海锚门→银白精神世界→复制品牢笼路过→左左读忆交尸独攀→顶缘「你这个臭家伙」。",
+      "corrections": [
+        "删路径投影/三线破链/船长随行/矩阵预支；止于顶缘喊话未接触"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1218",
+        "C1245",
+        "C1275",
+        "C1322",
+        "C1330",
+        "C1388",
+        "C600",
+        "C649"
+      ]
+    },
+    {
+      "id": "E514",
+      "title": "左左登顶与矩阵启动",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E514_左左登顶与矩阵启动.md",
+      "output": "事件/E514_左左登顶与矩阵启动.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1996,
+        2000
+      ],
+      "source_lines": [
+        171641,
+        171825
+      ],
+      "next_event": "E515",
+      "packets": [
+        "B4"
+      ],
+      "major": true,
+      "length_exception": "B4前段刺胸熔铸与矩阵启动分拍至银幻即将夺权",
+      "summary": "刺胸熔铸→锁链崩召二人→清算宣战→矩阵启动眉心塌陷→艾雯震荡→银幻点名即将夺权。",
+      "corrections": [
+        "融合≠矩阵分两拍；删层数进度条/五台外压/船长亡灵过早/左左站桩"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1218",
+        "C1245",
+        "C1275",
+        "C1322",
+        "C1330",
+        "C1379",
+        "C1388",
+        "C649",
+        "C677"
+      ]
+    },
+    {
+      "id": "E515",
+      "title": "万机归位与奈奈子吞噬",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E515_万机归位与奈奈子吞噬.md",
+      "output": "事件/E515_万机归位与奈奈子吞噬.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1996,
+        2005
+      ],
+      "source_lines": [
+        171826,
+        172198
+      ],
+      "next_event": "E516",
+      "packets": [
+        "B4",
+        "B5"
+      ],
+      "major": true,
+      "length_exception": "跨B4夺权升神至B5苍蓝进食本体完成，不具名奈奈子",
+      "summary": "夺权升神万姬→召潮→流体剥离→全球新巨构→叹息之墙→女主人敕令→苍蓝进食本体坍矩阵。",
+      "corrections": [
+        "剥离=以太流体非本体搭机械逃；苍蓝进食不具名奈奈子；删五台续跑/力量衰减；止于坍矩阵不倒灌奇点"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1245",
+        "C1296",
+        "C1322",
+        "C1379",
+        "C1388",
+        "C677",
+        "C1205",
+        "C1213"
+      ]
+    },
+    {
+      "id": "E516",
+      "title": "三位一体封印",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E516_三位一体封印.md",
+      "output": "事件/E516_三位一体封印.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2001,
+        2005
+      ],
+      "source_lines": [
+        172199,
+        172588
+      ],
+      "next_event": "E517",
+      "packets": [
+        "B5"
+      ],
+      "major": true,
+      "length_exception": "独留收尾→奇点归墟→现实临时容器→壁咚银幻归心；巨像醒转留给E517",
+      "summary": "独留矩阵→呜喵王拆穿→奇点归墟→现实铸高等三位一体临时容器→壁咚履约归心成就。",
+      "corrections": [
+        "删精神世界共铸/黑裂口；尚未真正三位一体；归心收束本事件，巨像不倒灌"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1245",
+        "C1293",
+        "C1320",
+        "C1322",
+        "C1388",
+        "C600",
+        "C787",
+        "C899",
+        "C916",
+        "C1001",
+        "C649",
+        "C677"
+      ]
+    },
+    {
+      "id": "E517",
+      "title": "银幻归心与巨像醒转",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E517_银幻归心与巨像醒转.md",
+      "output": "事件/E517_银幻归心与巨像醒转.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2001,
+        2005
+      ],
+      "source_lines": [
+        172589,
+        172622
+      ],
+      "next_event": "E518",
+      "packets": [
+        "B5"
+      ],
+      "major": false,
+      "length_exception": "E516已收壁咚归心；本事件仅巨像醒转吐槽「又多了一位」，事实短不凑字",
+      "summary": "甲板巨像醒转：对照诱拐同款、自承羁绊、又多了一位。",
+      "corrections": [
+        "不重写壁咚；删回城交权/五台迁防/母树回应/隐瞒封印对谈"
+      ],
+      "concept_refs": [
+        "C600",
+        "C649",
+        "C677",
+        "C787",
+        "C1320"
+      ]
+    },
+    {
+      "id": "E518",
+      "title": "奈奈子意识与三柱真相",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E518_奈奈子意识与三柱真相.md",
+      "output": "事件/E518_奈奈子意识与三柱真相.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2006,
+        2015
+      ],
+      "source_lines": [
+        172623,
+        173278
+      ],
+      "next_event": "E519",
+      "packets": [
+        "B6",
+        "B7"
+      ],
+      "major": true,
+      "length_exception": "跨B6呼叫入口+回城灾厄前锋与B7意识域摊牌至「开始吧」；早期包段不倒灌全谈",
+      "summary": "何去何从→回城→巨眼呼奈奈子黑雾→意识域摊牌外来以太/沉眠终焉/轮回破/方舟借力→开始吧。",
+      "corrections": [
+        "早期包仅呼叫/雾/眼/画家女孩暗示；删三柱全表/画家自报/乐者/大君融入；神王句不并入奈奈子结论"
+      ],
+      "concept_refs": [
+        "C903",
+        "C1211",
+        "C1213",
+        "C1296",
+        "C1301",
+        "C1320",
+        "C1327",
+        "C1388",
+        "C600",
+        "C601",
+        "C649"
+      ]
+    },
+    {
+      "id": "E519",
+      "title": "梦境方舟与第二次大坠落",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E519_梦境方舟与第二次大坠落.md",
+      "output": "事件/E519_梦境方舟与第二次大坠落.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2011,
+        2020
+      ],
+      "source_lines": [
+        173279,
+        173521
+      ],
+      "next_event": "E520",
+      "packets": [
+        "B7",
+        "B8"
+      ],
+      "major": true,
+      "length_exception": "迁神具名+当世无序化+地狱侧第二轮收割兑现；删屏障/四王后篇幅不足不凑字",
+      "summary": "转移仪式→努斯/铸造者/元素拖入→立场分野→无序深空→当世无序化重归画家→第二轮收割兑现。",
+      "corrections": [
+        "删大屏障开合完成；删四王点名分区；完成态=坠落兑现+无序化离场"
+      ],
+      "concept_refs": [
+        "C903",
+        "C1211",
+        "C1213",
+        "C1296",
+        "C1301",
+        "C1327",
+        "C601",
+        "C677"
+      ]
+    },
+    {
+      "id": "E520",
+      "title": "时间战争启动",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E520_时间战争启动.md",
+      "output": "事件/E520_时间战争启动.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2016,
+        2020
+      ],
+      "source_lines": [
+        173522,
+        173850
+      ],
+      "next_event": "E521",
+      "packets": [
+        "B8"
+      ],
+      "major": true,
+      "length_exception": "一月混乱+时间战争×54机制+会议口头说明；止于污染警示，三柱长谈不倒灌故不足2200不凑",
+      "summary": "银幻转述→渡鸦容器清污染→禁改历史→54次奖励→会议说明时间战争与坠落者污染警示。",
+      "corrections": [
+        "删船锚锚定/黑袍传闻/四王加固；勿以第一次往返为完成态；三柱落差归E521"
+      ],
+      "concept_refs": [
+        "C649",
+        "C677",
+        "C787",
+        "C899",
+        "C916",
+        "C1001",
+        "C1211",
+        "C1296",
+        "C1301",
+        "C1320",
+        "C1322"
+      ]
+    },
+    {
+      "id": "E521",
+      "title": "五十四次回返与新神计划",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E521_五十四次回返与新神计划.md",
+      "output": "事件/E521_五十四次回返与新神计划.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2021,
+        2025
+      ],
+      "source_lines": [
+        173851,
+        174254
+      ],
+      "next_event": "E522",
+      "concept_refs": [
+        "C1211",
+        "C1295",
+        "C1296",
+        "C1330",
+        "C650",
+        "C684",
+        "C649",
+        "C608"
+      ],
+      "packets": [
+        "B9"
+      ],
+      "major": true,
+      "length_exception": "B9新神理论＋封神点名＋玻璃珠分发全文；删以太回声／全地狱表决／席位确认",
+      "summary": "主母打断低落→神格／新神构想→封神点名大饼→玻璃珠分发→封锁闭修。",
+      "corrections": [
+        "删以太回声／全地狱表决／席位正式确认；康斯坦丁＝神格证人非承载讲师；灌注法划E522"
+      ]
+    },
+    {
+      "id": "E522",
+      "title": "碎片灌输与左左回应",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E522_碎片灌输与左左回应.md",
+      "output": "事件/E522_碎片灌输与左左回应.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2021,
+        2030
+      ],
+      "source_lines": [
+        174255,
+        174367
+      ],
+      "next_event": "E523",
+      "packets": [
+        "B9",
+        "B10"
+      ],
+      "major": false,
+      "length_exception": "房内灌输实施（过程不展开）＋主动飞罪；介于常规与机制展开之间",
+      "summary": "灌注法口头→亲爱的脑袋→房内左萝灌输省略→羞愤主人暗示→主动飞罪。",
+      "corrections": [
+        "删珠圈／系统场／以太复检／消息钩；幼态非性过程不展开；动身＝主动顺访"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C649",
+        "C1305",
+        "C1218",
+        "C1295"
+      ]
+    },
+    {
+      "id": "E523",
+      "title": "鲜血孽灵与禁术突破",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E523_鲜血孽灵与禁术突破.md",
+      "output": "事件/E523_鲜血孽灵与禁术突破.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2026,
+        2033
+      ],
+      "source_lines": [
+        174368,
+        174918
+      ],
+      "next_event": "E524",
+      "packets": [
+        "B10",
+        "B11"
+      ],
+      "major": true,
+      "length_exception": "跨B10误认劝停晕血至B11咬透恢复；幼态非性越界过程不展开",
+      "summary": "误认鲜血孽灵＝孽主变身→劝停→回萝晕血→巨像血咬透恢复可战。",
+      "corrections": [
+        "删法则连接／封印牵引／成年态稳定召回；止于可战；弗拉基米尔仅自报姓；渡鸦邀约归E524"
+      ],
+      "concept_refs": [
+        "C1305",
+        "C1307",
+        "C1290",
+        "C1211",
+        "C600",
+        "C649",
+        "C1218"
+      ]
+    },
+    {
+      "id": "E524",
+      "title": "渡鸦墓地与神王相遇",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E524_渡鸦墓地与神王相遇.md",
+      "output": "事件/E524_渡鸦墓地与神王相遇.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2031,
+        2033
+      ],
+      "source_lines": [
+        174919,
+        175039
+      ],
+      "next_event": "E525",
+      "packets": [
+        "B11"
+      ],
+      "major": false,
+      "length_exception": "B11渡鸦节点调查前半至平台惊停；神王／三招不入包",
+      "summary": "邀同行→废墟下潜节点→第三尸在深渊→面具涟漪→平台惊停怎么会。",
+      "corrections": [
+        "只写前半至平台惊停；删神王决斗／三招／墓地命名／污染尸骸；干净交接E525"
+      ],
+      "concept_refs": [
+        "C1218",
+        "C1211",
+        "C1207",
+        "C1305",
+        "C914",
+        "C1275",
+        "C608"
+      ]
+    },
+    {
+      "id": "E525",
+      "title": "三招赌约与因果压制",
+      "stage": "S71",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E525_三招赌约与因果压制.md",
+      "output": "事件/E525_三招赌约与因果压制.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2034,
+        2043
+      ],
+      "source_lines": [
+        175040,
+        175761
+      ],
+      "next_event": "E526",
+      "packets": [
+        "C1",
+        "C2"
+      ],
+      "major": true,
+      "length_exception": "跨C1空平台神王当面至C2多次再来秒回；一击未竟+因果可视+规则演示，字数超重大上限",
+      "summary": "空平台尸骸→神王当面→两分钟通牒→三分钟空白→三招赌约一击惨败→回城三日→回返核弹戟停→因果丝线+多次再来秒回。",
+      "corrections": [
+        "删星系距离因果压制/走完三招/血缘主外围/公开教学；因果=丝线可视+打回未来；未走完三招；交接E526留过去"
+      ],
+      "concept_refs": [
+        "C1218",
+        "C1211",
+        "C1207",
+        "C1212",
+        "C650",
+        "C655",
+        "C1301",
+        "C1299",
+        "C1343",
+        "C649",
+        "C1321",
+        "C1290"
+      ]
+    },
+    {
+      "id": "E526",
+      "title": "留在过去的选择",
+      "stage": "S71",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E526_留在过去的选择.md",
+      "output": "事件/E526_留在过去的选择.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2039,
+        2043
+      ],
+      "source_lines": [
+        175762,
+        175895
+      ],
+      "next_event": "E527",
+      "packets": [
+        "C2"
+      ],
+      "major": false,
+      "summary": "左左劝停→留在过去方案→选定二十一万年前并已跨入→戟贯裂隙待半封。",
+      "corrections": [
+        "必须已跨入最远节点；删停在裂隙前/三天前观望/黑夜城白发负担；半封归E527"
+      ],
+      "concept_refs": [
+        "C1301",
+        "C1299",
+        "C1218",
+        "C1211",
+        "C1343",
+        "C649",
+        "C1207"
+      ]
+    },
+    {
+      "id": "E527",
+      "title": "二十一万年前的墓地",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E527_二十一万年前的墓地.md",
+      "output": "事件/E527_二十一万年前的墓地.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2039,
+        2048
+      ],
+      "source_lines": [
+        175896,
+        176126
+      ],
+      "next_event": "E528",
+      "packets": [
+        "C2",
+        "C3"
+      ],
+      "major": false,
+      "length_exception": "半封卡战争+自造丰碑闭环+左左斩碑跨包，略超常规上限",
+      "summary": "半封裂隙卡bug→丰碑认巢穴→是我造的闭环→盘膝研习→左左斩碑成功。",
+      "corrections": [
+        "半封+自造碑必写；斩碑落入本事件；黄沙划空归E528"
+      ],
+      "concept_refs": [
+        "C1218",
+        "C1299",
+        "C1211",
+        "C675",
+        "C1343",
+        "C649",
+        "C615",
+        "C608",
+        "C1388"
+      ]
+    },
+    {
+      "id": "E528",
+      "title": "空间规则与神王再会",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E528_空间规则与神王再会.md",
+      "output": "事件/E528_空间规则与神王再会.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2044,
+        2048
+      ],
+      "source_lines": [
+        176127,
+        176333
+      ],
+      "next_event": "E529",
+      "packets": [
+        "C3"
+      ],
+      "major": false,
+      "length_exception": "空间自证+再战神王星系半米反制+当世无敌遣返定志，介于常规与重大之间",
+      "summary": "黄沙划空点光→再战一丝规则→神王空间反制半米超星系→无序入体系→当世无敌遣返→留信失踪。",
+      "corrections": [
+        "星系半米=神王反制非林恩拉距；黑袍传闻后移E529；条件性和解"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1330",
+        "C1222",
+        "C650",
+        "C655",
+        "C914",
+        "C1213",
+        "C1296",
+        "C649",
+        "C1344"
+      ]
+    },
+    {
+      "id": "E529",
+      "title": "黑袍人现身与夏娃战书",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E529_黑袍人现身与夏娃战书.md",
+      "output": "事件/E529_黑袍人现身与夏娃战书.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2044,
+        2053
+      ],
+      "source_lines": [
+        176334,
+        176731
+      ],
+      "next_event": "E530",
+      "packets": [
+        "C3",
+        "C4"
+      ],
+      "major": true,
+      "length_exception": "失踪一月+夏娃战书+巨像镜像力量法则全程至点名泰坦拒保护",
+      "summary": "神秘人八胜→夏娃血信→巨像镜像刀矛法则战→教招→下一泰坦→拒地下自修。",
+      "corrections": [
+        "身份未证实；力量法则非空间折叠主轴；含完整巨像战与泰坦预告"
+      ],
+      "concept_refs": [
+        "C1344",
+        "C1284",
+        "C1278",
+        "C1211",
+        "C1222",
+        "C596",
+        "C645",
+        "C671",
+        "C1334"
+      ]
+    },
+    {
+      "id": "E530",
+      "title": "私藏品试探与身份逼近",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E530_私藏品试探与身份逼近.md",
+      "output": "事件/E530_私藏品试探与身份逼近.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2049,
+        2058
+      ],
+      "source_lines": [
+        176732,
+        177172
+      ],
+      "next_event": "E531",
+      "packets": [
+        "C4",
+        "C5"
+      ],
+      "major": true,
+      "length_exception": "私藏汇总审判+三日空窗+广场熔烧试探+左左照+四角裤坐实",
+      "summary": "熔物预案挖宝→集邮册杀意→三日空窗→银幻赴约熔币→左左照暴走→扒装四角裤坐实。",
+      "corrections": [
+        "删毁币即破/广场熔币在C4执行；有效破绽=堆烧+左左照；停在露脸"
+      ],
+      "concept_refs": [
+        "C1002",
+        "C580",
+        "C645",
+        "C649",
+        "C615",
+        "C1344",
+        "C1355",
+        "C1322",
+        "C1205"
+      ]
+    },
+    {
+      "id": "E531",
+      "title": "黑袍身份公开与规则计划",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E531_黑袍身份公开与规则计划.md",
+      "output": "事件/E531_黑袍身份公开与规则计划.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2054,
+        2063
+      ],
+      "source_lines": [
+        177173,
+        177499
+      ],
+      "next_event": "E532",
+      "packets": [
+        "C5",
+        "C6"
+      ],
+      "major": true,
+      "length_exception": "硬盘审判+夏娃巨像原委+死水之鱼+天道创规则+银幻信任表态",
+      "summary": "板凳硬盘审判→夏娃演戏/巨像真打→死水之鱼→无序入体系→天道/创规则→银幻相信家人。",
+      "corrections": [
+        "删预商权限剥夺对决；停在信任表态挑战前"
+      ],
+      "concept_refs": [
+        "C580",
+        "C1002",
+        "C1211",
+        "C1222",
+        "C1296",
+        "C914",
+        "C1388",
+        "C1387",
+        "C1322",
+        "C645",
+        "C649"
+      ]
+    },
+    {
+      "id": "E532",
+      "title": "创造规则的镜像决斗",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E532_创造规则的镜像决斗.md",
+      "output": "事件/E532_创造规则的镜像决斗.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2059,
+        2063
+      ],
+      "source_lines": [
+        177500,
+        177852
+      ],
+      "next_event": "E533",
+      "packets": [
+        "C6"
+      ],
+      "major": true,
+      "length_exception": "杀意程序科技战+迁坐标+创造教学虚无破茧+拥抱钩子，略低于重大下限仍按重大机制",
+      "summary": "杀意挑战→科技误伤迁三叉戟世界→拟化/万物神王清空→虚无破茧→拥抱谢谢钩子。",
+      "corrections": [
+        "清空非开打前谈妥条件；无黑袍再披/无外援目击；停拥抱钩子交E533"
+      ],
+      "concept_refs": [
+        "C1211",
+        "C1331",
+        "C1222",
+        "C1387",
+        "C1354",
+        "C1322",
+        "C1002",
+        "C1205",
+        "C645",
+        "C1388",
+        "C1296"
+      ]
+    },
+    {
+      "id": "E533",
+      "title": "银幻归心",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E533_银幻归心.md",
+      "output": "事件/E533_银幻归心.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2064,
+        2068
+      ],
+      "source_lines": [
+        177853,
+        178104
+      ],
+      "next_event": "E534"
+    },
+    {
+      "id": "E534",
+      "title": "关系伪装与身份误导",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E534_关系伪装与身份误导.md",
+      "output": "事件/E534_关系伪装与身份误导.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2064,
+        2073
+      ],
+      "source_lines": [
+        178105,
+        178458
+      ],
+      "next_event": "E535",
+      "length_exception": "私核坦白与保密轴，略超普通上限"
+    },
+    {
+      "id": "E535",
+      "title": "巨像与银幻的法则切磋",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E535_巨像与银幻的法则切磋.md",
+      "output": "事件/E535_巨像与银幻的法则切磋.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2069,
+        2073
+      ],
+      "source_lines": [
+        178459,
+        178612
+      ],
+      "next_event": "E536"
+    },
+    {
+      "id": "E536",
+      "title": "南方坠落者联盟",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E536_南方坠落者联盟.md",
+      "output": "事件/E536_南方坠落者联盟.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2069,
+        2078
+      ],
+      "source_lines": [
+        178613,
+        178922
+      ],
+      "next_event": "E537"
+    },
+    {
+      "id": "E537",
+      "title": "主母之战与假死囚禁",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E537_主母之战与假死囚禁.md",
+      "output": "事件/E537_主母之战与假死囚禁.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2074,
+        2083
+      ],
+      "source_lines": [
+        178923,
+        179210
+      ],
+      "next_event": "E538"
+    },
+    {
+      "id": "E538",
+      "title": "光暗融合与根源横扫",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E538_光暗融合与根源横扫.md",
+      "output": "事件/E538_光暗融合与根源横扫.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2079,
+        2083
+      ],
+      "source_lines": [
+        179211,
+        179471
+      ],
+      "next_event": "E539"
+    },
+    {
+      "id": "E539",
+      "title": "第二只渡鸦的误导",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E539_第二只渡鸦的误导.md",
+      "output": "事件/E539_第二只渡鸦的误导.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2079,
+        2086
+      ],
+      "source_lines": [
+        179472,
+        179652
+      ],
+      "next_event": "E540"
+    },
+    {
+      "id": "E540",
+      "title": "地狱争霸与心灵之海计划",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E540_地狱争霸与心灵之海计划.md",
+      "output": "事件/E540_地狱争霸与心灵之海计划.md",
+      "status": "reviewed",
+      "source_chapters": [
+        2084,
+        2086
+      ],
+      "source_lines": [
+        179653,
+        179813
+      ],
+      "next_event": null,
+      "length_exception": "起航收束与争霸战报压缩，略超普通上限"
+    }
+  ]
+}

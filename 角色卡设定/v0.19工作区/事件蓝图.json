@@ -1,0 +1,908 @@
+{
+  "status": "reading",
+  "scope": [
+    493,
+    540
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        1927,
+        1980
+      ],
+      "events": [
+        493,
+        508
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        1981,
+        2033
+      ],
+      "events": [
+        509,
+        524
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        2034,
+        2086
+      ],
+      "events": [
+        525,
+        540
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E493",
+      "title": "原子革命启动与学者吞噬",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E493_原子革命启动与学者吞噬.md",
+      "output": "事件/E493_原子革命启动与学者吞噬.md",
+      "source_chapters": [
+        1927,
+        1928
+      ],
+      "source_lines": [
+        165861,
+        165963
+      ],
+      "next": "E494",
+      "status": "drafted"
+    },
+    {
+      "id": "E494",
+      "title": "银幻上传与芯片脱险",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E494_银幻上传与芯片脱险.md",
+      "output": "事件/E494_银幻上传与芯片脱险.md",
+      "source_chapters": [
+        1928,
+        1931
+      ],
+      "source_lines": [
+        165966,
+        166223
+      ],
+      "next": "E495",
+      "status": "drafted"
+    },
+    {
+      "id": "E495",
+      "title": "无序冲心与将军失控",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E495_无序冲心与将军失控.md",
+      "output": "事件/E495_无序冲心与将军失控.md",
+      "source_chapters": [
+        1932,
+        1939
+      ],
+      "source_lines": [
+        166225,
+        166736
+      ],
+      "next": "E496",
+      "status": "drafted"
+    },
+    {
+      "id": "E496",
+      "title": "原子进度百分之九十九",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E496_原子进度百分之九十九.md",
+      "output": "事件/E496_原子进度百分之九十九.md",
+      "source_chapters": [
+        1939,
+        1940
+      ],
+      "source_lines": [
+        166704,
+        166817
+      ],
+      "next": "E497",
+      "status": "drafted"
+    },
+    {
+      "id": "E497",
+      "title": "灵魂定位与至臻机体",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E497_灵魂定位与至臻机体.md",
+      "output": "事件/E497_灵魂定位与至臻机体.md",
+      "source_chapters": [
+        1941,
+        1946
+      ],
+      "source_lines": [
+        166872,
+        167385
+      ],
+      "next": "E498",
+      "status": "drafted"
+    },
+    {
+      "id": "E498",
+      "title": "数学魔方困局与战场回归",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E498_数学魔方困局与战场回归.md",
+      "output": "事件/E498_数学魔方困局与战场回归.md",
+      "source_chapters": [
+        1947,
+        1948
+      ],
+      "source_lines": [
+        167386,
+        167550
+      ],
+      "next": "E499",
+      "status": "drafted"
+    },
+    {
+      "id": "E499",
+      "title": "绝境开门",
+      "stage": "S67",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E499_绝境开门.md",
+      "output": "事件/E499_绝境开门.md",
+      "source_chapters": [
+        1949,
+        1949
+      ],
+      "source_lines": [
+        167551,
+        167629
+      ],
+      "next": "E500",
+      "status": "drafted"
+    },
+    {
+      "id": "E500",
+      "title": "莫比乌斯环逃生",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E500_莫比乌斯环逃生.md",
+      "output": "事件/E500_莫比乌斯环逃生.md",
+      "source_chapters": [
+        1950,
+        1951
+      ],
+      "source_lines": [
+        167630,
+        167805
+      ],
+      "next": "E501",
+      "status": "drafted"
+    },
+    {
+      "id": "E501",
+      "title": "灵魂修复与海嗣汇合",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E501_灵魂修复与海嗣汇合.md",
+      "output": "事件/E501_灵魂修复与海嗣汇合.md",
+      "source_chapters": [
+        1952,
+        1954
+      ],
+      "source_lines": [
+        167806,
+        168070
+      ],
+      "next": "E502",
+      "status": "drafted"
+    },
+    {
+      "id": "E502",
+      "title": "释放灭绝者与假封印",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E502_释放灭绝者与假封印.md",
+      "output": "事件/E502_释放灭绝者与假封印.md",
+      "source_chapters": [
+        1955,
+        1957
+      ],
+      "source_lines": [
+        168072,
+        168281
+      ],
+      "next": "E503",
+      "status": "drafted"
+    },
+    {
+      "id": "E503",
+      "title": "反叛与机械七神",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E503_反叛与机械七神.md",
+      "output": "事件/E503_反叛与机械七神.md",
+      "source_chapters": [
+        1958,
+        1963
+      ],
+      "source_lines": [
+        168283,
+        168734
+      ],
+      "next": "E504",
+      "status": "drafted"
+    },
+    {
+      "id": "E504",
+      "title": "恒星封印巨构",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E504_恒星封印巨构.md",
+      "output": "事件/E504_恒星封印巨构.md",
+      "source_chapters": [
+        1964,
+        1966
+      ],
+      "source_lines": [
+        168736,
+        168985
+      ],
+      "next": "E505",
+      "status": "drafted"
+    },
+    {
+      "id": "E505",
+      "title": "五台巨构与破界",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E505_五台巨构与破界.md",
+      "output": "事件/E505_五台巨构与破界.md",
+      "source_chapters": [
+        1967,
+        1968
+      ],
+      "source_lines": [
+        168986,
+        169108
+      ],
+      "next": "E506",
+      "status": "drafted"
+    },
+    {
+      "id": "E506",
+      "title": "银幻断后与界门开启",
+      "stage": "S68",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E506_银幻断后与界门开启.md",
+      "output": "事件/E506_银幻断后与界门开启.md",
+      "source_chapters": [
+        1968,
+        1971
+      ],
+      "source_lines": [
+        169109,
+        169443
+      ],
+      "next": "E507",
+      "status": "drafted"
+    },
+    {
+      "id": "E507",
+      "title": "暂时升神与原子风暴",
+      "stage": "S69",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E507_暂时升神与原子风暴.md",
+      "output": "事件/E507_暂时升神与原子风暴.md",
+      "source_chapters": [
+        1972,
+        1975
+      ],
+      "source_lines": [
+        169444,
+        169796
+      ],
+      "next": "E508",
+      "status": "drafted"
+    },
+    {
+      "id": "E508",
+      "title": "母树危机与五台封印",
+      "stage": "S69",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E508_母树危机与五台封印.md",
+      "output": "事件/E508_母树危机与五台封印.md",
+      "source_chapters": [
+        1976,
+        1980
+      ],
+      "source_lines": [
+        169797,
+        170250
+      ],
+      "next": "E509",
+      "status": "drafted"
+    },
+    {
+      "id": "E509",
+      "title": "以太本体与边境冲击",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E509_以太本体与边境冲击.md",
+      "output": "事件/E509_以太本体与边境冲击.md",
+      "source_chapters": [
+        1981,
+        1983
+      ],
+      "source_lines": [
+        170251,
+        170531
+      ],
+      "next": "E510",
+      "status": "drafted"
+    },
+    {
+      "id": "E510",
+      "title": "初诞光晕与边境决战",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E510_无序三柱与核心搜捕.md",
+      "output": "事件/E510_无序三柱与核心搜捕.md",
+      "source_chapters": [
+        1983,
+        1984
+      ],
+      "source_lines": [
+        170532,
+        170617
+      ],
+      "next": "E511",
+      "status": "drafted"
+    },
+    {
+      "id": "E511",
+      "title": "人偶军团与巨构扩张",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E511_人偶军团与巨构扩张.md",
+      "output": "事件/E511_人偶军团与巨构扩张.md",
+      "source_chapters": [
+        1984,
+        1988
+      ],
+      "source_lines": [
+        170618,
+        170919
+      ],
+      "next": "E512",
+      "status": "drafted"
+    },
+    {
+      "id": "E512",
+      "title": "渡鸦尸体与预设计划",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E512_渡鸦尸体与预设计划.md",
+      "output": "事件/E512_渡鸦尸体与预设计划.md",
+      "source_chapters": [
+        1988,
+        1990
+      ],
+      "source_lines": [
+        170920,
+        171186
+      ],
+      "next": "E513",
+      "status": "drafted"
+    },
+    {
+      "id": "E513",
+      "title": "心灵之海与左左登山",
+      "stage": "S69",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E513_心灵之海与左左登山.md",
+      "output": "事件/E513_心灵之海与左左登山.md",
+      "source_chapters": [
+        1991,
+        1995
+      ],
+      "source_lines": [
+        171187,
+        171640
+      ],
+      "next": "E514",
+      "status": "drafted"
+    },
+    {
+      "id": "E514",
+      "title": "左左登顶与矩阵启动",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E514_左左登顶与矩阵启动.md",
+      "output": "事件/E514_左左登顶与矩阵启动.md",
+      "source_chapters": [
+        1996,
+        1997
+      ],
+      "source_lines": [
+        171641,
+        171825
+      ],
+      "next": "E515",
+      "status": "drafted"
+    },
+    {
+      "id": "E515",
+      "title": "万机归位与奈奈子吞噬",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E515_万机归位与奈奈子吞噬.md",
+      "output": "事件/E515_万机归位与奈奈子吞噬.md",
+      "source_chapters": [
+        1998,
+        2001
+      ],
+      "source_lines": [
+        171826,
+        172198
+      ],
+      "next": "E516",
+      "status": "drafted"
+    },
+    {
+      "id": "E516",
+      "title": "三位一体封印",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E516_三位一体封印.md",
+      "output": "事件/E516_三位一体封印.md",
+      "source_chapters": [
+        2001,
+        2005
+      ],
+      "source_lines": [
+        172199,
+        172588
+      ],
+      "next": "E517",
+      "status": "drafted"
+    },
+    {
+      "id": "E517",
+      "title": "银幻归心与巨像醒转",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E517_银幻归心与巨像醒转.md",
+      "output": "事件/E517_银幻归心与巨像醒转.md",
+      "source_chapters": [
+        2005,
+        2005
+      ],
+      "source_lines": [
+        172589,
+        172622
+      ],
+      "next": "E518",
+      "status": "drafted"
+    },
+    {
+      "id": "E518",
+      "title": "奈奈子意识与三柱真相",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E518_奈奈子意识与三柱真相.md",
+      "output": "事件/E518_奈奈子意识与三柱真相.md",
+      "source_chapters": [
+        2006,
+        2013
+      ],
+      "source_lines": [
+        172623,
+        173278
+      ],
+      "next": "E519",
+      "status": "drafted"
+    },
+    {
+      "id": "E519",
+      "title": "梦境方舟与第二次大坠落",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E519_梦境方舟与第二次大坠落.md",
+      "output": "事件/E519_梦境方舟与第二次大坠落.md",
+      "source_chapters": [
+        2014,
+        2016
+      ],
+      "source_lines": [
+        173279,
+        173521
+      ],
+      "next": "E520",
+      "status": "drafted"
+    },
+    {
+      "id": "E520",
+      "title": "时间战争启动",
+      "stage": "S70",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E520_时间战争启动.md",
+      "output": "事件/E520_时间战争启动.md",
+      "source_chapters": [
+        2017,
+        2020
+      ],
+      "source_lines": [
+        173522,
+        173799
+      ],
+      "next": "E521",
+      "status": "drafted"
+    },
+    {
+      "id": "E521",
+      "title": "五十四次回返与新神计划",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E521_五十四次回返与新神计划.md",
+      "output": "事件/E521_五十四次回返与新神计划.md",
+      "source_chapters": [
+        2021,
+        2025
+      ],
+      "source_lines": [
+        173851,
+        174254
+      ],
+      "next": "E522",
+      "status": "drafted"
+    },
+    {
+      "id": "E522",
+      "title": "碎片灌输与左左回应",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E522_碎片灌输与左左回应.md",
+      "output": "事件/E522_碎片灌输与左左回应.md",
+      "source_chapters": [
+        2025,
+        2026
+      ],
+      "source_lines": [
+        174255,
+        174367
+      ],
+      "next": "E523",
+      "status": "drafted"
+    },
+    {
+      "id": "E523",
+      "title": "鲜血孽灵与禁术突破",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E523_鲜血孽灵与禁术突破.md",
+      "output": "事件/E523_鲜血孽灵与禁术突破.md",
+      "source_chapters": [
+        2027,
+        2032
+      ],
+      "source_lines": [
+        174368,
+        174918
+      ],
+      "next": "E524",
+      "status": "drafted"
+    },
+    {
+      "id": "E524",
+      "title": "渡鸦墓地与神王相遇",
+      "stage": "S71",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E524_渡鸦墓地与神王相遇.md",
+      "output": "事件/E524_渡鸦墓地与神王相遇.md",
+      "source_chapters": [
+        2032,
+        2033
+      ],
+      "source_lines": [
+        174919,
+        175039
+      ],
+      "next": "E525",
+      "status": "drafted"
+    },
+    {
+      "id": "E525",
+      "title": "三招赌约与因果压制",
+      "stage": "S71",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E525_三招赌约与因果压制.md",
+      "output": "事件/E525_三招赌约与因果压制.md",
+      "source_chapters": [
+        2034,
+        2040
+      ],
+      "source_lines": [
+        175040,
+        175761
+      ],
+      "next": "E526",
+      "status": "drafted"
+    },
+    {
+      "id": "E526",
+      "title": "留在过去的选择",
+      "stage": "S71",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E526_留在过去的选择.md",
+      "output": "事件/E526_留在过去的选择.md",
+      "source_chapters": [
+        2041,
+        2042
+      ],
+      "source_lines": [
+        175762,
+        175895
+      ],
+      "next": "E527",
+      "status": "drafted"
+    },
+    {
+      "id": "E527",
+      "title": "二十一万年前的墓地",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E527_二十一万年前的墓地.md",
+      "output": "事件/E527_二十一万年前的墓地.md",
+      "source_chapters": [
+        2042,
+        2044
+      ],
+      "source_lines": [
+        175896,
+        176126
+      ],
+      "next": "E528",
+      "status": "drafted"
+    },
+    {
+      "id": "E528",
+      "title": "空间规则与神王再会",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E528_空间规则与神王再会.md",
+      "output": "事件/E528_空间规则与神王再会.md",
+      "source_chapters": [
+        2044,
+        2047
+      ],
+      "source_lines": [
+        176127,
+        176333
+      ],
+      "next": "E529",
+      "status": "drafted"
+    },
+    {
+      "id": "E529",
+      "title": "黑袍人现身与夏娃战书",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E529_黑袍人现身与夏娃战书.md",
+      "output": "事件/E529_黑袍人现身与夏娃战书.md",
+      "source_chapters": [
+        2047,
+        2051
+      ],
+      "source_lines": [
+        176334,
+        176731
+      ],
+      "next": "E530",
+      "status": "drafted"
+    },
+    {
+      "id": "E530",
+      "title": "私藏品试探与身份逼近",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E530_私藏品试探与身份逼近.md",
+      "output": "事件/E530_私藏品试探与身份逼近.md",
+      "source_chapters": [
+        2051,
+        2055
+      ],
+      "source_lines": [
+        176732,
+        177172
+      ],
+      "next": "E531",
+      "status": "drafted"
+    },
+    {
+      "id": "E531",
+      "title": "黑袍身份公开与规则计划",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E531_黑袍身份公开与规则计划.md",
+      "output": "事件/E531_黑袍身份公开与规则计划.md",
+      "source_chapters": [
+        2056,
+        2060
+      ],
+      "source_lines": [
+        177173,
+        177499
+      ],
+      "next": "E532",
+      "status": "drafted"
+    },
+    {
+      "id": "E532",
+      "title": "创造规则的镜像决斗",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E532_创造规则的镜像决斗.md",
+      "output": "事件/E532_创造规则的镜像决斗.md",
+      "source_chapters": [
+        2060,
+        2063
+      ],
+      "source_lines": [
+        177500,
+        177852
+      ],
+      "next": "E533",
+      "status": "drafted"
+    },
+    {
+      "id": "E533",
+      "title": "银幻归心",
+      "stage": "S72",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E533_银幻归心.md",
+      "output": "事件/E533_银幻归心.md",
+      "source_chapters": [
+        2064,
+        2066
+      ],
+      "source_lines": [
+        177853,
+        178104
+      ],
+      "next": "E534",
+      "status": "drafted"
+    },
+    {
+      "id": "E534",
+      "title": "关系伪装与身份误导",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E534_关系伪装与身份误导.md",
+      "output": "事件/E534_关系伪装与身份误导.md",
+      "source_chapters": [
+        2067,
+        2070
+      ],
+      "source_lines": [
+        178105,
+        178458
+      ],
+      "next": "E535",
+      "status": "drafted"
+    },
+    {
+      "id": "E535",
+      "title": "巨像与银幻的法则切磋",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E535_巨像与银幻的法则切磋.md",
+      "output": "事件/E535_巨像与银幻的法则切磋.md",
+      "source_chapters": [
+        2071,
+        2072
+      ],
+      "source_lines": [
+        178459,
+        178612
+      ],
+      "next": "E536",
+      "status": "drafted"
+    },
+    {
+      "id": "E536",
+      "title": "南方坠落者联盟",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E536_南方坠落者联盟.md",
+      "output": "事件/E536_南方坠落者联盟.md",
+      "source_chapters": [
+        2073,
+        2076
+      ],
+      "source_lines": [
+        178613,
+        178922
+      ],
+      "next": "E537",
+      "status": "drafted"
+    },
+    {
+      "id": "E537",
+      "title": "主母之战与假死囚禁",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E537_主母之战与假死囚禁.md",
+      "output": "事件/E537_主母之战与假死囚禁.md",
+      "source_chapters": [
+        2077,
+        2079
+      ],
+      "source_lines": [
+        178923,
+        179210
+      ],
+      "next": "E538",
+      "status": "drafted"
+    },
+    {
+      "id": "E538",
+      "title": "光暗融合与根源横扫",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E538_光暗融合与根源横扫.md",
+      "output": "事件/E538_光暗融合与根源横扫.md",
+      "source_chapters": [
+        2080,
+        2082
+      ],
+      "source_lines": [
+        179211,
+        179471
+      ],
+      "next": "E539",
+      "status": "drafted"
+    },
+    {
+      "id": "E539",
+      "title": "第二只渡鸦的误导",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E539_第二只渡鸦的误导.md",
+      "output": "事件/E539_第二只渡鸦的误导.md",
+      "source_chapters": [
+        2083,
+        2084
+      ],
+      "source_lines": [
+        179472,
+        179652
+      ],
+      "next": "E540",
+      "status": "drafted"
+    },
+    {
+      "id": "E540",
+      "title": "地狱争霸与心灵之海计划",
+      "stage": "S73",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段14_第1927-2086章/事件/E540_地狱争霸与心灵之海计划.md",
+      "output": "事件/E540_地狱争霸与心灵之海计划.md",
+      "source_chapters": [
+        2085,
+        2086
+      ],
+      "source_lines": [
+        179653,
+        179813
+      ],
+      "next": null,
+      "status": "drafted"
+    }
+  ]
+}
