@@ -1,0 +1,30 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.18.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": null,
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Codex offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.18.json",
+  "bytes": 12671853,
+  "sha256": "d88a7e8c6fab514e6f900660816d40dbb23b2acb75213f841c512dc9b59f014c",
+  "offline_checks": {
+    "status": "passed",
+    "checks": 47909,
+    "validate_checks": 41502,
+    "integration_checks": 6407,
+    "command": "npm run check",
+    "worldbook_entries": 1306,
+    "event_anchors": 492
+  },
+  "notes": "v0.18合入E435-E492、73份概念（7增量+66新，UID2610-2675，跳过merged C1359/C1360）、人物增量与3名精简NPC（UID316-318）；事件UID1134-1191。离线npm run check通过（41500+6407）；真实宿主验收仍pending。",
+  "previous_artifact_sha256": "6305a7c7d2888c6c5bdbde9134b5625fcee04d4a1356503b6ddba22341420e90"
+}

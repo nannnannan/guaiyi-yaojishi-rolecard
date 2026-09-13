@@ -1,0 +1,55 @@
+project:
+  name: v0.18阶段十三设定精修
+  status: integrated
+  runtime_base: 角色卡本体/诡异药剂师_MVU_v0.17
+  runtime_version: 0.17.0
+  runtime_terminal_event: E434
+  candidate_label: v0.18
+scope:
+  chapters: [1768, 1926]
+  events: [E435, E492]
+  planned_event_count: 58
+  runtime_stages: [S60, S66]
+  source: 角色卡设定/原文.txt
+  source_ledger: 来源台账.json
+  candidate_slice: 角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章
+  future: 不读取或引入1927章之后正文
+groups:
+  A: {chapters: [1768, 1820], events: [E435, E450]}
+  B: {chapters: [1821, 1873], events: [E451, E466]}
+  C: {chapters: [1874, 1926], events: [E467, E492]}
+writing:
+  nsfw: 事实成立则直写；事实不足才留白；不写占位、叠甲、回避话术或非性替代；幼态/幼年体外形固定非性
+  whitespace_priority: 事实不足处留白，不凑字；留白不是 NSFW 回避手段
+  player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
+  evidence: 原文是唯一事实来源；事件正文以核对记录为准，旧切片只作待核线索
+  events: 普通默认走向500至1000字，重大事件约2000字，事实不足与留白不填充
+  concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件；新增概念逻辑编号建议自C1321起
+  metadata: 章节与行号仅放核对记录，正文使用E/C编号
+  notes:
+    - E492开放终点：停在以太「吃了」，门前胜负与巨像尽噬未闭合
+    - E448幼态非性机制结算：左萝外形固定非性，只留飞升%/亲密度等机制因果
+workflow:
+  - 冻结原文分包和只读指纹
+  - index-base 对照 v0.17 卡体
+  - 三组子代理逐包精读（已完成 33/33）并按核对记录重写事件（已完成 58/58 reviewed）
+  - 交叉核对事件事实和玩家主权（已完成）
+  - 概念去重及人物和NPC增量（已完成）
+  - 摘要衔接与完整离线验收（已通过 --complete）
+delivery:
+  check: npm run check -- --complete
+  integration: done
+  package: done
+  git_push: not_started
+  real_host: deferred
+result:
+  source_packets: done
+  source_packets_count: 33
+  planned_events: 58
+  events_authored: 58
+  events_status: reviewed
+  complete: true
+  integrated: true
+  open_end: E492以太「吃了」
+  e448_note: 幼态非性机制结算
+  next: 真机验收暂缓；后续从E493另建边界

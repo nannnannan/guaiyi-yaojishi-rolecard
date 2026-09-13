@@ -1,0 +1,364 @@
+{
+  "status": "passed",
+  "checks": 33323,
+  "errors": [],
+  "warnings": [],
+  "planned_events": 58,
+  "written_events": 58,
+  "blank_events": [],
+  "events": [
+    {
+      "id": "E435",
+      "blank": false,
+      "chars": 858,
+      "length_exception": null
+    },
+    {
+      "id": "E436",
+      "blank": false,
+      "chars": 998,
+      "length_exception": null
+    },
+    {
+      "id": "E437",
+      "blank": false,
+      "chars": 1111,
+      "length_exception": "大场面事实密度，按核对记录完整因果保留"
+    },
+    {
+      "id": "E438",
+      "blank": false,
+      "chars": 1474,
+      "length_exception": "大场面事实密度，按核对记录完整因果保留"
+    },
+    {
+      "id": "E439",
+      "blank": false,
+      "chars": 1880,
+      "length_exception": "大战净化与突围事实密度，按A3完整因果保留"
+    },
+    {
+      "id": "E440",
+      "blank": false,
+      "chars": 2580,
+      "length_exception": "一人成军入墓船开治事实密度，按A4前半完整因果保留"
+    },
+    {
+      "id": "E441",
+      "blank": false,
+      "chars": 2441,
+      "length_exception": "围城无序化与母树双法则事实密度，按A4末+A5前半完整因果保留"
+    },
+    {
+      "id": "E442",
+      "blank": false,
+      "chars": 1420,
+      "length_exception": "碎片深渊赴死与结果亮相事实密度，墓船过程留白不凑字；按A5中段边界保留"
+    },
+    {
+      "id": "E443",
+      "blank": false,
+      "chars": 2473,
+      "length_exception": "决战净化失却之海撕碎与战后忘却种子孽主集结事实密度，按A5末+A6前半完整因果保留"
+    },
+    {
+      "id": "E444",
+      "blank": false,
+      "chars": 2640,
+      "length_exception": "地狱边境天空之城集体升格破结界撞城献祭仪式加压事实密度，按A6后半完整因果保留；言出法随主体留E445"
+    },
+    {
+      "id": "E445",
+      "blank": false,
+      "chars": 3551,
+      "length_exception": "言出法随真理断链处决禁制界门1/4登王座赌赢金瞳恨呼事实密度，按A7完整因果保留"
+    },
+    {
+      "id": "E446",
+      "blank": false,
+      "chars": 2207,
+      "length_exception": "王骑接戟灭金手落城闭门与雷蒙全名面板事实密度，按A7末+A8闭门段保留；必败长谈/康船亲密留E447–E448"
+    },
+    {
+      "id": "E447",
+      "blank": false,
+      "chars": 1133,
+      "length_exception": "必败战争／第一次尝试／遗产权／狱卒聚集逃亡／无尽海霸主结算事实密度，按A8核对保留；康船亲密留E448"
+    },
+    {
+      "id": "E448",
+      "blank": false,
+      "chars": 1426,
+      "length_exception": "康船休整与自愿亲密机制结算＋识破砸甲板事实密度，按A8；幼态外形固定非性，交合过程不展开只留飞升%/亲密度因果"
+    },
+    {
+      "id": "E449",
+      "blank": false,
+      "chars": 3128,
+      "length_exception": "甲板重誓／遗忘想起／踹厅交戟／看上就搬／工具派vs保王党分裂事实密度，按A9前半保留；搬空通报留E450"
+    },
+    {
+      "id": "E450",
+      "blank": false,
+      "chars": 2112,
+      "length_exception": "搬空喜剧／黑夜城二次重建／五大根源警报／满载撞城／艾雯训事实密度，按A9末保留；开戟救援留E451"
+    },
+    {
+      "id": "E451",
+      "blank": false,
+      "chars": 1759,
+      "length_exception": "广场炫耀／一拳测底／开戟自伤／挚友救援／将吻打断／触手敏感事实密度，按A10；内界吾神留E452"
+    },
+    {
+      "id": "E452",
+      "blank": false,
+      "chars": 1371,
+      "length_exception": "钥匙论／吾神烂肉／灵能排斥／狱卒假说／两日回守／康加盟建材事实密度，按A10末+A11；魔鬼训练留E453"
+    },
+    {
+      "id": "E453",
+      "blank": false,
+      "chars": 1437,
+      "length_exception": "掀屋开课／偏科测速／黄金体示范／印记控能／背山跑事实密度，按A11尾+B1头；失却之海灵能课留E454"
+    },
+    {
+      "id": "E454",
+      "blank": false,
+      "chars": 1050,
+      "length_exception": "失却之海几百年理论＋多日灵能实践至邀试事实密度，按B1末+B2前；机械基地评定留E455"
+    },
+    {
+      "id": "E455",
+      "blank": false,
+      "chars": 838,
+      "length_exception": "阶位评定超凡→领主→死兆出场事实密度，按B2边界保留；尖端对抗与开战问答留E456"
+    },
+    {
+      "id": "E456",
+      "blank": false,
+      "chars": 1347,
+      "length_exception": "尖端对抗三位一体机+爱丽丝、君王栏×、开战一月收束与入空间门事实密度，按B2末+B3前半保留；隐身舰首战留E457"
+    },
+    {
+      "id": "E457",
+      "blank": false,
+      "chars": 1123,
+      "length_exception": "隐身舰奇袭至舰坠拆材事实密度，按B3中段完整因果保留；纳米风暴留E458"
+    },
+    {
+      "id": "E458",
+      "blank": false,
+      "chars": 834,
+      "length_exception": "纳米风暴尘化至密闭核洗地弃区折返报讯事实密度，按B3末+B4开端保留；前线令撤留E459"
+    },
+    {
+      "id": "E459",
+      "blank": false,
+      "chars": 1334,
+      "length_exception": "令撤戟内界收容巫神一月简报头穿新武器压制松动与独潜赴火山事实密度，按B4 1836–1838边界保留；纳米建厂留E460"
+    },
+    {
+      "id": "E460",
+      "blank": false,
+      "chars": 1669,
+      "length_exception": "纳米建厂天罗地网拥星者战血肉纳米反控揭示至潜入锁定巨像事实密度，按B4末+B5 1841边界保留；龙首数字干涉留E461"
+    },
+    {
+      "id": "E461",
+      "blank": false,
+      "chars": 1840,
+      "length_exception": "龙首灭绝者围杀数字干涉腰斩六棱半成品笼与学者人偶女儿口述事实密度，按B5 1842–1844边界保留；召唤法阵留E462"
+    },
+    {
+      "id": "E462",
+      "blank": false,
+      "chars": 1432,
+      "length_exception": "三十二魂法阵整召瘟疫突袭伪体欺超维至数学魔方成形事实密度，按B5末+B6至将军不需永久边界保留；巨眼祂们交易留E463"
+    },
+    {
+      "id": "E463",
+      "blank": false,
+      "chars": 769,
+      "length_exception": "生存权交易学者牢笼围杀令法阵雏形与开棺无序材料事实密度，按B6至1850边界保留；饲养与终极献祭留E464"
+    },
+    {
+      "id": "E464",
+      "blank": false,
+      "chars": 944,
+      "length_exception": "饲养无序灾难制造者反向无瞳献祭针孔至代行者握魔方事实密度，按B7至捏碎前边界保留；捏碎深渊留E465"
+    },
+    {
+      "id": "E465",
+      "blank": false,
+      "chars": 1105,
+      "length_exception": "捏碎深渊宣战殴学者重返sss+棺椁甩收夜医假折跃奇异世界团圆事实密度，按B7末+B8至1856边界保留；幽灵再潜留E466"
+    },
+    {
+      "id": "E466",
+      "blank": false,
+      "chars": 1145,
+      "length_exception": "幽灵再潜光宴脸终端掐喉夺权至没放过你事实密度，按B8 1857–1860边界保留；伪造过去留E467"
+    },
+    {
+      "id": "E467",
+      "blank": false,
+      "chars": 930,
+      "length_exception": null
+    },
+    {
+      "id": "E468",
+      "blank": false,
+      "chars": 779,
+      "length_exception": null
+    },
+    {
+      "id": "E469",
+      "blank": false,
+      "chars": 737,
+      "length_exception": null
+    },
+    {
+      "id": "E470",
+      "blank": false,
+      "chars": 834,
+      "length_exception": null
+    },
+    {
+      "id": "E471",
+      "blank": false,
+      "chars": 637,
+      "length_exception": "银色幻想双线＋龙首降临事实密度，按B11完整因果保留"
+    },
+    {
+      "id": "E472",
+      "blank": false,
+      "chars": 621,
+      "length_exception": "撕体戒严夺中级终端与协议一连裂事实密度，按C1前中段完整因果保留"
+    },
+    {
+      "id": "E473",
+      "blank": false,
+      "chars": 516,
+      "length_exception": null
+    },
+    {
+      "id": "E474",
+      "blank": false,
+      "chars": 840,
+      "length_exception": "九十八械斗两枚竞价背刺与集会钉名模因出示事实密度，按C2至立方体亮出保留；裂射入体留E475"
+    },
+    {
+      "id": "E475",
+      "blank": false,
+      "chars": 577,
+      "length_exception": null
+    },
+    {
+      "id": "E476",
+      "blank": false,
+      "chars": 1117,
+      "length_exception": "复燃火种、模因隔绝、脱衣认输、三体分流与田园暗号事实密度，按C3上半完整因果保留；接画转向留E477"
+    },
+    {
+      "id": "E477",
+      "blank": false,
+      "chars": 757,
+      "length_exception": null
+    },
+    {
+      "id": "E478",
+      "blank": false,
+      "chars": 894,
+      "length_exception": null
+    },
+    {
+      "id": "E479",
+      "blank": false,
+      "chars": 877,
+      "length_exception": null
+    },
+    {
+      "id": "E480",
+      "blank": false,
+      "chars": 572,
+      "length_exception": null
+    },
+    {
+      "id": "E481",
+      "blank": false,
+      "chars": 1448,
+      "length_exception": "终端装置／病毒激活／廊战／双神到场事实密度，按C5上半至围杀前保留；识破与爆炸留E482"
+    },
+    {
+      "id": "E482",
+      "blank": false,
+      "chars": 1608,
+      "length_exception": "救援识破倒计时＋火莲爆炸近三分之一瘫＋熔炉对峙至学者拒事实密度，按C5末+C6前半保留；以太吞噬留E483"
+    },
+    {
+      "id": "E483",
+      "blank": false,
+      "chars": 994,
+      "length_exception": "中枢吞噬诞生与开价对峙事实密度，按C6止于品尝污染未成交保留；汇合留E484"
+    },
+    {
+      "id": "E484",
+      "blank": false,
+      "chars": 1670,
+      "length_exception": "赶路试探斩影真身同框光刃隔宴三区图智脑撕票我答应事实密度，按C6汇合至夹层松手保留；遗产钥匙留E485"
+    },
+    {
+      "id": "E485",
+      "blank": false,
+      "chars": 1620,
+      "length_exception": "并肩握手遗产钥匙越界打断以太17%炸弹炸撤事实密度，按C7至撤离保留；密辛543留E486"
+    },
+    {
+      "id": "E486",
+      "blank": false,
+      "chars": 2237,
+      "length_exception": "密辛543睁眼失败数据碾压现实围殴俘获奇异世界事实密度，按C7–C8至防故意被抓保留；定位矩阵留E487"
+    },
+    {
+      "id": "E487",
+      "blank": false,
+      "chars": 637,
+      "length_exception": null
+    },
+    {
+      "id": "E488",
+      "blank": false,
+      "chars": 566,
+      "length_exception": null
+    },
+    {
+      "id": "E489",
+      "blank": false,
+      "chars": 844,
+      "length_exception": "机械战争边境至上传大厅清场与以M挡驰援事实密度，按C9中后段完整因果保留；三机神合围留E490"
+    },
+    {
+      "id": "E490",
+      "blank": false,
+      "chars": 949,
+      "length_exception": "三机神合围、灭绝级阵列、介子火、魂媒与小眼萝撕衣交易达成事实密度，按C9末至C10前段保留；全面动乱出击留E491"
+    },
+    {
+      "id": "E491",
+      "blank": false,
+      "chars": 1282,
+      "length_exception": "全面动乱出击＋二次灭绝矩阵失效＋75号定位＋光宴崩一二区终端＋援军宣言／黑弦月传讯开端事实密度，按C10自可诅咒后至传讯止完整因果保留；抵门／戟召／以太夺取留E492"
+    },
+    {
+      "id": "E492",
+      "blank": false,
+      "chars": 1842,
+      "length_exception": "抵门／戟召全军／人偶家落地／将军分兵／以太守门／三根源开战／学者锁／容器空／吃了开放终点事实密度，按C11完整因果保留；胜负与巨像尽噬未闭合，无v0.19正文"
+    }
+  ],
+  "concepts": 73,
+  "characters": 12,
+  "complete": true,
+  "integrated": false,
+  "real_host": "deferred"
+}

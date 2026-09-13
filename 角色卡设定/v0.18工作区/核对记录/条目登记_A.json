@@ -1,0 +1,635 @@
+{
+  "concepts": [
+    {
+      "id": "C1292",
+      "title": "深海罗盘与船长沉眠地",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/concepts/C1292_深海罗盘指向与身份信物.md",
+      "output": "概念/C1292_深海罗盘与船长沉眠地.md",
+      "source_events": [
+        "E439",
+        "E440"
+      ],
+      "source_lines": [
+        [
+          154590,
+          154895
+        ],
+        [
+          154896,
+          155150
+        ]
+      ]
+    },
+    {
+      "id": "C1318",
+      "title": "康斯坦丁复苏与渡鸦结果",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/concepts/C1318_康斯坦丁本体镇压与一年之约.md",
+      "output": "概念/C1318_康斯坦丁复苏与渡鸦结果.md",
+      "source_events": [
+        "E440",
+        "E442"
+      ],
+      "source_lines": [
+        [
+          154896,
+          155150
+        ],
+        [
+          155365,
+          155482
+        ]
+      ]
+    },
+    {
+      "id": "C1324",
+      "title": "狱卒化无序战车与血肉分流诱饵",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1324_狱卒化无序战车与血肉分流诱饵.md",
+      "source_events": [
+        "E435"
+      ],
+      "source_lines": [
+        [
+          153712,
+          153965
+        ]
+      ]
+    },
+    {
+      "id": "C1325",
+      "title": "深海王庭与紫罗兰葬所",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1325_深海王庭与紫罗兰葬所.md",
+      "source_events": [
+        "E436"
+      ],
+      "source_lines": [
+        [
+          153966,
+          154186
+        ]
+      ]
+    },
+    {
+      "id": "C1326",
+      "title": "王戟真正主人与西海污染警告",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1326_王戟真正主人与西海污染警告.md",
+      "source_events": [
+        "E437"
+      ],
+      "source_lines": [
+        [
+          154187,
+          154347
+        ]
+      ]
+    },
+    {
+      "id": "C1327",
+      "title": "沉眠者病变与王戟交付",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1327_沉眠者病变与王戟交付.md",
+      "source_events": [
+        "E438"
+      ],
+      "source_lines": [
+        [
+          154348,
+          154589
+        ]
+      ]
+    },
+    {
+      "id": "C1328",
+      "title": "王戟海洋权柄与王兽净化因果",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1328_王戟海洋权柄与王兽净化因果.md",
+      "source_events": [
+        "E439"
+      ],
+      "source_lines": [
+        [
+          154590,
+          154895
+        ]
+      ]
+    },
+    {
+      "id": "C1329",
+      "title": "撕裂者芬里斯与灵魂之火",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1329_撕裂者芬里斯与灵魂之火.md",
+      "source_events": [
+        "E440",
+        "E442"
+      ],
+      "source_lines": [
+        [
+          154896,
+          155150
+        ],
+        [
+          155365,
+          155482
+        ]
+      ]
+    },
+    {
+      "id": "C1330",
+      "title": "初诞者黄沙覆骸与原初碎片重创",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1330_初诞者黄沙覆骸与原初碎片重创.md",
+      "source_events": [
+        "E440",
+        "E442"
+      ],
+      "source_lines": [
+        [
+          154896,
+          155150
+        ],
+        [
+          155365,
+          155482
+        ]
+      ]
+    },
+    {
+      "id": "C1331",
+      "title": "毁灭创造双法则与生命之种",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1331_毁灭创造双法则与生命之种.md",
+      "source_events": [
+        "E441",
+        "E443"
+      ],
+      "source_lines": [
+        [
+          155151,
+          155364
+        ],
+        [
+          155483,
+          155867
+        ]
+      ]
+    },
+    {
+      "id": "C1332",
+      "title": "王兽无序化与无光深渊",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1332_王兽无序化与无光深渊.md",
+      "source_events": [
+        "E441",
+        "E442"
+      ],
+      "source_lines": [
+        [
+          155151,
+          155364
+        ],
+        [
+          155365,
+          155482
+        ]
+      ]
+    },
+    {
+      "id": "C1333",
+      "title": "小丑心脏疤痕与忘却",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1333_小丑心脏疤痕与忘却.md",
+      "source_events": [
+        "E441"
+      ],
+      "source_lines": [
+        [
+          155151,
+          155364
+        ]
+      ]
+    },
+    {
+      "id": "C1334",
+      "title": "渡鸦捏爆净化与失却之海夺控",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1334_渡鸦捏爆净化与失却之海夺控.md",
+      "source_events": [
+        "E443"
+      ],
+      "source_lines": [
+        [
+          155483,
+          155867
+        ]
+      ]
+    },
+    {
+      "id": "C1335",
+      "title": "无序化渐进忘却与导航者职衔",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1335_无序化渐进忘却与导航者职衔.md",
+      "source_events": [
+        "E443"
+      ],
+      "source_lines": [
+        [
+          155483,
+          155867
+        ]
+      ]
+    },
+    {
+      "id": "C1336",
+      "title": "集体升格与天空之城权柄",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1336_集体升格与天空之城权柄.md",
+      "source_events": [
+        "E444"
+      ],
+      "source_lines": [
+        [
+          155868,
+          156140
+        ]
+      ]
+    },
+    {
+      "id": "C1337",
+      "title": "无瞳黑袍守军与终焉教团",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1337_无瞳黑袍守军与终焉教团.md",
+      "source_events": [
+        "E444",
+        "E445"
+      ],
+      "source_lines": [
+        [
+          155868,
+          156140
+        ],
+        [
+          156141,
+          156466
+        ]
+      ]
+    },
+    {
+      "id": "C1338",
+      "title": "言出法随与外宇代行者",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1338_言出法随与外宇代行者.md",
+      "source_events": [
+        "E445"
+      ],
+      "source_lines": [
+        [
+          156141,
+          156466
+        ]
+      ]
+    },
+    {
+      "id": "C1339",
+      "title": "西海王座权限禁制与交还",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1339_西海王座权限禁制与交还.md",
+      "source_events": [
+        "E445",
+        "E446"
+      ],
+      "source_lines": [
+        [
+          156141,
+          156466
+        ],
+        [
+          156467,
+          156618
+        ]
+      ]
+    },
+    {
+      "id": "C1340",
+      "title": "王骑深渊归来与接戟灭金手",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1340_王骑深渊归来与接戟灭金手.md",
+      "source_events": [
+        "E446"
+      ],
+      "source_lines": [
+        [
+          156467,
+          156618
+        ]
+      ]
+    },
+    {
+      "id": "C1341",
+      "title": "必败战争与渡鸦遗产权",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1341_必败战争与渡鸦遗产权.md",
+      "source_events": [
+        "E447"
+      ],
+      "source_lines": [
+        [
+          156619,
+          156702
+        ]
+      ]
+    },
+    {
+      "id": "C1342",
+      "title": "康斯坦丁船外直播与升龙拳",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1342_康斯坦丁船外直播与升龙拳.md",
+      "source_events": [
+        "E448"
+      ],
+      "source_lines": [
+        [
+          156703,
+          156919
+        ]
+      ]
+    },
+    {
+      "id": "C1343",
+      "title": "王兽重誓与三叉戟永久归属",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1343_王兽重誓与三叉戟永久归属.md",
+      "source_events": [
+        "E449"
+      ],
+      "source_lines": [
+        [
+          156920,
+          157166
+        ]
+      ]
+    },
+    {
+      "id": "C1344",
+      "title": "天空城搬空与黑夜城二次重建",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1344_天空城搬空与黑夜城二次重建.md",
+      "source_events": [
+        "E450",
+        "E451"
+      ],
+      "source_lines": [
+        [
+          157167,
+          157324
+        ],
+        [
+          157325,
+          157642
+        ]
+      ]
+    },
+    {
+      "id": "C914",
+      "title": "狱卒工具派与可能性增量",
+      "kind": "update",
+      "base_path": "角色卡设定/v0.17工作区/概念/C914_狱卒分歧与幕后撤离.md",
+      "output": "概念/C914_狱卒工具派与可能性增量.md",
+      "source_events": [
+        "E449",
+        "E452"
+      ],
+      "source_lines": [
+        [
+          156920,
+          157166
+        ],
+        [
+          157643,
+          157778
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "左左",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/characters/左左",
+      "output": "人物增量/左左_A.md",
+      "source_events": [
+        "E448",
+        "E451"
+      ],
+      "source_lines": [
+        [
+          156703,
+          156919
+        ],
+        [
+          157325,
+          157642
+        ]
+      ]
+    },
+    {
+      "name": "康斯坦丁",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/characters/康斯坦丁",
+      "output": "人物增量/康斯坦丁_A.md",
+      "source_events": [
+        "E440",
+        "E442",
+        "E443",
+        "E445",
+        "E448",
+        "E449",
+        "E452"
+      ],
+      "source_lines": [
+        [
+          154896,
+          155150
+        ],
+        [
+          155365,
+          155482
+        ],
+        [
+          155483,
+          155867
+        ],
+        [
+          156141,
+          156466
+        ],
+        [
+          156703,
+          156919
+        ],
+        [
+          156920,
+          157166
+        ],
+        [
+          157643,
+          157778
+        ]
+      ]
+    },
+    {
+      "name": "欲望母树",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/characters/欲望母树",
+      "output": "人物增量/欲望母树_A.md",
+      "source_events": [
+        "E440",
+        "E441",
+        "E443"
+      ],
+      "source_lines": [
+        [
+          154896,
+          155150
+        ],
+        [
+          155151,
+          155364
+        ],
+        [
+          155483,
+          155867
+        ]
+      ]
+    },
+    {
+      "name": "艾泽法拉",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/characters/艾泽法拉",
+      "output": "人物增量/艾泽法拉_A.md",
+      "source_events": [
+        "E437",
+        "E438",
+        "E449",
+        "E451",
+        "E452"
+      ],
+      "source_lines": [
+        [
+          154187,
+          154347
+        ],
+        [
+          154348,
+          154589
+        ],
+        [
+          156920,
+          157166
+        ],
+        [
+          157325,
+          157642
+        ],
+        [
+          157643,
+          157778
+        ]
+      ]
+    },
+    {
+      "name": "弑利亚",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/characters/弑利亚",
+      "output": "NPC/弑利亚.md",
+      "source_events": [
+        "E435",
+        "E437",
+        "E441",
+        "E442",
+        "E443"
+      ],
+      "source_lines": [
+        [
+          153712,
+          153965
+        ],
+        [
+          154187,
+          154347
+        ],
+        [
+          155151,
+          155364
+        ],
+        [
+          155365,
+          155482
+        ],
+        [
+          155483,
+          155867
+        ]
+      ]
+    },
+    {
+      "name": "雷蒙·冬语",
+      "kind": "new",
+      "base_path": null,
+      "output": "新NPC/雷蒙·冬语_王骑.md",
+      "source_events": [
+        "E437",
+        "E438",
+        "E446",
+        "E447",
+        "E449"
+      ],
+      "source_lines": [
+        [
+          154187,
+          154347
+        ],
+        [
+          154348,
+          154589
+        ],
+        [
+          156467,
+          156618
+        ],
+        [
+          156619,
+          156702
+        ],
+        [
+          156920,
+          157166
+        ]
+      ]
+    }
+  ]
+}

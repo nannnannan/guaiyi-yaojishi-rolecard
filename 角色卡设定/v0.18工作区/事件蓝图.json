@@ -1,0 +1,1087 @@
+{
+  "status": "events_cross_reviewed",
+  "scope": [
+    435,
+    492
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        1768,
+        1820
+      ],
+      "events": [
+        435,
+        450
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        1821,
+        1873
+      ],
+      "events": [
+        451,
+        466
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        1874,
+        1926
+      ],
+      "events": [
+        467,
+        492
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E435",
+      "title": "无序飙车与八旗防线",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E435_无序飙车与导航者防线.md",
+      "output": "事件/E435_无序飙车与导航者防线.md",
+      "source_chapters": [
+        1768,
+        1770
+      ],
+      "source_lines": [
+        153712,
+        153965
+      ],
+      "next": "E436",
+      "status": "reviewed"
+    },
+    {
+      "id": "E436",
+      "title": "深海王庭与紫罗兰葬所",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E436_深海王庭与紫罗兰葬所.md",
+      "output": "事件/E436_深海王庭与紫罗兰葬所.md",
+      "source_chapters": [
+        1771,
+        1773
+      ],
+      "source_lines": [
+        153966,
+        154186
+      ],
+      "next": "E437",
+      "status": "reviewed"
+    },
+    {
+      "id": "E437",
+      "title": "艾泽法拉与大君遗产",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E437_艾泽法拉与大君遗产.md",
+      "output": "事件/E437_艾泽法拉与大君遗产.md",
+      "source_chapters": [
+        1774,
+        1775
+      ],
+      "source_lines": [
+        154187,
+        154347
+      ],
+      "next": "E438",
+      "status": "reviewed"
+    },
+    {
+      "id": "E438",
+      "title": "沉眠者与王戟继承",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E438_沉眠者与王戟继承.md",
+      "output": "事件/E438_沉眠者与王戟继承.md",
+      "source_chapters": [
+        1776,
+        1778
+      ],
+      "source_lines": [
+        154348,
+        154589
+      ],
+      "next": "E439",
+      "status": "reviewed"
+    },
+    {
+      "id": "E439",
+      "title": "王兽净化与海殿突围",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E439_王兽净化与海殿突围.md",
+      "output": "事件/E439_王兽净化与海殿突围.md",
+      "source_chapters": [
+        1779,
+        1782
+      ],
+      "source_lines": [
+        154590,
+        154895
+      ],
+      "next": "E440",
+      "status": "reviewed"
+    },
+    {
+      "id": "E440",
+      "title": "欲望母树与死亡之主",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E440_欲望母树与死亡之主.md",
+      "output": "事件/E440_欲望母树与死亡之主.md",
+      "source_chapters": [
+        1783,
+        1786
+      ],
+      "source_lines": [
+        154896,
+        155150
+      ],
+      "next": "E441",
+      "status": "reviewed"
+    },
+    {
+      "id": "E441",
+      "title": "毁灭创造与王兽牺牲",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E441_毁灭创造与王兽牺牲.md",
+      "output": "事件/E441_毁灭创造与王兽牺牲.md",
+      "source_chapters": [
+        1786,
+        1788
+      ],
+      "source_lines": [
+        155151,
+        155364
+      ],
+      "next": "E442",
+      "status": "reviewed"
+    },
+    {
+      "id": "E442",
+      "title": "康斯坦丁复苏与第二渡鸦",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E442_康斯坦丁复苏与第二渡鸦.md",
+      "output": "事件/E442_康斯坦丁复苏与第二渡鸦.md",
+      "source_chapters": [
+        1788,
+        1790
+      ],
+      "source_lines": [
+        155365,
+        155482
+      ],
+      "next": "E443",
+      "status": "reviewed"
+    },
+    {
+      "id": "E443",
+      "title": "失却之海净化与导航者覆灭",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E443_失却之海净化与导航者覆灭.md",
+      "output": "事件/E443_失却之海净化与导航者覆灭.md",
+      "source_chapters": [
+        1790,
+        1794
+      ],
+      "source_lines": [
+        155483,
+        155867
+      ],
+      "next": "E444",
+      "status": "reviewed"
+    },
+    {
+      "id": "E444",
+      "title": "天空之城与集体升格",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E444_天空之城与集体升格.md",
+      "output": "事件/E444_天空之城与集体升格.md",
+      "source_chapters": [
+        1794,
+        1797
+      ],
+      "source_lines": [
+        155868,
+        156140
+      ],
+      "next": "E445",
+      "status": "reviewed"
+    },
+    {
+      "id": "E445",
+      "title": "言出法随与外部规则",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E445_言出法随与外部规则.md",
+      "output": "事件/E445_言出法随与外部规则.md",
+      "source_chapters": [
+        1798,
+        1801
+      ],
+      "source_lines": [
+        156141,
+        156466
+      ],
+      "next": "E446",
+      "status": "reviewed"
+    },
+    {
+      "id": "E446",
+      "title": "王骑从深渊归来",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E446_王骑从深渊归来.md",
+      "output": "事件/E446_王骑从深渊归来.md",
+      "source_chapters": [
+        1802,
+        1803
+      ],
+      "source_lines": [
+        156467,
+        156618
+      ],
+      "next": "E447",
+      "status": "reviewed"
+    },
+    {
+      "id": "E447",
+      "title": "正确轨道与必败战争",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E447_正确轨道与必败战争.md",
+      "output": "事件/E447_正确轨道与必败战争.md",
+      "source_chapters": [
+        1804,
+        1804
+      ],
+      "source_lines": [
+        156619,
+        156702
+      ],
+      "next": "E448",
+      "status": "reviewed"
+    },
+    {
+      "id": "E448",
+      "title": "左左的亲密惩罚",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E448_左左的亲密惩罚.md",
+      "output": "事件/E448_左左的亲密惩罚.md",
+      "source_chapters": [
+        1805,
+        1807
+      ],
+      "source_lines": [
+        156703,
+        156919
+      ],
+      "next": "E449",
+      "status": "reviewed"
+    },
+    {
+      "id": "E449",
+      "title": "王兽重誓与三叉戟归属",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E449_王兽重誓与三叉戟归属.md",
+      "output": "事件/E449_王兽重誓与三叉戟归属.md",
+      "source_chapters": [
+        1808,
+        1810
+      ],
+      "source_lines": [
+        156920,
+        157166
+      ],
+      "next": "E450",
+      "status": "reviewed"
+    },
+    {
+      "id": "E450",
+      "title": "天空城搬空与黑夜城坠落",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E450_天空城搬空与黑夜城坠落.md",
+      "output": "事件/E450_天空城搬空与黑夜城坠落.md",
+      "source_chapters": [
+        1810,
+        1812
+      ],
+      "source_lines": [
+        157167,
+        157324
+      ],
+      "next": "E451",
+      "status": "reviewed"
+    },
+    {
+      "id": "E451",
+      "title": "归城炫耀与艾泽法拉救援",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E451_归城炫耀与艾泽法拉救援.md",
+      "output": "事件/E451_归城炫耀与艾泽法拉救援.md",
+      "source_chapters": [
+        1813,
+        1816
+      ],
+      "source_lines": [
+        157325,
+        157642
+      ],
+      "next": "E452",
+      "status": "reviewed"
+    },
+    {
+      "id": "E452",
+      "title": "三叉戟内界与狱卒可能",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E452_三叉戟内界与狱卒可能.md",
+      "output": "事件/E452_三叉戟内界与狱卒可能.md",
+      "source_chapters": [
+        1817,
+        1818
+      ],
+      "source_lines": [
+        157643,
+        157778
+      ],
+      "next": "E453",
+      "status": "reviewed"
+    },
+    {
+      "id": "E453",
+      "title": "黄金泰坦训练",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E453_黄金泰坦训练.md",
+      "output": "事件/E453_黄金泰坦训练.md",
+      "source_chapters": [
+        1818,
+        1823
+      ],
+      "source_lines": [
+        157779,
+        158138
+      ],
+      "next": "E454",
+      "status": "reviewed"
+    },
+    {
+      "id": "E454",
+      "title": "灵能课与失却之海",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E454_灵能课与失却之海.md",
+      "output": "事件/E454_灵能课与失却之海.md",
+      "source_chapters": [
+        1824,
+        1826
+      ],
+      "source_lines": [
+        158139,
+        158331
+      ],
+      "next": "E455",
+      "status": "reviewed"
+    },
+    {
+      "id": "E455",
+      "title": "死兆级评定与战争宣告",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E455_死兆级评定与战争宣告.md",
+      "output": "事件/E455_死兆级评定与战争宣告.md",
+      "source_chapters": [
+        1826,
+        1828
+      ],
+      "source_lines": [
+        158332,
+        158516
+      ],
+      "next": "E456",
+      "status": "reviewed"
+    },
+    {
+      "id": "E456",
+      "title": "尖端对抗与七神宣战",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E456_尖端对抗与七神宣战.md",
+      "output": "事件/E456_尖端对抗与七神宣战.md",
+      "source_chapters": [
+        1829,
+        1832
+      ],
+      "source_lines": [
+        158517,
+        158815
+      ],
+      "next": "E457",
+      "status": "reviewed"
+    },
+    {
+      "id": "E457",
+      "title": "地狱火走廊突袭",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E457_地狱火走廊突袭.md",
+      "output": "事件/E457_地狱火走廊突袭.md",
+      "source_chapters": [
+        1832,
+        1834
+      ],
+      "source_lines": [
+        158816,
+        159004
+      ],
+      "next": "E458",
+      "status": "reviewed"
+    },
+    {
+      "id": "E458",
+      "title": "纳米集群风暴",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E458_纳米集群风暴.md",
+      "output": "事件/E458_纳米集群风暴.md",
+      "source_chapters": [
+        1835,
+        1836
+      ],
+      "source_lines": [
+        159005,
+        159104
+      ],
+      "next": "E459",
+      "status": "reviewed"
+    },
+    {
+      "id": "E459",
+      "title": "战略撤退与火山坠落地",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E459_战略撤退与火山坠落地.md",
+      "output": "事件/E459_战略撤退与火山坠落地.md",
+      "source_chapters": [
+        1836,
+        1838
+      ],
+      "source_lines": [
+        159105,
+        159298
+      ],
+      "next": "E460",
+      "status": "reviewed"
+    },
+    {
+      "id": "E460",
+      "title": "纳米工厂与巨像细胞",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E460_纳米工厂与巨像细胞.md",
+      "output": "事件/E460_纳米工厂与巨像细胞.md",
+      "source_chapters": [
+        1839,
+        1841
+      ],
+      "source_lines": [
+        159299,
+        159527
+      ],
+      "next": "E461",
+      "status": "reviewed"
+    },
+    {
+      "id": "E461",
+      "title": "数字之神与巨像囚笼",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E461_数字之神与巨像囚笼.md",
+      "output": "事件/E461_数字之神与巨像囚笼.md",
+      "source_chapters": [
+        1842,
+        1844
+      ],
+      "source_lines": [
+        159528,
+        159741
+      ],
+      "next": "E462",
+      "status": "reviewed"
+    },
+    {
+      "id": "E462",
+      "title": "三十二魂与数学魔方",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E462_三十二魂与数学魔方.md",
+      "output": "事件/E462_三十二魂与数学魔方.md",
+      "source_chapters": [
+        1845,
+        1848
+      ],
+      "source_lines": [
+        159742,
+        160037
+      ],
+      "next": "E463",
+      "status": "reviewed"
+    },
+    {
+      "id": "E463",
+      "title": "外宇献祭与生存权",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E463_外宇献祭与生存权.md",
+      "output": "事件/E463_外宇献祭与生存权.md",
+      "source_chapters": [
+        1848,
+        1850
+      ],
+      "source_lines": [
+        160038,
+        160204
+      ],
+      "next": "E464",
+      "status": "reviewed"
+    },
+    {
+      "id": "E464",
+      "title": "饲养无序与终极献祭",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E464_饲养无序与终极献祭.md",
+      "output": "事件/E464_饲养无序与终极献祭.md",
+      "source_chapters": [
+        1851,
+        1853
+      ],
+      "source_lines": [
+        160205,
+        160401
+      ],
+      "next": "E465",
+      "status": "reviewed"
+    },
+    {
+      "id": "E465",
+      "title": "外部代行者与反向脱困",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E465_外部代行者与反向脱困.md",
+      "output": "事件/E465_外部代行者与反向脱困.md",
+      "source_chapters": [
+        1853,
+        1856
+      ],
+      "source_lines": [
+        160402,
+        160616
+      ],
+      "next": "E466",
+      "status": "reviewed"
+    },
+    {
+      "id": "E466",
+      "title": "光宴终端与幽灵潜入",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E466_光宴终端与幽灵潜入.md",
+      "output": "事件/E466_光宴终端与幽灵潜入.md",
+      "source_chapters": [
+        1857,
+        1860
+      ],
+      "source_lines": [
+        160617,
+        160892
+      ],
+      "next": "E467",
+      "status": "reviewed"
+    },
+    {
+      "id": "E467",
+      "title": "光宴终端与伪造过去",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E467_光宴终端与伪造过去.md",
+      "output": "事件/E467_光宴终端与伪造过去.md",
+      "source_chapters": [
+        1861,
+        1864
+      ],
+      "source_lines": [
+        160893,
+        161159
+      ],
+      "next": "E468",
+      "status": "reviewed"
+    },
+    {
+      "id": "E468",
+      "title": "三位一体与原子革命",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E468_三位一体与原子革命.md",
+      "output": "事件/E468_三位一体与原子革命.md",
+      "source_chapters": [
+        1865,
+        1866
+      ],
+      "source_lines": [
+        161160,
+        161250
+      ],
+      "next": "E469",
+      "status": "reviewed"
+    },
+    {
+      "id": "E469",
+      "title": "光宴替身与入队",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E469_光宴替身与入队.md",
+      "output": "事件/E469_光宴替身与入队.md",
+      "source_chapters": [
+        1866,
+        1868
+      ],
+      "source_lines": [
+        161251,
+        161466
+      ],
+      "next": "E470",
+      "status": "reviewed"
+    },
+    {
+      "id": "E470",
+      "title": "七十二小时协议与巨像线索",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E470_七十二小时协议与巨像线索.md",
+      "output": "事件/E470_七十二小时协议与巨像线索.md",
+      "source_chapters": [
+        1869,
+        1870
+      ],
+      "source_lines": [
+        161467,
+        161638
+      ],
+      "next": "E471",
+      "status": "reviewed"
+    },
+    {
+      "id": "E471",
+      "title": "银色幻想与龙首谎言",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E471_银色幻想与龙首谎言.md",
+      "output": "事件/E471_银色幻想与龙首谎言.md",
+      "source_chapters": [
+        1871,
+        1873
+      ],
+      "source_lines": [
+        161639,
+        161858
+      ],
+      "next": "E472",
+      "status": "reviewed"
+    },
+    {
+      "id": "E472",
+      "title": "九十八光宴分裂",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E472_九十八光宴分裂.md",
+      "output": "事件/E472_九十八光宴分裂.md",
+      "source_chapters": [
+        1874,
+        1877
+      ],
+      "source_lines": [
+        161859,
+        162092
+      ],
+      "next": "E473",
+      "status": "reviewed"
+    },
+    {
+      "id": "E473",
+      "title": "记忆篡改与真实碎片",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E473_记忆篡改与真实碎片.md",
+      "output": "事件/E473_记忆篡改与真实碎片.md",
+      "source_chapters": [
+        1877,
+        1878
+      ],
+      "source_lines": [
+        162093,
+        162255
+      ],
+      "next": "E474",
+      "status": "reviewed"
+    },
+    {
+      "id": "E474",
+      "title": "两枚光宴与最终选择",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E474_两枚光宴与最终选择.md",
+      "output": "事件/E474_两枚光宴与最终选择.md",
+      "source_chapters": [
+        1879,
+        1882
+      ],
+      "source_lines": [
+        162256,
+        162532
+      ],
+      "next": "E475",
+      "status": "reviewed"
+    },
+    {
+      "id": "E475",
+      "title": "光宴重组与模因罗网",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E475_光宴重组与模因罗网.md",
+      "output": "事件/E475_光宴重组与模因罗网.md",
+      "source_chapters": [
+        1883,
+        1883
+      ],
+      "source_lines": [
+        162533,
+        162597
+      ],
+      "next": "E476",
+      "status": "reviewed"
+    },
+    {
+      "id": "E476",
+      "title": "复燃火种与田园暗号",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E476_复燃火种与田园暗号.md",
+      "output": "事件/E476_复燃火种与田园暗号.md",
+      "source_chapters": [
+        1884,
+        1886
+      ],
+      "source_lines": [
+        162598,
+        162826
+      ],
+      "next": "E477",
+      "status": "reviewed"
+    },
+    {
+      "id": "E477",
+      "title": "涂鸦信号与智械转向",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E477_涂鸦信号与智械转向.md",
+      "output": "事件/E477_涂鸦信号与智械转向.md",
+      "source_chapters": [
+        1887,
+        1889
+      ],
+      "source_lines": [
+        162827,
+        162999
+      ],
+      "next": "E478",
+      "status": "reviewed"
+    },
+    {
+      "id": "E478",
+      "title": "第七机神以太狂潮",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E478_第七机神以太狂潮.md",
+      "output": "事件/E478_第七机神以太狂潮.md",
+      "source_chapters": [
+        1889,
+        1890
+      ],
+      "source_lines": [
+        163000,
+        163114
+      ],
+      "next": "E479",
+      "status": "reviewed"
+    },
+    {
+      "id": "E479",
+      "title": "一号智脑与巢都毁灭",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E479_一号智脑与巢都毁灭.md",
+      "output": "事件/E479_一号智脑与巢都毁灭.md",
+      "source_chapters": [
+        1891,
+        1892
+      ],
+      "source_lines": [
+        163115,
+        163280
+      ],
+      "next": "E480",
+      "status": "reviewed"
+    },
+    {
+      "id": "E480",
+      "title": "田园情报与智械警报",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E480_田园情报与智械警报.md",
+      "output": "事件/E480_田园情报与智械警报.md",
+      "source_chapters": [
+        1892,
+        1893
+      ],
+      "source_lines": [
+        163281,
+        163343
+      ],
+      "next": "E481",
+      "status": "reviewed"
+    },
+    {
+      "id": "E481",
+      "title": "智械伪身与病毒陷阱",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E481_智械伪身与病毒陷阱.md",
+      "output": "事件/E481_智械伪身与病毒陷阱.md",
+      "source_chapters": [
+        1894,
+        1896
+      ],
+      "source_lines": [
+        163344,
+        163604
+      ],
+      "next": "E482",
+      "status": "reviewed"
+    },
+    {
+      "id": "E482",
+      "title": "天降援救与模因爆发",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E482_天降援救与模因爆发.md",
+      "output": "事件/E482_天降援救与模因爆发.md",
+      "source_chapters": [
+        1897,
+        1900
+      ],
+      "source_lines": [
+        163605,
+        163793
+      ],
+      "next": "E483",
+      "status": "reviewed"
+    },
+    {
+      "id": "E483",
+      "title": "以太吞噬学者与将军交易",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E483_以太吞噬学者与将军交易.md",
+      "output": "事件/E483_以太吞噬学者与将军交易.md",
+      "source_chapters": [
+        1900,
+        1900
+      ],
+      "source_lines": [
+        163794,
+        163841
+      ],
+      "next": "E484",
+      "status": "reviewed"
+    },
+    {
+      "id": "E484",
+      "title": "三方汇合与智械二次拿捏",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E484_三方汇合与智械二次拿捏.md",
+      "output": "事件/E484_三方汇合与智械二次拿捏.md",
+      "source_chapters": [
+        1900,
+        1903
+      ],
+      "source_lines": [
+        163842,
+        164091
+      ],
+      "next": "E485",
+      "status": "reviewed"
+    },
+    {
+      "id": "E485",
+      "title": "三方并肩与以太围猎",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E485_三方并肩与以太围猎.md",
+      "output": "事件/E485_三方并肩与以太围猎.md",
+      "source_chapters": [
+        1904,
+        1905
+      ],
+      "source_lines": [
+        164092,
+        164250
+      ],
+      "next": "E486",
+      "status": "reviewed"
+    },
+    {
+      "id": "E486",
+      "title": "以太分身与正义围殴",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E486_以太分身与正义围殴.md",
+      "output": "事件/E486_以太分身与正义围殴.md",
+      "source_chapters": [
+        1906,
+        1910
+      ],
+      "source_lines": [
+        164251,
+        164631
+      ],
+      "next": "E487",
+      "status": "reviewed"
+    },
+    {
+      "id": "E487",
+      "title": "定位矩阵与援军计划",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E487_定位矩阵与援军计划.md",
+      "output": "事件/E487_定位矩阵与援军计划.md",
+      "source_chapters": [
+        1910,
+        1912
+      ],
+      "source_lines": [
+        164632,
+        164800
+      ],
+      "next": "E488",
+      "status": "reviewed"
+    },
+    {
+      "id": "E488",
+      "title": "另一个世界与最终防火墙",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E488_另一个世界与最终防火墙.md",
+      "output": "事件/E488_另一个世界与最终防火墙.md",
+      "source_chapters": [
+        1913,
+        1914
+      ],
+      "source_lines": [
+        164801,
+        164948
+      ],
+      "next": "E489",
+      "status": "reviewed"
+    },
+    {
+      "id": "E489",
+      "title": "机械战争与上传生命线",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E489_机械战争与上传生命线.md",
+      "output": "事件/E489_机械战争与上传生命线.md",
+      "source_chapters": [
+        1915,
+        1918
+      ],
+      "source_lines": [
+        164949,
+        165198
+      ],
+      "next": "E490",
+      "status": "reviewed"
+    },
+    {
+      "id": "E490",
+      "title": "灭绝级阵列与小眼萝",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E490_灭绝级阵列与小眼萝.md",
+      "output": "事件/E490_灭绝级阵列与小眼萝.md",
+      "source_chapters": [
+        1918,
+        1921
+      ],
+      "source_lines": [
+        165199,
+        165418
+      ],
+      "next": "E491",
+      "status": "reviewed"
+    },
+    {
+      "id": "E491",
+      "title": "全面诅咒与终端崩坏",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E491_全面诅咒与终端崩坏.md",
+      "output": "事件/E491_全面诅咒与终端崩坏.md",
+      "source_chapters": [
+        1921,
+        1923
+      ],
+      "source_lines": [
+        165419,
+        165624
+      ],
+      "next": "E492",
+      "status": "reviewed"
+    },
+    {
+      "id": "E492",
+      "title": "巨像位置与以太夺取",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E492_巨像位置与以太夺取.md",
+      "output": "事件/E492_巨像位置与以太夺取.md",
+      "source_chapters": [
+        1924,
+        1926
+      ],
+      "source_lines": [
+        165625,
+        165860
+      ],
+      "status": "reviewed"
+    }
+  ]
+}

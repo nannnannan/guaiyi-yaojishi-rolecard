@@ -1,0 +1,363 @@
+{
+  "concepts": [
+    {
+      "id": "C1251",
+      "title": "失却之海深层时间与心灵之海",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/concepts/C1251_失却之海与深层时间代差.md",
+      "output": "概念/C1251_失却之海深层时间与心灵之海.md",
+      "source_events": [
+        "E454"
+      ],
+      "source_lines": [
+        [
+          158139,
+          158331
+        ]
+      ]
+    },
+    {
+      "id": "C1345",
+      "title": "三叉戟开门门槛与海洋进化触肢",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1345_三叉戟开门门槛与海洋进化触肢.md",
+      "source_events": [
+        "E451"
+      ],
+      "source_lines": [
+        [
+          157325,
+          157642
+        ]
+      ]
+    },
+    {
+      "id": "C1346",
+      "title": "三叉戟内界钥匙与狱卒可能性",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1346_三叉戟内界钥匙与狱卒可能性.md",
+      "source_events": [
+        "E452"
+      ],
+      "source_lines": [
+        [
+          157643,
+          157778
+        ]
+      ]
+    },
+    {
+      "id": "C1347",
+      "title": "炽天使克苏鲁融合与灵能无序排斥",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1347_炽天使克苏鲁融合与灵能无序排斥.md",
+      "source_events": [
+        "E452"
+      ],
+      "source_lines": [
+        [
+          157643,
+          157778
+        ]
+      ]
+    },
+    {
+      "id": "C1348",
+      "title": "黄金泰坦训练与死兆展望",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1348_黄金泰坦训练与死兆展望.md",
+      "source_events": [
+        "E453"
+      ],
+      "source_lines": [
+        [
+          157779,
+          158138
+        ]
+      ]
+    },
+    {
+      "id": "C1349",
+      "title": "灵能唯心改现实与数字生命独立",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1349_灵能唯心改现实与数字生命独立.md",
+      "source_events": [
+        "E454"
+      ],
+      "source_lines": [
+        [
+          158139,
+          158331
+        ]
+      ]
+    },
+    {
+      "id": "C1350",
+      "title": "赛博量产超凡与死兆人形靶标",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1350_赛博量产超凡与死兆人形靶标.md",
+      "source_events": [
+        "E455"
+      ],
+      "source_lines": [
+        [
+          158332,
+          158516
+        ]
+      ]
+    },
+    {
+      "id": "C1351",
+      "title": "死星结界机体与地狱火走廊防线",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1351_死星结界机体与地狱火走廊防线.md",
+      "source_events": [
+        "E456"
+      ],
+      "source_lines": [
+        [
+          158517,
+          158815
+        ]
+      ]
+    },
+    {
+      "id": "C1352",
+      "title": "光学隐身战舰与血肉走廊灾变",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1352_光学隐身战舰与血肉走廊灾变.md",
+      "source_events": [
+        "E457"
+      ],
+      "source_lines": [
+        [
+          158816,
+          159004
+        ]
+      ]
+    },
+    {
+      "id": "C1353",
+      "title": "整舰纳米再成型与弃区报讯",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1353_整舰纳米再成型与弃区报讯.md",
+      "source_events": [
+        "E458"
+      ],
+      "source_lines": [
+        [
+          159005,
+          159104
+        ]
+      ]
+    },
+    {
+      "id": "C1354",
+      "title": "三叉戟光门奇异世界收容",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1354_三叉戟光门奇异世界收容.md",
+      "source_events": [
+        "E459"
+      ],
+      "source_lines": [
+        [
+          159105,
+          159298
+        ]
+      ]
+    },
+    {
+      "id": "C1355",
+      "title": "纳米风暴建厂与巨像细胞反控",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1355_纳米风暴建厂与巨像细胞反控.md",
+      "source_events": [
+        "E460"
+      ],
+      "source_lines": [
+        [
+          159299,
+          159527
+        ]
+      ]
+    },
+    {
+      "id": "C1356",
+      "title": "数字领域腰斩与六棱囚笼",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1356_数字领域腰斩与六棱囚笼.md",
+      "source_events": [
+        "E461"
+      ],
+      "source_lines": [
+        [
+          159528,
+          159741
+        ]
+      ]
+    },
+    {
+      "id": "C1357",
+      "title": "数学魔方权能与魂锁献祭",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1357_数学魔方权能与魂锁献祭.md",
+      "source_events": [
+        "E462",
+        "E463",
+        "E464"
+      ],
+      "source_lines": [
+        [
+          159742,
+          160037
+        ],
+        [
+          160038,
+          160204
+        ],
+        [
+          160205,
+          160401
+        ]
+      ]
+    },
+    {
+      "id": "C1358",
+      "title": "数学魔方无序脱困与灭杀令",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1358_数学魔方无序脱困与灭杀令.md",
+      "source_events": [
+        "E465"
+      ],
+      "source_lines": [
+        [
+          160402,
+          160616
+        ]
+      ]
+    },
+    {
+      "id": "C1361",
+      "title": "幽灵化潜入与区块终端金字塔",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1361_幽灵化潜入与区块终端金字塔.md",
+      "source_events": [
+        "E466"
+      ],
+      "source_lines": [
+        [
+          160617,
+          160892
+        ]
+      ]
+    },
+    {
+      "id": "C891",
+      "title": "肃正议会权限与数字兵器授权",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.17/src/concepts/C891_肃正议会机械军团.md",
+      "output": "概念/C891_肃正议会权限与数字兵器授权.md",
+      "source_events": [
+        "E460",
+        "E466",
+        "E471",
+        "E475"
+      ],
+      "source_lines": [
+        [
+          159299,
+          159527
+        ],
+        [
+          160617,
+          160892
+        ],
+        [
+          161639,
+          161858
+        ],
+        [
+          162533,
+          162597
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "光宴",
+      "kind": "new",
+      "base_path": null,
+      "output": "新NPC/光宴.md",
+      "source_events": [
+        "E466",
+        "E467",
+        "E469",
+        "E470",
+        "E472",
+        "E474",
+        "E475",
+        "E485",
+        "E487",
+        "E491"
+      ],
+      "source_lines": [
+        [
+          160617,
+          160892
+        ],
+        [
+          160893,
+          161159
+        ],
+        [
+          161251,
+          161466
+        ],
+        [
+          161467,
+          161638
+        ],
+        [
+          161859,
+          162092
+        ],
+        [
+          162256,
+          162532
+        ],
+        [
+          162533,
+          162597
+        ],
+        [
+          164092,
+          164250
+        ],
+        [
+          164632,
+          164800
+        ],
+        [
+          165419,
+          165624
+        ]
+      ]
+    }
+  ]
+}

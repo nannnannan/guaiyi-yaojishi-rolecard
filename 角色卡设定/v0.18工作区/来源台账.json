@@ -1,0 +1,1989 @@
+{
+  "source": "角色卡设定/原文.txt",
+  "normalization": "UTF-8 remove BOM; CRLF to LF; packet ends in LF",
+  "normalized_sha256": "0f09c0e698a94c6435efea651b15d91a435863bc8ee9ec0bcfdea58499aa0f1f",
+  "chapter_range": [
+    1768,
+    1926
+  ],
+  "line_range": [
+    153712,
+    165860
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        1768,
+        1820
+      ],
+      "events": [
+        435,
+        450
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        1821,
+        1873
+      ],
+      "events": [
+        451,
+        466
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        1874,
+        1926
+      ],
+      "events": [
+        467,
+        492
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "id": "A1",
+      "group": "A",
+      "chapters": [
+        1768,
+        1772
+      ],
+      "lines": [
+        153712,
+        154110
+      ],
+      "sha256": "42db867b24490500f156f84e2154e09db6e301313696db30cc63f54f7e39b321",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A1.md"
+    },
+    {
+      "id": "A2",
+      "group": "A",
+      "chapters": [
+        1773,
+        1777
+      ],
+      "lines": [
+        154111,
+        154493
+      ],
+      "sha256": "b3f0a790765d1d20a41a501246ecbb4859a074a9a285c51f601f533f71dffef7",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A2.md"
+    },
+    {
+      "id": "A3",
+      "group": "A",
+      "chapters": [
+        1778,
+        1782
+      ],
+      "lines": [
+        154494,
+        154895
+      ],
+      "sha256": "62c678d361b94364ffe2f9c3d7b7ac3800b3407b7a0c6e3121bce1099f72de2f",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A3.md"
+    },
+    {
+      "id": "A4",
+      "group": "A",
+      "chapters": [
+        1783,
+        1787
+      ],
+      "lines": [
+        154896,
+        155294
+      ],
+      "sha256": "f677b841790668b0bc5909bfe170f50a1fabc755c7c581c4509469bdc04ddf4d",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A4.md"
+    },
+    {
+      "id": "A5",
+      "group": "A",
+      "chapters": [
+        1788,
+        1792
+      ],
+      "lines": [
+        155295,
+        155713
+      ],
+      "sha256": "b8d39dbddcbe976b4e36a4438511cbffe84ff7e692e1dd2e529ab6623ed7a3fc",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A5.md"
+    },
+    {
+      "id": "A6",
+      "group": "A",
+      "chapters": [
+        1793,
+        1797
+      ],
+      "lines": [
+        155714,
+        156140
+      ],
+      "sha256": "beebc92eb30ba85466759857da6dc9f516169c210967e73c5305663511608398",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A6.md"
+    },
+    {
+      "id": "A7",
+      "group": "A",
+      "chapters": [
+        1798,
+        1802
+      ],
+      "lines": [
+        156141,
+        156549
+      ],
+      "sha256": "815323f7abf4265dbc8cd5f6197efceb731c1d24efc281c62fc22f426f234465",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A7.md"
+    },
+    {
+      "id": "A8",
+      "group": "A",
+      "chapters": [
+        1803,
+        1807
+      ],
+      "lines": [
+        156550,
+        156919
+      ],
+      "sha256": "f863c0733c85adc6ee80124c879577ca414ca0c8d1d248b1c8eb746ee8ad2f98",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A8.md"
+    },
+    {
+      "id": "A9",
+      "group": "A",
+      "chapters": [
+        1808,
+        1812
+      ],
+      "lines": [
+        156920,
+        157324
+      ],
+      "sha256": "a84014fa34a7a4f469a5e8b858d6f66cfaa2efd1668c96ae44883c5e5d94b78b",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A9.md"
+    },
+    {
+      "id": "A10",
+      "group": "A",
+      "chapters": [
+        1813,
+        1817
+      ],
+      "lines": [
+        157325,
+        157715
+      ],
+      "sha256": "b0022ba0e61f8d028854edde0d10b9ae781eb91837d887e3d8e07944d119eb9d",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A10.md"
+    },
+    {
+      "id": "A11",
+      "group": "A",
+      "chapters": [
+        1818,
+        1820
+      ],
+      "lines": [
+        157716,
+        157933
+      ],
+      "sha256": "840cfd2db6084e21e1e4ee071eaf619a11e5b8da03f1bc105a7d72b69946d6cf",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/A11.md"
+    },
+    {
+      "id": "B1",
+      "group": "B",
+      "chapters": [
+        1821,
+        1825
+      ],
+      "lines": [
+        157934,
+        158275
+      ],
+      "sha256": "ffa5080b0b971710c3e3e842fc86732b2386d41fe2763508bb381354b490dc0a",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B1.md"
+    },
+    {
+      "id": "B2",
+      "group": "B",
+      "chapters": [
+        1826,
+        1830
+      ],
+      "lines": [
+        158276,
+        158685
+      ],
+      "sha256": "a82db25800900e772bfd4fbf1d8c06b026de5bd8cd43ae8448a2d9518d30e3a5",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B2.md"
+    },
+    {
+      "id": "B3",
+      "group": "B",
+      "chapters": [
+        1831,
+        1835
+      ],
+      "lines": [
+        158686,
+        159080
+      ],
+      "sha256": "b19999dea8faec8b69f68c25135e7d4ab41f89ce2ad1dc91ac262ef2308caa58",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B3.md"
+    },
+    {
+      "id": "B4",
+      "group": "B",
+      "chapters": [
+        1836,
+        1840
+      ],
+      "lines": [
+        159081,
+        159454
+      ],
+      "sha256": "153a8554f938cb94331289030f5832f760f61487a35b760ebce5eb4bb0a6af0a",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B4.md"
+    },
+    {
+      "id": "B5",
+      "group": "B",
+      "chapters": [
+        1841,
+        1845
+      ],
+      "lines": [
+        159455,
+        159828
+      ],
+      "sha256": "7728f068cda3242bc8840d3fb3e785d9178ee6fa575025d90f306b5e901ee050",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B5.md"
+    },
+    {
+      "id": "B6",
+      "group": "B",
+      "chapters": [
+        1846,
+        1850
+      ],
+      "lines": [
+        159829,
+        160204
+      ],
+      "sha256": "a127bce035ffced9606c68ce0dc96f09fbea0fb832ab0a565392d92539a4cba1",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B6.md"
+    },
+    {
+      "id": "B7",
+      "group": "B",
+      "chapters": [
+        1851,
+        1855
+      ],
+      "lines": [
+        160205,
+        160545
+      ],
+      "sha256": "165e18249aa038911f24a81c5e3dad3bc327adcb99b567989f564e183da550ad",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B7.md"
+    },
+    {
+      "id": "B8",
+      "group": "B",
+      "chapters": [
+        1856,
+        1860
+      ],
+      "lines": [
+        160546,
+        160892
+      ],
+      "sha256": "aa33159112b7693a8eb9ea7a6248fb11f9e66a18114c22c6cf2ea0e37f6003f8",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B8.md"
+    },
+    {
+      "id": "B9",
+      "group": "B",
+      "chapters": [
+        1861,
+        1865
+      ],
+      "lines": [
+        160893,
+        161218
+      ],
+      "sha256": "312cefec5dadb1f70c58bbe9fcd66d2f46dac4961a5371a18f331834b8f94620",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B9.md"
+    },
+    {
+      "id": "B10",
+      "group": "B",
+      "chapters": [
+        1866,
+        1870
+      ],
+      "lines": [
+        161219,
+        161638
+      ],
+      "sha256": "6615d18aabf8f54c22ff37938708543361e06039d6cfd9255885171934497b06",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B10.md"
+    },
+    {
+      "id": "B11",
+      "group": "B",
+      "chapters": [
+        1871,
+        1873
+      ],
+      "lines": [
+        161639,
+        161858
+      ],
+      "sha256": "dea1c14b073133df432528c4ee8ca8a5070ea1c983d4d9aa0144e3a87d6aba50",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/B11.md"
+    },
+    {
+      "id": "C1",
+      "group": "C",
+      "chapters": [
+        1874,
+        1878
+      ],
+      "lines": [
+        161859,
+        162255
+      ],
+      "sha256": "ea25055c9c10bfe0479ac51a1dda767fef366b765f955efd3510622a684e236f",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C1.md"
+    },
+    {
+      "id": "C2",
+      "group": "C",
+      "chapters": [
+        1879,
+        1883
+      ],
+      "lines": [
+        162256,
+        162597
+      ],
+      "sha256": "cb51abbb42a2d7c92866302eacb3ed74ae0d12019768254e707531e715bc98d5",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C2.md"
+    },
+    {
+      "id": "C3",
+      "group": "C",
+      "chapters": [
+        1884,
+        1888
+      ],
+      "lines": [
+        162598,
+        162983
+      ],
+      "sha256": "18ff5bb080265dd4e084f619fdc34e97051336738c80fe13d17cef89903dd0da",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C3.md"
+    },
+    {
+      "id": "C4",
+      "group": "C",
+      "chapters": [
+        1889,
+        1893
+      ],
+      "lines": [
+        162984,
+        163343
+      ],
+      "sha256": "aa59f12eab815c18b499d288943af87c1dd24eabec409e15f9581aca1d50b020",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C4.md"
+    },
+    {
+      "id": "C5",
+      "group": "C",
+      "chapters": [
+        1894,
+        1898
+      ],
+      "lines": [
+        163344,
+        163726
+      ],
+      "sha256": "7100175b59e997f1c882c9ab5447ebe4e03693877b000da0ce6fdb1e2dd71b21",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C5.md"
+    },
+    {
+      "id": "C6",
+      "group": "C",
+      "chapters": [
+        1899,
+        1903
+      ],
+      "lines": [
+        163727,
+        164091
+      ],
+      "sha256": "3604dc2da8ca03a06f25c2d96a60493ca914aba920529d8268686e7b3692d2ca",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C6.md"
+    },
+    {
+      "id": "C7",
+      "group": "C",
+      "chapters": [
+        1904,
+        1908
+      ],
+      "lines": [
+        164092,
+        164482
+      ],
+      "sha256": "7c01abaf5a027202d962c92c9836d040430d7bcddb7bed9f427d5f91f8a8e58a",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C7.md"
+    },
+    {
+      "id": "C8",
+      "group": "C",
+      "chapters": [
+        1909,
+        1913
+      ],
+      "lines": [
+        164483,
+        164873
+      ],
+      "sha256": "6707a931d967aa397e21a2f0943de94c8342289ae95b25259ac98405be5f7bd9",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C8.md"
+    },
+    {
+      "id": "C9",
+      "group": "C",
+      "chapters": [
+        1914,
+        1918
+      ],
+      "lines": [
+        164874,
+        165230
+      ],
+      "sha256": "05557a53ffc33b40728fe437e920ae362e5bc0f42bcdaa32c0e8fb113f040db9",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C9.md"
+    },
+    {
+      "id": "C10",
+      "group": "C",
+      "chapters": [
+        1919,
+        1923
+      ],
+      "lines": [
+        165231,
+        165624
+      ],
+      "sha256": "c179f456d7b665c2ac2455b2406d17c7c749fb77c081fde402c4dcfc786f6fbf",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C10.md"
+    },
+    {
+      "id": "C11",
+      "group": "C",
+      "chapters": [
+        1924,
+        1926
+      ],
+      "lines": [
+        165625,
+        165860
+      ],
+      "sha256": "c5ab0559cd4be3c8ce71b6b9e8b646ceaa4855693343e97b87f59558a1216279",
+      "read_status": "read_and_recorded",
+      "report": "核对记录/C11.md"
+    }
+  ],
+  "baselines": [
+    {
+      "root": "角色卡本体/诡异药剂师_MVU_v0.17",
+      "files": 1445,
+      "bytes": 30253901,
+      "sha256": "df8ad7f3634303cfdf0974a777daca0f5fb48b30bb37ce777b26ac5c424b47c7"
+    },
+    {
+      "root": "角色卡设定/v0.17工作区",
+      "files": 223,
+      "bytes": 1347031,
+      "sha256": "4f4bef75ac7ce4e2d51fe8b439d3be5e565f090c66863fe5cd7334fa5356201a"
+    },
+    {
+      "root": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章",
+      "files": 140,
+      "bytes": 2138974,
+      "sha256": "716cc0f4d625309f5fa3fc6b893bd7de1b76dcea2c61cde87412160f2b49eb75"
+    }
+  ],
+  "events": [
+    {
+      "id": "E435",
+      "title": "无序飙车与八旗防线",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E435_无序飙车与导航者防线.md",
+      "output": "事件/E435_无序飙车与导航者防线.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1768,
+        1770
+      ],
+      "source_lines": [
+        153712,
+        153965
+      ],
+      "next_event": "E436",
+      "concept_refs": [
+        "C1324"
+      ]
+    },
+    {
+      "id": "E436",
+      "title": "深海王庭与紫罗兰葬所",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E436_深海王庭与紫罗兰葬所.md",
+      "output": "事件/E436_深海王庭与紫罗兰葬所.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1771,
+        1773
+      ],
+      "source_lines": [
+        153966,
+        154186
+      ],
+      "next_event": "E437",
+      "concept_refs": [
+        "C1325"
+      ]
+    },
+    {
+      "id": "E437",
+      "title": "艾泽法拉与大君遗产",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E437_艾泽法拉与大君遗产.md",
+      "output": "事件/E437_艾泽法拉与大君遗产.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1774,
+        1775
+      ],
+      "source_lines": [
+        154187,
+        154347
+      ],
+      "length_exception": "大场面事实密度，按核对记录完整因果保留",
+      "next_event": "E438",
+      "concept_refs": [
+        "C1326"
+      ]
+    },
+    {
+      "id": "E438",
+      "title": "沉眠者与王戟继承",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E438_沉眠者与王戟继承.md",
+      "output": "事件/E438_沉眠者与王戟继承.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1776,
+        1778
+      ],
+      "source_lines": [
+        154348,
+        154589
+      ],
+      "length_exception": "大场面事实密度，按核对记录完整因果保留",
+      "next_event": "E439",
+      "concept_refs": [
+        "C1327"
+      ]
+    },
+    {
+      "id": "E439",
+      "title": "王兽净化与海殿突围",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E439_王兽净化与海殿突围.md",
+      "output": "事件/E439_王兽净化与海殿突围.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1779,
+        1782
+      ],
+      "source_lines": [
+        154590,
+        154895
+      ],
+      "length_exception": "大战净化与突围事实密度，按A3完整因果保留",
+      "next_event": "E440",
+      "concept_refs": [
+        "C1292",
+        "C1328"
+      ]
+    },
+    {
+      "id": "E440",
+      "title": "欲望母树与死亡之主",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E440_欲望母树与死亡之主.md",
+      "output": "事件/E440_欲望母树与死亡之主.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1783,
+        1786
+      ],
+      "source_lines": [
+        154896,
+        155150
+      ],
+      "length_exception": "一人成军入墓船开治事实密度，按A4前半完整因果保留",
+      "next_event": "E441",
+      "concept_refs": [
+        "C1292",
+        "C1318",
+        "C1329",
+        "C1330"
+      ]
+    },
+    {
+      "id": "E441",
+      "title": "毁灭创造与王兽牺牲",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E441_毁灭创造与王兽牺牲.md",
+      "output": "事件/E441_毁灭创造与王兽牺牲.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1786,
+        1788
+      ],
+      "source_lines": [
+        155151,
+        155364
+      ],
+      "length_exception": "围城无序化与母树双法则事实密度，按A4末+A5前半完整因果保留",
+      "next_event": "E442",
+      "concept_refs": [
+        "C1331",
+        "C1332",
+        "C1333"
+      ]
+    },
+    {
+      "id": "E442",
+      "title": "康斯坦丁复苏与第二渡鸦",
+      "stage": "S60",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E442_康斯坦丁复苏与第二渡鸦.md",
+      "output": "事件/E442_康斯坦丁复苏与第二渡鸦.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1788,
+        1790
+      ],
+      "source_lines": [
+        155365,
+        155482
+      ],
+      "length_exception": "碎片深渊赴死与结果亮相事实密度，墓船过程留白不凑字；按A5中段边界保留",
+      "next_event": "E443",
+      "concept_refs": [
+        "C1318",
+        "C1329",
+        "C1330",
+        "C1332"
+      ]
+    },
+    {
+      "id": "E443",
+      "title": "失却之海净化与导航者覆灭",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E443_失却之海净化与导航者覆灭.md",
+      "output": "事件/E443_失却之海净化与导航者覆灭.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1790,
+        1794
+      ],
+      "source_lines": [
+        155483,
+        155867
+      ],
+      "length_exception": "决战净化失却之海撕碎与战后忘却种子孽主集结事实密度，按A5末+A6前半完整因果保留",
+      "next_event": "E444",
+      "concept_refs": [
+        "C1331",
+        "C1334",
+        "C1335"
+      ]
+    },
+    {
+      "id": "E444",
+      "title": "天空之城与集体升格",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E444_天空之城与集体升格.md",
+      "output": "事件/E444_天空之城与集体升格.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1794,
+        1797
+      ],
+      "source_lines": [
+        155868,
+        156140
+      ],
+      "length_exception": "地狱边境天空之城集体升格破结界撞城献祭仪式加压事实密度，按A6后半完整因果保留；言出法随主体留E445",
+      "next_event": "E445",
+      "concept_refs": [
+        "C1336",
+        "C1337"
+      ]
+    },
+    {
+      "id": "E445",
+      "title": "言出法随与外部规则",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E445_言出法随与外部规则.md",
+      "output": "事件/E445_言出法随与外部规则.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1798,
+        1801
+      ],
+      "source_lines": [
+        156141,
+        156466
+      ],
+      "length_exception": "言出法随真理断链处决禁制界门1/4登王座赌赢金瞳恨呼事实密度，按A7完整因果保留",
+      "next_event": "E446",
+      "concept_refs": [
+        "C1337",
+        "C1338",
+        "C1339"
+      ]
+    },
+    {
+      "id": "E446",
+      "title": "王骑从深渊归来",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E446_王骑从深渊归来.md",
+      "output": "事件/E446_王骑从深渊归来.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1802,
+        1803
+      ],
+      "source_lines": [
+        156467,
+        156618
+      ],
+      "length_exception": "王骑接戟灭金手落城闭门与雷蒙全名面板事实密度，按A7末+A8闭门段保留；必败长谈/康船亲密留E447–E448",
+      "next_event": "E447",
+      "concept_refs": [
+        "C1339",
+        "C1340"
+      ]
+    },
+    {
+      "id": "E447",
+      "title": "正确轨道与必败战争",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E447_正确轨道与必败战争.md",
+      "output": "事件/E447_正确轨道与必败战争.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1804,
+        1804
+      ],
+      "source_lines": [
+        156619,
+        156702
+      ],
+      "length_exception": "必败战争／第一次尝试／遗产权／狱卒聚集逃亡／无尽海霸主结算事实密度，按A8核对保留；康船亲密留E448",
+      "next_event": "E448",
+      "concept_refs": [
+        "C1341"
+      ]
+    },
+    {
+      "id": "E448",
+      "title": "左左的亲密惩罚",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E448_左左的亲密惩罚.md",
+      "output": "事件/E448_左左的亲密惩罚.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1805,
+        1807
+      ],
+      "source_lines": [
+        156703,
+        156919
+      ],
+      "length_exception": "康船休整与自愿亲密机制结算＋识破砸甲板事实密度，按A8；幼态外形固定非性，交合过程不展开只留飞升%/亲密度因果",
+      "next_event": "E449",
+      "concept_refs": [
+        "C1342"
+      ]
+    },
+    {
+      "id": "E449",
+      "title": "王兽重誓与三叉戟归属",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E449_王兽重誓与三叉戟归属.md",
+      "output": "事件/E449_王兽重誓与三叉戟归属.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1808,
+        1810
+      ],
+      "source_lines": [
+        156920,
+        157166
+      ],
+      "length_exception": "甲板重誓／遗忘想起／踹厅交戟／看上就搬／工具派vs保王党分裂事实密度，按A9前半保留；搬空通报留E450",
+      "next_event": "E450",
+      "concept_refs": [
+        "C1343",
+        "C914"
+      ]
+    },
+    {
+      "id": "E450",
+      "title": "天空城搬空与黑夜城坠落",
+      "stage": "S61",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E450_天空城搬空与黑夜城坠落.md",
+      "output": "事件/E450_天空城搬空与黑夜城坠落.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1810,
+        1812
+      ],
+      "source_lines": [
+        157167,
+        157324
+      ],
+      "length_exception": "搬空喜剧／黑夜城二次重建／五大根源警报／满载撞城／艾雯训事实密度，按A9末保留；开戟救援留E451",
+      "next_event": "E451",
+      "concept_refs": [
+        "C1344"
+      ]
+    },
+    {
+      "id": "E451",
+      "title": "归城炫耀与艾泽法拉救援",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E451_归城炫耀与艾泽法拉救援.md",
+      "output": "事件/E451_归城炫耀与艾泽法拉救援.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1813,
+        1816
+      ],
+      "source_lines": [
+        157325,
+        157642
+      ],
+      "length_exception": "广场炫耀／一拳测底／开戟自伤／挚友救援／将吻打断／触手敏感事实密度，按A10；内界吾神留E452",
+      "next_event": "E452",
+      "concept_refs": [
+        "C1344",
+        "C1345"
+      ]
+    },
+    {
+      "id": "E452",
+      "title": "三叉戟内界与狱卒可能",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E452_三叉戟内界与狱卒可能.md",
+      "output": "事件/E452_三叉戟内界与狱卒可能.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1817,
+        1818
+      ],
+      "source_lines": [
+        157643,
+        157778
+      ],
+      "length_exception": "钥匙论／吾神烂肉／灵能排斥／狱卒假说／两日回守／康加盟建材事实密度，按A10末+A11；魔鬼训练留E453",
+      "next_event": "E453",
+      "concept_refs": [
+        "C914",
+        "C1346",
+        "C1347"
+      ]
+    },
+    {
+      "id": "E453",
+      "title": "黄金泰坦训练",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E453_黄金泰坦训练.md",
+      "output": "事件/E453_黄金泰坦训练.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1818,
+        1823
+      ],
+      "source_lines": [
+        157779,
+        158138
+      ],
+      "length_exception": "掀屋开课／偏科测速／黄金体示范／印记控能／背山跑事实密度，按A11尾+B1头；失却之海灵能课留E454",
+      "next_event": "E454",
+      "concept_refs": [
+        "C1348"
+      ]
+    },
+    {
+      "id": "E454",
+      "title": "灵能课与失却之海",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E454_灵能课与失却之海.md",
+      "output": "事件/E454_灵能课与失却之海.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1824,
+        1826
+      ],
+      "source_lines": [
+        158139,
+        158331
+      ],
+      "length_exception": "失却之海几百年理论＋多日灵能实践至邀试事实密度，按B1末+B2前；机械基地评定留E455",
+      "next_event": "E455",
+      "concept_refs": [
+        "C1251",
+        "C1349"
+      ]
+    },
+    {
+      "id": "E455",
+      "title": "死兆级评定与战争宣告",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E455_死兆级评定与战争宣告.md",
+      "output": "事件/E455_死兆级评定与战争宣告.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1826,
+        1828
+      ],
+      "source_lines": [
+        158332,
+        158516
+      ],
+      "length_exception": "阶位评定超凡→领主→死兆出场事实密度，按B2边界保留；尖端对抗与开战问答留E456",
+      "next_event": "E456",
+      "concept_refs": [
+        "C1350"
+      ]
+    },
+    {
+      "id": "E456",
+      "title": "尖端对抗与七神宣战",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E456_尖端对抗与七神宣战.md",
+      "output": "事件/E456_尖端对抗与七神宣战.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1829,
+        1832
+      ],
+      "source_lines": [
+        158517,
+        158815
+      ],
+      "length_exception": "尖端对抗三位一体机+爱丽丝、君王栏×、开战一月收束与入空间门事实密度，按B2末+B3前半保留；隐身舰首战留E457",
+      "next_event": "E457",
+      "concept_refs": [
+        "C1351"
+      ]
+    },
+    {
+      "id": "E457",
+      "title": "地狱火走廊突袭",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E457_地狱火走廊突袭.md",
+      "output": "事件/E457_地狱火走廊突袭.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1832,
+        1834
+      ],
+      "source_lines": [
+        158816,
+        159004
+      ],
+      "length_exception": "隐身舰奇袭至舰坠拆材事实密度，按B3中段完整因果保留；纳米风暴留E458",
+      "next_event": "E458",
+      "concept_refs": [
+        "C1352"
+      ]
+    },
+    {
+      "id": "E458",
+      "title": "纳米集群风暴",
+      "stage": "S62",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E458_纳米集群风暴.md",
+      "output": "事件/E458_纳米集群风暴.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1835,
+        1836
+      ],
+      "source_lines": [
+        159005,
+        159104
+      ],
+      "length_exception": "纳米风暴尘化至密闭核洗地弃区折返报讯事实密度，按B3末+B4开端保留；前线令撤留E459",
+      "next_event": "E459",
+      "concept_refs": [
+        "C1353"
+      ]
+    },
+    {
+      "id": "E459",
+      "title": "战略撤退与火山坠落地",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E459_战略撤退与火山坠落地.md",
+      "output": "事件/E459_战略撤退与火山坠落地.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1836,
+        1838
+      ],
+      "source_lines": [
+        159105,
+        159298
+      ],
+      "length_exception": "令撤戟内界收容巫神一月简报头穿新武器压制松动与独潜赴火山事实密度，按B4 1836–1838边界保留；纳米建厂留E460",
+      "concept_refs": [
+        "C1354"
+      ],
+      "next_event": "E460"
+    },
+    {
+      "id": "E460",
+      "title": "纳米工厂与巨像细胞",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E460_纳米工厂与巨像细胞.md",
+      "output": "事件/E460_纳米工厂与巨像细胞.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1839,
+        1841
+      ],
+      "source_lines": [
+        159299,
+        159527
+      ],
+      "length_exception": "纳米建厂天罗地网拥星者战血肉纳米反控揭示至潜入锁定巨像事实密度，按B4末+B5 1841边界保留；龙首数字干涉留E461",
+      "concept_refs": [
+        "C1355",
+        "C891"
+      ],
+      "next_event": "E461"
+    },
+    {
+      "id": "E461",
+      "title": "数字之神与巨像囚笼",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E461_数字之神与巨像囚笼.md",
+      "output": "事件/E461_数字之神与巨像囚笼.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1842,
+        1844
+      ],
+      "source_lines": [
+        159528,
+        159741
+      ],
+      "length_exception": "龙首灭绝者围杀数字干涉腰斩六棱半成品笼与学者人偶女儿口述事实密度，按B5 1842–1844边界保留；召唤法阵留E462",
+      "concept_refs": [
+        "C1356"
+      ],
+      "next_event": "E462"
+    },
+    {
+      "id": "E462",
+      "title": "三十二魂与数学魔方",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E462_三十二魂与数学魔方.md",
+      "output": "事件/E462_三十二魂与数学魔方.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1845,
+        1848
+      ],
+      "source_lines": [
+        159742,
+        160037
+      ],
+      "length_exception": "三十二魂法阵整召瘟疫突袭伪体欺超维至数学魔方成形事实密度，按B5末+B6至将军不需永久边界保留；巨眼祂们交易留E463",
+      "concept_refs": [
+        "C1357"
+      ],
+      "next_event": "E463"
+    },
+    {
+      "id": "E463",
+      "title": "外宇献祭与生存权",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E463_外宇献祭与生存权.md",
+      "output": "事件/E463_外宇献祭与生存权.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1848,
+        1850
+      ],
+      "source_lines": [
+        160038,
+        160204
+      ],
+      "length_exception": "生存权交易学者牢笼围杀令法阵雏形与开棺无序材料事实密度，按B6至1850边界保留；饲养与终极献祭留E464",
+      "concept_refs": [
+        "C1357"
+      ],
+      "next_event": "E464"
+    },
+    {
+      "id": "E464",
+      "title": "饲养无序与终极献祭",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E464_饲养无序与终极献祭.md",
+      "output": "事件/E464_饲养无序与终极献祭.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1851,
+        1853
+      ],
+      "source_lines": [
+        160205,
+        160401
+      ],
+      "length_exception": "饲养无序灾难制造者反向无瞳献祭针孔至代行者握魔方事实密度，按B7至捏碎前边界保留；捏碎深渊留E465",
+      "concept_refs": [
+        "C1357"
+      ],
+      "next_event": "E465"
+    },
+    {
+      "id": "E465",
+      "title": "外部代行者与反向脱困",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E465_外部代行者与反向脱困.md",
+      "output": "事件/E465_外部代行者与反向脱困.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1853,
+        1856
+      ],
+      "source_lines": [
+        160402,
+        160616
+      ],
+      "length_exception": "捏碎深渊宣战殴学者重返sss+棺椁甩收夜医假折跃奇异世界团圆事实密度，按B7末+B8至1856边界保留；幽灵再潜留E466",
+      "concept_refs": [
+        "C1358"
+      ],
+      "next_event": "E466"
+    },
+    {
+      "id": "E466",
+      "title": "光宴终端与幽灵潜入",
+      "stage": "S63",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E466_光宴终端与幽灵潜入.md",
+      "output": "事件/E466_光宴终端与幽灵潜入.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1857,
+        1860
+      ],
+      "source_lines": [
+        160617,
+        160892
+      ],
+      "length_exception": "幽灵再潜光宴脸终端掐喉夺权至没放过你事实密度，按B8 1857–1860边界保留；伪造过去留E467",
+      "concept_refs": [
+        "C1361",
+        "C891",
+        "C987"
+      ],
+      "next_event": "E467"
+    },
+    {
+      "id": "E467",
+      "title": "光宴终端与伪造过去",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E467_光宴终端与伪造过去.md",
+      "output": "事件/E467_光宴终端与伪造过去.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1861,
+        1864
+      ],
+      "source_lines": [
+        160893,
+        161159
+      ],
+      "next_event": "E468",
+      "concept_refs": [
+        "C1321",
+        "C1362",
+        "C787",
+        "C987"
+      ]
+    },
+    {
+      "id": "E468",
+      "title": "三位一体与原子革命",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E468_三位一体与原子革命.md",
+      "output": "事件/E468_三位一体与原子革命.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1865,
+        1866
+      ],
+      "source_lines": [
+        161160,
+        161250
+      ],
+      "next_event": "E469",
+      "concept_refs": [
+        "C1322",
+        "C1363",
+        "C987"
+      ]
+    },
+    {
+      "id": "E469",
+      "title": "光宴替身与入队",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E469_光宴替身与入队.md",
+      "output": "事件/E469_光宴替身与入队.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1866,
+        1868
+      ],
+      "source_lines": [
+        161251,
+        161466
+      ],
+      "next_event": "E470",
+      "concept_refs": [
+        "C1364"
+      ]
+    },
+    {
+      "id": "E470",
+      "title": "七十二小时协议与巨像线索",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E470_七十二小时协议与巨像线索.md",
+      "output": "事件/E470_七十二小时协议与巨像线索.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1869,
+        1870
+      ],
+      "source_lines": [
+        161467,
+        161638
+      ],
+      "next_event": "E471",
+      "concept_refs": [
+        "C1323",
+        "C1365"
+      ]
+    },
+    {
+      "id": "E471",
+      "title": "银色幻想与龙首谎言",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E471_银色幻想与龙首谎言.md",
+      "output": "事件/E471_银色幻想与龙首谎言.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1871,
+        1873
+      ],
+      "source_lines": [
+        161639,
+        161858
+      ],
+      "length_exception": "银色幻想双线＋龙首降临事实密度，按B11完整因果保留",
+      "next_event": "E472",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C891",
+        "C1323",
+        "C1366"
+      ]
+    },
+    {
+      "id": "E472",
+      "title": "九十八光宴分裂",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E472_九十八光宴分裂.md",
+      "output": "事件/E472_九十八光宴分裂.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1874,
+        1877
+      ],
+      "source_lines": [
+        161859,
+        162092
+      ],
+      "length_exception": "撕体戒严夺中级终端与协议一连裂事实密度，按C1前中段完整因果保留",
+      "next_event": "E473",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C1323",
+        "C1367",
+        "C987"
+      ]
+    },
+    {
+      "id": "E473",
+      "title": "记忆篡改与真实碎片",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E473_记忆篡改与真实碎片.md",
+      "output": "事件/E473_记忆篡改与真实碎片.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1877,
+        1878
+      ],
+      "source_lines": [
+        162093,
+        162255
+      ],
+      "next_event": "E474",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C1321",
+        "C1323",
+        "C1367",
+        "C987"
+      ]
+    },
+    {
+      "id": "E474",
+      "title": "两枚光宴与最终选择",
+      "stage": "S64",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E474_两枚光宴与最终选择.md",
+      "output": "事件/E474_两枚光宴与最终选择.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1879,
+        1882
+      ],
+      "source_lines": [
+        162256,
+        162532
+      ],
+      "length_exception": "九十八械斗两枚竞价背刺与集会钉名模因出示事实密度，按C2至立方体亮出保留；裂射入体留E475",
+      "next_event": "E475",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点；背刺「骑身」改为「压身」械斗口径"
+      ],
+      "concept_refs": [
+        "C1323",
+        "C1368",
+        "C1369"
+      ]
+    },
+    {
+      "id": "E475",
+      "title": "光宴重组与模因罗网",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E475_光宴重组与模因罗网.md",
+      "output": "事件/E475_光宴重组与模因罗网.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1883,
+        1883
+      ],
+      "source_lines": [
+        162533,
+        162597
+      ],
+      "corrections": [
+        "对齐C2末：立方体裂射入体／视野马赛克／重组为号召未完成",
+        "重组非本事件完成态；模因隔绝与火种嘱托留E476",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "next_event": "E476",
+      "concept_refs": [
+        "C891",
+        "C1322",
+        "C1369"
+      ]
+    },
+    {
+      "id": "E476",
+      "title": "复燃火种与田园暗号",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E476_复燃火种与田园暗号.md",
+      "output": "事件/E476_复燃火种与田园暗号.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1884,
+        1886
+      ],
+      "source_lines": [
+        162598,
+        162826
+      ],
+      "length_exception": "复燃火种、模因隔绝、脱衣认输、三体分流与田园暗号事实密度，按C3上半完整因果保留；接画转向留E477",
+      "corrections": [
+        "高阶看穿未坐实；隔绝≠清除；前场抚摸／一次性竞价仍作废",
+        "少年体外形固定非性；接画与第三中端机留E477",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "next_event": "E477",
+      "concept_refs": [
+        "C1322",
+        "C1323",
+        "C1370"
+      ]
+    },
+    {
+      "id": "E477",
+      "title": "涂鸦信号与智械转向",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E477_涂鸦信号与智械转向.md",
+      "output": "事件/E477_涂鸦信号与智械转向.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1887,
+        1889
+      ],
+      "source_lines": [
+        162827,
+        162999
+      ],
+      "corrections": [
+        "对齐C3下半＋C4开端：接画改笔、弃高阶、最后一次启程",
+        "启程≠抵达；泥土情报未启；会面未发生",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "next_event": "E478",
+      "concept_refs": [
+        "C1321",
+        "C1371"
+      ]
+    },
+    {
+      "id": "E478",
+      "title": "第七机神以太狂潮",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E478_第七机神以太狂潮.md",
+      "output": "事件/E478_第七机神以太狂潮.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1889,
+        1890
+      ],
+      "source_lines": [
+        163000,
+        163114
+      ],
+      "corrections": [
+        "对齐C4上半：面板根源／87%／非本土飞升、「想赢吗」、主体留主宇宙",
+        "止于巢都上空开吞笼罩与田园为下一供养；尽毁与智脑留E479",
+        "163115—163147目睹尽毁／死城／分流田园现由E479开篇承接，行号暂未并入本事件",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "next_event": "E479",
+      "concept_refs": [
+        "C1322",
+        "C1372",
+        "C1388"
+      ]
+    },
+    {
+      "id": "E479",
+      "title": "一号智脑与巢都毁灭",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E479_一号智脑与巢都毁灭.md",
+      "output": "事件/E479_一号智脑与巢都毁灭.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1891,
+        1892
+      ],
+      "source_lines": [
+        163115,
+        163280
+      ],
+      "corrections": [
+        "对齐C4：巢都尽毁＋夹层救智脑＋人格核心重创仅临时遏制；完全修复未达成",
+        "py／前女友线仅口头重申未履行；勿与光宴性竞价合并",
+        "止于奔田园前／情报销毁与警报留E480；与智械会面仍未发生",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "巢都被以太吞尽；分身溯源救出一号智脑；人格核心重创仅灵能临时遏制；蜂巢覆灭与黑夜城求救史口述；携智脑奔田园。",
+      "next_event": "E480",
+      "concept_refs": [
+        "C1372",
+        "C1373"
+      ]
+    },
+    {
+      "id": "E480",
+      "title": "田园情报与智械警报",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E480_田园情报与智械警报.md",
+      "output": "事件/E480_田园情报与智械警报.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1892,
+        1893
+      ],
+      "source_lines": [
+        163281,
+        163343
+      ],
+      "corrections": [
+        "对齐C4下半：田园情报远程销毁；模因再动手则真爆发警告；最高级警报智械已行动",
+        "情报是否曾被读取本事件未证（C5伪身「我收到了」再钉）；勿写已会面",
+        "行动现场／伪身／病毒反噬留E481+；模因隔绝≠清除",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "田园林海被以太笼罩；山崖加密情报销毁；向智脑警告光宴体内模因；最高光宴机全网警报确认智械已行动。",
+      "next_event": "E481",
+      "concept_refs": [
+        "C1374"
+      ]
+    },
+    {
+      "id": "E481",
+      "title": "智械伪身与病毒陷阱",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E481_智械伪身与病毒陷阱.md",
+      "output": "事件/E481_智械伪身与病毒陷阱.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1894,
+        1896
+      ],
+      "source_lines": [
+        163344,
+        163604
+      ],
+      "length_exception": "终端装置／病毒激活／廊战／双神到场事实密度，按C5上半至围杀前保留；识破与爆炸留E482",
+      "corrections": [
+        "对齐C5：终端装置＋数据牢笼＋模因激活＋纳米过载廊战＋拥星者／灭绝者到场误判",
+        "伪身表情全程平静无微笑；勿把识破／「我收到了」／爆炸完成条件塞进本事件",
+        "真身同框仍未发生；巨像打铁声未在本事件出现（属E482巫蛊音效）",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "警报后突入最高光宴终端；装置激活针对性模因；伪身廊战不逃；拥星者与灭绝者围场并判病毒起效；巨爪将落。",
+      "next_event": "E482",
+      "concept_refs": [
+        "C1375"
+      ]
+    },
+    {
+      "id": "E482",
+      "title": "天降援救与模因爆发",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E482_天降援救与模因爆发.md",
+      "output": "事件/E482_天降援救与模因爆发.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1897,
+        1900
+      ],
+      "source_lines": [
+        163605,
+        163793
+      ],
+      "length_exception": "救援识破倒计时＋火莲爆炸近三分之一瘫＋熔炉对峙至学者拒事实密度，按C5末+C6前半保留；以太吞噬留E483",
+      "corrections": [
+        "对齐C5末+C6前半：天降挡爪／识破伪身／涂鸦已收／爆炸近三分之一瘫／将军熔炉令／学者拒",
+        "删旧切片「拥星者与龙首另调围剿」「盲寻真身」；汇合坐标由伪身临爆给予",
+        "不自动判定真身已安全；伪身无微笑；倒贴仅口头；以太吞噬与交易留E483",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "咒瞳挡灭绝者巨爪；夏娃／巫神牵制双神；灵能识破伪身且涂鸦确认已收情报；伪身爆炸致近三分之一终端瘫痪；将军令熔炉，学者拒绝。",
+      "next_event": "E483",
+      "concept_refs": [
+        "C1376"
+      ]
+    },
+    {
+      "id": "E483",
+      "title": "以太吞噬学者与将军交易",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E483_以太吞噬学者与将军交易.md",
+      "output": "事件/E483_以太吞噬学者与将军交易.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1900,
+        1900
+      ],
+      "source_lines": [
+        163794,
+        163841
+      ],
+      "length_exception": "中枢吞噬诞生与开价对峙事实密度，按C6止于品尝污染未成交保留；汇合留E484",
+      "corrections": [
+        "对齐C6：水银吞噬学者→赤裸银发诞生→将军开价杀林恩＋两根源＋子集／巨像＋一兄弟→以太改要灾厄污染",
+        "删旧切片「双方达成临时合作」「取得学者规则权限移交」；正文止于未成交",
+        "勿把废弃数据汇合／真身同框塞进本事件；林恩与光宴不在中枢；以太为部分体色彩隔绝本体",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "水银流体吞噬学者坍塌；赤裸银发以太分身诞生；将军开价未成交，以太改要将军身上灾厄污染。",
+      "next_event": "E484",
+      "concept_refs": [
+        "C1377",
+        "C1388"
+      ]
+    },
+    {
+      "id": "E484",
+      "title": "三方汇合与智械二次拿捏",
+      "stage": "S65",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E484_三方汇合与智械二次拿捏.md",
+      "output": "事件/E484_三方汇合与智械二次拿捏.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1900,
+        1903
+      ],
+      "source_lines": [
+        163842,
+        164091
+      ],
+      "length_exception": "赶路试探斩影真身同框光刃隔宴三区图智脑撕票我答应事实密度，按C6汇合至夹层松手保留；遗产钥匙留E485",
+      "corrections": [
+        "对齐C6：试探斩伪影／数字炸弹／真身同框／光刃隔模因光宴／三区图巨像转第三区域／智脑撕票／我答应／夹层松手",
+        "删旧切片遗产权柄钥匙布置安全屋、捕获以太一部分、三方权限共破边界、地图连三位一体路线",
+        "光宴因体内模因被光刃逼在裂隙；三位一体仅口头；以太赤裸不在本事件主拍",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "废弃数据汇合斩伪影；真身同框交地下三区与巨像第三区域情报；智脑撕票后真身被迫答应有限合作。",
+      "next_event": "E485",
+      "concept_refs": [
+        "C1378"
+      ]
+    },
+    {
+      "id": "E485",
+      "title": "三方并肩与以太围猎",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E485_三方并肩与以太围猎.md",
+      "output": "事件/E485_三方并肩与以太围猎.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1904,
+        1905
+      ],
+      "source_lines": [
+        164092,
+        164250
+      ],
+      "length_exception": "并肩握手遗产钥匙越界打断以太17%炸弹炸撤事实密度，按C7至撤离保留；密辛543留E486",
+      "corrections": [
+        "对齐C7：撕票握手并肩、出裂隙、遗产权柄／钥匙／禁忌知识、灵能越界被流体刃打断、以太17%现身、数字炸弹引爆坍塌撤离",
+        "删旧切片「与将军已合作围剿」「七神全员围猎」「以太100%本体降临」；交易仍未成交",
+        "勿把密辛全文／543锁场／睁眼／现实围殴塞回本事件完成",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "被迫握手并肩；真身出示万机部分遗产与钥匙；灵能越界被以太流体刃打断；17%显形后数字炸弹炸塌撤离。",
+      "next_event": "E486",
+      "concept_refs": [
+        "C1379",
+        "C1388"
+      ]
+    },
+    {
+      "id": "E486",
+      "title": "以太分身与正义围殴",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E486_以太分身与正义围殴.md",
+      "output": "事件/E486_以太分身与正义围殴.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1906,
+        1910
+      ],
+      "source_lines": [
+        164251,
+        164631
+      ],
+      "length_exception": "密辛543睁眼失败数据碾压现实围殴俘获奇异世界事实密度，按C7–C8至防故意被抓保留；定位矩阵留E487",
+      "corrections": [
+        "对齐C7–C8：密辛、分头、543区块24%锁场、睁开眼睛问答失败、本体轰终端合体、夏娃／巫神／左左／夜医＋小板凳围殴、20%+断链拖奇异世界、假身诱杀、拒答虚妄幻影、嘱防故意被抓",
+        "删旧切片「以太已死／全灭」「正面数据战胜利」「睁眼已解答」；俘而未死、本体在外",
+        "勿写入定位矩阵体检、暗号汇合或巨像出发；左左幼态非性",
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "summary": "以太密辛后543锁场升至24%；睁眼问答失败；现实根源围殴将约20%+断链拖入奇异世界续打，本体在外愤怒。",
+      "next_event": "E487",
+      "concept_refs": [
+        "C1380",
+        "C1388"
+      ]
+    },
+    {
+      "id": "E487",
+      "title": "定位矩阵与援军计划",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E487_定位矩阵与援军计划.md",
+      "output": "事件/E487_定位矩阵与援军计划.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1910,
+        1912
+      ],
+      "source_lines": [
+        164632,
+        164800
+      ],
+      "next_event": "E488",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C1381"
+      ]
+    },
+    {
+      "id": "E488",
+      "title": "另一个世界与最终防火墙",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E488_另一个世界与最终防火墙.md",
+      "output": "事件/E488_另一个世界与最终防火墙.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1913,
+        1914
+      ],
+      "source_lines": [
+        164801,
+        164948
+      ],
+      "next_event": "E489",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C1382"
+      ]
+    },
+    {
+      "id": "E489",
+      "title": "机械战争与上传生命线",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E489_机械战争与上传生命线.md",
+      "output": "事件/E489_机械战争与上传生命线.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1915,
+        1918
+      ],
+      "source_lines": [
+        164949,
+        165198
+      ],
+      "length_exception": "机械战争边境至上传大厅清场与以M挡驰援事实密度，按C9中后段完整因果保留；三机神合围留E490",
+      "next_event": "E490",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点"
+      ],
+      "concept_refs": [
+        "C1383"
+      ]
+    },
+    {
+      "id": "E490",
+      "title": "灭绝级阵列与小眼萝",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E490_灭绝级阵列与小眼萝.md",
+      "output": "事件/E490_灭绝级阵列与小眼萝.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1918,
+        1921
+      ],
+      "source_lines": [
+        165199,
+        165418
+      ],
+      "length_exception": "三机神合围、灭绝级阵列、介子火、魂媒与小眼萝撕衣交易达成事实密度，按C9末至C10前段保留；全面动乱出击留E491",
+      "next_event": "E491",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点；小眼萝拟化删「小小嫩嫩／肉乎乎」细部"
+      ],
+      "concept_refs": [
+        "C1384"
+      ]
+    },
+    {
+      "id": "E491",
+      "title": "全面诅咒与终端崩坏",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E491_全面诅咒与终端崩坏.md",
+      "output": "事件/E491_全面诅咒与终端崩坏.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1921,
+        1923
+      ],
+      "source_lines": [
+        165419,
+        165624
+      ],
+      "length_exception": "全面动乱出击＋二次灭绝矩阵失效＋75号定位＋光宴崩一二区终端＋援军宣言／黑弦月传讯开端事实密度，按C10自可诅咒后至传讯止完整因果保留；抵门／戟召／以太夺取留E492",
+      "next_event": "E492",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点；左左条目去「脱衣」耦合"
+      ],
+      "concept_refs": [
+        "C1322",
+        "C1384",
+        "C1385",
+        "C987"
+      ]
+    },
+    {
+      "id": "E492",
+      "title": "巨像位置与以太夺取",
+      "stage": "S66",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段13_第1768-1926章/事件/E492_巨像位置与以太夺取.md",
+      "output": "事件/E492_巨像位置与以太夺取.md",
+      "status": "reviewed",
+      "source_chapters": [
+        1924,
+        1926
+      ],
+      "source_lines": [
+        165625,
+        165860
+      ],
+      "length_exception": "抵门／戟召全军／人偶家落地／将军分兵／以太守门／三根源开战／学者锁／容器空／吃了开放终点事实密度，按C11完整因果保留；胜负与巨像尽噬未闭合，无v0.19正文",
+      "corrections": [
+        "交叉复核C组：事实／主权／NSFW／幼态非性已核；E492仍开放终点；「轻声确认来迟」改若；去1927章号；旁白吸引注意改外部可核；开放终点保留"
+      ],
+      "concept_refs": [
+        "C1386",
+        "C1387",
+        "C1388"
+      ]
+    }
+  ]
+}

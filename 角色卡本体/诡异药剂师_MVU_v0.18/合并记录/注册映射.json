@@ -1,0 +1,316 @@
+{
+  "optional": {
+    "拥星者": {
+      "entry_id": 300,
+      "event_ids": [
+        "E337",
+        "E338"
+      ],
+      "content_files": [
+        "src/characters/拥星者/角色速览.md",
+        "src/characters/拥星者/基础信息.md",
+        "src/characters/拥星者/性格调色盘.md",
+        "src/characters/拥星者/三面性.md",
+        "src/characters/拥星者/多阶段人设.md",
+        "src/characters/拥星者/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "高权重可选NPC；通过角色世界书词条和事件窗口激活，不进入28名核心关系表。"
+    },
+    "智脑": {
+      "entry_id": 301,
+      "event_ids": [
+        "E319",
+        "E321",
+        "E323",
+        "E331",
+        "E340",
+        "E342",
+        "E479",
+        "E484",
+        "E488"
+      ],
+      "content_files": [
+        "src/characters/智脑/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "视界之主": {
+      "entry_id": 302,
+      "event_ids": [
+        "E335",
+        "E336",
+        "E337",
+        "E338",
+        "E344"
+      ],
+      "content_files": [
+        "src/characters/视界之主/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "人偶家": {
+      "entry_id": 303,
+      "event_ids": [
+        "E338",
+        "E339",
+        "E342",
+        "E452",
+        "E461",
+        "E491",
+        "E492"
+      ],
+      "content_files": [
+        "src/characters/人偶家/角色速览.md",
+        "src/characters/人偶家/基础信息.md",
+        "src/characters/人偶家/性格调色盘.md",
+        "src/characters/人偶家/三面性.md",
+        "src/characters/人偶家/多阶段人设.md",
+        "src/characters/人偶家/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。"
+    },
+    "老人": {
+      "entry_id": 304,
+      "event_ids": [
+        "E344",
+        "E345",
+        "E346",
+        "E347",
+        "E348"
+      ],
+      "content_files": [
+        "src/characters/老人/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。",
+      "profile_format": "compact_npc"
+    },
+    "奈奈子": {
+      "entry_id": 305,
+      "event_ids": [
+        "E344",
+        "E345",
+        "E346",
+        "E348"
+      ],
+      "content_files": [
+        "src/characters/奈奈子/角色速览.md",
+        "src/characters/奈奈子/基础信息.md",
+        "src/characters/奈奈子/性格调色盘.md",
+        "src/characters/奈奈子/三面性.md",
+        "src/characters/奈奈子/多阶段人设.md",
+        "src/characters/奈奈子/二次解释.md"
+      ],
+      "relation_registered": false,
+      "note": "精修集成NPC；按事件及关键词激活，不进入核心关系矩阵。"
+    },
+    "夏娃": {
+      "entry_id": 307,
+      "event_ids": [
+        "E398",
+        "E399",
+        "E400",
+        "E401",
+        "E402",
+        "E406",
+        "E408"
+      ],
+      "content_files": [
+        "src/characters/夏娃/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "康斯坦丁": {
+      "entry_id": 308,
+      "event_ids": [
+        "E409",
+        "E440",
+        "E442",
+        "E443",
+        "E445",
+        "E448",
+        "E449",
+        "E452"
+      ],
+      "content_files": [
+        "src/characters/康斯坦丁/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "第一使徒": {
+      "entry_id": 309,
+      "event_ids": [
+        "E411"
+      ],
+      "content_files": [
+        "src/characters/第一使徒/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "孽主": {
+      "entry_id": 310,
+      "event_ids": [
+        "E419",
+        "E420",
+        "E421",
+        "E422",
+        "E423",
+        "E427",
+        "E428",
+        "E430"
+      ],
+      "content_files": [
+        "src/characters/孽主/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "弑利亚": {
+      "entry_id": 311,
+      "event_ids": [
+        "E431",
+        "E433",
+        "E434",
+        "E435",
+        "E437",
+        "E441",
+        "E442",
+        "E443"
+      ],
+      "content_files": [
+        "src/characters/弑利亚/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "大黑彘": {
+      "entry_id": 312,
+      "event_ids": [
+        "E430",
+        "E431",
+        "E432"
+      ],
+      "content_files": [
+        "src/characters/大黑彘/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "血娃娃与母亲": {
+      "entry_id": 313,
+      "event_ids": [
+        "E417"
+      ],
+      "content_files": [
+        "src/characters/血娃娃与母亲/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "未来画家": {
+      "entry_id": 314,
+      "event_ids": [
+        "E418"
+      ],
+      "content_files": [
+        "src/characters/未来画家/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "艾泽法拉": {
+      "entry_id": 315,
+      "event_ids": [
+        "E433",
+        "E437",
+        "E438",
+        "E449",
+        "E451",
+        "E452"
+      ],
+      "content_files": [
+        "src/characters/艾泽法拉/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.17精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "雷蒙·冬语": {
+      "entry_id": 316,
+      "event_ids": [
+        "E437",
+        "E438",
+        "E446",
+        "E447",
+        "E449"
+      ],
+      "content_files": [
+        "src/characters/雷蒙·冬语/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.18精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "以太": {
+      "entry_id": 317,
+      "event_ids": [
+        "E478",
+        "E483",
+        "E485",
+        "E486",
+        "E487",
+        "E492"
+      ],
+      "content_files": [
+        "src/characters/以太/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.18精简NPC",
+      "profile_format": "compact_npc"
+    },
+    "光宴": {
+      "entry_id": 318,
+      "event_ids": [
+        "E466",
+        "E467",
+        "E469",
+        "E470",
+        "E472",
+        "E474",
+        "E475",
+        "E485",
+        "E487",
+        "E491"
+      ],
+      "content_files": [
+        "src/characters/光宴/NPC.md"
+      ],
+      "relation_registered": false,
+      "note": "v0.18精简NPC",
+      "profile_format": "compact_npc"
+    }
+  },
+  "minorNpc": {
+    "id": 306,
+    "file": "src/prompts/minor_npcs.md"
+  },
+  "coreCharacterCount": 28,
+  "worldbookEntries": 1306
+}

@@ -1,0 +1,22 @@
+{
+  "version": "0.18.0",
+  "updated": "2026-09-13",
+  "runtime_card": "角色卡本体/诡异药剂师_MVU_v0.18",
+  "artifact": "角色卡本体/诡异药剂师_MVU_v0.18/dist/诡异药剂师_v0.18.json",
+  "bytes": 12671853,
+  "sha256": "d88a7e8c6fab514e6f900660816d40dbb23b2acb75213f841c512dc9b59f014c",
+  "events": "E01—E492",
+  "stages": "S0—S66",
+  "settings_workspace": "角色卡设定/v0.18工作区",
+  "source_chapters": "1768—1926",
+  "new_events": "E435—E492",
+  "check": {
+    "items": 47909,
+    "passed": true,
+    "host_acceptance": "pending"
+  },
+  "open_end": "E492 以太「吃了」，战斗未分",
+  "frozen_baseline": "v0.17 / E434",
+  "git": "author-authorized push this round",
+  "notes": "11 条待拍板已确认；维持现产物不回改"
+}
