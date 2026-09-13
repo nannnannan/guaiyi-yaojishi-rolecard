@@ -1,0 +1,30 @@
+{
+  "id": "tavernweave.weird-apothecary.host-acceptance",
+  "version": "0.19.0",
+  "status": "pending",
+  "accepted_at": null,
+  "accepted_by": null,
+  "tested_at": null,
+  "last_runtime_tested_at": null,
+  "last_runtime_sha256": null,
+  "tested_by": "Codex offline validation",
+  "evidence": null,
+  "host": {
+    "sillytavern": null,
+    "tavern_helper": null
+  },
+  "artifact": "dist/诡异药剂师_v0.19.json",
+  "bytes": 14118014,
+  "sha256": "ed3eb858a5ab24075575cb95d3a3afca56c258f570bf629f487c4ef1c0de1dd4",
+  "offline_checks": {
+    "status": "passed",
+    "checks": 52798,
+    "validate_checks": 43193,
+    "integration_checks": 9605,
+    "command": "npm run check",
+    "worldbook_entries": 1389,
+    "event_anchors": 540
+  },
+  "notes": "v0.19合入E493-E540、64份概念（34增量+30新）及人物/NPC来源；离线check已通过；真实宿主验收仍pending。",
+  "previous_artifact_sha256": "6305a7c7d2888c6c5bdbde9134b5625fcee04d4a1356503b6ddba22341420e90"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-13",
+  "version": "0.17.0",
+  "npm_check": "passed",
+  "validate_checks": 39532,
+  "integration_checks": 4479,
+  "total_checks": 44011,
+  "artifact": "dist/诡异药剂师_v0.17.json",
+  "bytes": 11282817,
+  "sha256": "6305a7c7d2888c6c5bdbde9134b5625fcee04d4a1356503b6ddba22341420e90",
+  "worldbook_entries": 1179,
+  "event_anchors": 434,
+  "event_uid_range": "1096-1133",
+  "concept_uid_range": "2573-2609",
+  "optional_npcs": 15,
+  "terminal": "E434",
+  "real_host_acceptance": "pending"
+}
