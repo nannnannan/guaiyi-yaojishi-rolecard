@@ -1,0 +1,383 @@
+[
+  {
+    "id": "E559",
+    "title": "幽冥海绝密出发",
+    "stage": "S76",
+    "output": "事件/E559_幽冥海绝密出发.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2141,
+      2150
+    ],
+    "source_lines": [
+      184765,
+      185532
+    ],
+    "packets": [
+      "B1",
+      "B2"
+    ],
+    "summary": "原则性放行后绝密小队经西王特殊渠道踏无序入幽冥海；画家外景与有序走廊；拉法则线构想出口未执行。",
+    "corrections": "B1行域并入本组连续覆盖（正文题材自2146密谈起，不重写E558西王厅许可）；删三叉戟／黑色波涛／艾维尔同行／康斯坦丁婚约倒灌。",
+    "length_exception": null,
+    "major": true
+  },
+  {
+    "id": "E560",
+    "title": "幽冥海中的人影",
+    "stage": "S76",
+    "output": "事件/E560_幽冥海中的人影.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2151,
+      2152
+    ],
+    "source_lines": [
+      185533,
+      185672
+    ],
+    "packets": [
+      "B3"
+    ],
+    "summary": "开口拉线遇镜面无序；蓝发恶鬼面具人引无序下游；隔海对视后继续上游至见幕墙前。",
+    "corrections": "止于见主宇宙幕墙前；浮岛开战划E561；无黑色海面／三叉戟锚点倒灌。",
+    "length_exception": null,
+    "major": false
+  },
+  {
+    "id": "E561",
+    "title": "边缘世界陷落",
+    "stage": "S76",
+    "output": "事件/E561_边缘世界陷落.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2152,
+      2154
+    ],
+    "source_lines": [
+      185673,
+      185881
+    ],
+    "packets": [
+      "B3"
+    ],
+    "summary": "主宇宙幕墙与边缘世界；污染大军开战；折跃入城留守；面具出战；广场大君像；腐化者可灭。",
+    "corrections": "守卫仅喊掩体，无求援交坐标／星炬熄灭；机械出厂与神皇伪装不入。",
+    "length_exception": "边缘开战至腐化者可灭多节点连续，略超常规上限",
+    "major": false
+  },
+  {
+    "id": "E562",
+    "title": "机械战争与神皇伪装",
+    "stage": "S77",
+    "output": "事件/E562_机械战争与神皇伪装.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2155,
+      2157
+    ],
+    "source_lines": [
+      185882,
+      186068
+    ],
+    "packets": [
+      "B3",
+      "B4"
+    ],
+    "summary": "原子机械出厂机械化城市；幽冥海扩产前线殉爆；摘面具神皇认脸；信仰max；删记忆离场赴星炬。",
+    "corrections": "止于删忆离场，不吞议会开场；无长期统治者改造令／交坐标文书；地表戏主为林恩＋左左。",
+    "length_exception": "机械数量战＋神皇认脸双段连续，略超常规上限",
+    "major": false
+  },
+  {
+    "id": "E563",
+    "title": "星炬议会与边王",
+    "stage": "S77",
+    "output": "事件/E563_星炬议会与边王.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2157,
+      2160
+    ],
+    "source_lines": [
+      186069,
+      186327
+    ],
+    "packets": [
+      "B4"
+    ],
+    "summary": "传墙闯入星炬议会；月儿兰＋小丑验明；边王下跪；腐化神界来路与两千年隔离带／排异退化口述。",
+    "corrections": "非受邀等待；无星炬全息星图；主母未出庭；大小姐＝艾维儿与可控无序整段后移。",
+    "length_exception": "议会验明＋防线科普跨章，默认走向略超重大上限",
+    "major": true
+  },
+  {
+    "id": "E564",
+    "title": "可控无序生灵",
+    "stage": "S77",
+    "output": "事件/E564_可控无序生灵.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2161,
+      2162
+    ],
+    "source_lines": [
+      186328,
+      186477
+    ],
+    "packets": [
+      "B5"
+    ],
+    "summary": "艾维儿身份禁忌与预谋引开；污染者献祭制造无序生灵；不可控定性。",
+    "corrections": "删猩红星／引擎／子宫／艾维儿当场牵制；缺标2162原文误作2262已记。",
+    "length_exception": "献祭造无序与不可控定性连续，略超常规上限",
+    "major": false
+  },
+  {
+    "id": "E565",
+    "title": "逆向陷阱与战场回收",
+    "stage": "S77",
+    "output": "事件/E565_逆向陷阱与战场回收.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2163,
+      2166
+    ],
+    "source_lines": [
+      186478,
+      186758
+    ],
+    "packets": [
+      "B5",
+      "B6"
+    ],
+    "summary": "接指挥权清场；物质缰绳变轨喷洒反噬；嘲讽定位深空；歼残并再引无序入下游；承诺推回世界。",
+    "corrections": "战场＝星炬厅遥控非入核；空岛搬走／归场划E566；无引擎碎片。",
+    "length_exception": "缰绳反噬至歼残推回多段，略超常规上限",
+    "major": false
+  },
+  {
+    "id": "E566",
+    "title": "空岛前哨与大小姐归来",
+    "stage": "S77",
+    "output": "事件/E566_空岛前哨与大小姐归来.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2166,
+      2168
+    ],
+    "source_lines": [
+      186759,
+      186982
+    ],
+    "packets": [
+      "B6"
+    ],
+    "summary": "搬走两座前线空岛入奇异世界；中央电脑留边；大小姐归场摘面具；「母亲一直在利用你」；转行宫。",
+    "corrections": "标题沿用空岛前哨，正文纠偏为奇异世界试星生态非边境前哨化；无化龙／引擎碎片／方舟信号。",
+    "length_exception": "搬岛＋归场摘面具连续，接近重大下限故保留完整事实",
+    "major": false
+  },
+  {
+    "id": "E567",
+    "title": "梦境之外的力量",
+    "stage": "S77",
+    "output": "事件/E567_梦境之外的力量.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2169,
+      2173
+    ],
+    "source_lines": [
+      186983,
+      187298
+    ],
+    "packets": [
+      "B6",
+      "B7"
+    ],
+    "summary": "行宫：神界沉眠者、初诞者路堵死、梦境外力量；以太与防线铸造者；时间悖论与「体量」；礼物口引出切场。",
+    "corrections": "停在切场前；无神国残影／追方舟／猩红星云；对话体量假说在切场前收束出口。",
+    "length_exception": null,
+    "major": true
+  },
+  {
+    "id": "E568",
+    "title": "血肉方舟与猩红之星",
+    "stage": "S77",
+    "output": "事件/E568_血肉方舟与猩红之星.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2173,
+      2178
+    ],
+    "source_lines": [
+      187299,
+      187721
+    ],
+    "packets": [
+      "B7",
+      "B8"
+    ],
+    "summary": "入深空；血肉方舟与噩运引擎科普；跟踪至猩红之星；她冲锋；建门夺半舟＋整舟入奇异世界；指挥官投影对峙至弃点前。",
+    "corrections": "航线＝传讯定位非电脑方舟信号；战利品＝奇异世界非系统空间；停在弃点令「不要靠近」前／交E569。",
+    "length_exception": "方舟跟踪至夺舟入奇异世界跨包完成态，字数超重大上限",
+    "major": true
+  },
+  {
+    "id": "E569",
+    "title": "可控无序核心",
+    "stage": "S78",
+    "output": "事件/E569_可控无序核心.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2178,
+      2180
+    ],
+    "source_lines": [
+      187722,
+      187874
+    ],
+    "packets": [
+      "B8"
+    ],
+    "summary": "弃点转化；引擎子宫暴露；可控无序生灵成形；乐者／轮回口头揭示；引海失败；灌注后再平衡；无人入核。",
+    "corrections": "无纹路UI／成功信号／入核选项；指挥官＝血袍投影非血肉神子嗣具名。",
+    "length_exception": "弃点至灌注再平衡多节点，字数超重大上限",
+    "major": true
+  },
+  {
+    "id": "E570",
+    "title": "子宫纹路与意志崩坏",
+    "stage": "S78",
+    "output": "事件/E570_子宫纹路与意志崩坏.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2181,
+      2184
+    ],
+    "source_lines": [
+      187875,
+      188213
+    ],
+    "packets": [
+      "B9"
+    ],
+    "summary": "棺椁投掷入核；打乱纹路引擎崩；残片入棺；子嗣印记抽读捏碎；血肉神感应；回边缘数日。",
+    "corrections": "入法＝棺椁非血肉裂口；屏障＝遮息防天父非诱饵航道；无舰队反噬／机械剥落／星炬／选择窗；入口寻路划E571。",
+    "length_exception": "入核崩解至印记／回边缘，字数超重大上限",
+    "major": true
+  },
+  {
+    "id": "E571",
+    "title": "幽冥海入口",
+    "stage": "S78",
+    "output": "事件/E571_幽冥海入口.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2185,
+      2187
+    ],
+    "source_lines": [
+      188214,
+      188381
+    ],
+    "packets": [
+      "B9",
+      "B10"
+    ],
+    "summary": "第五日入口承诺至过境；主母放出互认；阵列防线口述；至白雾入口（未踏雾失散）。",
+    "corrections": "主母＝主动放出同行；无系统空间封存／十二翼／回程锚点／选择窗；B9仅口头点题，本事件兑现踏入至雾前。",
+    "length_exception": null,
+    "major": false
+  },
+  {
+    "id": "E572",
+    "title": "迷雾之海的幻象",
+    "stage": "S78",
+    "output": "事件/E572_迷雾之海的幻象.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2187,
+      2188
+    ],
+    "source_lines": [
+      188382,
+      188531
+    ],
+    "packets": [
+      "B10"
+    ],
+    "summary": "踏雾失散；主母／她幻象；黑夜城层识破；左左无反应；空荡第一位面；随机折跃无星至见恒星前。",
+    "corrections": "无「阵列雾上若隐」「左左回应被吞」；空城／无星折跃收束；蓝星落地划E573。",
+    "length_exception": null,
+    "major": false
+  },
+  {
+    "id": "E573",
+    "title": "死寂蓝星与墓碑",
+    "stage": "S78",
+    "output": "事件/E573_死寂蓝星与墓碑.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2188,
+      2189
+    ],
+    "source_lines": [
+      188532,
+      188643
+    ],
+    "packets": [
+      "B10"
+    ],
+    "summary": "恒星环蓝星；黄沙墓碑；初诞者极致无效；往日遗念异时自葬少年＝己；停在影像确认。",
+    "corrections": "挖骨交E574；「小萝莉」口语幼态非性。",
+    "length_exception": null,
+    "major": false
+  },
+  {
+    "id": "E574",
+    "title": "错误道路与碎裂神格",
+    "stage": "S78",
+    "output": "事件/E574_错误道路与碎裂神格.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2190,
+      2191
+    ],
+    "source_lines": [
+      188644,
+      188821
+    ],
+    "packets": [
+      "B10",
+      "B11"
+    ],
+    "summary": "挖骨共鸣；黑水碎神格；「错误的路」石刻；残识全解唯一初诞者／路错／推末日；碎神格自毁。",
+    "corrections": "挖骨／石刻＝本事件起笔；删碎片共鸣说教；末日收缩等待划E575。",
+    "length_exception": "挖骨至残识全解跨B10–B11，略超常规上限",
+    "major": false
+  },
+  {
+    "id": "E575",
+    "title": "异时末日与时间冻结",
+    "stage": "S78",
+    "output": "事件/E575_异时末日与时间冻结.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2192,
+      2193
+    ],
+    "source_lines": [
+      188822,
+      189034
+    ],
+    "packets": [
+      "B11"
+    ],
+    "summary": "异时末日阶梯收缩等待；时间焊死冻结；燃魂破隙见尽头身影「回去吧」；左左拍醒回幽冥海迷雾。",
+    "corrections": "主权：等待／轰壁垒／戴镜／拥抱咬指改若支；无面具清点／深渊坐标再现／对左左坦白／二选一；高塔与汇合仅预兆不倒灌E576。",
+    "length_exception": "收缩等待至拍醒回雾跨章，默认走向略超重大上限",
+    "major": true
+  }
+]

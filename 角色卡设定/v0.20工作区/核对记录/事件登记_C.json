@@ -1,0 +1,458 @@
+[
+  {
+    "id": "E576",
+    "title": "高塔与破碎时间线",
+    "stage": "S78",
+    "output": "事件/E576_高塔与破碎时间线.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2194,
+      2196
+    ],
+    "source_lines": [
+      189035,
+      189306
+    ],
+    "packets": [
+      "C1"
+    ],
+    "summary": "迷雾法则乱流中探破碎高塔与幽冥海蓝图；时间战争见双河交汇后冻结支流自未来碎裂，交汇窗口不可复现；塔下背影仅己可见、高塔消失；与主母艾维儿汇合并确认数小时vs数日时间差，未全盘同步双河。",
+    "corrections": [
+      "引用概念接入C1452，删除待新编号编制行",
+      "确认不提前点亮血月／第一位面；左左未见背影"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E577",
+    "title": "深渊第一位面与不可及血月",
+    "stage": "S78",
+    "output": "事件/E577_深渊第一位面与不可及血月.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2197,
+      2198
+    ],
+    "source_lines": [
+      189307,
+      189464
+    ],
+    "packets": [
+      "C1"
+    ],
+    "summary": "出迷雾踏深渊第一位面；主宇宙时差不足十分钟；艾维儿化蓝龙载飞；血月象征说与装饰说并存；血月过大不可靠近、丘陵重复、空间法则无异常；折返口令节点可发，未写破障共鸣。",
+    "corrections": [
+      "引用概念接入C1453，删除待新编号编制行",
+      "确认无折返完成／无序试探／原初共鸣倒灌"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E578",
+    "title": "原初共鸣与血月战场",
+    "stage": "S78",
+    "output": "事件/E578_原初共鸣与血月战场.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2199,
+      2200
+    ],
+    "source_lines": [
+      189465,
+      189643
+    ],
+    "packets": [
+      "C2"
+    ],
+    "summary": "折返验原点后二次无序黑炎；初诞者／原初之力共鸣指引破障入真实血月战场；艾维儿杀畸变龙被呼王女；坐标隔绝可立。",
+    "corrections": [
+      "引用概念接入C1454，删除待新编号编制行",
+      "确认共鸣在二次黑炎后；无三位一体破障操作；无血月入口关闭"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E579",
+    "title": "时间入侵与血月循环",
+    "stage": "S79",
+    "output": "事件/E579_时间入侵与血月循环.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2201,
+      2202
+    ],
+    "source_lines": [
+      189644,
+      189824
+    ],
+    "packets": [
+      "C2"
+    ],
+    "summary": "思维迟滞与时光外裂隙大魔；闭隙放逐；黑甲致整城毁灭触发绯红毫光重置；否定单纯倒流；二次开战记忆差异；护卫入城。",
+    "corrections": [
+      "引用概念接入C1455，删除待新编号编制行",
+      "确认无红月固定尸骸；入城指控／钉杀属E580"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E580",
+    "title": "黑甲主母与红月机制",
+    "stage": "S79",
+    "output": "事件/E580_黑甲主母与红月机制.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2203,
+      2207
+    ],
+    "source_lines": [
+      189825,
+      190159
+    ],
+    "packets": [
+      "C2",
+      "C3"
+    ],
+    "summary": "入城指控至黑甲露脸；艾维儿无序钉杀后主母得见；封隙提前胜未即时重置；天使口述红月循环／三千年／改造者；红月按时二次重置与主母拥抱打气。",
+    "corrections": [
+      "引用概念接入C1455／C1456，删除待新编号编制行",
+      "确认钉杀≠即时重置扳机；不写开石门／王座灵识"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E581",
+    "title": "未来留言与王座灵识",
+    "stage": "S79",
+    "output": "事件/E581_未来留言与王座灵识.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2207,
+      2209
+    ],
+    "source_lines": [
+      190160,
+      190397
+    ],
+    "packets": [
+      "C3",
+      "C4"
+    ],
+    "summary": "弑莉叶当面转告未来留言；石门开则破循环且他会参战；开门后守军化灰告别；王座白发灵识自证非渡鸦、乃入主后烙印。",
+    "corrections": [
+      "引用概念接入C1457，删除待新编号编制行",
+      "确认留言为面告非墙字／红月低语；魔躯交躯划E582"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E582",
+    "title": "魔躯传承与恶魔之翼",
+    "stage": "S79",
+    "output": "事件/E582_魔躯传承与恶魔之翼.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2210,
+      2211
+    ],
+    "source_lines": [
+      190398,
+      190557
+    ],
+    "packets": [
+      "C4"
+    ],
+    "summary": "灵识口述沉眠者幻梦／梦魇／渡鸦人性锚点与交躯承诺；城外时间裂隙入侵、鸦鸣解定格、未来影对峙轮廓；魔躯融汇与恶魔之翼外显口径立（出场细打与斩瞳源行归E583）。",
+    "corrections": [
+      "引用概念接入C1458，删除待新编号编制行",
+      "源行收到2211末；2212–2213横断／斩瞳／出城归E583以免重叠",
+      "翼＝融汇外显非嫁接仪式"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E583",
+    "title": "时光横断与灾厄黑瞳",
+    "stage": "S79",
+    "output": "事件/E583_时光横断与灾厄黑瞳.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2212,
+      2213
+    ],
+    "source_lines": [
+      190558,
+      190718
+    ],
+    "packets": [
+      "C4"
+    ],
+    "summary": "未来银发影因果定果宣言并一剑横断时光驱逐梦魇；多位面腐化军聚集；灾厄符文黑竖瞳被一刀斩碎、气机未散；核「他已经来过了吗」；持躯出城完成态落本源行。",
+    "corrections": [
+      "引用概念接入C1459，删除待新编号编制行",
+      "横断者＝未来影≠当下；斩瞳≠灭灾厄本体"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E584",
+    "title": "灵识烙印与魂灯",
+    "stage": "S79",
+    "output": "事件/E584_灵识烙印与魂灯.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2214,
+      2215
+    ],
+    "source_lines": [
+      190719,
+      190862
+    ],
+    "packets": [
+      "C5"
+    ],
+    "summary": "魂灯收魂、主母入系统空间；揭魔躯内灵识已融；杀出迷雾至主宇宙边境并与艾维儿分道（引注视 vs 回地狱／幽冥海线）。",
+    "corrections": [
+      "引用概念接入C1460，删除待新编号编制行",
+      "斩竖瞳不重算；天堂之战口述起笔归E585"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E585",
+    "title": "天堂遗址与血枢残骸",
+    "stage": "S79",
+    "output": "事件/E585_天堂遗址与血枢残骸.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2215,
+      2223
+    ],
+    "source_lines": [
+      190863,
+      191552
+    ],
+    "packets": [
+      "C5",
+      "C6"
+    ],
+    "summary": "天堂之战口述、连续时间战争护航、末刀入场与遗址屏蔽；血枢残骸定性、巨像超维链接、中央红芒汇聚与血肉心跳前兆。",
+    "corrections": [
+      "引用概念接入C1461，删除待新编号编制行",
+      "残魂开口／精神歼灭归E586；超维红光≠机械星云"
+    ],
+    "length_exception": false,
+    "major": true
+  },
+  {
+    "id": "E586",
+    "title": "血枢残魂与左左危机",
+    "stage": "S80",
+    "output": "事件/E586_血枢残魂与左左危机.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2224,
+      2225
+    ],
+    "source_lines": [
+      191553,
+      191709
+    ],
+    "packets": [
+      "C7"
+    ],
+    "summary": "血色虚影开口「窃夺血质」、左左权限危机、精神歼灭与血肉封印；巨像起源／三位一体猜想出口；离开尸骸区。",
+    "corrections": [
+      "引用概念接入C1461，删除待新编号编制行",
+      "勿再拆巨人；机械星云归E587"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E587",
+    "title": "以太机械星云",
+    "stage": "S80",
+    "output": "事件/E587_以太机械星云.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2226,
+      2227
+    ],
+    "source_lines": [
+      191710,
+      191824
+    ],
+    "packets": [
+      "C7"
+    ],
+    "summary": "苍银机械银河葬场确认；系统空间收机械造物；死物难屏蔽灾厄；离开星云改寻灵能痕迹。",
+    "corrections": [
+      "引用概念接入C1462，删除待新编号编制行",
+      "无中央空洞／注入／艾雯闪回"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E588",
+    "title": "三位一体白焰",
+    "stage": "S80",
+    "output": "事件/E588_三位一体白焰.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2227,
+      2232
+    ],
+    "source_lines": [
+      191825,
+      192257
+    ],
+    "packets": [
+      "C7",
+      "C8"
+    ],
+    "summary": "灵能视角见入梦者痕迹与苍白耀阳；三质扑火；魂域天堂之战映像与烙印命运口述；胸腔耀阳熔炉与白发白焰可再调用；借原耀阳未整吞、容量瓶颈。",
+    "corrections": [
+      "引用概念接入C1463，删除待新编号编制行",
+      "屏蔽实证与出逃归E589；回路＝体内熔铸非遗址嵌合"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E589",
+    "title": "灾厄投影前的撤离",
+    "stage": "S80",
+    "output": "事件/E589_灾厄投影前的撤离.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2232,
+      2233
+    ],
+    "source_lines": [
+      192258,
+      192340
+    ],
+    "packets": [
+      "C8"
+    ],
+    "summary": "弃搬原耀阳保遗址；白焰覆体踏出；近距灾厄投影屏蔽成立；竖瞳锁定与紫意解锁；远遁边境喘息；节点串联仅计划层。",
+    "corrections": [
+      "引用概念接入C1464，删除待新编号编制行",
+      "无主母小丑汇合／动员降临"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E590",
+    "title": "战争动员与黑夜城降临",
+    "stage": "S80",
+    "output": "事件/E590_战争动员与黑夜城降临.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2234,
+      2237
+    ],
+    "source_lines": [
+      192341,
+      192685
+    ],
+    "packets": [
+      "C9"
+    ],
+    "summary": "边境法网参悟；艾维儿报到与权限转授；黑夜城动员与女装误会；死线界门整城降临；银幻改造；苍白烈阳破咒升格与进攻令。",
+    "corrections": [
+      "引用概念接入C1465，删除待新编号编制行",
+      "三位一体熔铸风险不对军团公开；开战细节归E591"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E591",
+    "title": "根源军团血战",
+    "stage": "S80",
+    "output": "事件/E591_根源军团血战.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2238,
+      2240
+    ],
+    "source_lines": [
+      192686,
+      192900
+    ],
+    "packets": [
+      "C9",
+      "C10"
+    ],
+    "summary": "练兵场式总指挥；空间印记化解无序死光反伤；银幻拆星与泰坦撞星致双星停摆；追击登陆半小时碾压。",
+    "corrections": [
+      "引用概念接入C1466，删除待新编号编制行",
+      "魂灯复生／买一赠十归E592"
+    ],
+    "length_exception": false,
+    "major": false
+  },
+  {
+    "id": "E592",
+    "title": "王庭天使复苏",
+    "stage": "S80",
+    "output": "事件/E592_王庭天使复苏.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2240,
+      2243
+    ],
+    "source_lines": [
+      192901,
+      193104
+    ],
+    "packets": [
+      "C10"
+    ],
+    "summary": "主母先深肃；魂灯复生弑利叶近卫并坦白渡鸦身份；禁制解封黑甲与傀儡古魔「买一赠十」编入指挥；第一位面肃清加速；姐妹隔阂仅立旗。",
+    "corrections": [
+      "引用概念接入C1467，删除待新编号编制行",
+      "C10曾暂标买一赠十为E593——以台账题名与本稿为准归E592；无序走廊归E593"
+    ],
+    "length_exception": true,
+    "major": false
+  },
+  {
+    "id": "E593",
+    "title": "无序走廊初探",
+    "stage": "S80",
+    "output": "事件/E593_无序走廊初探.md",
+    "status": "reviewed",
+    "source_chapters": [
+      2244,
+      2246
+    ],
+    "source_lines": [
+      193105,
+      193312
+    ],
+    "packets": [
+      "C11"
+    ],
+    "summary": "四／三位面无序区发现；白焰入廊放小丑判明人工甬道与能量源节点；破碎世界／播腐化与规则神推演；五廊汇合；隐匿窃听大魔撤军与天父投影未降——阶段开放终点。",
+    "corrections": [
+      "引用概念接入C1468，删除待新编号编制行",
+      "确认无下一事件引入／无E594；禁写禁锢生灵／监控标记／引擎同系"
+    ],
+    "length_exception": true,
+    "major": false
+  }
+]

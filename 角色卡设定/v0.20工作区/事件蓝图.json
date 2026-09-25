@@ -1,0 +1,998 @@
+{
+  "status": "events_cross_reviewed",
+  "scope": [
+    541,
+    593
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        2087,
+        2140
+      ],
+      "events": [
+        541,
+        558
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        2141,
+        2193
+      ],
+      "events": [
+        559,
+        575
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        2194,
+        2246
+      ],
+      "events": [
+        576,
+        593
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E541",
+      "title": "心灵之海百年修炼",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E541_心灵之海百年修炼.md",
+      "output": "事件/E541_心灵之海百年修炼.md",
+      "source_chapters": [
+        2087,
+        2089
+      ],
+      "source_lines": [
+        179814,
+        180063
+      ],
+      "status": "reviewed",
+      "next": "E542"
+    },
+    {
+      "id": "E542",
+      "title": "法则反噬与半步神位",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E542_法则反噬与半步神位.md",
+      "output": "事件/E542_法则反噬与半步神位.md",
+      "source_chapters": [
+        2090,
+        2093
+      ],
+      "source_lines": [
+        180064,
+        180440
+      ],
+      "status": "reviewed",
+      "next": "E543"
+    },
+    {
+      "id": "E543",
+      "title": "船长决战",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E543_船长决战.md",
+      "output": "事件/E543_船长决战.md",
+      "source_chapters": [
+        2094,
+        2099
+      ],
+      "source_lines": [
+        180441,
+        180961
+      ],
+      "status": "reviewed",
+      "next": "E544"
+    },
+    {
+      "id": "E544",
+      "title": "八成根源围猎",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E544_八成根源围猎.md",
+      "output": "事件/E544_八成根源围猎.md",
+      "source_chapters": [
+        2099,
+        2101
+      ],
+      "source_lines": [
+        180962,
+        181204
+      ],
+      "status": "reviewed",
+      "next": "E545"
+    },
+    {
+      "id": "E545",
+      "title": "时间逆转与泰坦放逐",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E545_时间逆转与泰坦放逐.md",
+      "output": "事件/E545_时间逆转与泰坦放逐.md",
+      "source_chapters": [
+        2102,
+        2104
+      ],
+      "source_lines": [
+        181205,
+        181554
+      ],
+      "status": "reviewed",
+      "next": "E546"
+    },
+    {
+      "id": "E546",
+      "title": "嘲讽模式与根源拔刀",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E546_嘲讽模式与根源拔刀.md",
+      "output": "事件/E546_嘲讽模式与根源拔刀.md",
+      "source_chapters": [
+        2105,
+        2106
+      ],
+      "source_lines": [
+        181555,
+        181761
+      ],
+      "status": "reviewed",
+      "next": "E547"
+    },
+    {
+      "id": "E547",
+      "title": "身份暴露与三招悬停",
+      "stage": "S74",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E547_身份暴露与三招悬停.md",
+      "output": "事件/E547_身份暴露与三招悬停.md",
+      "source_chapters": [
+        2107,
+        2109
+      ],
+      "source_lines": [
+        181762,
+        182045
+      ],
+      "status": "reviewed",
+      "next": "E548"
+    },
+    {
+      "id": "E548",
+      "title": "重回黑夜城与公开审判",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E548_重回黑夜城与公开审判.md",
+      "output": "事件/E548_重回黑夜城与公开审判.md",
+      "source_chapters": [
+        2109,
+        2111
+      ],
+      "source_lines": [
+        182046,
+        182298
+      ],
+      "status": "reviewed",
+      "next": "E549"
+    },
+    {
+      "id": "E549",
+      "title": "污染筛查与升格承诺",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E549_污染筛查与升格承诺.md",
+      "output": "事件/E549_污染筛查与升格承诺.md",
+      "source_chapters": [
+        2112,
+        2115
+      ],
+      "source_lines": [
+        182299,
+        182639
+      ],
+      "status": "reviewed",
+      "next": "E550"
+    },
+    {
+      "id": "E550",
+      "title": "盟约成立与第一天内斗",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E550_盟约成立与第一天内斗.md",
+      "output": "事件/E550_盟约成立与第一天内斗.md",
+      "source_chapters": [
+        2116,
+        2116
+      ],
+      "source_lines": [
+        182640,
+        182710
+      ],
+      "status": "reviewed",
+      "next": "E551"
+    },
+    {
+      "id": "E551",
+      "title": "五百根源拉练",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E551_五百根源拉练.md",
+      "output": "事件/E551_五百根源拉练.md",
+      "source_chapters": [
+        2117,
+        2121
+      ],
+      "source_lines": [
+        182711,
+        183148
+      ],
+      "status": "reviewed",
+      "next": "E552"
+    },
+    {
+      "id": "E552",
+      "title": "星轨与元素旧神",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E552_星轨与元素旧神.md",
+      "output": "事件/E552_星轨与元素旧神.md",
+      "source_chapters": [
+        2122,
+        2126
+      ],
+      "source_lines": [
+        183149,
+        183548
+      ],
+      "status": "reviewed",
+      "next": "E553"
+    },
+    {
+      "id": "E553",
+      "title": "神灵建军与碎片分发",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E553_神灵建军与碎片分发.md",
+      "output": "事件/E553_神灵建军与碎片分发.md",
+      "source_chapters": [
+        2127,
+        2129
+      ],
+      "source_lines": [
+        183549,
+        183820
+      ],
+      "status": "reviewed",
+      "next": "E554"
+    },
+    {
+      "id": "E554",
+      "title": "泰坦回收与巫神逼婚",
+      "stage": "S75",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E554_泰坦回收与巫神逼婚.md",
+      "output": "事件/E554_泰坦回收与巫神逼婚.md",
+      "source_chapters": [
+        2130,
+        2131
+      ],
+      "source_lines": [
+        183821,
+        184015
+      ],
+      "status": "reviewed",
+      "next": "E555"
+    },
+    {
+      "id": "E555",
+      "title": "巫神逼婚与小小愿望",
+      "stage": "S76",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E555_巫神逼婚与小小愿望.md",
+      "output": "事件/E555_巫神逼婚与小小愿望.md",
+      "source_chapters": [
+        2132,
+        2133
+      ],
+      "source_lines": [
+        184016,
+        184203
+      ],
+      "status": "reviewed",
+      "next": "E556"
+    },
+    {
+      "id": "E556",
+      "title": "一起活一起死",
+      "stage": "S76",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E556_一起活一起死.md",
+      "output": "事件/E556_一起活一起死.md",
+      "source_chapters": [
+        2134,
+        2138
+      ],
+      "source_lines": [
+        184204,
+        184604
+      ],
+      "status": "reviewed",
+      "next": "E557"
+    },
+    {
+      "id": "E557",
+      "title": "主宇宙的防线",
+      "stage": "S76",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E557_主宇宙的防线.md",
+      "output": "事件/E557_主宇宙的防线.md",
+      "source_chapters": [
+        2139,
+        2139
+      ],
+      "source_lines": [
+        184605,
+        184694
+      ],
+      "status": "reviewed",
+      "next": "E558"
+    },
+    {
+      "id": "E558",
+      "title": "入梦者与狱卒许可",
+      "stage": "S76",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E558_入梦者与狱卒许可.md",
+      "output": "事件/E558_入梦者与狱卒许可.md",
+      "source_chapters": [
+        2140,
+        2140
+      ],
+      "source_lines": [
+        184695,
+        184764
+      ],
+      "status": "reviewed",
+      "next": "E559"
+    },
+    {
+      "id": "E559",
+      "title": "幽冥海绝密出发",
+      "stage": "S76",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E559_幽冥海绝密出发.md",
+      "output": "事件/E559_幽冥海绝密出发.md",
+      "source_chapters": [
+        2141,
+        2150
+      ],
+      "source_lines": [
+        184765,
+        185532
+      ],
+      "status": "reviewed",
+      "next": "E560"
+    },
+    {
+      "id": "E560",
+      "title": "幽冥海中的人影",
+      "stage": "S76",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E560_幽冥海中的人影.md",
+      "output": "事件/E560_幽冥海中的人影.md",
+      "source_chapters": [
+        2151,
+        2152
+      ],
+      "source_lines": [
+        185533,
+        185672
+      ],
+      "status": "reviewed",
+      "next": "E561"
+    },
+    {
+      "id": "E561",
+      "title": "边缘世界陷落",
+      "stage": "S76",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E561_边缘世界陷落.md",
+      "output": "事件/E561_边缘世界陷落.md",
+      "source_chapters": [
+        2152,
+        2154
+      ],
+      "source_lines": [
+        185673,
+        185881
+      ],
+      "status": "reviewed",
+      "next": "E562"
+    },
+    {
+      "id": "E562",
+      "title": "机械战争与神皇伪装",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E562_机械战争与神皇伪装.md",
+      "output": "事件/E562_机械战争与神皇伪装.md",
+      "source_chapters": [
+        2155,
+        2157
+      ],
+      "source_lines": [
+        185882,
+        186068
+      ],
+      "status": "reviewed",
+      "next": "E563"
+    },
+    {
+      "id": "E563",
+      "title": "星炬议会与边王",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E563_星炬议会与边王.md",
+      "output": "事件/E563_星炬议会与边王.md",
+      "source_chapters": [
+        2157,
+        2160
+      ],
+      "source_lines": [
+        186069,
+        186327
+      ],
+      "status": "reviewed",
+      "next": "E564"
+    },
+    {
+      "id": "E564",
+      "title": "可控无序生灵",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E564_可控无序生灵.md",
+      "output": "事件/E564_可控无序生灵.md",
+      "source_chapters": [
+        2161,
+        2162
+      ],
+      "source_lines": [
+        186328,
+        186477
+      ],
+      "status": "reviewed",
+      "next": "E565"
+    },
+    {
+      "id": "E565",
+      "title": "逆向陷阱与战场回收",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E565_逆向陷阱与战场回收.md",
+      "output": "事件/E565_逆向陷阱与战场回收.md",
+      "source_chapters": [
+        2163,
+        2166
+      ],
+      "source_lines": [
+        186478,
+        186758
+      ],
+      "status": "reviewed",
+      "next": "E566"
+    },
+    {
+      "id": "E566",
+      "title": "空岛前哨与大小姐归来",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E566_空岛前哨与大小姐归来.md",
+      "output": "事件/E566_空岛前哨与大小姐归来.md",
+      "source_chapters": [
+        2166,
+        2168
+      ],
+      "source_lines": [
+        186759,
+        186982
+      ],
+      "status": "reviewed",
+      "next": "E567"
+    },
+    {
+      "id": "E567",
+      "title": "梦境之外的力量",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E567_梦境之外的力量.md",
+      "output": "事件/E567_梦境之外的力量.md",
+      "source_chapters": [
+        2169,
+        2173
+      ],
+      "source_lines": [
+        186983,
+        187298
+      ],
+      "status": "reviewed",
+      "next": "E568"
+    },
+    {
+      "id": "E568",
+      "title": "血肉方舟与猩红之星",
+      "stage": "S77",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E568_血肉方舟与猩红之星.md",
+      "output": "事件/E568_血肉方舟与猩红之星.md",
+      "source_chapters": [
+        2173,
+        2178
+      ],
+      "source_lines": [
+        187299,
+        187721
+      ],
+      "status": "reviewed",
+      "next": "E569"
+    },
+    {
+      "id": "E569",
+      "title": "可控无序核心",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E569_可控无序核心.md",
+      "output": "事件/E569_可控无序核心.md",
+      "source_chapters": [
+        2178,
+        2180
+      ],
+      "source_lines": [
+        187722,
+        187874
+      ],
+      "status": "reviewed",
+      "next": "E570"
+    },
+    {
+      "id": "E570",
+      "title": "子宫纹路与意志崩坏",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E570_子宫纹路与意志崩坏.md",
+      "output": "事件/E570_子宫纹路与意志崩坏.md",
+      "source_chapters": [
+        2181,
+        2184
+      ],
+      "source_lines": [
+        187875,
+        188213
+      ],
+      "status": "reviewed",
+      "next": "E571"
+    },
+    {
+      "id": "E571",
+      "title": "幽冥海入口",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E571_幽冥海入口.md",
+      "output": "事件/E571_幽冥海入口.md",
+      "source_chapters": [
+        2185,
+        2187
+      ],
+      "source_lines": [
+        188214,
+        188381
+      ],
+      "status": "reviewed",
+      "next": "E572"
+    },
+    {
+      "id": "E572",
+      "title": "迷雾之海的幻象",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E572_迷雾之海的幻象.md",
+      "output": "事件/E572_迷雾之海的幻象.md",
+      "source_chapters": [
+        2187,
+        2188
+      ],
+      "source_lines": [
+        188382,
+        188531
+      ],
+      "status": "reviewed",
+      "next": "E573"
+    },
+    {
+      "id": "E573",
+      "title": "死寂蓝星与墓碑",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E573_死寂蓝星与墓碑.md",
+      "output": "事件/E573_死寂蓝星与墓碑.md",
+      "source_chapters": [
+        2188,
+        2189
+      ],
+      "source_lines": [
+        188532,
+        188643
+      ],
+      "status": "reviewed",
+      "next": "E574"
+    },
+    {
+      "id": "E574",
+      "title": "错误道路与碎裂神格",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E574_错误道路与碎裂神格.md",
+      "output": "事件/E574_错误道路与碎裂神格.md",
+      "source_chapters": [
+        2190,
+        2191
+      ],
+      "source_lines": [
+        188644,
+        188821
+      ],
+      "status": "reviewed",
+      "next": "E575"
+    },
+    {
+      "id": "E575",
+      "title": "异时末日与时间冻结",
+      "stage": "S78",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E575_异时末日与时间冻结.md",
+      "output": "事件/E575_异时末日与时间冻结.md",
+      "source_chapters": [
+        2192,
+        2193
+      ],
+      "source_lines": [
+        188822,
+        189034
+      ],
+      "status": "reviewed",
+      "next": "E576"
+    },
+    {
+      "id": "E576",
+      "title": "高塔与破碎时间线",
+      "stage": "S78",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E576_高塔与破碎时间线.md",
+      "output": "事件/E576_高塔与破碎时间线.md",
+      "source_chapters": [
+        2194,
+        2196
+      ],
+      "source_lines": [
+        189035,
+        189306
+      ],
+      "status": "reviewed",
+      "next": "E577"
+    },
+    {
+      "id": "E577",
+      "title": "深渊第一位面与不可及血月",
+      "stage": "S78",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E577_深渊第一位面与不可及血月.md",
+      "output": "事件/E577_深渊第一位面与不可及血月.md",
+      "source_chapters": [
+        2197,
+        2198
+      ],
+      "source_lines": [
+        189307,
+        189464
+      ],
+      "status": "reviewed",
+      "next": "E578"
+    },
+    {
+      "id": "E578",
+      "title": "原初共鸣与血月战场",
+      "stage": "S78",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E578_原初共鸣与血月战场.md",
+      "output": "事件/E578_原初共鸣与血月战场.md",
+      "source_chapters": [
+        2199,
+        2200
+      ],
+      "source_lines": [
+        189465,
+        189643
+      ],
+      "status": "reviewed",
+      "next": "E579"
+    },
+    {
+      "id": "E579",
+      "title": "时间入侵与血月循环",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E579_时间入侵与血月循环.md",
+      "output": "事件/E579_时间入侵与血月循环.md",
+      "source_chapters": [
+        2201,
+        2202
+      ],
+      "source_lines": [
+        189644,
+        189824
+      ],
+      "status": "reviewed",
+      "next": "E580"
+    },
+    {
+      "id": "E580",
+      "title": "黑甲主母与红月机制",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E580_黑甲主母与红月机制.md",
+      "output": "事件/E580_黑甲主母与红月机制.md",
+      "source_chapters": [
+        2203,
+        2207
+      ],
+      "source_lines": [
+        189825,
+        190159
+      ],
+      "status": "reviewed",
+      "next": "E581"
+    },
+    {
+      "id": "E581",
+      "title": "未来留言与王座灵识",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E581_未来留言与王座灵识.md",
+      "output": "事件/E581_未来留言与王座灵识.md",
+      "source_chapters": [
+        2207,
+        2209
+      ],
+      "source_lines": [
+        190160,
+        190397
+      ],
+      "status": "reviewed",
+      "next": "E582"
+    },
+    {
+      "id": "E582",
+      "title": "魔躯传承与恶魔之翼",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E582_魔躯传承与恶魔之翼.md",
+      "output": "事件/E582_魔躯传承与恶魔之翼.md",
+      "source_chapters": [
+        2210,
+        2211
+      ],
+      "source_lines": [
+        190398,
+        190557
+      ],
+      "status": "reviewed",
+      "next": "E583"
+    },
+    {
+      "id": "E583",
+      "title": "时光横断与灾厄黑瞳",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E583_时光横断与灾厄黑瞳.md",
+      "output": "事件/E583_时光横断与灾厄黑瞳.md",
+      "source_chapters": [
+        2212,
+        2213
+      ],
+      "source_lines": [
+        190558,
+        190718
+      ],
+      "status": "reviewed",
+      "next": "E584"
+    },
+    {
+      "id": "E584",
+      "title": "灵识烙印与魂灯",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E584_灵识烙印与魂灯.md",
+      "output": "事件/E584_灵识烙印与魂灯.md",
+      "source_chapters": [
+        2214,
+        2215
+      ],
+      "source_lines": [
+        190719,
+        190862
+      ],
+      "status": "reviewed",
+      "next": "E585"
+    },
+    {
+      "id": "E585",
+      "title": "天堂遗址与血枢残骸",
+      "stage": "S79",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E585_天堂遗址与血枢残骸.md",
+      "output": "事件/E585_天堂遗址与血枢残骸.md",
+      "source_chapters": [
+        2215,
+        2223
+      ],
+      "source_lines": [
+        190863,
+        191552
+      ],
+      "status": "reviewed",
+      "next": "E586"
+    },
+    {
+      "id": "E586",
+      "title": "血枢残魂与左左危机",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E586_血枢残魂与左左危机.md",
+      "output": "事件/E586_血枢残魂与左左危机.md",
+      "source_chapters": [
+        2224,
+        2225
+      ],
+      "source_lines": [
+        191553,
+        191709
+      ],
+      "status": "reviewed",
+      "next": "E587"
+    },
+    {
+      "id": "E587",
+      "title": "以太机械星云",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E587_以太机械星云.md",
+      "output": "事件/E587_以太机械星云.md",
+      "source_chapters": [
+        2226,
+        2227
+      ],
+      "source_lines": [
+        191710,
+        191824
+      ],
+      "status": "reviewed",
+      "next": "E588"
+    },
+    {
+      "id": "E588",
+      "title": "三位一体白焰",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E588_三位一体白焰.md",
+      "output": "事件/E588_三位一体白焰.md",
+      "source_chapters": [
+        2227,
+        2232
+      ],
+      "source_lines": [
+        191825,
+        192257
+      ],
+      "status": "reviewed",
+      "next": "E589"
+    },
+    {
+      "id": "E589",
+      "title": "灾厄投影前的撤离",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E589_灾厄投影前的撤离.md",
+      "output": "事件/E589_灾厄投影前的撤离.md",
+      "source_chapters": [
+        2232,
+        2233
+      ],
+      "source_lines": [
+        192258,
+        192340
+      ],
+      "status": "reviewed",
+      "next": "E590"
+    },
+    {
+      "id": "E590",
+      "title": "战争动员与黑夜城降临",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E590_战争动员与黑夜城降临.md",
+      "output": "事件/E590_战争动员与黑夜城降临.md",
+      "source_chapters": [
+        2234,
+        2237
+      ],
+      "source_lines": [
+        192341,
+        192685
+      ],
+      "status": "reviewed",
+      "next": "E591"
+    },
+    {
+      "id": "E591",
+      "title": "根源军团血战",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E591_根源军团血战.md",
+      "output": "事件/E591_根源军团血战.md",
+      "source_chapters": [
+        2238,
+        2240
+      ],
+      "source_lines": [
+        192686,
+        192900
+      ],
+      "status": "reviewed",
+      "next": "E592"
+    },
+    {
+      "id": "E592",
+      "title": "王庭天使复苏",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E592_王庭天使复苏.md",
+      "output": "事件/E592_王庭天使复苏.md",
+      "source_chapters": [
+        2240,
+        2243
+      ],
+      "source_lines": [
+        192901,
+        193104
+      ],
+      "status": "reviewed",
+      "next": "E593"
+    },
+    {
+      "id": "E593",
+      "title": "无序走廊初探",
+      "stage": "S80",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章/事件/E593_无序走廊初探.md",
+      "output": "事件/E593_无序走廊初探.md",
+      "source_chapters": [
+        2244,
+        2246
+      ],
+      "source_lines": [
+        193105,
+        193312
+      ],
+      "status": "reviewed",
+      "next": null
+    }
+  ]
+}

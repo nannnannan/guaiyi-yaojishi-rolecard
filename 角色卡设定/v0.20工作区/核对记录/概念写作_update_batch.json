@@ -1,0 +1,106 @@
+{
+  "batch": "update",
+  "items": [
+    {
+      "id": "C1405",
+      "title": "时间战争规则与第五十四次奖励",
+      "output": "概念/C1405_时间战争规则与第五十四次奖励.md",
+      "events": [
+        "E576",
+        "E579",
+        "E580",
+        "E583",
+        "E585"
+      ],
+      "note": "补破碎高塔／双河／血月循环／横断等本阶段用法",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C1401",
+      "title": "心灵之海船锚与以太精神世界",
+      "output": "概念/C1401_心灵之海船锚与以太精神世界.md",
+      "events": [
+        "E541",
+        "E542"
+      ],
+      "note": "补时间比／认知测试与禁再入海语境",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C1222",
+      "title": "神性与规则的门槛",
+      "output": "概念/C1222_神性与规则的门槛.md",
+      "events": [
+        "E543"
+      ],
+      "note": "补半步规则神落地与「只有掌控法则者才有资格被称为神」",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C761",
+      "title": "深渊第一位面与路西法城门",
+      "output": "概念/C761_深渊第一位面与路西法城门.md",
+      "events": [
+        "E577",
+        "E578",
+        "E591",
+        "E593"
+      ],
+      "note": "补血月战场／无序走廊入口语境",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C1320",
+      "title": "三位一体提案与缺失拼图",
+      "output": "概念/C1320_三位一体提案与缺失拼图.md",
+      "events": [
+        "E586",
+        "E588"
+      ],
+      "note": "补残魂指控与白焰熔炉完成态",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C902",
+      "title": "灾厄之眼那片灾厄",
+      "output": "概念/C902_灾厄之眼那片灾厄.md",
+      "events": [
+        "E583",
+        "E589"
+      ],
+      "note": "补黑竖瞳投影与白焰屏蔽",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C828",
+      "title": "炽天使魂灯",
+      "output": "概念/C828_炽天使魂灯.md",
+      "events": [
+        "E584",
+        "E592"
+      ],
+      "note": "补收魂重铸与弑利叶复生",
+      "kind": "update",
+      "status": "drafted"
+    },
+    {
+      "id": "C1211",
+      "title": "初诞者力量的驱动与限度",
+      "output": "概念/C1211_初诞者力量的驱动与限度.md",
+      "events": [
+        "E574",
+        "E578",
+        "E591"
+      ],
+      "note": "补唯一初诞者锚点／共鸣破障／未引注视",
+      "kind": "update",
+      "status": "drafted"
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "concepts": [
+    {
+      "id": "C1222",
+      "title": "神性与规则的门槛",
+      "kind": "update",
+      "output": "概念/C1222_神性与规则的门槛.md",
+      "source_events": [
+        "E543"
+      ],
+      "source_lines": [
+        [
+          180441,
+          180961
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "补半步规则神落地与「只有掌控法则者才有资格被称为神」"
+      ],
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1222_神性与规则的门槛.md"
+    },
+    {
+      "id": "C1401",
+      "title": "心灵之海船锚与以太精神世界",
+      "kind": "update",
+      "output": "概念/C1401_心灵之海船锚与以太精神世界.md",
+      "source_events": [
+        "E541",
+        "E542"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ],
+        [
+          180064,
+          180440
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "补时间比／认知测试与禁再入海语境"
+      ],
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1401_心灵之海船锚与以太精神世界.md"
+    },
+    {
+      "id": "C1421",
+      "title": "心灵之海时间比与认知测试",
+      "kind": "new",
+      "output": "概念/C1421_心灵之海时间比与认知测试.md",
+      "source_events": [
+        "E541"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "心灵之海时间比（外界1小时≈内100年）与认知测试送回"
+      ]
+    },
+    {
+      "id": "C1422",
+      "title": "七大神王级本源法则反噬",
+      "kind": "new",
+      "output": "概念/C1422_七大神王级本源法则反噬.md",
+      "source_events": [
+        "E542"
+      ],
+      "source_lines": [
+        [
+          180064,
+          180440
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "七大神王级／本源法则反噬（梦境领悟≠现实承载）",
+        "禁再入海"
+      ]
+    },
+    {
+      "id": "C1423",
+      "title": "半步规则神落地与神性门槛",
+      "kind": "new",
+      "output": "概念/C1423_半步规则神落地与神性门槛.md",
+      "source_events": [
+        "E543"
+      ],
+      "source_lines": [
+        [
+          180441,
+          180961
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "半步规则神落地",
+        "只有掌控法则者才有资格被称为神"
+      ]
+    },
+    {
+      "id": "C1424",
+      "title": "法则丝线暗门与提线木偶围猎",
+      "kind": "new",
+      "output": "概念/C1424_法则丝线暗门与提线木偶围猎.md",
+      "source_events": [
+        "E544"
+      ],
+      "source_lines": [
+        [
+          180962,
+          181204
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "法则丝线提线木偶／暗门网络"
+      ]
+    },
+    {
+      "id": "C1425",
+      "title": "时间回溯数分钟与物质归位",
+      "kind": "new",
+      "output": "概念/C1425_时间回溯数分钟与物质归位.md",
+      "source_events": [
+        "E545"
+      ],
+      "source_lines": [
+        [
+          181205,
+          181554
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "时间回溯数分钟（物质进程归位）",
+        "人偶家斩线收服",
+        "泰坦北海放逐"
+      ]
+    },
+    {
+      "id": "C1426",
+      "title": "嘲讽模式与筛勇士",
+      "kind": "new",
+      "output": "概念/C1426_嘲讽模式与筛勇士.md",
+      "source_events": [
+        "E546"
+      ],
+      "source_lines": [
+        [
+          181555,
+          181761
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "嘲讽模式／筛勇士"
+      ]
+    },
+    {
+      "id": "C1427",
+      "title": "战团自发有序化与心灵调度",
+      "kind": "new",
+      "output": "概念/C1427_战团自发有序化与心灵调度.md",
+      "source_events": [
+        "E547"
+      ],
+      "source_lines": [
+        [
+          181762,
+          182045
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "战团自发有序化（借心灵相通记忆／统一调度）"
+      ]
+    },
+    {
+      "id": "C1428",
+      "title": "家庭公开审判与知情差",
+      "kind": "new",
+      "output": "概念/C1428_家庭公开审判与知情差.md",
+      "source_events": [
+        "E548"
+      ],
+      "source_lines": [
+        [
+          182046,
+          182298
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "家庭公开审判（捆椅／知情差／内鬼通讯）",
+        "时间战争自白"
+      ]
+    },
+    {
+      "id": "C1429",
+      "title": "真面目示人与黑袍坐实",
+      "kind": "new",
+      "output": "概念/C1429_真面目示人与黑袍坐实.md",
+      "source_events": [
+        "E549"
+      ],
+      "source_lines": [
+        [
+          182299,
+          182639
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "真面目示人／黑袍＝黑夜城林恩",
+        "定点激发污染突袭灭口"
+      ]
+    },
+    {
+      "id": "C1430",
+      "title": "五百根源集结与万人部队",
+      "kind": "new",
+      "output": "概念/C1430_五百根源集结与万人部队.md",
+      "source_events": [
+        "E550"
+      ],
+      "source_lines": [
+        [
+          182640,
+          182710
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "根源集结超五百＋组织归附＋基础部队万人级"
+      ]
+    },
+    {
+      "id": "C1431",
+      "title": "强制宿敌互殴拉练与治愈",
+      "kind": "new",
+      "output": "概念/C1431_强制宿敌互殴拉练与治愈.md",
+      "source_events": [
+        "E551"
+      ],
+      "source_lines": [
+        [
+          182711,
+          183148
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "打到我满意为止——强制宿敌互殴＋败方治愈",
+        "三人约140组"
+      ]
+    },
+    {
+      "id": "C1432",
+      "title": "梦境积分赛授法则与再试炼",
+      "kind": "new",
+      "output": "概念/C1432_梦境积分赛授法则与再试炼.md",
+      "source_events": [
+        "E552"
+      ],
+      "source_lines": [
+        [
+          183149,
+          183548
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "梦境积分赛续：前十授法则＋立刻再试炼"
+      ]
+    },
+    {
+      "id": "C1433",
+      "title": "神灵建军五军团与碎片双轨",
+      "kind": "new",
+      "output": "概念/C1433_神灵建军五军团与碎片双轨.md",
+      "source_events": [
+        "E553"
+      ],
+      "source_lines": [
+        [
+          183549,
+          183820
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "神灵建军（百余小组→五军团）",
+        "公开／定制碎片"
+      ]
+    },
+    {
+      "id": "C1434",
+      "title": "泰坦遗忘追逃与灵魂婚约符文",
+      "kind": "new",
+      "output": "概念/C1434_泰坦遗忘追逃与灵魂婚约符文.md",
+      "source_events": [
+        "E554",
+        "E555"
+      ],
+      "source_lines": [
+        [
+          183821,
+          184015
+        ],
+        [
+          184016,
+          184203
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "泰坦放逐后两月遗忘",
+        "灵魂婚约符文（泰坦契约，眉心显现）"
+      ]
+    },
+    {
+      "id": "C1435",
+      "title": "小小结婚语义与永伴共死",
+      "kind": "new",
+      "output": "概念/C1435_小小结婚语义与永伴共死.md",
+      "source_events": [
+        "E555",
+        "E556"
+      ],
+      "source_lines": [
+        [
+          184016,
+          184203
+        ],
+        [
+          184204,
+          184604
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "结婚语义（小小）＝永伴／不死幻想／全员羁绊",
+        "一起活一起死"
+      ]
+    },
+    {
+      "id": "C1436",
+      "title": "主宇宙防线星轨变轨",
+      "kind": "new",
+      "output": "概念/C1436_主宇宙防线星轨变轨.md",
+      "source_events": [
+        "E557"
+      ],
+      "source_lines": [
+        [
+          184605,
+          184694
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "主宇宙防线（字面星轨变轨机制）",
+        "铸者／三大边境引子"
+      ]
+    },
+    {
+      "id": "C1437",
+      "title": "三大边疆与入梦者西王许可",
+      "kind": "new",
+      "output": "概念/C1437_三大边疆与入梦者西王许可.md",
+      "source_events": [
+        "E558"
+      ],
+      "source_lines": [
+        [
+          184695,
+          184764
+        ]
+      ],
+      "status": "drafted",
+      "group": "A",
+      "covers": [
+        "三大边疆",
+        "入梦者点名",
+        "西王原则性放行",
+        "星图验十二节点"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "艾雯爵士_D",
+      "output": "人物增量/艾雯爵士_D.md",
+      "source_events": [
+        "E541",
+        "E542",
+        "E549",
+        "E590"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ],
+        [
+          180064,
+          180440
+        ],
+        [
+          182299,
+          182639
+        ],
+        [
+          192341,
+          192685
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "见习夜医",
+      "output": "新NPC/见习夜医.md",
+      "source_events": [
+        "E546",
+        "E547",
+        "E590"
+      ],
+      "source_lines": [
+        [
+          181555,
+          181761
+        ],
+        [
+          181762,
+          182045
+        ],
+        [
+          192341,
+          192685
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "巨像之脑_D",
+      "output": "人物增量/巨像之脑_D.md",
+      "source_events": [
+        "E541",
+        "E544",
+        "E586",
+        "E588"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ],
+        [
+          180962,
+          181204
+        ],
+        [
+          191553,
+          191709
+        ],
+        [
+          191825,
+          192257
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "康斯坦丁_D",
+      "output": "人物增量/康斯坦丁_D.md",
+      "source_events": [
+        "E541",
+        "E542",
+        "E543",
+        "E548"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ],
+        [
+          180064,
+          180440
+        ],
+        [
+          180441,
+          180961
+        ],
+        [
+          182046,
+          182298
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "哭泣小丑_D",
+      "output": "人物增量/哭泣小丑_D.md",
+      "source_events": [
+        "E549",
+        "E559",
+        "E593"
+      ],
+      "source_lines": [
+        [
+          182299,
+          182639
+        ],
+        [
+          184765,
+          185532
+        ],
+        [
+          193105,
+          193312
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "孽主_D",
+      "output": "人物增量/孽主_D.md",
+      "source_events": [
+        "E541"
+      ],
+      "source_lines": [
+        [
+          179814,
+          180063
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "人偶家_D",
+      "output": "人物增量/人偶家_D.md",
+      "source_events": [
+        "E544",
+        "E545",
+        "E548"
+      ],
+      "source_lines": [
+        [
+          180962,
+          181204
+        ],
+        [
+          181205,
+          181554
+        ],
+        [
+          182046,
+          182298
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "圣安娜_D",
+      "output": "人物增量/圣安娜_D.md",
+      "source_events": [
+        "E549",
+        "E558"
+      ],
+      "source_lines": [
+        [
+          182299,
+          182639
+        ],
+        [
+          184695,
+          184764
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "泰坦头颅_D",
+      "output": "人物增量/泰坦头颅_D.md",
+      "source_events": [
+        "E544",
+        "E545",
+        "E554",
+        "E591"
+      ],
+      "source_lines": [
+        [
+          180962,
+          181204
+        ],
+        [
+          181205,
+          181554
+        ],
+        [
+          183821,
+          184015
+        ],
+        [
+          192686,
+          192900
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "巫神头颅_D",
+      "output": "人物增量/巫神头颅_D.md",
+      "source_events": [
+        "E542",
+        "E554",
+        "E555"
+      ],
+      "source_lines": [
+        [
+          180064,
+          180440
+        ],
+        [
+          183821,
+          184015
+        ],
+        [
+          184016,
+          184203
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "夏娃_D",
+      "output": "人物增量/夏娃_D.md",
+      "source_events": [
+        "E555"
+      ],
+      "source_lines": [
+        [
+          184016,
+          184203
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "小小_D",
+      "output": "人物增量/小小_D.md",
+      "source_events": [
+        "E555",
+        "E556",
+        "E553"
+      ],
+      "source_lines": [
+        [
+          184016,
+          184203
+        ],
+        [
+          184204,
+          184604
+        ],
+        [
+          183549,
+          183820
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "星轨_D",
+      "output": "人物增量/星轨_D.md",
+      "source_events": [
+        "E546",
+        "E552",
+        "E558"
+      ],
+      "source_lines": [
+        [
+          181555,
+          181761
+        ],
+        [
+          183149,
+          183548
+        ],
+        [
+          184695,
+          184764
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    },
+    {
+      "name": "银色幻想_D",
+      "output": "人物增量/银色幻想_D.md",
+      "source_events": [
+        "E542",
+        "E549",
+        "E590",
+        "E591"
+      ],
+      "source_lines": [
+        [
+          180064,
+          180440
+        ],
+        [
+          182299,
+          182639
+        ],
+        [
+          192341,
+          192685
+        ],
+        [
+          192686,
+          192900
+        ]
+      ],
+      "group": "A",
+      "status": "drafted"
+    }
+  ]
+}

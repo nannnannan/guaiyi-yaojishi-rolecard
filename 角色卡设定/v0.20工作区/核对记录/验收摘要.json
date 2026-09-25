@@ -1,0 +1,334 @@
+{
+  "status": "passed",
+  "checks": 29445,
+  "errors": [],
+  "warnings": [],
+  "planned_events": 53,
+  "written_events": 53,
+  "blank_events": [],
+  "events": [
+    {
+      "id": "E541",
+      "blank": false,
+      "chars": 941,
+      "length_exception": null
+    },
+    {
+      "id": "E542",
+      "blank": false,
+      "chars": 1149,
+      "length_exception": "重要反噬／半步机制展开，默认走向略超普通 1000 字。"
+    },
+    {
+      "id": "E543",
+      "blank": false,
+      "chars": 2158,
+      "length_exception": null
+    },
+    {
+      "id": "E544",
+      "blank": false,
+      "chars": 1201,
+      "length_exception": "围猎机制展开略超普通 1000 字。"
+    },
+    {
+      "id": "E545",
+      "blank": false,
+      "chars": 1323,
+      "length_exception": "时间／放逐机制展开略超普通 1000 字。"
+    },
+    {
+      "id": "E546",
+      "blank": false,
+      "chars": 847,
+      "length_exception": null
+    },
+    {
+      "id": "E547",
+      "blank": false,
+      "chars": 855,
+      "length_exception": "事实密度：嘲讽场／根源拔刀前链多节点并列，855字落在普通档与重大档之间，非凑字"
+    },
+    {
+      "id": "E548",
+      "blank": false,
+      "chars": 969,
+      "length_exception": null
+    },
+    {
+      "id": "E549",
+      "blank": false,
+      "chars": 1337,
+      "length_exception": "动员／渗透／入盟浪潮略超普通 1000 字。"
+    },
+    {
+      "id": "E550",
+      "blank": false,
+      "chars": 883,
+      "length_exception": null
+    },
+    {
+      "id": "E551",
+      "blank": false,
+      "chars": 2271,
+      "length_exception": "重大拉练全流程事实密度，默认走向略超重大约 2200 字。"
+    },
+    {
+      "id": "E552",
+      "blank": false,
+      "chars": 2621,
+      "length_exception": "重大父女对峙＋一人战争记忆，默认走向超重大约 2200 字（事实密度，未凑字）。"
+    },
+    {
+      "id": "E553",
+      "blank": false,
+      "chars": 1474,
+      "length_exception": "建军＋双轨碎片分发略超普通 1000 字。"
+    },
+    {
+      "id": "E554",
+      "blank": false,
+      "chars": 741,
+      "length_exception": null
+    },
+    {
+      "id": "E555",
+      "blank": false,
+      "chars": 690,
+      "length_exception": null
+    },
+    {
+      "id": "E556",
+      "blank": false,
+      "chars": 1460,
+      "length_exception": "情感核＋旧形还原跨包略超普通 1000 字。"
+    },
+    {
+      "id": "E557",
+      "blank": false,
+      "chars": 522,
+      "length_exception": null
+    },
+    {
+      "id": "E558",
+      "blank": false,
+      "chars": 3456,
+      "length_exception": "跨 A 末预兆＋B1 许可全链，重大事件默认走向可至约 4000 字；A 源行仅登记至 184764。"
+    },
+    {
+      "id": "E559",
+      "blank": false,
+      "chars": 1995,
+      "length_exception": null
+    },
+    {
+      "id": "E560",
+      "blank": false,
+      "chars": 946,
+      "length_exception": null
+    },
+    {
+      "id": "E561",
+      "blank": false,
+      "chars": 1239,
+      "length_exception": "边缘开战至腐化者可灭多节点连续，略超常规上限"
+    },
+    {
+      "id": "E562",
+      "blank": false,
+      "chars": 1563,
+      "length_exception": "机械数量战＋神皇认脸双段连续，略超常规上限"
+    },
+    {
+      "id": "E563",
+      "blank": false,
+      "chars": 2295,
+      "length_exception": "议会验明＋防线科普跨章，默认走向略超重大上限"
+    },
+    {
+      "id": "E564",
+      "blank": false,
+      "chars": 1289,
+      "length_exception": "献祭造无序与不可控定性连续，略超常规上限"
+    },
+    {
+      "id": "E565",
+      "blank": false,
+      "chars": 1314,
+      "length_exception": "缰绳反噬至歼残推回多段，略超常规上限"
+    },
+    {
+      "id": "E566",
+      "blank": false,
+      "chars": 1762,
+      "length_exception": "搬岛＋归场摘面具连续，接近重大下限故保留完整事实"
+    },
+    {
+      "id": "E567",
+      "blank": false,
+      "chars": 2114,
+      "length_exception": null
+    },
+    {
+      "id": "E568",
+      "blank": false,
+      "chars": 2934,
+      "length_exception": "方舟跟踪至夺舟入奇异世界跨包完成态，字数超重大上限"
+    },
+    {
+      "id": "E569",
+      "blank": false,
+      "chars": 3357,
+      "length_exception": "弃点至灌注再平衡多节点，字数超重大上限"
+    },
+    {
+      "id": "E570",
+      "blank": false,
+      "chars": 2478,
+      "length_exception": "入核崩解至印记／回边缘，字数超重大上限"
+    },
+    {
+      "id": "E571",
+      "blank": false,
+      "chars": 896,
+      "length_exception": null
+    },
+    {
+      "id": "E572",
+      "blank": false,
+      "chars": 857,
+      "length_exception": null
+    },
+    {
+      "id": "E573",
+      "blank": false,
+      "chars": 610,
+      "length_exception": null
+    },
+    {
+      "id": "E574",
+      "blank": false,
+      "chars": 1619,
+      "length_exception": "挖骨至残识全解跨B10–B11，略超常规上限"
+    },
+    {
+      "id": "E575",
+      "blank": false,
+      "chars": 2327,
+      "length_exception": "收缩等待至拍醒回雾跨章，默认走向略超重大上限"
+    },
+    {
+      "id": "E576",
+      "blank": false,
+      "chars": 1322,
+      "length_exception": true
+    },
+    {
+      "id": "E577",
+      "blank": false,
+      "chars": 874,
+      "length_exception": null
+    },
+    {
+      "id": "E578",
+      "blank": false,
+      "chars": 919,
+      "length_exception": null
+    },
+    {
+      "id": "E579",
+      "blank": false,
+      "chars": 930,
+      "length_exception": null
+    },
+    {
+      "id": "E580",
+      "blank": false,
+      "chars": 1683,
+      "length_exception": true
+    },
+    {
+      "id": "E581",
+      "blank": false,
+      "chars": 1367,
+      "length_exception": true
+    },
+    {
+      "id": "E582",
+      "blank": false,
+      "chars": 1205,
+      "length_exception": true
+    },
+    {
+      "id": "E583",
+      "blank": false,
+      "chars": 813,
+      "length_exception": null
+    },
+    {
+      "id": "E584",
+      "blank": false,
+      "chars": 1092,
+      "length_exception": true
+    },
+    {
+      "id": "E585",
+      "blank": false,
+      "chars": 1809,
+      "length_exception": null
+    },
+    {
+      "id": "E586",
+      "blank": false,
+      "chars": 756,
+      "length_exception": null
+    },
+    {
+      "id": "E587",
+      "blank": false,
+      "chars": 676,
+      "length_exception": null
+    },
+    {
+      "id": "E588",
+      "blank": false,
+      "chars": 1342,
+      "length_exception": true
+    },
+    {
+      "id": "E589",
+      "blank": false,
+      "chars": 575,
+      "length_exception": null
+    },
+    {
+      "id": "E590",
+      "blank": false,
+      "chars": 1134,
+      "length_exception": true
+    },
+    {
+      "id": "E591",
+      "blank": false,
+      "chars": 962,
+      "length_exception": null
+    },
+    {
+      "id": "E592",
+      "blank": false,
+      "chars": 1441,
+      "length_exception": true
+    },
+    {
+      "id": "E593",
+      "blank": false,
+      "chars": 1259,
+      "length_exception": true
+    }
+  ],
+  "concepts": 56,
+  "characters": 26,
+  "complete": true,
+  "integrated": false,
+  "real_host": "deferred"
+}

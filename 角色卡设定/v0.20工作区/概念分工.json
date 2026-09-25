@@ -1,0 +1,521 @@
+{
+  "status": "authoring",
+  "runtime_uid": "not_allocated",
+  "prior_max_id": "C1420",
+  "new_id_range_hint": [
+    "C1421",
+    "C1468"
+  ],
+  "rules": [
+    "先核查既有同义概念；编号是逻辑标识，不是运行UID",
+    "逐事件完成或变形后开放该事件实际事实",
+    "NSFW直写；幼态非性",
+    "正文只用E/C编号"
+  ],
+  "items": [
+    {
+      "group": "new",
+      "id": "C1421",
+      "title": "心灵之海时间比与认知测试",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1421_心灵之海时间比与认知测试.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1422",
+      "title": "七大神王级本源法则反噬",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1422_七大神王级本源法则反噬.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1423",
+      "title": "半步规则神落地与神性门槛",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1423_半步规则神落地与神性门槛.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1424",
+      "title": "法则丝线暗门与提线木偶围猎",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1424_法则丝线暗门与提线木偶围猎.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1425",
+      "title": "时间回溯数分钟与物质归位",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1425_时间回溯数分钟与物质归位.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1426",
+      "title": "嘲讽模式与筛勇士",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1426_嘲讽模式与筛勇士.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1427",
+      "title": "战团自发有序化与心灵调度",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1427_战团自发有序化与心灵调度.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1428",
+      "title": "家庭公开审判与知情差",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1428_家庭公开审判与知情差.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1429",
+      "title": "真面目示人与黑袍坐实",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1429_真面目示人与黑袍坐实.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1430",
+      "title": "五百根源集结与万人部队",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1430_五百根源集结与万人部队.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1431",
+      "title": "强制宿敌互殴拉练与治愈",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1431_强制宿敌互殴拉练与治愈.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1432",
+      "title": "梦境积分赛授法则与再试炼",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1432_梦境积分赛授法则与再试炼.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1433",
+      "title": "神灵建军五军团与碎片双轨",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1433_神灵建军五军团与碎片双轨.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1434",
+      "title": "泰坦遗忘追逃与灵魂婚约符文",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1434_泰坦遗忘追逃与灵魂婚约符文.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1435",
+      "title": "小小结婚语义与永伴共死",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1435_小小结婚语义与永伴共死.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1436",
+      "title": "主宇宙防线星轨变轨",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1436_主宇宙防线星轨变轨.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1437",
+      "title": "三大边疆与入梦者西王许可",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1437_三大边疆与入梦者西王许可.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1438",
+      "title": "幽冥海造物与有序走廊",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1438_幽冥海造物与有序走廊.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1439",
+      "title": "法则细线与空间锚点隧道",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1439_法则细线与空间锚点隧道.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1440",
+      "title": "边境微光大幕与环防线排异",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1440_边境微光大幕与环防线排异.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1441",
+      "title": "原子机械吞城与幽冥海燃料",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1441_原子机械吞城与幽冥海燃料.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1442",
+      "title": "边王议会与星炬高塔",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1442_边王议会与星炬高塔.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1443",
+      "title": "锚点稳固器与无序缰绳",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1443_锚点稳固器与无序缰绳.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1444",
+      "title": "前线空岛入奇异世界",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1444_前线空岛入奇异世界.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1445",
+      "title": "神界破碎与沉眠者投影腐化",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1445_神界破碎与沉眠者投影腐化.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1446",
+      "title": "无序屏障护航与遮息防天父",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1446_无序屏障护航与遮息防天父.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1447",
+      "title": "血肉方舟猩红之星与可控生灵",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1447_血肉方舟猩红之星与可控生灵.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1448",
+      "title": "棺椁入核与轮回纹路崩坏",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1448_棺椁入核与轮回纹路崩坏.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1449",
+      "title": "迷雾之海心灵映射",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1449_迷雾之海心灵映射.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1450",
+      "title": "死寂蓝星错误道路与碎裂神格",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1450_死寂蓝星错误道路与碎裂神格.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1451",
+      "title": "唯一初诞者锚点与异时末日",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1451_唯一初诞者锚点与异时末日.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1452",
+      "title": "破碎高塔与时间长河双河交汇",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1452_破碎高塔与时间长河双河交汇.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1453",
+      "title": "不可及血月与魔君象征双口径",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1453_不可及血月与魔君象征双口径.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1454",
+      "title": "原初共鸣破障与血月战场",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1454_原初共鸣破障与血月战场.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1455",
+      "title": "血月循环重置与时间入侵裂隙",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1455_血月循环重置与时间入侵裂隙.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1456",
+      "title": "黑甲未来主母与无序钉杀",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1456_黑甲未来主母与无序钉杀.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1457",
+      "title": "未来留言与王座灵识烙印",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1457_未来留言与王座灵识烙印.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1458",
+      "title": "魔躯传承与恶魔之翼",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1458_魔躯传承与恶魔之翼.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1459",
+      "title": "时光横断与灾厄黑竖瞳",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1459_时光横断与灾厄黑竖瞳.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1460",
+      "title": "魂灯收魂与迷雾印记撤离",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1460_魂灯收魂与迷雾印记撤离.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1461",
+      "title": "天堂遗址血枢残骸与残魂指控",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1461_天堂遗址血枢残骸与残魂指控.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1462",
+      "title": "以太机械星云葬场",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1462_以太机械星云葬场.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1463",
+      "title": "三位一体白焰熔炉",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1463_三位一体白焰熔炉.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1464",
+      "title": "灾厄投影屏蔽与边境撤离",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1464_灾厄投影屏蔽与边境撤离.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1465",
+      "title": "战争动员与黑夜城降临改造",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1465_战争动员与黑夜城降临改造.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1466",
+      "title": "根源军团练兵场碾压",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1466_根源军团练兵场碾压.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1467",
+      "title": "王庭天使复苏与买一赠十武装",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1467_王庭天使复苏与买一赠十武装.md",
+      "status": "drafted"
+    },
+    {
+      "group": "new",
+      "id": "C1468",
+      "title": "无序走廊与五廊汇合窃听终点",
+      "kind": "new",
+      "base_path": null,
+      "output": "概念/C1468_无序走廊与五廊汇合窃听终点.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C1405",
+      "title": "时间战争规则与第五十四次奖励",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1405_时间战争规则与第五十四次奖励.md",
+      "output": "概念/C1405_时间战争规则与第五十四次奖励.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C1401",
+      "title": "心灵之海船锚与以太精神世界",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1401_心灵之海船锚与以太精神世界.md",
+      "output": "概念/C1401_心灵之海船锚与以太精神世界.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C1222",
+      "title": "神性与规则的门槛",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1222_神性与规则的门槛.md",
+      "output": "概念/C1222_神性与规则的门槛.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C761",
+      "title": "深渊第一位面与路西法城门",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C761_深渊第一位面与路西法城门.md",
+      "output": "概念/C761_深渊第一位面与路西法城门.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C1320",
+      "title": "三位一体提案与缺失拼图",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1320_三位一体提案与缺失拼图.md",
+      "output": "概念/C1320_三位一体提案与缺失拼图.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C902",
+      "title": "灾厄之眼那片灾厄",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C902_灾厄之眼那片灾厄.md",
+      "output": "概念/C902_灾厄之眼那片灾厄.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C828",
+      "title": "炽天使魂灯",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C828_炽天使魂灯.md",
+      "output": "概念/C828_炽天使魂灯.md",
+      "status": "drafted"
+    },
+    {
+      "group": "update",
+      "id": "C1211",
+      "title": "初诞者力量的驱动与限度",
+      "kind": "update",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.19/src/concepts/C1211_初诞者力量的驱动与限度.md",
+      "output": "概念/C1211_初诞者力量的驱动与限度.md",
+      "status": "drafted"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+project:
+  name: v0.20阶段十五设定精修
+  status: complete
+  runtime_base: 角色卡本体/诡异药剂师_MVU_v0.19
+  runtime_version: 0.19.0
+  runtime_terminal_event: E540
+  candidate_label: v0.20
+scope:
+  chapters: [2087, 2246]
+  events: [E541, E593]
+  planned_event_count: 53
+  runtime_stages: [S74, S80]
+  source: 角色卡设定/原文.txt
+  source_ledger: 来源台账.json
+  candidate_slice: 角色卡设定/阶段十至阶段十八_概念事件切片/阶段15_第2087-2246章
+  future: 不读取或引入2247章之后正文
+groups:
+  A: {chapters: [2087, 2140], events: [E541, E558]}
+  B: {chapters: [2141, 2193], events: [E559, E575]}
+  C: {chapters: [2194, 2246], events: [E576, E593]}
+writing:
+  nsfw: 事实成立则直写；事实不足才留白；不写占位、叠甲、回避话术或非性替代；幼态/幼年体外形固定非性
+  whitespace_priority: 事实不足处留白，不凑字；留白不是 NSFW 回避手段
+  player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
+  evidence: 原文是唯一事实来源；事件正文以核对记录为准，旧切片只作待核线索
+  events: 普通默认走向500至1000字，重大事件约2000字（可至4000字须 length_exception），事实不足与留白不填充
+  concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件；新增概念逻辑编号建议自C1421起
+  metadata: 章节与行号仅放核对记录，正文使用E/C编号
+  notes:
+    - 承接E540开放终点：「我们起航」向心灵之海
+    - 幼态外形固定非性；成年事实成立则直写
+workflow:
+  - 冻结原文分包和只读指纹
+  - index-base 对照 v0.19 卡体
+  - 三组子代理逐包精读并按核对记录重写事件
+  - 交叉核对事件事实和玩家主权
+  - 概念去重及人物和NPC增量
+  - 摘要衔接与完整离线验收
+delivery:
+  check: npm run check -- --complete
+  integration: not_started
+  package: not_started
+  git_push: not_started
+  real_host: deferred
+result:
+  source_packets: pending
+  planned_events: 53
+  events_authored: 53
+  events_status: complete
+  complete: true
+  integrated: false
+  open_end_inbound: E540我们起航
+  next: settings complete；授权后整卡 MVU_v0.20
