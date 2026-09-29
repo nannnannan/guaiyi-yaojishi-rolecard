@@ -1,0 +1,242 @@
+{
+  "concepts": [
+    {
+      "id": "C1482",
+      "title": "画家势力与艾维儿接管关系",
+      "kind": "new",
+      "output": "概念/C1482_画家势力与艾维儿接管.md",
+      "source_events": [
+        "E632",
+        "E633"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1489",
+      "title": "真理神王与降临媒介",
+      "kind": "new",
+      "output": "概念/C1489_真理神王与降临媒介.md",
+      "source_events": [
+        "E630",
+        "E631",
+        "E632"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1490",
+      "title": "梦境领域与群星回路",
+      "kind": "new",
+      "output": "概念/C1490_梦境领域与群星回路.md",
+      "source_events": [
+        "E635",
+        "E637",
+        "E639"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1491",
+      "title": "轮回神王",
+      "kind": "new",
+      "output": "概念/C1491_轮回神王.md",
+      "source_events": [
+        "E633",
+        "E635"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1492",
+      "title": "天鹰座星区",
+      "kind": "new",
+      "output": "概念/C1492_天鹰座星区.md",
+      "source_events": [
+        "E637",
+        "E638",
+        "E639"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1493",
+      "title": "神族联军",
+      "kind": "new",
+      "output": "概念/C1493_神族联军.md",
+      "source_events": [
+        "E638",
+        "E639"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1494",
+      "title": "深渊撤退与迷雾海逃亡",
+      "kind": "new",
+      "output": "概念/C1494_深渊撤退与迷雾海逃亡.md",
+      "source_events": [
+        "E641",
+        "E643",
+        "E646"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1495",
+      "title": "巨像与织梦残片的三位一体融合",
+      "kind": "new",
+      "output": "概念/C1495_巨像织梦三位一体融合.md",
+      "source_events": [
+        "E644",
+        "E645"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1465",
+      "title": "战争动员与黑夜城降临改造",
+      "kind": "update",
+      "output": "概念/C1465_战争动员与黑夜城降临改造.md",
+      "source_events": [
+        "E634"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1465_战争动员与黑夜城降临改造.md",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1242",
+      "title": "黑弦月生死轮转与稳定条件",
+      "kind": "update",
+      "output": "概念/C1242_黑弦月生死轮转与稳定条件.md",
+      "source_events": [
+        "E636"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1242_黑弦月生死轮转与稳定条件.md",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "id": "C1436",
+      "title": "主宇宙防线星轨变轨",
+      "kind": "update",
+      "output": "概念/C1436_主宇宙防线星轨变轨.md",
+      "source_events": [
+        "E640"
+      ],
+      "status": "drafted",
+      "group": "C",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1436_主宇宙防线星轨变轨.md",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "现实之神",
+      "output": "新NPC/现实之神.md",
+      "source_events": [
+        "E631",
+        "E632"
+      ],
+      "group": "C",
+      "status": "drafted",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    },
+    {
+      "name": "真理神王",
+      "output": "新NPC/真理神王.md",
+      "source_events": [
+        "E630",
+        "E631",
+        "E632",
+        "E633"
+      ],
+      "group": "C",
+      "status": "drafted",
+      "source_lines": [
+        [
+          201469,
+          205627
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "concepts": [
+    {
+      "id": "C1477",
+      "title": "外来者本质与主宇宙法则互斥",
+      "kind": "new",
+      "output": "概念/C1477_外来者本质与法则互斥.md",
+      "source_events": [
+        "E612",
+        "E613",
+        "E614"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1478",
+      "title": "血枢残魂",
+      "kind": "new",
+      "output": "概念/C1478_血枢残魂.md",
+      "source_events": [
+        "E613",
+        "E614",
+        "E617"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1480",
+      "title": "灵能风暴与灵能训练场",
+      "kind": "new",
+      "output": "概念/C1480_灵能风暴与训练场.md",
+      "source_events": [
+        "E616",
+        "E628"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1481",
+      "title": "织梦／入梦者／灵能外来者",
+      "kind": "new",
+      "output": "概念/C1481_织梦入梦者.md",
+      "source_events": [
+        "E618",
+        "E621",
+        "E626"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1483",
+      "title": "紫罗兰世界",
+      "kind": "new",
+      "output": "概念/C1483_紫罗兰世界.md",
+      "source_events": [
+        "E619",
+        "E624",
+        "E625"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1484",
+      "title": "冬泉谷",
+      "kind": "new",
+      "output": "概念/C1484_冬泉谷.md",
+      "source_events": [
+        "E620",
+        "E627"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1485",
+      "title": "容器计划与纱奈儿",
+      "kind": "new",
+      "output": "概念/C1485_容器计划与纱奈儿.md",
+      "source_events": [
+        "E624",
+        "E627",
+        "E629"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1486",
+      "title": "月儿兰城",
+      "kind": "new",
+      "output": "概念/C1486_月儿兰城.md",
+      "source_events": [
+        "E624",
+        "E625"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1487",
+      "title": "白烬与星寂拳法",
+      "kind": "new",
+      "output": "概念/C1487_白烬与星寂拳法.md",
+      "source_events": [
+        "E628",
+        "E631",
+        "E632"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1488",
+      "title": "紫罗兰世界压缩弹珠",
+      "kind": "new",
+      "output": "概念/C1488_紫罗兰压缩弹珠.md",
+      "source_events": [
+        "E630",
+        "E631",
+        "E633"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1320",
+      "title": "三位一体提案与缺失拼图",
+      "kind": "update",
+      "output": "概念/C1320_三位一体提案与缺失拼图.md",
+      "source_events": [
+        "E622"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1320_三位一体提案与缺失拼图.md",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "id": "C1325",
+      "title": "深海王庭与紫罗兰葬所",
+      "kind": "update",
+      "output": "概念/C1325_深海王庭与紫罗兰葬所.md",
+      "source_events": [
+        "E623"
+      ],
+      "status": "drafted",
+      "group": "B",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1325_深海王庭与紫罗兰葬所.md",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "以太_D",
+      "output": "人物增量/以太_D.md",
+      "source_events": [
+        "E616",
+        "E618",
+        "E634",
+        "E645"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "入梦者_D",
+      "output": "人物增量/入梦者_D.md",
+      "source_events": [
+        "E613",
+        "E618",
+        "E621",
+        "E625",
+        "E626",
+        "E627",
+        "E633",
+        "E634",
+        "E635",
+        "E636",
+        "E639",
+        "E644"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "左左_D",
+      "output": "人物增量/左左_D.md",
+      "source_events": [
+        "E613",
+        "E614",
+        "E625",
+        "E639",
+        "E645"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "巨像_D",
+      "output": "人物增量/巨像_D.md",
+      "source_events": [
+        "E612",
+        "E613",
+        "E614",
+        "E615",
+        "E616",
+        "E617",
+        "E644",
+        "E645"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "织梦_D",
+      "output": "人物增量/织梦_D.md",
+      "source_events": [
+        "E618",
+        "E621",
+        "E622",
+        "E624",
+        "E625",
+        "E626",
+        "E627",
+        "E628",
+        "E629",
+        "E633",
+        "E644",
+        "E645"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "艾雯爵士_D",
+      "output": "人物增量/艾雯爵士_D.md",
+      "source_events": [
+        "E612",
+        "E614",
+        "E615",
+        "E617",
+        "E618",
+        "E634",
+        "E636"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "血枢_D",
+      "output": "人物增量/血枢_D.md",
+      "source_events": [
+        "E613",
+        "E614",
+        "E616",
+        "E617",
+        "E618",
+        "E621"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    },
+    {
+      "name": "纱奈儿",
+      "output": "新NPC/纱奈儿.md",
+      "source_events": [
+        "E620",
+        "E621",
+        "E623",
+        "E624",
+        "E627",
+        "E628"
+      ],
+      "group": "B",
+      "status": "drafted",
+      "source_lines": [
+        [
+          197351,
+          201468
+        ]
+      ]
+    }
+  ]
+}

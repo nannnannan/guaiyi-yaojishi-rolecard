@@ -1,0 +1,54 @@
+project:
+  name: v0.21阶段十六设定精修
+  status: in_progress
+  runtime_base: 角色卡本体/诡异药剂师_MVU_v0.20
+  runtime_version: 0.20.0
+  runtime_terminal_event: E593
+  candidate_label: v0.21
+scope:
+  chapters: [2247, 2407]
+  events: [E594, E646]
+  planned_event_count: 53
+  runtime_stages: [S81, S87]
+  source: 角色卡设定/原文.txt
+  source_ledger: 来源台账.json
+  candidate_slice: 角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章
+  future: 不读取或引入2408章之后正文
+groups:
+  A: {chapters: [2247, 2300], events: [E594, E611]}
+  B: {chapters: [2301, 2354], events: [E612, E629]}
+  C: {chapters: [2355, 2407], events: [E630, E646]}
+writing:
+  nsfw: 事实成立则直写；事实不足才留白；不写占位、叠甲、回避话术或非性替代；真实幼年角色固定非性（成年存在的幼态/娇小外形不在此列，见notes）
+  whitespace_priority: 事实不足处留白，不凑字；留白不是 NSFW 回避手段
+  player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
+  evidence: 原文是唯一事实来源；事件正文以核对记录为准，旧切片只作待核线索
+  events: 普通默认走向1000字以上，重大事件约2000字至4000字，事实不足与留白不填充
+  concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件；新增概念逻辑编号建议自C1469起
+  metadata: 章节与行号仅放核对记录，正文使用E/C编号
+  notes:
+    - 承接E593开放终点：无序走廊与投影异常
+    - 幼态外形固定非性；成年事实成立则直写
+    - NSFW年龄口径（作者2026-09-28澄清）：真实幼年角色（纱奈儿真十岁、星轨返幼期间、小林恩婴儿）严格非性；成年存在的幼态/娇小外形按成年处理——左左为成年灵魂（巨像王后本源／林恩上一世之妻，v0.20卡体C913/C817已有成人向既定口径），荤段子与亲密事实直写不降级为喜剧；欲望母树为上千年自然神灵成年可描写。判断标准是灵魂实际年龄与原作身份，不是外形
+workflow:
+  - 冻结原文分包和只读指纹
+  - index-base 对照 v0.20 卡体
+  - 三组子代理逐包精读并按核对记录重写事件
+  - 交叉核对事件事实和玩家主权
+  - 概念去重及人物和NPC增量
+  - 摘要衔接与完整离线验收
+delivery:
+  check: npm run check -- --complete
+  integration: not_started
+  package: not_started
+  git_push: not_started
+  real_host: deferred
+result:
+  source_packets: pending
+  planned_events: 53
+  events_authored: 0
+  events_status: pending
+  complete: false
+  integrated: false
+  open_end_inbound: E593无序走廊与投影异常
+  next: settings complete；授权后整卡 MVU_v0.21

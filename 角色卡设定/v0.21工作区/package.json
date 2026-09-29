@@ -1,0 +1,1 @@
+{"name":"weird-apothecary-v020-authoring","private":true,"type":"module","scripts":{"check":"node validate.mjs"}}

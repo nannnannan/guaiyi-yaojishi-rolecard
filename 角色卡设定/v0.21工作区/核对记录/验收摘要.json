@@ -1,0 +1,334 @@
+{
+  "status": "passed",
+  "checks": 21439,
+  "errors": [],
+  "warnings": [],
+  "planned_events": 53,
+  "written_events": 53,
+  "blank_events": [],
+  "events": [
+    {
+      "id": "E594",
+      "blank": false,
+      "chars": 1830,
+      "length_exception": null
+    },
+    {
+      "id": "E595",
+      "blank": false,
+      "chars": 1515,
+      "length_exception": null
+    },
+    {
+      "id": "E596",
+      "blank": false,
+      "chars": 2408,
+      "length_exception": null
+    },
+    {
+      "id": "E597",
+      "blank": false,
+      "chars": 2951,
+      "length_exception": null
+    },
+    {
+      "id": "E598",
+      "blank": false,
+      "chars": 725,
+      "length_exception": "事实不足不凑字：闭关过渡单线事件（炼成/血祭/双巨头燃/虚空烈阳），点到即止的非重点桥段；字数725低于普通档1000下限，按事实不足留白原则不强凑。"
+    },
+    {
+      "id": "E599",
+      "blank": false,
+      "chars": 1594,
+      "length_exception": null
+    },
+    {
+      "id": "E600",
+      "blank": false,
+      "chars": 1956,
+      "length_exception": null
+    },
+    {
+      "id": "E601",
+      "blank": false,
+      "chars": 1996,
+      "length_exception": null
+    },
+    {
+      "id": "E602",
+      "blank": false,
+      "chars": 2578,
+      "length_exception": null
+    },
+    {
+      "id": "E603",
+      "blank": false,
+      "chars": 2100,
+      "length_exception": null
+    },
+    {
+      "id": "E604",
+      "blank": false,
+      "chars": 2852,
+      "length_exception": null
+    },
+    {
+      "id": "E605",
+      "blank": false,
+      "chars": 1787,
+      "length_exception": null
+    },
+    {
+      "id": "E606",
+      "blank": false,
+      "chars": 1784,
+      "length_exception": null
+    },
+    {
+      "id": "E607",
+      "blank": false,
+      "chars": 2015,
+      "length_exception": null
+    },
+    {
+      "id": "E608",
+      "blank": false,
+      "chars": 1749,
+      "length_exception": null
+    },
+    {
+      "id": "E609",
+      "blank": false,
+      "chars": 1095,
+      "length_exception": null
+    },
+    {
+      "id": "E610",
+      "blank": false,
+      "chars": 2512,
+      "length_exception": null
+    },
+    {
+      "id": "E611",
+      "blank": false,
+      "chars": 1013,
+      "length_exception": "事实不足：A 组范围内仅狂潮氛围/祝贺与黑弦月入泡三条可核事实，按事实不足不凑字原则收短；修订后由主代理统筹的 2301—2303 扩写段（家宴/精灵王半神/护法严令）落 B1 包，由 B 组登记。"
+    },
+    {
+      "id": "E612",
+      "blank": false,
+      "chars": 1723,
+      "length_exception": "本事件承担艾雯辅助实验、巨像半神冲击暴动、林恩以身挡反噬、动乱法则抽离致跌回血肉根源、外来者排斥定性、艾雯悟出同源共六组关键事实与机制展开，按机制展开类事件申请 length_exception。"
+    },
+    {
+      "id": "E613",
+      "blank": false,
+      "chars": 1195,
+      "length_exception": null
+    },
+    {
+      "id": "E614",
+      "blank": false,
+      "chars": 1571,
+      "length_exception": null
+    },
+    {
+      "id": "E615",
+      "blank": false,
+      "chars": 1001,
+      "length_exception": null
+    },
+    {
+      "id": "E616",
+      "blank": false,
+      "chars": 1986,
+      "length_exception": null
+    },
+    {
+      "id": "E617",
+      "blank": false,
+      "chars": 1770,
+      "length_exception": "真major但字数1770略低于1800：三个月训练+巨像归本+艾雯失控三连否认，事件高潮完整但收束于血枢「小心！」警告、不写E618袭击段，边界克制所致。"
+    },
+    {
+      "id": "E618",
+      "blank": false,
+      "chars": 1817,
+      "length_exception": null
+    },
+    {
+      "id": "E619",
+      "blank": false,
+      "chars": 893,
+      "length_exception": "事实不足不凑字：小队组建+银幻单方面离去留白+留守班子确定，集结主线短链等内容克制的过渡事件；字数893低于普通档1000下限，留白属既定非缺漏。"
+    },
+    {
+      "id": "E620",
+      "blank": false,
+      "chars": 1751,
+      "length_exception": null
+    },
+    {
+      "id": "E621",
+      "blank": false,
+      "chars": 676,
+      "length_exception": "事实不足不凑字：织梦身份血枢认证+照片女人站起定格的短链悬念事件；字数676低于普通档1000下限，按幕后停止点克制收束。"
+    },
+    {
+      "id": "E622",
+      "blank": false,
+      "chars": 1703,
+      "length_exception": null
+    },
+    {
+      "id": "E623",
+      "blank": false,
+      "chars": 1596,
+      "length_exception": null
+    },
+    {
+      "id": "E624",
+      "blank": false,
+      "chars": 1591,
+      "length_exception": "真major但字数1591低于1800：港口调查长篇铺垫+容器真相+艾维儿灭城+林恩爆发，高潮集中但前段调查克制，机制展开在1591字到位。"
+    },
+    {
+      "id": "E625",
+      "blank": false,
+      "chars": 1543,
+      "length_exception": null
+    },
+    {
+      "id": "E626",
+      "blank": false,
+      "chars": 1378,
+      "length_exception": "真major但字数1378低于1800：自我了断掀桌+织梦灵能本质切割施救+服从测试，博弈机制完整展开，但收束于跪规矩立下不写审问段。"
+    },
+    {
+      "id": "E627",
+      "blank": false,
+      "chars": 2078,
+      "length_exception": null
+    },
+    {
+      "id": "E628",
+      "blank": false,
+      "chars": 2689,
+      "length_exception": null
+    },
+    {
+      "id": "E629",
+      "blank": false,
+      "chars": 887,
+      "length_exception": "事实不足不凑字：四线悬置的前兆级事件（不写泄漏实发、不写探查封印、不写七神降临），B组范围确无实发素材（B11已核）；字数887低于普通档1000下限，前兆收束不越界。"
+    },
+    {
+      "id": "E630",
+      "blank": false,
+      "chars": 1492,
+      "length_exception": "真major但字数1492低于1800：真理神王之手探出但未完整降临，收束于「未彻底突破界限」的拿捏，不写后续七神大战（归E631），克制所致。"
+    },
+    {
+      "id": "E631",
+      "blank": false,
+      "chars": 2209,
+      "length_exception": "神战主力包，白烬星寂机制展开，默认走向可超普通1000字。"
+    },
+    {
+      "id": "E632",
+      "blank": false,
+      "chars": 2039,
+      "length_exception": "上位神战与本质解放机制展开，默认走向可超普通1000字。"
+    },
+    {
+      "id": "E633",
+      "blank": false,
+      "chars": 1253,
+      "length_exception": "真major但字数1253低于1800：放逐者画家+曲率逃生+苍蓝身影三段台词，事实止陨石苏醒留白不凑字（复核明确），不写反攻桥段。"
+    },
+    {
+      "id": "E634",
+      "blank": false,
+      "chars": 1440,
+      "length_exception": null
+    },
+    {
+      "id": "E635",
+      "blank": false,
+      "chars": 2841,
+      "length_exception": "造物主干点与七步铸梦机制展开，默认走向可超普通1000字。"
+    },
+    {
+      "id": "E636",
+      "blank": false,
+      "chars": 2017,
+      "length_exception": null
+    },
+    {
+      "id": "E637",
+      "blank": false,
+      "chars": 2438,
+      "length_exception": "首战与梦境领域机制展开，默认走向可约2000字。"
+    },
+    {
+      "id": "E638",
+      "blank": false,
+      "chars": 1926,
+      "length_exception": null
+    },
+    {
+      "id": "E639",
+      "blank": false,
+      "chars": 2142,
+      "length_exception": "群星阳谋机制展开，默认走向可约2000字。"
+    },
+    {
+      "id": "E640",
+      "blank": false,
+      "chars": 1449,
+      "length_exception": null
+    },
+    {
+      "id": "E641",
+      "blank": false,
+      "chars": 1604,
+      "length_exception": null
+    },
+    {
+      "id": "E642",
+      "blank": false,
+      "chars": 1733,
+      "length_exception": null
+    },
+    {
+      "id": "E643",
+      "blank": false,
+      "chars": 1698,
+      "length_exception": "深渊陷落与紧急撤离机制展开，默认走向可约2000字。"
+    },
+    {
+      "id": "E644",
+      "blank": false,
+      "chars": 2443,
+      "length_exception": "重大战斗与牺牲事件，默认走向可至3000–4000字。"
+    },
+    {
+      "id": "E645",
+      "blank": false,
+      "chars": 2192,
+      "length_exception": "牺牲与融合重大事件，默认走向可2000–4000字。"
+    },
+    {
+      "id": "E646",
+      "blank": false,
+      "chars": 1464,
+      "length_exception": "真major但字数1464低于1800：本阶段终点事件，迷雾海猎杀流程（钉杀→剥神格→磨灭→双杀）完整，按开放终点不凑字停笔（复核明确），不写后续钩子。"
+    }
+  ],
+  "concepts": 35,
+  "characters": 23,
+  "complete": true,
+  "integrated": false,
+  "real_host": "deferred"
+}

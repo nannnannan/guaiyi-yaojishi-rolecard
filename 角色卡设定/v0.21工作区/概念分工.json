@@ -1,0 +1,393 @@
+{
+  "status": "已交付待最终校验",
+  "runtime_uid": "not_allocated",
+  "prior_max_id": "C1468",
+  "new_id_range": [
+    "C1469",
+    "C1492"
+  ],
+  "rules": [
+    "先核查既有同义概念（核对记录/既有逻辑编号.json + 既有概念索引.json），同义则更新既有文件、不新增编号；编号是逻辑标识，不是运行UID",
+    "概念内容以事件正文（复核定稿后）的实际事实为准，不照搬旧切片——切片候选多处已被事件纠偏（如E635未来林恩登场→轮回神王指引、E634织梦监视→大会正式公布）",
+    "逐事件完成或变形后开放该事件实际事实，不按整组一次开放；eventFactMap 只列该概念实际出现的事件",
+    "NSFW：事实成立则直写；事实不足才留白；不写占位、叠甲、回避话术或非性替代；幼态/幼年体外形固定非性",
+    "正文只用E/C编号；章节行号放核对记录",
+    "格式沿用切片候选与v0.20卡体：@@private + # 概念·类别·标题（事件[...]）+ 类别/事实门槛/定义/来源/机制 + EJS eventFactMap"
+  ],
+  "items": [
+    {
+      "new_id": "C1469",
+      "slice_id": "C1097",
+      "title": "破碎神界（沦陷旧世神界）",
+      "kind": "new",
+      "primary_events": [
+        "E594",
+        "E605",
+        "E642"
+      ],
+      "output": "概念/C1469_破碎神界.md",
+      "id": "C1469",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1470",
+      "slice_id": "C1098",
+      "title": "无序引擎",
+      "kind": "new",
+      "primary_events": [
+        "E594",
+        "E595",
+        "E596",
+        "E597",
+        "E598",
+        "E599",
+        "E600"
+      ],
+      "output": "概念/C1470_无序引擎.md",
+      "id": "C1470",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1471",
+      "slice_id": "C1099",
+      "title": "被污染者阵营",
+      "kind": "new",
+      "primary_events": [
+        "E594",
+        "E602",
+        "E637"
+      ],
+      "output": "概念/C1471_被污染者阵营.md",
+      "id": "C1471",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1472",
+      "slice_id": "C1100",
+      "title": "破碎之眼节点",
+      "kind": "new",
+      "primary_events": [
+        "E597",
+        "E637",
+        "E638"
+      ],
+      "output": "概念/C1472_破碎之眼节点.md",
+      "id": "C1472",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1473",
+      "slice_id": "C1101",
+      "title": "深渊主动法则防线",
+      "kind": "new",
+      "primary_events": [
+        "E602",
+        "E637"
+      ],
+      "output": "概念/C1473_深渊主动法则防线.md",
+      "id": "C1473",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1474",
+      "slice_id": "C1102",
+      "title": "血神、黑夜之神与暗影神格",
+      "kind": "new",
+      "primary_events": [
+        "E601",
+        "E602",
+        "E603",
+        "E604"
+      ],
+      "output": "概念/C1474_血神黑夜之神与暗影神格.md",
+      "id": "C1474",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1475",
+      "slice_id": "C1103",
+      "title": "黑暗殿堂",
+      "kind": "new",
+      "primary_events": [
+        "E603",
+        "E604"
+      ],
+      "output": "概念/C1475_黑暗殿堂.md",
+      "id": "C1475",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1476",
+      "slice_id": "C1104",
+      "title": "时间加速空间泡／时间小屋",
+      "kind": "new",
+      "primary_events": [
+        "E608",
+        "E609",
+        "E611"
+      ],
+      "output": "概念/C1476_时间小屋.md",
+      "id": "C1476",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1477",
+      "slice_id": "C1105",
+      "title": "外来者本质与主宇宙法则互斥",
+      "kind": "new",
+      "primary_events": [
+        "E612",
+        "E613",
+        "E614"
+      ],
+      "output": "概念/C1477_外来者本质与法则互斥.md",
+      "id": "C1477",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1478",
+      "slice_id": "C1106",
+      "title": "血枢残魂",
+      "kind": "new",
+      "primary_events": [
+        "E613",
+        "E614",
+        "E617"
+      ],
+      "output": "概念/C1478_血枢残魂.md",
+      "id": "C1478",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1479",
+      "slice_id": "C1107",
+      "title": "三叉戟世界／奇异世界",
+      "kind": "new",
+      "primary_events": [
+        "E610",
+        "E628"
+      ],
+      "output": "概念/C1479_奇异世界.md",
+      "id": "C1479",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1480",
+      "slice_id": "C1108",
+      "title": "灵能风暴与灵能训练场",
+      "kind": "new",
+      "primary_events": [
+        "E616",
+        "E628"
+      ],
+      "output": "概念/C1480_灵能风暴与训练场.md",
+      "id": "C1480",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1481",
+      "slice_id": "C1109",
+      "title": "织梦／入梦者／灵能外来者",
+      "kind": "new",
+      "primary_events": [
+        "E618",
+        "E621",
+        "E626"
+      ],
+      "output": "概念/C1481_织梦入梦者.md",
+      "id": "C1481",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1482",
+      "slice_id": "C1110",
+      "title": "画家势力与艾维儿接管关系",
+      "kind": "new",
+      "primary_events": [
+        "E632",
+        "E633"
+      ],
+      "output": "概念/C1482_画家势力与艾维儿接管.md",
+      "id": "C1482",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1483",
+      "slice_id": "C1111",
+      "title": "紫罗兰世界",
+      "kind": "new",
+      "primary_events": [
+        "E619",
+        "E624",
+        "E625"
+      ],
+      "output": "概念/C1483_紫罗兰世界.md",
+      "id": "C1483",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1484",
+      "slice_id": "C1112",
+      "title": "冬泉谷",
+      "kind": "new",
+      "primary_events": [
+        "E620",
+        "E627"
+      ],
+      "output": "概念/C1484_冬泉谷.md",
+      "id": "C1484",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1485",
+      "slice_id": "C1113",
+      "title": "容器计划与纱奈儿",
+      "kind": "new",
+      "primary_events": [
+        "E624",
+        "E627",
+        "E629"
+      ],
+      "output": "概念/C1485_容器计划与纱奈儿.md",
+      "id": "C1485",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1486",
+      "slice_id": "C1114",
+      "title": "月儿兰城",
+      "kind": "new",
+      "primary_events": [
+        "E624",
+        "E625"
+      ],
+      "output": "概念/C1486_月儿兰城.md",
+      "id": "C1486",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1487",
+      "slice_id": "C1115",
+      "title": "白烬与星寂拳法",
+      "kind": "new",
+      "primary_events": [
+        "E628",
+        "E631",
+        "E632"
+      ],
+      "output": "概念/C1487_白烬与星寂拳法.md",
+      "id": "C1487",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1488",
+      "slice_id": "C1116",
+      "title": "紫罗兰世界压缩弹珠",
+      "kind": "new",
+      "primary_events": [
+        "E625",
+        "E629",
+        "E633"
+      ],
+      "output": "概念/C1488_紫罗兰压缩弹珠.md",
+      "id": "C1488",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1489",
+      "slice_id": "C1117",
+      "title": "真理神王与降临媒介",
+      "kind": "new",
+      "primary_events": [
+        "E630",
+        "E631",
+        "E632"
+      ],
+      "output": "概念/C1489_真理神王与降临媒介.md",
+      "id": "C1489",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1490",
+      "slice_id": "C1118",
+      "title": "梦境领域与群星回路",
+      "kind": "new",
+      "primary_events": [
+        "E635",
+        "E637",
+        "E639"
+      ],
+      "output": "概念/C1490_梦境领域与群星回路.md",
+      "id": "C1490",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1491",
+      "slice_id": "C1119",
+      "title": "轮回神王（未来林恩成果）",
+      "kind": "new",
+      "primary_events": [
+        "E633",
+        "E635"
+      ],
+      "output": "概念/C1491_轮回神王.md",
+      "id": "C1491",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1492",
+      "slice_id": "C1120",
+      "title": "天鹰座星区",
+      "kind": "new",
+      "primary_events": [
+        "E637",
+        "E638",
+        "E639"
+      ],
+      "output": "概念/C1492_天鹰座星区.md",
+      "id": "C1492",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1493",
+      "slice_id": "C1121",
+      "title": "神族联军",
+      "kind": "new",
+      "primary_events": [
+        "E638",
+        "E639"
+      ],
+      "output": "概念/C1493_神族联军.md",
+      "id": "C1493",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1494",
+      "slice_id": "C1122",
+      "title": "深渊撤退与迷雾海逃亡",
+      "kind": "new",
+      "primary_events": [
+        "E641",
+        "E643",
+        "E646"
+      ],
+      "output": "概念/C1494_深渊撤退与迷雾海逃亡.md",
+      "id": "C1494",
+      "status": "drafted"
+    },
+    {
+      "new_id": "C1495",
+      "slice_id": "C1123",
+      "title": "巨像与织梦残片的三位一体融合",
+      "kind": "new",
+      "primary_events": [
+        "E644",
+        "E645"
+      ],
+      "output": "概念/C1495_巨像织梦三位一体融合.md",
+      "id": "C1495",
+      "status": "drafted"
+    }
+  ],
+  "notes": "新编号 C1469—C1495（27 条，对应切片候选 C1097—C1123）。编写前必须逐条核查既有逻辑编号是否同义；若同义则改为 update 既有文件并释放新编号。C1491 标题已按事件纠偏（E635 指引者为轮回神王，未来林恩仅作展示成果）。"
+}

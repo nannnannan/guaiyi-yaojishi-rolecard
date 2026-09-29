@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import crypto from 'node:crypto';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const ledger=JSON.parse(fs.readFileSync(path.join(root,'来源台账.json'),'utf8'));
+const packet=ledger.packets.find(x=>x.id===process.argv[2]);
+if(!packet) throw new Error('提供来源台账中一个包ID');
+const lines=fs.readFileSync(path.resolve(root,'../原文.txt'),'utf8').replace(/^\uFEFF/,'').replace(/\r\n/g,'\n').split('\n');
+const content=lines.slice(packet.lines[0]-1,packet.lines[1]).join('\n')+'\n';
+if(crypto.createHash('sha256').update(content).digest('hex')!==packet.sha256)throw new Error('原文包指纹变化');
+const start=Number(process.argv[3]||packet.lines[0]),end=Number(process.argv[4]||packet.lines[1]);
+if(start<packet.lines[0]||end>packet.lines[1]||end<start)throw new Error('越出冻结包');
+console.log(lines.slice(start-1,end).map((line,i)=>`${start+i}: ${line}`).join('\n'));

@@ -1,0 +1,469 @@
+{
+  "concepts": [
+    {
+      "id": "C1469",
+      "title": "破碎神界",
+      "kind": "new",
+      "output": "概念/C1469_破碎神界.md",
+      "source_events": [
+        "E594",
+        "E605",
+        "E642"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1470",
+      "title": "无序引擎",
+      "kind": "new",
+      "output": "概念/C1470_无序引擎.md",
+      "source_events": [
+        "E594",
+        "E595",
+        "E596",
+        "E597",
+        "E598",
+        "E599",
+        "E600"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1471",
+      "title": "被污染者阵营",
+      "kind": "new",
+      "output": "概念/C1471_被污染者阵营.md",
+      "source_events": [
+        "E594",
+        "E602",
+        "E637"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1472",
+      "title": "破碎之眼节点",
+      "kind": "new",
+      "output": "概念/C1472_破碎之眼节点.md",
+      "source_events": [
+        "E597",
+        "E637",
+        "E638"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1473",
+      "title": "深渊主动法则防线",
+      "kind": "new",
+      "output": "概念/C1473_深渊主动法则防线.md",
+      "source_events": [
+        "E602",
+        "E637"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1474",
+      "title": "血神、黑夜之神与暗影神格",
+      "kind": "new",
+      "output": "概念/C1474_血神黑夜之神与暗影神格.md",
+      "source_events": [
+        "E601",
+        "E602",
+        "E603",
+        "E604"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1475",
+      "title": "黑暗殿堂",
+      "kind": "new",
+      "output": "概念/C1475_黑暗殿堂.md",
+      "source_events": [
+        "E603",
+        "E604"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1476",
+      "title": "时间加速空间泡／时间小屋",
+      "kind": "new",
+      "output": "概念/C1476_时间小屋.md",
+      "source_events": [
+        "E608",
+        "E609",
+        "E611"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1479",
+      "title": "三叉戟世界／奇异世界",
+      "kind": "new",
+      "output": "概念/C1479_奇异世界.md",
+      "source_events": [
+        "E610",
+        "E628"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1422",
+      "title": "七大神王级本源法则反噬",
+      "kind": "update",
+      "output": "概念/C1422_七大神王级本源法则反噬.md",
+      "source_events": [
+        "E606"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1422_七大神王级本源法则反噬.md",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C592",
+      "title": "主母一体双魂万年分裂史",
+      "kind": "update",
+      "output": "概念/C592_主母一体双魂万年分裂史.md",
+      "source_events": [
+        "E607"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C592_主母一体双魂万年分裂史.md",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "id": "C1461",
+      "title": "天堂遗址血枢残骸与残魂指控",
+      "kind": "update",
+      "output": "概念/C1461_天堂遗址血枢残骸与残魂指控.md",
+      "source_events": [
+        "E615"
+      ],
+      "status": "drafted",
+      "group": "A",
+      "base_path": "角色卡本体/诡异药剂师_MVU_v0.20/src/concepts/C1461_天堂遗址血枢残骸与残魂指控.md",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "主母_D",
+      "output": "人物增量/主母_D.md",
+      "source_events": [
+        "E607",
+        "E611",
+        "E634",
+        "E636",
+        "E641"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "人偶家_D",
+      "output": "人物增量/人偶家_D.md",
+      "source_events": [
+        "E609",
+        "E610",
+        "E619",
+        "E634",
+        "E636"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "康斯坦丁_D",
+      "output": "人物增量/康斯坦丁_D.md",
+      "source_events": [
+        "E602",
+        "E609",
+        "E634",
+        "E636"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "星轨_D",
+      "output": "人物增量/星轨_D.md",
+      "source_events": [
+        "E602",
+        "E609",
+        "E611",
+        "E620"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "母树_D",
+      "output": "人物增量/母树_D.md",
+      "source_events": [
+        "E609",
+        "E610",
+        "E611"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "自缚天使_D",
+      "output": "人物增量/自缚天使_D.md",
+      "source_events": [
+        "E607",
+        "E610",
+        "E611",
+        "E619",
+        "E634",
+        "E636",
+        "E638",
+        "E645"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "艾维儿_D",
+      "output": "人物增量/艾维儿_D.md",
+      "source_events": [
+        "E601",
+        "E602",
+        "E603",
+        "E610",
+        "E618",
+        "E622",
+        "E627",
+        "E632",
+        "E633"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "银色幻想_D",
+      "output": "人物增量/银色幻想_D.md",
+      "source_events": [
+        "E596",
+        "E597",
+        "E599",
+        "E615",
+        "E616"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "黑弦月_D",
+      "output": "人物增量/黑弦月_D.md",
+      "source_events": [
+        "E611",
+        "E636"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "伊甸娜",
+      "output": "新NPC/伊甸娜.md",
+      "source_events": [
+        "E610",
+        "E611"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "精灵王",
+      "output": "新NPC/精灵王.md",
+      "source_events": [
+        "E611"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "血神",
+      "output": "新NPC/血神.md",
+      "source_events": [
+        "E601",
+        "E603",
+        "E604"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    },
+    {
+      "name": "黑夜之神",
+      "output": "新NPC/黑夜之神.md",
+      "source_events": [
+        "E602",
+        "E603",
+        "E604"
+      ],
+      "group": "A",
+      "status": "drafted",
+      "source_lines": [
+        [
+          193313,
+          197350
+        ]
+      ]
+    }
+  ]
+}

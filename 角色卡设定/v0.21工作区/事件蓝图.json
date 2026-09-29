@@ -1,0 +1,998 @@
+{
+  "status": "events_cross_reviewed",
+  "scope": [
+    594,
+    646
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "chapters": [
+        2247,
+        2300
+      ],
+      "events": [
+        594,
+        611
+      ]
+    },
+    {
+      "id": "B",
+      "chapters": [
+        2301,
+        2354
+      ],
+      "events": [
+        612,
+        629
+      ]
+    },
+    {
+      "id": "C",
+      "chapters": [
+        2355,
+        2407
+      ],
+      "events": [
+        630,
+        646
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E594",
+      "title": "无序引擎暴露",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E594_无序引擎暴露.md",
+      "output": "事件/E594_无序引擎暴露.md",
+      "source_chapters": [
+        2247,
+        2250
+      ],
+      "source_lines": [
+        193313,
+        193606
+      ],
+      "next": "E595",
+      "status": "reviewed"
+    },
+    {
+      "id": "E595",
+      "title": "引擎回撤与深渊军团",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E595_引擎回撤与深渊军团.md",
+      "output": "事件/E595_引擎回撤与深渊军团.md",
+      "source_chapters": [
+        2251,
+        2252
+      ],
+      "source_lines": [
+        193607,
+        193764
+      ],
+      "next": "E596",
+      "status": "reviewed"
+    },
+    {
+      "id": "E596",
+      "title": "三位一体坦白与银幻改造",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E596_三位一体坦白与银幻改造.md",
+      "output": "事件/E596_三位一体坦白与银幻改造.md",
+      "source_chapters": [
+        2253,
+        2255
+      ],
+      "source_lines": [
+        193765,
+        194014
+      ],
+      "next": "E597",
+      "status": "reviewed"
+    },
+    {
+      "id": "E597",
+      "title": "链接段与破碎之眼",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E597_链接段与破碎之眼.md",
+      "output": "事件/E597_链接段与破碎之眼.md",
+      "source_chapters": [
+        2256,
+        2258
+      ],
+      "source_lines": [
+        194015,
+        194243
+      ],
+      "next": "E598",
+      "status": "reviewed"
+    },
+    {
+      "id": "E598",
+      "title": "深渊改造闭关",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E598_深渊改造闭关.md",
+      "output": "事件/E598_深渊改造闭关.md",
+      "source_chapters": [
+        2259,
+        2259
+      ],
+      "source_lines": [
+        194244,
+        194339
+      ],
+      "next": "E599",
+      "status": "reviewed"
+    },
+    {
+      "id": "E599",
+      "title": "银幻前线阻击",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E599_银幻前线阻击.md",
+      "output": "事件/E599_银幻前线阻击.md",
+      "source_chapters": [
+        2260,
+        2261
+      ],
+      "source_lines": [
+        194340,
+        194494
+      ],
+      "next": "E600",
+      "status": "reviewed"
+    },
+    {
+      "id": "E600",
+      "title": "魇与最后的黑剑",
+      "stage": "S81",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E600_魇与最后的黑剑.md",
+      "output": "事件/E600_魇与最后的黑剑.md",
+      "source_chapters": [
+        2262,
+        2266
+      ],
+      "source_lines": [
+        194495,
+        194870
+      ],
+      "next": "E601",
+      "status": "reviewed"
+    },
+    {
+      "id": "E601",
+      "title": "艾维儿归来与血神对峙",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E601_艾维儿归来与血神对峙.md",
+      "output": "事件/E601_艾维儿归来与血神对峙.md",
+      "source_chapters": [
+        2267,
+        2271
+      ],
+      "source_lines": [
+        194871,
+        195257
+      ],
+      "next": "E602",
+      "status": "reviewed"
+    },
+    {
+      "id": "E602",
+      "title": "活化法则防线",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E602_活化法则防线.md",
+      "output": "事件/E602_活化法则防线.md",
+      "source_chapters": [
+        2272,
+        2276
+      ],
+      "source_lines": [
+        195258,
+        195609
+      ],
+      "next": "E603",
+      "status": "reviewed"
+    },
+    {
+      "id": "E603",
+      "title": "双神分割",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E603_双神分割.md",
+      "output": "事件/E603_双神分割.md",
+      "source_chapters": [
+        2277,
+        2278
+      ],
+      "source_lines": [
+        195610,
+        195751
+      ],
+      "next": "E604",
+      "status": "reviewed"
+    },
+    {
+      "id": "E604",
+      "title": "血肉与暗影的围猎",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E604_血肉与暗影的围猎.md",
+      "output": "事件/E604_血肉与暗影的围猎.md",
+      "source_chapters": [
+        2279,
+        2281
+      ],
+      "source_lines": [
+        195752,
+        195990
+      ],
+      "next": "E605",
+      "status": "reviewed"
+    },
+    {
+      "id": "E605",
+      "title": "战后神格与敌情情报",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E605_战后神格与敌情情报.md",
+      "output": "事件/E605_战后神格与敌情情报.md",
+      "source_chapters": [
+        2282,
+        2284
+      ],
+      "source_lines": [
+        195991,
+        196200
+      ],
+      "next": "E606",
+      "status": "reviewed"
+    },
+    {
+      "id": "E606",
+      "title": "魇的自毁预言",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E606_魇的自毁预言.md",
+      "output": "事件/E606_魇的自毁预言.md",
+      "source_chapters": [
+        2284,
+        2285
+      ],
+      "source_lines": [
+        196201,
+        196318
+      ],
+      "next": "E607",
+      "status": "reviewed"
+    },
+    {
+      "id": "E607",
+      "title": "主母深夜长谈",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E607_主母深夜长谈.md",
+      "output": "事件/E607_主母深夜长谈.md",
+      "source_chapters": [
+        2286,
+        2289
+      ],
+      "source_lines": [
+        196319,
+        196565
+      ],
+      "next": "E608",
+      "status": "reviewed"
+    },
+    {
+      "id": "E608",
+      "title": "时间加速空间泡",
+      "stage": "S82",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E608_时间加速空间泡.md",
+      "output": "事件/E608_时间加速空间泡.md",
+      "source_chapters": [
+        2290,
+        2291
+      ],
+      "source_lines": [
+        196566,
+        196711
+      ],
+      "next": "E609",
+      "status": "reviewed"
+    },
+    {
+      "id": "E609",
+      "title": "时间小屋与第二位半神",
+      "stage": "S83",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E609_时间小屋与第三位半神.md",
+      "output": "事件/E609_时间小屋与第二位半神.md",
+      "source_chapters": [
+        2292,
+        2293
+      ],
+      "source_lines": [
+        196712,
+        196856
+      ],
+      "next": "E610",
+      "status": "reviewed"
+    },
+    {
+      "id": "E610",
+      "title": "母树双法则与炽天使融合",
+      "stage": "S83",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E610_母树双法则与炽天使融合.md",
+      "output": "事件/E610_母树双法则与炽天使融合.md",
+      "source_chapters": [
+        2294,
+        2300
+      ],
+      "source_lines": [
+        196857,
+        197350
+      ],
+      "next": "E611",
+      "status": "reviewed"
+    },
+    {
+      "id": "E611",
+      "title": "修炼狂潮与根源反噬",
+      "stage": "S83",
+      "group": "A",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E611_修炼狂潮与根源反噬.md",
+      "output": "事件/E611_修炼狂潮与根源反噬.md",
+      "source_chapters": [
+        2301,
+        2303
+      ],
+      "source_lines": [
+        197351,
+        197558
+      ],
+      "next": "E612",
+      "status": "reviewed"
+    },
+    {
+      "id": "E612",
+      "title": "巨像的法则排斥",
+      "stage": "S83",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E612_巨像的法则排斥.md",
+      "output": "事件/E612_巨像的法则排斥.md",
+      "source_chapters": [
+        2304,
+        2306
+      ],
+      "source_lines": [
+        197559,
+        197789
+      ],
+      "next": "E613",
+      "status": "reviewed"
+    },
+    {
+      "id": "E613",
+      "title": "血枢残魂现身",
+      "stage": "S83",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E613_血枢残魂现身.md",
+      "output": "事件/E613_血枢残魂现身.md",
+      "source_chapters": [
+        2307,
+        2310
+      ],
+      "source_lines": [
+        197790,
+        198103
+      ],
+      "next": "E614",
+      "status": "reviewed"
+    },
+    {
+      "id": "E614",
+      "title": "外来者绝路",
+      "stage": "S83",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E614_外来者绝路.md",
+      "output": "事件/E614_外来者绝路.md",
+      "source_chapters": [
+        2311,
+        2312
+      ],
+      "source_lines": [
+        198104,
+        198252
+      ],
+      "next": "E615",
+      "status": "reviewed"
+    },
+    {
+      "id": "E615",
+      "title": "天堂之战遗址远征",
+      "stage": "S83",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E615_天堂之战遗址远征.md",
+      "output": "事件/E615_天堂之战遗址远征.md",
+      "source_chapters": [
+        2313,
+        2313
+      ],
+      "source_lines": [
+        198253,
+        198331
+      ],
+      "next": "E616",
+      "status": "reviewed"
+    },
+    {
+      "id": "E616",
+      "title": "遗址三路与银幻升华",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E616_遗址三路与银幻升华.md",
+      "output": "事件/E616_遗址三路与银幻升华.md",
+      "source_chapters": [
+        2314,
+        2317
+      ],
+      "source_lines": [
+        198332,
+        198587
+      ],
+      "next": "E617",
+      "status": "reviewed"
+    },
+    {
+      "id": "E617",
+      "title": "巨像归本与艾雯失控",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E617_巨像归本与艾雯失控.md",
+      "output": "事件/E617_巨像归本与艾雯失控.md",
+      "source_chapters": [
+        2317,
+        2320
+      ],
+      "source_lines": [
+        198588,
+        198787
+      ],
+      "next": "E618",
+      "status": "reviewed"
+    },
+    {
+      "id": "E618",
+      "title": "织梦现身与艾雯被带走",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E618_织梦现身与艾雯被带走.md",
+      "output": "事件/E618_织梦现身与艾雯被带走.md",
+      "source_chapters": [
+        2320,
+        2324
+      ],
+      "source_lines": [
+        198788,
+        199134
+      ],
+      "next": "E619",
+      "status": "reviewed"
+    },
+    {
+      "id": "E619",
+      "title": "紫罗兰小队组建",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E619_紫罗兰小队组建.md",
+      "output": "事件/E619_紫罗兰小队组建.md",
+      "source_chapters": [
+        2324,
+        2325
+      ],
+      "source_lines": [
+        199135,
+        199212
+      ],
+      "next": "E620",
+      "status": "reviewed"
+    },
+    {
+      "id": "E620",
+      "title": "冬泉谷重返故地",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E620_冬泉谷重返故地.md",
+      "output": "事件/E620_冬泉谷重返故地.md",
+      "source_chapters": [
+        2326,
+        2329
+      ],
+      "source_lines": [
+        199213,
+        199516
+      ],
+      "next": "E621",
+      "status": "reviewed"
+    },
+    {
+      "id": "E621",
+      "title": "织梦身份与未来布局",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E621_织梦身份与未来布局.md",
+      "output": "事件/E621_织梦身份与未来布局.md",
+      "source_chapters": [
+        2330,
+        2330
+      ],
+      "source_lines": [
+        199517,
+        199584
+      ],
+      "next": "E622",
+      "status": "reviewed"
+    },
+    {
+      "id": "E622",
+      "title": "大君道路与艾维儿质问",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E622_大君道路与艾维儿质问.md",
+      "output": "事件/E622_大君道路与艾维儿质问.md",
+      "source_chapters": [
+        2331,
+        2335
+      ],
+      "source_lines": [
+        199585,
+        200018
+      ],
+      "next": "E623",
+      "status": "reviewed"
+    },
+    {
+      "id": "E623",
+      "title": "蓝龙启程",
+      "stage": "S84",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E623_蓝龙启程.md",
+      "output": "事件/E623_蓝龙启程.md",
+      "source_chapters": [
+        2336,
+        2337
+      ],
+      "source_lines": [
+        200019,
+        200188
+      ],
+      "next": "E624",
+      "status": "reviewed"
+    },
+    {
+      "id": "E624",
+      "title": "月儿兰城与容器真相",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E624_月儿兰城与容器真相.md",
+      "output": "事件/E624_月儿兰城与容器真相.md",
+      "source_chapters": [
+        2338,
+        2340
+      ],
+      "source_lines": [
+        200189,
+        200405
+      ],
+      "next": "E625",
+      "status": "reviewed"
+    },
+    {
+      "id": "E625",
+      "title": "命运游戏与七日离场",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E625_命运游戏与七日离场.md",
+      "output": "事件/E625_命运游戏与七日离场.md",
+      "source_chapters": [
+        2341,
+        2343
+      ],
+      "source_lines": [
+        200406,
+        200651
+      ],
+      "next": "E626",
+      "status": "reviewed"
+    },
+    {
+      "id": "E626",
+      "title": "自我了断与织梦屈服",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E626_自我了断与织梦屈服.md",
+      "output": "事件/E626_自我了断与织梦屈服.md",
+      "source_chapters": [
+        2343,
+        2347
+      ],
+      "source_lines": [
+        200652,
+        200927
+      ],
+      "next": "E627",
+      "status": "reviewed"
+    },
+    {
+      "id": "E627",
+      "title": "容器计划与三位一体历史",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E627_容器计划与三位一体历史.md",
+      "output": "事件/E627_容器计划与三位一体历史.md",
+      "source_chapters": [
+        2347,
+        2350
+      ],
+      "source_lines": [
+        200928,
+        201179
+      ],
+      "next": "E628",
+      "status": "reviewed"
+    },
+    {
+      "id": "E628",
+      "title": "白烬训练与星寂拳法",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E628_白烬训练与星寂拳法.md",
+      "output": "事件/E628_白烬训练与星寂拳法.md",
+      "source_chapters": [
+        2351,
+        2354
+      ],
+      "source_lines": [
+        201180,
+        201446
+      ],
+      "next": "E629",
+      "status": "reviewed"
+    },
+    {
+      "id": "E629",
+      "title": "容器泄漏与神降前兆",
+      "stage": "S85",
+      "group": "B",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E629_容器泄漏与神降前兆.md",
+      "output": "事件/E629_容器泄漏与神降前兆.md",
+      "source_chapters": [
+        2354,
+        2354
+      ],
+      "source_lines": [
+        201447,
+        201468
+      ],
+      "next": "E630",
+      "status": "reviewed"
+    },
+    {
+      "id": "E630",
+      "title": "真理神王降临",
+      "stage": "S85",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E630_真理神王降临.md",
+      "output": "事件/E630_真理神王降临.md",
+      "source_chapters": [
+        2355,
+        2359
+      ],
+      "source_lines": [
+        201469,
+        201830
+      ],
+      "next": "E631",
+      "status": "reviewed"
+    },
+    {
+      "id": "E631",
+      "title": "七神阻击与星寂初战",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E631_七神阻击与星寂初战.md",
+      "output": "事件/E631_七神阻击与星寂初战.md",
+      "source_chapters": [
+        2360,
+        2364
+      ],
+      "source_lines": [
+        201831,
+        202205
+      ],
+      "next": "E632",
+      "status": "reviewed"
+    },
+    {
+      "id": "E632",
+      "title": "白烬弑神与艾维儿解放",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E632_白烬弑神与艾维儿解放.md",
+      "output": "事件/E632_白烬弑神与艾维儿解放.md",
+      "source_chapters": [
+        2365,
+        2367
+      ],
+      "source_lines": [
+        202206,
+        202471
+      ],
+      "next": "E633",
+      "status": "reviewed"
+    },
+    {
+      "id": "E633",
+      "title": "最后一课与曲率逃生",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E633_最后一课与曲率逃生.md",
+      "output": "事件/E633_最后一课与曲率逃生.md",
+      "source_chapters": [
+        2367,
+        2369
+      ],
+      "source_lines": [
+        202472,
+        202605
+      ],
+      "next": "E634",
+      "status": "reviewed"
+    },
+    {
+      "id": "E634",
+      "title": "艾雯离队与深渊归返",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E634_艾雯离队与深渊归返.md",
+      "output": "事件/E634_艾雯离队与深渊归返.md",
+      "source_chapters": [
+        2370,
+        2373
+      ],
+      "source_lines": [
+        202606,
+        202878
+      ],
+      "next": "E635",
+      "status": "reviewed"
+    },
+    {
+      "id": "E635",
+      "title": "未来林恩与梦境领域",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E635_未来林恩与梦境领域.md",
+      "output": "事件/E635_未来林恩与梦境领域.md",
+      "source_chapters": [
+        2373,
+        2377
+      ],
+      "source_lines": [
+        202879,
+        203212
+      ],
+      "next": "E636",
+      "status": "reviewed"
+    },
+    {
+      "id": "E636",
+      "title": "远征军备与黑弦月参战",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E636_远征军备与黑弦月参战.md",
+      "output": "事件/E636_远征军备与黑弦月参战.md",
+      "source_chapters": [
+        2377,
+        2379
+      ],
+      "source_lines": [
+        203213,
+        203424
+      ],
+      "next": "E637",
+      "status": "reviewed"
+    },
+    {
+      "id": "E637",
+      "title": "天鹰座首战与破碎之眼封印",
+      "stage": "S86",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E637_天鹰座首战与破碎之眼封印.md",
+      "output": "事件/E637_天鹰座首战与破碎之眼封印.md",
+      "source_chapters": [
+        2380,
+        2384
+      ],
+      "source_lines": [
+        203425,
+        203811
+      ],
+      "next": "E638",
+      "status": "reviewed"
+    },
+    {
+      "id": "E638",
+      "title": "全宇宙闪电战",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E638_全宇宙闪电战.md",
+      "output": "事件/E638_全宇宙闪电战.md",
+      "source_chapters": [
+        2385,
+        2387
+      ],
+      "source_lines": [
+        203812,
+        204032
+      ],
+      "next": "E639",
+      "status": "reviewed"
+    },
+    {
+      "id": "E639",
+      "title": "伏击疑云与群星阳谋",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E639_伏击疑云与群星阳谋.md",
+      "output": "事件/E639_伏击疑云与群星阳谋.md",
+      "source_chapters": [
+        2388,
+        2392
+      ],
+      "source_lines": [
+        204033,
+        204447
+      ],
+      "next": "E640",
+      "status": "reviewed"
+    },
+    {
+      "id": "E640",
+      "title": "第二波突袭",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E640_第二波突袭.md",
+      "output": "事件/E640_第二波突袭.md",
+      "source_chapters": [
+        2393,
+        2394
+      ],
+      "source_lines": [
+        204448,
+        204603
+      ],
+      "next": "E641",
+      "status": "reviewed"
+    },
+    {
+      "id": "E641",
+      "title": "深渊撤出决议",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E641_深渊撤出决议.md",
+      "output": "事件/E641_深渊撤出决议.md",
+      "source_chapters": [
+        2395,
+        2396
+      ],
+      "source_lines": [
+        204604,
+        204752
+      ],
+      "next": "E642",
+      "status": "reviewed"
+    },
+    {
+      "id": "E642",
+      "title": "信息泄露与三王警告",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E642_信息泄露与三王警告.md",
+      "output": "事件/E642_信息泄露与三王警告.md",
+      "source_chapters": [
+        2397,
+        2399
+      ],
+      "source_lines": [
+        204753,
+        204973
+      ],
+      "next": "E643",
+      "status": "reviewed"
+    },
+    {
+      "id": "E643",
+      "title": "全军撤离与深渊陷落",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E643_全军撤离与深渊陷落.md",
+      "output": "事件/E643_全军撤离与深渊陷落.md",
+      "source_chapters": [
+        2400,
+        2401
+      ],
+      "source_lines": [
+        204974,
+        205124
+      ],
+      "next": "E644",
+      "status": "reviewed"
+    },
+    {
+      "id": "E644",
+      "title": "罪火断后",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E644_罪火断后.md",
+      "output": "事件/E644_罪火断后.md",
+      "source_chapters": [
+        2402,
+        2404
+      ],
+      "source_lines": [
+        205125,
+        205368
+      ],
+      "next": "E645",
+      "status": "reviewed"
+    },
+    {
+      "id": "E645",
+      "title": "巨像融合与白烬常态",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E645_巨像融合与白烬常态.md",
+      "output": "事件/E645_巨像融合与白烬常态.md",
+      "source_chapters": [
+        2405,
+        2406
+      ],
+      "source_lines": [
+        205369,
+        205518
+      ],
+      "next": "E646",
+      "status": "reviewed"
+    },
+    {
+      "id": "E646",
+      "title": "迷雾海猎杀",
+      "stage": "S87",
+      "group": "C",
+      "candidate": "角色卡设定/阶段十至阶段十八_概念事件切片/阶段16_第2247-2407章/事件/E646_迷雾海猎杀.md",
+      "output": "事件/E646_迷雾海猎杀.md",
+      "source_chapters": [
+        2406,
+        2407
+      ],
+      "source_lines": [
+        205519,
+        205627
+      ],
+      "next": null,
+      "status": "reviewed"
+    }
+  ]
+}
