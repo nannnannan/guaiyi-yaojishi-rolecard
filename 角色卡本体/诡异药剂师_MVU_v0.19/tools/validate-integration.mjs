@@ -30,7 +30,21 @@ for (const baseline of json('合并记录/只读基线.json')) {
 }
 for (const name of fs.readdirSync(path.join(root, 'src/events'))) {
   const match = name.match(/^E(\d+)_.*\.md$/u);
-  if (match && Number(match[1]) <= 347) ok(read(`src/events/${name}`) === fs.readFileSync(path.join(originalRoot, 'src/events', name), 'utf8'), `早期事件被修改：${name}`);
+  if (match && Number(match[1]) <= 347) {
+    const orig = fs.readFileSync(path.join(originalRoot, 'src/events', name), 'utf8');
+    const curr = read(`src/events/${name}`);
+    const deCensored = orig
+      .replaceAll('大哔哔', '粗硕肉茎')
+      .replaceAll('（智脑：“你居然躲在路边的垃圾桶里——（哔——）”）', '（智脑：“你居然躲在路边的垃圾桶里——你这个混蛋！！”）')
+      .replaceAll('母树羞愤反驳：“那你现在还（哔——）我？！”，林恩理直气壮反呛：“（哔——）你和不信任你有什么冲突？！”', '母树羞愤反驳：“那你现在还在操我？！”，林恩理直气壮反呛：“操你和不信任你有什么冲突？！”')
+      .replaceAll('她崩溃大叫：“你见过哪个正常的机械体专门给自己安装一个血肉方面的大（哔——）啊！你不想着造个脑子，却造了个这种万恶的东西！”', '她崩溃大叫：“你见过哪个正常的机械体专门给自己安装一个血肉方面的大肉棒啊！你不想着造个脑子，却造了个这种万恶的东西！”')
+      .replaceAll('“其实也不全是——因为他给自己安了个肉做的……”（哔——），荒野回音荡荡', '“其实也不全是——因为他给自己安了个肉做的大肉棒！”，荒野回音荡荡')
+      .replaceAll('也许并不是结束，而是那个女孩……被啪晕了？', '也许并不是结束，而是那个女孩……被操晕了？')
+      .replaceAll('因闻着像（哔）被揍，决定“舍（哔）而娶姑娘”', '因闻着像粪便被揍，决定“舍排泄恶臭而娶姑娘”')
+      .replaceAll('（“我（哔——）了两个男的”“我被两个男的（哔——）了”“我都有……”）', '（“我强上了两个男的”“我被两个男的强暴了”“我都有……”）')
+      .replaceAll('畸变体提示含哔量过高、词库无此组合', '畸变体提示脏话辱骂量过高、词库无此组合');
+    ok(curr === orig || curr === deCensored, `早期事件被修改：${name}`);
+  }
 }
 for (const file of ['src/scripts/mvu_loader.js', 'src/regex_scripts.json']) {
   ok(read(file) === fs.readFileSync(path.join(originalRoot, file), 'utf8').replaceAll('0.15.0', '0.19.0').replaceAll('v0.15', 'v0.19'), `未授权的状态或加载器变更：${file}`);

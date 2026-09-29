@@ -104,7 +104,7 @@ function firstEventsPerBlock(text) {
   return blocks.map(block => block.match(/锚点状态\.(E\d+)\.状态/u)[1]);
 }
 function stableKeys(name, usedKeys, logicalId) {
-  const candidates = name.length <= 6 ? [name] : [name.slice(0, 6), name];
+  const candidates = [name];
   return candidates.map(candidate => {
     let key = candidate;
     if (usedKeys.has(key)) key = `${candidate}(${logicalId})`;
