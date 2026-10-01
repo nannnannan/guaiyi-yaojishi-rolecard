@@ -27,3 +27,9 @@ Desktop.ini
 # Build artifacts and dependencies (per repo convention: v0.12 dist/node_modules untracked)
 **/node_modules/
 **/dist/
+
+# External sample cards and external workshop (not card source)
+样例卡/
+墨月本地写卡工坊/
+.codexbridge/
+.dsh/
