@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checks": 29445,
+  "checks": 29422,
   "errors": [],
   "warnings": [],
   "planned_events": 53,
@@ -10,7 +10,7 @@
     {
       "id": "E541",
       "blank": false,
-      "chars": 941,
+      "chars": 1818,
       "length_exception": null
     },
     {
@@ -40,19 +40,19 @@
     {
       "id": "E546",
       "blank": false,
-      "chars": 847,
+      "chars": 2276,
       "length_exception": null
     },
     {
       "id": "E547",
       "blank": false,
-      "chars": 855,
+      "chars": 2311,
       "length_exception": "事实密度：嘲讽场／根源拔刀前链多节点并列，855字落在普通档与重大档之间，非凑字"
     },
     {
       "id": "E548",
       "blank": false,
-      "chars": 969,
+      "chars": 2429,
       "length_exception": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "id": "E550",
       "blank": false,
-      "chars": 883,
+      "chars": 2126,
       "length_exception": null
     },
     {
@@ -88,13 +88,13 @@
     {
       "id": "E554",
       "blank": false,
-      "chars": 741,
+      "chars": 2191,
       "length_exception": null
     },
     {
       "id": "E555",
       "blank": false,
-      "chars": 690,
+      "chars": 2388,
       "length_exception": null
     },
     {
@@ -106,7 +106,7 @@
     {
       "id": "E557",
       "blank": false,
-      "chars": 522,
+      "chars": 1968,
       "length_exception": null
     },
     {
@@ -124,7 +124,7 @@
     {
       "id": "E560",
       "blank": false,
-      "chars": 946,
+      "chars": 1987,
       "length_exception": null
     },
     {
@@ -142,13 +142,13 @@
     {
       "id": "E563",
       "blank": false,
-      "chars": 2295,
+      "chars": 2310,
       "length_exception": "议会验明＋防线科普跨章，默认走向略超重大上限"
     },
     {
       "id": "E564",
       "blank": false,
-      "chars": 1289,
+      "chars": 1295,
       "length_exception": "献祭造无序与不可控定性连续，略超常规上限"
     },
     {
@@ -190,19 +190,19 @@
     {
       "id": "E571",
       "blank": false,
-      "chars": 896,
+      "chars": 1650,
       "length_exception": null
     },
     {
       "id": "E572",
       "blank": false,
-      "chars": 857,
+      "chars": 2146,
       "length_exception": null
     },
     {
       "id": "E573",
       "blank": false,
-      "chars": 610,
+      "chars": 2040,
       "length_exception": null
     },
     {
@@ -226,19 +226,19 @@
     {
       "id": "E577",
       "blank": false,
-      "chars": 874,
+      "chars": 1982,
       "length_exception": null
     },
     {
       "id": "E578",
       "blank": false,
-      "chars": 919,
+      "chars": 1953,
       "length_exception": null
     },
     {
       "id": "E579",
       "blank": false,
-      "chars": 930,
+      "chars": 1798,
       "length_exception": null
     },
     {
@@ -262,7 +262,7 @@
     {
       "id": "E583",
       "blank": false,
-      "chars": 813,
+      "chars": 1556,
       "length_exception": null
     },
     {
@@ -280,13 +280,13 @@
     {
       "id": "E586",
       "blank": false,
-      "chars": 756,
+      "chars": 1366,
       "length_exception": null
     },
     {
       "id": "E587",
       "blank": false,
-      "chars": 676,
+      "chars": 1148,
       "length_exception": null
     },
     {
@@ -298,7 +298,7 @@
     {
       "id": "E589",
       "blank": false,
-      "chars": 575,
+      "chars": 1176,
       "length_exception": null
     },
     {
@@ -310,7 +310,7 @@
     {
       "id": "E591",
       "blank": false,
-      "chars": 962,
+      "chars": 1497,
       "length_exception": null
     },
     {

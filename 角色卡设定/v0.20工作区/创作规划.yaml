@@ -23,7 +23,7 @@ writing:
   whitespace_priority: 事实不足处留白，不凑字；留白不是 NSFW 回避手段
   player_sovereignty: 林恩的对白、行动、决定、判断、内心、记忆由玩家独占
   evidence: 原文是唯一事实来源；事件正文以核对记录为准，旧切片只作待核线索
-  events: 普通默认走向500至1000字，重大事件约2000字（可至4000字须 length_exception），事实不足与留白不填充
+  events: 普通默认走向1000字以上，重大事件约2000字至4000字，事实不足与留白不填充
   concepts_and_characters: 无字数上限，以独立信息为准，不强套六组件；新增概念逻辑编号建议自C1421起
   metadata: 章节与行号仅放核对记录，正文使用E/C编号
   notes:

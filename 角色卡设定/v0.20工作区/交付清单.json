@@ -4153,9 +4153,9 @@
     "概念/C828_炽天使魂灯.md",
     "概念/C902_灾厄之眼那片灾厄.md"
   ],
-  "reviewed_content_sha256": "1c7ab4a07b348a9a48916214cc7bfb3463b939b30eb4940a7ad2eb5f0c2e1e7d",
-  "integrated": false,
-  "packaged": false,
+  "reviewed_content_sha256": "f6c860806ed6c7066c44bfa2d44a0b4e8342f090ae11ee9082e73bd5276a4c40",
+  "integrated": true,
+  "packaged": true,
   "pushed": false,
   "real_host": "deferred"
 }

@@ -49,7 +49,7 @@ for(const event of ledger.events){
  for(const field of fields)ok(body.includes(`- ${field}：`),`${event.id}字段${field}`);
  const prose=body.match(/- 默认走向：([\s\S]*?)\r?\n- 紧迫度：/)?.[1]||'';
  const count=[...prose.replace(/\s/g,'')].length;
- const target=event.major?[1800,2200]:[500,1000];
+ const target=event.major?[1800,4500]:[1000,3000];
  if(count<target[0]||count>target[1]){if(strict)ok(Boolean(event.length_exception),`${event.id}字数${count}须有事实或留白例外`);else warnings.push(`${event.id}字数${count}`);}
  eventStats.push({id:event.id,blank:false,chars:count,length_exception:event.length_exception||null});
  for(const state of states){try{const out=ejs.render(body,{getvar:key=>key===`stat_data.事件.锚点状态.${event.id}.状态`?state:'未触发'});ok(out.includes(`# ${event.id}·`),`${event.id}/${state}标题`);ok(out.includes('- 默认走向：')===(state!=='未触发'),`${event.id}/${state}显隐`);}catch(err){ok(false,`${event.id}/${state}渲染：${err.message}`);}}

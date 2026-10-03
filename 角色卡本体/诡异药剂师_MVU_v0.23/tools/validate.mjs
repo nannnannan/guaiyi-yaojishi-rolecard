@@ -360,7 +360,8 @@ for (const [index, eventId] of EVENT_IDS.entries()) {
   ok(entry.constant === false && entry.enabled === false, `${eventId}构建素材禁用且不会独立绿灯`);
   const packedEventEntry = packedBook.entries.find(item => item.id === entry.id);
   ok(packedEventEntry?.enabled === false, `${eventId}打包后仍保持禁用`);
-  const content = await readText(entry.content_file);
+  const eventSourceFile = entry.content_file ?? entry.content_files?.[0];
+  const content = await readText(eventSourceFile);
   ok(content.includes(`# ${eventId}·`), `${eventId}源码标题正确`);
 
   if (HOOK_EVENTS.has(eventId)) {
