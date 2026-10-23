@@ -1,6 +1,6 @@
 {
   "id": "tavernweave.weird-apothecary.v0.23",
-  "version": "0.23.0",
+  "version": "1.0.0",
   "profile": "profile.json",
   "contract": "contract.json",
   "host_acceptance": "host_acceptance.json",
@@ -8,20 +8,19 @@
   "packed_json": "dist/诡异药剂师_v0.23.json",
   "card": {
     "stable_id": "weird-apothecary-blood-saw-shop",
-    "display_name": "《诡异药剂师》v0.23",
+    "display_name": "《诡异药剂师》V1.0",
     "metadata": "src/card.json",
+    "creator_notes": "src/prompts/creator_notes.md",
     "system_prompt": "src/prompts/system.md",
     "post_history_instructions": "src/prompts/post_history.md",
     "first_message": "src/prompts/first_message.md",
     "example_dialogue": "src/prompts/examples.md",
-    "alternate_greetings": [
-      "src/prompts/alternate_greeting_e25.md"
-    ],
+    "alternate_greetings": [],
     "description": "src/prompts/card_description.md"
   },
   "worldbook": {
     "stable_id": "weird-apothecary-worldbook",
-    "version": "0.23.0",
+    "version": "1.0.0",
     "source": "src/worldbook.json",
     "attachment": "/data/character_book"
   },
@@ -51,14 +50,14 @@
     },
     {
       "id": "mvu-loader",
-      "role": "加载 MagVarUpdate",
+      "role": "加载 MagVarUpdate 与正态分离状态官引擎",
       "class": "embedded_required",
       "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-loader-v0.23]",
       "failure": "正文仍可阅读，持久状态不可用"
     },
     {
       "id": "mvu-zod-schema",
-      "role": "验证 v0.23 状态结构",
+      "role": "验证 V1.0 状态结构",
       "class": "embedded_required",
       "evidence": "/data/extensions/tavern_helper/scripts[id=tavernweave-mvu-schema-v0.23]",
       "failure": "变量结构校验不可用"

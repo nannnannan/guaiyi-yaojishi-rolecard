@@ -23,13 +23,16 @@ Desktop.ini
 *.temp
 *.log
 ~$*
+_review_work/
+**/_backup*/
+**/.tmp*
 
 # Build artifacts and dependencies (per repo convention: v0.12 dist/node_modules untracked)
 **/node_modules/
 **/dist/
 
 # External sample cards and external workshop (not card source)
-ÑùÀı¿¨/
-Ä«ÔÂ±¾µØĞ´¿¨¹¤·»/
+æ ·ä¾‹å¡/
+å¢¨æœˆæœ¬åœ°å†™å¡å·¥åŠ/
 .codexbridge/
 .dsh/

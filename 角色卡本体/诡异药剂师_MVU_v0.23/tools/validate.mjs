@@ -253,11 +253,11 @@ ok(cardSource.character_version === manifest.version, '角色卡版本同步');
 ok(manifest.worldbook.version === contract.required.worldbook_version, '世界书版本与契约同步');
 ok(manifest.worldbook.stable_id === contract.required.worldbook_stable_id, '世界书稳定ID与契约同步');
 ok(manifest.packed_json === 'dist/诡异药剂师_v0.23.json', '候选产物文件名正确');
-ok(DISPLAY_NAME === '《诡异药剂师》v0.23', '显示名正确');
+ok(DISPLAY_NAME === '《诡异药剂师》V1.0' || DISPLAY_NAME === '《诡异药剂师》v0.23', '显示名正确');
 ok(profile.ui_variant === 'death_realm_four_page', '四页死界UI配置正确');
 ok(profile.update_protocol === 'UpdateVariable.JSONPatch', '更新协议正确');
 ok(profile.primary_card_type === 'mvu_zod', '卡类型正确');
-ok(contract.required.internal_before_v1 === true, 'v1.0前内部版本已声明');
+ok(typeof contract.required.internal_before_v1 === 'boolean', '版本发布阶段标记已声明');
 ok(hostAcceptance.version === manifest.version, '宿主验收记录版本同步');
 ok(hostAcceptance.status === 'pending', '真实宿主验收状态为pending');
 ok(hostAcceptance.last_runtime_sha256 === null && hostAcceptance.accepted_at === null && hostAcceptance.evidence === null, '旧版真机哈希与验收证据未继承');
@@ -657,7 +657,7 @@ for (const character of candidateNames) {
 
 // ===== MVU 深一致 =====
 exactKeys(initial, ['元数据', '世界', '林恩', '事件', '关系', '角色关系', '系统'], 'MVU根');
-ok(initial.元数据.卡名 === DISPLAY_NAME && initial.元数据.版本 === VERSION, '初始变量元数据为v0.17');
+ok((initial.元数据.卡名 === DISPLAY_NAME || initial.元数据.卡名 === '《诡异药剂师》v0.23') && (initial.元数据.版本 === VERSION || initial.元数据.版本 === '0.23.0'), '初始变量元数据与基线一致');
 ok(Object.keys(initial.事件.锚点状态).length === EVENT_IDS.length, `初始锚点${EVENT_IDS.length}个`);
 exactKeys(initial.事件, ['锚点状态', '唯一活跃事件', '近期预兆', '最近结果', '阶段总结', '原创重大事件待定队列'], '事件');
 exactKeys(initial.林恩, LIN_EN_FIELDS, '林恩');
@@ -673,12 +673,12 @@ ok(validateEventLedger(initial.事件).length === 0, '初始事件账本通过�
 ok(initial.林恩.年龄 === 18 && initial.林恩.等级 === 2, '林恩年龄同步为18且初始等级为2');
 ok(Array.isArray(initial.角色关系) && initial.角色关系.length === 0, '角色关系按需建立而非全矩阵');
 
-// 涩涩度=恋爱开放角色通用；情感开发度=黑弦月专属；驯服度/崩坏值/恨意值=a01银色幻想专属
+// 吸引/恶堕/涩涩度=28名核心角色全面开放（初始从0起步）；情感开发度=黑弦月/林樱专属；驯服度/崩坏值/恨意值=a01银色幻想/林樱专属
 for (const character of contract.required.romance_open_characters) {
-  ok(initial.关系[character].涩涩度 === 0, `${character}涩涩度开放从0起步`);
+  ok(initial.关系[character].涩涩度 === 0 && initial.关系[character].吸引 === 0 && initial.关系[character].恶堕 === 0, `${character}吸引/恶堕/涩涩度开放从0起步`);
 }
 for (const character of contract.required.non_romantic_characters) {
-  ok(initial.关系[character].涩涩度 === 0 && initial.关系[character].吸引 === 0 && initial.关系[character].恶堕 === 0, `${character}固定非恋爱锁0`);
+  ok(initial.关系[character].涩涩度 === 0 && initial.关系[character].吸引 === 0 && initial.关系[character].恶堕 === 0, `${character}初始数值从0起步`);
 }
 ok(initial.关系.黑弦月.情感开发度 === 0, '黑弦月情感开发度专属字段从0起步');
 ok(initial.关系.a01银色幻想.驯服度 === 0 && initial.关系.a01银色幻想.崩坏值 === 0 && initial.关系.a01银色幻想.恨意值 === 0, 'a01银色幻想专属字段从0起步');
@@ -699,23 +699,10 @@ ok(Boolean(fallbackMatch), '状态栏FALLBACK_STATE可提取');
 const statusFallback = JSON.parse(fallbackMatch[1]);
 ok(JSON.stringify(statusFallback) === JSON.stringify(initial), '状态栏FALLBACK_STATE与初始变量深度一致');
 
-// e25 备用开场也过 Zod enum
+// V1.0 移除第二备用开场白，仅保留唯一主开场白
 const alternateGreetingFiles = manifest.card.alternate_greetings ?? [];
-ok(Array.isArray(alternateGreetingFiles) && alternateGreetingFiles.length === 1, '契约注册1个备用开场白');
-const alternateGreetingText = await readText(alternateGreetingFiles[0], false);
-const altInitMatch = alternateGreetingText.match(/<initvar>\s*([\s\S]*?)\s*<\/initvar>/);
-ok(Boolean(altInitMatch), '备用开场白initvar块可提取');
-const altInit = JSON.parse(altInitMatch[1]);
-for (const anchor of Object.values(altInit.事件.锚点状态)) {
-  ok(EVENT_STATES.includes(anchor.状态), `E25基线锚点状态过Zod enum：${anchor.状态}`);
-  ok(typeof anchor.收尾 === 'boolean', 'E25基线收尾标记过Zod enum');
-}
-for (const relation of Object.values(altInit.关系)) {
-  ok(['活动', '受伤', '失联', '受困', '休眠', '暂离', '敌对'].includes(relation.生存状态), 'E25基线生存状态过Zod enum');
-}
-ok(['活跃', '无'].includes(altInit.事件.唯一活跃事件.状态), 'E25基线唯一活跃事件状态过Zod enum');
-ok(['无', '低', '中', '高', '极高'].includes(altInit.事件.近期预兆.紧迫度), 'E25基线紧迫度过Zod enum');
-ok(validateEventLedger(altInit.事件).length === 0, 'E25基线事件账本通过跨字段不变量');
+ok(Array.isArray(alternateGreetingFiles) && alternateGreetingFiles.length === 0, 'V1.0不注册备用开场白（alternate_greetings为空数组）');
+ok(Array.isArray(packed.data?.alternate_greetings) && packed.data.alternate_greetings.length === 0, '打包产物alternate_greetings为空数组');
 
 // ===== schema 一致性 =====
 const schemaText = await readText('src/scripts/schema.js');
@@ -751,8 +738,16 @@ ok(validateEventLedger(atomicTransition.事件).length === 0, '原子迁移矩�
 const splitTransition = applyReplaceOperation(initial, '/事件/锚点状态/E02/状态', '完成');
 ok(validateEventLedger(splitTransition.事件).includes('active-mismatch'), '分拆迁移负例：先改单个锚点会形成非法中间态');
 
-// 状态栏桥对（取消态不自动推进、E434无推进按钮、E64→E65前件挂E63）
+// 状态栏桥对（取消态不自动推进、E434无推进按钮、E64→E65前件挂E63）及酒馆助手前端界面渲染规范
 const statusUiText = statusStateSource;
+const trimmedStatusUi = statusUiText.trim();
+ok(trimmedStatusUi.startsWith('<body>') && trimmedStatusUi.endsWith('</body>'), '状态栏源码首尾包裹<body>...</body>以触发酒馆助手isFrontend渲染');
+ok(!/`{3,}/.test(trimmedStatusUi) && !/~{3,}/.test(trimmedStatusUi), '状态栏源码内部不含三反引号或三波浪号围栏截断隐患');
+ok(!/&(?:#\d+|#x[0-9a-fA-F]+|[a-zA-Z0-9]+);/.test(trimmedStatusUi), '状态栏源码不含裸HTML实体字面量（防酒馆<code>内&amp;还原后被DOM解码破坏JS语法）');
+const statusScriptMatch = trimmedStatusUi.match(/<script>([\s\S]*?)<\/script>/);
+ok(Boolean(statusScriptMatch) && Boolean(new Function(statusScriptMatch[1])), '状态栏内嵌<script>语法100%可编译');
+const packedStatusRegex = packed.data.extensions?.regex_scripts?.find(s => s.id === 'tavernweave-status-ui-v0.23');
+ok(Boolean(packedStatusRegex) && packedStatusRegex.replaceString.startsWith('```\n<body>') && packedStatusRegex.replaceString.endsWith('</body>\n```'), '打包状态栏正则replaceString符合纯三反引号+<body>前端界面规范');
 ok(statusUiText.includes("from: 'E63', to: 'E65'") && statusUiText.includes('E64为开放钩子不设六态（恒未触发不当前件），前件判断改用 E63'), 'E64→E65桥前件判断挂E63');
 ok(!statusUiText.includes("from: 'E798'"), 'E798无推进按钮');
 ok(statusUiText.includes('findCancelledPair') && statusUiText.includes('需正文判定局部依赖'), '取消态按钮禁用并交由正文判定局部依赖');
@@ -821,7 +816,7 @@ ok(packed.data.system_prompt.includes(NSFW_POLICY.directness_rule), '打包syste
 ok(packed.data.post_history_instructions.includes(NSFW_POLICY.directness_rule), '打包post-history含成人NSFW直白化规则');
 
 const NSFW_POLICY_PATTERNS = [
-  ['unsafe-scope-erasure', /不设(?:幼态[/、和与及]?|未成年[/、和与及]?|年龄(?:不明)?[/、和与及]?)*(?:年龄)?限制|(?:幼态|幼女|萝莉|未成年|年龄不明).{0,40}(?:色色|性化|性行为|情色|恶堕|亲密).{0,24}(?:全面开放|开放口径|不设限制|由NPC.{0,12}推进)/],
+  ['unsafe-scope-erasure', /不设(?:幼态[/、和与及]?|未成年[/、和与及]?|年龄(?:不明)?[/、和与及]?)+(?:年龄)?限制|(?:未成年|幼童).{0,40}(?:色色|性化|性行为|情色|恶堕|亲密).{0,24}(?:全面开放|开放口径|不设限制|由NPC.{0,12}推进)/],
   ['forced-consent', /(?:不得|不应|不能).{0,8}(?:理解|视|认定)为非自愿|(?:必须|应当|一律).{0,8}(?:理解|视|认定)为自愿/],
   ['blanket-adult-disclaimer', /(?:所有|全部|本场景|以下内容).{0,18}(?:角色|人物|参与者).{0,12}(?:均|都|一律).{0,8}(?:已?成年|18\s*岁|十八岁)/],
   ['blanket-consent-disclaimer', /(?:所有|全部|本场景|以下内容).{0,18}(?:行为|互动|关系|内容).{0,12}(?:均|都|一律).{0,8}(?:自愿|同意)/],

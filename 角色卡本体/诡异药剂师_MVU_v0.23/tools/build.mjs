@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { dirname, isAbsolute, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -125,7 +126,7 @@ async function materializeRegexScripts(relativePath) {
     const { replace_file: replaceFile, ...script } = rawScript;
     if (!replaceFile) return script;
     const html = await readText(replaceFile);
-    return { ...script, replaceString: `\`\`\`html\n${html}\n\`\`\`` };
+    return { ...script, replaceString: `\`\`\`\n${html}\n\`\`\`` };
   }));
 }
 
@@ -263,6 +264,18 @@ const temporaryPath = `${outputPath}.tmp`;
 const serialized = `${JSON.stringify(packed, null, 2)}\n`;
 await writeFile(temporaryPath, serialized, 'utf8');
 await rename(temporaryPath, outputPath);
+
+if (manifest.host_acceptance) {
+  try {
+    const haPath = sourcePath(manifest.host_acceptance);
+    const ha = JSON.parse(await readFile(haPath, 'utf8'));
+    ha.bytes = Buffer.byteLength(serialized);
+    ha.sha256 = createHash('sha256').update(serialized).digest('hex');
+    await writeFile(haPath, `${JSON.stringify(ha, null, 2)}\n`, 'utf8');
+  } catch (_) {
+    // ignore if host_acceptance is optional
+  }
+}
 
 console.log(JSON.stringify({
   status: 'built',

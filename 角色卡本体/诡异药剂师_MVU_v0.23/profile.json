@@ -1,8 +1,8 @@
 {
   "id": "tavernweave.weird-apothecary.v0.23",
   "family": "sillytavern-rolecard",
-  "version": "0.23.0",
-  "display_name": "《诡异药剂师》v0.23",
+  "version": "1.0.0",
+  "display_name": "《诡异药剂师》V1.0",
   "primary_card_type": "mvu_zod",
   "capabilities": [
     "tavern_helper",

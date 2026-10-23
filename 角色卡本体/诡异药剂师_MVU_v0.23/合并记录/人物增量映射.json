@@ -1,0 +1,2701 @@
+{
+  "date": "2026-09-30",
+  "source_count": 174,
+  "records": [
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/a01银色幻想.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E353",
+        "E363"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/人偶夫人.md",
+      "target": "src/characters/人偶夫人/多阶段人设.md",
+      "events": [
+        "E369",
+        "E370",
+        "E371",
+        "E373",
+        "E374",
+        "E385"
+      ],
+      "mode": "existing",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/倒吊天使.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E351",
+        "E357",
+        "E358",
+        "E360",
+        "E361",
+        "E363",
+        "E368"
+      ],
+      "mode": "non_explicit_adaptation",
+      "adapted_events": [
+        "E361"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/小小.md",
+      "target": "src/characters/小小/多阶段人设.md",
+      "events": [
+        "E350"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/左左.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E349",
+        "E350",
+        "E358",
+        "E364",
+        "E365",
+        "E366",
+        "E394",
+        "E395"
+      ],
+      "mode": "non_explicit_adaptation",
+      "adapted_events": [
+        "E366",
+        "E395"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/巨像之脑.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E351",
+        "E352",
+        "E354",
+        "E355",
+        "E356",
+        "E358",
+        "E361",
+        "E367",
+        "E393",
+        "E394",
+        "E395"
+      ],
+      "mode": "non_explicit_adaptation",
+      "adapted_events": [
+        "E367",
+        "E361"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/巫神头颅.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E350"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/欲望母树.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E351",
+        "E364"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/泰坦头颅.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E350",
+        "E364"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/猪头屠夫.md",
+      "target": "src/characters/猪头屠夫/多阶段人设.md",
+      "events": [
+        "E349",
+        "E354",
+        "E358"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/白夜.md",
+      "target": "src/characters/白夜/多阶段人设.md",
+      "events": [
+        "E350",
+        "E351"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/羽毛笔.md",
+      "target": "src/characters/羽毛笔/多阶段人设.md",
+      "events": [
+        "E354",
+        "E362",
+        "E391",
+        "E392"
+      ],
+      "mode": "existing",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/艾雯爵士.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E351",
+        "E353",
+        "E363",
+        "E367",
+        "E371",
+        "E385"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/人物增量/黑弦月.md",
+      "target": "src/characters/黑弦月/多阶段人设.md",
+      "events": [
+        "E370",
+        "E371",
+        "E373",
+        "E374",
+        "E377",
+        "E379",
+        "E380",
+        "E381",
+        "E384",
+        "E385",
+        "E386",
+        "E387"
+      ],
+      "mode": "existing",
+      "adapted_events": [
+        "E386",
+        "E387"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/人偶家.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E387",
+        "E391",
+        "E392"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/将军.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E352"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/拥星者.md",
+      "target": "src/characters/拥星者/多阶段人设.md",
+      "events": [
+        "E352"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/旧世同行男孩.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E378",
+        "E379"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/旧世小狗.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E378",
+        "E379",
+        "E384"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/旧世布偶店老板.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E379",
+        "E381"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/智脑.md",
+      "target": "src/characters/智脑/NPC.md",
+      "events": [
+        "E353",
+        "E363"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/白袍少年.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E354",
+        "E362",
+        "E391",
+        "E392"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/老人.md",
+      "target": "src/characters/老人/NPC.md",
+      "events": [
+        "E391"
+      ],
+      "mode": "existing",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/苍玄月.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E369"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/雪莉.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E376",
+        "E377",
+        "E382",
+        "E384"
+      ],
+      "mode": "existing",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/黑弦月哥哥.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E375",
+        "E380",
+        "E381",
+        "E382"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.16工作区/NPC/黑弦月生母.md",
+      "target": "src/prompts/minor_npcs.md",
+      "events": [
+        "E375",
+        "E380"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/巨像之脑_A.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E397",
+        "E398",
+        "E399",
+        "E405",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E397"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/艾雯爵士_A.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E398",
+        "E402",
+        "E404",
+        "E405",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/自缚天使_A.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E398",
+        "E403",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/人偶家_A.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E398",
+        "E401",
+        "E402",
+        "E405",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/喵喵_A.md",
+      "target": "src/characters/喵喵/多阶段人设.md",
+      "events": [
+        "E399",
+        "E400"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E399",
+        "E400"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/小小_A.md",
+      "target": "src/characters/小小/多阶段人设.md",
+      "events": [
+        "E399",
+        "E406"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/血锯_A.md",
+      "target": "src/characters/血锯/多阶段人设.md",
+      "events": [
+        "E402",
+        "E403"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E402",
+        "E403"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/黑弦月_A.md",
+      "target": "src/characters/黑弦月/多阶段人设.md",
+      "events": [
+        "E402",
+        "E403",
+        "E405"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/爱丽丝_A.md",
+      "target": "src/characters/爱丽丝/多阶段人设.md",
+      "events": [
+        "E402"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E402"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/血肉支配者_A.md",
+      "target": "src/characters/血肉支配者/多阶段人设.md",
+      "events": [
+        "E401",
+        "E404",
+        "E406",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/泰坦头颅_A.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E401",
+        "E406",
+        "E407",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/巫神头颅_A.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E403",
+        "E405",
+        "E408"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/哭泣小丑_B.md",
+      "target": "src/characters/哭泣小丑/多阶段人设.md",
+      "events": [
+        "E412",
+        "E413",
+        "E414",
+        "E418"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/欲望母树_B.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E413"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E413"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/左左_B.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E410",
+        "E411",
+        "E418"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E418"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/哭泣小丑_C.md",
+      "target": "src/characters/哭泣小丑/多阶段人设.md",
+      "events": [
+        "E419",
+        "E423",
+        "E428",
+        "E430",
+        "E431",
+        "E432",
+        "E434"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/巨像之脑_C.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E424",
+        "E426"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.17工作区/人物增量/艾雯爵士_C.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E424",
+        "E425",
+        "E426",
+        "E428"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/左左_A.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E448",
+        "E451"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E448",
+        "E451"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/康斯坦丁_A.md",
+      "target": "src/characters/康斯坦丁/NPC.md",
+      "events": [
+        "E440",
+        "E442",
+        "E443",
+        "E445",
+        "E448",
+        "E449",
+        "E452"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E448"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/欲望母树_A.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E440",
+        "E441",
+        "E443"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E440",
+        "E443"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/艾泽法拉_A.md",
+      "target": "src/characters/艾泽法拉/NPC.md",
+      "events": [
+        "E437",
+        "E438",
+        "E449",
+        "E451",
+        "E452"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E452"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/NPC/弑利亚.md",
+      "target": "src/characters/弑利亚/NPC.md",
+      "events": [
+        "E435",
+        "E437",
+        "E441",
+        "E442",
+        "E443"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E443"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/人偶家_C.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E452",
+        "E461",
+        "E491",
+        "E492"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/智脑_C.md",
+      "target": "src/characters/智脑/NPC.md",
+      "events": [
+        "E479",
+        "E484",
+        "E488"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/银色幻想_C.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E471",
+        "E477",
+        "E481",
+        "E484",
+        "E485",
+        "E488",
+        "E489",
+        "E491",
+        "E492"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E481"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.18工作区/人物增量/黑弦月_C.md",
+      "target": "src/characters/黑弦月/多阶段人设.md",
+      "events": [
+        "E491",
+        "E492"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/人偶家_D.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E495",
+        "E506",
+        "E508",
+        "E515",
+        "E520",
+        "E530",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E508",
+        "E515",
+        "E530"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/以太_D.md",
+      "target": "src/characters/以太/NPC.md",
+      "events": [
+        "E493",
+        "E495",
+        "E498",
+        "E504",
+        "E506",
+        "E508",
+        "E509",
+        "E514",
+        "E516",
+        "E519"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E509",
+        "E498"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/光宴_D.md",
+      "target": "src/characters/光宴/NPC.md",
+      "events": [
+        "E494",
+        "E497",
+        "E530"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/哭泣小丑_D.md",
+      "target": "src/characters/哭泣小丑/多阶段人设.md",
+      "events": [
+        "E508",
+        "E511",
+        "E521"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/夏娃_D.md",
+      "target": "src/characters/夏娃/NPC.md",
+      "events": [
+        "E493",
+        "E509",
+        "E518",
+        "E529"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/奈奈子_D.md",
+      "target": "src/characters/奈奈子/多阶段人设.md",
+      "events": [
+        "E515",
+        "E518",
+        "E519",
+        "E520"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E515"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/孽主_D.md",
+      "target": "src/characters/孽主/NPC.md",
+      "events": [
+        "E523",
+        "E524",
+        "E525",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E523",
+        "E524",
+        "E525"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/左左_D.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E513",
+        "E514",
+        "E516",
+        "E520",
+        "E521",
+        "E522",
+        "E525",
+        "E530",
+        "E537"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E513",
+        "E514",
+        "E516",
+        "E520",
+        "E521",
+        "E522",
+        "E525",
+        "E530",
+        "E537"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/巨像之脑_D.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E509",
+        "E517",
+        "E518",
+        "E520",
+        "E529",
+        "E534",
+        "E539"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E509",
+        "E517",
+        "E518",
+        "E520",
+        "E529",
+        "E534",
+        "E539"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/巫神头颅_D.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E495",
+        "E498",
+        "E506",
+        "E509",
+        "E521",
+        "E536",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E521",
+        "E536"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/康斯坦丁_D.md",
+      "target": "src/characters/康斯坦丁/NPC.md",
+      "events": [
+        "E506",
+        "E508",
+        "E512",
+        "E514",
+        "E518",
+        "E521",
+        "E530",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E514",
+        "E518"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/欲望母树_D.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E500",
+        "E506",
+        "E507",
+        "E518",
+        "E520",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E500",
+        "E507",
+        "E518"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/泰坦头颅_D.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E518",
+        "E520",
+        "E528",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/猪头屠夫_D.md",
+      "target": "src/characters/猪头屠夫/多阶段人设.md",
+      "events": [
+        "E518",
+        "E525"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/羽毛笔_D.md",
+      "target": "src/characters/羽毛笔/多阶段人设.md",
+      "events": [
+        "E518",
+        "E521",
+        "E525"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/自缚天使_D.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E506",
+        "E508",
+        "E515",
+        "E518",
+        "E521",
+        "E536",
+        "E537",
+        "E539"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E515",
+        "E518",
+        "E521"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/艾泽法拉_D.md",
+      "target": "src/characters/艾泽法拉/NPC.md",
+      "events": [
+        "E494",
+        "E503",
+        "E505",
+        "E509",
+        "E517",
+        "E530",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E530"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/艾雯爵士_D.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E506",
+        "E508",
+        "E513",
+        "E516",
+        "E528",
+        "E534",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E508",
+        "E513",
+        "E516",
+        "E528",
+        "E534"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/银色幻想_D.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E494",
+        "E495",
+        "E497",
+        "E500",
+        "E502",
+        "E504",
+        "E506",
+        "E507",
+        "E511",
+        "E513",
+        "E515",
+        "E516",
+        "E518",
+        "E520",
+        "E530",
+        "E532",
+        "E533",
+        "E534",
+        "E539"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E504",
+        "E500",
+        "E530"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.19工作区/人物增量/黑弦月_D.md",
+      "target": "src/characters/黑弦月/多阶段人设.md",
+      "events": [
+        "E507",
+        "E530",
+        "E540"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E540",
+        "E530"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/艾雯爵士_D.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E541",
+        "E542",
+        "E549",
+        "E590"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E541",
+        "E542",
+        "E549",
+        "E590"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/巨像之脑_D.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E541",
+        "E544",
+        "E586",
+        "E588"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/康斯坦丁_D.md",
+      "target": "src/characters/康斯坦丁/NPC.md",
+      "events": [
+        "E541",
+        "E542",
+        "E543",
+        "E548"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/哭泣小丑_D.md",
+      "target": "src/characters/哭泣小丑/多阶段人设.md",
+      "events": [
+        "E549",
+        "E559",
+        "E593"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E549"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/孽主_D.md",
+      "target": "src/characters/孽主/NPC.md",
+      "events": [
+        "E541"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/人偶家_D.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E544",
+        "E545",
+        "E548"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/圣安娜_D.md",
+      "target": "src/characters/圣安娜/NPC.md",
+      "events": [
+        "E549",
+        "E558"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E558"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/泰坦头颅_D.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E544",
+        "E545",
+        "E554",
+        "E591"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/巫神头颅_D.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E542",
+        "E554",
+        "E555"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/夏娃_D.md",
+      "target": "src/characters/夏娃/NPC.md",
+      "events": [
+        "E555"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E555"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/小小_D.md",
+      "target": "src/characters/小小/多阶段人设.md",
+      "events": [
+        "E553",
+        "E555",
+        "E556"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E553",
+        "E555",
+        "E556"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/星轨_D.md",
+      "target": "src/characters/星轨/NPC.md",
+      "events": [
+        "E546",
+        "E552",
+        "E558"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/银色幻想_D.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E542",
+        "E549",
+        "E590",
+        "E591"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/左左_D.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E543",
+        "E546",
+        "E559",
+        "E571",
+        "E575",
+        "E586"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/以太_D.md",
+      "target": "src/characters/以太/NPC.md",
+      "events": [
+        "E585",
+        "E587",
+        "E588"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.20工作区/人物增量/自缚天使_D.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E541",
+        "E557",
+        "E559",
+        "E571",
+        "E580",
+        "E584",
+        "E592"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E580",
+        "E592"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/主母_D.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E607",
+        "E611",
+        "E634",
+        "E636",
+        "E641"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E607",
+        "E611",
+        "E634",
+        "E636",
+        "E641"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/人偶家_D.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E609",
+        "E610",
+        "E619",
+        "E634",
+        "E636"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/康斯坦丁_D.md",
+      "target": "src/characters/康斯坦丁/NPC.md",
+      "events": [
+        "E602",
+        "E609",
+        "E634",
+        "E636"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/星轨_D.md",
+      "target": "src/characters/星轨/NPC.md",
+      "events": [
+        "E602",
+        "E609",
+        "E611",
+        "E620"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E609"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/母树_D.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E609",
+        "E610",
+        "E611"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E609",
+        "E611"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/自缚天使_D.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E607",
+        "E610",
+        "E611",
+        "E619",
+        "E634",
+        "E636",
+        "E638",
+        "E645"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E607",
+        "E611",
+        "E634",
+        "E636",
+        "E638"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/艾维儿_D.md",
+      "target": "src/characters/艾维儿/NPC.md",
+      "events": [
+        "E601",
+        "E602",
+        "E603",
+        "E610",
+        "E618",
+        "E622",
+        "E627",
+        "E632",
+        "E633"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E618",
+        "E627",
+        "E633"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/银色幻想_D.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E596",
+        "E597",
+        "E599",
+        "E615",
+        "E616"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/黑弦月_D.md",
+      "target": "src/characters/黑弦月/多阶段人设.md",
+      "events": [
+        "E611",
+        "E636"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E611"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/以太_D.md",
+      "target": "src/characters/以太/NPC.md",
+      "events": [
+        "E616",
+        "E618",
+        "E634",
+        "E645"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/入梦者_D.md",
+      "target": "src/characters/入梦者/NPC.md",
+      "events": [
+        "E613",
+        "E618",
+        "E621",
+        "E625",
+        "E626",
+        "E627",
+        "E633",
+        "E634",
+        "E635",
+        "E636",
+        "E639",
+        "E644"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E618",
+        "E621",
+        "E625",
+        "E626",
+        "E627",
+        "E633",
+        "E634",
+        "E635",
+        "E636",
+        "E639",
+        "E644"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/左左_D.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E613",
+        "E614",
+        "E625",
+        "E639",
+        "E645"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E614",
+        "E625"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/巨像_D.md",
+      "target": "src/characters/巨像之脑/多阶段人设.md",
+      "events": [
+        "E612",
+        "E613",
+        "E614",
+        "E615",
+        "E616",
+        "E617",
+        "E644",
+        "E645"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E617",
+        "E612"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/织梦_D.md",
+      "target": "src/characters/入梦者/NPC.md",
+      "events": [
+        "E618",
+        "E621",
+        "E622",
+        "E624",
+        "E625",
+        "E626",
+        "E627",
+        "E628",
+        "E629",
+        "E633",
+        "E644",
+        "E645"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E618",
+        "E621",
+        "E622",
+        "E624",
+        "E625",
+        "E626",
+        "E627",
+        "E628",
+        "E629",
+        "E633",
+        "E644",
+        "E645"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/艾雯爵士_D.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E612",
+        "E614",
+        "E615",
+        "E617",
+        "E618",
+        "E634",
+        "E636"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E634"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.21工作区/人物增量/血枢_D.md",
+      "target": "src/characters/血枢/NPC.md",
+      "events": [
+        "E613",
+        "E614",
+        "E616",
+        "E617",
+        "E618",
+        "E621"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/a01银色幻想_D.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E660",
+        "E661",
+        "E662",
+        "E669",
+        "E671",
+        "E703",
+        "E704",
+        "E705",
+        "E708",
+        "E711",
+        "E712",
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E669",
+        "E671",
+        "E705",
+        "E712",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/人偶家_D.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E670",
+        "E707",
+        "E708",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E670",
+        "E707",
+        "E708",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/倒吊天使_D.md",
+      "target": "src/characters/倒吊天使/多阶段人设.md",
+      "events": [
+        "E654",
+        "E660",
+        "E661",
+        "E702",
+        "E707",
+        "E708",
+        "E712",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E660",
+        "E661",
+        "E708",
+        "E713",
+        "E716",
+        "E717",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/哭泣小丑_D.md",
+      "target": "src/characters/哭泣小丑/多阶段人设.md",
+      "events": [
+        "E660",
+        "E671",
+        "E716"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E660",
+        "E671",
+        "E716"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/左左_D.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E647",
+        "E648",
+        "E649",
+        "E650",
+        "E651",
+        "E652",
+        "E653"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E647",
+        "E648",
+        "E649",
+        "E651"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/巫神头颅_D.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E669",
+        "E702"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E669",
+        "E702"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/康斯坦丁_D.md",
+      "target": "src/characters/康斯坦丁/NPC.md",
+      "events": [
+        "E670",
+        "E671",
+        "E702",
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E670",
+        "E671",
+        "E702",
+        "E716",
+        "E717",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/未来画家_D.md",
+      "target": "src/characters/未来画家/NPC.md",
+      "events": [
+        "E663",
+        "E667",
+        "E671",
+        "E697",
+        "E698",
+        "E701",
+        "E714",
+        "E715",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E667",
+        "E671",
+        "E697",
+        "E698",
+        "E701",
+        "E714",
+        "E715",
+        "E717",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/泰坦头颅_D.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E669",
+        "E707",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E669",
+        "E707",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/真理神王_D.md",
+      "target": "src/characters/真理神王/NPC.md",
+      "events": [
+        "E647",
+        "E649",
+        "E650",
+        "E663",
+        "E675",
+        "E683",
+        "E685",
+        "E686",
+        "E688",
+        "E690",
+        "E701",
+        "E704"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E647",
+        "E649",
+        "E650",
+        "E663",
+        "E675",
+        "E683",
+        "E685",
+        "E686",
+        "E688",
+        "E690",
+        "E701",
+        "E704"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/神王_D.md",
+      "target": "src/characters/神王/NPC.md",
+      "events": [
+        "E663",
+        "E678",
+        "E679",
+        "E680",
+        "E681",
+        "E701",
+        "E706",
+        "E708",
+        "E709",
+        "E710",
+        "E712",
+        "E713",
+        "E714"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E663",
+        "E678",
+        "E679",
+        "E680",
+        "E681",
+        "E701",
+        "E706",
+        "E708",
+        "E709",
+        "E710",
+        "E712",
+        "E713",
+        "E714"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/紫罗兰大君_D.md",
+      "target": "src/characters/紫罗兰大君/NPC.md",
+      "events": [
+        "E663",
+        "E671",
+        "E682",
+        "E706"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E663",
+        "E671",
+        "E682",
+        "E706"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/伊甸娜_D.md",
+      "target": "src/characters/伊甸娜/NPC.md",
+      "events": [
+        "E671"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/入梦者_D.md",
+      "target": "src/characters/入梦者/NPC.md",
+      "events": [
+        "E687",
+        "E688",
+        "E689",
+        "E702",
+        "E704",
+        "E705"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E688",
+        "E704"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/神皇_D.md",
+      "target": "src/characters/神皇/NPC.md",
+      "events": [
+        "E672"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E672"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/艾泽法拉_D.md",
+      "target": "src/characters/艾泽法拉/NPC.md",
+      "events": [
+        "E671"
+      ],
+      "mode": "source_sync",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/艾维儿_D.md",
+      "target": "src/characters/艾维儿/NPC.md",
+      "events": [
+        "E671",
+        "E672",
+        "E673",
+        "E683",
+        "E684",
+        "E688",
+        "E696",
+        "E697",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E671",
+        "E672",
+        "E673",
+        "E683",
+        "E684",
+        "E688",
+        "E696",
+        "E697",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/以太_D.md",
+      "target": "src/characters/以太/NPC.md",
+      "events": [
+        "E705",
+        "E708"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E705",
+        "E708"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/小小_D.md",
+      "target": "src/characters/小小/多阶段人设.md",
+      "events": [
+        "E702",
+        "E716"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E702",
+        "E716"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/林蒙_D.md",
+      "target": "src/characters/林蒙/NPC.md",
+      "events": [
+        "E706",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E706",
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E717",
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/欲望母树_D.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E707",
+        "E708",
+        "E714",
+        "E716"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E707",
+        "E708",
+        "E714",
+        "E716"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/人物增量/白夜_D.md",
+      "target": "src/characters/白夜/多阶段人设.md",
+      "events": [
+        "E702"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E702"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/a01银色幻想_D.md",
+      "target": "src/characters/a01银色幻想/多阶段人设.md",
+      "events": [
+        "E724",
+        "E728",
+        "E731",
+        "E743",
+        "E754",
+        "E755",
+        "E756",
+        "E757"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E724",
+        "E728",
+        "E731",
+        "E743",
+        "E754",
+        "E755"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/万机之神_D.md",
+      "target": "src/characters/万机之神/多阶段人设.md",
+      "events": [
+        "E731",
+        "E743"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E731",
+        "E743"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/人偶家_D.md",
+      "target": "src/characters/人偶家/多阶段人设.md",
+      "events": [
+        "E724",
+        "E726",
+        "E743",
+        "E753",
+        "E757"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E724",
+        "E753",
+        "E757"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/以太_D.md",
+      "target": "src/characters/以太/NPC.md",
+      "events": [
+        "E727"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E727"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/入梦者_D.md",
+      "target": "src/characters/入梦者/NPC.md",
+      "events": [
+        "E728",
+        "E729",
+        "E731",
+        "E732",
+        "E783",
+        "E784",
+        "E785",
+        "E786",
+        "E787",
+        "E788"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E728",
+        "E729",
+        "E731",
+        "E732",
+        "E783",
+        "E784",
+        "E785",
+        "E786",
+        "E787",
+        "E788"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/左左_D.md",
+      "target": "src/characters/左左/多阶段人设.md",
+      "events": [
+        "E725",
+        "E765",
+        "E766",
+        "E767",
+        "E768",
+        "E769",
+        "E770",
+        "E771",
+        "E772",
+        "E773",
+        "E774",
+        "E780",
+        "E783",
+        "E784",
+        "E785",
+        "E786",
+        "E787",
+        "E788",
+        "E789",
+        "E790",
+        "E791",
+        "E792",
+        "E793",
+        "E794",
+        "E796",
+        "E797",
+        "E798"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E725",
+        "E766",
+        "E767",
+        "E768",
+        "E783",
+        "E784",
+        "E788",
+        "E790",
+        "E792",
+        "E796",
+        "E798"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/巫神头颅_D.md",
+      "target": "src/characters/巫神头颅/多阶段人设.md",
+      "events": [
+        "E736",
+        "E750",
+        "E751"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E750",
+        "E751"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/未来画家_D.md",
+      "target": "src/characters/未来画家/NPC.md",
+      "events": [
+        "E719",
+        "E720",
+        "E721",
+        "E722",
+        "E723",
+        "E729",
+        "E731",
+        "E739",
+        "E743",
+        "E772",
+        "E773",
+        "E779",
+        "E780",
+        "E781",
+        "E789",
+        "E790",
+        "E797"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E719",
+        "E720",
+        "E721",
+        "E723",
+        "E729",
+        "E731",
+        "E739",
+        "E743",
+        "E772",
+        "E773",
+        "E779",
+        "E780",
+        "E781",
+        "E789",
+        "E790",
+        "E797"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/林蒙_D.md",
+      "target": "src/characters/林蒙/NPC.md",
+      "events": [
+        "E724",
+        "E753"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E724",
+        "E753"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/欲望母树_D.md",
+      "target": "src/characters/欲望母树/多阶段人设.md",
+      "events": [
+        "E750",
+        "E753"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E750",
+        "E753"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/泰坦头颅_D.md",
+      "target": "src/characters/泰坦头颅/多阶段人设.md",
+      "events": [
+        "E736",
+        "E750",
+        "E751",
+        "E752"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E752"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/白夜_D.md",
+      "target": "src/characters/白夜/多阶段人设.md",
+      "events": [
+        "E724",
+        "E786"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E724",
+        "E786"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/真理神王_D.md",
+      "target": "src/characters/真理神王/NPC.md",
+      "events": [
+        "E736",
+        "E776"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E736",
+        "E776"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/神王_D.md",
+      "target": "src/characters/神王/NPC.md",
+      "events": [
+        "E727",
+        "E736",
+        "E776",
+        "E791"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E727",
+        "E736",
+        "E776",
+        "E791"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/羽毛笔_D.md",
+      "target": "src/characters/羽毛笔/多阶段人设.md",
+      "events": [
+        "E740",
+        "E741",
+        "E742",
+        "E744",
+        "E764",
+        "E765",
+        "E766"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E740",
+        "E741",
+        "E742",
+        "E744",
+        "E764",
+        "E765",
+        "E766"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/艾维儿_D.md",
+      "target": "src/characters/艾维儿/NPC.md",
+      "events": [
+        "E719",
+        "E724",
+        "E725",
+        "E726",
+        "E731",
+        "E733",
+        "E739",
+        "E743",
+        "E746",
+        "E750",
+        "E757",
+        "E758"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E719",
+        "E724",
+        "E725",
+        "E726",
+        "E731",
+        "E733",
+        "E739",
+        "E746",
+        "E750",
+        "E757",
+        "E758"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/艾雯爵士_D.md",
+      "target": "src/characters/艾雯爵士/多阶段人设.md",
+      "events": [
+        "E730",
+        "E731",
+        "E732",
+        "E733",
+        "E734",
+        "E735",
+        "E736",
+        "E737",
+        "E739",
+        "E740",
+        "E742",
+        "E744",
+        "E745",
+        "E748",
+        "E749",
+        "E759"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E730",
+        "E731",
+        "E732",
+        "E733",
+        "E734",
+        "E735",
+        "E736",
+        "E737",
+        "E739",
+        "E740",
+        "E742",
+        "E744",
+        "E745",
+        "E748",
+        "E749",
+        "E759"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/黑白小丑_D.md",
+      "target": "src/characters/黑白小丑/多阶段人设.md",
+      "events": [
+        "E743",
+        "E751",
+        "E752",
+        "E753"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E743",
+        "E751",
+        "E752",
+        "E753"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/小小_D.md",
+      "target": "src/characters/小小/多阶段人设.md",
+      "events": [
+        "E758"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E758"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/人物增量/紫罗兰大君_D.md",
+      "target": "src/characters/紫罗兰大君/NPC.md",
+      "events": [
+        "E790",
+        "E792",
+        "E794",
+        "E795",
+        "E796",
+        "E797"
+      ],
+      "mode": "source_sync",
+      "adapted_events": [
+        "E790",
+        "E795",
+        "E797"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/折翼天使.md",
+      "target": "src/characters/折翼天使/NPC.md",
+      "events": [
+        "E654"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E654"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/兽王.md",
+      "target": "src/characters/兽王/NPC.md",
+      "events": [
+        "E688",
+        "E689",
+        "E697",
+        "E707",
+        "E716",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/夜色囚徒（被刺瞎的老狱卒）.md",
+      "target": "src/characters/夜色囚徒（被刺瞎的老狱卒）/NPC.md",
+      "events": [
+        "E687"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/工匠之神.md",
+      "target": "src/characters/工匠之神/NPC.md",
+      "events": [
+        "E684",
+        "E685"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/智慧女神.md",
+      "target": "src/characters/智慧女神/NPC.md",
+      "events": [
+        "E684",
+        "E685"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E684",
+        "E685"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/火神.md",
+      "target": "src/characters/火神/NPC.md",
+      "events": [
+        "E675"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/知识之神.md",
+      "target": "src/characters/知识之神/NPC.md",
+      "events": [
+        "E684",
+        "E685"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/神音.md",
+      "target": "src/characters/神音/NPC.md",
+      "events": [
+        "E674",
+        "E675"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/纽卫队老者.md",
+      "target": "src/characters/纽卫队老者/NPC.md",
+      "events": [
+        "E676"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/苗苗.md",
+      "target": "src/characters/苗苗/NPC.md",
+      "events": [
+        "E679",
+        "E682"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/衰败之神.md",
+      "target": "src/characters/衰败之神/NPC.md",
+      "events": [
+        "E675"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/默默.md",
+      "target": "src/characters/默默/NPC.md",
+      "events": [
+        "E674",
+        "E675"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/龙卫澜.md",
+      "target": "src/characters/龙卫澜/NPC.md",
+      "events": [
+        "E672",
+        "E673",
+        "E674",
+        "E675",
+        "E682",
+        "E683",
+        "E699",
+        "E716"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E716"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/人脸蛇身魇魔.md",
+      "target": "src/characters/人脸蛇身魇魔/NPC.md",
+      "events": [
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/王骑.md",
+      "target": "src/characters/王骑/NPC.md",
+      "events": [
+        "E713",
+        "E714",
+        "E715",
+        "E716",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E713"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/紫荆花重铠女子.md",
+      "target": "src/characters/紫荆花重铠女子/NPC.md",
+      "events": [
+        "E714",
+        "E715",
+        "E716",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E718"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/红魔.md",
+      "target": "src/characters/红魔/NPC.md",
+      "events": [
+        "E716",
+        "E717",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.22工作区/新NPC/镜魔.md",
+      "target": "src/characters/镜魔/NPC.md",
+      "events": [
+        "E692",
+        "E693",
+        "E694",
+        "E698",
+        "E707",
+        "E716",
+        "E718"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": []
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/时间太阳.md",
+      "target": "src/characters/时间太阳/NPC.md",
+      "events": [
+        "E725"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E725"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/罪恶王座.md",
+      "target": "src/characters/罪恶王座/NPC.md",
+      "events": [
+        "E731",
+        "E733",
+        "E748",
+        "E753",
+        "E757",
+        "E759"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E731",
+        "E733",
+        "E748",
+        "E753",
+        "E757",
+        "E759"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/船长.md",
+      "target": "src/characters/船长/NPC.md",
+      "events": [
+        "E724",
+        "E743",
+        "E753",
+        "E757"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E724",
+        "E743",
+        "E753",
+        "E757"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/空白实体.md",
+      "target": "src/characters/空白实体/NPC.md",
+      "events": [
+        "E771",
+        "E772",
+        "E773",
+        "E789",
+        "E790",
+        "E792",
+        "E793",
+        "E796"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E771",
+        "E772",
+        "E773",
+        "E789",
+        "E790",
+        "E792",
+        "E793",
+        "E796"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/轮回神王.md",
+      "target": "src/characters/轮回神王/NPC.md",
+      "events": [
+        "E760",
+        "E762",
+        "E763"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E760",
+        "E762",
+        "E763"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/三位一体之主.md",
+      "target": "src/characters/三位一体之主/NPC.md",
+      "events": [
+        "E786",
+        "E787",
+        "E788"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E786",
+        "E787",
+        "E788"
+      ]
+    },
+    {
+      "source": "角色卡设定/v0.23工作区/新NPC/时间王.md",
+      "target": "src/characters/时间王/NPC.md",
+      "events": [
+        "E791",
+        "E792",
+        "E793",
+        "E796"
+      ],
+      "mode": "source_sync_new_npc",
+      "adapted_events": [
+        "E791",
+        "E792",
+        "E793",
+        "E796"
+      ]
+    }
+  ],
+  "note": "保留既有映射，并追加v0.22+v0.23人物/NPC增量；新NPC见注册映射。"
+}

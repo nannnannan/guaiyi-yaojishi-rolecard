@@ -22,7 +22,7 @@ async function loadSchemaBridge() {
 const score = z.coerce.number().transform(value => _.clamp(Math.round(value), 0, 100));
 const shortText = z.string().max(320);
 const mediumText = z.string().max(800);
-const shortList = z.array(z.string().max(200)).max(16);
+const shortList = z.array(z.string().max(200)).max(64);
 const sceneTime = shortText.refine(
   value => !/(?:星期[一二三四五六日天]|周[一二三四五六日天]|(?:第\s*)?(?:\d+|[一二三四五六七八九十百千万]+|好几|好多|很多|数|几|多)\s*天|昨天|昨日|昨夜|今天|今日|今早|今晨|明天|明日|次日|翌日|第二天|\d{4}\s*[-/.年]\s*\d{1,2}\s*[-/.月]\s*\d{1,2}\s*日?|\d{1,2}月\d{1,2}日)/.test(value),
   '场景时间只能使用事件标签与相对时段，不得写星期、精确日期、X天时长或昨天/昨日/昨夜/今天/今日/今早/今晨/明天/明日/次日/翌日/第二天',
@@ -361,7 +361,7 @@ const anchorTitles = {
   E225: '弥赛亚透支血脉与变秃变强',
   E226: '送走左左与魇魔登场',
   E227: '燕尾服与心灵抑制器',
-  E228: '死缚殉爆与厄运雪球',
+  E228: '死缚殉爆与debuff雪球',
   E229: '巨像之心灾变与灭魇魔投影',
   E230: '九重梦魇与心灵分流',
   E231: '横断山脉与假召唤法阵',
@@ -369,13 +369,13 @@ const anchorTitles = {
   E233: '弥赛亚割腕传信与恩师脸崩',
   E234: '口嗨啪树与最终决战开启',
   E235: '机械梯队轰炸与眼球定身',
-  E236: '九重梦魇骰点5永久诅咒',
+  E236: '九重梦魇骰点5·永久诅咒',
   E237: '地缚灵骰点3失败与灌注精神力',
   E238: '撵走弥赛亚与生死对赌',
   E239: '雷霆审判与权柄剥夺肉体',
   E240: '左左断联与掘地三尺',
-  E241: '舍弃血肉锻造至高机体',
-  E242: '机械之躯归来我回来了',
+  E241: '舍弃血肉·锻造至高机体',
+  E242: '机械之躯归来·我回来了',
   E243: '斩断血肉支配者投影',
   E244: '纳米吞噬者与灵能处理器',
   E245: '三位一体揭露与左左复归',
@@ -384,21 +384,21 @@ const anchorTitles = {
   E248: '审视二卡与温情相拥',
   E249: '血肉灾变与首次涩涩',
   E250: '现场直播与昏厥的左手',
-  E251: '肉量加30与权柄衰减',
+  E251: '肉量加30%与权柄衰减',
   E252: '蓝星之盟与召唤黑夜城',
   E253: '小林恩诞生与心灵分流',
   E254: '全球核弹拦截与第二职业凭证',
-  E255: '解密与同盟公海禁地',
+  E255: '解密与同盟·公海禁地',
   E256: '普鲁斯之死与教会弥赛亚',
   E257: '娘化世界观与林樱',
-  E258: '回家认亲林镇南杨琳',
+  E258: '回家认亲·林镇南杨琳',
   E259: '修罗场与教学',
-  E260: '血衣线上晓晴身世',
-  E261: '血衣线下魔都复仇',
-  E262: '复仇终局攻略血衣',
-  E263: '谢幕遗留艳英',
-  E264: '收束情与家',
-  E265: '公海前奏克苏鲁注视',
+  E260: '血衣线·上·晓晴身世',
+  E261: '血衣线·下·魔都复仇',
+  E262: '复仇终局·攻略血衣',
+  E263: '谢幕遗留·艳英',
+  E264: '收束·情与家',
+  E265: '公海前奏·克苏鲁注视',
   E266: '魂灯入城·圣城通讯与猫娘军团',
   E267: '圣女的天灯·神的方程式',
   E268: '虔信者·艾泽法拉与潮涌潮枯',
@@ -937,15 +937,9 @@ const anchorTitles = {
 const eventIds = Object.keys(anchorTitles);
 
 function relationship(options = {}) {
-  const attraction = options.attractionLocked
-    ? z.literal(0)
-    : score;
-  const evil = options.evilLocked
-    ? z.literal(0)
-    : score;
-  const lewdness = options.attractionLocked
-    ? z.literal(0)
-    : score;
+  const attraction = score;
+  const evil = score;
+  const lewdness = score;
   const emotional = options.emotionalOpen ? score : z.literal(0);
   const tame = options.a01Open ? score : z.literal(0);
   const collapse = options.a01Open ? score : z.literal(0);
@@ -1040,6 +1034,20 @@ const Schema = z.object({
     地点: shortText,
     氛围: mediumText,
     大局线索: shortList,
+    当前时间: shortText,
+    当前时段: shortText,
+    当前地点: shortText,
+    时空冻结: z.enum(['开', '关']),
+    章节管理: z.object({
+      时期: shortText,
+      阶段: shortText,
+      可选时期: shortList,
+      时期阶段结构: z.array(z.object({
+        时期: shortText,
+        阶段: shortList,
+        事件范围: shortText,
+      })).max(16),
+    }),
   }),
   林恩: z.object({
     年龄: z.literal(18),
@@ -1060,8 +1068,8 @@ const Schema = z.object({
     天使之吻状态: z.boolean(),
     根系网络权限: z.boolean(),
     巨像网络权限: z.boolean(),
-    咒瞳状态: shortText,
-    拟化技能: shortText,
+    咒瞳状态: z.union([shortText, z.boolean()]),
+    拟化技能: z.union([shortText, z.boolean()]),
   }),
   事件: z.object({
     锚点状态: z.object({
@@ -1872,46 +1880,53 @@ const Schema = z.object({
   }),
   关系: z.object({
     左左: relationship(),
-    血锯: relationship({ attractionLocked: true, evilLocked: true }),
+    血锯: relationship(),
     血衣女士: relationship(),
     小小: relationship(),
     人偶夫人: relationship(),
     爱丽丝: relationship(),
-    白逸: relationship({ attractionLocked: true, evilLocked: true }),
-    泰坦头颅: relationship({ attractionLocked: true, evilLocked: true }),
-    巫神头颅: relationship({ attractionLocked: true }),
-    小宝贝: relationship({ attractionLocked: true, evilLocked: true }),
+    白逸: relationship(),
+    泰坦头颅: relationship(),
+    巫神头颅: relationship(),
+    小宝贝: relationship(),
     倒吊天使: relationship(),
-    白夜: relationship({ attractionLocked: true, evilLocked: true }),
-    渡鸦: relationship({ attractionLocked: true, evilLocked: true }),
-    黑颅: relationship({ attractionLocked: true, evilLocked: true }),
-    猪头屠夫: relationship({ attractionLocked: true, evilLocked: true }),
-    哭泣小丑: relationship({ attractionLocked: true, evilLocked: true }),
-    黑白小丑: relationship({ attractionLocked: true, evilLocked: true }),
+    白夜: relationship(),
+    渡鸦: relationship(),
+    黑颅: relationship(),
+    猪头屠夫: relationship(),
+    哭泣小丑: relationship(),
+    黑白小丑: relationship(),
     黑弦月: relationship({ emotionalOpen: true }),
     喵喵: relationship(),
-    林樱: relationship(),
-    艾雯爵士: relationship({ attractionLocked: true, evilLocked: true }),
+    林樱: relationship({ emotionalOpen: true, a01Open: true }),
+    艾雯爵士: relationship(),
     羽毛笔: relationship(),
     a01银色幻想: relationship({ a01Open: true }),
     欲望母树: relationship(),
-    万机之神: relationship({ attractionLocked: true, evilLocked: true }),
+    万机之神: relationship(),
     巨像之脑: relationship(),
-    血肉支配者: relationship({ attractionLocked: true, evilLocked: true }),
+    血肉支配者: relationship(),
     弥赛亚: relationship(),
-  }),
+  }).catchall(z.any()),
   角色关系: z.array(relationEdge),
   系统: z.object({
     当前任务: shortText,
     任务阶段: shortText,
     任务状态: z.enum(['进行中', '暂停', '完成', '无']),
     任务说明: mediumText,
-    图鉴: shortList,
+    图鉴: z.union([shortList, z.record(z.string(), z.any())]),
     成就: shortList,
     最近提示: mediumText,
     事件通知: mediumText,
-    更新模式: z.literal('同轮更新；可选独立预设'),
-  }),
+    更新模式: shortText.default('同轮更新；可选独立预设'),
+    动态模块: z.record(z.string(), z.any()).default({}),
+    最近DSL: z.string().default(''),
+    沙盒: z.object({
+      偏离: z.record(z.string(), z.any()),
+      近期事务: z.array(z.union([z.array(z.string()), z.string(), z.record(z.string(), z.any())])).max(64),
+      信号: shortList,
+    }).passthrough(),
+  }).passthrough(),
 }).superRefine((data, ctx) => {
   if (phaseNames[data.世界.阶段编号] !== data.世界.阶段名称) {
     ctx.addIssue({

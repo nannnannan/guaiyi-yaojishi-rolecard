@@ -1,9 +1,9 @@
 {
   "id": "tavernweave.weird-apothecary.contract",
-  "version": "0.23.0",
+  "version": "1.0.0",
   "required": {
     "card_type": "mvu_zod",
-    "internal_before_v1": true,
+    "internal_before_v1": false,
     "stage_scope": "E01至E798；本版新增E647至E798，S88至S101，E798为全书封箱终点。",
     "core_character_count": 28,
     "core_characters": [
@@ -75,37 +75,36 @@
       "二次解释"
     ],
     "candidate_rephrase_characters": [],
-    "non_romantic_characters": [
+    "non_romantic_characters": [],
+    "romance_open_characters": [
+      "左左",
       "血锯",
+      "血衣女士",
+      "小小",
+      "人偶夫人",
+      "爱丽丝",
       "白逸",
       "泰坦头颅",
       "巫神头颅",
       "小宝贝",
+      "倒吊天使",
       "白夜",
       "渡鸦",
       "黑颅",
       "猪头屠夫",
       "哭泣小丑",
       "黑白小丑",
-      "艾雯爵士",
-      "万机之神",
-      "血肉支配者"
-    ],
-    "romance_open_characters": [
-      "左左",
-      "血衣女士",
-      "人偶夫人",
-      "倒吊天使",
-      "羽毛笔",
-      "a01银色幻想",
-      "欲望母树",
-      "弥赛亚",
-      "小小",
-      "爱丽丝",
       "黑弦月",
       "喵喵",
       "林樱",
-      "巨像之脑"
+      "艾雯爵士",
+      "羽毛笔",
+      "a01银色幻想",
+      "欲望母树",
+      "万机之神",
+      "巨像之脑",
+      "血肉支配者",
+      "弥赛亚"
     ],
     "nsfw_policy": {
       "direct_for_eligible_adults": true,
@@ -117,21 +116,7 @@
       "preserve_non_romantic_characters": true,
       "directness_rule": "明确成年角色的情色与性行为内容一旦由事件事实、NPC主动行为或玩家输入成立，直接呈现动作、身体反应、过程与结果；已经发生的内容不得被折叠标签、风格评价或淡出概括替代。"
     },
-    "evil_locked_characters": [
-      "血锯",
-      "白逸",
-      "泰坦头颅",
-      "小宝贝",
-      "白夜",
-      "渡鸦",
-      "黑颅",
-      "猪头屠夫",
-      "哭泣小丑",
-      "黑白小丑",
-      "艾雯爵士",
-      "万机之神",
-      "血肉支配者"
-    ],
+    "evil_locked_characters": [],
     "event_ids": [
       "E01",
       "E02",
@@ -4286,9 +4271,7 @@
     "opening_patient": "血娃娃",
     "opening_marker": "<StatusPlaceHolderImpl/>",
     "opening_source_verbatim": false,
-    "alternate_greetings": [
-      "E25预兆开场（幸福之家围猎暂歇：E01-E24完成收尾、E25预兆收尾false、唯一活跃事件规范空、近期预兆指向E25；爱丽丝隐去身形未消散、白逸与猪头屠夫在场）"
-    ],
+    "alternate_greetings": [],
     "time_progression": "纯事件驱动，不维护日历计数",
     "evil_value_scope": "恋爱开放角色恶堕全面开放无锁；固定非恋爱角色锁定0（巫神头颅吸引锁0、恶堕开放）",
     "factions": [
@@ -4331,7 +4314,7 @@
     "cancel_transition_policy": "status UI never auto-advances a cancelled predecessor; narrative evaluates local dependencies",
     "empty_event_objects": "no active event or omen uses canonical fully cleared detail objects",
     "worldbook_stable_id": "weird-apothecary-worldbook",
-    "worldbook_version": "0.23.0",
+    "worldbook_version": "1.0.0",
     "worldbook_entry_count": 1830,
     "event_context_windows": {
       "detail_radius": 1,
@@ -4726,6 +4709,7 @@
         "E194",
         "E198",
         "E199",
+        "E287",
         "E343"
       ],
       "小小": [
@@ -4823,6 +4807,7 @@
         "E204",
         "E205",
         "E206",
+        "E282",
         "E340"
       ],
       "泰坦头颅": [
@@ -5063,7 +5048,8 @@
         "E33",
         "E121",
         "E125",
-        "E155"
+        "E155",
+        "E284"
       ],
       "黑颅": [
         "E30",
@@ -5218,6 +5204,7 @@
         "E260",
         "E263",
         "E266",
+        "E282",
         "E317"
       ],
       "艾雯爵士": [
@@ -5252,6 +5239,7 @@
         "E204",
         "E205",
         "E206",
+        "E295",
         "E322",
         "E327",
         "E332",
@@ -5335,6 +5323,7 @@
         "E202",
         "E205",
         "E206",
+        "E291",
         "E333",
         "E334",
         "E335",
@@ -5508,6 +5497,13 @@
         "E204",
         "E205",
         "E206",
+        "E286",
+        "E297",
+        "E306",
+        "E313",
+        "E315",
+        "E316",
+        "E317",
         "E318",
         "E320",
         "E323",
@@ -5617,6 +5613,10 @@
         "E279",
         "E280",
         "E281",
+        "E285",
+        "E292",
+        "E293",
+        "E294",
         "E342",
         "E347",
         "E351",
@@ -5678,6 +5678,12 @@
         "E127",
         "E128",
         "E129",
+        "E288",
+        "E289",
+        "E290",
+        "E292",
+        "E293",
+        "E294",
         "E336",
         "E401",
         "E404",
