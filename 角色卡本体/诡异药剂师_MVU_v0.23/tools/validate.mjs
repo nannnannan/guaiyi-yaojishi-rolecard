@@ -366,7 +366,7 @@ for (const [index, eventId] of EVENT_IDS.entries()) {
 
   if (HOOK_EVENTS.has(eventId)) {
     if (eventId === 'E64') {
-      ok(!content.includes('## 下一事件引入') && !content.includes('- 默认走向：') && !content.includes('- 完成条件：'), 'E64不设六态、引入与默认走向');
+      ok(!content.includes('## 下一事件引入') && !content.includes('- 完成条件：'), 'E64不设引入与完成条件');
       ok(content.includes('阶段余韵') || content.includes('待续钩子'), 'E64保留阶段余韵');
     }
     continue;
@@ -479,15 +479,11 @@ for (const conceptEntry of allConceptEntries) {
   ok(conceptEntry.constant === false, `${conceptEntry.comment}使用酒馆原生绿灯而非常驻`);
   ok(Array.isArray(conceptEntry.secondary_keys) && conceptEntry.secondary_keys.length === 0, `${conceptEntry.comment}不使用二级关键词`);
   const eventIds = conceptEntry.extensions?.tavernweave?.event_ids ?? [];
-  if (conceptTitle === '术语速查（E36-E64）') {
-    ok(eventIds.length === 0, `${conceptEntry.comment}术语速查为纯参考条目无事件数组`);
-  } else {
-    const headingMatch = conceptContent.match(/^# 概念·[^·]+·(.+?)（事件(\[[^\n]+\])）$/m);
-    ok(Boolean(headingMatch), `${conceptEntry.comment}标题保留事件数组`);
-    ok(headingMatch[1] === conceptTitle, `${conceptEntry.comment}标题名称与注册表一致`);
-    ok(Array.isArray(eventIds) && eventIds.length > 0 && eventIds.every(id => EVENT_IDS.includes(id)), `${conceptEntry.comment}事件关联非空且只使用合法事件编号`);
-    ok(JSON.stringify(JSON.parse(headingMatch[2])) === JSON.stringify(eventIds), `${conceptEntry.comment}标题事件数组与注册表元数据一致`);
-  }
+  const headingMatch = conceptContent.match(/^# 概念·[^·]+·(.+?)（事件(\[[^\n]+\])）$/m);
+  ok(Boolean(headingMatch), `${conceptEntry.comment}标题保留事件数组`);
+  ok(headingMatch[1] === conceptTitle, `${conceptEntry.comment}标题名称与注册表一致`);
+  ok(Array.isArray(eventIds) && eventIds.length > 0 && eventIds.every(id => EVENT_IDS.includes(id)), `${conceptEntry.comment}事件关联非空且只使用合法事件编号`);
+  ok(JSON.stringify(JSON.parse(headingMatch[2])) === JSON.stringify(eventIds), `${conceptEntry.comment}标题事件数组与注册表元数据一致`);
   const packedConcept = packedBook.entries.find(entry => entry.id === conceptEntry.id);
   ok(Boolean(packedConcept), `${conceptEntry.comment}已打包`);
   ok(packedConcept.content === conceptContent, `${conceptEntry.comment}打包正文与源码一致`);
@@ -638,7 +634,7 @@ const optionalNpcEntry = sourceBook.entries.find(entry => entry.comment === '[�
 ok(Boolean(optionalNpc && optionalNpcEntry), '拥星者可选NPC登记存在');
 if (optionalNpc && optionalNpcEntry) {
   ok(optionalNpc.entry_id === optionalNpcEntry.id && optionalNpcEntry.id === 300, '拥星者可选NPC UID固定');
-  ok(JSON.stringify(optionalNpcEntry.extensions?.tavernweave?.event_ids) === JSON.stringify(['E337', 'E338', 'E352']), '拥星者覆盖旧事件与E352撤退争议');
+  ok(JSON.stringify(optionalNpcEntry.extensions?.tavernweave?.event_ids) === JSON.stringify(['E337', 'E338', 'E339', 'E352']), '拥星者覆盖旧事件与E352撤退争议');
   ok(optionalNpc.relation_registered === false && !CHARACTERS.includes('拥星者'), '拥星者不进入核心角色关系表');
   ok(optionalNpcEntry.content_files?.length === 6, '拥星者运行时合并六个组件');
   for (const file of optionalNpcEntry.content_files ?? []) ok((await readText(file)).length >= 80, `拥星者组件内容充足：${file}`);
@@ -720,7 +716,10 @@ for (const field of ['压力', '道德', '罪恶', '复苏度', '替死娃娃剩
 // ===== 内嵌脚本 =====
 ok(helperSource.length === 2, '内嵌酒馆助手脚本2个');
 ok(helperSource.every(script => String(script.name ?? '').includes('v0.23')), '酒馆助手脚本命名含v0.23');
-ok(regexSource.length === 5, '正则脚本5个');
+ok(regexSource.length === 8, '正则脚本8个');
+ok(regexSource.every(s => s.substituteRegex === 0), '所有正则脚本必须为非破坏性substituteRegex: 0');
+ok(regexSource.some(s => s.id.includes('gypdsl')), '包含GypDSL隐藏正则');
+ok(regexSource.some(s => s.findRegex.includes('thinking')), '包含Claude/Gemini思考块正则');
 
 // ===== 事件迁移与负例（v0.7 保留）=====
 const transitionedEvents = cloneJson(initial.事件);

@@ -59,7 +59,7 @@
 
 > 这一层是沙盒机制的变量归宿。`/系统/沙盒` 汇总三个子字段：偏离账本、近期事务、事件信号。**E01–E798 主线偏离记账 + 沙盒时空锚点 + 事件信号防重复触发 的所有持久事实都在这里写**。本节是 write 侧规则；read 侧规则、形式与正文交互见 world.md「主线偏离规则」「事件信号防重复触发」「近期事务滚动」三段。
 
-1. **偏离账本** `/系统/沙盒/偏离/<E0XX>`。玩家对某个 E 事件（E01–E798 之一）造成节点性改变后**必写**（可通过 GYP-DSL `@sandbox +deviation="E050|原著走向|玩家改变|预期影响|涉及人物|发酵中"` 或 JSON Patch 写入）：
+1. **偏离账本** `/系统/沙盒/偏离/<E0XX>`。玩家对某个 E 事件（E01–E798 之一）造成节点性改变后**必写**（可通过 GYP-DSL `@sandbox +改写="E050|原著走向|玩家改变|预期影响|涉及人物|发酵中"` 或 `@sandbox +deviation="..."` 或 JSON Patch 写入）：
 
    ```json
    {"op":"add","path":"/系统/沙盒/偏离/E050","value":{
@@ -75,7 +75,7 @@
    - 状态枚举：**`发酵中` / `已兑现` / `已消弭`**。初写时通常 `发酵中`；当某个偏离的预期影响在后续正文里实际发生→`已兑现`；偏离被后续行动逆转/无关紧要化→`已消弭`。日常琐事、林恩去逛街买杯水这类不动 E 因果的过程**不记录**（记录条件看 world.md 主线偏离规则第 2 条）。
    - 更新已有偏离记录用 `replace`（同路径）；`add` 仅用于初写。已有偏离的覆盖**不删除**，状态翻转成 `已消弭`。
 
-2. **近期事务** `/系统/沙盒/近期事务`（5–8 项上限）。支持四元组 `[时间, 地点, 事务, 涉及人物]`、4 字段对象 `{"时间","地点","事务","涉及人物"}` 或精简字符串（可通过 GYP-DSL `@sandbox +recent="时间|地点|事务|涉及人物"` 或 JSON Patch 写入）：
+2. **近期事务** `/系统/沙盒/近期事务`（5–8 项上限）。支持四元组 `[时间, 地点, 事务, 涉及人物]`、4 字段对象 `{"时间","地点","事务","涉及人物"}` 或精简字符串（可通过 GYP-DSL `@sandbox +事务="时间|地点|事务|涉及人物"` 或 `@sandbox +recent="..."` 或 JSON Patch 写入）：
 
    ```json
    {"op":"add","path":"/系统/沙盒/近期事务/-","value":{
@@ -90,7 +90,7 @@
    - 时间字段**只用事件锚点与相对时段**（参照 `世界.当前场景时间` 规则；禁星期与具体日历日期）。
    - 普通小对话（接客聊天、日常叙旧）**不写**；E 事件推进、偏离成形、关系重大转折、阶段切换、获得关键物件/解锁前景类**必写**。
 
-3. **事件信号** `/系统/沙盒/信号`（字符串数组，上限 16–64 条）。**一次性事件执行前的防重复触发门**（可通过 GYP-DSL `@signal +"配方解锁_completed"` 或 JSON Patch 写入）：
+3. **事件信号** `/系统/沙盒/信号`（字符串数组，上限 16–64 条）。**一次性事件执行前的防重复触发门**（可通过 GYP-DSL `@signal +信号="配方解锁_completed"` 或 `@signal +signal="..."` 或 JSON Patch 写入，严禁省略键名）：
 
    ```json
    {"op":"add","path":"/系统/沙盒/信号/-","value":"配方解锁_completed"}
@@ -137,4 +137,13 @@
 
 1. **正态分离原则**：主 AI 专注输出高质量正文与 `<StatusPlaceHolderImpl/>`；后置专职状态官 AI 通过状态栏内置 `GypDslCompiler` 输出 `<GypDSL>...</GypDSL>` 指令流完成状态同步。
 2. **六大核心指令**：支持 `@world` / `@world.detail`、`@lynn` / `@lynn.intent` / `@lynn.power` / `@lynn.list`、`@char[角色名]` / `@char[角色名].stat` / `@char[角色名].note`（支持既有 94 名角色及新登场动态角色创建）、`@rel[A->B]`、`@item[名称]`、`@event` / `@sandbox` / `@task[名称]` / `@signal`。
-3. **动态场景专属模块（`@module[模块ID] ... @endmodule`）**：专职状态官可根据当前场景（炼金配药、病房恶堕调教、外科手术、药店营业、神权博弈）使用 `bar`、`kv`、`badge`、`list`、`grid`、`note` 六种积木原语实时构建或刷新动态场景面板；场景结束后可通过 `@del_module[模块ID]` 或 `@clear_modules` 移除过期模块。
+3. **中英双语关键字与操作符全面对齐**：
+   - **操作符与前缀动词**：支持符号赋值（`=`、`+=`、`-=`）、中文前缀或动词（`设`、`增`、`删`，如 `+键=值`、`-键=值`）及英文关键字（`SET`、`ADD`、`DELETE`）。
+   - **指令键名双语映射**：
+     - `@world`：`阶段/stage`, `阶段名/stagename`, `事件/event`, `锚点/anchor`, `世界/world`, `地点/place`, `时间/time`, `时段/period`, `氛围/atmosphere`, `威胁/threat`, `暴露/exposure`, `线索/clue`。
+     - `@lynn`：`压力/stress`, `道德/morality`, `罪恶/sin`, `复苏度/revival`, `娃娃/doll`, `身份/identity`, `等级/level`, `身体/body`, `目标/goal`, `指令/command`, `天使之吻/kiss`, `咒瞳/eye`, `根系网络/root`, `巨像网络/colossus`, `技能/skill`, `拟化/mimic`, `契约/contract`, `成就/achievement`, `图鉴/codex`。
+     - `@char[角色名]`：`解锁/unlock`, `在场/present`, `好感/favor`, `信赖/trust`, `吸引/attraction`, `戒备/vigilance`, `恶堕/corruption`, `涩涩/lewdness`, `创伤/trauma`, `开发度/emotional`, `驯服度/tame`, `崩坏值/collapse`, `恨意值/hatred`, `阶段/stage`, `位置/location`, `状态/status`, `处境/situation`, `关系/relation`, `互动/interaction`, `迹象/sign`, `边界/boundary`, `记忆/memory`。
+     - `@sandbox`：`偏离度/deviation_rate/deviation`, `状态/status`, `蝴蝶效应/butterfly`, `改写/已改写事件/rewrite`, `事务/近期事务/recent`。
+     - `@signal`：赋值格式必须包含键名，使用 `@signal +信号="值"` 或 `@signal +signal="值"`（严禁省略键名写成 `@signal +"..."`）。
+     - `@task[任务名称]`：`阶段/stage`, `状态/status`, `说明/desc`, `提示/hint`, `通知/notice`。
+4. **动态场景专属模块（`@module[模块ID] ... @endmodule`）**：专职状态官可根据当前场景（炼金配药、病房恶堕调教、外科手术、药店营业、神权博弈）使用 `bar`、`kv`、`badge`、`list`、`grid`、`note` 六种积木原语实时构建或刷新动态场景面板；场景结束后可通过 `@del_module[模块ID]` 或 `@clear_modules` 移除过期模块。

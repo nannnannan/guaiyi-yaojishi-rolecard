@@ -35,8 +35,8 @@
   },
   {
     "id": "tavernweave-hide-mvu-v0.23",
-    "scriptName": "诡异药剂师v0.23｜隐藏变量块",
-    "findRegex": "/<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/gi",
+    "scriptName": "诡异药剂师v0.23｜隐藏变量块（含流式防抖）",
+    "findRegex": "/<\\s*UpdateVariable\\b[^>]*>(?:[\\s\\S]*?<\\/UpdateVariable>|[\\s\\S]*$)/gi",
     "replaceString": "",
     "trimStrings": [],
     "placement": [
@@ -52,8 +52,8 @@
   },
   {
     "id": "tavernweave-hide-think-prompt-v0.23",
-    "scriptName": "诡异药剂师v0.23｜对AI隐藏思考块",
-    "findRegex": "/<think\\b[^>]*>[\\s\\S]*?<\\/think>/gi",
+    "scriptName": "诡异药剂师v0.23｜对AI隐藏全模型思考块",
+    "findRegex": "/<\\s*(think(?:_[a-zA-Z0-9_]+)?|thinking|thought)\\b[^>]*>(?:[\\s\\S]*?<\\/\\1>|[\\s\\S]*$)/gi",
     "replaceString": "",
     "trimStrings": [],
     "placement": [
@@ -69,8 +69,59 @@
   },
   {
     "id": "tavernweave-hide-think-display-v0.23",
-    "scriptName": "诡异药剂师v0.23｜隐藏思考块",
-    "findRegex": "/<think\\b[^>]*>[\\s\\S]*?<\\/think>/gi",
+    "scriptName": "诡异药剂师v0.23｜前端隐藏全模型思考块（含流式防抖）",
+    "findRegex": "/<\\s*(think(?:_[a-zA-Z0-9_]+)?|thinking|thought)\\b[^>]*>(?:[\\s\\S]*?<\\/\\1>|[\\s\\S]*$)/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-gypdsl-prompt-v0.23",
+    "scriptName": "诡异药剂师v0.23｜对AI隐藏状态官GypDSL指令",
+    "findRegex": "/<\\s*GypDSL\\b[^>]*>(?:[\\s\\S]*?<\\/GypDSL>|[\\s\\S]*$)/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-gypdsl-display-v0.23",
+    "scriptName": "诡异药剂师v0.23｜前端隐藏状态官GypDSL指令（含流式防抖）",
+    "findRegex": "/<\\s*GypDSL\\b[^>]*>(?:[\\s\\S]*?<\\/GypDSL>|[\\s\\S]*$)/gi",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "tavernweave-hide-deviation-reminder-v0.23",
+    "scriptName": "诡异药剂师v0.23｜前端隐藏偏离提醒回显",
+    "findRegex": "/<\\s*system-reminder\\b[^>]*>(?:[\\s\\S]*?<\\/system-reminder>|[\\s\\S]*$)/gi",
     "replaceString": "",
     "trimStrings": [],
     "placement": [

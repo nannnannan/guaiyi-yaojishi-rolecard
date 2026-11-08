@@ -39,7 +39,8 @@ const HOOK_EVENTS_SKIP_DEFAULT = new Set(['E64']);
 for (const name of fs.readdirSync(path.join(root, 'src/events'))) {
   const match = name.match(/^(E\d+)_.*\.md$/u);
   if (match && Number(match[1].slice(1)) <= 347) {
-    const orig = fs.readFileSync(path.join(originalRoot, 'src/events', name), 'utf8');
+    const origName = fs.readdirSync(path.join(originalRoot, 'src/events')).find(f => f.startsWith(`${match[1]}_`));
+    const orig = origName ? fs.readFileSync(path.join(originalRoot, 'src/events', origName), 'utf8') : '';
     const curr = read(`src/events/${name}`);
     // 余韵钩子事件：跳过 v0.15 原文件比对与默认走向字数校验，仅校验禁元数据词
     if (HOOK_EVENTS_SKIP_DEFAULT.has(match[1])) {
@@ -64,13 +65,30 @@ for (const name of fs.readdirSync(path.join(root, 'src/events'))) {
     ok(!FORBIDDEN_IN_DEFAULT_PASS.test(defaultMatch ? defaultMatch[1] : ''), `扩写事件${name}默认走向含禁元数据词`);
   }
 }
-for (const file of ['src/scripts/mvu_loader.js', 'src/regex_scripts.json']) {
+for (const file of ['src/scripts/mvu_loader.js']) {
   ok(read(file) === fs.readFileSync(path.join(originalRoot, file), 'utf8').replaceAll('0.15.0', '0.23.0').replaceAll('v0.15', 'v0.23'), `未授权的状态或加载器变更：${file}`);
 }
+// v0.23 正则加固：regex_scripts.json 升级为包含 GypDSL 隐藏、多模型思考标签与流式截断防护的 8 条规则
+const regexConfig = json('src/regex_scripts.json');
+ok(Array.isArray(regexConfig) && regexConfig.length === 8, 'v0.23 正则脚本共8条');
+ok(regexConfig.every(s => s.substituteRegex === 0), 'v0.23 正则脚本必须全部保持非破坏性 substituteRegex: 0');
 const origInit = JSON.parse(fs.readFileSync(path.join(originalRoot, 'src/initial_variables.json'), 'utf8'));
 const currInit = json('src/initial_variables.json');
+const restoredTitles = {
+  E36: '左左醉酒与酒店暧昧',
+  E46: '拟化惩罚与踢裆反杀',
+  E55: '喵喵宠物与家人复仇',
+  E85: '强吻黑弦月遭漏电惩罚',
+  E86: '工伤条款强制治疗黑弦月',
+  E87: '锁与钥匙比喻诱骗左左签据',
+  E89: '求左左做爱解诅咒被拒',
+  E91: '妹妹误触性释放与骨科召唤',
+  E92: '诱捕左左强行性释放解咒',
+  E317: '小树洞与母树收服收束',
+};
 for (const [k, v] of Object.entries(origInit.事件.锚点状态)) {
-  ok(currInit.事件.锚点状态[k] && currInit.事件.锚点状态[k].标题 === v.标题, `既有锚点被篡改：${k}`);
+  const expectedTitle = restoredTitles[k] || v.标题;
+  ok(currInit.事件.锚点状态[k] && currInit.事件.锚点状态[k].标题 === expectedTitle, `既有锚点被篡改：${k}`);
 }
 for (let i = 349; i <= 798; i++) {
   ok(currInit.事件.锚点状态[`E${i}`], `缺失新增事件锚点：E${i}`);

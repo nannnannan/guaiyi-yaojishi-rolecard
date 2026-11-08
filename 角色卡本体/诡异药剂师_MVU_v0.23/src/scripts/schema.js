@@ -28,7 +28,7 @@ const sceneTime = shortText.refine(
   '场景时间只能使用事件标签与相对时段，不得写星期、精确日期、X天时长或昨天/昨日/昨夜/今天/今日/今早/今晨/明天/明日/次日/翌日/第二天',
 );
 const eventState = z.enum(['未触发', '预兆', '活跃', '变形', '完成', '取消']);
-const survivalState = z.enum(['活动', '受伤', '失联', '受困', '休眠', '暂离', '敌对']);
+const survivalState = z.enum(['活动', '受伤', '失联', '受困', '休眠', '暂离', '敌对', '未观测']);
 const phaseNames = {
   S0: '药店接管期',
   S1: '怪物客户建立期',
@@ -450,7 +450,7 @@ const anchorTitles = {
   E314: '你有爱过她吗·士兵请回应我',
   E315: '对母树的史诗级攻略',
   E316: '母树的堕落与园丁任务',
-  E317: '小树洞·阶段九收束',
+  E317: '小树洞·对应阶段层收束',
   E318: '母树核心与离狱抵押',
   E319: '七神分化与银幻格式化',
   E320: '母树意识反击与蜂巢隔离',
@@ -866,7 +866,7 @@ const anchorTitles = {
   E730: '送葬的黑雨与艾雯爵士',
   E731: '罪恶王座',
   E732: '成熟就意味着失去',
-  E733: '第三阶段的黑火',
+  E733: '三阶形态的黑火',
   E734: '你将成为一个骗子',
   E735: '登临王座',
   E736: '战端再起与巅峰见证',
@@ -940,10 +940,10 @@ function relationship(options = {}) {
   const attraction = score;
   const evil = score;
   const lewdness = score;
-  const emotional = options.emotionalOpen ? score : z.literal(0);
-  const tame = options.a01Open ? score : z.literal(0);
-  const collapse = options.a01Open ? score : z.literal(0);
-  const hatred = options.a01Open ? score : z.literal(0);
+  const emotional = score;
+  const tame = score;
+  const collapse = score;
+  const hatred = score;
   return z.object({
     解锁: z.boolean(),
     在场: z.boolean(),
@@ -983,7 +983,7 @@ const activeEvent = z.object({
   标题: z.string().max(140),
   地点: shortText,
   参与者: shortList,
-  状态: z.enum(['活跃', '无']),
+  状态: z.enum(['活跃', '进行中', '无']),
   紧迫度: z.enum(['无', '低', '中', '高', '极高']),
   模糊期限: shortText,
   进展: mediumText,
@@ -1048,11 +1048,11 @@ const Schema = z.object({
         事件范围: shortText,
       })).max(16),
     }),
-  }),
+  }).passthrough(),
   林恩: z.object({
     年龄: z.literal(18),
     身体状况: mediumText,
-    当前身份: shortList,
+    当前身份: z.union([shortList, shortText]),
     等级: z.number().int().min(1).max(999),
     技能: shortList,
     成就: shortList,
@@ -1065,11 +1065,11 @@ const Schema = z.object({
     罪恶: score,
     复苏度: score,
     替死娃娃剩余: z.number().int().min(0).max(999),
-    天使之吻状态: z.boolean(),
-    根系网络权限: z.boolean(),
-    巨像网络权限: z.boolean(),
+    天使之吻状态: z.union([shortText, z.boolean()]),
+    根系网络权限: z.union([shortText, z.boolean()]),
+    巨像网络权限: z.union([shortText, z.boolean()]),
     咒瞳状态: z.union([shortText, z.boolean()]),
-    拟化技能: z.union([shortText, z.boolean()]),
+    拟化技能: z.union([shortText, z.boolean(), shortList]),
   }),
   事件: z.object({
     锚点状态: z.object({
